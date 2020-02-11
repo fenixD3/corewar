@@ -114,4 +114,6 @@ int				ft_lstcirc_findcontent_size(t_list **lst, size_t content_size);
 
 int				ft_is_complex_string(char *str, char delim);
 
+void			go_exit(char *error);
+
 #endif

@@ -54,7 +54,7 @@ static size_t	count_words(char *line, char *delims, char *comments)
 	return (words);
 }
 
-char			**fast_strsplit(char *line, char *delims, char *comments)
+char			**fast_strsplit(char *line, char *delims, char *comments, void *alloc_func(size_t))
 {
 	char 	**arrptr;
 	size_t	words;
@@ -62,7 +62,7 @@ char			**fast_strsplit(char *line, char *delims, char *comments)
 	if (!line || !*line || !delims || !*delims ||
 								!(words = count_words(line, delims, comments)))
 		return (NULL);
-	arrptr = (char**)ml_malloc(sizeof(char*) * (words + 1));
+	arrptr = (char**)alloc_func(sizeof(char*) * (words + 1));
 	while (*line)
 	{
 		if (!skip_delims(&line, delims, comments))

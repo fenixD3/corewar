@@ -12,9 +12,10 @@
 
 #include <libft.h>
 
-void	go_exit(char *error)
+int	go_exit(char *error)
 {
 	if (error)
 		ft_putendl(error);
 	exit(1);
+	return (0);
 }

@@ -21,8 +21,16 @@ int main(int ac, char **av)
 		go_exit("Open file error");
 
 	flst = file_to_list(fd);
-	printf("%s\n", flst->next->line);
 
-	char **arrptr = fast_strsplit(flst->next->line, DELIMITERS, COMMENTS);
+	char *line = flst->next->line;
+	printf("%s\n\n", line);
+	char **arrptr;
+	if (!(arrptr = fast_strsplit(line, DELIMITERS, COMMENTS, malloc)))
+		return (2);
+	while (*arrptr)
+	{
+		printf("%s\n", *arrptr);
+		arrptr++;
+	}
 	return (0);
 }

@@ -12,6 +12,22 @@
 
 #include "blackbox_memlist.h"
 
+void		ml_clear_all_lists(t_ml_lists *lst)
+{
+	t_ml_lists *prev;
+
+	prev = lst;
+	lst = lst->next;
+	while (lst)
+	{
+		ml_clear_lst(&prev->list);
+		free(prev);
+		prev = lst;
+		lst = lst->next;
+	}
+	ml_clear_lst(&prev->list);
+}
+
 _Bool		ml_clear_lst(t_ml **head)
 {
 	t_ml *prev;

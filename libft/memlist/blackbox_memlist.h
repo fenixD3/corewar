@@ -15,6 +15,7 @@
 # define ML_MALLOC 1
 # define ML_DELELEM 2
 # define ML_CLEARLIST 3
+# define ML_CLEARALL 4
 # include <stdlib.h>
 
 /*
@@ -28,9 +29,21 @@ typedef struct	s_ml
 	struct s_ml	*prev;
 }				t_ml;
 
+typedef struct	s_ml_lists
+{
+	t_ml				*list;
+	uint32_t			list_num;
+	struct s_ml_lists	*next;
+	struct s_ml_lists	*prev;
+}				t_ml_lists;
+
+void			ml_static_lists(void *ptr, uint8_t rule, uint32_t list_num);
+
+t_ml_lists		*add_ml_list(uint32_t list_num, t_ml_lists **cur);
 t_ml			*ml_create(void *ptr);
 _Bool			ml_push_front(t_ml **head, t_ml *new);
 
+void			ml_clear_all_lists(t_ml_lists *lst);
 void			ml_delelem(t_ml **head, void *ptr);
 _Bool			ml_clear_lst(t_ml **head);
 

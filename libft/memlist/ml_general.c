@@ -13,43 +13,30 @@
 #include "blackbox_memlist.h"
 #include "libft.h"
 
-static void		ml_static_list(void *ptr, int rule)
-{
-	static t_ml *head;
-
-	if (rule == ML_MALLOC)
-	{
-		if (!ml_push_front(&head, ml_create(ptr)))
-		{
-			ft_putendl("ERROR: can't alloc memory");
-			exit(1);
-		}
-	}
-	else if (rule == ML_DELELEM)
-		ml_delelem(&head, ptr);
-	else if (rule == ML_CLEARLIST)
-		ml_clear_lst(&head);
-}
-
-void			*ml_malloc(size_t size)
+void		*ml_malloc(size_t size, uint32_t list_num)
 {
 	void *data;
 
 	if (!(data = malloc(size)))
 	{
-		ml_static_list(NULL, ML_CLEARLIST);
+		ml_static_lists(NULL, ML_CLEARLIST, list_num);
 		return (NULL);
 	}
-	ml_static_list(data, ML_MALLOC);
+	ml_static_lists(data, ML_MALLOC, list_num);
 	return (data);
 }
 
-void			ml_free(void *ptr)
+void		ml_free(void *ptr, uint32_t list_num)
 {
-	ml_static_list(ptr, ML_DELELEM);
+	ml_static_lists(ptr, ML_DELELEM, list_num);
 }
 
-void			ml_free_all(void)
+void		ml_free_list(uint32_t list_num)
 {
-	ml_static_list(NULL, ML_CLEARLIST);
+	ml_static_lists(NULL, ML_CLEARLIST, list_num);
+}
+
+void		ml_free_all(void)
+{
+	ml_static_lists(NULL, ML_CLEARALL, 0);
 }

@@ -46,8 +46,11 @@ void	ml_static_lists(void *ptr, u_int8_t rule, u_int32_t list_num)
 	head = lst;
 	while (lst && lst->next && lst->list_num < list_num)
 		lst = lst->next;
-	if (!lst || lst->list_num != list_num)
-		lst = add_ml_list(list_num, &lst);
+	if ((!lst || lst->list_num != list_num))
+		if (rule == ML_MALLOC)
+			lst = add_ml_list(list_num, &lst);
+		else
+			go_exit("COMPILE ERROR: you want delete element(s) in memory group what does not exist");
 
 	ml_innerlist(ptr, rule, &lst, &head);
 	if (head)

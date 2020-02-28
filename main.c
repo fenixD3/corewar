@@ -60,8 +60,8 @@ int main(void)
 	ptr = (int*)ml_malloc(sizeof(int), 3);
 	*ptr = 333;
 	ml_free(tmp, 5);
-	ml_free_list(3);
-	ml_free_list(1);
+	ml_free_list(8);
+	ml_free_list(8);
 	ml_free(tmp, 3);
 
 	return (0);

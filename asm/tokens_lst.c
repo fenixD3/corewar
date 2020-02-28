@@ -1,25 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*    file_to_list.h                                    :+:      :+:    :+:   */
+/*   tokens_lst.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mdeanne <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/02/04 18:27:39 by mdeanne           #+#    #+#             */
-/*   Updated: 2020/02/04 18:27:41 by mdeanne          ###   ########.fr       */
+/*   Created: 2020/02/28 19:04:17 by mdeanne           #+#    #+#             */
+/*   Updated: 2020/02/28 19:04:19 by mdeanne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FILE_TO_LIST_H
-# define FILE_TO_LIST_H
-# include <stdlib.h>
+#include "asm.h"
+#include "libft.h"
 
-typedef struct	s_fline
+t_token *add_token(t_pc *pc)
 {
-	char			*line;
-	struct s_fline	*next;
-}				t_fline;
+	t_token *new;
 
-t_fline *file_to_list(int fd, u_int32_t lst_num);
+	new = (t_token*)ml_malloc(sizeof(t_token), ML_TOKEN);
+	new->row = pc->row;
+	new->column = pc->column;
 
-#endif
+
+	return (new);
+}

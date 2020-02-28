@@ -39,7 +39,8 @@ typedef struct	s_ml_lists
 
 void			ml_static_lists(void *ptr, u_int8_t rule, u_int32_t list_num);
 
-t_ml_lists		*add_ml_list(u_int32_t list_num, t_ml_lists **cur);
+t_ml_lists *
+add_ml_list(u_int32_t list_num, t_ml_lists **cur, t_ml_lists **head);
 t_ml			*ml_create(void *ptr);
 _Bool			ml_push_front(t_ml **head, t_ml *new);
 

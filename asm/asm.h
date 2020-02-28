@@ -12,24 +12,65 @@
 
 #ifndef ASM_H
 #define ASM_H
+#include "op.h"
+#include "file_to_list.h"
+#include <stdlib.h>
 
-#define INSTRUCTION 1
-#define ARGUMENT_1 2
-#define ARGUMENT_2 3
-#define ARGUMENT_3 4
+#define ML_FLST 1
+#define ML_TOKEN 2
+
+typedef enum	s_token_type
+{
+	NAME = 1,
+	COMMENT_PROG,
+	COMMAND,
+	STRING,
+	COMMENT,
+	LABEL,
+	ARGUMENT,
+	SEPARATOR,
+	NEW_LINE,
+	END
+}				t_token_type;
+
 
 
 typedef struct	s_token
 {
-	unsigned short	type;
-	unsigned int	line;
-
+	t_token_type 	type;
+	u_int32_t		row;
+	u_int16_t		column;
+	void 			*content;
+	struct s_token	*prev;
+	struct s_token	*next;
 }				t_token;
 
 typedef struct	s_label
 {
-
+	char			*name;
+	struct s_label	*prev;
+	struct s_label	*next;
 }				t_label;
+
+typedef struct	s_argument
+{
+	t_token_type	type;
+	char 			*content;
+	u_int32_t		num;
+}				t_arg;
+
+typedef struct	s_parser_carriage
+{
+	u_int32_t		row;
+	u_int16_t		column;
+	t_fline			*flst;
+	t_token 		*last;
+}				t_pc;
+
+int				ft_wordequ(char *ethalon, char *str, char *delims);
+
+
+///// not need
 
 _Bool	is_special_char(char c, char *specials);
 

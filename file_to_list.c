@@ -29,7 +29,7 @@ void add_line_lst(t_fline **head, t_fline **tail, char *line, u_int32_t lst_num)
 	*tail = new;
 }
 
-t_fline		*file_to_list(int fd)
+t_fline *file_to_list(int fd, uint32_t lst_num)
 {
 	char	*line;
 	t_fline	*tail;
@@ -41,6 +41,6 @@ t_fline		*file_to_list(int fd)
 	line = NULL;
 
 	while (get_next_line(fd, &line) > 0)
-		add_line_lst(&head, &tail, line, 0);
+		add_line_lst(&head, &tail, line, lst_num);
 	return (head);
 }

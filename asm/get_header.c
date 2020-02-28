@@ -13,7 +13,7 @@
 #include <libft/libft.h>
 #include "op.h"
 #include "file_to_list.h"
-#include "asm.h"
+#include "asm/asm.h"
 
 static int	set_string(header_t *header, char *line, _Bool its_name, _Bool new)
 {

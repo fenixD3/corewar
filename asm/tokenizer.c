@@ -1,25 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*    file_to_list.h                                    :+:      :+:    :+:   */
+/*   tokenizer.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mdeanne <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/02/04 18:27:39 by mdeanne           #+#    #+#             */
-/*   Updated: 2020/02/04 18:27:41 by mdeanne          ###   ########.fr       */
+/*   Created: 2020/02/28 16:22:33 by mdeanne           #+#    #+#             */
+/*   Updated: 2020/02/28 16:22:35 by mdeanne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FILE_TO_LIST_H
-# define FILE_TO_LIST_H
-# include <stdlib.h>
+#include "asm.h"
 
-typedef struct	s_fline
+t_token	*tokenize(t_fline *flst)
 {
-	char			*line;
-	struct s_fline	*next;
-}				t_fline;
+	t_token *tokens;
 
-t_fline *file_to_list(int fd, u_int32_t lst_num);
-
-#endif
+	return (tokens);
+}

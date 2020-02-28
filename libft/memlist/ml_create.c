@@ -13,7 +13,7 @@
 #include "libft.h"
 #include "blackbox_memlist.h"
 
-t_ml_lists	*add_ml_list(u_int32_t list_num, t_ml_lists **cur)
+t_ml_lists	*create_ml_lst_elem(u_int32_t list_num)
 {
 	t_ml_lists	*new;
 
@@ -22,11 +22,17 @@ t_ml_lists	*add_ml_list(u_int32_t list_num, t_ml_lists **cur)
 	new->list_num = list_num;
 	new->list = NULL;
 	new->next = NULL;
+	new->prev = NULL;
+	return (new);
+}
+
+t_ml_lists *add_ml_list(u_int32_t list_num, t_ml_lists **cur, t_ml_lists **head)
+{
+	t_ml_lists	*new;
+
+	new = create_ml_lst_elem(list_num);
 	if (!*cur)
-	{
 		*cur = new;
-		new->prev = NULL;
-	}
 	else if ((*cur)->list_num < list_num)
 	{
 		(*cur)->next = new;
@@ -36,9 +42,12 @@ t_ml_lists	*add_ml_list(u_int32_t list_num, t_ml_lists **cur)
 	{
 		new->prev = (*cur)->prev;
 		new->next = *cur;
-		(*cur)->prev->next = new;
+		if ((*cur)->prev)
+			(*cur)->prev->next = new;
 		(*cur)->prev = new;
 	}
+	if (!new->prev)
+		*head = new;
 	return (new);
 }
 

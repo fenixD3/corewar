@@ -19,9 +19,9 @@ char	*ft_strjoin(const char *s1, const char *s2)
 	if (s1 == NULL && s2 == NULL)
 		return (NULL);
 	else if (s1 == NULL)
-		return (ft_strdup(s2));
+		return (ft_strdup(s2, 0));
 	else if (s2 == NULL)
-		return (ft_strdup(s1));
+		return (ft_strdup(s1, 0));
 	new_str = ft_strnew(ft_strlen(s1) + ft_strlen(s2));
 	if (!new_str)
 		return (NULL);

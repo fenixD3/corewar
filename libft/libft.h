@@ -6,7 +6,7 @@
 /*   By: ylila <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/02 12:36:34 by ylila             #+#    #+#             */
-/*   Updated: 2020/01/31 21:02:08 by yas              ###   ########.fr       */
+/*   Updated: 2020/02/26 15:50:04 by yas              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ char			*ft_strstr(const char *str, const char *to_find);
 char			*ft_strnstr(const char *str, const char *to_find, size_t len);
 char			*ft_strchr(const char *s, int c);
 char			*ft_strrchr(const char *s, int c);
-char			*ft_strdup(const char *src);
+char *ft_strdup(const char *src, u_int32_t lst_num);
 
 int				ft_atoi(const char *str);
 
@@ -50,7 +50,7 @@ int				ft_isprint(int c);
 int				ft_toupper(int c);
 int				ft_tolower(int c);
 
-void			*ft_memalloc(size_t size);
+void *ft_memalloc(size_t size, u_int32_t lst_num);
 void			ft_memdel(void **ap);
 
 char			*ft_strnew(size_t size);
@@ -102,11 +102,12 @@ int				ft_isdigit(int c);
 int				ft_isspace(int c);
 
 char			*ft_strjoinre(char **s1, char const *s2);
-char			*ft_strndup(const char *s1, size_t n);
+char *ft_strndup(const char *s1, size_t n, u_int32_t lst_num);
 size_t			ft_strlcpy(char *dst, const char *src, size_t size);
 char			*ft_sstrchr(const char *s, int c);
 
-t_list			*ft_lstcirc_strnew(char const *content, size_t content_size);
+t_list *
+ft_lstcirc_strnew(char const *content, size_t content_size, u_int32_t lst_num);
 t_list			*ft_lstcirc_add(t_list **cur, char const *content,
 														size_t content_size);
 t_list			*ft_lstcirc_delelem(t_list **del_elem);

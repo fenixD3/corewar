@@ -6,7 +6,7 @@
 /*   By: mdeanne <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/04 19:16:00 by mdeanne           #+#    #+#             */
-/*   Updated: 2020/02/04 19:16:07 by mdeanne          ###   ########.fr       */
+/*   Updated: 2020/02/26 19:23:23 by yas              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,19 +32,19 @@ typedef struct	s_ml
 typedef struct	s_ml_lists
 {
 	t_ml				*list;
-	uint32_t			list_num;
+	u_int32_t			list_num;
 	struct s_ml_lists	*next;
 	struct s_ml_lists	*prev;
 }				t_ml_lists;
 
-void			ml_static_lists(void *ptr, uint8_t rule, uint32_t list_num);
+void			ml_static_lists(void *ptr, u_int8_t rule, u_int32_t list_num);
 
-t_ml_lists		*add_ml_list(uint32_t list_num, t_ml_lists **cur);
+t_ml_lists		*add_ml_list(u_int32_t list_num, t_ml_lists **cur);
 t_ml			*ml_create(void *ptr);
 _Bool			ml_push_front(t_ml **head, t_ml *new);
 
-void			ml_clear_all_lists(t_ml_lists *lst);
+void ml_clear_all_lists(t_ml_lists *lst, t_ml_lists *head);
 void			ml_delelem(t_ml **head, void *ptr);
-_Bool			ml_clear_lst(t_ml **head);
+u_int8_t ml_clear_lst(t_ml_lists **lst, t_ml_lists **head);
 
 #endif

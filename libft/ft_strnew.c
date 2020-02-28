@@ -18,6 +18,6 @@ char	*ft_strnew(size_t size)
 
 	if (size + 1 == 0)
 		return (NULL);
-	new_str = (char *)ft_memalloc(size + 1);
+	new_str = (char *) ft_memalloc(size + 1, 0);
 	return (new_str);
 }

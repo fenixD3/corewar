@@ -14,11 +14,11 @@
 #include <get_next_line.h>
 #include "file_to_list.h"
 
-void		add_line_lst(t_fline **head, t_fline **tail, char *line)
+void add_line_lst(t_fline **head, t_fline **tail, char *line, u_int32_t lst_num)
 {
 	t_fline *new;
 
-	if (!(new = (t_fline*)ml_malloc(sizeof(t_fline))))
+	if (!(new = (t_fline*)ml_malloc(sizeof(t_fline), lst_num)))
 		go_exit("ERROR: can't alloc memory");
 	new->next = NULL;
 	if (!*head)
@@ -41,6 +41,6 @@ t_fline		*file_to_list(int fd)
 	line = NULL;
 
 	while (get_next_line(fd, &line) > 0)
-		add_line_lst(&head, &tail, line);
+		add_line_lst(&head, &tail, line, 0);
 	return (head);
 }

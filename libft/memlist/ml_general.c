@@ -13,7 +13,7 @@
 #include "blackbox_memlist.h"
 #include "libft.h"
 
-void		*ml_malloc(size_t size, uint32_t list_num)
+void		*ml_malloc(size_t size, u_int32_t list_num)
 {
 	void *data;
 
@@ -26,12 +26,12 @@ void		*ml_malloc(size_t size, uint32_t list_num)
 	return (data);
 }
 
-void		ml_free(void *ptr, uint32_t list_num)
+void		ml_free(void *ptr, u_int32_t list_num)
 {
 	ml_static_lists(ptr, ML_DELELEM, list_num);
 }
 
-void		ml_free_list(uint32_t list_num)
+void		ml_free_list(u_int32_t list_num)
 {
 	ml_static_lists(NULL, ML_CLEARLIST, list_num);
 }

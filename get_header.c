@@ -31,7 +31,7 @@ static int	set_string(header_t *header, char *line, _Bool its_name, _Bool new)
 		else
 			go_exit((its_name) ? "Champion name too long (Max length 128)" : "Champion comment too long (Max length 2048)"); /// нужно выводить по PROG_NAME_LENGTH : COMMENT_LENGTH
 	}
-	else if
+//	else if
 	return (0);
 }
 

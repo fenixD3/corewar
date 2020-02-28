@@ -13,7 +13,7 @@
 #include <libft/libft.h>
 #include "blackbox_memlist.h"
 
-void ml_clear_all_lists(t_ml_lists *lst, t_ml_lists *head)
+void		ml_clear_all_lists(t_ml_lists *lst, t_ml_lists *head)
 {
 	t_ml_lists *prev;
 
@@ -43,7 +43,7 @@ _Bool		ml_list_del_elem(t_ml_lists **lst, t_ml_lists **head)
 	return (0);
 }
 
-u_int8_t ml_clear_lst(t_ml_lists **lst, t_ml_lists **head)
+u_int8_t	ml_clear_lst(t_ml_lists **lst, t_ml_lists **head)
 {
 	t_ml *cur;
 	t_ml *prev;

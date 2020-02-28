@@ -13,7 +13,8 @@
 #include "libft.h"
 #include "blackbox_memlist.h"
 
-void ml_innerlist(void *ptr, u_int8_t rule, t_ml_lists **lst, t_ml_lists **head)
+void	ml_innerlist(void *ptr, u_int8_t rule,
+											t_ml_lists **lst, t_ml_lists **head)
 {
 	if (rule == ML_MALLOC)
 	{
@@ -34,9 +35,6 @@ void	ml_static_lists(void *ptr, u_int8_t rule, u_int32_t list_num)
 	static	t_ml_lists	*lst;
 	t_ml_lists			*head;
 
-
-
-
 	if (rule == ML_CLEARALL)
 	{
 		ml_clear_all_lists(lst, NULL);
@@ -50,8 +48,8 @@ void	ml_static_lists(void *ptr, u_int8_t rule, u_int32_t list_num)
 		if (rule == ML_MALLOC)
 			lst = add_ml_list(list_num, &lst);
 		else
-			go_exit("COMPILE ERROR: you want delete element(s) in memory group what does not exist");
-
+			go_exit("COMPILE ERROR: you want delete element(s) in memory \
+group what does not exist");
 	ml_innerlist(ptr, rule, &lst, &head);
 	if (head)
 		lst = head;

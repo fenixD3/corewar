@@ -43,8 +43,8 @@ t_ml_lists		*add_ml_list(u_int32_t list_num, t_ml_lists **cur);
 t_ml			*ml_create(void *ptr);
 _Bool			ml_push_front(t_ml **head, t_ml *new);
 
-void ml_clear_all_lists(t_ml_lists *lst, t_ml_lists *head);
+void			ml_clear_all_lists(t_ml_lists *lst, t_ml_lists *head);
 void			ml_delelem(t_ml **head, void *ptr);
-u_int8_t ml_clear_lst(t_ml_lists **lst, t_ml_lists **head);
+u_int8_t		ml_clear_lst(t_ml_lists **lst, t_ml_lists **head);
 
 #endif

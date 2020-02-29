@@ -19,6 +19,21 @@
 #define ML_FLST 1
 #define ML_TOKEN 2
 
+
+typedef struct	s_token_sec
+{
+	_Bool	name;
+	_Bool	comment;
+	_Bool	str_name;
+	_Bool	str_comment;
+	_Bool	command;
+	_Bool	label;
+	_Bool	arg;
+	_Bool	separator;
+	_Bool	new_line_name;
+	_Bool	new_line_comment;
+}				t_token_sec;
+
 typedef enum	s_token_type
 {
 	NAME = 1,

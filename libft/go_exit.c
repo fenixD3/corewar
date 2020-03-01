@@ -12,7 +12,7 @@
 
 #include <libft.h>
 
-int	go_exit(char *error)
+int		go_exit(char *error)
 {
 	if (error)
 		ft_putendl(error);

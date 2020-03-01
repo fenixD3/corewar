@@ -14,14 +14,14 @@
 #include "libft.h"
 #include "memlist.h"
 
-char *ft_strdup(const char *src, u_int32_t lst_num)
+char			*ft_strdup(const char *src)
 {
 	int		len;
 	char	*new_str;
 
 	new_str = NULL;
 	len = ft_strlen(src);
-	new_str = (char *)ml_malloc(sizeof(char) * (len + 1), lst_num);
+	new_str = (char *)ml_malloc(sizeof(char) * (len + 1));
 	if (new_str == NULL)
 		return (NULL);
 	ft_strcpy(new_str, src);

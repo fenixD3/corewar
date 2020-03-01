@@ -12,8 +12,6 @@
 
 #include "libft.h"
 
-#include <stdio.h>
-
 static size_t	len_num(int num)
 {
 	if (num >= 0 && num <= 9)

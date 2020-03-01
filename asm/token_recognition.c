@@ -14,6 +14,7 @@
 #include "asm.h"
 #include "libword.h"
 
+/*
 t_arg	*add_arg(char *str, t_arg_type type)
 {
 	t_arg *new;
@@ -84,3 +85,4 @@ void	token_recognition(char *str, t_token *token, _Bool end)
 		token->type = STRING;
 
 }
+*/

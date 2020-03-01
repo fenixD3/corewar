@@ -6,7 +6,7 @@
 /*   By: ylila <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/02 12:36:34 by ylila             #+#    #+#             */
-/*   Updated: 2020/02/26 15:50:04 by yas              ###   ########.fr       */
+/*   Updated: 2020/02/13 21:21:34 by ylila            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 # include <string.h>
 # include <stdlib.h>
 # include <unistd.h>
-
+# include <stdint.h>
 # include "memlist.h"
 
 void			*ft_memset(void *b, int c, size_t len);
@@ -38,7 +38,7 @@ char			*ft_strstr(const char *str, const char *to_find);
 char			*ft_strnstr(const char *str, const char *to_find, size_t len);
 char			*ft_strchr(const char *s, int c);
 char			*ft_strrchr(const char *s, int c);
-char *ft_strdup(const char *src, u_int32_t lst_num);
+char			*ft_strdup(const char *src, u_int32_t lst_num);
 
 int				ft_atoi(const char *str);
 
@@ -50,7 +50,7 @@ int				ft_isprint(int c);
 int				ft_toupper(int c);
 int				ft_tolower(int c);
 
-void *ft_memalloc(size_t size, u_int32_t lst_num);
+void			*ft_memalloc(size_t size);
 void			ft_memdel(void **ap);
 
 char			*ft_strnew(size_t size);
@@ -84,6 +84,12 @@ typedef struct	s_list
 	struct s_list	*next;
 }				t_list;
 
+struct			s_comp
+{
+	int32_t		exp_val;
+	uint64_t	mant;
+};
+
 t_list			*ft_lstnew(const void *content, size_t content_size);
 void			ft_lstdelone(t_list **alst, void (*del)(void *, size_t));
 void			ft_lstdel(t_list **alst, void (*del)(void *, size_t));
@@ -102,12 +108,12 @@ int				ft_isdigit(int c);
 int				ft_isspace(int c);
 
 char			*ft_strjoinre(char **s1, char const *s2);
-char *ft_strndup(const char *s1, size_t n, u_int32_t lst_num);
+char			*ft_strndup(const char *s1, size_t n, u_int32_t lst_num);
 size_t			ft_strlcpy(char *dst, const char *src, size_t size);
 char			*ft_sstrchr(const char *s, int c);
 
-t_list *
-ft_lstcirc_strnew(char const *content, size_t content_size, u_int32_t lst_num);
+t_list			*ft_lstcirc_strnew(char const *content, size_t content_size,
+														u_int32_t lst_num);
 t_list			*ft_lstcirc_add(t_list **cur, char const *content,
 														size_t content_size);
 t_list			*ft_lstcirc_delelem(t_list **del_elem);
@@ -115,6 +121,12 @@ int				ft_lstcirc_findcontent_size(t_list **lst, size_t content_size);
 
 int				ft_is_complex_string(char *str, char delim);
 
-int go_exit(char *error);
+double			ft_floor(double num);
+long double		ft_flooril(long double num);
+double			ft_log2(long double num);
+double			ft_log10(long double num);
+char			*ft_reverse(char *str);
+int32_t			ft_abs(int32_t num);
+int				go_exit(char *error);
 
 #endif

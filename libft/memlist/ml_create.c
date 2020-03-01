@@ -26,7 +26,8 @@ t_ml_lists	*create_ml_lst_elem(u_int32_t list_num)
 	return (new);
 }
 
-t_ml_lists *add_ml_list(u_int32_t list_num, t_ml_lists **cur, t_ml_lists **head)
+t_ml_lists	*add_ml_list(u_int32_t list_num, t_ml_lists **cur,
+															t_ml_lists **head)
 {
 	t_ml_lists	*new;
 

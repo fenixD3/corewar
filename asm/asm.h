@@ -18,6 +18,7 @@
 
 #define ML_FLST 1
 #define ML_TOKEN 2
+#define ML_ARGUMENT 3
 
 typedef enum	s_token_type
 {
@@ -28,9 +29,11 @@ typedef enum	s_token_type
 	COMMENT,
 	LABEL,
 	ARGUMENT,
+	ARGUMENT_LABEL,
 	SEPARATOR,
 	NEW_LINE,
-	END
+	END,
+	INSTRUCTION
 }				t_token_type;
 
 

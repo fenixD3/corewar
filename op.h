@@ -34,15 +34,17 @@
 #define IDX_MOD					(MEM_SIZE / 8)
 #define CHAMP_MAX_SIZE			(MEM_SIZE / 6)
 
-#define COMMENT_CHAR		'#'
+#define COMMENT_CHAR			'#'
 #define ALT_COMMENT_CHAR		';'
 #define LABEL_CHAR				':'
 #define DIRECT_CHAR				'%'
 #define REGISTER_CHAR			'r'
 #define SEPARATOR_CHAR			','
 
-#define DELIMITERS				" \t,"
+#define SPECIALS				",:%"
+#define SPACES					" \t"
 #define COMMENTS				"#;"
+#define DELIMITERS				SPACES SPECIALS COMMENTS
 
 #define LABEL_CHARS				"abcdefghijklmnopqrstuvwxyz_0123456789"
 

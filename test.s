@@ -1,6 +1,6 @@
 .name       ""
-.comment    ""
 
+.comment    "ett"
 loop:
         sti r1, %:live, %1
 live:

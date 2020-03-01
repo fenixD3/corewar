@@ -20,21 +20,9 @@
 #define ML_TOKEN 2
 
 
-typedef struct	s_token_sec
-{
-	_Bool	name;
-	_Bool	comment;
-	_Bool	str_name;
-	_Bool	str_comment;
-	_Bool	command;
-	_Bool	label;
-	_Bool	arg;
-	_Bool	separator;
-	_Bool	new_line_name;
-	_Bool	new_line_comment;
-}				t_token_sec;
 
-typedef enum	s_token_type
+
+typedef enum		s_token_type
 {
 	NAME = 1,
 	COMMENT_PROG,
@@ -46,11 +34,9 @@ typedef enum	s_token_type
 	SEPARATOR,
 	NEW_LINE,
 	END
-}				t_token_type;
+}					t_token_type;
 
-
-
-typedef struct	s_token
+typedef struct		s_token
 {
 	t_token_type 	type;
 	u_int32_t		row;
@@ -58,7 +44,7 @@ typedef struct	s_token
 	void 			*content;
 	struct s_token	*prev;
 	struct s_token	*next;
-}				t_token;
+}					t_token;
 
 typedef struct	s_label
 {

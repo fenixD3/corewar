@@ -12,6 +12,7 @@
 
 #include <libft.h>
 
+
 int	go_exit(char *error)
 {
 	if (error)

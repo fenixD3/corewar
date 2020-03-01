@@ -20,8 +20,6 @@
 #define ML_TOKEN 2
 
 
-
-
 typedef enum		s_token_type
 {
 	NAME = 1,

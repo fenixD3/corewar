@@ -4,6 +4,9 @@
 #include "op.h"
 #include "file_to_list.h"
 #include <stdlib.h>
+#include <stdio.h>
+#include "libft.h"
+
 
 #define ML_CHECK_LST 3
 
@@ -22,5 +25,7 @@ typedef struct		s_token_sec
 	_Bool	new_line_name;
 	_Bool	new_line_comment;
 }					t_token_sec;
+
+int	token_exit(char *error, u_int32_t row, u_int32_t column);
 
 #endif

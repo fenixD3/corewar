@@ -1,18 +1,10 @@
 
 #include <stdbool.h>
-#include <stdio.h>
-#include "libft.h"
 #include "asm.h"
 #include "asm_dasha.h"
 
 
-int	token_exit(char *error, u_int32_t row, u_int32_t column)
-{
-	if (error)
-		printf("%s, [row: %d, column: %d]\n", error, row, column);
-	exit(1);
-	return (0);
-}
+
 
 void 	init_check_list(t_token_sec **check_list)
 {

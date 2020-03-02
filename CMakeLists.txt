@@ -39,19 +39,15 @@ add_executable(CoreWar_Hub
         libft/ft_isprint.c
         libft/ft_isspace.c
         libft/ft_isupper.c
-        libft/ft_itoa.c
+        libft/ml_itoa.c
         libft/ft_lstadd.c
-        libft/ft_lstcirc_add.c
-        libft/ft_lstcirc_delelem.c
-        libft/ft_lstcirc_findcontent_size.c
-        libft/ft_lstcirc_strnew.c
         libft/ft_lstdel.c
         libft/ft_lstdelone.c
         libft/ft_lstiter.c
         libft/ft_lstmap.c
         libft/ft_lstnew.c
         libft/ft_lstpush.c
-        libft/ft_memalloc.c
+        libft/ml_memalloc.c
         libft/ft_memccpy.c
         libft/ft_memchr.c
         libft/ft_memcmp.c
@@ -77,34 +73,34 @@ add_executable(CoreWar_Hub
         libft/ft_strcmp.c
         libft/ft_strcpy.c
         libft/ft_strdel.c
-        libft/ft_ml_strdup.c
+        libft/ml_strdup.c
         libft/ft_strequ.c
         libft/ft_striter.c
         libft/ft_striteri.c
-        libft/ft_strjoin.c
-        libft/ft_strjoinre.c
+        libft/ml_strjoin.c
+        libft/ml_strjoinre.c
         libft/ft_strlcat.c
         libft/ft_strlcpy.c
         libft/ft_strlen.c
-        libft/ft_strmap.c
-        libft/ft_strmapi.c
+        libft/ml_strmap.c
+        libft/ml_strmapi.c
         libft/ft_strncat.c
         libft/ft_strncmp.c
         libft/ft_strncpy.c
-        libft/ft_strndup.c
+        libft/ml_strndup.c
         libft/ft_strnequ.c
-        libft/ft_strnew.c
+        libft/ml_strnew.c
         libft/ft_strnstr.c
         libft/ft_strrchr.c
-        libft/ft_strsplit.c
+        libft/ml_strsplit.c
         libft/ft_strstr.c
-        libft/ft_strsub.c
-        libft/ft_strtrim.c
+        libft/ml_strsub.c
+        libft/ml_strtrim.c
         libft/ft_tolower.c
         libft/ft_toupper.c
         libft/go_exit.c
         libft/get_next_line.h
-        libft/get_next_line.c
+        libft/ml_get_next_line.c
         libft/libft.h
         libft/memlist.h
         fast_strsplit.c

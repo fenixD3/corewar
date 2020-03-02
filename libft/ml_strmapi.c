@@ -1,44 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_itoa.c                                          :+:      :+:    :+:   */
+/*   ml_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ylila <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/04/08 18:59:32 by ylila             #+#    #+#             */
-/*   Updated: 2019/08/10 19:41:03 by mdeanne          ###   ########.fr       */
+/*   Created: 2019/04/07 19:05:46 by ylila             #+#    #+#             */
+/*   Updated: 2019/08/10 19:41:04 by mdeanne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-#include <stdio.h>
-
-static size_t	len_num(int num)
+char	*ml_strmapi(const char *s, char (*f)(unsigned int, char),
+															u_int32_t lst_num)
 {
-	if (num >= 0 && num <= 9)
-		return (1);
-	return (len_num(num / 10) + 1);
-}
+	unsigned int	i;
+	char			*new_str;
+	char			*ptr2new;
 
-char			*ft_itoa(int n)
-{
-	char			*str;
-	size_t			len;
-	unsigned int	nbr;
-
-	len = len_num(n);
-	if (!(str = ft_strnew(len)))
+	if (!s || !f || !(new_str = ml_strnew(ft_strlen(s), lst_num)))
 		return (NULL);
-	nbr = (n < 0) ? (unsigned int)(-n) : (unsigned int)(n);
-	if (nbr == 0)
-		*str = '0';
-	while (len-- && nbr)
+	i = 0;
+	ptr2new = new_str;
+	while (s[i])
 	{
-		str[len] = (nbr % 10) + '0';
-		nbr /= 10;
+		*ptr2new++ = (*f)(i, s[i]);
+		++i;
 	}
-	if (n < 0)
-		str[len] = '-';
-	return (str);
+	return (new_str);
 }

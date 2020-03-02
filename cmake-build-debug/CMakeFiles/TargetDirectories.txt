@@ -1,3 +1,0 @@
-/Users/ylila/CoreWar_Hub/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/ylila/CoreWar_Hub/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/ylila/CoreWar_Hub/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir

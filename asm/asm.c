@@ -44,9 +44,13 @@
 //	return (0);
 //}
 
+#include<stdlib.h>
+#include<stdio.h>
+#include "ft_ptintf.h"
+
 int main(void)
 {
-	int fd = open("/Users/mdeanne/corewar/vm_champs/test.cor", O_RDONLY);
+/*	int fd = open("/Users/mdeanne/corewar/vm_champs/test.cor", O_RDONLY);
 	uint8_t buf[3000];
 	uint8_t *ptr;
 	int ret = read(fd, buf, 3000);
@@ -62,7 +66,10 @@ int main(void)
 
 		i++;
 		ptr++;
-	}
+	}*/
+
+
+	ft_printf("You are such a good preson %d\n", 128);
 
 	return (0);
 }

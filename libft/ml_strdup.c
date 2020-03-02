@@ -1,23 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memalloc.c                                      :+:      :+:    :+:   */
+/*   ml_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ylila <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/04/07 15:22:06 by ylila             #+#    #+#             */
+/*   Created: 2019/03/06 22:14:00 by ylila             #+#    #+#             */
 /*   Updated: 2019/08/10 19:41:04 by mdeanne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 #include "libft.h"
+#include "memlist.h"
 
-void	*ft_memalloc(size_t size)
+char	*ml_strdup(const char *src, u_int32_t lst_num)
 {
-	void *new_mem;
+	int		len;
+	char	*new_str;
 
-	if (!(new_mem = malloc(size)))
+	new_str = NULL;
+	len = ft_strlen(src);
+	new_str = (char *)ml_malloc(sizeof(char) * (len + 1), lst_num);
+	if (new_str == NULL)
 		return (NULL);
-	return (ft_memset(new_mem, 0, size));
+	ft_strcpy(new_str, src);
+	return (new_str);
 }

@@ -65,11 +65,14 @@ t_ml		*ml_create(void *ptr)
 	return (new);
 }
 
-_Bool		ml_push_front(t_ml **head, t_ml *new)
+_Bool		ml_push_front(t_ml_lists **lst, t_ml *new)
 {
+	t_ml **head;
+
+	head = &(*lst)->list;
 	if (!new)
 	{
-		ml_clear_lst(head, NULL);
+		ml_clear_lst(lst, NULL);
 		return (0);
 	}
 	if (head && *head)

@@ -26,7 +26,7 @@ t_arg	*add_arg(char *str, t_arg_type type)
 		new->num = ft_atoi(str + 1);
 	else if (type & T_LAB)
 	{
-		new->content = ft_strndup(str,
+		new->content = ml_strndup(str,
 				ft_skipword(str, DELIMITERS) - str, ML_ARGUMENT);
 	}
 }

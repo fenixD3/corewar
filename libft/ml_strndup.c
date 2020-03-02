@@ -1,36 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstcirc_strnew.c                                :+:      :+:    :+:   */
+/*   ml_strndup.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mdeanne <mdeanne@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/06/27 17:22:55 by mdeanne           #+#    #+#             */
-/*   Updated: 2019/06/27 17:22:55 by mdeanne          ###   ########.fr       */
+/*   Created: 2019/04/13 12:39:55 by mdeanne           #+#    #+#             */
+/*   Updated: 2020/02/26 15:50:56 by yas              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include "memlist.h"
 
-t_list	*ft_lstcirc_strnew(char const *content, size_t content_size)
+char	*ml_strndup(const char *s1, size_t n, u_int32_t lst_num)
 {
-	t_list *new;
+	char	*str;
+	size_t	len;
 
-	new = (t_list*)malloc(sizeof(t_list));
-	if (new == NULL)
-		return (NULL);
-	if (content)
-	{
-		new->content = (void *)ft_strdup(content);
-		if (!(new->content))
-		{
-			free(new);
-			return (NULL);
-		}
-	}
+	len = ft_strlen(s1);
+	if (len < n)
+		str = (char*)ml_malloc(sizeof(str) * (len + 1), lst_num);
 	else
-		new->content = NULL;
-	new->content_size = content_size;
-	new->next = new;
-	return (new);
+		str = (char*)ml_malloc(sizeof(str) * (n + 1), lst_num);
+	if (str == NULL)
+		return (NULL);
+	ft_strlcpy(str, s1, n + 1);
+	return (str);
 }

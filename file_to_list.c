@@ -40,7 +40,7 @@ t_fline *file_to_list(int fd, uint32_t lst_num)
 	head = NULL;
 	line = NULL;
 
-	while (get_next_line(fd, &line) > 0)
+	while (ml_get_next_line(fd, &line, 0) > 0)
 		add_line_lst(&head, &tail, line, lst_num);
 	return (head);
 }

@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_itoa.c                                          :+:      :+:    :+:   */
+/*   ml_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ylila <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -12,8 +12,6 @@
 
 #include "libft.h"
 
-#include <stdio.h>
-
 static size_t	len_num(int num)
 {
 	if (num >= 0 && num <= 9)
@@ -21,14 +19,14 @@ static size_t	len_num(int num)
 	return (len_num(num / 10) + 1);
 }
 
-char			*ft_itoa(int n)
+char			*ml_itoa(int n, u_int32_t lst_num)
 {
 	char			*str;
 	size_t			len;
 	unsigned int	nbr;
 
 	len = len_num(n);
-	if (!(str = ft_strnew(len)))
+	if (!(str = ml_strnew(len, lst_num)))
 		return (NULL);
 	nbr = (n < 0) ? (unsigned int)(-n) : (unsigned int)(n);
 	if (nbr == 0)

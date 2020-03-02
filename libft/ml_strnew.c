@@ -1,23 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memalloc.c                                      :+:      :+:    :+:   */
+/*   ml_strnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ylila <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/04/07 15:22:06 by ylila             #+#    #+#             */
+/*   Created: 2019/04/07 16:16:09 by ylila             #+#    #+#             */
 /*   Updated: 2019/08/10 19:41:04 by mdeanne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
-void	*ft_memalloc(size_t size)
+char	*ml_strnew(size_t size, u_int32_t lst_num)
 {
-	void *new_mem;
+	char *new_str;
 
-	if (!(new_mem = malloc(size)))
+	if (size + 1 == 0)
 		return (NULL);
-	return (ft_memset(new_mem, 0, size));
+	new_str = (char *)ml_memalloc(size + 1, lst_num);
+	return (new_str);
 }

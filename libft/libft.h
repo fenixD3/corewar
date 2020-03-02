@@ -38,7 +38,7 @@ char			*ft_strstr(const char *str, const char *to_find);
 char			*ft_strnstr(const char *str, const char *to_find, size_t len);
 char			*ft_strchr(const char *s, int c);
 char			*ft_strrchr(const char *s, int c);
-char			*ft_strdup(const char *src, u_int32_t lst_num);
+char			*ft_strdup(const char *src);
 
 int				ft_atoi(const char *str);
 
@@ -108,12 +108,12 @@ int				ft_isdigit(int c);
 int				ft_isspace(int c);
 
 char			*ft_strjoinre(char **s1, char const *s2);
-char			*ft_strndup(const char *s1, size_t n, u_int32_t lst_num);
+
+char			*ft_strndup(const char *s1, size_t n);
 size_t			ft_strlcpy(char *dst, const char *src, size_t size);
 char			*ft_sstrchr(const char *s, int c);
 
-t_list			*ft_lstcirc_strnew(char const *content, size_t content_size,
-														u_int32_t lst_num);
+t_list			*ft_lstcirc_strnew(char const *content, size_t content_size);
 t_list			*ft_lstcirc_add(t_list **cur, char const *content,
 														size_t content_size);
 t_list			*ft_lstcirc_delelem(t_list **del_elem);
@@ -128,5 +128,7 @@ double			ft_log10(long double num);
 char			*ft_reverse(char *str);
 int32_t			ft_abs(int32_t num);
 int				go_exit(char *error);
+
+int				get_next_line(const int fd, char **line);
 
 #endif

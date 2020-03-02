@@ -26,10 +26,13 @@ SRCS = ft_strlen.c ft_strcmp.c ft_strncmp.c ft_strcpy.c ft_strncpy.c \
 	ft_putstr.c ft_putendl.c ft_putnbr.c ft_putchar_fd.c ft_putstr_fd.c \
 	ft_putendl_fd.c ft_putnbr_fd.c ft_lstnew.c ft_lstdelone.c ft_lstdel.c \
 	ft_lstadd.c ft_lstiter.c ft_lstpush.c ft_pow.c ft_fib.c ft_sqrt.c \
-	ft_isspace.c get_next_line.c ft_is_complex_string.c \
-	ft_lstcirc_add.c ft_lstcirc_delelem.c ft_lstcirc_findcontent_size.c \
-	ft_strjoinre.c ft_strndup.c ft_lstcirc_strnew.c ft_strlcpy.c ft_sstrchr.c \
-	ft_floor.c ft_abs.c ft_reverse.c
+	ft_isspace.c ft_is_complex_string.c ft_lstcirc_add.c ft_lstcirc_delelem.c \
+	ft_lstcirc_findcontent_size.c ft_strjoinre.c ft_strndup.c \
+	ft_lstcirc_strnew.c ft_strlcpy.c ft_sstrchr.c ft_floor.c ft_abs.c \
+	ft_reverse.c get_next_line.c \
+	ml_strdup.c ml_memalloc.c ml_strnew.c ml_strmap.c ml_strmapi.c ml_strsub.c \
+	ml_strjoin.c ml_strtrim.c ml_strsplit.c ml_itoa.c ml_strjoinre.c \
+	ml_strndup.c ml_get_next_line.c
 
 SRC_ML_DIR = ./memlist/
 SRC_ML = ml_create.c ml_del.c ml_general.c

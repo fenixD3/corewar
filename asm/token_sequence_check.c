@@ -149,6 +149,8 @@ _Bool			token_sequence(t_token *token)
 
 void	main()
 {
+	t_arg *arg1;
+
 	t_token *new1;
 	t_token *new2;
 	t_token *new3;
@@ -160,6 +162,8 @@ void	main()
 	t_token *new9;
 	t_token *new0;
 
+	arg1->type = COMMAND;
+	arg1->num = T_DIR;
 
 	new9 = (t_token*)ml_malloc(sizeof(t_token), ML_TOKEN);
 	new9->row = 1;

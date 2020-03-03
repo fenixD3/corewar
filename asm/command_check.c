@@ -28,189 +28,176 @@ void	check_aff(t_token *token)
 		           " of type T_REG", token->row, token->column);
 }
 
-_Bool	check_ld(t_token *token)
+void    check_ld(t_token *token)
 {
 	t_arg	*arg;
-	t_arg	*nxt_arg;
+	int 	i;
 	char    *error;
+	t_token	*tok_cp;
 
+	i = 0;
 	error = "ERROR: Command 'ld'/'lld' should be followed exactly"
-	        " by two arguments of types T_DIR/T_IND, T_REG";
-	arg = (t_arg*)token->content;
-	if (token->next != NULL)
-		nxt_arg = (t_arg *) (token->next->content);
-	else
-		token_exit(error, token->row, token->column);
-	if ((arg->type & T_DIR || arg->type & T_IND) && (nxt_arg->type & T_REG))
-		return (true);
-	else
-		token_exit(error, token->row, token->column);
-
-
-	if (token->next->next != NULL)
+			" by two arguments of types T_DIR/T_IND, T_REG";
+	tok_cp = token;
+	while (token->next != NULL && token->type != NEW_LINE)
 	{
-		if (token->next->next->type != NEW_LINE)
-			token_exit(error, token->row, token->column);
+		if (token->type == ARGUMENT)
+		{
+			arg = (t_arg*)token->content;
+			if (i == 0 && !(arg->type & T_DIR || arg->type & T_IND))
+				token_exit(error, token->row, token->column);
+			if (i == 2 && !(arg->type & T_REG))
+				token_exit(error, token->row, token->column);
+			if (i++ == 4 && (arg->type))
+				token_exit(error, token->row, token->column);
+		}
+		token = token->next;
 	}
-	else
-		token_exit(error, token->row, token->column);
+	token = tok_cp;
 }
 
-void	check_st(t_token *token)
+void    check_st(t_token *token)
 {
 	t_arg	*arg;
-	t_arg	*nxt_arg;
+	int 	i;
 	char    *error;
+	t_token	*tok_cp;
 
+	i = 0;
 	error = "ERROR: Command 'st' should be followed exactly"
-	        " by two arguments of types T_REG, T_REG/T_IND";
-	arg = (t_arg*)token->content;
-	if (token->next != NULL)
-		nxt_arg = (t_arg *) (token->next->content);
-	else
-		token_exit(error, token->row, token->column);
-	if (!((nxt_arg->type & T_REG || nxt_arg->type & T_IND) && (arg->type & T_REG)))
-		token_exit(error, token->row, token->column);
-
-	if (token->next->next != NULL)
+			" by two arguments of types T_REG, T_REG/T_IND";
+	tok_cp = token;
+	while (token->next != NULL && token->type != NEW_LINE)
 	{
-		if (token->next->next->type != NEW_LINE)
-			token_exit(error, token->row, token->column);
+		if (token->type == ARGUMENT)
+		{
+			arg = (t_arg*)token->content;
+			if (i == 0 && !(arg->type & T_REG))
+				token_exit(error, token->row, token->column);
+			if (i == 2 && !(arg->type & T_REG || arg->type & T_IND))
+				token_exit(error, token->row, token->column);
+			if (i++ == 4 && (arg->type))
+				token_exit(error, token->row, token->column);
+		}
+		token = token->next;
 	}
-	else
-		token_exit(error, token->row, token->column);
+	token = tok_cp;
 }
 
-_Bool	tree_reg(t_token *token)
+void    check_add(t_token *token)
 {
 	t_arg	*arg;
-	t_arg	*nxt_arg;
-	t_arg	*nxt_nxt_arg;
-
-	arg = (t_arg*)token->content;
-	if (token->next != NULL)
-		nxt_arg = (t_arg *) (token->next->content);
-	else
-		return (false);
-	if (token->next->next != NULL)
-		nxt_nxt_arg = (t_arg *) (token->next->next->content);
-	else
-		return (false);
-	if (nxt_arg->type & T_REG && arg->type & T_REG && nxt_nxt_arg->type & T_REG)
-		return (true);
-	else
-		return (false);
-}
-
-void	check_add(t_token *token)
-{
-	char    *err;
-
-	err = "ERROR: Command 'add'/'sub' should be followed exactly"
-	      " by tree arguments each of type T_REG";
-	if (!tree_reg(token))
-		token_exit(err, token->row, token->column);
-
-	if (token->next->next->next != NULL)
-	{
-		if (token->next->next->next->type != NEW_LINE)
-			token_exit(err, token->row, token->column);
-	}
-	else
-		token_exit(err, token->row, token->column);
-}
-
-void	check_and(t_token *token)
-{
-	t_arg	*arg;
-	t_arg	*nxt_arg;
-	t_arg	*nxt_nxt_arg;
+	int 	i;
 	char    *error;
+	t_token	*tok_cp;
 
-	error = "ERROR: Command 'and'/'or'/'xor' should be followed by 3 arguments,"
-	        " of types T_REG/T_DIR/T_IND, T_REG/T_DIR/T_IND and T_REG";
-	arg = (t_arg*)token->content;
-	if (token->next != NULL)
-		nxt_arg = (t_arg *) (token->next->content);
-	else
-		token_exit(error, token->row, token->column);
-	if (token->next->next != NULL)
-		nxt_nxt_arg = (t_arg *) (token->next->next->content);
-	else
-		token_exit(error, token->row, token->column);
-	if (!(nxt_nxt_arg->type & T_REG))
-		token_exit(error, token->row, token->column);
-	else
-		if (!((arg->type & T_REG || arg->type & T_DIR || arg->type & T_IND) &&
-		((nxt_arg->type & T_REG) || (nxt_arg->type & T_DIR) ||
-		(nxt_arg->type & T_IND))))
-			token_exit(error, token->row, token->column);
-
-	if (token->next->next->next != NULL)
+	i = 0;
+	error = "ERROR: Command 'add'/'sub' should be followed exactly"
+			" by tree arguments each of type T_REG";
+	tok_cp = token;
+	while (token->next != NULL && token->type != NEW_LINE)
 	{
-		if (token->next->next->next->type != NEW_LINE)
-			token_exit(error, token->row, token->column);
+		if (token->type == ARGUMENT)
+		{
+			arg = (t_arg*)token->content;
+			if (i == 0 && !(arg->type & T_REG))
+				token_exit(error, token->row, token->column);
+			if (i == 2 && !(arg->type & T_REG))
+				token_exit(error, token->row, token->column);
+			if (i++ == 4 && !(arg->type & T_REG))
+				token_exit(error, token->row, token->column);
+		}
+		token = token->next;
 	}
-	else
-		token_exit(error, token->row, token->column);
+	token = tok_cp;
+}
+
+void    check_and(t_token *token)
+{
+	t_arg	*arg;
+	int 	i;
+	char    *error;
+	t_token	*tok_cp;
+
+	i = 0;
+	error = "ERROR: Command 'and'/'or'/'xor' should be followed by 3 arguments,"
+			" of types T_REG/T_DIR/T_IND, T_REG/T_DIR/T_IND and T_REG";
+	tok_cp = token;
+	while (token->next != NULL && token->type != NEW_LINE)
+	{
+		if (token->type == ARGUMENT)
+		{
+			arg = (t_arg*)token->content;
+			if (i == 0 && !(arg->type & T_REG || arg->type & T_DIR
+				|| arg->type & T_IND))
+				token_exit(error, token->row, token->column);
+			if (i == 2 && !(arg->type & T_REG || arg->type & T_DIR
+				|| arg->type & T_IND))
+				token_exit(error, token->row, token->column);
+			if (i++ == 4 && !(arg->type & T_REG))
+				token_exit(error, token->row, token->column);
+		}
+		token = token->next;
+	}
+	token = tok_cp;
 }
 
 void    check_ldi(t_token *token)
 {
 	t_arg	*arg;
-	t_arg	*nxt_arg;
-	t_arg	*nxt_nxt_arg;
+	int 	i;
 	char    *error;
+	t_token	*tok_cp;
 
+	i = 0;
 	error = "ERROR: Command 'ldi'/'lldi' should be followed exactly "
-	        "by tree arguments, of types T_REG/T_DIR/T_IND,"
-	        "T_REG/T_DIR and T_REG";
-	arg = (t_arg*)token->content;
-	if (token->next != NULL)
-		nxt_arg = (t_arg *) (token->next->content);
-	else
-		token_exit(error, token->row, token->column);
-	if (token->next->next != NULL)
-		nxt_nxt_arg = (t_arg *) (token->next->next->content);
-	else
-		token_exit(error, token->row, token->column);
-	if (token->next->next->next->type != NEW_LINE)
-		token_exit(error, token->row, token->column);
-	if (!(nxt_nxt_arg->type & T_REG))
-		token_exit(error, token->row, token->column);
-	else
-	if (!((arg->type & T_REG || arg->type & T_DIR || arg->type & T_IND) &&
-	      ((nxt_arg->type & T_REG) || (nxt_arg->type & T_DIR))))
-		token_exit(error, token->row, token->column);
+			"by tree arguments, of types T_REG/T_DIR/T_IND, T_REG/T_DIR and T_REG";
+	tok_cp = token;
+	while (token->next != NULL && token->type != NEW_LINE)
+	{
+		if (token->type == ARGUMENT)
+		{
+			arg = (t_arg*)token->content;
+			if (i == 0 && !(arg->type & T_REG || arg->type & T_DIR
+				|| arg->type & T_IND))
+				token_exit(error, token->row, token->column);
+			if (i == 2 && !(arg->type & T_REG || arg->type & T_DIR))
+				token_exit(error, token->row, token->column);
+			if (i++ == 4 && !(arg->type & T_REG))
+				token_exit(error, token->row, token->column);
+		}
+		token = token->next;
+	}
+	token = tok_cp;
 }
 
 void    check_sti(t_token *token)
 {
 	t_arg	*arg;
-	t_arg	*nxt_arg;
-	t_arg	*nxt_nxt_arg;
+	int 	i;
 	char    *error;
+	t_token	*tok_cp;
 
+	i = 0;
 	error = "ERROR: Command 'sti' should be followed exactly "
-	        "by tree arguments, of types T_REG,"
-	        "T_REG/T_DIR/T_IND and T_REG/T_DIR";
-	arg = (t_arg*)token->content;
-	if (token->next != NULL)
-		nxt_arg = (t_arg *) (token->next->content);
-	else
-		token_exit(error, token->row, token->column);
-	if (token->next->next != NULL)
-		nxt_nxt_arg = (t_arg *) (token->next->next->content);
-	else
-		token_exit(error, token->row, token->column);
-	if (token->next->next->next->type != NEW_LINE)
-		token_exit(error, token->row, token->column);
-	if (!(arg->type & T_REG))
-		token_exit(error, token->row, token->column);
-	else
-		if (!((nxt_arg->type & T_REG || nxt_arg->type & T_DIR || nxt_arg->type & T_IND) &&
-	      ((nxt_nxt_arg->type & T_REG) || (nxt_nxt_arg->type & T_DIR))))
-			token_exit(error, token->row, token->column);
+			"by tree arguments, of types T_REG, T_REG/T_DIR/T_IND and T_REG/T_DIR";
+	tok_cp = token;
+	while (token->next != NULL && token->type != NEW_LINE)
+	{
+		if (token->type == ARGUMENT)
+		{
+			arg = (t_arg*)token->content;
+			if (i == 0 && !(arg->type & T_REG))
+				token_exit(error, token->row, token->column);
+			if (i == 2 && !(arg->type & T_REG || arg->type & T_DIR
+				|| arg->type & T_IND))
+				token_exit(error, token->row, token->column);
+			if (i++ == 4 && !(arg->type & T_REG || arg->type & T_DIR))
+				token_exit(error, token->row, token->column);
+		}
+		token = token->next;
+	}
+	token = tok_cp;
 }
 
 void    check_rest(t_token *token)

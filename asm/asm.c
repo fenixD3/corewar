@@ -50,26 +50,9 @@
 
 int main(void)
 {
-/*	int fd = open("/Users/mdeanne/corewar/vm_champs/test.cor", O_RDONLY);
-	uint8_t buf[3000];
-	uint8_t *ptr;
-	int ret = read(fd, buf, 3000);
-	ptr = buf;
-	int i = 0;
-	while (ret--)
-	{
-		printf("%x", *ptr);
-		if (i % 4 == 0)
-			printf(" ");
-		if (i % 32 == 0)
-			printf("\n");
-
-		i++;
-		ptr++;
-	}*/
-
-
-	ft_printf("You are such a good preson %d\n", 128);
+	t_fline *flst;
+	int fd = open("/Users/mdeanne/corewar/vm_champs/test.s", O_RDONLY);
+	flst = file_to_list(fd, 0);
 
 	return (0);
 }

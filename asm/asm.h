@@ -16,9 +16,15 @@
 #include "file_to_list.h"
 #include <stdlib.h>
 
-#define ML_FLST 1
-#define ML_TOKEN 2
-#define ML_ARGUMENT 3
+#define ML_FLST		1
+#define ML_TOKEN	2
+#define ML_ARGUMENT	3
+#define ML_T_CONTENT 4
+#define ML_LABEL	5
+
+
+#define ENDSTR		1
+#define NOTENDSTR	2
 
 typedef enum	s_token_type
 {
@@ -32,8 +38,7 @@ typedef enum	s_token_type
 	ARGUMENT_LABEL,
 	SEPARATOR,
 	NEW_LINE,
-	END,
-	INSTRUCTION
+	END
 }				t_token_type;
 
 
@@ -51,6 +56,7 @@ typedef struct	s_token
 typedef struct	s_label
 {
 	char			*name;
+	t_token 		*token;
 	struct s_label	*prev;
 	struct s_label	*next;
 }				t_label;
@@ -58,7 +64,7 @@ typedef struct	s_label
 typedef struct	s_argument
 {
 	t_token_type	type;
-	char 			*content;
+	void 			*content;
 	u_int32_t		num;
 }				t_arg;
 
@@ -66,12 +72,16 @@ typedef struct	s_parser_carriage
 {
 	u_int32_t		row;
 	u_int16_t		column;
-	t_fline			*flst;
-	t_token 		*last;
+	char			*line;
 }				t_pc;
 
-int				ft_wordequ(char *ethalon, char *str, char *delims);
+t_token *
+add_token(t_pc *pc, t_token **token_tail, t_label **label_tail, u_int8_t flag);
+void			add_label(char *str, t_token *token, t_label **tail, t_arg_type arg_type);
+t_arg           *add_arg(char *str, t_arg_type type);
+char			*add_string(char *str, t_token *token);
 
+void			token_fill(char *str, t_token *token, t_label **tail, u_int8_t flag);
 
 ///// not need
 

@@ -17,7 +17,7 @@ add_executable(CoreWar_Hub
         asm/ft_skipword.c
         asm/get_header.c
         asm/libword.h
-        asm/token_recognition.c
+        asm/token_fill.c
         asm/tokenizer.c
         asm/tokens_lst.c
         libft/memlist/blackbox_memlist.h

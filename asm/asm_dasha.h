@@ -26,6 +26,6 @@ typedef struct		s_token_sec
 	_Bool	new_line_comment;
 }					t_token_sec;
 
-int	token_exit(char *error, u_int32_t row, u_int32_t column);
+int					token_exit(char *error, t_token *token);
 
 #endif

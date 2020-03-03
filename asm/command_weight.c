@@ -4,7 +4,7 @@
 #include "asm.h"
 #include "asm_dasha.h"
 
-int		count_dir_weight(void *command_name)
+u_int32_t		count_dir_weight(void *command_name)
 {
 	if ((!ft_strcmp("live", command_name)) || (!ft_strcmp("ld", command_name))
 		|| (!ft_strcmp("st", command_name)) || (!ft_strcmp("add", command_name))
@@ -16,7 +16,7 @@ int		count_dir_weight(void *command_name)
 		return (2);
 }
 
-int			weight_arg(t_token *token)
+u_int32_t			weight_arg(t_token *token)
 {
 	t_arg	*arg;
 
@@ -29,9 +29,9 @@ int			weight_arg(t_token *token)
 		return (2);
 }
 
-int			command_weight(t_token *token)
+u_int32_t	command_weight(t_token *token)
 {
-	int		weight;
+	u_int32_t		weight;
 	t_token	*nxt_tok;
 
 	weight = 0;

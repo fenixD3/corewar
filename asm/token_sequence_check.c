@@ -2,7 +2,7 @@
 #include <stdbool.h>
 #include "asm.h"
 #include "asm_dasha.h"
-
+#include "errors.h"
 
 
 
@@ -38,8 +38,7 @@ void	if_str_check(t_token *token, t_token_sec *check_list)
 			check_list->new_line = false;
 		}
 		else
-			token_exit("ERROR: Champion's file contains error",
-														token->row, token->column);
+			token_exit(ASM_FILE_ERR, token->row, token->column);
 	}
 }
 
@@ -48,11 +47,9 @@ void	if_command_label(t_token *token, t_token_sec *check_list)
 	if (token->type == LABEL)
 	{
 		if (!check_list->new_line)
-			token_exit("ERROR: Champion's comment should be separated"
-						  " with new line from label", token->row, token->column);
+			token_exit(ASM_NL_MISSING, token->row, token->column);
 		else if (!check_list->str_comment)
-			token_exit("ERROR: Champion should have comment before label",
-														token->row, token->column);
+			token_exit(ASM_ERR_CMP_COMMENT,	token->row, token->column);
 		else
 		{
 			check_list->arg = false;
@@ -61,9 +58,8 @@ void	if_command_label(t_token *token, t_token_sec *check_list)
 	}
 	else if (token->type == COMMAND)
 	{
-		if (!check_list->label)
-			token_exit("ERROR: Command should only follow some label",
-														token->row, token->column);
+		if (!check_list->new_line && !check_list->label)
+			token_exit(ASM_ERR_COMMAND_FORMAT, token->row, token->column);
 		else
 			check_list->command = true;
 	}
@@ -74,8 +70,7 @@ void	if_arg(t_token *token, t_token_sec *check_list)
 	if (token->type == ARGUMENT)
 	{
 		if (!check_list->command)
-			token_exit("ERROR: Arguments should be preceded by command name",
-														token->row, token->column);
+			token_exit(ASM_COMMAND_MISSING, token->row, token->column);
 		else
 		{
 			if (!check_list->arg)
@@ -86,8 +81,7 @@ void	if_arg(t_token *token, t_token_sec *check_list)
 			}
 			else
 				if (!check_list->separator)
-					token_exit("ERROR: Arguments should be separated",
-														token->row, token->column);
+					token_exit(ASM_COMMAND_MISSING,	token->row, token->column);
 		}
 	}
 }
@@ -96,15 +90,11 @@ void	if_comment_prog(t_token *token, t_token_sec *check_list)
 {
 	if (token->type == COMMENT_PROG)
 	{
-		if (!check_list->str_name)
-			token_exit("ERROR: Champion should have name before comment",
-													   token->row, token->column);
-		if (!check_list->new_line)
-			token_exit("ERROR: Champion's name should be separated"
-					   " with new line from comment", token->row, token->column);
+		if ((check_list->name && !check_list->str_name) ||
+			(check_list->name && check_list->str_name !check_list->new_line))
+			token_exit(ASM_ERR_NAME_COMMENT, token->row, token->column);
 		if (check_list->comment_prog)
-			token_exit("ERROR: Champion can have only one"
-										   " comment", token->row, token->column);
+			token_exit(ASM_DOUBLE_COMMENT, token->row, token->column);
 		else
 			check_list->comment_prog = true;
 	}
@@ -114,11 +104,12 @@ void	if_name(t_token *token, t_token_sec *check_list)
 {
 	if (token->type == NAME)
 	{
-		if (!check_list->name)
-			check_list->name = true;
+		if ((check_list->comment_prog && !check_list->str_comment) ||
+			(check_list->comment_prog && check_list->str_comment &&
+			!check_list->new_line))
+			token_exit(ASM_DOUBLE_NAME, token->row, token->column);
 		else
-			token_exit("ERROR: Champion can have only one name",
-					   token->row, token->column);
+			check_list->name = true;
 	}
 }
 
@@ -225,6 +216,10 @@ void	main()
 	new0->column = 2;
 	new0->type = NAME;
 	new0->next = new1;
+
+	t_arg	*arg;
+	arg = (t_arg*)ml_malloc(sizeof(t_arg), ML_TOKEN);
+	arg->type = T_DIR;
 
 	token_sequence(new0);
 }

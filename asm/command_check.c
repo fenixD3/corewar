@@ -26,22 +26,34 @@ void	check_aff(t_token *token)
 		token_exit("ERROR: Command 'aff'"
 		           " should be followed exactly by one argument"
 		           " of type T_REG", token->row, token->column);
-
 }
 
 _Bool	check_ld(t_token *token)
 {
 	t_arg	*arg;
 	t_arg	*nxt_arg;
+	char    *error;
 
+	error = "ERROR: Command 'ld'/'lld' should be followed exactly"
+	        " by two arguments of types T_DIR/T_IND, T_REG";
 	arg = (t_arg*)token->content;
-	nxt_arg = (t_arg*)(token->next->content);
+	if (token->next != NULL)
+		nxt_arg = (t_arg *) (token->next->content);
+	else
+		token_exit(error, token->row, token->column);
 	if ((arg->type & T_DIR || arg->type & T_IND) && (nxt_arg->type & T_REG))
 		return (true);
 	else
-		token_exit("ERROR: Command 'ld'/'lld' should be followed exactly"
-							" by two arguments of types T_DIR/T_IND, T_REG",
-							token->row, token->column);
+		token_exit(error, token->row, token->column);
+
+
+	if (token->next->next != NULL)
+	{
+		if (token->next->next->type != NEW_LINE)
+			token_exit(error, token->row, token->column);
+	}
+	else
+		token_exit(error, token->row, token->column);
 }
 
 void	check_st(t_token *token)
@@ -57,8 +69,14 @@ void	check_st(t_token *token)
 		nxt_arg = (t_arg *) (token->next->content);
 	else
 		token_exit(error, token->row, token->column);
-	if ((nxt_arg->type & T_REG || nxt_arg->type & T_IND) && (arg->type & T_REG))
-		;
+	if (!((nxt_arg->type & T_REG || nxt_arg->type & T_IND) && (arg->type & T_REG)))
+		token_exit(error, token->row, token->column);
+
+	if (token->next->next != NULL)
+	{
+		if (token->next->next->type != NEW_LINE)
+			token_exit(error, token->row, token->column);
+	}
 	else
 		token_exit(error, token->row, token->column);
 }
@@ -86,10 +104,20 @@ _Bool	tree_reg(t_token *token)
 
 void	check_add(t_token *token)
 {
+	char    *err;
+
+	err = "ERROR: Command 'add'/'sub' should be followed exactly"
+	      " by tree arguments each of type T_REG";
 	if (!tree_reg(token))
-		token_exit("ERROR: Command 'add'/'sub' should be followed exactly"
-							" by tree arguments each of type T_REG",
-							token->row, token->column);
+		token_exit(err, token->row, token->column);
+
+	if (token->next->next->next != NULL)
+	{
+		if (token->next->next->next->type != NEW_LINE)
+			token_exit(err, token->row, token->column);
+	}
+	else
+		token_exit(err, token->row, token->column);
 }
 
 void	check_and(t_token *token)
@@ -110,8 +138,6 @@ void	check_and(t_token *token)
 		nxt_nxt_arg = (t_arg *) (token->next->next->content);
 	else
 		token_exit(error, token->row, token->column);
-	if (token->next->next->next->type != NEW_LINE)
-		token_exit(error, token->row, token->column);
 	if (!(nxt_nxt_arg->type & T_REG))
 		token_exit(error, token->row, token->column);
 	else
@@ -119,6 +145,14 @@ void	check_and(t_token *token)
 		((nxt_arg->type & T_REG) || (nxt_arg->type & T_DIR) ||
 		(nxt_arg->type & T_IND))))
 			token_exit(error, token->row, token->column);
+
+	if (token->next->next->next != NULL)
+	{
+		if (token->next->next->next->type != NEW_LINE)
+			token_exit(error, token->row, token->column);
+	}
+	else
+		token_exit(error, token->row, token->column);
 }
 
 void    check_ldi(t_token *token)

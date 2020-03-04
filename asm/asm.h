@@ -22,9 +22,11 @@
 #define ML_T_CONTENT 4
 #define ML_LABEL	5
 
-
-#define ENDSTR		1
-#define NOTENDSTR	2
+#define ENDLINE		1
+#define ENDSTR		2
+#define NOTENDSTR	3
+#define ENDFILE		4
+#define NOTSTR		5
 
 typedef enum	s_token_type
 {
@@ -40,8 +42,6 @@ typedef enum	s_token_type
 	NEW_LINE,
 	END
 }				t_token_type;
-
-
 
 typedef struct	s_token
 {
@@ -63,7 +63,7 @@ typedef struct	s_label
 
 typedef struct	s_argument
 {
-	t_token_type	type;
+	u_int8_t		type;
 	void 			*content;
 	u_int32_t		num;
 }				t_arg;
@@ -82,6 +82,9 @@ t_arg           *add_arg(char *str, t_arg_type type);
 char			*add_string(char *str, t_token *token);
 
 void			token_fill(char *str, t_token *token, t_label **tail, u_int8_t flag);
+u_int8_t		token_rewind(t_pc *pc, t_token *token);
+void			rewind_n(t_pc *pc, u_int16_t n);
+void			tokenize(int fd, t_token **token, t_label **label);
 
 ///// not need
 
@@ -89,5 +92,27 @@ _Bool	is_special_char(char c, char *specials);
 
 _Bool	skip_delims(char **line, char *delims, char *comments);
 char	**fast_strsplit(char *line, char *delims, char *comments, void *alloc_func(size_t)); // may be replaced to libft
+
+
+
+
+void print_tokens(t_token *token, u_int8_t setting);
+void print_token(t_token *t);
+static char		*g_type[] = {
+		"NAME",//
+		"COMMENT_PROG",//
+		"COMMAND",//
+		"STRING",//
+		"COMMENT",//
+		"LABEL",
+		"ARGUMENT",//
+		"ARGUMENT_LABEL",//
+		"SEPARATOR",//
+		"NEW_LINE",//
+		"END",//
+		"T_REG",
+		"T_DIR",
+		"T_IND"
+};
 
 #endif

@@ -50,9 +50,15 @@
 
 int main(void)
 {
-	t_fline *flst;
-	int fd = open("/Users/mdeanne/corewar/vm_champs/test.s", O_RDONLY);
-	flst = file_to_list(fd, 0);
+	t_token *token;
+	t_label *label;
+	int fd;
+
+	token = NULL;
+	label = NULL;
+
+	fd = open("/Users/mdeanne/corewar/vm_champs/test.s", O_RDONLY);
+	tokenize(fd, &token, &label);
 
 	return (0);
 }

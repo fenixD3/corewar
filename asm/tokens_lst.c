@@ -36,7 +36,7 @@ void	add_label(char *str, t_token *token, t_label **tail, t_arg_type arg_type)
 
 	label = (t_label*)ml_malloc(sizeof(t_label), ML_LABEL);
 	label->token = token;
-	label->name = ml_strndup(str,ft_skipword(str, DELIMITERS) - str - 1, ML_T_CONTENT); //или без -1
+	label->name = ml_strndup(str,ft_skipword(str, DELIMITERS) - str, ML_T_CONTENT);
 	if (arg_type)
 	{
 		token->content = (void*)add_arg(NULL, arg_type);
@@ -96,3 +96,5 @@ t_token *add_token(t_pc *pc, t_token **token_tail, t_label **label_tail, u_int8_
 
 	return (new);
 }
+
+void	*del_token()

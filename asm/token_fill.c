@@ -69,9 +69,14 @@ _Bool	is_not_closed_sting(t_token *token)
 
 void	token_fill(char *str, t_token *token, t_label **tail, u_int8_t flag)
 {
-	if (!*str && flag == 1)
+	static int i;
+	i++;
+	if (i == 11)
+		i = i;
+
+	if (flag == ENDFILE)
 		token->type = END;
-	else if (!*str)
+	else if (!*str || flag == ENDLINE)
 		token->type = NEW_LINE;
 	else if (*str == SEPARATOR_CHAR)
 		token->type = SEPARATOR;
@@ -91,6 +96,6 @@ void	token_fill(char *str, t_token *token, t_label **tail, u_int8_t flag)
 	{
 		token->type = COMMAND;
 		token->content = (void*)ml_strndup(str,
-				ft_skipword(str, DELIMITERS) - str - 1, ML_T_CONTENT); //или без -1
+				ft_skipword(str, DELIMITERS) - str, ML_T_CONTENT); //или без -1
 	}
 }

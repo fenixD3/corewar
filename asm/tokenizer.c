@@ -13,65 +13,44 @@
 #include <stdbool.h>
 #include "libft.h"
 #include "asm.h"
-
-u_int8_t 	string_rewind(t_pc *pc)
-{
-	if (*pc->line == '"')
-	{
-		pc->line++;
-		pc->column++;
-	}
-	while (*pc->line && *pc->line != '"')
-	{
-		pc->line++;
-		pc->column++;
-	}
-	return ((*pc->line == '"') ? ENDSTR : NOTENDSTR);
-}
-
-void		rewind_n(t_pc *pc, u_int16_t n)
-{
-	pc->line += n;
-	pc->column += n;
-}
-
-u_int8_t	token_rewind(t_pc *pc, t_token *token)
-{
-	if (token->type == STRING)
-		return string_rewind(pc);
-	else if (token->type == SEPARATOR)
-		rewind_n(pc, 1);
-	else if (token->type == NAME)
-		rewind_n(pc, ft_strlen(NAME_CMD_STRING));
-	else if (token->type == COMMENT_PROG)
-		rewind_n(pc, ft_strlen(COMMENT_CMD_STRING));
+#include "libword.h"
 
 
-}
+#include <stdio.h>
+
 
 void	tokenize(int fd, t_token **token, t_label **label)
 {
 	t_pc		pc;
-/*	t_token	*token;
-	t_label	*label;*/
-	/*int		ret;*/
 	u_int8_t	flag;
-	char 		*str;
+	char 		*tmp;
+
+	static int i;
 
 	pc.row = 0;
-	token = NULL;
-	while ((/*ret = */get_next_line(fd, &str)) > 0)
+	while ((get_next_line(fd, &tmp)) > 0)
 	{
-		pc.line = str;
+		pc.line = tmp;
 		pc.column = 0;
+		flag = 0;
+		rewind_n(&pc, ft_skipdelims(pc.line, SPACES) - tmp);
 		while (*pc.line)
 		{
-			add_token(&pc, token, label, 0);
-			/// здесь добавляем перемотку до конца добавленного токена
+			add_token(&pc, token, label, flag);
+			if ((flag = token_rewind(&pc, *token)) == ENDLINE)
+				break ;
 		}
-		free(str);
+		add_token(&pc, token, label, flag);
+		pc.line = tmp;
+		free(tmp);
 		pc.row++;
 	}
+	///здесь проверка lseek'ом
+	lseek(fd, -1, SEEK_CUR);
+	read(fd, tmp, 1);
+	if (*tmp == '\n')
+
+	add_token(&pc, token, label, ENDFILE);
 	if (!*token)
 		go_exit("ERROR: File is empty");
 	while ((*token)->prev)

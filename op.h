@@ -10,8 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef OP_H
-#define OP_H
+# ifndef OP_H
+# define OP_H
 
 /*
 ** Toutes les tailles sont en octets.

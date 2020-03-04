@@ -28,7 +28,12 @@
  * Check for commands' arguments correctness
  */
 
+# define ASM_TOLONG_NAME		"ERROR: Champion's name is too long"
+
+# define ASM_TOLONG_COMMENT		"ERROR: Champion's comment is too long"
+
 # define ASM_ERR_ARGS			"ERROR: Command followed by wrong arguments"
+
 //								" of types T_REG, T_REG/T_DIR/T_IND and T_REG/T_DIR"
 
 //# define ASM_STI_ERR			"ERROR: Command 'sti' should be followed exactly by tree arguments,"

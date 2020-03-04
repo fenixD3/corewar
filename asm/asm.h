@@ -12,7 +12,7 @@
 
 #ifndef ASM_H
 #define ASM_H
-#include "op.h"
+#include "options.h"
 #include "file_to_list.h"
 #include <stdlib.h>
 

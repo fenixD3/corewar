@@ -1,10 +1,45 @@
 
-#include <stdbool.h>
-#include <stdio.h>
-#include "libft.h"
-#include "asm.h"
 #include "asm_dasha.h"
-#include "../options.h"
+
+
+void	check_args(t_token *token, int *i, int com_code)
+{
+	t_token	*cp_tok;
+	t_arg	*arg;
+
+	cp_tok = token;
+	while (token->next != NULL && token->type != NEW_LINE)
+	{
+		if (token->next->type == ARGUMENT)
+		{
+			arg = (t_arg*)token->content;
+			if (!(arg->type & ((g_op[com_code]).args_type[*i])))
+				token_exit(ASM_ERR_ARGS, token);
+			(*i)++;
+		}
+		token = token->next;
+	}
+	token = cp_tok;
+}
+
+void	command_check(t_token *token)
+{
+	int		i;
+	int		com_code;
+
+	com_code = 0;
+	i = 0;
+	if (!(token->type == COMMAND))
+		return ;
+	else
+	{
+		com_code = *((u_int8_t *)token->content) - 1;
+		check_args(token, &i, com_code);
+		if ((i < 2 && ((g_op[com_code]).args_type[1] != 0))
+			|| (i < 3 && ((g_op[com_code]).args_type[2] != 0)))
+			token_exit(ASM_ERR_ARGS, token);
+	}
+}
 
 //void	check_live(t_token *token)
 //{
@@ -223,43 +258,3 @@
 //			check_rest(token);
 //	}
 //}
-
-void	check_args(t_token *token, int *i, t_op g_op)
-{
-	t_token	*cp_tok;
-	t_arg	arg;
-
-	cp_tok = token;
-	while (token->next != NULL && token->type != NEW_LINE)
-	{
-		if (token->next->type == ARGUMENT)
-		{
-			arg = (t_arg*)token->content;
-			if (!(arg.type & ((g_op[com_code])->(args_type[*i]))))
-				token_exit(ASM_ERR_ARGS, token);
-			(*i)++;
-		}
-		token = token->next;
-	}
-	token = cp_tok;
-}
-
-void	command_check(t_token *token)
-{
-	int		i;
-	t_op	g_op;
-	int		com_code;
-
-	com_code = 0;
-	i = 0;
-	if (!(token->type == COMMAND))
-		return ;
-	else
-	{
-		com_code = *((int *)token->content) - 1;
-		check_args(token, &i, g_op);
-		if ((i < 2 && ((g_op[com_code])->(args_type[1]) != 0))
-			|| (i < 3 && ((g_op[com_code])->(args_type[2]) != 0)))
-			token_exit(ASM_ERR_ARGS, token);
-	}
-}

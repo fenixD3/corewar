@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef OPTIONS_H
+# ifndef OPTIONS_H
 # define OPTIONS_H
 
 # include "op.h"
@@ -27,7 +27,8 @@ typedef struct	s_op
 
 }				t_op;
 
-t_op	g_op[17] = {
+
+static t_op	g_op[17] = {
 	{"live", 1, {T_DIR, 0, 0}, 1, 10, 0, 4},
 	{"ld", 2, {T_DIR | T_IND, T_REG, 0}, 2, 5, 1, 4},
 	{"st", 2, {T_REG, T_IND | T_REG, 0}, 3, 5, 1, 4},

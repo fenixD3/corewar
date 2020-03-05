@@ -34,6 +34,8 @@ typedef struct		s_token_sec
 }					t_token_sec;
 
 int					token_exit(char *error, t_token *token);
+_Bool				token_sequence(t_token *token);
+
 u_int32_t			calc_command_weight(t_token *token);
 
 void				print_header(int fd, header_t *header);

@@ -50,11 +50,11 @@ void	tokenize(int fd, t_token **token, t_label **label)
 	read(fd, tmp, 1);
 	if (*tmp == '\n')
 
-	add_token(&pc, token, label, ENDFILE);
+		add_token(&pc, token, label, ENDFILE);
 	if (!*token)
 		go_exit("ERROR: File is empty");
 	while ((*token)->prev)
 		*token = (*token)->prev;
-	while ((*label)->prev)
-		*label = (*label)->prev;
+//	while ((*label)->prev)
+//		*label = (*label)->prev;
 }

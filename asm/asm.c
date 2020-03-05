@@ -18,6 +18,8 @@
 #include "asm.h"
 #include "op.h"
 
+#include "asm_dasha.h"
+
 //int main(int ac, char **av)
 //{
 //	int fd;
@@ -57,8 +59,10 @@ int main(void)
 	token = NULL;
 	label = NULL;
 
-	fd = open("/Users/mdeanne/corewar/vm_champs/test.s", O_RDONLY);
+	fd = open("/Users/romancheremin/Desktop/mdall/test.s", O_RDONLY);
 	tokenize(fd, &token, &label);
+
+	token_sequence(token);
 
 	return (0);
 }

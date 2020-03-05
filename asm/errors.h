@@ -9,19 +9,26 @@
  */
 # define ASM_FILE_ERR			"ERROR: Champion's file contains error"
 
-# define ASM_NL_MISSING			"ERROR: Champion's comment should be separated with new line from label"
+# define ASM_C_N_MISSING		"ERROR: Champion's file contains error - no name or comment"
+
+
+# define ASM_NL_MISSING			"ERROR: Champion's file contains error - new line is missing"
 
 # define ASM_ERR_CMP_COMMENT	"ERROR: Champion should have comment before label"
 
-# define ASM_ERR_COMMAND_FORMAT	"ERROR: Command should only follow some label or start from a new line"
-
 # define ASM_COMMAND_MISSING	"ERROR: Arguments should be preceded by command name"
 
-# define ASM_ERR_NAME_COMMENT	"ERROR: Champion's name and comment should be on a different lines"
+# define ASM_EXTRA_SEPARATOR	"ERROR: Arguments shouldn't be separated from command"
+
+# define ASM_SEPARATOR_MISSING	"ERROR: Arguments should be separated"
+
+# define ASM_ERR_NAME_COMMENT	"ERROR: Champion's name and/or comment placed incorrectly"
 
 # define ASM_DOUBLE_COMMENT		"ERROR: Champion can have only one comment"
 
 # define ASM_DOUBLE_NAME		"ERROR: Champion can have only one name"
+
+# define ASM_WRONG_SEPARATOR	"ERROR: File with champion contains error - arguments separated incorrectly"
 
 
 /*

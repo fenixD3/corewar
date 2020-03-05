@@ -10,9 +10,9 @@ void	check_args(t_token *token, int *i, int com_code)
 	cp_tok = token;
 	while (token->next != NULL && token->type != NEW_LINE)
 	{
-		if (token->next->type == ARGUMENT)
+		if (token->next->type == ARGUMENT || token->next->type == ARGUMENT_LABEL)
 		{
-			arg = (t_arg*)token->content;
+			arg = (t_arg*)token->next->content;
 			if (!(arg->type & ((g_op[com_code]).args_type[*i])))
 				token_exit(ASM_ERR_ARGS, token);
 			(*i)++;
@@ -33,7 +33,7 @@ void	command_check(t_token *token)
 		return ;
 	else
 	{
-		com_code = *((u_int8_t *)token->content) - 1;
+		com_code = (u_int8_t *)token->content - 1;
 		check_args(token, &i, com_code);
 		if ((i < 2 && ((g_op[com_code]).args_type[1] != 0))
 			|| (i < 3 && ((g_op[com_code]).args_type[2] != 0)))

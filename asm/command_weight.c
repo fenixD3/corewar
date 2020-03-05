@@ -27,6 +27,7 @@ u_int32_t		weight_command(t_token *nxt_tok)
 {
 	u_int32_t		weight;
 
+	weight = 0;
 	weight += weight_arg(nxt_tok);
 	if (nxt_tok->next->type == SEPARATOR)
 	{
@@ -59,7 +60,7 @@ u_int32_t	calc_command_weight(t_token *token)
 		{
 			weight = weight_command(nxt_tok);
 			weight++;
-			if (g_op[(*(int *)token->content) - 1].argument_type_code)
+			if (g_op[(*(int *)token->next->content) - 1].argument_type_code)
 				weight++;
 		}
 		else

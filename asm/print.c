@@ -31,7 +31,7 @@ void print_token(t_token *t)
 
 void print_tokens(t_token *token, u_int8_t setting)
 {
-	while (token->prev && token->prev->type != NEW_LINE)
+	while (token->prev && token->prev/*token->prev->type != NEW_LINE*/)
 		token = token->prev;
 	printf("-");
 	while (token)

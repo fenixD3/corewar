@@ -18,43 +18,57 @@
 
 #include <stdio.h>
 
-
-void	tokenize(int fd, t_token **token, t_label **label)
+void		newline_endfile_check(int fd, int ret)
 {
-	t_pc		pc;
+	char		c;
+
+	if (ret < 0 || lseek(fd, -1, SEEK_CUR) == -1 || read(fd, &c, 1) != 1)
+		go_exit("ERROR: Read of file");
+	if (c != '\n')
+		go_exit("ERROR: No new line before end of file");
+}
+
+void	tokenize_line(t_pc *pc, t_token **token, t_label **label, char *str)
+{
 	u_int8_t	flag;
-	char 		*tmp;
 
-	static int i;
-
-	pc.row = 0;
-	while ((get_next_line(fd, &tmp)) > 0)
+	pc->line = str;
+	pc->column = 0;
+	flag = 0;
+	rewind_n(pc, ft_skipdelims(pc->line, SPACES) - str);
+	while (*pc->line)
 	{
-		pc.line = tmp;
-		pc.column = 0;
-		flag = 0;
-		rewind_n(&pc, ft_skipdelims(pc.line, SPACES) - tmp);
-		while (*pc.line)
-		{
-			add_token(&pc, token, label, flag);
-			if ((flag = token_rewind(&pc, *token)) == ENDLINE)
-				break ;
-		}
-		add_token(&pc, token, label, flag);
-		pc.line = tmp;
-		free(tmp);
-		pc.row++;
+		add_token(pc, token, label, flag);
+		if ((flag = token_rewind(pc, *token)) == ENDLINE)
+			break ;
 	}
-	///здесь проверка lseek'ом
-	lseek(fd, -1, SEEK_CUR);
-	read(fd, tmp, 1);
-	if (*tmp == '\n')
+	add_token(pc, token, label, flag);
+	pc->line = str;
+	pc->row++;
+	free(str);
+}
 
-	add_token(&pc, token, label, ENDFILE);
-	if (!*token)
-		go_exit("ERROR: File is empty");
+void	set_lists_at_start(t_token **token, t_label **label)
+{
 	while ((*token)->prev)
 		*token = (*token)->prev;
 	while ((*label)->prev)
 		*label = (*label)->prev;
+}
+
+void	tokenize(int fd, t_token **token, t_label **label)
+{
+	t_pc		pc;
+
+	char 		*tmp;
+	int 		ret;
+
+	pc.row = 0;
+	while ((ret = get_next_line(fd, &tmp)) > 0)
+		tokenize_line(&pc, token, label, tmp);
+	if (!*token)
+		go_exit("ERROR: File is empty");
+	newline_endfile_check(fd, ret);
+	add_token(&pc, token, label, ENDFILE);
+	set_lists_at_start(token, label);
 }

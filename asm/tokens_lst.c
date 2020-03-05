@@ -96,5 +96,3 @@ t_token *add_token(t_pc *pc, t_token **token_tail, t_label **label_tail, u_int8_
 
 	return (new);
 }
-
-void	*del_token()

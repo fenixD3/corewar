@@ -15,6 +15,8 @@
 
 _Bool	ft_isdigitalword(char *str, char *delims)
 {
+	if (!ft_isdigit(*str))
+		return (0);
 	while (*str && !ft_isspecial(*str, delims))
 	{
 		if (!ft_isdigit(*str))

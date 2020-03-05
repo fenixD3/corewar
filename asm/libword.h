@@ -13,8 +13,10 @@
 #ifndef LIBWORD_H
 #define LIBWORD_H
 
+int		ft_wordequ(char *ethalon, char *str, char *delims);
 _Bool	ft_isspecial(char c, char *special);
 char	*ft_skipword(char *str, char *delims);
+char	*ft_skipdelims(char *str, char *delims);
 _Bool	ft_isdigitalword(char *str, char *delims);
 
 #endif

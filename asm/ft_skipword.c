@@ -18,3 +18,10 @@ char	*ft_skipword(char *str, char *delims)
 		str++;
 	return (str);
 }
+
+char	*ft_skipdelims(char *str, char *delims)
+{
+	while (*str && ft_isspecial(*str, delims))
+		str++;
+	return (str);
+}

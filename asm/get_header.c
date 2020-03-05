@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include <libft/libft.h>
+#include "op.h"
 #include "file_to_list.h"
 #include "asm/asm.h"
 

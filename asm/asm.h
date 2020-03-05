@@ -12,15 +12,15 @@
 
 #ifndef ASM_H
 #define ASM_H
-#include "options.h"
+#include "op.h"
 #include "file_to_list.h"
 #include <stdlib.h>
 
 #define ML_FLST 1
 #define ML_TOKEN 2
+#define ML_ARGUMENT 3
 
-
-typedef enum		s_token_type
+typedef enum	s_token_type
 {
 	NAME = 1,
 	COMMENT_PROG,
@@ -29,12 +29,16 @@ typedef enum		s_token_type
 	COMMENT,
 	LABEL,
 	ARGUMENT,
+	ARGUMENT_LABEL,
 	SEPARATOR,
 	NEW_LINE,
-	END
-}					t_token_type;
+	END,
+	INSTRUCTION
+}				t_token_type;
 
-typedef struct		s_token
+
+
+typedef struct	s_token
 {
 	t_token_type 	type;
 	u_int32_t		row;
@@ -42,7 +46,7 @@ typedef struct		s_token
 	void 			*content;
 	struct s_token	*prev;
 	struct s_token	*next;
-}					t_token;
+}				t_token;
 
 typedef struct	s_label
 {

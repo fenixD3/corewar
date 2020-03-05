@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft/libft.h>
+#include "libft.h"
 #include "blackbox_memlist.h"
 
 void		ml_clear_all_lists(t_ml_lists *lst, t_ml_lists *head)

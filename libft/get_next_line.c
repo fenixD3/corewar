@@ -3,50 +3,110 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mdeanne <mdeanne@student.42.fr>            +#+  +:+       +#+        */
+/*   By: ylila <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/04/20 20:08:50 by mdeanne           #+#    #+#             */
-/*   Updated: 2020/02/26 15:50:04 by yas              ###   ########.fr       */
+/*   Created: 2019/04/11 13:31:29 by ylila             #+#    #+#             */
+/*   Updated: 2020/01/22 20:51:38 by ylila            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdlib.h>
+#include <unistd.h>
 #include "get_next_line.h"
-#include <stdio.h>
 
-int		check(char *str, int ret, char **line, t_list **cur)
+t_gnl	*new_node(const int fd)
 {
-	if (ret == -1 || (!str || !*str))
-		return (ret == -1 ? -1 : 0);
-	if (!(*line = (!(ft_strchr(str, '\n')) ? ft_strdup(str, 0) :
-				   ft_strndup(str, ft_strchr(str, '\n') - str, 0))))
-		return (-1);
-	if ((ret == 0 && !*str))
-		*cur = ft_lstcirc_delelem(cur);
-	if (ft_strchr(str, '\n'))
-		ft_strcpy(str, ft_strchr(str, '\n') + 1);
-	if (ft_strcmp(*line, str) == 0)
-		ft_strclr(str);
+	t_gnl *new;
+
+	if (!(new = (t_gnl *)malloc(sizeof(t_gnl))))
+		return (NULL);
+	new->fd_ = fd;
+	new->str = ft_strnew(0);
+	new->lb = NULL;
+	new->next = new;
+	return (new);
+}
+
+int		find_fd(t_gnl **lst, const int fd)
+{
+	t_gnl *begin;
+
+	if (!lst || !*lst)
+		return (0);
+	if ((*lst)->fd_ == fd)
+		return (1);
+	begin = *lst;
+	*lst = (*lst)->next;
+	while (*lst != begin)
+	{
+		if ((*lst)->fd_ == fd)
+			return (1);
+		*lst = (*lst)->next;
+	}
+	return (0);
+}
+
+int		ad_fd(t_gnl **lst, t_gnl *new)
+{
+	t_gnl *nx_node;
+
+	if (!new && !lst)
+		return (0);
+	if (!*lst)
+		*lst = new;
+	else if (lst && *lst)
+	{
+		nx_node = (*lst)->next;
+		(*lst)->next = new;
+		new->next = nx_node;
+	}
 	return (1);
+}
+
+int		free_node(t_gnl **lst)
+{
+	t_gnl *curr;
+
+	if (lst && *lst)
+	{
+		curr = *lst;
+		while ((*lst)->next != curr)
+			*lst = (*lst)->next;
+		(*lst)->next = curr->next;
+		free(curr->str);
+		curr->str = NULL;
+		free(curr);
+		curr = NULL;
+		return (1);
+	}
+	return (0);
 }
 
 int		get_next_line(const int fd, char **line)
 {
-	static t_list	*cur;
-	char			buf[BUFF_SIZE + 1];
-	char			*str;
-	ssize_t			ret;
+	char			buf[BF_SZ_GNL + 1];
+	static t_gnl	*lst;
+	char			*tmp;
+	ssize_t			b;
 
-	if (fd < 0 || !line || (!(ft_lstcirc_findcontent_size(&cur, (size_t)fd)) &&
-							!(cur = ft_lstcirc_add(&cur, NULL, (size_t)fd))))
+	if (fd < 0 || !line || (!find_fd(&lst, fd) && !(ad_fd(&lst, new_node(fd)))))
 		return (-1);
-	while (!ft_sstrchr((char*)(cur->content), '\n') &&
-			(ret = read(fd, buf, BUFF_SIZE)) > 0)
+	find_fd(&lst, fd);
+	while (!(ft_strchr(lst->str, '\n')) && (b = read(fd, &buf, BF_SZ_GNL)) > 0)
 	{
-		str = (char*)(cur->content);
-		buf[ret] = '\0';
-		if (!(cur->content = (void*)ft_strjoinre(&str, buf)))
-			return (-1);
+		buf[b] = '\0';
+		tmp = lst->str;
+		lst->str = ft_strjoin(lst->str, buf);
+		ft_strdel(&tmp);
 	}
-	str = (char*)(cur->content);
-	return (check(str, ret, line, &cur));
+	if (b == -1 || (!*(tmp = lst->str) && free_node(&lst)))
+		return (b == -1 ? -1 : 0);
+	if (!(lst->lb = ft_strchr(lst->str, '\n')))
+		*line = ft_strdup(lst->str);
+	else
+		*line = ft_strsub(lst->str, 0, lst->lb - lst->str);
+	lst->str = ft_strsub(lst->str, (unsigned int)(ft_strlen(*line) + 1),
+			ft_strlen(lst->str) - ft_strlen(*line));
+	ft_strdel(&tmp);
+	return (1);
 }

@@ -16,7 +16,7 @@ t_list	*ft_lstcirc_add(t_list **cur, char const *content, size_t content_size)
 {
 	t_list *new;
 
-	if (!cur || !(new = ft_lstcirc_strnew(content, content_size, 0)))
+	if (!cur || !(new = ft_lstcirc_strnew(content, content_size)))
 		return (NULL);
 	if (!*cur)
 		*cur = new;

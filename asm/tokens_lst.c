@@ -20,5 +20,7 @@ t_token *add_token(t_pc *pc)
 	new = (t_token*)ml_malloc(sizeof(t_token), ML_TOKEN);
 	new->row = pc->row;
 	new->column = pc->column;
+
+
 	return (new);
 }

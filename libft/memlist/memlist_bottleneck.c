@@ -18,7 +18,7 @@ void	ml_innerlist(void *ptr, u_int8_t rule,
 {
 	if (rule == ML_MALLOC)
 	{
-		if (!ml_push_front(&(*lst)->list, ml_create(ptr)))
+		if (!ml_push_front(lst, ml_create(ptr)))
 		{
 			ft_putendl("ERROR: can't alloc memory");
 			exit(1);
@@ -45,11 +45,13 @@ void	ml_static_lists(void *ptr, u_int8_t rule, u_int32_t list_num)
 	while (lst && lst->next && lst->list_num < list_num)
 		lst = lst->next;
 	if ((!lst || lst->list_num != list_num))
+	{
 		if (rule == ML_MALLOC)
 			lst = add_ml_list(list_num, &lst, &head);
 		else
 			go_exit("COMPILE ERROR: you want delete element(s) in memory \
 group what does not exist");
+	}
 	ml_innerlist(ptr, rule, &lst, &head);
 	if (head)
 		lst = head;

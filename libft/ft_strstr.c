@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include <string.h>
-#include <stdio.h>
 
 char	*ft_strstr(const char *str, const char *to_find)
 {

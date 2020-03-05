@@ -26,7 +26,8 @@ t_ml_lists	*create_ml_lst_elem(u_int32_t list_num)
 	return (new);
 }
 
-t_ml_lists *add_ml_list(u_int32_t list_num, t_ml_lists **cur, t_ml_lists **head)
+t_ml_lists	*add_ml_list(u_int32_t list_num, t_ml_lists **cur,
+															t_ml_lists **head)
 {
 	t_ml_lists	*new;
 
@@ -64,11 +65,14 @@ t_ml		*ml_create(void *ptr)
 	return (new);
 }
 
-_Bool		ml_push_front(t_ml **head, t_ml *new)
+_Bool		ml_push_front(t_ml_lists **lst, t_ml *new)
 {
+	t_ml **head;
+
+	head = &(*lst)->list;
 	if (!new)
 	{
-		ml_clear_lst(head, NULL);
+		ml_clear_lst(lst, NULL);
 		return (0);
 	}
 	if (head && *head)

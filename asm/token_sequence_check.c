@@ -37,13 +37,17 @@ void	if_str_check(t_token *token, t_token_sec *check_list)
 		if (!is_length_within_limit((char *)token->content, check_list))
 			token_exit(((check_list->name && !check_list->comment_prog) ?
 						ASM_TOLONG_NAME : ASM_TOLONG_COMMENT), token);
-		if (check_list->name && !check_list->comment_prog)
+		if ((check_list->name && !check_list->comment_prog) ||
+			(check_list->name && (check_list->comment_prog &&
+									check_list->str_comment)))
 		{
 			check_list->str_name = true;
 			check_list->new_line = false;
 			check_list->chmp_name = (char *)token->content;
 		}
-		else if (check_list->comment_prog && !check_list->label)
+		else if ((check_list->comment_prog && (check_list->name &&
+					check_list->str_name) && !check_list->label) ||
+					(!(check_list->name && check_list->str_name)))
 		{
 			check_list->str_comment = true;
 			check_list->new_line = false;
@@ -80,14 +84,12 @@ void	if_command(t_token *token, t_token_sec *check_list)
 	}
 }
 
-_Bool			token_sequence(t_token *token)
+_Bool			token_sequence(t_token *token, t_token_sec	*check_list)
 {
-	t_token_sec	*check_list;
 	t_token		*token_arr;
-	header_t	header;
 
 	token_arr = token;
-	init_check_list(&check_list);
+	init_check_list(check_list);
 	while (token != NULL)
 	{
 		if (token->type == COMMENT)
@@ -108,5 +110,4 @@ _Bool			token_sequence(t_token *token)
 		token = token->next;
 	}
 	token = token_arr;
-	init_headers(&header, token);
 }

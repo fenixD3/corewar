@@ -17,10 +17,11 @@ unsigned int		calc_progsize(t_token *token)
 	return (weight);
 }
 
-void				init_headers(header_t *header, t_token *token)//name, comment
+void				init_headers(header_t **header, t_token *token, t_token_sec *info)//name, comment
 {
-	header->magic = COREWAR_EXEC_MAGIC;
-//	header->comment = (char *)comment->content;
-//	header->prog_name = (char *)name->content;
-	header->prog_size = calc_progsize(token);
+    (*header) = (header_t*)ml_malloc(sizeof(header_t), ML_HEADER);
+	(*header)->magic = COREWAR_EXEC_MAGIC;
+	ft_strncpy((*header)->comment, info->chmp_comment, ft_strlen(info->chmp_comment));
+	ft_strncpy((*header)->prog_name, info->chmp_name, ft_strlen(info->chmp_name));
+	(*header)->prog_size = calc_progsize(token);
 }

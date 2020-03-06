@@ -78,6 +78,6 @@ void	if_nl(t_token *token, t_token_sec *check_list)
 		check_list->new_line = true;
 		check_list->separator = false;
 		check_list->arg = false;
-		check_list->command = false;
+//		check_list->command = false;
 	}
 }

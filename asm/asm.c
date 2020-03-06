@@ -52,17 +52,29 @@
 
 int main(void)
 {
-	t_token *token;
-	t_label *label;
-	int fd;
+	t_token		*token;
+	t_label		*label;
+	header_t	*header;
+	t_token_sec	check_list;
+	int			fd;
+	int			fd_wr;
+	uint8_t buff[290];
+	u_int32_t *ptr32;
 
 	token = NULL;
 	label = NULL;
 
-	fd = open("/Users/romancheremin/Desktop/mdall/test.s", O_RDONLY);
+	fd = open("/Users/mcanhand/test.s", O_RDONLY);
+	fd_wr = open("/Users/mcanhand/my_bits", O_RDWR);
 	tokenize(fd, &token, &label);
+	token_sequence(token, &check_list);
+    init_headers(&header, token, &check_list);
 
-	token_sequence(token);
+	print_header(fd_wr, header);
+	lseek(fd_wr, 0, SEEK_SET);
 
+	int ret = read(fd_wr, buff, 290);
+	ptr32 = (u_int32_t*)buff;
+	printf("%030x\n", *ptr32);
 	return (0);
 }

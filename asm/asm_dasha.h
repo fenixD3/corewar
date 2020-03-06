@@ -14,6 +14,7 @@
 
 
 #define ML_CHECK_LST 3
+# define ML_HEADER 4
 
 typedef struct		s_token_sec
 {
@@ -34,7 +35,7 @@ typedef struct		s_token_sec
 }					t_token_sec;
 
 int					token_exit(char *error, t_token *token);
-_Bool				token_sequence(t_token *token);
+_Bool				token_sequence(t_token *token, t_token_sec	*check_list);
 
 u_int32_t			calc_command_weight(t_token *token);
 
@@ -45,7 +46,6 @@ void				if_name(t_token *token, t_token_sec *check_list);
 void				if_nl(t_token *token, t_token_sec *check_list);
 void				if_comment_prog(t_token *token, t_token_sec *check_list);
 void				command_check(t_token *token);
-void				init_headers(header_t *header, t_token *token);
-
+void				init_headers(header_t **header, t_token *token, t_token_sec *info);
 
 #endif

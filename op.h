@@ -22,6 +22,19 @@
 #define REG_SIZE				4
 #define DIR_SIZE				REG_SIZE
 
+/*
+** New block with length in bytecode
+*/
+
+#define COMMAND_LEN				1
+#define REG_LEN					1
+#define IND_LEN					2
+#define DIR_SHRT_LEN			2
+#define DIR_LONG_LEN			4
+
+/*
+** End new block
+*/
 
 # define REG_CODE				1
 # define DIR_CODE				2
@@ -41,10 +54,20 @@
 #define REGISTER_CHAR			'r'
 #define SEPARATOR_CHAR			','
 
+/*
+** If you want change chars in previous block, you want change that chars
+** in next block because we had blocked macros functions by norminette
+** and can't translate char macros into string macros
+*/
+
 #define SPECIALS				",:%"
 #define SPACES					" \t"
 #define COMMENTS				"#;"
 #define DELIMITERS				SPACES SPECIALS COMMENTS
+
+/*
+** End new block
+*/
 
 #define LABEL_CHARS				"abcdefghijklmnopqrstuvwxyz_0123456789"
 

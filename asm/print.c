@@ -3,7 +3,17 @@
 //
 
 #include <stdio.h>
+#include <libft/libft.h>
 #include "asm.h"
+
+char *print_cmd_name(t_token *token, u_int8_t flag)
+{
+	if (token->type != COMMAND)
+		return (NULL);
+	if (!flag)
+		return ((char*)token->content);
+	return (ft_itoa((int)*(u_int8_t*)token->content));
+}
 
 void print_token(t_token *t)
 {

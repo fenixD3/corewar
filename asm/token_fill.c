@@ -21,8 +21,9 @@ _Bool	arg_label_recognition(char *str, t_token *token, t_label **tail)
 	else if (*str == DIRECT_CHAR && ft_isdigitalword(str + 1, DELIMITERS))
 		token->content = (void*)add_arg(str, T_DIR);
 	else if (ft_isdigitalword(str, DELIMITERS))
-		token->content = (void*)add_arg(str, T_IND); ///опустить ниже как более медленную
-	else if ((*str == DIRECT_CHAR && *(str + 1) == LABEL_CHAR) || *str == LABEL_CHAR)
+		token->content = (void*)add_arg(str, T_IND);
+	else if ((*str == DIRECT_CHAR && *(str + 1) == LABEL_CHAR) ||
+															*str == LABEL_CHAR)
 	{
 		if (*str == LABEL_CHAR)
 			add_label(str + 1, token, tail, T_IND | T_LAB);
@@ -54,26 +55,8 @@ _Bool	label_recognition(char *str, t_token *token, t_label **tail)
 	return (1);
 }
 
-_Bool	is_not_closed_sting(t_token *token)
-{
-	char *prestr;
-	if (!(token->prev && token->prev->prev && token->prev->prev->type == STRING))
-		return (0);
-	prestr = (char*)token->prev->prev->content;
-	while (*prestr && *prestr != '"')
-		prestr++;
-	if (*prestr == '"')
-		return (0);
-	return (1);
-}
-
 void	token_fill(char *str, t_token *token, t_label **tail, u_int8_t flag)
 {
-	static int i;
-	i++;
-	if (i == 11)
-		i = i;
-
 	if (flag == ENDFILE)
 		token->type = END;
 	else if (!*str || flag == ENDLINE)
@@ -96,6 +79,6 @@ void	token_fill(char *str, t_token *token, t_label **tail, u_int8_t flag)
 	{
 		token->type = COMMAND;
 		token->content = (void*)ml_strndup(str,
-				ft_skipword(str, DELIMITERS) - str, ML_T_CONTENT); //или без -1
+				ft_skipword(str, DELIMITERS) - str, ML_T_CONTENT);
 	}
 }

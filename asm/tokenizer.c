@@ -22,6 +22,7 @@ void		newline_endfile_check(int fd, int ret)
 {
 	char		c;
 
+	c = 0;
 	if (ret < 0 || lseek(fd, -1, SEEK_CUR) == -1 || read(fd, &c, 1) != 1)
 		go_exit("ERROR: Read of file");
 	if (c != '\n')
@@ -52,7 +53,7 @@ void	set_lists_at_start(t_token **token, t_label **label)
 {
 	while ((*token)->prev)
 		*token = (*token)->prev;
-	while ((*label)->prev)
+	while (*label && (*label)->prev)
 		*label = (*label)->prev;
 }
 

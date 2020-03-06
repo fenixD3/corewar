@@ -10,6 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "ft_ptintf.h"
 #include "asm.h"
 #include "libword.h"
 #include "libft.h"
@@ -51,6 +52,17 @@ void		argument_rewind(t_pc *pc, t_token *token)
 	rewind_n(pc, tmp - pc->line);
 }
 
+void		command_rewind(t_pc *pc, t_token *token)
+{
+	if (!token->content || !*(char*)token->content ||
+							ft_isspecial(*(char*)token->content, DELIMITERS))
+	{
+		ft_printf("ERROR: [%d:%d] invalid COMMAND\n", pc->row, pc->column); ///  заменить нормально функцией ошибки
+		exit(1);
+	}
+	rewind_n(pc, ft_skipword(pc->line, DELIMITERS) - pc->line);
+}
+
 u_int8_t	token_rewind(t_pc *pc, t_token *token)
 {
 	char *tmp;
@@ -60,7 +72,7 @@ u_int8_t	token_rewind(t_pc *pc, t_token *token)
 	else if (token->type == ARGUMENT || token->type == ARGUMENT_LABEL)
 		argument_rewind(pc , token);
 	else if (token->type == COMMAND)
-		rewind_n(pc, ft_skipword(pc->line, DELIMITERS) - pc->line);
+		command_rewind(pc, token);
 	else if (token->type == SEPARATOR)
 		rewind_n(pc, 1);
 	else if (token->type == LABEL)

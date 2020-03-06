@@ -47,11 +47,35 @@
 #include<stdlib.h>
 #include<stdio.h>
 #include "ft_ptintf.h"
+/// print memory
+/*int main(void)
+{
+	int fd = open("/Users/mdeanne/corewar/vm_champs/test.cor", O_RDONLY);
+	uint8_t buf[3000];
+	uint8_t *ptr;
+	lseek(fd, PROG_NAME_LENGTH + COMMENT_LENGTH + 16, SEEK_CUR);
+	int ret = read(fd, buf, 3000);
+	ptr = buf;
+	int i = 0;
+	while (ret--)
+	{
+		printf("%02x", *ptr);
+		if (i && (i + 1) % 2 == 0)
+			printf(" ");
+		if (i && (i + 1) % 16 == 0)
+			printf("\n");
+		i++;
+		ptr++;
+	}
+
+	return (0);
+}*/
 
 int main(void)
 {
 	t_token *token;
 	t_label *label;
+	t_cmd	*cmd;
 	int fd;
 
 	token = NULL;
@@ -59,6 +83,7 @@ int main(void)
 
 	fd = open("/Users/mdeanne/corewar/vm_champs/test.s", O_RDONLY);
 	tokenize(fd, &token, &label);
+	cmd = make_commands_lst(token);
 
 	return (0);
 }

@@ -16,11 +16,13 @@
 #include "file_to_list.h"
 #include <stdlib.h>
 
-#define ML_FLST		1
 #define ML_TOKEN	2
 #define ML_ARGUMENT	3
 #define ML_T_CONTENT 4
-#define ML_LABEL	5
+#define ML_L_NAME	5
+#define ML_S_CONTENT 6
+#define ML_LABEL	7
+#define ML_COMMAND	8
 
 #define ENDLINE		1
 #define ENDSTR		2
@@ -75,8 +77,14 @@ typedef struct	s_parser_carriage
 	char			*line;
 }				t_pc;
 
-t_token *
-add_token(t_pc *pc, t_token **token_tail, t_label **label_tail, u_int8_t flag);
+typedef struct	s_cmd
+{
+	u_int32_t		command_len;
+	t_token			*token;
+	struct s_cmd	*next;
+}				t_cmd;
+
+t_token			*add_token(t_pc *pc, t_token **token_tail, t_label **label_tail, u_int8_t flag);
 void			add_label(char *str, t_token *token, t_label **tail, t_arg_type arg_type);
 t_arg           *add_arg(char *str, t_arg_type type);
 char			*add_string(char *str, t_token *token);
@@ -85,6 +93,11 @@ void			token_fill(char *str, t_token *token, t_label **tail, u_int8_t flag);
 u_int8_t		token_rewind(t_pc *pc, t_token *token);
 void			rewind_n(t_pc *pc, u_int16_t n);
 void			tokenize(int fd, t_token **token, t_label **label);
+
+
+u_int32_t		command_length(t_token *token);
+t_cmd			*make_commands_lst(t_token *token);
+
 
 ///// not need
 
@@ -95,9 +108,11 @@ char	**fast_strsplit(char *line, char *delims, char *comments, void *alloc_func(
 
 
 
-
+///print
 void print_tokens(t_token *token, u_int8_t setting);
 void print_token(t_token *t);
+char *print_cmd_name(t_token *token, u_int8_t flag);
+
 static char		*g_type[] = {
 		"NAME",//
 		"COMMENT_PROG",//

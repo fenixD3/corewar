@@ -25,7 +25,7 @@ void	check_args(t_token *token, int *i, int com_code)
 void	command_check(t_token *token)
 {
 	int		i;
-	int		com_code;
+	u_int8_t		com_code;
 
 	com_code = 0;
 	i = 0;
@@ -33,7 +33,7 @@ void	command_check(t_token *token)
 		return ;
 	else
 	{
-		com_code = (u_int8_t *)token->content - 1;
+		com_code = *(u_int8_t *)token->content - 1;
 		check_args(token, &i, com_code);
 		if ((i < 2 && ((g_op[com_code]).args_type[1] != 0))
 			|| (i < 3 && ((g_op[com_code]).args_type[2] != 0)))

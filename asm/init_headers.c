@@ -10,7 +10,7 @@ unsigned int		calc_progsize(t_token *token)
 	while (token->next != NULL)
 	{
 		if (token->type == COMMAND)
-			weight += calc_command_weight(token);
+			weight += command_length(token);
 		token = token->next;
 	}
 	token = cp_tok;

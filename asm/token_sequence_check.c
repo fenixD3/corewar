@@ -73,13 +73,15 @@ void	if_command(t_token *token, t_token_sec **check_list)
 			token_exit(ASM_NL_MISSING, token);
 		else
 		{
-			(*check_list)->new_line = false;//?
+			(*check_list)->new_line = false;
 			(*check_list)->command = true;
 			(*check_list)->arg = false;
 			com_name = (char *)(token->content);
 			while (!ft_strequ(com_name, g_op[i].name))
 				i++;
-			token->content = (u_int8_t*)g_op[i].code;
+			token->content = (void*)ml_malloc(sizeof(u_int8_t), ML_CMD_NUM);
+//			token->content = (u_int8_t*)g_op[i].code;
+			token->content = (void*)&g_op[i].code;
 			command_check(token);
 		}
 	}

@@ -55,26 +55,35 @@ int main(void)
 	t_token		*token;
 	t_label		*label;
 	header_t	*header;
-	t_token_sec	check_list;
+	t_token_sec	*check_list;
 	int			fd;
 	int			fd_wr;
-	uint8_t buff[290];
+	uint8_t buff[128];
 	u_int32_t *ptr32;
 
 	token = NULL;
 	label = NULL;
 
-	fd = open("/Users/mcanhand/test.s", O_RDONLY);
-	fd_wr = open("/Users/mcanhand/my_bits", O_RDWR);
+	fd = open("/Users/romancheremin/Desktop/mdall/test.s", O_RDONLY);
+	fd_wr = open("/Users/romancheremin/Desktop/mdall/my_bits", O_RDWR);
+//	fd = open("/Users/mcanhand/test.s", O_RDONLY);
+//	fd_wr = open("/Users/mcanhand/my_bits", O_RDWR);
 	tokenize(fd, &token, &label);
 	token_sequence(token, &check_list);
-    init_headers(&header, token, &check_list);
+    init_headers(&header, token, check_list);
 
 	print_header(fd_wr, header);
 	lseek(fd_wr, 0, SEEK_SET);
 
-	int ret = read(fd_wr, buff, 290);
+	int ret = read(fd_wr, buff, 128);
+	close(fd_wr);
+	close(fd);
 	ptr32 = (u_int32_t*)buff;
-	printf("%030x\n", *ptr32);
+	printf("%0x\n", *ptr32);
+	ml_free_list(2);
+
+	ml_free_list(3);
+	ml_free_list(4);
+	ml_free_list(5);
 	return (0);
 }

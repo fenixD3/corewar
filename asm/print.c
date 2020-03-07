@@ -15,6 +15,21 @@ char *print_cmd_name(t_token *token, u_int8_t flag)
 	return (ft_itoa((int)*(u_int8_t*)token->content));
 }
 
+void print_labels(t_label *label)
+{
+	while (label)
+	{
+		printf("[LABEL:%s]->[TOKEN:%s] ",  label->name, g_type[label->token->type - 1]);
+		if (label->token->type == ARGUMENT_LABEL)
+			printf("->[ARG]->[LABEL:%s]", ((t_label*)((t_arg*)label->token->content)->content)->name);
+		else
+			printf("->[LABEL:%s]", ((t_label*)label->token->content)->name);
+		printf("\n");
+		label = label->next;
+	}
+	printf("----------------------------\n");
+}
+
 void print_token(t_token *t)
 {
 	int flag = 0;
@@ -54,5 +69,4 @@ void print_tokens(t_token *token, u_int8_t setting)
 			printf("\n");
 		token = token->next;
 	}
-	system("clear");
 }

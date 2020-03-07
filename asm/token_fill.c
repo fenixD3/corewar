@@ -79,6 +79,6 @@ void	token_fill(char *str, t_token *token, t_label **tail, u_int8_t flag)
 	{
 		token->type = COMMAND;
 		token->content = (void*)ml_strndup(str,
-				ft_skipword(str, DELIMITERS) - str, ML_T_CONTENT);
+				ft_skipword(str, DELIMITERS) - str, ML_CMD_NAME);
 	}
 }

@@ -9,7 +9,6 @@ include_directories(libft)
 include_directories(libft/memlist)
 
 add_executable(CoreWar_Hub
-        asm/arguments.c
         asm/asm.c
         asm/asm.h
         asm/ft_isdigitalword.c

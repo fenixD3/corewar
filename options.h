@@ -14,16 +14,17 @@
 # define OPTIONS_H
 
 # include "op.h"
+#include "asm.h"
 
 typedef struct	s_op
 {
-	char	*name;
-	int		num_args;
-	int		args_type[3];
-	int		code;
-	int		cycle;
-	_Bool	argument_type_code;
-	int		size_t_dir;
+	char		*name;
+	int			num_args;
+	int			args_type[3];
+	u_int8_t	code;
+	int			cycle;
+	_Bool		argument_type_code;
+	int			size_t_dir;
 
 }				t_op;
 

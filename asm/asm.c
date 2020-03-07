@@ -18,6 +18,29 @@
 #include "asm.h"
 #include "op.h"
 
+
+#include "options.h"
+void	command_nametonum(t_token *token)
+{
+	char	*com_name;
+	int 	i;
+
+	i = 0;
+	while (token)
+	{
+		if (token->type == COMMAND)
+		{
+			com_name = (char *)(token->content);
+			while (!ft_strequ(com_name, g_op[i].name))
+				i++;
+			token->content = (void*)ml_malloc(sizeof(u_int8_t), ML_CMD_NUM);
+			token->content = (void*)&g_op[i].code;
+		}
+		token = token->next;
+	}
+
+}
+
 //int main(int ac, char **av)
 //{
 //	int fd;
@@ -75,7 +98,7 @@ int main(void)
 {
 	t_token *token;
 	t_label *label;
-	t_cmd	*cmd;
+
 	int fd;
 
 	token = NULL;
@@ -83,7 +106,10 @@ int main(void)
 
 	fd = open("/Users/mdeanne/corewar/vm_champs/test.s", O_RDONLY);
 	tokenize(fd, &token, &label);
-	cmd = make_commands_lst(token);
+	command_nametonum(token);
+	print_labels(label);
+
+	label_substitution(label);
 
 	return (0);
 }

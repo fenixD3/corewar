@@ -19,13 +19,13 @@ u_int32_t	command_length(t_token *token)
 	uint32_t	lenth;
 	u_int8_t	num_args;
 
-	op = &g_op[*(u_int8_t*)token->content - 1]; /// тут какая-то ошибка
+	op = &g_op[*(u_int8_t*)token->content - 1];
 	lenth = COMMAND_LEN;
 	num_args = op->num_args;
 	lenth += op->argument_type_code;
 	while (num_args--)
 	{
-		while (/*token &&*/(token->type == ARGUMENT || token->type == ARGUMENT_LABEL))
+		while (/*token &&*/(token->type != ARGUMENT && token->type != ARGUMENT_LABEL))
 			token = token->next;
 /*		if (!token)
 			go_exit("ERROR: number of args not valid"); // возможно не нужная проверка*/
@@ -35,6 +35,7 @@ u_int32_t	command_length(t_token *token)
 			lenth += IND_LEN;
 		else if (((t_arg*)token->content)->type & T_DIR)
 			lenth += op->size_t_dir;
+		token = token->next;
 	}
 	return (lenth);
 }

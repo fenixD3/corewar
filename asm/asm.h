@@ -18,11 +18,12 @@
 
 #define ML_TOKEN	2
 #define ML_ARGUMENT	3
-#define ML_T_CONTENT 4
+#define ML_CMD_NAME 4
 #define ML_L_NAME	5
 #define ML_S_CONTENT 6
 #define ML_LABEL	7
-#define ML_COMMAND	8
+#define ML_CMD_NUM	8
+#define ML_COMMAND	9
 
 #define ENDLINE		1
 #define ENDSTR		2
@@ -67,7 +68,7 @@ typedef struct	s_argument
 {
 	u_int8_t		type;
 	void 			*content;
-	u_int32_t		num;
+	int				num;
 }				t_arg;
 
 typedef struct	s_parser_carriage
@@ -76,13 +77,6 @@ typedef struct	s_parser_carriage
 	u_int16_t		column;
 	char			*line;
 }				t_pc;
-
-typedef struct	s_cmd
-{
-	u_int32_t		command_len;
-	t_token			*token;
-	struct s_cmd	*next;
-}				t_cmd;
 
 t_token			*add_token(t_pc *pc, t_token **token_tail, t_label **label_tail, u_int8_t flag);
 void			add_label(char *str, t_token *token, t_label **tail, t_arg_type arg_type);
@@ -96,8 +90,8 @@ void			tokenize(int fd, t_token **token, t_label **label);
 
 
 u_int32_t		command_length(t_token *token);
-t_cmd			*make_commands_lst(t_token *token);
 
+void 	label_substitution(t_label *head);
 
 ///// not need
 
@@ -106,12 +100,16 @@ _Bool	is_special_char(char c, char *specials);
 _Bool	skip_delims(char **line, char *delims, char *comments);
 char	**fast_strsplit(char *line, char *delims, char *comments, void *alloc_func(size_t)); // may be replaced to libft
 
+_Bool	find_label(t_label **head, t_label *label_arg);
 
 
 ///print
 void print_tokens(t_token *token, u_int8_t setting);
 void print_token(t_token *t);
 char *print_cmd_name(t_token *token, u_int8_t flag);
+void print_labels(t_label *label);
+
+
 
 static char		*g_type[] = {
 		"NAME",//

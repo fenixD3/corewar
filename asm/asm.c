@@ -15,9 +15,31 @@
 #include <fcntl.h>
 #include <libft/get_next_line.h>
 #include "file_to_list.h"
+#include "asm.h"
+#include "op.h"
 
 
-#include "asm_dasha.h"
+#include "options.h"
+void	command_nametonum(t_token *token)
+{
+	char	*com_name;
+	int 	i;
+
+	i = 0;
+	while (token)
+	{
+		if (token->type == COMMAND)
+		{
+			com_name = (char *)(token->content);
+			while (!ft_strequ(com_name, g_op[i].name))
+				i++;
+			token->content = (void*)ml_malloc(sizeof(u_int8_t), ML_CMD_NUM);
+			token->content = (void*)&g_op[i].code;
+		}
+		token = token->next;
+	}
+
+}
 
 //int main(int ac, char **av)
 //{
@@ -48,46 +70,16 @@
 #include<stdlib.h>
 #include<stdio.h>
 #include "ft_ptintf.h"
-
-int main(void)
+/// print memory
+/*int main(void)
 {
-	t_token		*token;
-	t_label		*label;
-	header_t	*header;
-	t_token_sec	*check_list;
-	int			fd;
-	int			fd_wr;
-
-	u_int32_t buff[3000];
-	u_int32_t *ptr32;
-	u_int8_t *ptr;
-
-	token = NULL;
-	label = NULL;
-
-//	fd = open("/Users/romancheremin/Desktop/mdall/test.s", O_RDONLY);
-//	fd_wr = open("/Users/romancheremin/Desktop/mdall/my_bits", O_RDWR);
-	fd = open("/Users/mcanhand/test.s", O_RDONLY);
-	fd_wr = open("/Users/mcanhand/my_bits", O_RDWR);
-//	fd_wr = open("/Users/mcanhand/test.cor", O_RDWR);
-
-	tokenize(fd, &token, &label);
-
-	label_substitution(label);
-
-	token_sequence(token, &check_list);
-    init_headers(&header, token, check_list);
-	print_header(fd_wr, header);
-	print_commands(fd_wr, token, label);
-	lseek(fd_wr, 0, SEEK_SET);
-	ft_bzero(buff, 128);
-
-	int ret;
-
-	ret = read(fd_wr, buff, 3000);
-	ptr = (u_int8_t*)buff;
+	int fd = open("/Users/mdeanne/corewar/vm_champs/test.cor", O_RDONLY);
+	uint8_t buf[3000];
+	uint8_t *ptr;
+	lseek(fd, PROG_NAME_LENGTH + COMMENT_LENGTH + 16, SEEK_CUR);
+	int ret = read(fd, buf, 3000);
+	ptr = buf;
 	int i = 0;
-
 	while (ret--)
 	{
 		printf("%02x", *ptr);
@@ -98,17 +90,25 @@ int main(void)
 		i++;
 		ptr++;
 	}
+	return (0);
+}*/
 
+int main(void)
+{
+	t_token *token;
+	t_label *label;
 
+	int fd;
 
-	//	ptr32 = (u_int32_t*)buff;
-	// 	printf("%0x\n", *ptr32);
+	token = NULL;
+	label = NULL;
 
-	ml_free_list(2);
-	ml_free_list(3);
-	ml_free_list(4);
-	ml_free_list(5);
-	close(fd_wr);
-	close(fd);
- 	return (0);
+	fd = open("/Users/mdeanne/corewar/vm_champs/test.s", O_RDONLY);
+	tokenize(fd, &token, &label);
+	//print_tokens(token, 1);
+	command_nametonum(token); // будет в проверке => удалить
+	label_substitution(label); // очищает все t_label - больше незья обращаться
+	print_tokens(token, 2);
+
+	return (0);
 }

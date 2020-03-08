@@ -25,7 +25,7 @@ u_int32_t	command_length(t_token *token)
 	lenth += op->argument_type_code;
 	while (num_args--)
 	{
-		while (/*token &&*/(token->type != ARGUMENT && token->type != ARGUMENT_LABEL))
+		while ((token->type != ARGUMENT && token->type != ARGUMENT_LABEL))
 			token = token->next;
 /*		if (!token)
 			go_exit("ERROR: number of args not valid"); // возможно не нужная проверка*/

@@ -8,13 +8,6 @@ u_int8_t    calc_arg_type_code(t_token *token)
 	unsigned int    res;
 	t_op		*op;
 
-//	00 00 00 00
-//	00 00 00 01
-//	01 00 00 00
-//	00 00 01 10
-//	01 10 00 00
-//  00 01 10 10
-//  01 10 10 00
 	i = 0;
 	res = 0;
 	op = &g_op[*(u_int8_t*)token->content - 1];
@@ -47,10 +40,39 @@ u_int8_t    calc_arg_type_code(t_token *token)
 	return (res);
 }
 
-void    print_commands(int fd, t_token *token, t_label *label)
+void    print_args(int fd, t_token *token)
 {
-	unsigned char res;
-	int             com_code;
+	t_op			*op;
+	unsigned int	res;
+	u_int8_t		num_args;
+
+	op = &g_op[*(u_int8_t*)token->content - 1];
+	num_args = op->num_args;
+	while (num_args--)
+	{
+		while ((token->type != ARGUMENT && token->type != ARGUMENT_LABEL))
+			token = token->next;
+		if (((t_arg*)token->content)->type & T_REG)
+		{
+			res = *(u_int8_t*)((t_arg*)token->content);
+			write(fd, &res, 1);
+		}
+		else if (((t_arg*)token->content)->type & T_IND)
+		{
+			write(fd, &res, 2);
+		}
+		else if (((t_arg*)token->content)->type & T_DIR)
+			write(fd, &res, op->size_t_dir);
+		token = token->next;
+	}
+	return (lenth);
+}
+
+void				print_commands(int fd, t_token *token, t_label *label)
+{
+	unsigned char	res;
+	int				com_code;
+
 	while (token->next != NULL)
 	{
 		if (token->type == COMMAND)
@@ -62,6 +84,7 @@ void    print_commands(int fd, t_token *token, t_label *label)
 				res = calc_arg_type_code(token);
 				write(fd, &res, 1);
 			}
+			print_args(fd, token);
 		}
 		token = token->next;
 	}

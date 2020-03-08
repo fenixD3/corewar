@@ -106,10 +106,10 @@ int main(void)
 
 	fd = open("/Users/mdeanne/corewar/vm_champs/test.s", O_RDONLY);
 	tokenize(fd, &token, &label);
-	command_nametonum(token);
-	print_labels(label);
-
-	label_substitution(label);
+	//print_tokens(token, 1);
+	command_nametonum(token); // будет в проверке => удалить
+	label_substitution(label); // очищает все t_label - больше незья обращаться
+	print_tokens(token, 2);
 
 	return (0);
 }

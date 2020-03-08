@@ -63,7 +63,6 @@ int 	count_length_to_label(t_label *label, t_label *label_arg)
 	return (length);
 }
 
-#include <stdio.h>
 
 void 	label_substitution(t_label *head)
 {
@@ -73,7 +72,14 @@ void 	label_substitution(t_label *head)
 	while (tmp)
 	{
 		if (tmp->token->type == ARGUMENT_LABEL)
-			printf("%s -> %d\n", tmp->name, count_length_to_label(head, tmp));
+		{
+			((t_arg*)tmp->token->content)->num = count_length_to_label(head, tmp);
+			((t_arg*)tmp->token->content)->content = NULL;
+			((t_arg*)tmp->token->content)->type &= ~T_LAB;
+			tmp->token->type = ARGUMENT;
+
+		}
 		tmp = tmp->next;
 	}
+	ml_free_list(ML_LABEL);
 }

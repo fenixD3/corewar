@@ -33,30 +33,29 @@ t_arg	*add_arg(char *str, t_arg_type type)
 void	add_label(char *str, t_token *token,
 											t_label **tail, t_arg_type arg_type)
 {
-	t_label	*label;
+	t_label	*new;
 
-	label = (t_label*)ml_malloc(sizeof(t_label), ML_LABEL);
-	label->token = token;
-	label->name = ml_strndup(str,ft_skipword(str, DELIMITERS) - str,
-																ML_L_NAME);
+	new = (t_label*)ml_malloc(sizeof(t_label), ML_LABEL);
+	new->token = token;
+	new->name = ml_strndup(str, ft_skipword(str, DELIMITERS) - str, ML_L_NAME);
 	if (arg_type)
 	{
 		token->content = (void*)add_arg(NULL, arg_type);
-		((t_arg*)token->content)->content = (void*)label;
+		((t_arg*)token->content)->content = (void*)new;
 	}
 	else
-		token->content = (void*)label;
+		token->content = (void*)new;
 	if (!*tail)
 	{
-		label->prev = NULL;
-		label->next = NULL;
+		new->prev = NULL;
+		new->next = NULL;
 	}
 	else
 	{
-		label->prev = *tail;
-		(*tail)->next = label;
+		new->prev = *tail;
+		(*tail)->next = new;
 	}
-	*tail = label;
+	*tail = new;
 }
 
 char	*add_string(char *str, t_token *token)

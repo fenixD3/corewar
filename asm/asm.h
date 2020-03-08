@@ -91,7 +91,7 @@ void			tokenize(int fd, t_token **token, t_label **label);
 
 u_int32_t		command_length(t_token *token);
 
-void 	label_substitution(t_label *head);
+void 			label_substitution(t_label *head);
 
 ///// not need
 
@@ -105,7 +105,7 @@ _Bool	find_label(t_label **head, t_label *label_arg);
 
 ///print
 void print_tokens(t_token *token, u_int8_t setting);
-void print_token(t_token *t);
+void print_token(t_token *t, u_int8_t setting);
 char *print_cmd_name(t_token *token, u_int8_t flag);
 void print_labels(t_label *label);
 

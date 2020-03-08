@@ -41,7 +41,7 @@ int					token_exit(char *error, t_token *token);
 _Bool				token_sequence(t_token *token, t_token_sec	**check_list);
 
 u_int32_t			command_length(t_token *token);
-void			    print_commands(int fd, t_token *token, t_label *label);
+void			    print_commands(int fd, t_token *token);
 
 void				label_substitution(t_label *head);
 

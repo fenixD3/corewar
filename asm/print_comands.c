@@ -40,10 +40,29 @@ u_int8_t    calc_arg_type_code(t_token *token)
 	return (res);
 }
 
+void    write_reverse(t_token *token, t_op *op, int fd)
+{
+	u_int32_t		*p32;
+	u_int8_t		*p8;
+
+	p32 = &((t_arg*)token->content)->num;
+	p8 = (u_int8_t*)p32;
+	if (((t_arg*)token->content)->type & T_DIR)
+	{
+		if (op->size_t_dir == DIR_LONG_LEN)
+		{
+			write(fd, &p8[3], 1);
+			write(fd, &p8[2], 1);
+		}
+	}
+	write(fd, &p8[1], 1);
+	write(fd, &p8[0], 1);
+}
+
 void    print_args(int fd, t_token *token)
 {
 	t_op			*op;
-	unsigned int	res;
+	u_int8_t		res8;
 	u_int8_t		num_args;
 
 	op = &g_op[*(u_int8_t*)token->content - 1];
@@ -54,21 +73,16 @@ void    print_args(int fd, t_token *token)
 			token = token->next;
 		if (((t_arg*)token->content)->type & T_REG)
 		{
-			res = *(u_int8_t*)((t_arg*)token->content);
-			write(fd, &res, 1);
+			res8 = (u_int8_t)((t_arg*)token->content)->num;
+			write(fd, &res8, 1);
 		}
-		else if (((t_arg*)token->content)->type & T_IND)
-		{
-			write(fd, &res, 2);
-		}
-		else if (((t_arg*)token->content)->type & T_DIR)
-			write(fd, &res, op->size_t_dir);
+		else
+			write_reverse(token, op, fd);
 		token = token->next;
 	}
-	return (lenth);
 }
 
-void				print_commands(int fd, t_token *token, t_label *label)
+void				print_commands(int fd, t_token *token)
 {
 	unsigned char	res;
 	int				com_code;

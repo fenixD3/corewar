@@ -20,26 +20,26 @@
 
 
 #include "options.h"
-void	command_nametonum(t_token *token)
-{
-	char	*com_name;
-	int 	i;
-
-	i = 0;
-	while (token)
-	{
-		if (token->type == COMMAND)
-		{
-			com_name = (char *)(token->content);
-			while (!ft_strequ(com_name, g_op[i].name))
-				i++;
-			token->content = (void*)ml_malloc(sizeof(u_int8_t), ML_CMD_NUM);
-			token->content = (void*)&g_op[i].code;
-		}
-		token = token->next;
-	}
-
-}
+//void	command_nametonum(t_token *token)
+//{
+//	char	*com_name;
+//	int 	i;
+//
+//	i = 0;
+//	while (token)
+//	{
+//		if (token->type == COMMAND)
+//		{
+//			com_name = (char *)(token->content);
+//			while (!ft_strequ(com_name, g_op[i].name))
+//				i++;
+//			token->content = (void*)ml_malloc(sizeof(u_int8_t), ML_CMD_NUM);
+//			token->content = (void*)&g_op[i].code;
+//		}
+//		token = token->next;
+//	}
+//
+//}
 
 //int main(int ac, char **av)
 //{
@@ -93,22 +93,22 @@ void	command_nametonum(t_token *token)
 	return (0);
 }*/
 
-int main(void)
-{
-	t_token *token;
-	t_label *label;
-
-	int fd;
-
-	token = NULL;
-	label = NULL;
-
-	fd = open("/Users/mdeanne/corewar/vm_champs/test.s", O_RDONLY);
-	tokenize(fd, &token, &label);
-	//print_tokens(token, 1);
-	command_nametonum(token); // будет в проверке => удалить
-	label_substitution(label); // очищает все t_label - больше незья обращаться
-	print_tokens(token, 2);
-
-	return (0);
-}
+//int main(void)
+//{
+//	t_token *token;
+//	t_label *label;
+//
+//	int fd;
+//
+//	token = NULL;
+//	label = NULL;
+//
+//	fd = open("/Users/mdeanne/corewar/vm_champs/test.s", O_RDONLY);
+//	tokenize(fd, &token, &label);
+//	//print_tokens(token, 1);
+//	command_nametonum(token); // будет в проверке => удалить
+//	label_substitution(label); // очищает все t_label - больше незья обращаться
+//	print_tokens(token, 2);
+//
+//	return (0);
+//}

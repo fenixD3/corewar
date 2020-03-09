@@ -13,6 +13,8 @@
 #include "ft_ptintf.h"
 #include "libft.h"
 #include "asm.h"
+#include "errors.h"
+#include "asm_dasha.h"
 
 _Bool	find_label(t_label **head, t_label *label_arg)
 {
@@ -29,10 +31,7 @@ _Bool	find_label(t_label **head, t_label *label_arg)
 		*head = (*head)->next;
 	}
 	if (!*head)
-	{
-		ft_printf("ERROR: [%03d:%03d] label doesn't exist", label_arg->token->row, label_arg->token->column); /// заменить нормальной функцией ошибки
-		exit (1);
-	}
+		token_exit(ASM_NO_LABEL, label_arg->token);
 	return (l_before_al);
 }
 
@@ -57,7 +56,7 @@ int 	count_length_to_label(t_label *label, t_label *label_arg)
 		token = (before) ? token->prev : token->next;
 	}
 	if (!token)
-		go_exit("WTF ERROR"); ////мало ли
+		go_exit("ERROR: Can't find label"); ////мало ли
 	if (before)
 		length = -length;
 	return (length);

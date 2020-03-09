@@ -13,17 +13,17 @@
 #ifndef ASM_H
 #define ASM_H
 #include "op.h"
-#include "file_to_list.h"
+#include "../../file_to_list.h"
 #include <stdlib.h>
 
-#define ML_TOKEN	2
-#define ML_ARGUMENT	3
-#define ML_CMD_NAME 4
-#define ML_L_NAME	5
-#define ML_S_CONTENT 6
-#define ML_LABEL	7
-#define ML_CMD_NUM	8
-#define ML_COMMAND	9
+#define ML_GNL_LINE	10
+#define ML_TOKEN	20
+#define ML_ARGUMENT	30
+#define ML_CMD_NAME 40
+#define ML_L_NAME	50
+#define ML_S_CONTENT 60
+#define ML_LABEL	70
+#define ML_CMD_NUM	80
 
 #define ENDLINE		1
 #define ENDSTR		2

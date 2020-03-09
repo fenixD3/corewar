@@ -12,8 +12,8 @@
 
 #include <libft/libft.h>
 #include <fcntl.h>
-#include "file_to_list.h"
-#include "asm_dasha.h"
+#include "asm_dasha.h" ///
+#include "asm.h"
 #include <stdlib.h>
 #include <stdio.h>
 #include "ft_ptintf.h"
@@ -24,19 +24,21 @@ void    print_in_file(t_token *token, header_t *header)
 	int			fd;
 	int     nulle;
 
-	u_int8_t *ptr;
-	u_int32_t buff[3000];
-
-
-	fd = open("/Users/mcanhand/my_bits", O_RDWR);
+	fd = open("/Users/mdeanne/corewar/vm_champs/test.cor", O_RDWR);
 	print_header(fd, header);
 	nulle = 0;
 	write(fd, &nulle, 4);
 	print_commands(fd, token);
-	lseek(fd, 0, SEEK_SET);
+	close(fd);
+}
 
-	int ret;
-	ret = read(fd, buff, 3000);
+void	print_file(char* path)
+{
+	u_int8_t *ptr;
+	u_int32_t buff[3000];
+
+	int	fd = open(path, O_RDWR);
+	int ret = read(fd, buff, 3000);
 	ptr = (u_int8_t*)buff;
 	int i = 0;
 	while (ret--)
@@ -60,20 +62,22 @@ int main(void)
 	t_token_sec	*check_list;
 	int			fd;
 
+	//
+	char  *binflie = "/Users/mdeanne/corewar/vm_champs/test.cor";
+	fclose(fopen(binflie, "w"));
+	//
 
 	token = NULL;
 	label = NULL;
-	fclose(fopen("/Users/mcanhand/my_bits", "w"));
-	fd = open("/Users/mcanhand/test.s", O_RDONLY);
-
+	fd = open("/Users/mdeanne/corewar/vm_champs/test.s", O_RDONLY);
 	tokenize(fd, &token, &label);
 	token_sequence(token, &check_list);
 	label_substitution(label);
 	init_headers(&header, token, check_list);
 	print_in_file(token, header);
-
-
-//	ml_free_all();
 	close(fd);
+
+	print_file(binflie);
 	return (0);
 }
+

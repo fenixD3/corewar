@@ -17,11 +17,11 @@ u_int8_t    calc_arg_type_code(t_token *token)
 		while ((token->type != ARGUMENT && token->type != ARGUMENT_LABEL))
 			token = token->next;
 		if (((t_arg*)token->content)->type & T_REG)
-			res |= 1 << i + 6;
+			res |= 1 << (i + 6);
 		else if (((t_arg*)token->content)->type & T_IND)
-			res |= 3 << i + 6;
+			res |= 3 << (i + 6);
 		else if (((t_arg*)token->content)->type & T_DIR)
-			 res |= 2 << i + 6;
+			 res |= 2 << (i + 6);
 		token = token->next;
 		i -= 2;
 	}

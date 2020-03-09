@@ -14,11 +14,12 @@
 #include <libft/libft.h>
 #include <fcntl.h>
 #include <libft/get_next_line.h>
-#include "file_to_list.h"
+#include "../../file_to_list.h"
 #include "asm.h"
 #include "op.h"
 
 
+/*
 #include "options.h"
 void	command_nametonum(t_token *token)
 {
@@ -71,6 +72,7 @@ void	command_nametonum(t_token *token)
 #include<stdio.h>
 #include "ft_ptintf.h"
 /// print memory
+*/
 /*int main(void)
 {
 	int fd = open("/Users/mdeanne/corewar/vm_champs/test.cor", O_RDONLY);
@@ -92,7 +94,8 @@ void	command_nametonum(t_token *token)
 	}
 
 	return (0);
-}*/
+}*//*
+
 
 int main(void)
 {
@@ -112,4 +115,4 @@ int main(void)
 	print_tokens(token, 2);
 
 	return (0);
-}
+}*/

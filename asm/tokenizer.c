@@ -10,13 +10,10 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdbool.h>
+
 #include "libft.h"
 #include "asm.h"
 #include "libword.h"
-
-
-#include <stdio.h>
 
 void		newline_endfile_check(int fd, int ret)
 {
@@ -24,7 +21,7 @@ void		newline_endfile_check(int fd, int ret)
 
 	c = 0;
 	if (ret < 0 || lseek(fd, -1, SEEK_CUR) == -1 || read(fd, &c, 1) != 1)
-		go_exit("ERROR: Read of file");
+		go_exit("ERROR: cant't read file");
 	if (c != '\n')
 		go_exit("ERROR: No new line before end of file");
 }
@@ -46,7 +43,6 @@ void	tokenize_line(t_pc *pc, t_token **token, t_label **label, char *str)
 	add_token(pc, token, label, flag);
 	pc->line = str;
 	pc->row++;
-	free(str);
 }
 
 void	set_lists_at_start(t_token **token, t_label **label)
@@ -65,7 +61,7 @@ void	tokenize(int fd, t_token **token, t_label **label)
 	int 		ret;
 
 	pc.row = 0;
-	while ((ret = get_next_line(fd, &tmp)) > 0)
+	while ((ret = ml_get_next_line(fd, &tmp, ML_GNL_LINE)) > 0)
 		tokenize_line(&pc, token, label, tmp);
 	if (!*token)
 		go_exit("ERROR: File is empty");

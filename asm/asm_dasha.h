@@ -1,21 +1,19 @@
 
 #ifndef ASM_DASHA_H
 #define ASM_DASHA_H
-#include "file_to_list.h"
 #include <stdlib.h>
 #include <fcntl.h>
 
 #include <stdio.h>
 #include "libft.h"
-#include <options.h>
+#include "options.h"
 #include "errors.h"
 
 #include "asm.h"
 
 
-#define ML_CHECK_LST 3
-# define ML_HEADER 4
-# define ML_CMD_NUM 7
+#define ML_CHECK_LST 35 /// в каком месте..
+# define ML_HEADER 45 ///a???
 
 #define MAX_FILE_LENGTH (CHAMP_MAX_SIZE + PROG_NAME_LENGTH + COMMENT_LENGTH + 16)
 
@@ -38,12 +36,10 @@ typedef struct		s_token_sec
 }					t_token_sec;
 
 int					token_exit(char *error, t_token *token);
-_Bool				token_sequence(t_token *token, t_token_sec	**check_list);
+void token_sequence(t_token *token, t_token_sec	**check_list);
 
-u_int32_t			command_length(t_token *token);
 void			    print_commands(int fd, t_token *token);
 
-void				label_substitution(t_label *head);
 
 void				print_header(int fd, header_t *header);
 void				if_label(t_token *token, t_token_sec **check_list);

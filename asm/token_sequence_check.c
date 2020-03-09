@@ -1,6 +1,7 @@
 
 #include <stdbool.h>
 #include "asm_dasha.h"
+#include "asm.h"
 
 void 	init_check_list(t_token_sec **check_list)
 {
@@ -87,7 +88,7 @@ void	if_command(t_token *token, t_token_sec **check_list)
 	}
 }
 
-_Bool			token_sequence(t_token *token, t_token_sec	**check_list)
+void token_sequence(t_token *token, t_token_sec	**check_list)
 {
 	t_token		*token_arr;
 
@@ -96,7 +97,10 @@ _Bool			token_sequence(t_token *token, t_token_sec	**check_list)
 	while (token != NULL)
 	{
 		if (token->type == COMMENT)
-			;
+		{
+			(*check_list)->new_line = false;
+			(*check_list)->comment = true;
+		}
 		else if (token->type == SEPARATOR)
 		{
 			if ((*check_list)->separator)

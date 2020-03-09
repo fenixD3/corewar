@@ -41,6 +41,12 @@
 
 # define ASM_ERR_ARGS			"ERROR: Command followed by wrong arguments"
 
+///// Egor's errors
+
+#define ASM_NO_LABEL			"ERROR: label doesn't exist"
+
+///// Stop Egor's errors
+
 //								" of types T_REG, T_REG/T_DIR/T_IND and T_REG/T_DIR"
 
 //# define ASM_STI_ERR			"ERROR: Command 'sti' should be followed exactly by tree arguments,"

@@ -4,6 +4,7 @@
 # include "ft_ptintf.h"
 # include "op.h"
 # include <fcntl.h>
+
 # define N_FLG 1u
 # define DUMP_FLG 2u
 # define A_FLG 3u
@@ -40,7 +41,7 @@ typedef struct	s_game_param
 	int		cycles_aft_start;
 	int		live_period_cnt;
 	int		cycles_to_die;
-	int 	live_check_cnt;
+	int 	check_cnt;
 }				t_game_param;
 
 typedef struct	s_carriages
@@ -91,5 +92,10 @@ void	start_game(t_corewar *corewar);
 void	init_arena(unsigned char arena[], t_champion *champs,
 					t_carriages **carriages);
 void	introducing_fighter(t_champion *champs);
+
+void	carriages_actions(t_carriages *carriage, t_game_param game_param);
+unsigned char	get_bytes_for_step(); /// need to write
+void	lets_check(t_carriages *carriage, t_game_param *game_param);
+_Bool	validate_operation(unsigned char *start_oper);
 
 #endif

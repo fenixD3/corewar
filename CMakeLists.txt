@@ -170,4 +170,4 @@ add_executable(CoreWar_Hub
         file_to_list.h
         ft_wordequ.c
         op.h
-        options.h vm/srcs/game/game.c vm/srcs/struct_intf/carriage_intf.c vm/includes/error_defs.h)
+        options.h vm/srcs/game/game.c vm/srcs/struct_intf/carriage_intf.c vm/includes/error_defs.h vm/srcs/game/game_intf.c)

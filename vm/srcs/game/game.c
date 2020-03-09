@@ -4,6 +4,14 @@ void	start_game(t_corewar *corewar)
 {
 	init_arena(corewar->arena, corewar->champs, &corewar->carriages);
 	introducing_fighter(corewar->champs);
+	while (corewar->game_param.cycles_to_die)
+	{
+		carriages_actions(corewar->carriages, corewar->game_param);
+		if (!(++corewar->game_param.cycles_aft_start %
+				corewar->game_param.cycles_to_die) ||
+				corewar->game_param.cycles_to_die <= 0)
+			lets_check(corewar->carriages, &corewar->game_param);
+	}
 }
 
 void	init_arena(unsigned char arena[], t_champion *champs,
@@ -20,7 +28,7 @@ void	init_arena(unsigned char arena[], t_champion *champs,
 				sizeof(champs->file.exec_code));
 		push_front_carriage(carriages);
 		(*carriages)->reg[0] = -champs->num;
-		(*carriages)->op_code = *(arena + (i - 1) * code_shift);
+		(*carriages)->curr_pos = arena + (i - 1) * code_shift;
 		champs = champs->next;
 	}
 }

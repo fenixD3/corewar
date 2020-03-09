@@ -13,6 +13,9 @@
 #ifndef FILE_TO_LIST_H
 # define FILE_TO_LIST_H
 # include <stdlib.h>
+# include <stdint.h>
+
+typedef uint32_t u_int32_t;
 
 typedef struct	s_fline
 {

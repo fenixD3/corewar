@@ -17,10 +17,13 @@
 # define ML_CLEARLIST 3
 # define ML_CLEARALL 4
 # include <stdlib.h>
-
+# include <stdint.h>
 /*
 ** ml is acronym for words "memory list"
 */
+
+typedef uint8_t u_int8_t;
+typedef uint32_t u_int32_t;
 
 typedef struct	s_ml
 {

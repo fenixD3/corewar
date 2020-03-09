@@ -9,7 +9,7 @@
 /*   Updated: 2020/02/13 23:35:01 by mdeanne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
+/*
 #include <libft/libft.h>
 #include "op.h"
 #include "file_to_list.h"
@@ -58,4 +58,4 @@ void		get_header_strings(header_t *header, t_fline *flst)
 {
 	ft_bzero(header->prog_name, PROG_NAME_LENGTH + 1);
 	ft_bzero(header->comment, COMMENT_LENGTH + 1);
-}
+}*/

@@ -5,8 +5,10 @@ set(CMAKE_C_STANDARD 11)
 
 include_directories(.)
 include_directories(asm)
+include_directories(ft_printf/includes)
 include_directories(libft)
 include_directories(libft/memlist)
+include_directories(vm/includes)
 
 add_executable(CoreWar_Hub
         asm/arguments.c
@@ -20,6 +22,43 @@ add_executable(CoreWar_Hub
         asm/token_recognition.c
         asm/tokenizer.c
         asm/tokens_lst.c
+        ft_printf/includes/ft_ptintf.h
+        ft_printf/includes/high_precision.h
+        ft_printf/includes/my_float.h
+        ft_printf/srcs/field_len.c
+        ft_printf/srcs/fill_union.c
+        ft_printf/srcs/ft_itoa_base_printf.c
+        ft_printf/srcs/ft_printf.c
+        ft_printf/srcs/get_binary.c
+        ft_printf/srcs/is_parser.c
+        ft_printf/srcs/is_typeflags.c
+        ft_printf/srcs/make_field.c
+        ft_printf/srcs/parsing_funcs.c
+        ft_printf/srcs/parsing_generaly.c
+        ft_printf/srcs/prepare_lennum.c
+        ft_printf/srcs/set_buff.c
+        ft_printf/srcs/set_flags.c
+        ft_printf/srcs/str_tolower.c
+        ft_printf/srcs/to_buff.c
+        ft_printf/srcs/which_sign.c
+        ft_printf/srcs/zeroing.c
+        ft_printf/srcsFloat/check_create_float_res.c
+        ft_printf/srcsFloat/e_flag_intf.c
+        ft_printf/srcsFloat/float_intf.c
+        ft_printf/srcsFloat/float_rounding.c
+        ft_printf/srcsFloat/frees_for_float.c
+        ft_printf/srcsFloat/ft_log10.c
+        ft_printf/srcsFloat/ft_log2.c
+        ft_printf/srcsFloat/g_flag_intf.c
+        ft_printf/srcsFloat/get_dbl_values.c
+        ft_printf/srcsFloat/get_ldbl_values.c
+        ft_printf/srcsFloat/high_precision.c
+        ft_printf/srcsFloat/high_precision_intf.c
+        ft_printf/srcsFloat/high_precision_intf_long.c
+        ft_printf/srcsFloat/high_precision_long.c
+        ft_printf/srcsFloat/my_float.c
+        ft_printf/srcsFloat/my_long_float.c
+        ft_printf/srcsFloat/print_reserve_dbl.c
         libft/memlist/blackbox_memlist.h
         libft/memlist/memlist_bottleneck.c
         libft/memlist/ml_create.c
@@ -39,15 +78,19 @@ add_executable(CoreWar_Hub
         libft/ft_isprint.c
         libft/ft_isspace.c
         libft/ft_isupper.c
-        libft/ml_itoa.c
+        libft/ft_itoa.c
         libft/ft_lstadd.c
+        libft/ft_lstcirc_add.c
+        libft/ft_lstcirc_delelem.c
+        libft/ft_lstcirc_findcontent_size.c
+        libft/ft_lstcirc_strnew.c
         libft/ft_lstdel.c
         libft/ft_lstdelone.c
         libft/ft_lstiter.c
         libft/ft_lstmap.c
         libft/ft_lstnew.c
         libft/ft_lstpush.c
-        libft/ml_memalloc.c
+        libft/ft_memalloc.c
         libft/ft_memccpy.c
         libft/ft_memchr.c
         libft/ft_memcmp.c
@@ -73,39 +116,58 @@ add_executable(CoreWar_Hub
         libft/ft_strcmp.c
         libft/ft_strcpy.c
         libft/ft_strdel.c
-        libft/ml_strdup.c
+        libft/ft_strdup.c
         libft/ft_strequ.c
         libft/ft_striter.c
         libft/ft_striteri.c
-        libft/ml_strjoin.c
-        libft/ml_strjoinre.c
+        libft/ft_strjoin.c
+        libft/ft_strjoinre.c
         libft/ft_strlcat.c
         libft/ft_strlcpy.c
         libft/ft_strlen.c
-        libft/ml_strmap.c
-        libft/ml_strmapi.c
+        libft/ft_strmap.c
+        libft/ft_strmapi.c
         libft/ft_strncat.c
         libft/ft_strncmp.c
         libft/ft_strncpy.c
-        libft/ml_strndup.c
+        libft/ft_strndup.c
         libft/ft_strnequ.c
-        libft/ml_strnew.c
+        libft/ft_strnew.c
         libft/ft_strnstr.c
         libft/ft_strrchr.c
-        libft/ml_strsplit.c
+        libft/ft_strsplit.c
         libft/ft_strstr.c
-        libft/ml_strsub.c
-        libft/ml_strtrim.c
+        libft/ft_strsub.c
+        libft/ft_strtrim.c
         libft/ft_tolower.c
         libft/ft_toupper.c
-        libft/go_exit.c
+        libft/get_next_line.c
         libft/get_next_line.h
-        libft/ml_get_next_line.c
+        libft/go_exit.c
         libft/libft.h
         libft/memlist.h
+        libft/ml_get_next_line.c
+        libft/ml_itoa.c
+        libft/ml_memalloc.c
+        libft/ml_strdup.c
+        libft/ml_strjoin.c
+        libft/ml_strjoinre.c
+        libft/ml_strmap.c
+        libft/ml_strmapi.c
+        libft/ml_strndup.c
+        libft/ml_strnew.c
+        libft/ml_strsplit.c
+        libft/ml_strsub.c
+        libft/ml_strtrim.c
+        vm/includes/vm.h
+        vm/srcs/struct_intf/corewar_intf.c
+        vm/srcs/validation/parse_input_intf.c
+        vm/srcs/validation/parse_inputs.c
+        vm/srcs/validation/reports.c
+        vm/srcs/main.c
         fast_strsplit.c
         file_to_list.c
         file_to_list.h
         ft_wordequ.c
         op.h
-        options.h)
+        options.h vm/srcs/game/game.c vm/srcs/struct_intf/carriage_intf.c vm/includes/error_defs.h)

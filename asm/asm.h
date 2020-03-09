@@ -20,6 +20,8 @@
 #define ML_TOKEN 2
 #define ML_ARGUMENT 3
 
+typedef uint16_t u_int16_t;
+
 typedef enum	s_token_type
 {
 	NAME = 1,

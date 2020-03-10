@@ -24,7 +24,7 @@ void    print_in_file(t_token *token, header_t *header)
 	int			fd;
 	int     nulle;
 
-	fd = open("/Users/mdeanne/corewar/vm_champs/test.cor", O_RDWR);
+	fd = open("/Users/mdeanne/corewar/vm_champs/test1.cor", O_RDWR);
 	print_header(fd, header);
 	nulle = 0;
 	write(fd, &nulle, 4);
@@ -63,7 +63,7 @@ int main(void)
 	int			fd;
 
 	//
-	char  *binflie = "/Users/mdeanne/corewar/vm_champs/test.cor";
+	char  *binflie = "/Users/mdeanne/corewar/vm_champs/test1.cor";
 	fclose(fopen(binflie, "w"));
 	//
 

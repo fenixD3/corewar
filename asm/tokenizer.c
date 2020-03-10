@@ -68,4 +68,5 @@ void	tokenize(int fd, t_token **token, t_label **label)
 	newline_endfile_check(fd, ret);
 	add_token(&pc, token, label, ENDFILE);
 	set_lists_at_start(token, label);
+	ml_free_list(ML_GNL_LINE);
 }

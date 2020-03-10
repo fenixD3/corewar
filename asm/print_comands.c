@@ -33,7 +33,7 @@ void    write_reverse(t_token *token, t_op *op, int fd)
 	u_int32_t		*p32;
 	u_int8_t		*p8;
 
-	p32 = &((t_arg*)token->content)->num;
+	p32 = (u_int32_t*)&((t_arg*)token->content)->num;
 	p8 = (u_int8_t*)p32;
 	if (((t_arg*)token->content)->type & T_DIR)
 	{

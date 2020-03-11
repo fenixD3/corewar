@@ -22,7 +22,6 @@ void		ml_clear_all_lists(t_ml_lists *lst, t_ml_lists *head)
 	while (lst)
 	{
 		ml_clear_lst(&prev, &head);
-		free(prev);
 		prev = lst;
 		lst = lst->next;
 	}

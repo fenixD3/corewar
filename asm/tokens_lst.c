@@ -66,7 +66,7 @@ char	*add_string(char *str, t_token *token)
 	tmp = str + 1;
 	if (*tmp == '"')
 	{
-		token->content = NULL;
+		token->content = (char*)ml_memalloc(sizeof(char), ML_S_CONTENT);
 		return (tmp + 1);
 	}
 	while (*tmp && *tmp != '"')

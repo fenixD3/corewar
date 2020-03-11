@@ -31,7 +31,7 @@ void	tokenize_line(t_pc *pc, t_token **token, t_label **label, char *str)
 	u_int8_t	flag;
 
 	pc->line = str;
-	pc->column = 0;
+	pc->column = 1;
 	flag = 0;
 	rewind_n(pc, ft_skipdelims(pc->line, SPACES) - str);
 	while (*pc->line)
@@ -60,7 +60,7 @@ void	tokenize(int fd, t_token **token, t_label **label)
 	char 		*tmp;
 	int 		ret;
 
-	pc.row = 0;
+	pc.row = 1;
 	while ((ret = ml_get_next_line(fd, &tmp, ML_GNL_LINE)) > 0)
 		tokenize_line(&pc, token, label, tmp);
 	if (!*token)

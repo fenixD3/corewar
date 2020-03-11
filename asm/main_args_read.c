@@ -76,6 +76,9 @@ char	*open_files(char *file_name, t_token_sec *check_list,
 //	fclose(fopen(name, "w"));//fclose!!!!!!!!!!
 	fd = open(file_name, O_RDONLY);
 	tokenize(fd, token, &label);
+
+	print_tokens(*token, 1);
+
 	token_sequence(*token, check_list);
 	label_substitution(label);
 	return (name);
@@ -96,11 +99,17 @@ int main(int ac, char **av)
 		file_tofill = open_files(av[i], &check_list, &token);
 		init_headers(&header, token, &check_list);
 		print_in_file(file_tofill, token, &header);
+
+		ml_free_all();
+		token = NULL;
+
+		//////////
 		print_file(file_tofill);
 		printf("\n\n");
+		//////////
 		i++;
 	}
 
-//	ml_free_all();
+
 	return (0);
 }

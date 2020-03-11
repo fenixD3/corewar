@@ -36,7 +36,7 @@ void print_token(t_token *t, u_int8_t setting)
 	printf("[%s", g_type[t->type - 1]);
 	if (t->type == COMMAND || t->type == STRING)
 	{
-		if (setting == 1)
+		if (setting == 1 || t->type == STRING)
 			printf(":%s", (char*)t->content);
 		else
 			printf(":%02x", *(u_int8_t*)t->content);
@@ -63,7 +63,7 @@ void print_token(t_token *t, u_int8_t setting)
 
 void print_tokens(t_token *token, u_int8_t setting)
 {
-	while (token->prev && token->prev/*token->prev->type != NEW_LINE*/)
+	while (token->prev)
 		token = token->prev;
 	printf("-");
 	while (token)
@@ -72,7 +72,7 @@ void print_tokens(t_token *token, u_int8_t setting)
 			printf("[%s] ", g_type[token->type - 1]);
 		else
 			print_token(token, 0);
-		if (token->type == NEW_LINE)
+		if (token->type == NEW_LINE || token->type == END)
 			printf("\n");
 		token = token->next;
 	}

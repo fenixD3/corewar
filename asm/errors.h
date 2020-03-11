@@ -43,7 +43,8 @@
 
 ///// Egor's errors
 
-#define ASM_NO_LABEL			"ERROR: label doesn't exist"
+#define ASM_NO_LABEL			"ERROR: Label doesn't exist"
+#define ASM_INVALID_CMD			"ERROR: Command is invalid"
 
 ///// Stop Egor's errors
 

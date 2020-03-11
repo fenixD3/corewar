@@ -75,7 +75,13 @@ int		free_node(t_gnl **lst)
 		(*lst)->next = curr->next;
 		free(curr->str);
 		curr->str = NULL;
-		free(curr);
+		if (*lst == (*lst)->next)
+		{
+			free(curr);
+			*lst = NULL;
+		}
+		else
+			free(curr);
 		curr = NULL;
 		return (1);
 	}

@@ -14,6 +14,7 @@
 #include "asm_dasha.h"
 #include "asm.h"
 
+/*
 void 	init_check_list(t_token_sec *check_list)
 {
 	check_list->arg = false;
@@ -29,6 +30,7 @@ void 	init_check_list(t_token_sec *check_list)
 	check_list->chmp_comment = NULL;
 	check_list->label = false;
 }
+*/
 
 void	comm_or_name(t_token *token, t_token_sec *check_list)
 {
@@ -76,8 +78,8 @@ void	if_str_check(t_token *token, t_token_sec *check_list)
 
 void	if_command(t_token *token, t_token_sec *check_list)
 {
-	char	*com_name;
-	int 	i;
+	const char	*com_name = (char *)(token->content);
+	int			i;
 
 	i = 0;
 	if (token->type == COMMAND)
@@ -91,11 +93,12 @@ void	if_command(t_token *token, t_token_sec *check_list)
 			check_list->new_line = false;
 			check_list->command = true;
 			check_list->arg = false;
-			com_name = (char *)(token->content);
-			while (!ft_strequ(com_name, g_op[i].name))
+			while (g_op[i].name && !ft_strequ(com_name, g_op[i].name)) /// added "g_op[i].name &&"
 				i++;
-			token->content = (void*)ml_malloc(sizeof(u_int8_t), ML_CMD_NUM);
-			token->content = (void*)&g_op[i].code;
+			if (!g_op[i].code || !(token->content = (void*)&g_op[i].code))
+				token_exit(ASM_INVALID_CMD, token);
+			if (g_op[i].code > MAX_COMMANDS)
+				go_exit("ERROR: Please don't touch options.h file");
 			command_check(token);
 		}
 	}
@@ -103,10 +106,13 @@ void	if_command(t_token *token, t_token_sec *check_list)
 
 void token_sequence(t_token *token, t_token_sec	*check_list)
 {
-	t_token		*token_arr;
+/*	t_token		*token_arr;
 
-	token_arr = token;
-	init_check_list(check_list);
+	token_arr = token;*/
+	//init_check_list(check_list);
+	ft_memset(check_list, 0, sizeof(*check_list));
+	check_list->new_line = true; /// нужно ли инициализировать отдельно? не знаю, вроде и без него работает
+
 	while (token != NULL)
 	{
 		if (token->type == SEPARATOR)
@@ -124,5 +130,5 @@ void token_sequence(t_token *token, t_token_sec	*check_list)
 		if_arg(token, check_list);
 		token = token->next;
 	}
-	token = token_arr;
+//	token = token_arr;
 }

@@ -14,17 +14,19 @@
 # define OPTIONS_H
 
 # include "op.h"
-#include "asm.h"
+# include "asm.h"
+
+# define MAX_COMMANDS 16
 
 typedef struct	s_op
 {
 	char		*name;
 	int			num_args;
-	int			args_type[3];
+	t_arg_type 	args_type[3];
 	u_int8_t	code;
 	int			cycle;
 	_Bool		argument_type_code;
-	int			size_t_dir;
+	u_int8_t 	size_t_dir;
 
 }				t_op;
 

@@ -19,6 +19,13 @@ int		ml_get_next_line(const int fd, char **line, u_int32_t lst_num)
 	char			*tmp;
 	ssize_t			b;
 
+
+	static int i;
+	i++;
+	if (i == 11)
+		i = i;
+
+
 	if (fd < 0 || !line || (!find_fd(&lst, fd) && !(ad_fd(&lst, new_node(fd)))))
 		return (-1);
 	find_fd(&lst, fd);

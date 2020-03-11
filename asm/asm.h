@@ -13,7 +13,7 @@
 #ifndef ASM_H
 #define ASM_H
 #include "op.h"
-#include "../../file_to_list.h"
+//#include "../../file_to_list.h"
 #include <stdlib.h>
 
 #define ML_GNL_LINE	10
@@ -24,6 +24,7 @@
 #define ML_S_CONTENT 60
 #define ML_LABEL	70
 #define ML_CMD_NUM	80
+#define ML_CHECK    150
 
 #define ENDLINE		1
 #define ENDSTR		2

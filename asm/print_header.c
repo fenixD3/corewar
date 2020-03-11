@@ -1,3 +1,14 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   print_header.c                                     :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mcanhand <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/03/11 15:50:07 by mcanhand          #+#    #+#             */
+/*   Updated: 2020/03/11 15:50:14 by mcanhand         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 
 #include "libft.h"
@@ -22,4 +33,3 @@ void	print_header(int fd, header_t *header)
 	print_reverse(fd, 4, &header->prog_size);
 	write(fd, &header->comment, COMMENT_LENGTH);
 }
-

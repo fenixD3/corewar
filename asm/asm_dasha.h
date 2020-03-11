@@ -11,10 +11,6 @@
 
 #include "asm.h"
 
-
-#define ML_CHECK_LST 35 /// в каком месте..
-# define ML_HEADER 45 ///a???
-
 #define MAX_FILE_LENGTH (CHAMP_MAX_SIZE + PROG_NAME_LENGTH + COMMENT_LENGTH + 16)
 
 typedef struct		s_token_sec
@@ -36,18 +32,18 @@ typedef struct		s_token_sec
 }					t_token_sec;
 
 int					token_exit(char *error, t_token *token);
-void token_sequence(t_token *token, t_token_sec	**check_list);
+void token_sequence(t_token *token, t_token_sec	*check_list);
 
 void			    print_commands(int fd, t_token *token);
 
 
 void				print_header(int fd, header_t *header);
-void				if_label(t_token *token, t_token_sec **check_list);
-void				if_arg(t_token *token, t_token_sec **check_list);
-void				if_name(t_token *token, t_token_sec **check_list);
-void				if_nl(t_token *token, t_token_sec **check_list);
-void				if_comment_prog(t_token *token, t_token_sec **check_list);
+void				if_label(t_token *token, t_token_sec *check_list);
+void				if_arg(t_token *token, t_token_sec *check_list);
+void				if_name(t_token *token, t_token_sec *check_list);
+void				if_nl_or_comment(t_token *token, t_token_sec *check_list);
+void				if_comment_prog(t_token *token, t_token_sec *check_list);
 void				command_check(t_token *token);
-void				init_headers(header_t **header, t_token *token, t_token_sec *info);
+void				init_headers(header_t *header, t_token *token, t_token_sec *info);
 
 #endif

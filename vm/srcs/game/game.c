@@ -6,7 +6,7 @@ void	start_game(t_corewar *corewar)
 	introducing_fighter(corewar->champs);
 	while (corewar->game_param.cycles_to_die)
 	{
-		carriages_actions(corewar->carriages, corewar->game_param);
+		carriages_actions(corewar->carriages);
 		if (!(++corewar->game_param.cycles_aft_start %
 				corewar->game_param.cycles_to_die) ||
 				corewar->game_param.cycles_to_die <= 0)

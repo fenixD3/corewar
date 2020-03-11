@@ -93,9 +93,10 @@ void	init_arena(unsigned char arena[], t_champion *champs,
 					t_carriages **carriages);
 void	introducing_fighter(t_champion *champs);
 
-void	carriages_actions(t_carriages *carriage, t_game_param game_param);
+void	carriages_actions(t_carriages *carriage);
 unsigned char	get_bytes_for_step(); /// need to write
 void	lets_check(t_carriages *carriage, t_game_param *game_param);
-_Bool	validate_operation(unsigned char *start_oper);
+_Bool	valid_op_set_cycle(unsigned char *start_oper, int *cycle_to_op);
+void make_operation(t_carriages *carriage);
 
 #endif

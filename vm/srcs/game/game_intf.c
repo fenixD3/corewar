@@ -1,21 +1,23 @@
 #include "vm.h"
 #include "options.h"
 
-void	carriages_actions(t_carriages *carriage, t_game_param game_param)
+void	carriages_actions(t_carriages *carriage)
 {
 	while (carriage)
 	{
 		if (!carriage->cycle_to_op)
 		{
 			carriage->op_code = *carriage->curr_pos;
-			validate_operation(carriage->curr_pos);
-			/// if validation is false then make one byte step
-			/// if validation OK - update operation cycle
+			while (!valid_op_set_cycle(carriage->curr_pos, &carriage->cycle_to_op))
+			{
+				++carriage->curr_pos;
+				carriage->op_code = *carriage->curr_pos;
+			}
 		}
-		else if (carriage->cycle_to_op == 1)
+		if (carriage->cycle_to_op == 1)
 		{
-			/// do operation
-			carriage->cnt_bytes_to_op = get_bytes_for_step();
+			make_operation(carriage);
+			carriage->cnt_bytes_to_op = get_bytes_for_step(); /// write !!!
 			carriage->curr_pos += carriage->cnt_bytes_to_op;
 		}
 		--carriage->cycle_to_op;
@@ -46,14 +48,27 @@ void	lets_check(t_carriages *carriage, t_game_param *game_param)
 	}
 }
 
-_Bool	validate_operation(unsigned char *start_oper)
+_Bool	valid_op_set_cycle(unsigned char *start_oper, int *cycle_to_op)
 {
-	t_op	*curr_op;
-
 	if (*start_oper - 1 < 0 || *start_oper - 1 > 16)
 		return (0);
-	curr_op = &g_op[*start_oper - 1];
-	if (curr_op->argument_type_code)
-		++start_oper;
-	++start_oper;
+	*cycle_to_op = g_op[*start_oper - 1].cycle;
+	return (1);
+}
+
+static _Bool	check_arguments(unsigned char *args_code, t_op op)
+{
+	;
+}
+
+void	make_operation(t_carriages *carriage)
+{
+	unsigned char	idx_op;
+	t_arg_type		args;
+
+	idx_op = *carriage->curr_pos - 1;
+	if (g_op[idx_op].argument_type_code)
+		//check_arguments(++*start_op, g_op[idx_op]);
+	else
+		;
 }

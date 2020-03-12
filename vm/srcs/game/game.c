@@ -28,7 +28,7 @@ void	init_arena(unsigned char arena[], t_champion *champs,
 				sizeof(champs->file.exec_code));
 		push_front_carriage(carriages);
 		(*carriages)->reg[0] = -champs->num;
-		(*carriages)->curr_pos = arena + (i - 1) * code_shift;
+		(*carriages)->op_pos = arena + (i - 1) * code_shift;
 		champs = champs->next;
 	}
 }

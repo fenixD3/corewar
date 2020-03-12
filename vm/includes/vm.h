@@ -4,6 +4,7 @@
 # include "ft_ptintf.h"
 # include "op.h"
 # include <fcntl.h>
+#include <options.h>
 
 # define N_FLG 1u
 # define DUMP_FLG 2u
@@ -50,8 +51,8 @@ typedef struct	s_carriages
 	_Bool				carry;
 	unsigned char		op_code;
 	int					cycle_when_live;
-	int					cycle_to_op;
-	unsigned char		*curr_pos;
+	int					cycle_op;
+	unsigned char		*op_pos;
 	unsigned char		cnt_bytes_to_op;
 	int 				reg[REG_NUMBER];
 	struct s_carriages	*next;
@@ -93,10 +94,19 @@ void	init_arena(unsigned char arena[], t_champion *champs,
 					t_carriages **carriages);
 void	introducing_fighter(t_champion *champs);
 
+extern t_op	oper;
+
 void	carriages_actions(t_carriages *carriage);
-unsigned char	get_bytes_for_step(); /// need to write
+unsigned char	get_bytes_for_step(); /// need to write ????!!!
 void	lets_check(t_carriages *carriage, t_game_param *game_param);
 _Bool	valid_op_set_cycle(unsigned char *start_oper, int *cycle_to_op);
-void make_operation(t_carriages *carriage);
+void make_operation_and_go_next(t_carriages *carriage);
+unsigned char	*get_arguments_frm_code(unsigned char *arg_type_code,
+					t_arg_type *args, t_op oper);
+_Bool	is_args_valid(t_arg_type *args, unsigned char *arg_start, t_op oper,
+					int *args_val);
+unsigned char	*skip_op(unsigned char *start_op, t_arg_type  *args, t_op oper);
+void	execute_operation(t_carriages *carriage, t_arg_type *args,
+						  int *args_val);
 
 #endif

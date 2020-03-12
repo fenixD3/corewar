@@ -4,7 +4,47 @@
 
 #include <stdio.h>
 #include <libft/libft.h>
+#include <corewar/options.h>
 #include "asm.h"
+
+
+void print_command_with_args(t_token *token)
+{
+	int i = 0;
+	t_op *op;
+	t_arg *arg;
+
+	if (!token)
+		return ;
+	while (token && token->type != COMMAND)
+		token = token->prev;
+	if (!token)
+		return ;
+	op = &g_op[*(u_int8_t*)token->content];
+	printf ("CMD:%s  ", op->name);
+	while (token->type != NEW_LINE)
+	{
+		token = token->next;
+		while (token && token->type != ARGUMENT && token->type != NEW_LINE)
+			token = token->next;
+		if (!token || token->type == NEW_LINE)
+			break;
+		printf("ARG:");
+		arg = (t_arg*)token->content;
+		if (arg->type == T_REG)
+			printf("r");
+		else if (arg->type == T_DIR)
+			printf("d");
+		else if (arg->type == T_IND)
+			printf("i");
+		else if (arg->type & T_LAB)
+			printf("LABEL NOT CLEANED");
+		else
+			printf("WTF??");
+		printf("%d %s  ", arg->num, (char*)arg->content);
+	}
+	printf("\n");
+}
 
 char *print_cmd_name(t_token *token, u_int8_t flag)
 {
@@ -36,10 +76,13 @@ void print_token(t_token *t, u_int8_t setting)
 	printf("[%s", g_type[t->type - 1]);
 	if (t->type == COMMAND || t->type == STRING)
 	{
-		if (setting == 1 || t->type == STRING)
+		if (setting == 0 || t->type == STRING)
 			printf(":%s", (char*)t->content);
+		else if (setting == 2)
+			printf(":%s", g_op[*(u_int8_t*)t->content].name);
 		else
 			printf(":%02x", *(u_int8_t*)t->content);
+
 	}
 	else if (t->type == ARGUMENT || t->type == ARGUMENT_LABEL)
 	{

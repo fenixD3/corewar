@@ -106,10 +106,6 @@ void	if_command(t_token *token, t_token_sec *check_list)
 
 void token_sequence(t_token *token, t_token_sec	*check_list)
 {
-/*	t_token		*token_arr;
-
-	token_arr = token;*/
-	//init_check_list(check_list);
 	ft_memset(check_list, 0, sizeof(*check_list));
 	check_list->new_line = true; /// нужно ли инициализировать отдельно? не знаю, вроде и без него работает
 
@@ -130,5 +126,4 @@ void token_sequence(t_token *token, t_token_sec	*check_list)
 		if_arg(token, check_list);
 		token = token->next;
 	}
-//	token = token_arr;
 }

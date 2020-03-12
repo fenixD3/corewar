@@ -1,5 +1,6 @@
 
 #include "asm_dasha.h"
+#include "asm.h"
 
 
 void	check_args(t_token *token, int *i, int com_code)
@@ -27,7 +28,6 @@ void	command_check(t_token *token)
 	int		i;
 	u_int8_t		com_code;
 
-	com_code = 0;
 	i = 0;
 	if (!(token->type == COMMAND))
 		return ;

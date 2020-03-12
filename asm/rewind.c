@@ -23,19 +23,14 @@ void		rewind_n(t_pc *pc, u_int16_t n)
 
 u_int8_t 	string_rewind(t_pc *pc)
 {
+	char *str_end;
+
 	if (*pc->line == '"')
 		rewind_n(pc, 1);
-	while (*pc->line && *pc->line != '"')
-	{
-		pc->line++;
-		pc->column++;
-	}
-	if (*pc->line == '"')
-		rewind_n(pc, 1);
-	if (*(pc->line - 1) == '"')
-		return (ENDSTR);
-	else
-		return (NOTENDSTR);
+	if (!(str_end = ft_strchr(pc->line, '"')))
+		return (TKNZE_BREAK);
+	rewind_n(pc, str_end - pc->line + 1);
+	return (TKNZE_CONT);
 }
 
 void		argument_rewind(t_pc *pc, t_token *token)
@@ -57,18 +52,16 @@ void		command_rewind(t_pc *pc, t_token *token)
 	if (!token->content || !*(char*)token->content ||
 							ft_isspecial(*(char*)token->content, DELIMITERS))
 	{
-		ft_printf("ERROR: [%d:%d] invalid COMMAND\n", pc->row, pc->column); ///  заменить нормально функцией ошибки
+		ft_printf("[%d:%d] ERROR: invalid COMMAND\n", pc->row, pc->column); ///  заменить нормально функцией ошибки
 		exit(1);
 	}
 	rewind_n(pc, ft_skipword(pc->line, DELIMITERS) - pc->line);
 }
 
-u_int8_t	token_rewind(t_pc *pc, t_token *token)
+u_int8_t token_rewind(t_pc *pc, t_token *token)
 {
-	char *tmp;
-
-	if (token->type == NEW_LINE || token->type == COMMENT)
-		return (ENDLINE);
+	if (token->type == COMMENT)
+		return (TKNZE_BREAK);
 	else if (token->type == ARGUMENT || token->type == ARGUMENT_LABEL)
 		argument_rewind(pc , token);
 	else if (token->type == COMMAND)
@@ -83,8 +76,6 @@ u_int8_t	token_rewind(t_pc *pc, t_token *token)
 		rewind_n(pc, ft_strlen(NAME_CMD_STRING));
 	else if (token->type == COMMENT_PROG)
 		rewind_n(pc, ft_strlen(COMMENT_CMD_STRING));
-	else if (token->type == END)
-		return (ENDFILE);
 	rewind_n(pc, ft_skipdelims(pc->line, SPACES) - pc->line);
-	return (NOTSTR);
+	return (TKNZE_CONT);
 }

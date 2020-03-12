@@ -77,13 +77,30 @@ char	*add_string(char *str, t_token *token)
 	return (tmp);
 }
 
+u_int8_t	check_prev_str(t_token *token, u_int8_t flag)
+{
+	char *str;
+	char *str_end;
+
+	if (!token || token->type != NEW_LINE || !token->prev ||
+		token->prev->type != STRING)
+		return (flag);
+	str = (char*)token->prev->content;
+	if (*str == '"')
+		str++;
+	if ((str_end = ft_strchr(str, '"')) &&
+		!*(str_end + 1))
+		return (flag);
+	return (NOTENDSTR);
+}
+
 t_token *add_token(t_pc *pc, t_token **token_tail,
 											t_label **label_tail, u_int8_t flag)
 {
 	t_token *new;
 
    	new = (t_token*)ml_malloc(sizeof(t_token), ML_TOKEN);
-	token_fill(pc->line, new, label_tail, flag);
+	token_fill(pc->line, new, label_tail, check_prev_str(*token_tail, flag));
 	new->row = pc->row;
 	new->column = pc->column;
 	new->next = NULL;

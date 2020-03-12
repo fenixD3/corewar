@@ -26,11 +26,12 @@
 #define ML_CMD_NUM	80
 #define ML_CHECK    150
 
-#define ENDLINE		1
-#define ENDSTR		2
-#define NOTENDSTR	3
-#define ENDFILE		4
-#define NOTSTR		5
+#define TKNZE_BREAK	0
+#define TKNZE_CONT	1
+#define ENDFILE		2
+#define ENDLINE		3
+#define NOTENDSTR	4
+
 
 typedef enum	s_token_type
 {
@@ -85,7 +86,7 @@ t_arg           *add_arg(char *str, t_arg_type type);
 char			*add_string(char *str, t_token *token);
 
 void			token_fill(char *str, t_token *token, t_label **tail, u_int8_t flag);
-u_int8_t		token_rewind(t_pc *pc, t_token *token);
+u_int8_t token_rewind(t_pc *pc, t_token *token);
 void			rewind_n(t_pc *pc, u_int16_t n);
 void			tokenize(int fd, t_token **token, t_label **label);
 
@@ -94,7 +95,7 @@ u_int32_t		command_length(t_token *token);
 
 void 			label_substitution(t_label *head);
 
-///// not need
+///// not need???
 
 _Bool	is_special_char(char c, char *specials);
 
@@ -109,6 +110,7 @@ void print_tokens(t_token *token, u_int8_t setting);
 void print_token(t_token *t, u_int8_t setting);
 char *print_cmd_name(t_token *token, u_int8_t flag);
 void print_labels(t_label *label);
+void print_command_with_args(t_token *token);
 
 
 

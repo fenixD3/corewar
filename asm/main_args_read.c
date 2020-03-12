@@ -15,7 +15,8 @@
 #include "asm_dasha.h"
 #include <stdlib.h>
 #include <stdio.h>
-#include "ft_ptintf.h"
+#include <errno.h>
+#include "ft_ptintf.h" ///
 
 
 void			print_in_file(char *file_name, t_token *token, header_t *header)
@@ -24,7 +25,9 @@ void			print_in_file(char *file_name, t_token *token, header_t *header)
 	int			nulle;
 
 	nulle = 0;
-	fd = open(file_name, O_RDWR);
+	errno = 0;
+	if ((fd = open(file_name, O_RDWR)) < 0)  /// Сейчас может открываться только в существующих файлах!
+		printf("%d\n", errno);
 	print_header(fd, header);
 	write(fd, &nulle, 4);
 	print_commands(fd, token);
@@ -99,6 +102,8 @@ int main(int ac, char **av)
 		file_tofill = open_files(av[i], &check_list, &token);
 		init_headers(&header, token, &check_list);
 		print_in_file(file_tofill, token, &header);
+
+		print_tokens(token, 2);
 
 		ml_free_all();
 		token = NULL;

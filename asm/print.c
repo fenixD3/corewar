@@ -5,6 +5,7 @@
 #include <stdio.h>
 #include <libft/libft.h>
 #include <corewar/options.h>
+#include <fcntl.h>
 #include "asm.h"
 
 
@@ -104,7 +105,7 @@ void print_token(t_token *t, u_int8_t setting)
 	printf("] ");
 }
 
-void print_tokens(t_token *token, u_int8_t setting)
+void print_tokens(t_token *token, int setting)
 {
 	while (token->prev)
 		token = token->prev;
@@ -119,4 +120,26 @@ void print_tokens(t_token *token, u_int8_t setting)
 			printf("\n");
 		token = token->next;
 	}
+}
+
+void	print_bin_file(char* path)
+{
+	u_int8_t *ptr;
+	u_int32_t buff[3000];
+
+	int	fd = open(path, O_RDWR);
+	int ret = read(fd, buff, 3000);
+	ptr = (u_int8_t*)buff;
+	int i = 0;
+	while (ret--)
+	{
+		printf("%02x", *ptr);
+		if (i && (i + 1) % 2 == 0)
+			printf(" ");
+		if (i && (i + 1) % 16 == 0)
+			printf("\n");
+		i++;
+		ptr++;
+	}
+	close(fd);
 }

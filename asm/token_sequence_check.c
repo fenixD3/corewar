@@ -39,8 +39,9 @@ void	comm_or_name(t_token *token, t_token_sec *check_list)
 		check_list->str_comment))
 	{
 		check_list->chmp_name = (check_list->str_name) ?
-		ml_strjoin(check_list->chmp_name,
-		((char *)token->content + 1), ML_CHECK) : ((char *)token->content + 1);
+			ml_strjoin(check_list->chmp_name,
+		((char *)token->content + 1), ML_CHECK_N_FILENAME) :
+			((char *)token->content + 1);
 		check_list->str_name = true;
 		check_list->new_line = false;
 	}
@@ -49,8 +50,9 @@ void	comm_or_name(t_token *token, t_token_sec *check_list)
 		check_list->str_name) && check_list->comment_prog))
 	{
 		check_list->chmp_comment = (check_list->str_comment) ?
-		ml_strjoin(check_list->chmp_comment,
-		((char *)token->content + 1), ML_CHECK) : ((char *)token->content + 1);
+			ml_strjoin(check_list->chmp_comment,
+		((char *)token->content + 1), ML_CHECK_N_FILENAME) :
+			((char *)token->content + 1);
 		check_list->str_comment = true;
 		check_list->new_line = false;
 	}

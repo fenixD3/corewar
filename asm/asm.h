@@ -24,7 +24,7 @@
 #define ML_S_CONTENT 60
 #define ML_LABEL	70
 #define ML_CMD_NUM	80
-#define ML_CHECK    150
+#define ML_CHECK_N_FILENAME    150
 
 #define TKNZE_BREAK	0
 #define TKNZE_CONT	1
@@ -106,12 +106,12 @@ _Bool	find_label(t_label **head, t_label *label_arg);
 
 
 ///print
-void print_tokens(t_token *token, u_int8_t setting);
+void print_tokens(t_token *token, int setting);
 void print_token(t_token *t, u_int8_t setting);
 char *print_cmd_name(t_token *token, u_int8_t flag);
 void print_labels(t_label *label);
 void print_command_with_args(t_token *token);
-
+void	print_bin_file(char* path);
 
 
 static char		*g_type[] = {

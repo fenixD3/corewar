@@ -15,12 +15,32 @@
 #include "asm.h"
 #include "libword.h"
 
-void		newline_endfile_check(int fd, int ret)
-{
-	char		c;
+/*	char		c;
 
 	c = 0;
 	if (ret < 0 || lseek(fd, -1, SEEK_CUR) == -1 || read(fd, &c, 1) != 1)
+		go_exit("ERROR: cant't read file");
+	if (c != '\n')
+		go_exit("ERROR: No new line before end of file");*/
+
+
+void newline_endfile_check(int fd, char *line, int ret)
+{
+	char *tmp;
+	char c;
+
+	if (ret < 0)
+		go_exit("ERROR: with file");
+	tmp = line + ft_strlen(line) - 1;
+	while (tmp + 1 != line)
+	{
+		if (!ft_isspecial(*tmp, SPACES))
+			break ;
+		tmp--;
+	}
+	if (tmp + 1 == line)
+		return ;
+	if (lseek(fd, -1, SEEK_CUR) == -1 || read(fd, &c, 1) != 1)
 		go_exit("ERROR: cant't read file");
 	if (c != '\n')
 		go_exit("ERROR: No new line before end of file");
@@ -45,10 +65,9 @@ void	tokenize_line(t_pc *pc, t_token **token, t_label **label, char *str)
 		if (token_rewind(pc, *token) == TKNZE_BREAK)
 			break ;
 	}
-	if (i == 9)
-		i = i;
 	add_token(pc, token, label, ENDLINE);
 	pc->row++;
+	pc->line = str;
 }
 
 void	set_lists_at_start(t_token **token, t_label **label)
@@ -62,7 +81,6 @@ void	set_lists_at_start(t_token **token, t_label **label)
 void	tokenize(int fd, t_token **token, t_label **label)
 {
 	t_pc		pc;
-
 	char 		*tmp;
 	int 		ret;
 
@@ -71,7 +89,7 @@ void	tokenize(int fd, t_token **token, t_label **label)
 		tokenize_line(&pc, token, label, tmp);
 	if (!*token)
 		go_exit("ERROR: File is empty");
-	newline_endfile_check(fd, ret);
+	newline_endfile_check(fd, pc.line, ret);
 	add_token(&pc, token, label, ENDFILE);
 	set_lists_at_start(token, label);
 	ml_free_list(ML_GNL_LINE);

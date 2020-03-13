@@ -16,75 +16,61 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <errno.h>
+#include <stdbool.h>
 #include "ft_ptintf.h" ///
-
 
 void			print_in_file(char *file_name, t_token *token, header_t *header)
 {
 	int			fd;
 	int			nulle;
+	char		*name;
 
 	nulle = 0;
 	errno = 0;
-	if ((fd = open(file_name, O_RDWR)) < 0)  /// Сейчас может открываться только в существующих файлах!
-		printf("%d\n", errno);
+
+	if ((name = ft_strrchr(file_name, '.')))
+		*name = '\0';
+	name = ml_strjoin(file_name, ".cor", ML_CHECK_N_FILENAME);
+	if ((fd = open(name, O_CREAT | O_WRONLY | O_TRUNC,
+			S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH | S_IWOTH)) < 0)
+	{
+		perror("ERROR: Cant't write in file because");
+		exit (1);
+	}
+	ft_printf("Writing output program to %s\n", name);
 	print_header(fd, header);
 	write(fd, &nulle, 4);
 	print_commands(fd, token);
 	close(fd);
 }
 
-void	print_file(char* path)
-{
-	u_int8_t *ptr;
-	u_int32_t buff[3000];
-
-	int	fd = open(path, O_RDWR);
-	int ret = read(fd, buff, 3000);
-	ptr = (u_int8_t*)buff;
-	int i = 0;
-	while (ret--)
-	{
-		printf("%02x", *ptr);
-		if (i && (i + 1) % 2 == 0)
-			printf(" ");
-		if (i && (i + 1) % 16 == 0)
-			printf("\n");
-		i++;
-		ptr++;
-	}
-	close(fd);
-}
-
-char		*parse_file_name(char *file_path)
-{
-	char		*name;
-	int			name_len;
-
-	name_len = ft_strlen(file_path);
-	name = ft_strcat(ft_strsub(file_path, 0, name_len - 1), "cor"); //ОЧИСТКА памяти
-	return (name);
-}
-
-char	*open_files(char *file_name, t_token_sec *check_list,
-		t_token **token)
+void open_and_tokenize_file(char *file_name, t_token_sec *check_list,
+																t_token **token)
 {
 	int	fd;
 	char		*name;
 	t_label		*label;
 
 	label = NULL;
-	//	//проверка read'ом
-	name = parse_file_name(file_name);
-//	fclose(fopen(name, "w"));//fclose!!!!!!!!!!
-	fd = open(file_name, O_RDONLY);
-	tokenize(fd, token, &label);
 
-	print_tokens(*token, 1);
+	errno = 0;
+	if ((fd = open(file_name, O_DIRECTORY)) >= 0)
+	{
+		ft_printf("ERROR: file %s is a directory\n", file_name);
+		exit (1);
+	}
+	if ((fd = open(file_name, O_RDONLY)) < 0)
+	{
+		strerror(errno);
+		exit (1);
+	}
+	tokenize(fd, token, &label);
+	close(fd);
+
+	//print_tokens(*token, 0);
 
 	token_sequence(*token, check_list);
 	label_substitution(label);
-	return (name);
 }
 
 int main(int ac, char **av)
@@ -93,26 +79,16 @@ int main(int ac, char **av)
 	header_t	header;
 	t_token_sec	check_list;
 	int			i;
-	char        *file_tofill;
 
-	i = 1;
-	token = NULL;
-	while (i < ac)
+	i = 0;
+	while (++i < ac)
 	{
-		file_tofill = open_files(av[i], &check_list, &token);
-		init_headers(&header, token, &check_list);
-		print_in_file(file_tofill, token, &header);
-
-		print_tokens(token, 2);
-
-		ml_free_all();
+		ft_printf("\nReading %s\n", av[i]);
 		token = NULL;
-
-		//////////
-		print_file(file_tofill);
-		printf("\n\n");
-		//////////
-		i++;
+		open_and_tokenize_file(av[i], &check_list, &token);
+		init_headers(&header, token, &check_list);
+		print_in_file(av[i], token, &header);
+		ml_free_all();
 	}
 
 

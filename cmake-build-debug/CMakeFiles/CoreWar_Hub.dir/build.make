@@ -2020,6 +2020,32 @@ CMakeFiles/CoreWar_Hub.dir/vm/srcs/game/args_intf.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/CoreWar_Hub.dir/vm/srcs/game/args_intf.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ylila/CW_Hub/vm/srcs/game/args_intf.c -o CMakeFiles/CoreWar_Hub.dir/vm/srcs/game/args_intf.c.s
 
+CMakeFiles/CoreWar_Hub.dir/vm/srcs/game/arena_exit.c.o: CMakeFiles/CoreWar_Hub.dir/flags.make
+CMakeFiles/CoreWar_Hub.dir/vm/srcs/game/arena_exit.c.o: ../vm/srcs/game/arena_exit.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ylila/CW_Hub/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_152) "Building C object CMakeFiles/CoreWar_Hub.dir/vm/srcs/game/arena_exit.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/CoreWar_Hub.dir/vm/srcs/game/arena_exit.c.o   -c /Users/ylila/CW_Hub/vm/srcs/game/arena_exit.c
+
+CMakeFiles/CoreWar_Hub.dir/vm/srcs/game/arena_exit.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/CoreWar_Hub.dir/vm/srcs/game/arena_exit.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ylila/CW_Hub/vm/srcs/game/arena_exit.c > CMakeFiles/CoreWar_Hub.dir/vm/srcs/game/arena_exit.c.i
+
+CMakeFiles/CoreWar_Hub.dir/vm/srcs/game/arena_exit.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/CoreWar_Hub.dir/vm/srcs/game/arena_exit.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ylila/CW_Hub/vm/srcs/game/arena_exit.c -o CMakeFiles/CoreWar_Hub.dir/vm/srcs/game/arena_exit.c.s
+
+CMakeFiles/CoreWar_Hub.dir/vm/srcs/game/instuctions.c.o: CMakeFiles/CoreWar_Hub.dir/flags.make
+CMakeFiles/CoreWar_Hub.dir/vm/srcs/game/instuctions.c.o: ../vm/srcs/game/instuctions.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ylila/CW_Hub/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_153) "Building C object CMakeFiles/CoreWar_Hub.dir/vm/srcs/game/instuctions.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/CoreWar_Hub.dir/vm/srcs/game/instuctions.c.o   -c /Users/ylila/CW_Hub/vm/srcs/game/instuctions.c
+
+CMakeFiles/CoreWar_Hub.dir/vm/srcs/game/instuctions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/CoreWar_Hub.dir/vm/srcs/game/instuctions.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ylila/CW_Hub/vm/srcs/game/instuctions.c > CMakeFiles/CoreWar_Hub.dir/vm/srcs/game/instuctions.c.i
+
+CMakeFiles/CoreWar_Hub.dir/vm/srcs/game/instuctions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/CoreWar_Hub.dir/vm/srcs/game/instuctions.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ylila/CW_Hub/vm/srcs/game/instuctions.c -o CMakeFiles/CoreWar_Hub.dir/vm/srcs/game/instuctions.c.s
+
 # Object files for target CoreWar_Hub
 CoreWar_Hub_OBJECTS = \
 "CMakeFiles/CoreWar_Hub.dir/asm/arguments.c.o" \
@@ -2172,7 +2198,9 @@ CoreWar_Hub_OBJECTS = \
 "CMakeFiles/CoreWar_Hub.dir/vm/srcs/game/game.c.o" \
 "CMakeFiles/CoreWar_Hub.dir/vm/srcs/struct_intf/carriage_intf.c.o" \
 "CMakeFiles/CoreWar_Hub.dir/vm/srcs/game/game_intf.c.o" \
-"CMakeFiles/CoreWar_Hub.dir/vm/srcs/game/args_intf.c.o"
+"CMakeFiles/CoreWar_Hub.dir/vm/srcs/game/args_intf.c.o" \
+"CMakeFiles/CoreWar_Hub.dir/vm/srcs/game/arena_exit.c.o" \
+"CMakeFiles/CoreWar_Hub.dir/vm/srcs/game/instuctions.c.o"
 
 # External object files for target CoreWar_Hub
 CoreWar_Hub_EXTERNAL_OBJECTS =
@@ -2328,9 +2356,11 @@ CoreWar_Hub: CMakeFiles/CoreWar_Hub.dir/vm/srcs/game/game.c.o
 CoreWar_Hub: CMakeFiles/CoreWar_Hub.dir/vm/srcs/struct_intf/carriage_intf.c.o
 CoreWar_Hub: CMakeFiles/CoreWar_Hub.dir/vm/srcs/game/game_intf.c.o
 CoreWar_Hub: CMakeFiles/CoreWar_Hub.dir/vm/srcs/game/args_intf.c.o
+CoreWar_Hub: CMakeFiles/CoreWar_Hub.dir/vm/srcs/game/arena_exit.c.o
+CoreWar_Hub: CMakeFiles/CoreWar_Hub.dir/vm/srcs/game/instuctions.c.o
 CoreWar_Hub: CMakeFiles/CoreWar_Hub.dir/build.make
 CoreWar_Hub: CMakeFiles/CoreWar_Hub.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/ylila/CW_Hub/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_152) "Linking C executable CoreWar_Hub"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/ylila/CW_Hub/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_154) "Linking C executable CoreWar_Hub"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/CoreWar_Hub.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

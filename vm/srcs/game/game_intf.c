@@ -1,24 +1,30 @@
 #include "vm.h"
 #include "options.h"
 
-void	carriages_actions(t_carriages *carriage)
+void	carriages_actions(t_corewar *corewar)
 {
-	while (carriage)
+	t_carriages *carriage_head;
+
+	carriage_head = corewar->carriages;
+	while (corewar->carriages)
 	{
-		if (!carriage->cycle_op)
+		if (!corewar->carriages->cycle_op)
 		{
-			carriage->op_code = *carriage->op_pos;
-			while (!valid_op_set_cycle(carriage->op_pos, &carriage->cycle_op))
+			corewar->carriages->op_code = *corewar->carriages->op_pos;
+			while (!valid_op_set_cycle(corewar->carriages->op_pos,
+					&corewar->carriages->cycle_op))
 			{
-				++carriage->op_pos;
-				carriage->op_code = *carriage->op_pos;
+				corewar->carriages->op_pos = do_steps
+						(corewar->carriages->op_pos, 1, corewar->arena);
+				corewar->carriages->op_code = *corewar->carriages->op_pos;
 			}
 		}
-		if (carriage->cycle_op == 1)
-			make_operation_and_go_next(carriage);
-		--carriage->cycle_op;
-		carriage = carriage->next;
+		if (corewar->carriages->cycle_op == 1)
+			make_operation_and_go_next(corewar);
+		--corewar->carriages->cycle_op;
+		corewar->carriages = corewar->carriages->next;
 	}
+	corewar->carriages = carriage_head;
 }
 
 void	lets_check(t_carriages *carriage, t_game_param *game_param)
@@ -52,25 +58,26 @@ _Bool	valid_op_set_cycle(unsigned char *start_oper, int *cycle_to_op)
 	return (1);
 }
 
-void	make_operation_and_go_next(t_carriages *carriage)
+void	make_operation_and_go_next(t_corewar *corewar)
 {
 	unsigned char	idx_op;
 	unsigned char	*start_op;
-	t_arg_type		args[g_op[*carriage->op_pos - 1].num_args];
-	int 			args_val[g_op[*carriage->op_pos - 1].num_args];
+	t_parse_args	args_val;
 
-	start_op = carriage->op_pos;
-	idx_op = *carriage->op_pos - 1;
-	start_op = get_arguments_frm_code(++start_op, args, g_op[idx_op]);
-	if (is_args_valid(args, start_op, g_op[idx_op], args_val) &&
+	start_op = corewar->carriages->op_pos;
+	idx_op = *corewar->carriages->op_pos - 1;
+	start_op = get_arguments_frm_code(start_op, args_val.code_args, g_op[idx_op],
+									  corewar->arena);
+	if (is_args_valid(&args_val, start_op, g_op[idx_op], corewar->arena) &&
 			!(*(start_op - 1) & 0x3u))
-		execute_operation(carriage, args, args_val);
+		execute_operation(corewar, g_op[idx_op], &args_val);
 	else
-		carriage->op_pos = skip_op(start_op, args, g_op[idx_op]);
+		corewar->carriages->op_pos = skip_op(start_op, args_val.code_args,
+				g_op[idx_op], corewar->arena);
 }
 
-void	execute_operation(t_carriages *carriage, t_arg_type *args,
-			int *args_val)
+void	execute_operation(t_corewar *corewar, t_op op,
+					const t_parse_args *args_val)
 {
 	;
 }

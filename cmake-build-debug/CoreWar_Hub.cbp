@@ -560,6 +560,9 @@
 		<Unit filename="/Users/ylila/CW_Hub/vm/includes/vm.h">
 			<Option target="CoreWar_Hub"/>
 		</Unit>
+		<Unit filename="/Users/ylila/CW_Hub/vm/srcs/game/arena_exit.c">
+			<Option target="CoreWar_Hub"/>
+		</Unit>
 		<Unit filename="/Users/ylila/CW_Hub/vm/srcs/game/args_intf.c">
 			<Option target="CoreWar_Hub"/>
 		</Unit>
@@ -567,6 +570,9 @@
 			<Option target="CoreWar_Hub"/>
 		</Unit>
 		<Unit filename="/Users/ylila/CW_Hub/vm/srcs/game/game_intf.c">
+			<Option target="CoreWar_Hub"/>
+		</Unit>
+		<Unit filename="/Users/ylila/CW_Hub/vm/srcs/game/instuctions.c">
 			<Option target="CoreWar_Hub"/>
 		</Unit>
 		<Unit filename="/Users/ylila/CW_Hub/vm/srcs/main.c">

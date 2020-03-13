@@ -44,9 +44,9 @@ op.h
 fcntl.h
 -
 options.h
--
+../vm/includes/options.h
 
-/Users/ylila/CW_Hub/vm/srcs/game/game_intf.c
+/Users/ylila/CW_Hub/vm/srcs/game/args_intf.c
 vm.h
 /Users/ylila/CW_Hub/vm/srcs/game/vm.h
 options.h

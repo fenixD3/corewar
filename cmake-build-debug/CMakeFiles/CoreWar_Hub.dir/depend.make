@@ -581,6 +581,14 @@ CMakeFiles/CoreWar_Hub.dir/libft/ml_strtrim.c.o: ../libft/libft.h
 CMakeFiles/CoreWar_Hub.dir/libft/ml_strtrim.c.o: ../libft/memlist.h
 CMakeFiles/CoreWar_Hub.dir/libft/ml_strtrim.c.o: ../libft/ml_strtrim.c
 
+CMakeFiles/CoreWar_Hub.dir/vm/srcs/game/arena_exit.c.o: ../ft_printf/includes/ft_ptintf.h
+CMakeFiles/CoreWar_Hub.dir/vm/srcs/game/arena_exit.c.o: ../libft/libft.h
+CMakeFiles/CoreWar_Hub.dir/vm/srcs/game/arena_exit.c.o: ../libft/memlist.h
+CMakeFiles/CoreWar_Hub.dir/vm/srcs/game/arena_exit.c.o: ../op.h
+CMakeFiles/CoreWar_Hub.dir/vm/srcs/game/arena_exit.c.o: ../options.h
+CMakeFiles/CoreWar_Hub.dir/vm/srcs/game/arena_exit.c.o: ../vm/includes/vm.h
+CMakeFiles/CoreWar_Hub.dir/vm/srcs/game/arena_exit.c.o: ../vm/srcs/game/arena_exit.c
+
 CMakeFiles/CoreWar_Hub.dir/vm/srcs/game/args_intf.c.o: ../ft_printf/includes/ft_ptintf.h
 CMakeFiles/CoreWar_Hub.dir/vm/srcs/game/args_intf.c.o: ../libft/libft.h
 CMakeFiles/CoreWar_Hub.dir/vm/srcs/game/args_intf.c.o: ../libft/memlist.h
@@ -604,6 +612,14 @@ CMakeFiles/CoreWar_Hub.dir/vm/srcs/game/game_intf.c.o: ../op.h
 CMakeFiles/CoreWar_Hub.dir/vm/srcs/game/game_intf.c.o: ../options.h
 CMakeFiles/CoreWar_Hub.dir/vm/srcs/game/game_intf.c.o: ../vm/includes/vm.h
 CMakeFiles/CoreWar_Hub.dir/vm/srcs/game/game_intf.c.o: ../vm/srcs/game/game_intf.c
+
+CMakeFiles/CoreWar_Hub.dir/vm/srcs/game/instuctions.c.o: ../ft_printf/includes/ft_ptintf.h
+CMakeFiles/CoreWar_Hub.dir/vm/srcs/game/instuctions.c.o: ../libft/libft.h
+CMakeFiles/CoreWar_Hub.dir/vm/srcs/game/instuctions.c.o: ../libft/memlist.h
+CMakeFiles/CoreWar_Hub.dir/vm/srcs/game/instuctions.c.o: ../op.h
+CMakeFiles/CoreWar_Hub.dir/vm/srcs/game/instuctions.c.o: ../options.h
+CMakeFiles/CoreWar_Hub.dir/vm/srcs/game/instuctions.c.o: ../vm/includes/vm.h
+CMakeFiles/CoreWar_Hub.dir/vm/srcs/game/instuctions.c.o: ../vm/srcs/game/instuctions.c
 
 CMakeFiles/CoreWar_Hub.dir/vm/srcs/main.c.o: ../ft_printf/includes/ft_ptintf.h
 CMakeFiles/CoreWar_Hub.dir/vm/srcs/main.c.o: ../libft/libft.h

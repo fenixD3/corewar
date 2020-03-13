@@ -3957,6 +3957,33 @@ libft/ml_strtrim.c.s:
 	$(MAKE) -f CMakeFiles/CoreWar_Hub.dir/build.make CMakeFiles/CoreWar_Hub.dir/libft/ml_strtrim.c.s
 .PHONY : libft/ml_strtrim.c.s
 
+vm/srcs/game/arena_exit.o: vm/srcs/game/arena_exit.c.o
+
+.PHONY : vm/srcs/game/arena_exit.o
+
+# target to build an object file
+vm/srcs/game/arena_exit.c.o:
+	$(MAKE) -f CMakeFiles/CoreWar_Hub.dir/build.make CMakeFiles/CoreWar_Hub.dir/vm/srcs/game/arena_exit.c.o
+.PHONY : vm/srcs/game/arena_exit.c.o
+
+vm/srcs/game/arena_exit.i: vm/srcs/game/arena_exit.c.i
+
+.PHONY : vm/srcs/game/arena_exit.i
+
+# target to preprocess a source file
+vm/srcs/game/arena_exit.c.i:
+	$(MAKE) -f CMakeFiles/CoreWar_Hub.dir/build.make CMakeFiles/CoreWar_Hub.dir/vm/srcs/game/arena_exit.c.i
+.PHONY : vm/srcs/game/arena_exit.c.i
+
+vm/srcs/game/arena_exit.s: vm/srcs/game/arena_exit.c.s
+
+.PHONY : vm/srcs/game/arena_exit.s
+
+# target to generate assembly for a file
+vm/srcs/game/arena_exit.c.s:
+	$(MAKE) -f CMakeFiles/CoreWar_Hub.dir/build.make CMakeFiles/CoreWar_Hub.dir/vm/srcs/game/arena_exit.c.s
+.PHONY : vm/srcs/game/arena_exit.c.s
+
 vm/srcs/game/args_intf.o: vm/srcs/game/args_intf.c.o
 
 .PHONY : vm/srcs/game/args_intf.o
@@ -4037,6 +4064,33 @@ vm/srcs/game/game_intf.s: vm/srcs/game/game_intf.c.s
 vm/srcs/game/game_intf.c.s:
 	$(MAKE) -f CMakeFiles/CoreWar_Hub.dir/build.make CMakeFiles/CoreWar_Hub.dir/vm/srcs/game/game_intf.c.s
 .PHONY : vm/srcs/game/game_intf.c.s
+
+vm/srcs/game/instuctions.o: vm/srcs/game/instuctions.c.o
+
+.PHONY : vm/srcs/game/instuctions.o
+
+# target to build an object file
+vm/srcs/game/instuctions.c.o:
+	$(MAKE) -f CMakeFiles/CoreWar_Hub.dir/build.make CMakeFiles/CoreWar_Hub.dir/vm/srcs/game/instuctions.c.o
+.PHONY : vm/srcs/game/instuctions.c.o
+
+vm/srcs/game/instuctions.i: vm/srcs/game/instuctions.c.i
+
+.PHONY : vm/srcs/game/instuctions.i
+
+# target to preprocess a source file
+vm/srcs/game/instuctions.c.i:
+	$(MAKE) -f CMakeFiles/CoreWar_Hub.dir/build.make CMakeFiles/CoreWar_Hub.dir/vm/srcs/game/instuctions.c.i
+.PHONY : vm/srcs/game/instuctions.c.i
+
+vm/srcs/game/instuctions.s: vm/srcs/game/instuctions.c.s
+
+.PHONY : vm/srcs/game/instuctions.s
+
+# target to generate assembly for a file
+vm/srcs/game/instuctions.c.s:
+	$(MAKE) -f CMakeFiles/CoreWar_Hub.dir/build.make CMakeFiles/CoreWar_Hub.dir/vm/srcs/game/instuctions.c.s
+.PHONY : vm/srcs/game/instuctions.c.s
 
 vm/srcs/main.o: vm/srcs/main.c.o
 
@@ -4635,6 +4689,9 @@ help:
 	@echo "... libft/ml_strtrim.o"
 	@echo "... libft/ml_strtrim.i"
 	@echo "... libft/ml_strtrim.s"
+	@echo "... vm/srcs/game/arena_exit.o"
+	@echo "... vm/srcs/game/arena_exit.i"
+	@echo "... vm/srcs/game/arena_exit.s"
 	@echo "... vm/srcs/game/args_intf.o"
 	@echo "... vm/srcs/game/args_intf.i"
 	@echo "... vm/srcs/game/args_intf.s"
@@ -4644,6 +4701,9 @@ help:
 	@echo "... vm/srcs/game/game_intf.o"
 	@echo "... vm/srcs/game/game_intf.i"
 	@echo "... vm/srcs/game/game_intf.s"
+	@echo "... vm/srcs/game/instuctions.o"
+	@echo "... vm/srcs/game/instuctions.i"
+	@echo "... vm/srcs/game/instuctions.s"
 	@echo "... vm/srcs/main.o"
 	@echo "... vm/srcs/main.i"
 	@echo "... vm/srcs/main.s"

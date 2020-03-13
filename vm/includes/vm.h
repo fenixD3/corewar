@@ -4,7 +4,7 @@
 # include "ft_ptintf.h"
 # include "op.h"
 # include <fcntl.h>
-#include <options.h>
+# include "options.h"
 
 # define N_FLG 1u
 # define DUMP_FLG 2u
@@ -67,6 +67,12 @@ typedef struct	s_corewar
 	t_carriages		*carriages;
 }				t_corewar;
 
+typedef struct	s_parse_args
+{
+	t_arg_type		code_args[3];
+	int 			val[3];
+}				t_parse_args;
+
 void		init_struct(t_corewar *corewar);
 t_champion	*create_new_champ(const char *fname);
 void		push_back_champ(t_champion **champs, const char *fname);
@@ -94,19 +100,20 @@ void	init_arena(unsigned char arena[], t_champion *champs,
 					t_carriages **carriages);
 void	introducing_fighter(t_champion *champs);
 
-extern t_op	oper;
-
-void	carriages_actions(t_carriages *carriage);
-unsigned char	get_bytes_for_step(); /// need to write ????!!!
+void carriages_actions(t_corewar *corewar);
+unsigned char	*do_steps(unsigned char *start, char step, unsigned char *arena);
 void	lets_check(t_carriages *carriage, t_game_param *game_param);
 _Bool	valid_op_set_cycle(unsigned char *start_oper, int *cycle_to_op);
-void make_operation_and_go_next(t_carriages *carriage);
-unsigned char	*get_arguments_frm_code(unsigned char *arg_type_code,
-					t_arg_type *args, t_op oper);
-_Bool	is_args_valid(t_arg_type *args, unsigned char *arg_start, t_op oper,
-					int *args_val);
-unsigned char	*skip_op(unsigned char *start_op, t_arg_type  *args, t_op oper);
-void	execute_operation(t_carriages *carriage, t_arg_type *args,
-						  int *args_val);
+void make_operation_and_go_next(t_corewar *corewar);
+unsigned char *get_arguments_frm_code(unsigned char *arg_type_code, t_arg_type *args,
+					   t_op oper, unsigned char *arena);
+_Bool is_args_valid(t_parse_args *args_val, unsigned char *arg_start, t_op oper,
+					unsigned char *arena);
+void get_arguments_value(t_parse_args *args_val, int idx,
+						 unsigned char *arg_start, t_op oper);
+unsigned char *skip_op(unsigned char *start_op, t_arg_type *args, t_op oper,
+					   unsigned char *arena);
+void
+execute_operation(t_corewar *corewar, t_op op, const t_parse_args *args_val);
 
 #endif

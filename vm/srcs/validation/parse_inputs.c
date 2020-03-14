@@ -59,7 +59,7 @@ void	byte_code_validation(const int fd, t_champion *champ)
 	ssize_t	rd_cnt;
 
 	rd_cnt = read(fd, &champ->file.header.magic, 4);
-	reverse_bytes(&champ->file.header.magic);
+	reverse_int_bytes(&champ->file.header.magic);
 	if (rd_cnt < 4 || champ->file.header.magic != COREWAR_EXEC_MAGIC)
 		get_error("There isn't magic or magic is incorrect");
 	rd_cnt = read(fd, champ->file.header.prog_name, PROG_NAME_LENGTH);
@@ -69,7 +69,7 @@ void	byte_code_validation(const int fd, t_champion *champ)
 		get_error("There isn't 4 NULL bytes after champion's name or \
 champion's name is too big");
 	rd_cnt = read(fd, &champ->file.header.prog_size, 4);
-	reverse_bytes(&champ->file.header.prog_size);
+	reverse_int_bytes(&champ->file.header.prog_size);
 	if (champ->file.header.prog_size > CHAMP_MAX_SIZE)
 		get_error("Champion's code size is too big");
 	rd_cnt = read(fd, champ->file.header.comment, COMMENT_LENGTH);

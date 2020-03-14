@@ -11,6 +11,9 @@ void	start_game(t_corewar *corewar)
 				corewar->game_param.cycles_to_die) ||
 				corewar->game_param.cycles_to_die <= 0)
 			lets_check(corewar->carriages, &corewar->game_param);
+		if (corewar->flgs.flgs & DUMP_FLG &&
+		corewar->game_param.cycles_aft_start == corewar->flgs.nbr_cycles_dump)
+			print_map(corewar);
 	}
 }
 
@@ -45,5 +48,29 @@ void	introducing_fighter(t_champion *champs)
 			++player, champs->file.header.prog_size,
 			champs->file.header.prog_name, champs->file.header.comment);
 		champs = champs->next;
+	}
+}
+
+void    print_map(t_corewar *corewar)
+{
+	int i;
+	int j;
+
+	i = 0;
+	j = 0;
+	while (i < MEM_SIZE)
+	{
+		if (!j)
+			ft_printf("0x%04x : ", i);
+		ft_printf("%.2x", corewar->arena[i]);
+		if (j < 31)
+			ft_printf(" ");
+		else
+		{
+			ft_printf("\n");
+			j = -1;
+		}
+		i++;
+		j++;
 	}
 }

@@ -31,7 +31,6 @@ _Bool	is_champion(const char *arg, t_corewar *corewar)
 	lst_dot = ft_strrchr(arg, '.');
 	if (!lst_dot || ft_strcmp(lst_dot + 1, "cor"))
 		return (0);
-//		get_error("Champion file should contain .cor completion");
 	push_back_champ(&corewar->champs, arg);
 	if (corewar->flgs.flgs & N_FLG)
 	{
@@ -43,7 +42,7 @@ _Bool	is_champion(const char *arg, t_corewar *corewar)
 	return (1);
 }
 
-void	reverse_bytes(unsigned int *num_to_rev)
+void	reverse_int_bytes(unsigned int *num_to_rev)
 {
 	unsigned int	rev;
 	unsigned int	byte;

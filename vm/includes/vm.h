@@ -73,6 +73,13 @@ typedef struct	s_parse_args
 	int 			val[3];
 }				t_parse_args;
 
+union			u_get_arg
+{
+	char	*chr_val;
+	short	*srt_val;
+	int		*int_val;
+};
+
 void		init_struct(t_corewar *corewar);
 t_champion	*create_new_champ(const char *fname);
 void		push_back_champ(t_champion **champs, const char *fname);
@@ -90,7 +97,8 @@ void	get_error(char *error);
 void	parse_arguments(int ac, char **av, t_corewar *corewar);
 void	validation_champions(t_champion *champs);
 void	byte_code_validation(const int fd, t_champion *champ);
-void	reverse_bytes(unsigned int *num_to_rev);
+void	reverse_int_bytes(unsigned int *num_to_rev);
+void	reverse_short_bytes(unsigned short *num_to_rev);
 
 _Bool	is_flg(const char *arg, t_flgs *flgs);
 _Bool	is_champion(const char *arg, t_corewar *corewar);
@@ -99,6 +107,7 @@ void	start_game(t_corewar *corewar);
 void	init_arena(unsigned char arena[], t_champion *champs,
 					t_carriages **carriages);
 void	introducing_fighter(t_champion *champs);
+void    print_map(t_corewar *corewar);
 
 void carriages_actions(t_corewar *corewar);
 unsigned char	*do_steps(unsigned char *start, char step, unsigned char *arena);
@@ -114,6 +123,6 @@ void get_arguments_value(t_parse_args *args_val, int idx,
 unsigned char *skip_op(unsigned char *start_op, t_arg_type *args, t_op oper,
 					   unsigned char *arena);
 void
-execute_operation(t_corewar *corewar, t_op op, const t_parse_args *args_val);
+execute_operation(t_corewar *corewar, const t_op *op, const t_parse_args *args_val);
 
 #endif

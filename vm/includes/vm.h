@@ -123,6 +123,6 @@ void get_arguments_value(t_parse_args *args_val, int idx,
 unsigned char *skip_op(unsigned char *start_op, t_arg_type *args, t_op oper,
 					   unsigned char *arena);
 void
-execute_operation(t_corewar *corewar, const t_op *op, const t_parse_args *args_val);
+execute_operation(t_corewar *corewar, const t_op *op, const t_parse_args *args_val, t_carriages *head);
 
 #endif

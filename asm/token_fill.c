@@ -64,7 +64,7 @@ _Bool	label_recognition(char *str, t_token *token, t_label **tail)
 
 void	token_fill(char *str, t_token *token, t_label **tail, u_int8_t flag)
 {
-	if (*str == '"' || (flag == NOTENDSTR && *str))
+	if (*str == '"' || flag == NOTENDSTR)
 		add_string(str, token);
 	else if (!*str || flag == ENDLINE)
 		token->type = NEW_LINE;

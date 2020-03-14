@@ -14,6 +14,7 @@
 #include "asm.h"
 #include "libword.h"
 #include "libft.h"
+#include "asm_dasha.h"
 
 void		rewind_n(t_pc *pc, u_int16_t n)
 {
@@ -30,6 +31,7 @@ u_int8_t 	string_rewind(t_pc *pc)
 	if (!(str_end = ft_strchr(pc->line, '"')))
 		return (TKNZE_BREAK);
 	rewind_n(pc, str_end - pc->line + 1);
+	rewind_n(pc, ft_skipdelims(pc->line, SPACES) - pc->line);
 	return (TKNZE_CONT);
 }
 
@@ -51,10 +53,7 @@ void		command_rewind(t_pc *pc, t_token *token)
 {
 	if (!token->content || !*(char*)token->content ||
 							ft_isspecial(*(char*)token->content, DELIMITERS))
-	{
-		ft_printf("[%d:%d] ERROR: invalid COMMAND\n", pc->row, pc->column); ///  заменить нормально функцией ошибки
-		exit(1);
-	}
+		token_exit(ASM_INVALID_CMD, token);
 	rewind_n(pc, ft_skipword(pc->line, DELIMITERS) - pc->line);
 }
 

@@ -26,11 +26,11 @@
 #define ML_CMD_NUM	80
 #define ML_CHECK_N_FILENAME    150
 
-#define TKNZE_BREAK	0
-#define TKNZE_CONT	1
-#define ENDFILE		2
-#define ENDLINE		3
-#define NOTENDSTR	4
+#define TKNZE_BREAK	1
+#define TKNZE_CONT	2
+#define ENDFILE		3
+#define ENDLINE		4
+#define NOTENDSTR	5
 
 
 typedef enum	s_token_type

@@ -52,7 +52,6 @@ void open_and_tokenize_file(char *file_name, t_token_sec *check_list,
 	t_label		*label;
 
 	label = NULL;
-
 	errno = 0;
 	if ((fd = open(file_name, O_DIRECTORY)) >= 0)
 	{

@@ -61,10 +61,11 @@ char	*add_string(char *str, t_token *token)
 	char *tmp;
 
 	token->type = STRING;
-	tmp = str + 1;
+	tmp = str + ((*str == '"') ? 1 : 0);
 	if (*tmp == '"')
 	{
-		token->content = (char*)ml_memalloc(sizeof(char), ML_S_CONTENT);
+		token->content = (char*)ml_memalloc(sizeof(char) * 3, ML_S_CONTENT);
+		ft_memset((char*)token->content, '"', 2);
 		return (tmp + 1);
 	}
 	while (*tmp && *tmp != '"')
@@ -86,8 +87,7 @@ u_int8_t	check_prev_str(t_token *token, u_int8_t flag)
 	str = (char*)token->prev->content;
 	if (*str == '"')
 		str++;
-	if ((str_end = ft_strchr(str, '"')) &&
-		!*(str_end + 1))
+	if ((str_end = ft_strchr(str, '"')) && !*(str_end + 1))
 		return (flag);
 	return (NOTENDSTR);
 }

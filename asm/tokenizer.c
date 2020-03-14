@@ -50,19 +50,14 @@ void	tokenize_line(t_pc *pc, t_token **token, t_label **label, char *str)
 {
 	u_int8_t	flag;
 
-	static int i;
-
 	flag = 0;
 	pc->line = str;
 	pc->column = 1;
 	rewind_n(pc, ft_skipdelims(pc->line, SPACES) - str);
-	while (*pc->line)
+	while (*pc->line || !flag)
 	{
-		i++;
-		if (i == 4)
-			i = i;
 		add_token(pc, token, label, flag);
-		if (token_rewind(pc, *token) == TKNZE_BREAK)
+		if ((flag = token_rewind(pc, *token)) == TKNZE_BREAK)
 			break ;
 	}
 	add_token(pc, token, label, ENDLINE);

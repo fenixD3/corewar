@@ -15,8 +15,8 @@ unsigned char *get_arguments_frm_code(unsigned char *arg_type_code,
 	return (oper.num_args ? do_steps(arg_type_code, 1, arena) : arg_type_code);
 }
 
-_Bool	is_args_valid(t_parse_args *args_val, unsigned char *arg_start, t_op oper,
-					unsigned char *arena)
+_Bool	is_args_valid(t_parse_args *args_val, unsigned char *arg_start,
+						t_op oper, unsigned char *arena)
 {
 	_Bool	good;
 	int 	idx;
@@ -48,37 +48,28 @@ _Bool	is_args_valid(t_parse_args *args_val, unsigned char *arg_start, t_op oper,
 void	get_arguments_value(t_parse_args *args_val, const int idx,
 							unsigned char *arg_start, t_op oper)
 {
-	/*char	*chr_val;
-	short	*srt_val;
-	int		*int_val;*/
+	/*char	*chr_ptr;
+	short	*srt_ptr;
+	int		*int_ptr;*/
 	union u_get_arg	get_arg;
 
-	get_arg.chr_val = (char *)arg_start;
-	/*chr_val = (char *)arg_start;
-	srt_val = (short *)arg_start;
-	int_val = (int *)arg_start;
-	reverse_int_bytes((unsigned int *)int_val);
-	reverse_short_bytes((unsigned short *)srt_val);*/
+	get_arg.chr_ptr = arg_start;
+	/*chr_ptr = (char *)arg_start;
+	srt_ptr = (short *)arg_start;
+	int_ptr = (int *)arg_start;
+	reverse_int_bytes((unsigned int *)int_ptr);
+	reverse_vm_short_bytes((unsigned short *)srt_ptr);*/
 	if (args_val->code_args[idx] == REG_CODE)
-		args_val->val[idx] = *get_arg.chr_val;
+		args_val->val[idx] = *get_arg.chr_ptr;
 	else if (args_val->code_args[idx] == DIR_CODE)
 	{
 		if (oper.size_t_dir == 2)
-		{
-			reverse_short_bytes((unsigned short *)get_arg.srt_val);
-			args_val->val[idx] = *get_arg.srt_val;
-		}
+			args_val->val[idx] = reverse_vm_short_bytes(get_arg.srt_ptr);
 		else if (oper.size_t_dir == 4)
-		{
-			reverse_int_bytes((unsigned int *)get_arg.int_val);
-			args_val->val[idx] = *get_arg.int_val;
-		}
+			args_val->val[idx] = reverse_vm_int_bytes(get_arg.int_ptr);
 	}
 	else if (args_val->code_args[idx] == IND_CODE)
-	{
-		reverse_short_bytes((unsigned short *)get_arg.srt_val);
-		args_val->val[idx] = *get_arg.srt_val;
-	}
+		args_val->val[idx] = reverse_vm_short_bytes(get_arg.srt_ptr);
 }
 
 unsigned char	*skip_op(unsigned char *start_op, t_arg_type *args, t_op oper,
@@ -97,21 +88,4 @@ unsigned char	*skip_op(unsigned char *start_op, t_arg_type *args, t_op oper,
 			start_op = do_steps(start_op, 2, arena);
 	}
 	return (start_op);
-}
-
-void	reverse_short_bytes(unsigned short *num_to_rev)
-{
-	unsigned short	rev;
-	unsigned short	byte;
-	unsigned short	i;
-
-	rev = 0;
-	i = 0;
-	while (i < 16)
-	{
-		byte = *num_to_rev >> i & 0xFFu;
-		rev |= byte << (16u - 8u - i);
-		i += 8;
-	}
-	*num_to_rev = rev;
 }

@@ -75,9 +75,9 @@ typedef struct	s_parse_args
 
 union			u_get_arg
 {
-	char	*chr_val;
-	short	*srt_val;
-	int		*int_val;
+	unsigned char	*chr_ptr;
+	unsigned short	*srt_ptr;
+	unsigned int	*int_ptr;
 };
 
 void		init_struct(t_corewar *corewar);
@@ -97,8 +97,9 @@ void	get_error(char *error);
 void	parse_arguments(int ac, char **av, t_corewar *corewar);
 void	validation_champions(t_champion *champs);
 void	byte_code_validation(const int fd, t_champion *champ);
-void	reverse_int_bytes(unsigned int *num_to_rev);
-void	reverse_short_bytes(unsigned short *num_to_rev);
+void reverse_int_bytes(unsigned int *num_to_rev);
+short reverse_vm_short_bytes(unsigned short *num_to_rev);
+int		reverse_vm_int_bytes(unsigned int *num_to_rev);
 
 _Bool	is_flg(const char *arg, t_flgs *flgs);
 _Bool	is_champion(const char *arg, t_corewar *corewar);
@@ -110,7 +111,7 @@ void	introducing_fighter(t_champion *champs);
 void    print_map(t_corewar *corewar);
 
 void carriages_actions(t_corewar *corewar);
-unsigned char	*do_steps(unsigned char *start, char step, unsigned char *arena);
+unsigned char	*do_steps(unsigned char *start, int step, unsigned char *arena);
 void	lets_check(t_carriages *carriage, t_game_param *game_param);
 _Bool	valid_op_set_cycle(unsigned char *start_oper, int *cycle_to_op);
 void make_operation_and_go_next(t_corewar *corewar);

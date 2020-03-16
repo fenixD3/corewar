@@ -66,7 +66,7 @@ void open_and_tokenize_file(char *file_name, t_token_sec *check_list,
 	tokenize(fd, token, &label);
 	close(fd);
 
-	//print_tokens(*token, 1);
+	print_tokens(*token, 1);
 
 	token_sequence(*token, check_list);
 	label_substitution(label);

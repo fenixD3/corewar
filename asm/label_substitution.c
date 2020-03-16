@@ -67,6 +67,8 @@ void 	label_substitution(t_label *head)
 {
 	t_label *tmp;
 
+	if (!head)
+		return ;
 	tmp = head;
 	while (tmp)
 	{
@@ -82,10 +84,5 @@ void 	label_substitution(t_label *head)
 		}
 		tmp = tmp->next;
 	}
-
-	static int i;
-	i++;
-	if (i == 18)
-		i = i; // TODO Check ml_lists
 	ml_free_list(ML_LABEL);
 }

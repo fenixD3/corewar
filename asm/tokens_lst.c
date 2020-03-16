@@ -85,7 +85,10 @@ u_int8_t	check_prev_str(t_token *token, u_int8_t flag)
 		token->prev->type != STRING)
 		return (flag);
 	str = (char*)token->prev->content;
-	if (*str == '"')
+	if (token->prev->prev && token->prev->prev->type == NEW_LINE &&
+		token->prev->prev->prev && token->prev->prev->prev->type == STRING)
+		;
+	else if (*str == '"')
 		str++;
 	if ((str_end = ft_strchr(str, '"')) && !*(str_end + 1))
 		return (flag);

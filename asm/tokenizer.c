@@ -52,6 +52,7 @@ void	tokenize_line(t_pc *pc, t_token **token, t_label **label, char *str)
 
 	flag = 0;
 	pc->line = str;
+	pc->row++;
 	pc->column = 1;
 	rewind_n(pc, ft_skipdelims(pc->line, SPACES) - str);
 	while (*pc->line || !flag)
@@ -61,7 +62,7 @@ void	tokenize_line(t_pc *pc, t_token **token, t_label **label, char *str)
 			break ;
 	}
 	add_token(pc, token, label, ENDLINE);
-	pc->row++;
+
 	pc->line = str;
 }
 
@@ -79,7 +80,7 @@ void	tokenize(int fd, t_token **token, t_label **label)
 	char 		*tmp;
 	int 		ret;
 
-	pc.row = 1;
+	pc.row = 0;
 	while ((ret = ml_get_next_line(fd, &tmp, ML_GNL_LINE)) > 0)
 		tokenize_line(&pc, token, label, tmp);
 	if (!*token)
@@ -87,5 +88,5 @@ void	tokenize(int fd, t_token **token, t_label **label)
 	newline_endfile_check(fd, pc.line, ret);
 	add_token(&pc, token, label, ENDFILE);
 	set_lists_at_start(token, label);
-	ml_free_list(ML_GNL_LINE);
+	//ml_free_list(ML_GNL_LINE);
 }

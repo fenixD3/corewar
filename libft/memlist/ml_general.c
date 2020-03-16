@@ -40,3 +40,8 @@ void		ml_free_all(void)
 {
 	ml_static_lists(NULL, ML_CLEARALL, 0);
 }
+
+t_ml		*ml_givemem(u_int32_t list_num)
+{
+	return (ml_static_lists(NULL, ML_GIVEMEM, list_num));
+}

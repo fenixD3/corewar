@@ -31,7 +31,7 @@ typedef struct		s_token_sec
 	char 			*chmp_comment;
 }					t_token_sec;
 
-int					token_exit(char *error, t_token *token);
+//int					token_exit(char *error, t_token *token);
 void token_sequence(t_token *token, t_token_sec	*check_list);
 
 void			    print_commands(int fd, t_token *token);

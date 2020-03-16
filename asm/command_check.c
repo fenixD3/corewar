@@ -5,23 +5,39 @@
 
 void	check_args(t_token *token, int *i, int com_code)
 {
-	t_token	*cp_tok;
 	t_arg	*arg;
 
-	cp_tok = token;
 	while (token->next != NULL && token->type != NEW_LINE)
 	{
 		if (token->next->type == ARGUMENT || token->next->type == ARGUMENT_LABEL)
 		{
 			arg = (t_arg*)token->next->content;
 			if (!(arg->type & ((g_op[com_code]).args_type[*i])))
+				//token_exit(ASM_ERR_ARGS, token);
 				token_exit(ASM_ERR_ARGS, token);
 			(*i)++;
 		}
 		token = token->next;
 	}
-	token = cp_tok;
 }
+
+/*void	check_args(t_token *token, int *i, int com_code)
+{
+	t_arg	*arg;
+
+	//token = token->next;
+	while (token && token->type != NEW_LINE)
+	{
+		if (token->type == ARGUMENT || token->type == ARGUMENT_LABEL)
+		{
+			arg = (t_arg*)token->content;
+			if (!(arg->type & ((g_op[com_code]).args_type[*i])))
+				token_exit(ASM_ERR_ARGS, token);
+			(*i)++;
+		}
+		token = token->next;
+	}
+}*/
 
 void	command_check(t_token *token)
 {

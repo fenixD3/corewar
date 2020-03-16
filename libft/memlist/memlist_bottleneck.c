@@ -30,7 +30,7 @@ void	ml_innerlist(void *ptr, u_int8_t rule,
 		ml_clear_lst(lst, head);
 }
 
-void	ml_static_lists(void *ptr, u_int8_t rule, u_int32_t list_num)
+void	*ml_static_lists(void *ptr, u_int8_t rule, u_int32_t list_num)
 {
 	static	t_ml_lists	*lst;
 	t_ml_lists			*head;
@@ -38,9 +38,10 @@ void	ml_static_lists(void *ptr, u_int8_t rule, u_int32_t list_num)
 	if (rule == ML_CLEARALL)
 	{
 		ml_clear_all_lists(lst, NULL);
-		lst = NULL;
-		return ;
+		return (lst = NULL);
 	}
+	if (rule == ML_GIVEMEM)
+		return (ml_bb_givemem(lst, list_num));
 	head = lst;
 	while (lst && lst->next && lst->list_num < list_num)
 		lst = lst->next;
@@ -55,4 +56,5 @@ group what does not exist");
 	ml_innerlist(ptr, rule, &lst, &head);
 	if (head)
 		lst = head;
+	return (NULL);
 }

@@ -98,6 +98,8 @@ void 			label_substitution(t_label *head);
 char *tkn_str_cat(char *dst, t_token *token, u_int32_t max_len);
 t_token			*find_token(t_token *head, t_token_type type);
 
+void        token_exit(char *error, t_token *token);
+
 ///// not need???
 
 _Bool	is_special_char(char c, char *specials);

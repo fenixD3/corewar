@@ -73,7 +73,7 @@ _Bool		ml_push_front(t_ml_lists **lst, t_ml *new)
 	if (!new)
 	{
 		ml_clear_lst(lst, NULL);
-		return (0);
+		return (1);
 	}
 	if (head && *head)
 	{

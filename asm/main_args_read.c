@@ -30,7 +30,7 @@ void			print_in_file(char *file_name, t_token *token, header_t *header)
 
 	if ((name = ft_strrchr(file_name, '.')))
 		*name = '\0';
-	name = ml_strjoin(file_name, ".cor", ML_CHECK_N_FILENAME);
+	name = ml_strjoin(file_name, ".cor", ML_CHECK);
 	if ((fd = open(name, O_CREAT | O_WRONLY | O_TRUNC,
 			S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH | S_IWOTH)) < 0)
 	{
@@ -66,7 +66,7 @@ void open_and_tokenize_file(char *file_name, t_token_sec *check_list,
 	tokenize(fd, token, &label);
 	close(fd);
 
-	//print_tokens(*token, 0);
+	//print_tokens(*token, 1);
 
 	token_sequence(*token, check_list);
 	label_substitution(label);

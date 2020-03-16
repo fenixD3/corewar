@@ -19,13 +19,18 @@ unsigned int		calc_progsize(t_token *token)
 
 void				init_headers(header_t *header, t_token *token, t_token_sec *info)
 {
-	int	com_len;
+	//int	com_len;
 
-	com_len = ft_strlen(info->chmp_comment);
+	//com_len = ft_strlen(info->chmp_comment);
 	ft_bzero(header->comment, COMMENT_LENGTH);
 	ft_bzero(header->prog_name, PROG_NAME_LENGTH);
 	(header)->magic = COREWAR_EXEC_MAGIC;
-	ft_strncpy((header)->comment, info->chmp_comment, com_len);
-	ft_strncpy((header)->prog_name, info->chmp_name, ft_strlen(info->chmp_name));
+	tkn_str_cat(header->prog_name, find_token(token, NAME)->next,
+			PROG_NAME_LENGTH);
+	tkn_str_cat(header->comment, find_token(token, COMMENT_PROG)->next,
+				COMMENT_LENGTH);
+	//printf("___\n%s\n___\n%s\n___\n", header->prog_name, header->comment);
+	//ft_strncpy((header)->comment, info->chmp_comment, com_len);
+	//ft_strncpy((header)->prog_name, info->chmp_name, ft_strlen(info->chmp_name));
 	(header)->prog_size = calc_progsize(token);
 }

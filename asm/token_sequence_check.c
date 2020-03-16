@@ -32,7 +32,7 @@ void 	init_check_list(t_token_sec *check_list)
 }
 */
 
-void	comm_or_name(t_token *token, t_token_sec *check_list)
+/*void	comm_or_name(t_token *token, t_token_sec *check_list)
 {
 	if ((check_list->name && !check_list->comment_prog) ||
 		(check_list->name && check_list->comment_prog &&
@@ -40,7 +40,7 @@ void	comm_or_name(t_token *token, t_token_sec *check_list)
 	{
 		check_list->chmp_name = (check_list->str_name) ?
 			ml_strjoin(check_list->chmp_name,
-		((char *)token->content + 1), ML_CHECK_N_FILENAME) :
+		((char *)token->content + 1), ML_CHECK) :
 			((char *)token->content + 1);
 		check_list->str_name = true;
 		check_list->new_line = false;
@@ -51,7 +51,7 @@ void	comm_or_name(t_token *token, t_token_sec *check_list)
 	{
 		check_list->chmp_comment = (check_list->str_comment) ?
 			ml_strjoin(check_list->chmp_comment,
-		((char *)token->content + 1), ML_CHECK_N_FILENAME) :
+		((char *)token->content + 1), ML_CHECK) :
 			((char *)token->content + 1);
 		check_list->str_comment = true;
 		check_list->new_line = false;
@@ -71,10 +71,28 @@ void	if_str_check(t_token *token, t_token_sec *check_list)
 		        PROG_NAME_LENGTH : COMMENT_LENGTH;
 		if (ft_strlen((char *)token->content) > limit)
 			token_exit(((check_list->name && !check_list->comment_prog) ?
-			            ASM_TOLONG_NAME : ASM_TOLONG_COMMENT), token);
+			            ASM_LONG_NAME : ASM_LONG_CMNT), token);
 		len = ft_strlen((char *)token->content) - 1;
 		((char *)token->content)[len] = '\0';
 		comm_or_name(token, check_list);
+	}
+}*/
+
+
+void	if_str_check(t_token *token, t_token_sec *check_list)
+{
+	if (token->type == STRING)
+	{
+		token = token->prev;
+		while (token && token->type == NEW_LINE)
+			token = token->prev;
+		if (!token || (token->type != STRING && token->type != NAME &&
+												token->type != COMMENT_PROG))
+			token_exit(ASM_INVALID_STR_PLACE, token);
+		if (token->type == NAME)
+			check_list->str_name = true;
+		else if (token->type == COMMENT_PROG)
+			check_list->str_comment = true;
 	}
 }
 
@@ -110,7 +128,6 @@ void token_sequence(t_token *token, t_token_sec	*check_list)
 {
 	ft_memset(check_list, 0, sizeof(*check_list));
 	check_list->new_line = true; /// нужно ли инициализировать отдельно? не знаю, вроде и без него работает
-
 	while (token != NULL)
 	{
 		if (token->type == SEPARATOR)

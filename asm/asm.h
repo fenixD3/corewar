@@ -24,7 +24,7 @@
 #define ML_S_CONTENT 60
 #define ML_LABEL	70
 #define ML_CMD_NUM	80
-#define ML_CHECK_N_FILENAME    150
+#define ML_CHECK    150
 
 #define TKNZE_BREAK	1
 #define TKNZE_CONT	2
@@ -95,6 +95,9 @@ u_int32_t		command_length(t_token *token);
 
 void 			label_substitution(t_label *head);
 
+char *tkn_str_cat(char *dst, t_token *token, u_int32_t max_len);
+t_token			*find_token(t_token *head, t_token_type type);
+
 ///// not need???
 
 _Bool	is_special_char(char c, char *specials);
@@ -103,6 +106,7 @@ _Bool	skip_delims(char **line, char *delims, char *comments);
 char	**fast_strsplit(char *line, char *delims, char *comments, void *alloc_func(size_t)); // may be replaced to libft
 
 _Bool	find_label(t_label **head, t_label *label_arg);
+
 
 
 ///print

@@ -35,14 +35,16 @@
  * Check for commands' arguments correctness
  */
 
-# define ASM_TOLONG_NAME		"ERROR: Champion's name is too long"
+# define ASM_LONG_NAME			"ERROR: Champion's name is too long"
 
-# define ASM_TOLONG_COMMENT		"ERROR: Champion's comment is too long"
+# define ASM_LONG_CMNT			"ERROR: Champion's comment is too long"
 
 # define ASM_ERR_ARGS			"ERROR: Command followed by wrong arguments"
 
 ///// Egor's errors
 
+#define ASM_INVALID_STR_PLACE	"ERROR: Token string in invalid placement"
+#define ASM_INVALID_STR			"ERROR: invalid string"
 #define ASM_NO_LABEL			"ERROR: Label doesn't exist"
 #define ASM_INVALID_CMD			"ERROR: Command is invalid"
 

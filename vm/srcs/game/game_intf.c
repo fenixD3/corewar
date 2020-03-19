@@ -8,7 +8,7 @@ void	carriages_actions(t_corewar *corewar)
 	carriage_head = corewar->carriages;
 	while (corewar->carriages)
 	{
-		if (!corewar->carriages->cycle_op)
+		if (corewar->carriages->is_live && !corewar->carriages->cycle_op)
 		{
 			corewar->carriages->op_code = *corewar->carriages->op_pos;
 			while (!valid_op_set_cycle(corewar->carriages->op_pos,
@@ -19,8 +19,8 @@ void	carriages_actions(t_corewar *corewar)
 				corewar->carriages->op_code = *corewar->carriages->op_pos;
 			}
 		}
-		if (corewar->carriages->cycle_op == 1)
-			make_operation_and_go_next(corewar);
+		if (corewar->carriages->is_live && corewar->carriages->cycle_op == 1)
+			make_operation_and_go_next(corewar, &carriage_head);
 		--corewar->carriages->cycle_op;
 		corewar->carriages = corewar->carriages->next;
 	}
@@ -31,9 +31,10 @@ void	lets_check(t_carriages *carriage, t_game_param *game_param)
 {
 	while (carriage)
 	{
-		if (game_param->cycles_aft_start - carriage->cycle_when_live
+		if (carriage->is_live &&
+				game_param->cycles_aft_start - carriage->cycle_when_live
 				>= game_param->cycles_to_die)
-			; /// kill carriage
+			carriage->is_live = 0;
 		carriage = carriage->next;
 	}
 	if (game_param->live_period_cnt >= NBR_LIVE)
@@ -43,11 +44,12 @@ void	lets_check(t_carriages *carriage, t_game_param *game_param)
 	}
 	else
 		++game_param->check_cnt;
-	if (game_param->check_cnt == 10)
+	if (game_param->check_cnt == MAX_CHECKS)
 	{
 		game_param->cycles_to_die -= CYCLE_DELTA;
 		game_param->check_cnt = 0;
 	}
+	game_param->live_period_cnt = 0;
 }
 
 _Bool	valid_op_set_cycle(unsigned char *start_oper, int *cycle_to_op)
@@ -58,7 +60,8 @@ _Bool	valid_op_set_cycle(unsigned char *start_oper, int *cycle_to_op)
 	return (1);
 }
 
-void	make_operation_and_go_next(t_corewar *corewar)
+void	make_operation_and_go_next(t_corewar *corewar,
+					t_carriages **carriage_head)
 {
 	unsigned char	idx_op;
 	unsigned char	*start_op;
@@ -70,14 +73,16 @@ void	make_operation_and_go_next(t_corewar *corewar)
 			g_op[idx_op], corewar->arena);
 	if (is_args_valid(&args_val, start_op, g_op[idx_op], corewar->arena) &&
 			!(*(start_op - 1) & 0x3u))
-		execute_operation(corewar, &g_op[idx_op], &args_val, NULL);
+		(*instrs_ptr[idx_op])(corewar, &args_val, carriage_head);
+//		execute_operation(corewar, idx_op, &args_val, carriage_head);
 	else
 		corewar->carriages->op_pos = skip_op(start_op, args_val.code_args,
 				g_op[idx_op], corewar->arena);
 }
 
-void	execute_operation(t_corewar *corewar, const t_op *op,
-			const t_parse_args *args_val, t_carriages *head)
+void	execute_operation(t_corewar *corewar, const int idx,
+						  const t_parse_args *args_val, t_carriages **head)
 {
 	;
+//	(*instrs_ptr[idx])(corewar, args_val, head);
 }

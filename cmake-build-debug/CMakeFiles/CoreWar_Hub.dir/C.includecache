@@ -48,53 +48,53 @@ fcntl.h
 options.h
 ../vm/includes/options.h
 
-/Users/ylila/CW_Hub/vm/srcs/game/arena_exit.c
+C:/Users/da.filiptsev/Desktop/CoreWar_Hub/vm/srcs/game/args_intf.c
 vm.h
-/Users/ylila/CW_Hub/vm/srcs/game/vm.h
-
-/Users/ylila/CW_Hub/vm/srcs/game/args_intf.c
-vm.h
-/Users/ylila/CW_Hub/vm/srcs/game/vm.h
+C:/Users/da.filiptsev/Desktop/CoreWar_Hub/vm/srcs/game/vm.h
 options.h
-/Users/ylila/CW_Hub/vm/srcs/game/options.h
+C:/Users/da.filiptsev/Desktop/CoreWar_Hub/vm/srcs/game/options.h
 
-/Users/ylila/CW_Hub/vm/srcs/game/game.c
+C:/Users/da.filiptsev/Desktop/CoreWar_Hub/vm/srcs/game/game.c
 vm.h
-/Users/ylila/CW_Hub/vm/srcs/game/vm.h
+C:/Users/da.filiptsev/Desktop/CoreWar_Hub/vm/srcs/game/vm.h
 
-/Users/ylila/CW_Hub/vm/srcs/game/game_intf.c
+C:/Users/da.filiptsev/Desktop/CoreWar_Hub/vm/srcs/game/game_intf.c
 vm.h
-/Users/ylila/CW_Hub/vm/srcs/game/vm.h
+C:/Users/da.filiptsev/Desktop/CoreWar_Hub/vm/srcs/game/vm.h
 options.h
-/Users/ylila/CW_Hub/vm/srcs/game/options.h
+C:/Users/da.filiptsev/Desktop/CoreWar_Hub/vm/srcs/game/options.h
 
-/Users/ylila/CW_Hub/vm/srcs/game/instuctions.c
+C:/Users/da.filiptsev/Desktop/CoreWar_Hub/vm/srcs/game/helper_func.c
 vm.h
-/Users/ylila/CW_Hub/vm/srcs/game/vm.h
+C:/Users/da.filiptsev/Desktop/CoreWar_Hub/vm/srcs/game/vm.h
 
-/Users/ylila/CW_Hub/vm/srcs/main.c
+C:/Users/da.filiptsev/Desktop/CoreWar_Hub/vm/srcs/game/instuctions.c
 vm.h
-/Users/ylila/CW_Hub/vm/srcs/vm.h
+C:/Users/da.filiptsev/Desktop/CoreWar_Hub/vm/srcs/game/vm.h
 
-/Users/ylila/CW_Hub/vm/srcs/struct_intf/carriage_intf.c
+C:/Users/da.filiptsev/Desktop/CoreWar_Hub/vm/srcs/main.c
 vm.h
-/Users/ylila/CW_Hub/vm/srcs/struct_intf/vm.h
+C:/Users/da.filiptsev/Desktop/CoreWar_Hub/vm/srcs/vm.h
 
-/Users/ylila/CW_Hub/vm/srcs/struct_intf/corewar_intf.c
+C:/Users/da.filiptsev/Desktop/CoreWar_Hub/vm/srcs/struct_intf/carriage_intf.c
 vm.h
-/Users/ylila/CW_Hub/vm/srcs/struct_intf/vm.h
+C:/Users/da.filiptsev/Desktop/CoreWar_Hub/vm/srcs/struct_intf/vm.h
 
-/Users/ylila/CW_Hub/vm/srcs/validation/parse_input_intf.c
+C:/Users/da.filiptsev/Desktop/CoreWar_Hub/vm/srcs/struct_intf/corewar_intf.c
 vm.h
-/Users/ylila/CW_Hub/vm/srcs/validation/vm.h
+C:/Users/da.filiptsev/Desktop/CoreWar_Hub/vm/srcs/struct_intf/vm.h
 
-/Users/ylila/CW_Hub/vm/srcs/validation/parse_inputs.c
+C:/Users/da.filiptsev/Desktop/CoreWar_Hub/vm/srcs/validation/parse_input_intf.c
 vm.h
-/Users/ylila/CW_Hub/vm/srcs/validation/vm.h
+C:/Users/da.filiptsev/Desktop/CoreWar_Hub/vm/srcs/validation/vm.h
+
+C:/Users/da.filiptsev/Desktop/CoreWar_Hub/vm/srcs/validation/parse_inputs.c
+vm.h
+C:/Users/da.filiptsev/Desktop/CoreWar_Hub/vm/srcs/validation/vm.h
 error_defs.h
-/Users/ylila/CW_Hub/vm/srcs/validation/error_defs.h
+C:/Users/da.filiptsev/Desktop/CoreWar_Hub/vm/srcs/validation/error_defs.h
 
-/Users/ylila/CW_Hub/vm/srcs/validation/reports.c
+C:/Users/da.filiptsev/Desktop/CoreWar_Hub/vm/srcs/validation/reports.c
 vm.h
-/Users/ylila/CW_Hub/vm/srcs/validation/vm.h
+C:/Users/da.filiptsev/Desktop/CoreWar_Hub/vm/srcs/validation/vm.h
 

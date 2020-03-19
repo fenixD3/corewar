@@ -4,7 +4,8 @@ unsigned char	*do_steps(unsigned char *start, int step, unsigned char *arena)
 {
 
 	if (start + step > arena + MEM_SIZE - 1)
-		start = arena + (MEM_SIZE - (start + step - arena));
+		//start = arena + (MEM_SIZE - (start + step - arena));
+		start = arena + ((start + step - arena) % MEM_SIZE);
 	else
 		start += step;
 	return (start);
@@ -42,4 +43,27 @@ int		reverse_vm_int_bytes(unsigned int *num_to_rev)
 		i += 8;
 	}
 	return ((int)rev);
+}
+
+int		get_value_frm_arg(t_parse_args *arg_val, int arg_idx,
+						t_corewar *corewar, _Bool is_idx_mod)
+{
+	int				val;
+	unsigned int	*ind_pos;
+
+	if (arg_val->code_args[arg_idx] == REG_CODE)
+		val = corewar->carriages->reg[arg_val->val[arg_idx]];
+	else if (arg_val->code_args[0] == DIR_CODE)
+		val = arg_val->val[arg_idx];
+	else if (arg_val->code_args[0] == IND_CODE)
+	{
+		if (is_idx_mod)
+			ind_pos = (unsigned int *)do_steps(corewar->carriages->op_pos,
+				arg_val->val[arg_idx] % IDX_MOD, corewar->arena);
+		else
+			ind_pos = (unsigned int *)do_steps(corewar->carriages->op_pos,
+					arg_val->val[arg_idx], corewar->arena);
+		val = reverse_vm_int_bytes(ind_pos);
+	}
+	return (val);
 }

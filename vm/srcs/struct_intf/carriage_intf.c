@@ -15,6 +15,7 @@ t_carriages	*create_new_carriage(void)
 	new->op_pos = NULL;
 	new->cnt_bytes_to_op = 0;
 	ft_bzero(new->reg, sizeof(new->reg));
+	new->is_live = 1;
 	new->next = NULL;
 	return (new);
 }
@@ -32,4 +33,18 @@ void		push_front_carriage(t_carriages **carriages)
 		new_carriage->next = *carriages;
 		*carriages = new_carriage;
 	}
+}
+
+int			carriage_amount_live(t_carriages *carriage)
+{
+	int		cnt;
+
+	cnt = 0;
+	while (carriage)
+	{
+		if (carriage->is_live)
+			++cnt;
+		carriage = carriage->next;
+	}
+	return (cnt);
 }

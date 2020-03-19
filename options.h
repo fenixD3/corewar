@@ -14,6 +14,7 @@
 # define OPTIONS_H
 
 # include "op.h"
+//# include "vm.h"
 
 typedef struct	s_op
 {
@@ -24,7 +25,6 @@ typedef struct	s_op
 	int		cycle;
 	_Bool	argument_type_code;
 	int		size_t_dir;
-	void	(* instr);
 }				t_op;
 
 static t_op		g_op[17] = {

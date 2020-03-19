@@ -39,9 +39,9 @@ typedef struct	s_flgs
 typedef struct	s_game_param
 {
 	int		who_lst_live;
-	int		cycles_aft_start;
+	ssize_t	cycles_aft_start;
 	int		live_period_cnt;
-	int		cycles_to_die;
+	ssize_t	cycles_to_die;
 	int 	check_cnt;
 }				t_game_param;
 
@@ -55,6 +55,7 @@ typedef struct	s_carriages
 	unsigned char		*op_pos;
 	unsigned char		cnt_bytes_to_op;
 	int 				reg[REG_NUMBER];
+	_Bool				is_live;
 	struct s_carriages	*next;
 }				t_carriages;
 
@@ -90,6 +91,7 @@ _Bool		is_there_same_champ_num(t_champion *champs,
 
 t_carriages	*create_new_carriage(void);
 void		push_front_carriage(t_carriages **carriages);
+int			carriage_amount_live(t_carriages *carriage);
 
 void	get_usage(void);
 void	get_error(char *error);
@@ -109,12 +111,14 @@ void	init_arena(unsigned char arena[], t_champion *champs,
 					t_carriages **carriages);
 void	introducing_fighter(t_champion *champs);
 void    print_map(t_corewar *corewar);
+void introducing_winner(t_corewar *corewar, _Bool who_lst_live);
 
 void carriages_actions(t_corewar *corewar);
 unsigned char	*do_steps(unsigned char *start, int step, unsigned char *arena);
 void	lets_check(t_carriages *carriage, t_game_param *game_param);
 _Bool	valid_op_set_cycle(unsigned char *start_oper, int *cycle_to_op);
-void make_operation_and_go_next(t_corewar *corewar);
+void
+make_operation_and_go_next(t_corewar *corewar, t_carriages **carriage_head);
 unsigned char *get_arguments_frm_code(unsigned char *arg_type_code, t_arg_type *args,
 					   t_op oper, unsigned char *arena);
 _Bool is_args_valid(t_parse_args *args_val, unsigned char *arg_start, t_op oper,
@@ -123,7 +127,31 @@ void get_arguments_value(t_parse_args *args_val, int idx,
 						 unsigned char *arg_start, t_op oper);
 unsigned char *skip_op(unsigned char *start_op, t_arg_type *args, t_op oper,
 					   unsigned char *arena);
-void
-execute_operation(t_corewar *corewar, const t_op *op, const t_parse_args *args_val, t_carriages *head);
+void	execute_operation(t_corewar *corewar, const int idx,
+						  const t_parse_args *args_val, t_carriages **head);
+
+int		get_value_frm_arg(t_parse_args *arg_val, int arg_idx,
+							 t_corewar *corewar, _Bool is_idx_mod);
+void    live(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head);
+void    ld(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head);
+void    ldi(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head);
+void    lld(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head);
+void    lldi(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head);
+void    st(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head);
+void    sti(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head);
+void    add(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head);
+void    sub(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head);
+void    and(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head);
+void    or(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head);
+void    xor(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head);
+void    nfork(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head);
+void    lfork(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head);
+void    zjump(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head);
+void    aff(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head);
+
+static void (*instrs_ptr[16])(t_corewar *corewar, t_parse_args *arg_val,
+							  t_carriages **head) =
+	{live, ld, st, add, sub, and, or, xor, zjump, ldi, sti, nfork,
+  	lld, lldi, lfork, aff};
 
 #endif

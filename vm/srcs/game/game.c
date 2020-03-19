@@ -4,7 +4,7 @@ void	start_game(t_corewar *corewar)
 {
 	init_arena(corewar->arena, corewar->champs, &corewar->carriages);
 	introducing_fighter(corewar->champs);
-	while (corewar->game_param.cycles_to_die)
+	while (1)
 	{
 		carriages_actions(corewar);
 		if (!(++corewar->game_param.cycles_aft_start %
@@ -14,6 +14,10 @@ void	start_game(t_corewar *corewar)
 		if (corewar->flgs.flgs & DUMP_FLG &&
 		corewar->game_param.cycles_aft_start == corewar->flgs.nbr_cycles_dump)
 			print_map(corewar);
+		if (carriage_amount_live(corewar->carriages) == 1)
+			introducing_winner(corewar, 0);
+		else if (!carriage_amount_live(corewar->carriages))
+			introducing_winner(corewar, 1);
 	}
 }
 
@@ -49,6 +53,27 @@ void	introducing_fighter(t_champion *champs)
 			champs->file.header.prog_name, champs->file.header.comment);
 		champs = champs->next;
 	}
+}
+
+void introducing_winner(t_corewar *corewar, _Bool who_lst_live)
+{
+	int		winner;
+
+	while (!who_lst_live && corewar->carriages)
+	{
+		if (corewar->carriages->is_live)
+		{
+			winner = -corewar->carriages->reg[0];
+			break ;
+		}
+		corewar->carriages = corewar->carriages->next;
+	}
+	if (who_lst_live)
+		winner = corewar->game_param.who_lst_live;
+	while (corewar->champs->num != winner)
+		corewar->champs = corewar->champs->next;
+	ft_printf("Winner is player with number %d\n", corewar->champs->num);
+	exit(0);
 }
 
 void    print_map(t_corewar *corewar)

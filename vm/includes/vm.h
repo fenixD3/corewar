@@ -50,7 +50,7 @@ typedef struct	s_carriages
 	int					id;
 	_Bool				carry;
 	unsigned char		op_code;
-	int					cycle_when_live;
+	ssize_t				cycle_when_live;
 	int					cycle_op;
 	unsigned char		*op_pos;
 	unsigned char		cnt_bytes_to_op;

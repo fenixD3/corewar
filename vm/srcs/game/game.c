@@ -1,10 +1,19 @@
 #include "vm.h"
+#include "vis.h"
+#include "vis_errors.h"
 
 void	start_game(t_corewar *corewar)
 {
+	t_vis_tools *vs;
+	bool		quit;
+
+	vs = create_vs();
 	init_arena(corewar->arena, corewar->champs, &corewar->carriages);
 	introducing_fighter(corewar->champs);
-	while (1)
+	if (!init(vs))
+		go_exit(ERR_CREATE_VS);
+	quit = false;
+	while (!quit)
 	{
 		carriages_actions(corewar);
 		if (!(++corewar->game_param.cycles_aft_start %
@@ -14,11 +23,15 @@ void	start_game(t_corewar *corewar)
 		if (corewar->flgs.flgs & DUMP_FLG &&
 		corewar->game_param.cycles_aft_start == corewar->flgs.nbr_cycles_dump)
 			print_map(corewar);
+		visualise_arena(corewar, vs, &quit);
 		if (carriage_amount_live(corewar->carriages) == 1)
 			introducing_winner(corewar, 0);
 		else if (!carriage_amount_live(corewar->carriages))
 			introducing_winner(corewar, 1);
 	}
+	SDL_DestroyRenderer(vs->render);
+	SDL_DestroyWindow(vs->window);
+	SDL_Quit();
 }
 
 void	init_arena(unsigned char arena[], t_champion *champs,
@@ -70,10 +83,11 @@ void introducing_winner(t_corewar *corewar, _Bool who_lst_live)
 	}
 	if (who_lst_live)
 		winner = corewar->game_param.who_lst_live;
-	while (corewar->champs->num != winner)
+	while (corewar->champs && (corewar->champs->num != winner))
 		corewar->champs = corewar->champs->next;
-	ft_printf("Winner is player with number %d\n", corewar->champs->num);
-	exit(0);
+	if (corewar->champs)
+		ft_printf("Winner is player with number %d\n", corewar->champs->num);
+//	exit(0);
 }
 
 void    print_map(t_corewar *corewar)

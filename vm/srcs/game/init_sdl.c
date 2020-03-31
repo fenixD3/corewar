@@ -19,7 +19,7 @@ bool	init_font(t_vis_tools *vs)
 		go_exit(TTF_GetError());
 	else
 	{
-		vs->font = TTF_OpenFont("../media/ASMAN.TTF", 16);
+		vs->font = TTF_OpenFont("../media/eqw.TTF", 13);
 		if (!vs->font)
 			go_exit(TTF_GetError());
 		else
@@ -38,7 +38,7 @@ bool	init(t_vis_tools *vs)
 	else
 	{
 		vs->window = SDL_CreateWindow("Corewar fight", SDL_WINDOWPOS_UNDEFINED,
-		                              SDL_WINDOWPOS_UNDEFINED, 1140, 880,
+		                              SDL_WINDOWPOS_UNDEFINED, vs->wight, vs->height,
 		                              SDL_WINDOW_SHOWN);
 		if (vs->window == NULL)
 			success = false;

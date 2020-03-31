@@ -13,25 +13,31 @@ void	start_game(t_corewar *corewar)
 	if (!init(vs))
 		go_exit(ERR_CREATE_VS);
 	quit = false;
+	int i = 0;
 	while (!quit)
 	{
-		carriages_actions(corewar);
-		if (!(++corewar->game_param.cycles_aft_start %
-				corewar->game_param.cycles_to_die) ||
-				corewar->game_param.cycles_to_die <= 0)
-			lets_check(corewar->carriages, &corewar->game_param);
-		if (corewar->flgs.flgs & DUMP_FLG &&
-		corewar->game_param.cycles_aft_start == corewar->flgs.nbr_cycles_dump)
-			print_map(corewar);
-		visualise_arena(corewar, vs, &quit);
-		if (carriage_amount_live(corewar->carriages) == 1)
-			introducing_winner(corewar, 0);
-		else if (!carriage_amount_live(corewar->carriages))
-			introducing_winner(corewar, 1);
+		++i;
+		visualise_arena(corewar, vs, &quit, 0);
 	}
 	SDL_DestroyRenderer(vs->render);
 	SDL_DestroyWindow(vs->window);
 	SDL_Quit();
+//	while (1)
+//	{
+//		carriages_actions(corewar);
+//		if (!(++corewar->game_param.cycles_aft_start %
+//		      corewar->game_param.cycles_to_die) ||
+//		    corewar->game_param.cycles_to_die <= 0)
+//			lets_check(corewar->carriages, &corewar->game_param);
+//		if (corewar->flgs.flgs & DUMP_FLG &&
+//		    corewar->game_param.cycles_aft_start ==
+//		    corewar->flgs.nbr_cycles_dump)
+//			print_map(corewar);
+//		if (carriage_amount_live(corewar->carriages) == 1)
+//			introducing_winner(corewar, 0);
+//		else if (!carriage_amount_live(corewar->carriages))
+//			introducing_winner(corewar, 1);
+//	}
 }
 
 void	init_arena(unsigned char arena[], t_champion *champs,

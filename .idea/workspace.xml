@@ -5,204 +5,21 @@
       <config projectName="dencorewar" targetName="dencorewar" />
     </generated>
   </component>
-  <component name="CMakeSettings">
+  <component name="CMakeSettings" AUTO_RELOAD="true">
     <configurations>
       <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
     </configurations>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7a52012a-ab21-4ea1-af27-9169491ed8e0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/vm/srcs/game/visualise_arena.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vm/srcs/game/add_cell.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeRCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeSystem.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/a.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/C.includecache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/asm/arguments.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/asm/asm.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/asm/ft_isdigitalword.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/asm/ft_isspecial.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/asm/ft_skipword.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/asm/get_header.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/asm/token_recognition.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/asm/tokenizer.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/asm/tokens_lst.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/depend.internal" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/depend.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/fast_strsplit.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/file_to_list.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/flags.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/ft_printf/srcs/field_len.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/ft_printf/srcs/fill_union.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/ft_printf/srcs/ft_itoa_base_printf.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/ft_printf/srcs/ft_printf.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/ft_printf/srcs/get_binary.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/ft_printf/srcs/is_parser.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/ft_printf/srcs/is_typeflags.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/ft_printf/srcs/make_field.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/ft_printf/srcs/parsing_funcs.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/ft_printf/srcs/parsing_generaly.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/ft_printf/srcs/prepare_lennum.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/ft_printf/srcs/set_buff.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/ft_printf/srcs/set_flags.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/ft_printf/srcs/str_tolower.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/ft_printf/srcs/to_buff.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/ft_printf/srcs/which_sign.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/ft_printf/srcs/zeroing.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/ft_printf/srcsFloat/check_create_float_res.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/ft_printf/srcsFloat/e_flag_intf.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/ft_printf/srcsFloat/float_intf.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/ft_printf/srcsFloat/float_rounding.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/ft_printf/srcsFloat/frees_for_float.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/ft_printf/srcsFloat/ft_log10.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/ft_printf/srcsFloat/ft_log2.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/ft_printf/srcsFloat/g_flag_intf.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/ft_printf/srcsFloat/get_dbl_values.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/ft_printf/srcsFloat/get_ldbl_values.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/ft_printf/srcsFloat/high_precision.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/ft_printf/srcsFloat/high_precision_intf.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/ft_printf/srcsFloat/high_precision_intf_long.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/ft_printf/srcsFloat/high_precision_long.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/ft_printf/srcsFloat/my_float.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/ft_printf/srcsFloat/my_long_float.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/ft_printf/srcsFloat/print_reserve_dbl.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/ft_wordequ.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/includes_C.rsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ft_abs.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ft_atoi.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ft_bzero.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ft_fib.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ft_floor.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ft_is_complex_string.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ft_isalnum.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ft_isalpha.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ft_isascii.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ft_isdigit.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ft_islower.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ft_isprint.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ft_isspace.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ft_isupper.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ft_itoa.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ft_lstadd.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ft_lstcirc_add.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ft_lstcirc_delelem.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ft_lstcirc_findcontent_size.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ft_lstcirc_strnew.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ft_lstdel.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ft_lstdelone.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ft_lstiter.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ft_lstmap.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ft_lstnew.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ft_lstpush.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ft_memalloc.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ft_memccpy.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ft_memchr.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ft_memcmp.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ft_memcpy.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ft_memdel.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ft_memmove.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ft_memset.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ft_pow.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ft_putchar.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ft_putchar_fd.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ft_putendl.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ft_putendl_fd.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ft_putnbr.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ft_putnbr_fd.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ft_putstr.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ft_putstr_fd.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ft_reverse.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ft_sqrt.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ft_sstrchr.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ft_strcat.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ft_strchr.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ft_strclr.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ft_strcmp.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ft_strcpy.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ft_strdel.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ft_strdup.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ft_strequ.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ft_striter.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ft_striteri.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ft_strjoin.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ft_strjoinre.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ft_strlcat.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ft_strlcpy.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ft_strlen.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ft_strmap.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ft_strmapi.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ft_strncat.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ft_strncmp.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ft_strncpy.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ft_strndup.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ft_strnequ.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ft_strnew.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ft_strnstr.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ft_strrchr.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ft_strsplit.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ft_strstr.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ft_strsub.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ft_strtrim.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ft_tolower.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ft_toupper.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/get_next_line.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/go_exit.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/memlist/memlist_bottleneck.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/memlist/ml_create.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/memlist/ml_del.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/memlist/ml_general.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ml_get_next_line.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ml_itoa.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ml_memalloc.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ml_strdup.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ml_strjoin.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ml_strjoinre.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ml_strmap.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ml_strmapi.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ml_strndup.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ml_strnew.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ml_strsplit.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ml_strsub.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/libft/ml_strtrim.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/link.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/linklibs.rsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/objects.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/objects1.rsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/vm/srcs/game/args_intf.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/vm/srcs/game/game.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/vm/srcs/game/game_intf.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/vm/srcs/game/helper_func.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/vm/srcs/game/instuctions.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/vm/srcs/main.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/vm/srcs/struct_intf/carriage_intf.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/vm/srcs/struct_intf/corewar_intf.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/vm/srcs/validation/parse_input_intf.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/vm/srcs/validation/parse_inputs.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CoreWar_Hub.dir/vm/srcs/validation/reports.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cmake.check_cache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cmake.check_cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CoreWar_Hub" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CoreWar_Hub.cbp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CoreWar_Hub.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vm/includes/vis.h" beforeDir="false" afterPath="$PROJECT_DIR$/vm/includes/vis.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vm/includes/vis_errors.h" beforeDir="false" afterPath="$PROJECT_DIR$/vm/includes/vis_errors.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vm/srcs/game/create_vs.c" beforeDir="false" afterPath="$PROJECT_DIR$/vm/srcs/game/create_vs.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vm/srcs/game/game.c" beforeDir="false" afterPath="$PROJECT_DIR$/vm/srcs/game/game.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vm/srcs/game/init_sdl.c" beforeDir="false" afterPath="$PROJECT_DIR$/vm/srcs/game/init_sdl.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vm/srcs/game/visualise_arena.c" beforeDir="false" afterPath="$PROJECT_DIR$/vm/srcs/game/visualise_arena.c" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -266,7 +83,7 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="dencorewar" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="$PROJECT_DIR$/../test.cor" PASS_PARENT_ENVS_2="true" PROJECT_NAME="dencorewar" TARGET_NAME="dencorewar" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="dencorewar" RUN_TARGET_NAME="dencorewar">
+    <configuration name="dencorewar" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="$PROJECT_DIR$/cw_ex/Gagnant.cor $PROJECT_DIR$/cw_ex/Car.cor" PASS_PARENT_ENVS_2="true" PROJECT_NAME="dencorewar" TARGET_NAME="dencorewar" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="dencorewar" RUN_TARGET_NAME="dencorewar">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -311,7 +128,10 @@
       <workItem from="1584797020307" duration="3999000" />
       <workItem from="1584871429349" duration="162000" />
       <workItem from="1584871619551" duration="22144000" />
-      <workItem from="1585054785728" duration="23618000" />
+      <workItem from="1585054785728" duration="24649000" />
+      <workItem from="1585138514054" duration="65014000" />
+      <workItem from="1585646211690" duration="500000" />
+      <workItem from="1585647071658" duration="2010000" />
     </task>
     <servers />
   </component>
@@ -432,53 +252,75 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/vm/srcs/game/visualise_arena.c</url>
-          <line>130</line>
-          <option name="timeStamp" value="40" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/vm/srcs/game/init_sdl.c</url>
           <line>52</line>
           <option name="timeStamp" value="46" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/vm/srcs/game/visualise_arena.c</url>
-          <line>135</line>
-          <option name="timeStamp" value="52" />
+          <line>119</line>
+          <option name="timeStamp" value="100" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/vm/srcs/game/visualise_arena.c</url>
-          <line>52</line>
-          <option name="timeStamp" value="53" />
+          <line>82</line>
+          <option name="timeStamp" value="101" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/vm/srcs/game/visualise_arena.c</url>
-          <line>41</line>
-          <option name="timeStamp" value="61" />
+          <line>81</line>
+          <option name="timeStamp" value="102" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/vm/srcs/game/visualise_arena.c</url>
-          <line>97</line>
-          <option name="timeStamp" value="71" />
+          <line>83</line>
+          <option name="timeStamp" value="104" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/vm/srcs/game/visualise_arena.c</url>
+          <line>131</line>
+          <option name="timeStamp" value="105" />
+        </line-breakpoint>
+        <breakpoint enabled="true" log-message="true" log-stack="true" type="OCSymbolicBreakpointType">
+          <condition expression="malloc_error_break" language="ObjectiveC" mode="CODE_FRAGMENT" />
+          <dependency master-id="0" />
+          <log-expression expression="malloc_error_break" language="ObjectiveC" mode="CODE_FRAGMENT" />
+          <properties>
+            <option name="symbolPattern" value="" />
+          </properties>
+          <option name="timeStamp" value="87" />
+        </breakpoint>
       </breakpoints>
+      <default-breakpoints>
+        <breakpoint enabled="true" type="python-exception">
+          <dependency id="0" />
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="CMakeRunConfiguration">
         <watch expression="arena[i]" language="ObjectiveC" />
-        <watch expression="crwr-&gt;arena[i]" language="ObjectiveC" />
-        <watch expression="res[j - 1]" language="ObjectiveC" />
-        <watch expression="res[j - 2]" language="ObjectiveC" />
-        <watch expression="res[j]" language="ObjectiveC" />
-        <watch expression="corewar-&gt;arena[1865]" language="ObjectiveC" />
-        <watch expression="res[1]" language="ObjectiveC" />
+        <watch expression="arena[i +1]" language="ObjectiveC" />
+        <watch expression="hex_arena[1]" language="ObjectiveC" />
+        <watch expression="hex_arena[0]" language="ObjectiveC" />
+        <watch expression="hex_arena[64]" language="ObjectiveC" />
+        <watch expression="i/64" language="ObjectiveC" />
+        <watch expression="64 * 3 - 1" language="ObjectiveC" />
         <watch expression="res[0]" language="ObjectiveC" />
-        <watch expression="res[2]" language="ObjectiveC" />
-        <watch expression="res[0][93]" language="ObjectiveC" />
-        <watch expression="res[0][85]" language="ObjectiveC" />
-        <watch expression="res[63]" />
-        <watch expression="res[1]" />
-        <watch expression="corewar-&gt;arena[i]" language="ObjectiveC" />
+        <watch expression="res[1]" language="ObjectiveC" />
+        <watch expression="MEM_SIZE" language="ObjectiveC" />
+        <watch expression="res[63]" language="ObjectiveC" />
+        <watch expression="res[64]" language="ObjectiveC" />
+        <watch expression="chmps-&gt;prog_size[i / chmps-&gt;step]" language="ObjectiveC" />
+        <watch expression="vs-&gt;text_color[4]" language="ObjectiveC" />
+        <watch expression="chmps-&gt;step" language="ObjectiveC" />
+        <watch expression="vs-&gt;text_color[i / chmps-&gt;step]" language="ObjectiveC" />
+        <watch expression="i / chmps-&gt;step" language="ObjectiveC" />
+        <watch expression="((i / chmps.step) * 64 + j)" language="ObjectiveC" />
+        <watch expression="&amp;(corewar-&gt;arena[i])" language="ObjectiveC" />
       </configuration>
     </watches-manager>
   </component>

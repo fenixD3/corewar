@@ -43,7 +43,7 @@ typedef struct		s_cells
 
 typedef struct		s_arena
 {
-	t_cells			*cell;
+//	t_cells			*cell;
 	int				chmp_num;
 	unsigned int	prog_size[4];//aaa in corewar?!
 	int				step;//aaa in corewar?!
@@ -51,7 +51,7 @@ typedef struct		s_arena
 
 bool				init(t_vis_tools *vs);
 
-void				visualise_arena(t_corewar *corewar, t_vis_tools *vs, bool *quit, int i);
+void				visualise_arena(t_corewar *corewar, t_vis_tools *vs, bool *quit);
 
 t_vis_tools			*create_vs(void);
 
@@ -59,8 +59,7 @@ t_cells				*add_cell(int i, t_corewar *corewar);
 
 void				save_cell(t_cells **celllst, t_cells *new_cell);
 
-void				print_arena(t_vis_tools *vs, t_arena *arena);
-
+void				print_arena(t_vis_tools *vs, char **arena);
 
 /*
  * Support_func.c

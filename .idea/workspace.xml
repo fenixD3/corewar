@@ -12,13 +12,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7a52012a-ab21-4ea1-af27-9169491ed8e0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/vm/srcs/game/add_cell.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/C.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/create_vs.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/create_vs.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/game.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/game.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/init_sdl.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/init_sdl.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/print_arena.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/print_arena.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/visualise_arena.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/visualise_arena.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/dencorewar" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/dencorewar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vm/includes/vis.h" beforeDir="false" afterPath="$PROJECT_DIR$/vm/includes/vis.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm/includes/vis_errors.h" beforeDir="false" afterPath="$PROJECT_DIR$/vm/includes/vis_errors.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vm/srcs/game/create_vs.c" beforeDir="false" afterPath="$PROJECT_DIR$/vm/srcs/game/create_vs.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vm/srcs/game/game.c" beforeDir="false" afterPath="$PROJECT_DIR$/vm/srcs/game/game.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vm/srcs/game/init_sdl.c" beforeDir="false" afterPath="$PROJECT_DIR$/vm/srcs/game/init_sdl.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vm/srcs/game/print_arena.c" beforeDir="false" afterPath="$PROJECT_DIR$/vm/srcs/game/print_arena.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vm/srcs/game/visualise_arena.c" beforeDir="false" afterPath="$PROJECT_DIR$/vm/srcs/game/visualise_arena.c" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -83,7 +89,7 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="dencorewar" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="$PROJECT_DIR$/cw_ex/Gagnant.cor $PROJECT_DIR$/cw_ex/Car.cor" PASS_PARENT_ENVS_2="true" PROJECT_NAME="dencorewar" TARGET_NAME="dencorewar" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="dencorewar" RUN_TARGET_NAME="dencorewar">
+    <configuration name="dencorewar" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="$PROJECT_DIR$/cw_ex/champs/toto.cor $USER_HOME$/Downloads/vm_champs/jumper.cor $PROJECT_DIR$/cw_ex/champs/ex.cor $PROJECT_DIR$/cw_ex/champs/slider2.cor" PASS_PARENT_ENVS_2="true" PROJECT_NAME="dencorewar" TARGET_NAME="dencorewar" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="dencorewar" RUN_TARGET_NAME="dencorewar">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -131,7 +137,7 @@
       <workItem from="1585054785728" duration="24649000" />
       <workItem from="1585138514054" duration="65014000" />
       <workItem from="1585646211690" duration="500000" />
-      <workItem from="1585647071658" duration="2010000" />
+      <workItem from="1585647071658" duration="20750000" />
     </task>
     <servers />
   </component>
@@ -257,29 +263,19 @@
           <option name="timeStamp" value="46" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/vm/srcs/game/visualise_arena.c</url>
-          <line>119</line>
-          <option name="timeStamp" value="100" />
+          <url>file://$PROJECT_DIR$/vm/srcs/game/add_cell.c</url>
+          <line>32</line>
+          <option name="timeStamp" value="107" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/vm/srcs/game/visualise_arena.c</url>
-          <line>82</line>
-          <option name="timeStamp" value="101" />
+          <url>file://$PROJECT_DIR$/vm/srcs/game/game.c</url>
+          <line>11</line>
+          <option name="timeStamp" value="113" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/vm/srcs/game/visualise_arena.c</url>
-          <line>81</line>
-          <option name="timeStamp" value="102" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/vm/srcs/game/visualise_arena.c</url>
-          <line>83</line>
-          <option name="timeStamp" value="104" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/vm/srcs/game/visualise_arena.c</url>
-          <line>131</line>
-          <option name="timeStamp" value="105" />
+          <url>file://$PROJECT_DIR$/vm/srcs/game/game.c</url>
+          <line>17</line>
+          <option name="timeStamp" value="114" />
         </line-breakpoint>
         <breakpoint enabled="true" log-message="true" log-stack="true" type="OCSymbolicBreakpointType">
           <condition expression="malloc_error_break" language="ObjectiveC" mode="CODE_FRAGMENT" />
@@ -304,10 +300,6 @@
       <configuration name="CMakeRunConfiguration">
         <watch expression="arena[i]" language="ObjectiveC" />
         <watch expression="arena[i +1]" language="ObjectiveC" />
-        <watch expression="hex_arena[1]" language="ObjectiveC" />
-        <watch expression="hex_arena[0]" language="ObjectiveC" />
-        <watch expression="hex_arena[64]" language="ObjectiveC" />
-        <watch expression="i/64" language="ObjectiveC" />
         <watch expression="64 * 3 - 1" language="ObjectiveC" />
         <watch expression="res[0]" language="ObjectiveC" />
         <watch expression="res[1]" language="ObjectiveC" />
@@ -321,6 +313,14 @@
         <watch expression="i / chmps-&gt;step" language="ObjectiveC" />
         <watch expression="((i / chmps.step) * 64 + j)" language="ObjectiveC" />
         <watch expression="&amp;(corewar-&gt;arena[i])" language="ObjectiveC" />
+        <watch expression="corewar-&gt;arena[1024]" language="ObjectiveC" />
+        <watch expression="corewar-&gt;arena[1025]" language="ObjectiveC" />
+        <watch expression="corewar-&gt;arena[1026]" language="ObjectiveC" />
+        <watch expression="corewar-&gt;arena[1027]" language="ObjectiveC" />
+        <watch expression="corewar-&gt;arena[1028]" language="ObjectiveC" />
+        <watch expression="corewar-&gt;arena[1029]" language="ObjectiveC" />
+        <watch expression="corewar-&gt;arena[1030]" language="ObjectiveC" />
+        <watch expression="corewar-&gt;arena[1031]" language="ObjectiveC" />
       </configuration>
     </watches-manager>
   </component>

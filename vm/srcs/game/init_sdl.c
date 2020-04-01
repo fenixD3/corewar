@@ -19,7 +19,7 @@ bool	init_font(t_vis_tools *vs)
 		go_exit(TTF_GetError());
 	else
 	{
-		vs->font = TTF_OpenFont("../media/eqw.TTF", 13);
+		vs->font = TTF_OpenFont("../media/RCdot3.ttf", 10);
 		if (!vs->font)
 			go_exit(TTF_GetError());
 		else

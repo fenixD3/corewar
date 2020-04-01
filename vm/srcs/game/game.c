@@ -70,9 +70,10 @@ void introducing_winner(t_corewar *corewar, _Bool who_lst_live)
 	}
 	if (who_lst_live)
 		winner = corewar->game_param.who_lst_live;
-	while (corewar->champs->num != winner)
+	while (corewar->champs && corewar->champs->num != winner)
 		corewar->champs = corewar->champs->next;
-	ft_printf("Winner is player with number %d\n", corewar->champs->num);
+	ft_printf("Contestant %d \"%s\" has won!\n", corewar->champs->num,
+			corewar->champs->file.header.prog_name);
 	exit(0);
 }
 

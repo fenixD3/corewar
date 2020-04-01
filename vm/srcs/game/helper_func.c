@@ -1,6 +1,7 @@
 #include "vm.h"
 
-unsigned char	*do_steps(unsigned char *start, int step, unsigned char *arena)
+unsigned char	*do_steps(unsigned char *start, int step,
+							const unsigned char *arena)
 {
 
 	if (start + step > arena + MEM_SIZE - 1)

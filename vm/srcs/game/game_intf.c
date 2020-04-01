@@ -71,18 +71,11 @@ void	make_operation_and_go_next(t_corewar *corewar,
 	idx_op = *corewar->carriages->op_pos - 1;
 	start_op = get_arguments_frm_code(start_op, args_val.code_args,
 			g_op[idx_op], corewar->arena);
-	if (is_args_valid(&args_val, start_op, g_op[idx_op], corewar->arena) &&
+	if (is_args_valid(&args_val, start_op, &g_op[idx_op], corewar->arena) &&
 			!(*(start_op - 1) & 0x3u))
 		(*instrs_ptr[idx_op])(corewar, &args_val, carriage_head);
-//		execute_operation(corewar, idx_op, &args_val, carriage_head);
 	else
 		corewar->carriages->op_pos = skip_op(start_op, args_val.code_args,
 				g_op[idx_op], corewar->arena);
 }
 
-void	execute_operation(t_corewar *corewar, const int idx,
-						  const t_parse_args *args_val, t_carriages **head)
-{
-	;
-//	(*instrs_ptr[idx])(corewar, args_val, head);
-}

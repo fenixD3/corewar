@@ -17,6 +17,8 @@
 
 # define DESTROY_TXTR(X)	if (X) SDL_DestroyTexture(X);
 
+
+
 typedef struct		s_vis_tools
 {
 	int				wight;

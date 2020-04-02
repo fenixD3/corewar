@@ -24,7 +24,8 @@ void	start_game(t_corewar *corewar)
 		    corewar->game_param.cycles_aft_start ==
 		    corewar->flgs.nbr_cycles_dump)
 			print_map(corewar);
-		visualise_arena(corewar, vs, &quit);
+		if (g_change)
+			visualise_arena(corewar, vs, &quit);
 		if (carriage_amount_live(corewar->carriages) == 1)
 			introducing_winner(corewar, 0);
 		else if (!carriage_amount_live(corewar->carriages))

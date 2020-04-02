@@ -67,6 +67,9 @@ void	make_operation_and_go_next(t_corewar *corewar,
 	unsigned char	*start_op;
 	t_parse_args	args_val;
 
+
+	//TODO add global variable to call visualisation!
+	g_change = 1;
 	start_op = corewar->carriages->op_pos;
 	idx_op = *corewar->carriages->op_pos - 1;
 	start_op = get_arguments_frm_code(start_op, args_val.code_args,

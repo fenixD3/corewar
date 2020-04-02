@@ -122,6 +122,7 @@ void			visualise_arena(t_corewar *corewar, t_vis_tools *vs, bool *quit)
 {
 	SDL_Event	e;
 
+	g_change = 0;
 	display_objs(vs, corewar);
 	SDL_RenderPresent(vs->render);
 //	SDL_Delay(vs->speed);

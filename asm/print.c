@@ -4,7 +4,7 @@
 
 #include <stdio.h>
 #include <libft/libft.h>
-#include <corewar/options.h>
+#include "options.h"
 #include <fcntl.h>
 #include "asm.h"
 

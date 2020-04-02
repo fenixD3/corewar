@@ -20,26 +20,46 @@ void	if_label(t_token *token, t_token_sec *check_list)
 	}
 }
 
+//void	if_arg(t_token *token, t_token_sec *check_list)
+//{
+//	if (token->type == ARGUMENT || token->type == ARGUMENT_LABEL)
+//	{
+//		if (!(check_list)->command)
+//			token_exit(ASM_COMMAND_MISSING, token);
+//		else
+//		{
+//			if (!(check_list)->arg)
+//			{
+//				if ((check_list)->separator)
+//					token_exit(ASM_EXTRA_SEPARATOR, token);
+//			}
+//			else
+//				if (!(check_list)->separator)
+//					token_exit(ASM_SEPARATOR_MISSING, token);
+//			(check_list)->new_line = false;
+//			(check_list)->separator = false;
+//			(check_list)->arg = true;
+//		}
+//	}
+//}
+
 void	if_arg(t_token *token, t_token_sec *check_list)
 {
 	if (token->type == ARGUMENT || token->type == ARGUMENT_LABEL)
 	{
 		if (!(check_list)->command)
 			token_exit(ASM_COMMAND_MISSING, token);
-		else
-		{
-			if (!(check_list)->arg)
-			{
-				if ((check_list)->separator)
-					token_exit(ASM_EXTRA_SEPARATOR, token);
-			}
-			else
-				if (!(check_list)->separator)
-					token_exit(ASM_SEPARATOR_MISSING, token);
-			(check_list)->new_line = false;
-			(check_list)->separator = false;
-			(check_list)->arg = true;
-		}
+		if (!(check_list)->arg && (check_list)->separator)
+			token_exit(ASM_EXTRA_SEPARATOR, token);
+		if ((check_list)->arg && !(check_list)->separator)
+			token_exit(ASM_SEPARATOR_MISSING, token);
+		if (((t_arg*)token->content)->type & T_REG &&
+					(((t_arg*)token->content)->num < 1 ||
+			        ((t_arg*)token->content)->num > REG_NUMBER))
+			token_exit(ASM_TREG_INVALID_NUM, token);
+		(check_list)->new_line = false;
+		(check_list)->separator = false;
+		(check_list)->arg = true;
 	}
 }
 

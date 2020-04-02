@@ -5,39 +5,22 @@
 
 void	check_args(t_token *token, int *i, int com_code)
 {
+	t_token	*token_arg;
 	t_arg	*arg;
 
-	while (token->next != NULL && token->type != NEW_LINE)
+	token_arg = token->next;
+	while (token_arg && token_arg->type != NEW_LINE)
 	{
-		if (token->next->type == ARGUMENT || token->next->type == ARGUMENT_LABEL)
+		if (token_arg->type == ARGUMENT || token_arg->type == ARGUMENT_LABEL)
 		{
-			arg = (t_arg*)token->next->content;
+			arg = (t_arg*)token_arg->content;
 			if (!(arg->type & ((g_op[com_code]).args_type[*i])))
-				//token_exit(ASM_ERR_ARGS, token);
-				token_exit(ASM_ERR_ARGS, token);
+				token_exit(ASM_ERR_ARGS, token_arg);
 			(*i)++;
 		}
-		token = token->next;
+		token_arg = token_arg->next;
 	}
 }
-
-/*void	check_args(t_token *token, int *i, int com_code)
-{
-	t_arg	*arg;
-
-	//token = token->next;
-	while (token && token->type != NEW_LINE)
-	{
-		if (token->type == ARGUMENT || token->type == ARGUMENT_LABEL)
-		{
-			arg = (t_arg*)token->content;
-			if (!(arg->type & ((g_op[com_code]).args_type[*i])))
-				token_exit(ASM_ERR_ARGS, token);
-			(*i)++;
-		}
-		token = token->next;
-	}
-}*/
 
 void	command_check(t_token *token)
 {
@@ -47,12 +30,9 @@ void	command_check(t_token *token)
 	i = 0;
 	if (!(token->type == COMMAND))
 		return ;
-	else
-	{
-		com_code = *(u_int8_t *)token->content - 1;
-		check_args(token, &i, com_code);
-		if ((i < 2 && ((g_op[com_code]).args_type[1] != 0))
-			|| (i < 3 && ((g_op[com_code]).args_type[2] != 0)))
-			token_exit(ASM_ERR_ARGS, token);
-	}
+	com_code = *(u_int8_t *)token->content - 1;
+	check_args(token, &i, com_code);
+	if ((i < 2 && ((g_op[com_code]).args_type[1] != 0))
+		|| (i < 3 && ((g_op[com_code]).args_type[2] != 0)))
+		token_exit(ASM_ERR_ARGS, token);
 }

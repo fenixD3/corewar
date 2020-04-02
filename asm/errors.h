@@ -28,7 +28,7 @@
 
 # define ASM_DOUBLE_NAME		"ERROR: Champion can have only one name"
 
-# define ASM_WRONG_SEPARATOR	"ERROR: File with champion contains error - arguments separated incorrectly"
+# define ASM_WRONG_SEPARATOR	"ERROR: Arguments separated incorrectly"
 
 
 /*
@@ -44,9 +44,11 @@
 ///// Egor's errors
 
 #define ASM_INVALID_STR_PLACE	"ERROR: Token string in invalid placement"
-#define ASM_INVALID_STR			"ERROR: invalid string"
+#define ASM_INVALID_STR			"ERROR: invalid string token"
+#define ASM_NOCODE				"ERROR: program has no code after string"
 #define ASM_NO_LABEL			"ERROR: Label doesn't exist"
 #define ASM_INVALID_CMD			"ERROR: Command is invalid"
+# define ASM_TREG_INVALID_NUM	"ERROR: argument T_REG has invalid number"
 
 ///// Stop Egor's errors
 

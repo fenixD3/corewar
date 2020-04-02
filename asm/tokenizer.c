@@ -6,7 +6,7 @@
 /*   By: mdeanne <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/28 16:22:33 by mdeanne           #+#    #+#             */
-/*   Updated: 2020/02/28 16:22:35 by mdeanne          ###   ########.fr       */
+/*   Updated: 2020/04/02 10:33:46 by yas              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,7 +61,8 @@ void	tokenize_line(t_pc *pc, t_token **token, t_label **label, char *str)
 		if ((flag = token_rewind(pc, *token)) == TKNZE_BREAK)
 			break ;
 	}
-	add_token(pc, token, label, ENDLINE);
+	if ((*token)->type != NEW_LINE)
+		add_token(pc, token, label, ENDLINE);
 
 	pc->line = str;
 }

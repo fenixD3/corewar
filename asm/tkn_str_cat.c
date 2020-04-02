@@ -6,11 +6,11 @@
 /*   By: mdeanne <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/16 19:31:03 by mdeanne           #+#    #+#             */
-/*   Updated: 2020/03/16 19:31:04 by mdeanne          ###   ########.fr       */
+/*   Updated: 2020/04/02 14:07:20 by yas              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <corewar/libft/libft.h>
+#include "libft.h"
 #include "errors.h"
 #include "asm.h"
 #include "asm_dasha.h"
@@ -46,9 +46,12 @@ u_int16_t	tkn_str_len(t_token *token, u_int16_t *tkn_num)
 			len++;
 		token = token->next;
 	}
-	//len -= (*tkn_num == 1) ? 1 : 2;
+	/////// If without code program must works
+	if (!token)
+		go_exit(ASM_NOCODE);
+	///////
 	len--;
-	if (len < 0)
+	if (len < 0 )
 		go_exit(ASM_INVALID_STR);
 	return ((u_int16_t)len);
 }
@@ -65,14 +68,13 @@ char *tkn_str_cat(char *dst, t_token *token, u_int32_t max_len)
 {
 	u_int16_t	len;
 	u_int16_t	tkn_num;
-	//char		*str;
 
 	if (token->type != STRING)
 		token_exit(ASM_INVALID_STR_PLACE, token);
 	if ((len = tkn_str_len(token, &tkn_num)) > max_len)
 		go_exit((max_len == PROG_NAME_LENGTH) ? ASM_LONG_NAME : ASM_LONG_CMNT);
 	if (tkn_num == 1)
-		return (ft_strncat(dst, (char*)token->content + 1, len - 1));
+		return (ft_strncat(dst, (char*)token->content + 1, len)); // len "+ 1" deleted
 	ft_strcat(ft_strcat(dst, (char*)token->content + 1), "\n");
 	token = jump_next_string(token);
 	tkn_num -= 2;

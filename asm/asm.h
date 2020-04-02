@@ -6,7 +6,7 @@
 /*   By: mdeanne <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/28 13:38:40 by mdeanne           #+#    #+#             */
-/*   Updated: 2020/02/28 13:38:44 by mdeanne          ###   ########.fr       */
+/*   Updated: 2020/04/02 10:33:46 by yas              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 #include "op.h"
 //#include "../../file_to_list.h"
 #include <stdlib.h>
+#include <stdint.h> // for uintXX_t
 
 #define ML_GNL_LINE	10
 #define ML_TOKEN	20

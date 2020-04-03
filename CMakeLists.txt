@@ -1,5 +1,5 @@
-cmake_minimum_required(VERSION 3.15)
-project(CoreWar_Hub C)
+cmake_minimum_required(VERSION 3.14)
+project(dencorewar C)
 
 set(CMAKE_C_STANDARD 11)
 
@@ -9,8 +9,11 @@ include_directories(ft_printf/includes)
 include_directories(libft)
 include_directories(libft/memlist)
 include_directories(vm/includes)
+include_directories(~/Library/Frameworks/SDL2.framework/Headers)
+#include_directories(~/Library/Frameworks/SDL2_image.framework/Headers)
+include_directories(~/Library/Frameworks/SDL2_ttf.framework/Headers)
 
-add_executable(CoreWar_Hub
+add_executable(dencorewar
         asm/arguments.c
         asm/asm.c
         asm/asm.h
@@ -159,7 +162,22 @@ add_executable(CoreWar_Hub
         libft/ml_strsplit.c
         libft/ml_strsub.c
         libft/ml_strtrim.c
+        vm/includes/error_defs.h
+        vm/includes/vis.h
+        vm/includes/vis_errors.h
         vm/includes/vm.h
+        vm/srcs/game/args_intf.c
+        vm/srcs/game/create_vs.c
+        vm/srcs/game/game.c
+        vm/srcs/game/game_intf.c
+        vm/srcs/game/helper_func.c
+        vm/srcs/game/init_sdl.c
+        vm/srcs/game/instuctions.c
+        vm/srcs/game/visualise_arena.c
+        vm/srcs/game/add_cell.c
+        vm/srcs/game/print_arena.c
+        vm/srcs/game/support_func.c
+        vm/srcs/struct_intf/carriage_intf.c
         vm/srcs/struct_intf/corewar_intf.c
         vm/srcs/validation/parse_input_intf.c
         vm/srcs/validation/parse_inputs.c
@@ -170,4 +188,9 @@ add_executable(CoreWar_Hub
         file_to_list.h
         ft_wordequ.c
         op.h
-        options.h vm/srcs/game/game.c vm/srcs/struct_intf/carriage_intf.c vm/includes/error_defs.h vm/srcs/game/game_intf.c vm/srcs/game/args_intf.c vm/srcs/game/helper_func.c vm/srcs/game/instuctions.c)
+        options.h)
+
+target_link_libraries(dencorewar "-framework SDL2")
+#target_link_libraries(dencorewar "-framework SDL2_image")
+target_link_libraries(dencorewar "-framework SDL2_ttf")
+set_target_properties(dencorewar PROPERTIES LINK_FLAGS "-F /Users/$ENV{USER}/Library/Frameworks")

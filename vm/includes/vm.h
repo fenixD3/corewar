@@ -13,6 +13,8 @@
 # define CHAMP_NODE 1u
 # define CARRIAGE_NODE 2u
 
+int g_change;
+
 typedef struct	s_file
 {
 	t_header		header;

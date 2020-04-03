@@ -1,19 +1,29 @@
 #include "vm.h"
+#include "vis.h"
+#include "vis_errors.h"
 
 void	start_game(t_corewar *corewar)
 {
+	t_vis_tools *vs;
+	bool		quit;
+
+	vs = create_vs();
 	init_arena(corewar->arena, corewar->champs, &corewar->carriages);
 	introducing_fighter(corewar->champs);
-	while (1)
+	if (!init(vs))
+		go_exit(ERR_CREATE_VS);
+	quit = false;
+	while (!quit)
 	{
 		carriages_actions(corewar);
 		if (!(++corewar->game_param.cycles_aft_start %
-				corewar->game_param.cycles_to_die) ||
-				corewar->game_param.cycles_to_die <= 0)
+corewar->game_param.cycles_to_die) || corewar->game_param.cycles_to_die <= 0)
 			lets_check(corewar->carriages, &corewar->game_param);
 		if (corewar->flgs.flgs & DUMP_FLG &&
 		corewar->game_param.cycles_aft_start == corewar->flgs.nbr_cycles_dump)
 			print_map(corewar);
+		if (g_change)
+			visualise_arena(corewar, vs, &quit);
 		if (carriage_amount_live(corewar->carriages) == 1)
 			introducing_winner(corewar, 0);
 		else if (!carriage_amount_live(corewar->carriages))

@@ -110,17 +110,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named CoreWar_Hub
+# Target rules for targets named dencorewar
 
 # Build rule for target.
-CoreWar_Hub: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 CoreWar_Hub
-.PHONY : CoreWar_Hub
+dencorewar: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 dencorewar
+.PHONY : dencorewar
 
 # fast build rule for target.
-CoreWar_Hub/fast:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/build
-.PHONY : CoreWar_Hub/fast
+dencorewar/fast:
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/build
+.PHONY : dencorewar/fast
 
 asm/arguments.obj: asm/arguments.c.obj
 
@@ -128,7 +128,7 @@ asm/arguments.obj: asm/arguments.c.obj
 
 # target to build an object file
 asm/arguments.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/asm/arguments.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/asm/arguments.c.obj
 .PHONY : asm/arguments.c.obj
 
 asm/arguments.i: asm/arguments.c.i
@@ -137,7 +137,7 @@ asm/arguments.i: asm/arguments.c.i
 
 # target to preprocess a source file
 asm/arguments.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/asm/arguments.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/asm/arguments.c.i
 .PHONY : asm/arguments.c.i
 
 asm/arguments.s: asm/arguments.c.s
@@ -146,7 +146,7 @@ asm/arguments.s: asm/arguments.c.s
 
 # target to generate assembly for a file
 asm/arguments.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/asm/arguments.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/asm/arguments.c.s
 .PHONY : asm/arguments.c.s
 
 asm/asm.obj: asm/asm.c.obj
@@ -155,7 +155,7 @@ asm/asm.obj: asm/asm.c.obj
 
 # target to build an object file
 asm/asm.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/asm/asm.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/asm/asm.c.obj
 .PHONY : asm/asm.c.obj
 
 asm/asm.i: asm/asm.c.i
@@ -164,7 +164,7 @@ asm/asm.i: asm/asm.c.i
 
 # target to preprocess a source file
 asm/asm.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/asm/asm.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/asm/asm.c.i
 .PHONY : asm/asm.c.i
 
 asm/asm.s: asm/asm.c.s
@@ -173,7 +173,7 @@ asm/asm.s: asm/asm.c.s
 
 # target to generate assembly for a file
 asm/asm.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/asm/asm.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/asm/asm.c.s
 .PHONY : asm/asm.c.s
 
 asm/ft_isdigitalword.obj: asm/ft_isdigitalword.c.obj
@@ -182,7 +182,7 @@ asm/ft_isdigitalword.obj: asm/ft_isdigitalword.c.obj
 
 # target to build an object file
 asm/ft_isdigitalword.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/asm/ft_isdigitalword.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/asm/ft_isdigitalword.c.obj
 .PHONY : asm/ft_isdigitalword.c.obj
 
 asm/ft_isdigitalword.i: asm/ft_isdigitalword.c.i
@@ -191,7 +191,7 @@ asm/ft_isdigitalword.i: asm/ft_isdigitalword.c.i
 
 # target to preprocess a source file
 asm/ft_isdigitalword.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/asm/ft_isdigitalword.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/asm/ft_isdigitalword.c.i
 .PHONY : asm/ft_isdigitalword.c.i
 
 asm/ft_isdigitalword.s: asm/ft_isdigitalword.c.s
@@ -200,7 +200,7 @@ asm/ft_isdigitalword.s: asm/ft_isdigitalword.c.s
 
 # target to generate assembly for a file
 asm/ft_isdigitalword.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/asm/ft_isdigitalword.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/asm/ft_isdigitalword.c.s
 .PHONY : asm/ft_isdigitalword.c.s
 
 asm/ft_isspecial.obj: asm/ft_isspecial.c.obj
@@ -209,7 +209,7 @@ asm/ft_isspecial.obj: asm/ft_isspecial.c.obj
 
 # target to build an object file
 asm/ft_isspecial.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/asm/ft_isspecial.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/asm/ft_isspecial.c.obj
 .PHONY : asm/ft_isspecial.c.obj
 
 asm/ft_isspecial.i: asm/ft_isspecial.c.i
@@ -218,7 +218,7 @@ asm/ft_isspecial.i: asm/ft_isspecial.c.i
 
 # target to preprocess a source file
 asm/ft_isspecial.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/asm/ft_isspecial.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/asm/ft_isspecial.c.i
 .PHONY : asm/ft_isspecial.c.i
 
 asm/ft_isspecial.s: asm/ft_isspecial.c.s
@@ -227,7 +227,7 @@ asm/ft_isspecial.s: asm/ft_isspecial.c.s
 
 # target to generate assembly for a file
 asm/ft_isspecial.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/asm/ft_isspecial.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/asm/ft_isspecial.c.s
 .PHONY : asm/ft_isspecial.c.s
 
 asm/ft_skipword.obj: asm/ft_skipword.c.obj
@@ -236,7 +236,7 @@ asm/ft_skipword.obj: asm/ft_skipword.c.obj
 
 # target to build an object file
 asm/ft_skipword.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/asm/ft_skipword.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/asm/ft_skipword.c.obj
 .PHONY : asm/ft_skipword.c.obj
 
 asm/ft_skipword.i: asm/ft_skipword.c.i
@@ -245,7 +245,7 @@ asm/ft_skipword.i: asm/ft_skipword.c.i
 
 # target to preprocess a source file
 asm/ft_skipword.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/asm/ft_skipword.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/asm/ft_skipword.c.i
 .PHONY : asm/ft_skipword.c.i
 
 asm/ft_skipword.s: asm/ft_skipword.c.s
@@ -254,7 +254,7 @@ asm/ft_skipword.s: asm/ft_skipword.c.s
 
 # target to generate assembly for a file
 asm/ft_skipword.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/asm/ft_skipword.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/asm/ft_skipword.c.s
 .PHONY : asm/ft_skipword.c.s
 
 asm/get_header.obj: asm/get_header.c.obj
@@ -263,7 +263,7 @@ asm/get_header.obj: asm/get_header.c.obj
 
 # target to build an object file
 asm/get_header.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/asm/get_header.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/asm/get_header.c.obj
 .PHONY : asm/get_header.c.obj
 
 asm/get_header.i: asm/get_header.c.i
@@ -272,7 +272,7 @@ asm/get_header.i: asm/get_header.c.i
 
 # target to preprocess a source file
 asm/get_header.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/asm/get_header.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/asm/get_header.c.i
 .PHONY : asm/get_header.c.i
 
 asm/get_header.s: asm/get_header.c.s
@@ -281,7 +281,7 @@ asm/get_header.s: asm/get_header.c.s
 
 # target to generate assembly for a file
 asm/get_header.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/asm/get_header.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/asm/get_header.c.s
 .PHONY : asm/get_header.c.s
 
 asm/token_recognition.obj: asm/token_recognition.c.obj
@@ -290,7 +290,7 @@ asm/token_recognition.obj: asm/token_recognition.c.obj
 
 # target to build an object file
 asm/token_recognition.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/asm/token_recognition.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/asm/token_recognition.c.obj
 .PHONY : asm/token_recognition.c.obj
 
 asm/token_recognition.i: asm/token_recognition.c.i
@@ -299,7 +299,7 @@ asm/token_recognition.i: asm/token_recognition.c.i
 
 # target to preprocess a source file
 asm/token_recognition.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/asm/token_recognition.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/asm/token_recognition.c.i
 .PHONY : asm/token_recognition.c.i
 
 asm/token_recognition.s: asm/token_recognition.c.s
@@ -308,7 +308,7 @@ asm/token_recognition.s: asm/token_recognition.c.s
 
 # target to generate assembly for a file
 asm/token_recognition.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/asm/token_recognition.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/asm/token_recognition.c.s
 .PHONY : asm/token_recognition.c.s
 
 asm/tokenizer.obj: asm/tokenizer.c.obj
@@ -317,7 +317,7 @@ asm/tokenizer.obj: asm/tokenizer.c.obj
 
 # target to build an object file
 asm/tokenizer.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/asm/tokenizer.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/asm/tokenizer.c.obj
 .PHONY : asm/tokenizer.c.obj
 
 asm/tokenizer.i: asm/tokenizer.c.i
@@ -326,7 +326,7 @@ asm/tokenizer.i: asm/tokenizer.c.i
 
 # target to preprocess a source file
 asm/tokenizer.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/asm/tokenizer.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/asm/tokenizer.c.i
 .PHONY : asm/tokenizer.c.i
 
 asm/tokenizer.s: asm/tokenizer.c.s
@@ -335,7 +335,7 @@ asm/tokenizer.s: asm/tokenizer.c.s
 
 # target to generate assembly for a file
 asm/tokenizer.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/asm/tokenizer.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/asm/tokenizer.c.s
 .PHONY : asm/tokenizer.c.s
 
 asm/tokens_lst.obj: asm/tokens_lst.c.obj
@@ -344,7 +344,7 @@ asm/tokens_lst.obj: asm/tokens_lst.c.obj
 
 # target to build an object file
 asm/tokens_lst.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/asm/tokens_lst.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/asm/tokens_lst.c.obj
 .PHONY : asm/tokens_lst.c.obj
 
 asm/tokens_lst.i: asm/tokens_lst.c.i
@@ -353,7 +353,7 @@ asm/tokens_lst.i: asm/tokens_lst.c.i
 
 # target to preprocess a source file
 asm/tokens_lst.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/asm/tokens_lst.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/asm/tokens_lst.c.i
 .PHONY : asm/tokens_lst.c.i
 
 asm/tokens_lst.s: asm/tokens_lst.c.s
@@ -362,7 +362,7 @@ asm/tokens_lst.s: asm/tokens_lst.c.s
 
 # target to generate assembly for a file
 asm/tokens_lst.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/asm/tokens_lst.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/asm/tokens_lst.c.s
 .PHONY : asm/tokens_lst.c.s
 
 fast_strsplit.obj: fast_strsplit.c.obj
@@ -371,7 +371,7 @@ fast_strsplit.obj: fast_strsplit.c.obj
 
 # target to build an object file
 fast_strsplit.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/fast_strsplit.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/fast_strsplit.c.obj
 .PHONY : fast_strsplit.c.obj
 
 fast_strsplit.i: fast_strsplit.c.i
@@ -380,7 +380,7 @@ fast_strsplit.i: fast_strsplit.c.i
 
 # target to preprocess a source file
 fast_strsplit.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/fast_strsplit.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/fast_strsplit.c.i
 .PHONY : fast_strsplit.c.i
 
 fast_strsplit.s: fast_strsplit.c.s
@@ -389,7 +389,7 @@ fast_strsplit.s: fast_strsplit.c.s
 
 # target to generate assembly for a file
 fast_strsplit.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/fast_strsplit.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/fast_strsplit.c.s
 .PHONY : fast_strsplit.c.s
 
 file_to_list.obj: file_to_list.c.obj
@@ -398,7 +398,7 @@ file_to_list.obj: file_to_list.c.obj
 
 # target to build an object file
 file_to_list.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/file_to_list.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/file_to_list.c.obj
 .PHONY : file_to_list.c.obj
 
 file_to_list.i: file_to_list.c.i
@@ -407,7 +407,7 @@ file_to_list.i: file_to_list.c.i
 
 # target to preprocess a source file
 file_to_list.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/file_to_list.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/file_to_list.c.i
 .PHONY : file_to_list.c.i
 
 file_to_list.s: file_to_list.c.s
@@ -416,7 +416,7 @@ file_to_list.s: file_to_list.c.s
 
 # target to generate assembly for a file
 file_to_list.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/file_to_list.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/file_to_list.c.s
 .PHONY : file_to_list.c.s
 
 ft_printf/srcs/field_len.obj: ft_printf/srcs/field_len.c.obj
@@ -425,7 +425,7 @@ ft_printf/srcs/field_len.obj: ft_printf/srcs/field_len.c.obj
 
 # target to build an object file
 ft_printf/srcs/field_len.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcs/field_len.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcs/field_len.c.obj
 .PHONY : ft_printf/srcs/field_len.c.obj
 
 ft_printf/srcs/field_len.i: ft_printf/srcs/field_len.c.i
@@ -434,7 +434,7 @@ ft_printf/srcs/field_len.i: ft_printf/srcs/field_len.c.i
 
 # target to preprocess a source file
 ft_printf/srcs/field_len.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcs/field_len.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcs/field_len.c.i
 .PHONY : ft_printf/srcs/field_len.c.i
 
 ft_printf/srcs/field_len.s: ft_printf/srcs/field_len.c.s
@@ -443,7 +443,7 @@ ft_printf/srcs/field_len.s: ft_printf/srcs/field_len.c.s
 
 # target to generate assembly for a file
 ft_printf/srcs/field_len.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcs/field_len.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcs/field_len.c.s
 .PHONY : ft_printf/srcs/field_len.c.s
 
 ft_printf/srcs/fill_union.obj: ft_printf/srcs/fill_union.c.obj
@@ -452,7 +452,7 @@ ft_printf/srcs/fill_union.obj: ft_printf/srcs/fill_union.c.obj
 
 # target to build an object file
 ft_printf/srcs/fill_union.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcs/fill_union.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcs/fill_union.c.obj
 .PHONY : ft_printf/srcs/fill_union.c.obj
 
 ft_printf/srcs/fill_union.i: ft_printf/srcs/fill_union.c.i
@@ -461,7 +461,7 @@ ft_printf/srcs/fill_union.i: ft_printf/srcs/fill_union.c.i
 
 # target to preprocess a source file
 ft_printf/srcs/fill_union.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcs/fill_union.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcs/fill_union.c.i
 .PHONY : ft_printf/srcs/fill_union.c.i
 
 ft_printf/srcs/fill_union.s: ft_printf/srcs/fill_union.c.s
@@ -470,7 +470,7 @@ ft_printf/srcs/fill_union.s: ft_printf/srcs/fill_union.c.s
 
 # target to generate assembly for a file
 ft_printf/srcs/fill_union.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcs/fill_union.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcs/fill_union.c.s
 .PHONY : ft_printf/srcs/fill_union.c.s
 
 ft_printf/srcs/ft_itoa_base_printf.obj: ft_printf/srcs/ft_itoa_base_printf.c.obj
@@ -479,7 +479,7 @@ ft_printf/srcs/ft_itoa_base_printf.obj: ft_printf/srcs/ft_itoa_base_printf.c.obj
 
 # target to build an object file
 ft_printf/srcs/ft_itoa_base_printf.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcs/ft_itoa_base_printf.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcs/ft_itoa_base_printf.c.obj
 .PHONY : ft_printf/srcs/ft_itoa_base_printf.c.obj
 
 ft_printf/srcs/ft_itoa_base_printf.i: ft_printf/srcs/ft_itoa_base_printf.c.i
@@ -488,7 +488,7 @@ ft_printf/srcs/ft_itoa_base_printf.i: ft_printf/srcs/ft_itoa_base_printf.c.i
 
 # target to preprocess a source file
 ft_printf/srcs/ft_itoa_base_printf.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcs/ft_itoa_base_printf.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcs/ft_itoa_base_printf.c.i
 .PHONY : ft_printf/srcs/ft_itoa_base_printf.c.i
 
 ft_printf/srcs/ft_itoa_base_printf.s: ft_printf/srcs/ft_itoa_base_printf.c.s
@@ -497,7 +497,7 @@ ft_printf/srcs/ft_itoa_base_printf.s: ft_printf/srcs/ft_itoa_base_printf.c.s
 
 # target to generate assembly for a file
 ft_printf/srcs/ft_itoa_base_printf.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcs/ft_itoa_base_printf.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcs/ft_itoa_base_printf.c.s
 .PHONY : ft_printf/srcs/ft_itoa_base_printf.c.s
 
 ft_printf/srcs/ft_printf.obj: ft_printf/srcs/ft_printf.c.obj
@@ -506,7 +506,7 @@ ft_printf/srcs/ft_printf.obj: ft_printf/srcs/ft_printf.c.obj
 
 # target to build an object file
 ft_printf/srcs/ft_printf.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcs/ft_printf.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcs/ft_printf.c.obj
 .PHONY : ft_printf/srcs/ft_printf.c.obj
 
 ft_printf/srcs/ft_printf.i: ft_printf/srcs/ft_printf.c.i
@@ -515,7 +515,7 @@ ft_printf/srcs/ft_printf.i: ft_printf/srcs/ft_printf.c.i
 
 # target to preprocess a source file
 ft_printf/srcs/ft_printf.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcs/ft_printf.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcs/ft_printf.c.i
 .PHONY : ft_printf/srcs/ft_printf.c.i
 
 ft_printf/srcs/ft_printf.s: ft_printf/srcs/ft_printf.c.s
@@ -524,7 +524,7 @@ ft_printf/srcs/ft_printf.s: ft_printf/srcs/ft_printf.c.s
 
 # target to generate assembly for a file
 ft_printf/srcs/ft_printf.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcs/ft_printf.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcs/ft_printf.c.s
 .PHONY : ft_printf/srcs/ft_printf.c.s
 
 ft_printf/srcs/get_binary.obj: ft_printf/srcs/get_binary.c.obj
@@ -533,7 +533,7 @@ ft_printf/srcs/get_binary.obj: ft_printf/srcs/get_binary.c.obj
 
 # target to build an object file
 ft_printf/srcs/get_binary.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcs/get_binary.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcs/get_binary.c.obj
 .PHONY : ft_printf/srcs/get_binary.c.obj
 
 ft_printf/srcs/get_binary.i: ft_printf/srcs/get_binary.c.i
@@ -542,7 +542,7 @@ ft_printf/srcs/get_binary.i: ft_printf/srcs/get_binary.c.i
 
 # target to preprocess a source file
 ft_printf/srcs/get_binary.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcs/get_binary.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcs/get_binary.c.i
 .PHONY : ft_printf/srcs/get_binary.c.i
 
 ft_printf/srcs/get_binary.s: ft_printf/srcs/get_binary.c.s
@@ -551,7 +551,7 @@ ft_printf/srcs/get_binary.s: ft_printf/srcs/get_binary.c.s
 
 # target to generate assembly for a file
 ft_printf/srcs/get_binary.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcs/get_binary.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcs/get_binary.c.s
 .PHONY : ft_printf/srcs/get_binary.c.s
 
 ft_printf/srcs/is_parser.obj: ft_printf/srcs/is_parser.c.obj
@@ -560,7 +560,7 @@ ft_printf/srcs/is_parser.obj: ft_printf/srcs/is_parser.c.obj
 
 # target to build an object file
 ft_printf/srcs/is_parser.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcs/is_parser.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcs/is_parser.c.obj
 .PHONY : ft_printf/srcs/is_parser.c.obj
 
 ft_printf/srcs/is_parser.i: ft_printf/srcs/is_parser.c.i
@@ -569,7 +569,7 @@ ft_printf/srcs/is_parser.i: ft_printf/srcs/is_parser.c.i
 
 # target to preprocess a source file
 ft_printf/srcs/is_parser.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcs/is_parser.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcs/is_parser.c.i
 .PHONY : ft_printf/srcs/is_parser.c.i
 
 ft_printf/srcs/is_parser.s: ft_printf/srcs/is_parser.c.s
@@ -578,7 +578,7 @@ ft_printf/srcs/is_parser.s: ft_printf/srcs/is_parser.c.s
 
 # target to generate assembly for a file
 ft_printf/srcs/is_parser.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcs/is_parser.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcs/is_parser.c.s
 .PHONY : ft_printf/srcs/is_parser.c.s
 
 ft_printf/srcs/is_typeflags.obj: ft_printf/srcs/is_typeflags.c.obj
@@ -587,7 +587,7 @@ ft_printf/srcs/is_typeflags.obj: ft_printf/srcs/is_typeflags.c.obj
 
 # target to build an object file
 ft_printf/srcs/is_typeflags.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcs/is_typeflags.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcs/is_typeflags.c.obj
 .PHONY : ft_printf/srcs/is_typeflags.c.obj
 
 ft_printf/srcs/is_typeflags.i: ft_printf/srcs/is_typeflags.c.i
@@ -596,7 +596,7 @@ ft_printf/srcs/is_typeflags.i: ft_printf/srcs/is_typeflags.c.i
 
 # target to preprocess a source file
 ft_printf/srcs/is_typeflags.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcs/is_typeflags.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcs/is_typeflags.c.i
 .PHONY : ft_printf/srcs/is_typeflags.c.i
 
 ft_printf/srcs/is_typeflags.s: ft_printf/srcs/is_typeflags.c.s
@@ -605,7 +605,7 @@ ft_printf/srcs/is_typeflags.s: ft_printf/srcs/is_typeflags.c.s
 
 # target to generate assembly for a file
 ft_printf/srcs/is_typeflags.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcs/is_typeflags.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcs/is_typeflags.c.s
 .PHONY : ft_printf/srcs/is_typeflags.c.s
 
 ft_printf/srcs/make_field.obj: ft_printf/srcs/make_field.c.obj
@@ -614,7 +614,7 @@ ft_printf/srcs/make_field.obj: ft_printf/srcs/make_field.c.obj
 
 # target to build an object file
 ft_printf/srcs/make_field.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcs/make_field.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcs/make_field.c.obj
 .PHONY : ft_printf/srcs/make_field.c.obj
 
 ft_printf/srcs/make_field.i: ft_printf/srcs/make_field.c.i
@@ -623,7 +623,7 @@ ft_printf/srcs/make_field.i: ft_printf/srcs/make_field.c.i
 
 # target to preprocess a source file
 ft_printf/srcs/make_field.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcs/make_field.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcs/make_field.c.i
 .PHONY : ft_printf/srcs/make_field.c.i
 
 ft_printf/srcs/make_field.s: ft_printf/srcs/make_field.c.s
@@ -632,7 +632,7 @@ ft_printf/srcs/make_field.s: ft_printf/srcs/make_field.c.s
 
 # target to generate assembly for a file
 ft_printf/srcs/make_field.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcs/make_field.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcs/make_field.c.s
 .PHONY : ft_printf/srcs/make_field.c.s
 
 ft_printf/srcs/parsing_funcs.obj: ft_printf/srcs/parsing_funcs.c.obj
@@ -641,7 +641,7 @@ ft_printf/srcs/parsing_funcs.obj: ft_printf/srcs/parsing_funcs.c.obj
 
 # target to build an object file
 ft_printf/srcs/parsing_funcs.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcs/parsing_funcs.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcs/parsing_funcs.c.obj
 .PHONY : ft_printf/srcs/parsing_funcs.c.obj
 
 ft_printf/srcs/parsing_funcs.i: ft_printf/srcs/parsing_funcs.c.i
@@ -650,7 +650,7 @@ ft_printf/srcs/parsing_funcs.i: ft_printf/srcs/parsing_funcs.c.i
 
 # target to preprocess a source file
 ft_printf/srcs/parsing_funcs.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcs/parsing_funcs.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcs/parsing_funcs.c.i
 .PHONY : ft_printf/srcs/parsing_funcs.c.i
 
 ft_printf/srcs/parsing_funcs.s: ft_printf/srcs/parsing_funcs.c.s
@@ -659,7 +659,7 @@ ft_printf/srcs/parsing_funcs.s: ft_printf/srcs/parsing_funcs.c.s
 
 # target to generate assembly for a file
 ft_printf/srcs/parsing_funcs.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcs/parsing_funcs.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcs/parsing_funcs.c.s
 .PHONY : ft_printf/srcs/parsing_funcs.c.s
 
 ft_printf/srcs/parsing_generaly.obj: ft_printf/srcs/parsing_generaly.c.obj
@@ -668,7 +668,7 @@ ft_printf/srcs/parsing_generaly.obj: ft_printf/srcs/parsing_generaly.c.obj
 
 # target to build an object file
 ft_printf/srcs/parsing_generaly.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcs/parsing_generaly.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcs/parsing_generaly.c.obj
 .PHONY : ft_printf/srcs/parsing_generaly.c.obj
 
 ft_printf/srcs/parsing_generaly.i: ft_printf/srcs/parsing_generaly.c.i
@@ -677,7 +677,7 @@ ft_printf/srcs/parsing_generaly.i: ft_printf/srcs/parsing_generaly.c.i
 
 # target to preprocess a source file
 ft_printf/srcs/parsing_generaly.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcs/parsing_generaly.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcs/parsing_generaly.c.i
 .PHONY : ft_printf/srcs/parsing_generaly.c.i
 
 ft_printf/srcs/parsing_generaly.s: ft_printf/srcs/parsing_generaly.c.s
@@ -686,7 +686,7 @@ ft_printf/srcs/parsing_generaly.s: ft_printf/srcs/parsing_generaly.c.s
 
 # target to generate assembly for a file
 ft_printf/srcs/parsing_generaly.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcs/parsing_generaly.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcs/parsing_generaly.c.s
 .PHONY : ft_printf/srcs/parsing_generaly.c.s
 
 ft_printf/srcs/prepare_lennum.obj: ft_printf/srcs/prepare_lennum.c.obj
@@ -695,7 +695,7 @@ ft_printf/srcs/prepare_lennum.obj: ft_printf/srcs/prepare_lennum.c.obj
 
 # target to build an object file
 ft_printf/srcs/prepare_lennum.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcs/prepare_lennum.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcs/prepare_lennum.c.obj
 .PHONY : ft_printf/srcs/prepare_lennum.c.obj
 
 ft_printf/srcs/prepare_lennum.i: ft_printf/srcs/prepare_lennum.c.i
@@ -704,7 +704,7 @@ ft_printf/srcs/prepare_lennum.i: ft_printf/srcs/prepare_lennum.c.i
 
 # target to preprocess a source file
 ft_printf/srcs/prepare_lennum.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcs/prepare_lennum.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcs/prepare_lennum.c.i
 .PHONY : ft_printf/srcs/prepare_lennum.c.i
 
 ft_printf/srcs/prepare_lennum.s: ft_printf/srcs/prepare_lennum.c.s
@@ -713,7 +713,7 @@ ft_printf/srcs/prepare_lennum.s: ft_printf/srcs/prepare_lennum.c.s
 
 # target to generate assembly for a file
 ft_printf/srcs/prepare_lennum.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcs/prepare_lennum.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcs/prepare_lennum.c.s
 .PHONY : ft_printf/srcs/prepare_lennum.c.s
 
 ft_printf/srcs/set_buff.obj: ft_printf/srcs/set_buff.c.obj
@@ -722,7 +722,7 @@ ft_printf/srcs/set_buff.obj: ft_printf/srcs/set_buff.c.obj
 
 # target to build an object file
 ft_printf/srcs/set_buff.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcs/set_buff.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcs/set_buff.c.obj
 .PHONY : ft_printf/srcs/set_buff.c.obj
 
 ft_printf/srcs/set_buff.i: ft_printf/srcs/set_buff.c.i
@@ -731,7 +731,7 @@ ft_printf/srcs/set_buff.i: ft_printf/srcs/set_buff.c.i
 
 # target to preprocess a source file
 ft_printf/srcs/set_buff.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcs/set_buff.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcs/set_buff.c.i
 .PHONY : ft_printf/srcs/set_buff.c.i
 
 ft_printf/srcs/set_buff.s: ft_printf/srcs/set_buff.c.s
@@ -740,7 +740,7 @@ ft_printf/srcs/set_buff.s: ft_printf/srcs/set_buff.c.s
 
 # target to generate assembly for a file
 ft_printf/srcs/set_buff.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcs/set_buff.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcs/set_buff.c.s
 .PHONY : ft_printf/srcs/set_buff.c.s
 
 ft_printf/srcs/set_flags.obj: ft_printf/srcs/set_flags.c.obj
@@ -749,7 +749,7 @@ ft_printf/srcs/set_flags.obj: ft_printf/srcs/set_flags.c.obj
 
 # target to build an object file
 ft_printf/srcs/set_flags.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcs/set_flags.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcs/set_flags.c.obj
 .PHONY : ft_printf/srcs/set_flags.c.obj
 
 ft_printf/srcs/set_flags.i: ft_printf/srcs/set_flags.c.i
@@ -758,7 +758,7 @@ ft_printf/srcs/set_flags.i: ft_printf/srcs/set_flags.c.i
 
 # target to preprocess a source file
 ft_printf/srcs/set_flags.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcs/set_flags.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcs/set_flags.c.i
 .PHONY : ft_printf/srcs/set_flags.c.i
 
 ft_printf/srcs/set_flags.s: ft_printf/srcs/set_flags.c.s
@@ -767,7 +767,7 @@ ft_printf/srcs/set_flags.s: ft_printf/srcs/set_flags.c.s
 
 # target to generate assembly for a file
 ft_printf/srcs/set_flags.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcs/set_flags.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcs/set_flags.c.s
 .PHONY : ft_printf/srcs/set_flags.c.s
 
 ft_printf/srcs/str_tolower.obj: ft_printf/srcs/str_tolower.c.obj
@@ -776,7 +776,7 @@ ft_printf/srcs/str_tolower.obj: ft_printf/srcs/str_tolower.c.obj
 
 # target to build an object file
 ft_printf/srcs/str_tolower.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcs/str_tolower.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcs/str_tolower.c.obj
 .PHONY : ft_printf/srcs/str_tolower.c.obj
 
 ft_printf/srcs/str_tolower.i: ft_printf/srcs/str_tolower.c.i
@@ -785,7 +785,7 @@ ft_printf/srcs/str_tolower.i: ft_printf/srcs/str_tolower.c.i
 
 # target to preprocess a source file
 ft_printf/srcs/str_tolower.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcs/str_tolower.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcs/str_tolower.c.i
 .PHONY : ft_printf/srcs/str_tolower.c.i
 
 ft_printf/srcs/str_tolower.s: ft_printf/srcs/str_tolower.c.s
@@ -794,7 +794,7 @@ ft_printf/srcs/str_tolower.s: ft_printf/srcs/str_tolower.c.s
 
 # target to generate assembly for a file
 ft_printf/srcs/str_tolower.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcs/str_tolower.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcs/str_tolower.c.s
 .PHONY : ft_printf/srcs/str_tolower.c.s
 
 ft_printf/srcs/to_buff.obj: ft_printf/srcs/to_buff.c.obj
@@ -803,7 +803,7 @@ ft_printf/srcs/to_buff.obj: ft_printf/srcs/to_buff.c.obj
 
 # target to build an object file
 ft_printf/srcs/to_buff.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcs/to_buff.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcs/to_buff.c.obj
 .PHONY : ft_printf/srcs/to_buff.c.obj
 
 ft_printf/srcs/to_buff.i: ft_printf/srcs/to_buff.c.i
@@ -812,7 +812,7 @@ ft_printf/srcs/to_buff.i: ft_printf/srcs/to_buff.c.i
 
 # target to preprocess a source file
 ft_printf/srcs/to_buff.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcs/to_buff.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcs/to_buff.c.i
 .PHONY : ft_printf/srcs/to_buff.c.i
 
 ft_printf/srcs/to_buff.s: ft_printf/srcs/to_buff.c.s
@@ -821,7 +821,7 @@ ft_printf/srcs/to_buff.s: ft_printf/srcs/to_buff.c.s
 
 # target to generate assembly for a file
 ft_printf/srcs/to_buff.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcs/to_buff.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcs/to_buff.c.s
 .PHONY : ft_printf/srcs/to_buff.c.s
 
 ft_printf/srcs/which_sign.obj: ft_printf/srcs/which_sign.c.obj
@@ -830,7 +830,7 @@ ft_printf/srcs/which_sign.obj: ft_printf/srcs/which_sign.c.obj
 
 # target to build an object file
 ft_printf/srcs/which_sign.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcs/which_sign.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcs/which_sign.c.obj
 .PHONY : ft_printf/srcs/which_sign.c.obj
 
 ft_printf/srcs/which_sign.i: ft_printf/srcs/which_sign.c.i
@@ -839,7 +839,7 @@ ft_printf/srcs/which_sign.i: ft_printf/srcs/which_sign.c.i
 
 # target to preprocess a source file
 ft_printf/srcs/which_sign.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcs/which_sign.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcs/which_sign.c.i
 .PHONY : ft_printf/srcs/which_sign.c.i
 
 ft_printf/srcs/which_sign.s: ft_printf/srcs/which_sign.c.s
@@ -848,7 +848,7 @@ ft_printf/srcs/which_sign.s: ft_printf/srcs/which_sign.c.s
 
 # target to generate assembly for a file
 ft_printf/srcs/which_sign.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcs/which_sign.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcs/which_sign.c.s
 .PHONY : ft_printf/srcs/which_sign.c.s
 
 ft_printf/srcs/zeroing.obj: ft_printf/srcs/zeroing.c.obj
@@ -857,7 +857,7 @@ ft_printf/srcs/zeroing.obj: ft_printf/srcs/zeroing.c.obj
 
 # target to build an object file
 ft_printf/srcs/zeroing.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcs/zeroing.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcs/zeroing.c.obj
 .PHONY : ft_printf/srcs/zeroing.c.obj
 
 ft_printf/srcs/zeroing.i: ft_printf/srcs/zeroing.c.i
@@ -866,7 +866,7 @@ ft_printf/srcs/zeroing.i: ft_printf/srcs/zeroing.c.i
 
 # target to preprocess a source file
 ft_printf/srcs/zeroing.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcs/zeroing.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcs/zeroing.c.i
 .PHONY : ft_printf/srcs/zeroing.c.i
 
 ft_printf/srcs/zeroing.s: ft_printf/srcs/zeroing.c.s
@@ -875,7 +875,7 @@ ft_printf/srcs/zeroing.s: ft_printf/srcs/zeroing.c.s
 
 # target to generate assembly for a file
 ft_printf/srcs/zeroing.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcs/zeroing.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcs/zeroing.c.s
 .PHONY : ft_printf/srcs/zeroing.c.s
 
 ft_printf/srcsFloat/check_create_float_res.obj: ft_printf/srcsFloat/check_create_float_res.c.obj
@@ -884,7 +884,7 @@ ft_printf/srcsFloat/check_create_float_res.obj: ft_printf/srcsFloat/check_create
 
 # target to build an object file
 ft_printf/srcsFloat/check_create_float_res.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcsFloat/check_create_float_res.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/check_create_float_res.c.obj
 .PHONY : ft_printf/srcsFloat/check_create_float_res.c.obj
 
 ft_printf/srcsFloat/check_create_float_res.i: ft_printf/srcsFloat/check_create_float_res.c.i
@@ -893,7 +893,7 @@ ft_printf/srcsFloat/check_create_float_res.i: ft_printf/srcsFloat/check_create_f
 
 # target to preprocess a source file
 ft_printf/srcsFloat/check_create_float_res.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcsFloat/check_create_float_res.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/check_create_float_res.c.i
 .PHONY : ft_printf/srcsFloat/check_create_float_res.c.i
 
 ft_printf/srcsFloat/check_create_float_res.s: ft_printf/srcsFloat/check_create_float_res.c.s
@@ -902,7 +902,7 @@ ft_printf/srcsFloat/check_create_float_res.s: ft_printf/srcsFloat/check_create_f
 
 # target to generate assembly for a file
 ft_printf/srcsFloat/check_create_float_res.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcsFloat/check_create_float_res.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/check_create_float_res.c.s
 .PHONY : ft_printf/srcsFloat/check_create_float_res.c.s
 
 ft_printf/srcsFloat/e_flag_intf.obj: ft_printf/srcsFloat/e_flag_intf.c.obj
@@ -911,7 +911,7 @@ ft_printf/srcsFloat/e_flag_intf.obj: ft_printf/srcsFloat/e_flag_intf.c.obj
 
 # target to build an object file
 ft_printf/srcsFloat/e_flag_intf.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcsFloat/e_flag_intf.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/e_flag_intf.c.obj
 .PHONY : ft_printf/srcsFloat/e_flag_intf.c.obj
 
 ft_printf/srcsFloat/e_flag_intf.i: ft_printf/srcsFloat/e_flag_intf.c.i
@@ -920,7 +920,7 @@ ft_printf/srcsFloat/e_flag_intf.i: ft_printf/srcsFloat/e_flag_intf.c.i
 
 # target to preprocess a source file
 ft_printf/srcsFloat/e_flag_intf.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcsFloat/e_flag_intf.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/e_flag_intf.c.i
 .PHONY : ft_printf/srcsFloat/e_flag_intf.c.i
 
 ft_printf/srcsFloat/e_flag_intf.s: ft_printf/srcsFloat/e_flag_intf.c.s
@@ -929,7 +929,7 @@ ft_printf/srcsFloat/e_flag_intf.s: ft_printf/srcsFloat/e_flag_intf.c.s
 
 # target to generate assembly for a file
 ft_printf/srcsFloat/e_flag_intf.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcsFloat/e_flag_intf.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/e_flag_intf.c.s
 .PHONY : ft_printf/srcsFloat/e_flag_intf.c.s
 
 ft_printf/srcsFloat/float_intf.obj: ft_printf/srcsFloat/float_intf.c.obj
@@ -938,7 +938,7 @@ ft_printf/srcsFloat/float_intf.obj: ft_printf/srcsFloat/float_intf.c.obj
 
 # target to build an object file
 ft_printf/srcsFloat/float_intf.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcsFloat/float_intf.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/float_intf.c.obj
 .PHONY : ft_printf/srcsFloat/float_intf.c.obj
 
 ft_printf/srcsFloat/float_intf.i: ft_printf/srcsFloat/float_intf.c.i
@@ -947,7 +947,7 @@ ft_printf/srcsFloat/float_intf.i: ft_printf/srcsFloat/float_intf.c.i
 
 # target to preprocess a source file
 ft_printf/srcsFloat/float_intf.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcsFloat/float_intf.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/float_intf.c.i
 .PHONY : ft_printf/srcsFloat/float_intf.c.i
 
 ft_printf/srcsFloat/float_intf.s: ft_printf/srcsFloat/float_intf.c.s
@@ -956,7 +956,7 @@ ft_printf/srcsFloat/float_intf.s: ft_printf/srcsFloat/float_intf.c.s
 
 # target to generate assembly for a file
 ft_printf/srcsFloat/float_intf.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcsFloat/float_intf.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/float_intf.c.s
 .PHONY : ft_printf/srcsFloat/float_intf.c.s
 
 ft_printf/srcsFloat/float_rounding.obj: ft_printf/srcsFloat/float_rounding.c.obj
@@ -965,7 +965,7 @@ ft_printf/srcsFloat/float_rounding.obj: ft_printf/srcsFloat/float_rounding.c.obj
 
 # target to build an object file
 ft_printf/srcsFloat/float_rounding.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcsFloat/float_rounding.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/float_rounding.c.obj
 .PHONY : ft_printf/srcsFloat/float_rounding.c.obj
 
 ft_printf/srcsFloat/float_rounding.i: ft_printf/srcsFloat/float_rounding.c.i
@@ -974,7 +974,7 @@ ft_printf/srcsFloat/float_rounding.i: ft_printf/srcsFloat/float_rounding.c.i
 
 # target to preprocess a source file
 ft_printf/srcsFloat/float_rounding.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcsFloat/float_rounding.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/float_rounding.c.i
 .PHONY : ft_printf/srcsFloat/float_rounding.c.i
 
 ft_printf/srcsFloat/float_rounding.s: ft_printf/srcsFloat/float_rounding.c.s
@@ -983,7 +983,7 @@ ft_printf/srcsFloat/float_rounding.s: ft_printf/srcsFloat/float_rounding.c.s
 
 # target to generate assembly for a file
 ft_printf/srcsFloat/float_rounding.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcsFloat/float_rounding.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/float_rounding.c.s
 .PHONY : ft_printf/srcsFloat/float_rounding.c.s
 
 ft_printf/srcsFloat/frees_for_float.obj: ft_printf/srcsFloat/frees_for_float.c.obj
@@ -992,7 +992,7 @@ ft_printf/srcsFloat/frees_for_float.obj: ft_printf/srcsFloat/frees_for_float.c.o
 
 # target to build an object file
 ft_printf/srcsFloat/frees_for_float.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcsFloat/frees_for_float.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/frees_for_float.c.obj
 .PHONY : ft_printf/srcsFloat/frees_for_float.c.obj
 
 ft_printf/srcsFloat/frees_for_float.i: ft_printf/srcsFloat/frees_for_float.c.i
@@ -1001,7 +1001,7 @@ ft_printf/srcsFloat/frees_for_float.i: ft_printf/srcsFloat/frees_for_float.c.i
 
 # target to preprocess a source file
 ft_printf/srcsFloat/frees_for_float.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcsFloat/frees_for_float.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/frees_for_float.c.i
 .PHONY : ft_printf/srcsFloat/frees_for_float.c.i
 
 ft_printf/srcsFloat/frees_for_float.s: ft_printf/srcsFloat/frees_for_float.c.s
@@ -1010,7 +1010,7 @@ ft_printf/srcsFloat/frees_for_float.s: ft_printf/srcsFloat/frees_for_float.c.s
 
 # target to generate assembly for a file
 ft_printf/srcsFloat/frees_for_float.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcsFloat/frees_for_float.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/frees_for_float.c.s
 .PHONY : ft_printf/srcsFloat/frees_for_float.c.s
 
 ft_printf/srcsFloat/ft_log10.obj: ft_printf/srcsFloat/ft_log10.c.obj
@@ -1019,7 +1019,7 @@ ft_printf/srcsFloat/ft_log10.obj: ft_printf/srcsFloat/ft_log10.c.obj
 
 # target to build an object file
 ft_printf/srcsFloat/ft_log10.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcsFloat/ft_log10.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/ft_log10.c.obj
 .PHONY : ft_printf/srcsFloat/ft_log10.c.obj
 
 ft_printf/srcsFloat/ft_log10.i: ft_printf/srcsFloat/ft_log10.c.i
@@ -1028,7 +1028,7 @@ ft_printf/srcsFloat/ft_log10.i: ft_printf/srcsFloat/ft_log10.c.i
 
 # target to preprocess a source file
 ft_printf/srcsFloat/ft_log10.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcsFloat/ft_log10.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/ft_log10.c.i
 .PHONY : ft_printf/srcsFloat/ft_log10.c.i
 
 ft_printf/srcsFloat/ft_log10.s: ft_printf/srcsFloat/ft_log10.c.s
@@ -1037,7 +1037,7 @@ ft_printf/srcsFloat/ft_log10.s: ft_printf/srcsFloat/ft_log10.c.s
 
 # target to generate assembly for a file
 ft_printf/srcsFloat/ft_log10.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcsFloat/ft_log10.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/ft_log10.c.s
 .PHONY : ft_printf/srcsFloat/ft_log10.c.s
 
 ft_printf/srcsFloat/ft_log2.obj: ft_printf/srcsFloat/ft_log2.c.obj
@@ -1046,7 +1046,7 @@ ft_printf/srcsFloat/ft_log2.obj: ft_printf/srcsFloat/ft_log2.c.obj
 
 # target to build an object file
 ft_printf/srcsFloat/ft_log2.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcsFloat/ft_log2.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/ft_log2.c.obj
 .PHONY : ft_printf/srcsFloat/ft_log2.c.obj
 
 ft_printf/srcsFloat/ft_log2.i: ft_printf/srcsFloat/ft_log2.c.i
@@ -1055,7 +1055,7 @@ ft_printf/srcsFloat/ft_log2.i: ft_printf/srcsFloat/ft_log2.c.i
 
 # target to preprocess a source file
 ft_printf/srcsFloat/ft_log2.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcsFloat/ft_log2.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/ft_log2.c.i
 .PHONY : ft_printf/srcsFloat/ft_log2.c.i
 
 ft_printf/srcsFloat/ft_log2.s: ft_printf/srcsFloat/ft_log2.c.s
@@ -1064,7 +1064,7 @@ ft_printf/srcsFloat/ft_log2.s: ft_printf/srcsFloat/ft_log2.c.s
 
 # target to generate assembly for a file
 ft_printf/srcsFloat/ft_log2.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcsFloat/ft_log2.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/ft_log2.c.s
 .PHONY : ft_printf/srcsFloat/ft_log2.c.s
 
 ft_printf/srcsFloat/g_flag_intf.obj: ft_printf/srcsFloat/g_flag_intf.c.obj
@@ -1073,7 +1073,7 @@ ft_printf/srcsFloat/g_flag_intf.obj: ft_printf/srcsFloat/g_flag_intf.c.obj
 
 # target to build an object file
 ft_printf/srcsFloat/g_flag_intf.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcsFloat/g_flag_intf.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/g_flag_intf.c.obj
 .PHONY : ft_printf/srcsFloat/g_flag_intf.c.obj
 
 ft_printf/srcsFloat/g_flag_intf.i: ft_printf/srcsFloat/g_flag_intf.c.i
@@ -1082,7 +1082,7 @@ ft_printf/srcsFloat/g_flag_intf.i: ft_printf/srcsFloat/g_flag_intf.c.i
 
 # target to preprocess a source file
 ft_printf/srcsFloat/g_flag_intf.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcsFloat/g_flag_intf.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/g_flag_intf.c.i
 .PHONY : ft_printf/srcsFloat/g_flag_intf.c.i
 
 ft_printf/srcsFloat/g_flag_intf.s: ft_printf/srcsFloat/g_flag_intf.c.s
@@ -1091,7 +1091,7 @@ ft_printf/srcsFloat/g_flag_intf.s: ft_printf/srcsFloat/g_flag_intf.c.s
 
 # target to generate assembly for a file
 ft_printf/srcsFloat/g_flag_intf.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcsFloat/g_flag_intf.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/g_flag_intf.c.s
 .PHONY : ft_printf/srcsFloat/g_flag_intf.c.s
 
 ft_printf/srcsFloat/get_dbl_values.obj: ft_printf/srcsFloat/get_dbl_values.c.obj
@@ -1100,7 +1100,7 @@ ft_printf/srcsFloat/get_dbl_values.obj: ft_printf/srcsFloat/get_dbl_values.c.obj
 
 # target to build an object file
 ft_printf/srcsFloat/get_dbl_values.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcsFloat/get_dbl_values.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/get_dbl_values.c.obj
 .PHONY : ft_printf/srcsFloat/get_dbl_values.c.obj
 
 ft_printf/srcsFloat/get_dbl_values.i: ft_printf/srcsFloat/get_dbl_values.c.i
@@ -1109,7 +1109,7 @@ ft_printf/srcsFloat/get_dbl_values.i: ft_printf/srcsFloat/get_dbl_values.c.i
 
 # target to preprocess a source file
 ft_printf/srcsFloat/get_dbl_values.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcsFloat/get_dbl_values.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/get_dbl_values.c.i
 .PHONY : ft_printf/srcsFloat/get_dbl_values.c.i
 
 ft_printf/srcsFloat/get_dbl_values.s: ft_printf/srcsFloat/get_dbl_values.c.s
@@ -1118,7 +1118,7 @@ ft_printf/srcsFloat/get_dbl_values.s: ft_printf/srcsFloat/get_dbl_values.c.s
 
 # target to generate assembly for a file
 ft_printf/srcsFloat/get_dbl_values.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcsFloat/get_dbl_values.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/get_dbl_values.c.s
 .PHONY : ft_printf/srcsFloat/get_dbl_values.c.s
 
 ft_printf/srcsFloat/get_ldbl_values.obj: ft_printf/srcsFloat/get_ldbl_values.c.obj
@@ -1127,7 +1127,7 @@ ft_printf/srcsFloat/get_ldbl_values.obj: ft_printf/srcsFloat/get_ldbl_values.c.o
 
 # target to build an object file
 ft_printf/srcsFloat/get_ldbl_values.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcsFloat/get_ldbl_values.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/get_ldbl_values.c.obj
 .PHONY : ft_printf/srcsFloat/get_ldbl_values.c.obj
 
 ft_printf/srcsFloat/get_ldbl_values.i: ft_printf/srcsFloat/get_ldbl_values.c.i
@@ -1136,7 +1136,7 @@ ft_printf/srcsFloat/get_ldbl_values.i: ft_printf/srcsFloat/get_ldbl_values.c.i
 
 # target to preprocess a source file
 ft_printf/srcsFloat/get_ldbl_values.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcsFloat/get_ldbl_values.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/get_ldbl_values.c.i
 .PHONY : ft_printf/srcsFloat/get_ldbl_values.c.i
 
 ft_printf/srcsFloat/get_ldbl_values.s: ft_printf/srcsFloat/get_ldbl_values.c.s
@@ -1145,7 +1145,7 @@ ft_printf/srcsFloat/get_ldbl_values.s: ft_printf/srcsFloat/get_ldbl_values.c.s
 
 # target to generate assembly for a file
 ft_printf/srcsFloat/get_ldbl_values.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcsFloat/get_ldbl_values.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/get_ldbl_values.c.s
 .PHONY : ft_printf/srcsFloat/get_ldbl_values.c.s
 
 ft_printf/srcsFloat/high_precision.obj: ft_printf/srcsFloat/high_precision.c.obj
@@ -1154,7 +1154,7 @@ ft_printf/srcsFloat/high_precision.obj: ft_printf/srcsFloat/high_precision.c.obj
 
 # target to build an object file
 ft_printf/srcsFloat/high_precision.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcsFloat/high_precision.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/high_precision.c.obj
 .PHONY : ft_printf/srcsFloat/high_precision.c.obj
 
 ft_printf/srcsFloat/high_precision.i: ft_printf/srcsFloat/high_precision.c.i
@@ -1163,7 +1163,7 @@ ft_printf/srcsFloat/high_precision.i: ft_printf/srcsFloat/high_precision.c.i
 
 # target to preprocess a source file
 ft_printf/srcsFloat/high_precision.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcsFloat/high_precision.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/high_precision.c.i
 .PHONY : ft_printf/srcsFloat/high_precision.c.i
 
 ft_printf/srcsFloat/high_precision.s: ft_printf/srcsFloat/high_precision.c.s
@@ -1172,7 +1172,7 @@ ft_printf/srcsFloat/high_precision.s: ft_printf/srcsFloat/high_precision.c.s
 
 # target to generate assembly for a file
 ft_printf/srcsFloat/high_precision.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcsFloat/high_precision.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/high_precision.c.s
 .PHONY : ft_printf/srcsFloat/high_precision.c.s
 
 ft_printf/srcsFloat/high_precision_intf.obj: ft_printf/srcsFloat/high_precision_intf.c.obj
@@ -1181,7 +1181,7 @@ ft_printf/srcsFloat/high_precision_intf.obj: ft_printf/srcsFloat/high_precision_
 
 # target to build an object file
 ft_printf/srcsFloat/high_precision_intf.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcsFloat/high_precision_intf.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/high_precision_intf.c.obj
 .PHONY : ft_printf/srcsFloat/high_precision_intf.c.obj
 
 ft_printf/srcsFloat/high_precision_intf.i: ft_printf/srcsFloat/high_precision_intf.c.i
@@ -1190,7 +1190,7 @@ ft_printf/srcsFloat/high_precision_intf.i: ft_printf/srcsFloat/high_precision_in
 
 # target to preprocess a source file
 ft_printf/srcsFloat/high_precision_intf.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcsFloat/high_precision_intf.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/high_precision_intf.c.i
 .PHONY : ft_printf/srcsFloat/high_precision_intf.c.i
 
 ft_printf/srcsFloat/high_precision_intf.s: ft_printf/srcsFloat/high_precision_intf.c.s
@@ -1199,7 +1199,7 @@ ft_printf/srcsFloat/high_precision_intf.s: ft_printf/srcsFloat/high_precision_in
 
 # target to generate assembly for a file
 ft_printf/srcsFloat/high_precision_intf.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcsFloat/high_precision_intf.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/high_precision_intf.c.s
 .PHONY : ft_printf/srcsFloat/high_precision_intf.c.s
 
 ft_printf/srcsFloat/high_precision_intf_long.obj: ft_printf/srcsFloat/high_precision_intf_long.c.obj
@@ -1208,7 +1208,7 @@ ft_printf/srcsFloat/high_precision_intf_long.obj: ft_printf/srcsFloat/high_preci
 
 # target to build an object file
 ft_printf/srcsFloat/high_precision_intf_long.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcsFloat/high_precision_intf_long.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/high_precision_intf_long.c.obj
 .PHONY : ft_printf/srcsFloat/high_precision_intf_long.c.obj
 
 ft_printf/srcsFloat/high_precision_intf_long.i: ft_printf/srcsFloat/high_precision_intf_long.c.i
@@ -1217,7 +1217,7 @@ ft_printf/srcsFloat/high_precision_intf_long.i: ft_printf/srcsFloat/high_precisi
 
 # target to preprocess a source file
 ft_printf/srcsFloat/high_precision_intf_long.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcsFloat/high_precision_intf_long.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/high_precision_intf_long.c.i
 .PHONY : ft_printf/srcsFloat/high_precision_intf_long.c.i
 
 ft_printf/srcsFloat/high_precision_intf_long.s: ft_printf/srcsFloat/high_precision_intf_long.c.s
@@ -1226,7 +1226,7 @@ ft_printf/srcsFloat/high_precision_intf_long.s: ft_printf/srcsFloat/high_precisi
 
 # target to generate assembly for a file
 ft_printf/srcsFloat/high_precision_intf_long.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcsFloat/high_precision_intf_long.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/high_precision_intf_long.c.s
 .PHONY : ft_printf/srcsFloat/high_precision_intf_long.c.s
 
 ft_printf/srcsFloat/high_precision_long.obj: ft_printf/srcsFloat/high_precision_long.c.obj
@@ -1235,7 +1235,7 @@ ft_printf/srcsFloat/high_precision_long.obj: ft_printf/srcsFloat/high_precision_
 
 # target to build an object file
 ft_printf/srcsFloat/high_precision_long.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcsFloat/high_precision_long.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/high_precision_long.c.obj
 .PHONY : ft_printf/srcsFloat/high_precision_long.c.obj
 
 ft_printf/srcsFloat/high_precision_long.i: ft_printf/srcsFloat/high_precision_long.c.i
@@ -1244,7 +1244,7 @@ ft_printf/srcsFloat/high_precision_long.i: ft_printf/srcsFloat/high_precision_lo
 
 # target to preprocess a source file
 ft_printf/srcsFloat/high_precision_long.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcsFloat/high_precision_long.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/high_precision_long.c.i
 .PHONY : ft_printf/srcsFloat/high_precision_long.c.i
 
 ft_printf/srcsFloat/high_precision_long.s: ft_printf/srcsFloat/high_precision_long.c.s
@@ -1253,7 +1253,7 @@ ft_printf/srcsFloat/high_precision_long.s: ft_printf/srcsFloat/high_precision_lo
 
 # target to generate assembly for a file
 ft_printf/srcsFloat/high_precision_long.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcsFloat/high_precision_long.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/high_precision_long.c.s
 .PHONY : ft_printf/srcsFloat/high_precision_long.c.s
 
 ft_printf/srcsFloat/my_float.obj: ft_printf/srcsFloat/my_float.c.obj
@@ -1262,7 +1262,7 @@ ft_printf/srcsFloat/my_float.obj: ft_printf/srcsFloat/my_float.c.obj
 
 # target to build an object file
 ft_printf/srcsFloat/my_float.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcsFloat/my_float.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/my_float.c.obj
 .PHONY : ft_printf/srcsFloat/my_float.c.obj
 
 ft_printf/srcsFloat/my_float.i: ft_printf/srcsFloat/my_float.c.i
@@ -1271,7 +1271,7 @@ ft_printf/srcsFloat/my_float.i: ft_printf/srcsFloat/my_float.c.i
 
 # target to preprocess a source file
 ft_printf/srcsFloat/my_float.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcsFloat/my_float.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/my_float.c.i
 .PHONY : ft_printf/srcsFloat/my_float.c.i
 
 ft_printf/srcsFloat/my_float.s: ft_printf/srcsFloat/my_float.c.s
@@ -1280,7 +1280,7 @@ ft_printf/srcsFloat/my_float.s: ft_printf/srcsFloat/my_float.c.s
 
 # target to generate assembly for a file
 ft_printf/srcsFloat/my_float.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcsFloat/my_float.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/my_float.c.s
 .PHONY : ft_printf/srcsFloat/my_float.c.s
 
 ft_printf/srcsFloat/my_long_float.obj: ft_printf/srcsFloat/my_long_float.c.obj
@@ -1289,7 +1289,7 @@ ft_printf/srcsFloat/my_long_float.obj: ft_printf/srcsFloat/my_long_float.c.obj
 
 # target to build an object file
 ft_printf/srcsFloat/my_long_float.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcsFloat/my_long_float.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/my_long_float.c.obj
 .PHONY : ft_printf/srcsFloat/my_long_float.c.obj
 
 ft_printf/srcsFloat/my_long_float.i: ft_printf/srcsFloat/my_long_float.c.i
@@ -1298,7 +1298,7 @@ ft_printf/srcsFloat/my_long_float.i: ft_printf/srcsFloat/my_long_float.c.i
 
 # target to preprocess a source file
 ft_printf/srcsFloat/my_long_float.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcsFloat/my_long_float.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/my_long_float.c.i
 .PHONY : ft_printf/srcsFloat/my_long_float.c.i
 
 ft_printf/srcsFloat/my_long_float.s: ft_printf/srcsFloat/my_long_float.c.s
@@ -1307,7 +1307,7 @@ ft_printf/srcsFloat/my_long_float.s: ft_printf/srcsFloat/my_long_float.c.s
 
 # target to generate assembly for a file
 ft_printf/srcsFloat/my_long_float.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcsFloat/my_long_float.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/my_long_float.c.s
 .PHONY : ft_printf/srcsFloat/my_long_float.c.s
 
 ft_printf/srcsFloat/print_reserve_dbl.obj: ft_printf/srcsFloat/print_reserve_dbl.c.obj
@@ -1316,7 +1316,7 @@ ft_printf/srcsFloat/print_reserve_dbl.obj: ft_printf/srcsFloat/print_reserve_dbl
 
 # target to build an object file
 ft_printf/srcsFloat/print_reserve_dbl.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcsFloat/print_reserve_dbl.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/print_reserve_dbl.c.obj
 .PHONY : ft_printf/srcsFloat/print_reserve_dbl.c.obj
 
 ft_printf/srcsFloat/print_reserve_dbl.i: ft_printf/srcsFloat/print_reserve_dbl.c.i
@@ -1325,7 +1325,7 @@ ft_printf/srcsFloat/print_reserve_dbl.i: ft_printf/srcsFloat/print_reserve_dbl.c
 
 # target to preprocess a source file
 ft_printf/srcsFloat/print_reserve_dbl.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcsFloat/print_reserve_dbl.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/print_reserve_dbl.c.i
 .PHONY : ft_printf/srcsFloat/print_reserve_dbl.c.i
 
 ft_printf/srcsFloat/print_reserve_dbl.s: ft_printf/srcsFloat/print_reserve_dbl.c.s
@@ -1334,7 +1334,7 @@ ft_printf/srcsFloat/print_reserve_dbl.s: ft_printf/srcsFloat/print_reserve_dbl.c
 
 # target to generate assembly for a file
 ft_printf/srcsFloat/print_reserve_dbl.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_printf/srcsFloat/print_reserve_dbl.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/print_reserve_dbl.c.s
 .PHONY : ft_printf/srcsFloat/print_reserve_dbl.c.s
 
 ft_wordequ.obj: ft_wordequ.c.obj
@@ -1343,7 +1343,7 @@ ft_wordequ.obj: ft_wordequ.c.obj
 
 # target to build an object file
 ft_wordequ.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_wordequ.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_wordequ.c.obj
 .PHONY : ft_wordequ.c.obj
 
 ft_wordequ.i: ft_wordequ.c.i
@@ -1352,7 +1352,7 @@ ft_wordequ.i: ft_wordequ.c.i
 
 # target to preprocess a source file
 ft_wordequ.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_wordequ.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_wordequ.c.i
 .PHONY : ft_wordequ.c.i
 
 ft_wordequ.s: ft_wordequ.c.s
@@ -1361,7 +1361,7 @@ ft_wordequ.s: ft_wordequ.c.s
 
 # target to generate assembly for a file
 ft_wordequ.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/ft_wordequ.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/ft_wordequ.c.s
 .PHONY : ft_wordequ.c.s
 
 libft/ft_abs.obj: libft/ft_abs.c.obj
@@ -1370,7 +1370,7 @@ libft/ft_abs.obj: libft/ft_abs.c.obj
 
 # target to build an object file
 libft/ft_abs.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_abs.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_abs.c.obj
 .PHONY : libft/ft_abs.c.obj
 
 libft/ft_abs.i: libft/ft_abs.c.i
@@ -1379,7 +1379,7 @@ libft/ft_abs.i: libft/ft_abs.c.i
 
 # target to preprocess a source file
 libft/ft_abs.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_abs.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_abs.c.i
 .PHONY : libft/ft_abs.c.i
 
 libft/ft_abs.s: libft/ft_abs.c.s
@@ -1388,7 +1388,7 @@ libft/ft_abs.s: libft/ft_abs.c.s
 
 # target to generate assembly for a file
 libft/ft_abs.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_abs.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_abs.c.s
 .PHONY : libft/ft_abs.c.s
 
 libft/ft_atoi.obj: libft/ft_atoi.c.obj
@@ -1397,7 +1397,7 @@ libft/ft_atoi.obj: libft/ft_atoi.c.obj
 
 # target to build an object file
 libft/ft_atoi.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_atoi.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_atoi.c.obj
 .PHONY : libft/ft_atoi.c.obj
 
 libft/ft_atoi.i: libft/ft_atoi.c.i
@@ -1406,7 +1406,7 @@ libft/ft_atoi.i: libft/ft_atoi.c.i
 
 # target to preprocess a source file
 libft/ft_atoi.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_atoi.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_atoi.c.i
 .PHONY : libft/ft_atoi.c.i
 
 libft/ft_atoi.s: libft/ft_atoi.c.s
@@ -1415,7 +1415,7 @@ libft/ft_atoi.s: libft/ft_atoi.c.s
 
 # target to generate assembly for a file
 libft/ft_atoi.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_atoi.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_atoi.c.s
 .PHONY : libft/ft_atoi.c.s
 
 libft/ft_bzero.obj: libft/ft_bzero.c.obj
@@ -1424,7 +1424,7 @@ libft/ft_bzero.obj: libft/ft_bzero.c.obj
 
 # target to build an object file
 libft/ft_bzero.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_bzero.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_bzero.c.obj
 .PHONY : libft/ft_bzero.c.obj
 
 libft/ft_bzero.i: libft/ft_bzero.c.i
@@ -1433,7 +1433,7 @@ libft/ft_bzero.i: libft/ft_bzero.c.i
 
 # target to preprocess a source file
 libft/ft_bzero.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_bzero.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_bzero.c.i
 .PHONY : libft/ft_bzero.c.i
 
 libft/ft_bzero.s: libft/ft_bzero.c.s
@@ -1442,7 +1442,7 @@ libft/ft_bzero.s: libft/ft_bzero.c.s
 
 # target to generate assembly for a file
 libft/ft_bzero.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_bzero.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_bzero.c.s
 .PHONY : libft/ft_bzero.c.s
 
 libft/ft_fib.obj: libft/ft_fib.c.obj
@@ -1451,7 +1451,7 @@ libft/ft_fib.obj: libft/ft_fib.c.obj
 
 # target to build an object file
 libft/ft_fib.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_fib.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_fib.c.obj
 .PHONY : libft/ft_fib.c.obj
 
 libft/ft_fib.i: libft/ft_fib.c.i
@@ -1460,7 +1460,7 @@ libft/ft_fib.i: libft/ft_fib.c.i
 
 # target to preprocess a source file
 libft/ft_fib.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_fib.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_fib.c.i
 .PHONY : libft/ft_fib.c.i
 
 libft/ft_fib.s: libft/ft_fib.c.s
@@ -1469,7 +1469,7 @@ libft/ft_fib.s: libft/ft_fib.c.s
 
 # target to generate assembly for a file
 libft/ft_fib.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_fib.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_fib.c.s
 .PHONY : libft/ft_fib.c.s
 
 libft/ft_floor.obj: libft/ft_floor.c.obj
@@ -1478,7 +1478,7 @@ libft/ft_floor.obj: libft/ft_floor.c.obj
 
 # target to build an object file
 libft/ft_floor.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_floor.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_floor.c.obj
 .PHONY : libft/ft_floor.c.obj
 
 libft/ft_floor.i: libft/ft_floor.c.i
@@ -1487,7 +1487,7 @@ libft/ft_floor.i: libft/ft_floor.c.i
 
 # target to preprocess a source file
 libft/ft_floor.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_floor.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_floor.c.i
 .PHONY : libft/ft_floor.c.i
 
 libft/ft_floor.s: libft/ft_floor.c.s
@@ -1496,7 +1496,7 @@ libft/ft_floor.s: libft/ft_floor.c.s
 
 # target to generate assembly for a file
 libft/ft_floor.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_floor.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_floor.c.s
 .PHONY : libft/ft_floor.c.s
 
 libft/ft_is_complex_string.obj: libft/ft_is_complex_string.c.obj
@@ -1505,7 +1505,7 @@ libft/ft_is_complex_string.obj: libft/ft_is_complex_string.c.obj
 
 # target to build an object file
 libft/ft_is_complex_string.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_is_complex_string.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_is_complex_string.c.obj
 .PHONY : libft/ft_is_complex_string.c.obj
 
 libft/ft_is_complex_string.i: libft/ft_is_complex_string.c.i
@@ -1514,7 +1514,7 @@ libft/ft_is_complex_string.i: libft/ft_is_complex_string.c.i
 
 # target to preprocess a source file
 libft/ft_is_complex_string.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_is_complex_string.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_is_complex_string.c.i
 .PHONY : libft/ft_is_complex_string.c.i
 
 libft/ft_is_complex_string.s: libft/ft_is_complex_string.c.s
@@ -1523,7 +1523,7 @@ libft/ft_is_complex_string.s: libft/ft_is_complex_string.c.s
 
 # target to generate assembly for a file
 libft/ft_is_complex_string.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_is_complex_string.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_is_complex_string.c.s
 .PHONY : libft/ft_is_complex_string.c.s
 
 libft/ft_isalnum.obj: libft/ft_isalnum.c.obj
@@ -1532,7 +1532,7 @@ libft/ft_isalnum.obj: libft/ft_isalnum.c.obj
 
 # target to build an object file
 libft/ft_isalnum.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_isalnum.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_isalnum.c.obj
 .PHONY : libft/ft_isalnum.c.obj
 
 libft/ft_isalnum.i: libft/ft_isalnum.c.i
@@ -1541,7 +1541,7 @@ libft/ft_isalnum.i: libft/ft_isalnum.c.i
 
 # target to preprocess a source file
 libft/ft_isalnum.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_isalnum.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_isalnum.c.i
 .PHONY : libft/ft_isalnum.c.i
 
 libft/ft_isalnum.s: libft/ft_isalnum.c.s
@@ -1550,7 +1550,7 @@ libft/ft_isalnum.s: libft/ft_isalnum.c.s
 
 # target to generate assembly for a file
 libft/ft_isalnum.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_isalnum.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_isalnum.c.s
 .PHONY : libft/ft_isalnum.c.s
 
 libft/ft_isalpha.obj: libft/ft_isalpha.c.obj
@@ -1559,7 +1559,7 @@ libft/ft_isalpha.obj: libft/ft_isalpha.c.obj
 
 # target to build an object file
 libft/ft_isalpha.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_isalpha.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_isalpha.c.obj
 .PHONY : libft/ft_isalpha.c.obj
 
 libft/ft_isalpha.i: libft/ft_isalpha.c.i
@@ -1568,7 +1568,7 @@ libft/ft_isalpha.i: libft/ft_isalpha.c.i
 
 # target to preprocess a source file
 libft/ft_isalpha.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_isalpha.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_isalpha.c.i
 .PHONY : libft/ft_isalpha.c.i
 
 libft/ft_isalpha.s: libft/ft_isalpha.c.s
@@ -1577,7 +1577,7 @@ libft/ft_isalpha.s: libft/ft_isalpha.c.s
 
 # target to generate assembly for a file
 libft/ft_isalpha.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_isalpha.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_isalpha.c.s
 .PHONY : libft/ft_isalpha.c.s
 
 libft/ft_isascii.obj: libft/ft_isascii.c.obj
@@ -1586,7 +1586,7 @@ libft/ft_isascii.obj: libft/ft_isascii.c.obj
 
 # target to build an object file
 libft/ft_isascii.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_isascii.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_isascii.c.obj
 .PHONY : libft/ft_isascii.c.obj
 
 libft/ft_isascii.i: libft/ft_isascii.c.i
@@ -1595,7 +1595,7 @@ libft/ft_isascii.i: libft/ft_isascii.c.i
 
 # target to preprocess a source file
 libft/ft_isascii.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_isascii.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_isascii.c.i
 .PHONY : libft/ft_isascii.c.i
 
 libft/ft_isascii.s: libft/ft_isascii.c.s
@@ -1604,7 +1604,7 @@ libft/ft_isascii.s: libft/ft_isascii.c.s
 
 # target to generate assembly for a file
 libft/ft_isascii.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_isascii.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_isascii.c.s
 .PHONY : libft/ft_isascii.c.s
 
 libft/ft_isdigit.obj: libft/ft_isdigit.c.obj
@@ -1613,7 +1613,7 @@ libft/ft_isdigit.obj: libft/ft_isdigit.c.obj
 
 # target to build an object file
 libft/ft_isdigit.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_isdigit.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_isdigit.c.obj
 .PHONY : libft/ft_isdigit.c.obj
 
 libft/ft_isdigit.i: libft/ft_isdigit.c.i
@@ -1622,7 +1622,7 @@ libft/ft_isdigit.i: libft/ft_isdigit.c.i
 
 # target to preprocess a source file
 libft/ft_isdigit.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_isdigit.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_isdigit.c.i
 .PHONY : libft/ft_isdigit.c.i
 
 libft/ft_isdigit.s: libft/ft_isdigit.c.s
@@ -1631,7 +1631,7 @@ libft/ft_isdigit.s: libft/ft_isdigit.c.s
 
 # target to generate assembly for a file
 libft/ft_isdigit.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_isdigit.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_isdigit.c.s
 .PHONY : libft/ft_isdigit.c.s
 
 libft/ft_islower.obj: libft/ft_islower.c.obj
@@ -1640,7 +1640,7 @@ libft/ft_islower.obj: libft/ft_islower.c.obj
 
 # target to build an object file
 libft/ft_islower.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_islower.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_islower.c.obj
 .PHONY : libft/ft_islower.c.obj
 
 libft/ft_islower.i: libft/ft_islower.c.i
@@ -1649,7 +1649,7 @@ libft/ft_islower.i: libft/ft_islower.c.i
 
 # target to preprocess a source file
 libft/ft_islower.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_islower.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_islower.c.i
 .PHONY : libft/ft_islower.c.i
 
 libft/ft_islower.s: libft/ft_islower.c.s
@@ -1658,7 +1658,7 @@ libft/ft_islower.s: libft/ft_islower.c.s
 
 # target to generate assembly for a file
 libft/ft_islower.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_islower.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_islower.c.s
 .PHONY : libft/ft_islower.c.s
 
 libft/ft_isprint.obj: libft/ft_isprint.c.obj
@@ -1667,7 +1667,7 @@ libft/ft_isprint.obj: libft/ft_isprint.c.obj
 
 # target to build an object file
 libft/ft_isprint.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_isprint.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_isprint.c.obj
 .PHONY : libft/ft_isprint.c.obj
 
 libft/ft_isprint.i: libft/ft_isprint.c.i
@@ -1676,7 +1676,7 @@ libft/ft_isprint.i: libft/ft_isprint.c.i
 
 # target to preprocess a source file
 libft/ft_isprint.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_isprint.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_isprint.c.i
 .PHONY : libft/ft_isprint.c.i
 
 libft/ft_isprint.s: libft/ft_isprint.c.s
@@ -1685,7 +1685,7 @@ libft/ft_isprint.s: libft/ft_isprint.c.s
 
 # target to generate assembly for a file
 libft/ft_isprint.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_isprint.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_isprint.c.s
 .PHONY : libft/ft_isprint.c.s
 
 libft/ft_isspace.obj: libft/ft_isspace.c.obj
@@ -1694,7 +1694,7 @@ libft/ft_isspace.obj: libft/ft_isspace.c.obj
 
 # target to build an object file
 libft/ft_isspace.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_isspace.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_isspace.c.obj
 .PHONY : libft/ft_isspace.c.obj
 
 libft/ft_isspace.i: libft/ft_isspace.c.i
@@ -1703,7 +1703,7 @@ libft/ft_isspace.i: libft/ft_isspace.c.i
 
 # target to preprocess a source file
 libft/ft_isspace.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_isspace.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_isspace.c.i
 .PHONY : libft/ft_isspace.c.i
 
 libft/ft_isspace.s: libft/ft_isspace.c.s
@@ -1712,7 +1712,7 @@ libft/ft_isspace.s: libft/ft_isspace.c.s
 
 # target to generate assembly for a file
 libft/ft_isspace.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_isspace.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_isspace.c.s
 .PHONY : libft/ft_isspace.c.s
 
 libft/ft_isupper.obj: libft/ft_isupper.c.obj
@@ -1721,7 +1721,7 @@ libft/ft_isupper.obj: libft/ft_isupper.c.obj
 
 # target to build an object file
 libft/ft_isupper.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_isupper.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_isupper.c.obj
 .PHONY : libft/ft_isupper.c.obj
 
 libft/ft_isupper.i: libft/ft_isupper.c.i
@@ -1730,7 +1730,7 @@ libft/ft_isupper.i: libft/ft_isupper.c.i
 
 # target to preprocess a source file
 libft/ft_isupper.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_isupper.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_isupper.c.i
 .PHONY : libft/ft_isupper.c.i
 
 libft/ft_isupper.s: libft/ft_isupper.c.s
@@ -1739,7 +1739,7 @@ libft/ft_isupper.s: libft/ft_isupper.c.s
 
 # target to generate assembly for a file
 libft/ft_isupper.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_isupper.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_isupper.c.s
 .PHONY : libft/ft_isupper.c.s
 
 libft/ft_itoa.obj: libft/ft_itoa.c.obj
@@ -1748,7 +1748,7 @@ libft/ft_itoa.obj: libft/ft_itoa.c.obj
 
 # target to build an object file
 libft/ft_itoa.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_itoa.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_itoa.c.obj
 .PHONY : libft/ft_itoa.c.obj
 
 libft/ft_itoa.i: libft/ft_itoa.c.i
@@ -1757,7 +1757,7 @@ libft/ft_itoa.i: libft/ft_itoa.c.i
 
 # target to preprocess a source file
 libft/ft_itoa.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_itoa.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_itoa.c.i
 .PHONY : libft/ft_itoa.c.i
 
 libft/ft_itoa.s: libft/ft_itoa.c.s
@@ -1766,7 +1766,7 @@ libft/ft_itoa.s: libft/ft_itoa.c.s
 
 # target to generate assembly for a file
 libft/ft_itoa.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_itoa.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_itoa.c.s
 .PHONY : libft/ft_itoa.c.s
 
 libft/ft_lstadd.obj: libft/ft_lstadd.c.obj
@@ -1775,7 +1775,7 @@ libft/ft_lstadd.obj: libft/ft_lstadd.c.obj
 
 # target to build an object file
 libft/ft_lstadd.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_lstadd.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_lstadd.c.obj
 .PHONY : libft/ft_lstadd.c.obj
 
 libft/ft_lstadd.i: libft/ft_lstadd.c.i
@@ -1784,7 +1784,7 @@ libft/ft_lstadd.i: libft/ft_lstadd.c.i
 
 # target to preprocess a source file
 libft/ft_lstadd.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_lstadd.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_lstadd.c.i
 .PHONY : libft/ft_lstadd.c.i
 
 libft/ft_lstadd.s: libft/ft_lstadd.c.s
@@ -1793,7 +1793,7 @@ libft/ft_lstadd.s: libft/ft_lstadd.c.s
 
 # target to generate assembly for a file
 libft/ft_lstadd.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_lstadd.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_lstadd.c.s
 .PHONY : libft/ft_lstadd.c.s
 
 libft/ft_lstcirc_add.obj: libft/ft_lstcirc_add.c.obj
@@ -1802,7 +1802,7 @@ libft/ft_lstcirc_add.obj: libft/ft_lstcirc_add.c.obj
 
 # target to build an object file
 libft/ft_lstcirc_add.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_lstcirc_add.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_lstcirc_add.c.obj
 .PHONY : libft/ft_lstcirc_add.c.obj
 
 libft/ft_lstcirc_add.i: libft/ft_lstcirc_add.c.i
@@ -1811,7 +1811,7 @@ libft/ft_lstcirc_add.i: libft/ft_lstcirc_add.c.i
 
 # target to preprocess a source file
 libft/ft_lstcirc_add.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_lstcirc_add.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_lstcirc_add.c.i
 .PHONY : libft/ft_lstcirc_add.c.i
 
 libft/ft_lstcirc_add.s: libft/ft_lstcirc_add.c.s
@@ -1820,7 +1820,7 @@ libft/ft_lstcirc_add.s: libft/ft_lstcirc_add.c.s
 
 # target to generate assembly for a file
 libft/ft_lstcirc_add.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_lstcirc_add.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_lstcirc_add.c.s
 .PHONY : libft/ft_lstcirc_add.c.s
 
 libft/ft_lstcirc_delelem.obj: libft/ft_lstcirc_delelem.c.obj
@@ -1829,7 +1829,7 @@ libft/ft_lstcirc_delelem.obj: libft/ft_lstcirc_delelem.c.obj
 
 # target to build an object file
 libft/ft_lstcirc_delelem.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_lstcirc_delelem.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_lstcirc_delelem.c.obj
 .PHONY : libft/ft_lstcirc_delelem.c.obj
 
 libft/ft_lstcirc_delelem.i: libft/ft_lstcirc_delelem.c.i
@@ -1838,7 +1838,7 @@ libft/ft_lstcirc_delelem.i: libft/ft_lstcirc_delelem.c.i
 
 # target to preprocess a source file
 libft/ft_lstcirc_delelem.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_lstcirc_delelem.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_lstcirc_delelem.c.i
 .PHONY : libft/ft_lstcirc_delelem.c.i
 
 libft/ft_lstcirc_delelem.s: libft/ft_lstcirc_delelem.c.s
@@ -1847,7 +1847,7 @@ libft/ft_lstcirc_delelem.s: libft/ft_lstcirc_delelem.c.s
 
 # target to generate assembly for a file
 libft/ft_lstcirc_delelem.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_lstcirc_delelem.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_lstcirc_delelem.c.s
 .PHONY : libft/ft_lstcirc_delelem.c.s
 
 libft/ft_lstcirc_findcontent_size.obj: libft/ft_lstcirc_findcontent_size.c.obj
@@ -1856,7 +1856,7 @@ libft/ft_lstcirc_findcontent_size.obj: libft/ft_lstcirc_findcontent_size.c.obj
 
 # target to build an object file
 libft/ft_lstcirc_findcontent_size.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_lstcirc_findcontent_size.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_lstcirc_findcontent_size.c.obj
 .PHONY : libft/ft_lstcirc_findcontent_size.c.obj
 
 libft/ft_lstcirc_findcontent_size.i: libft/ft_lstcirc_findcontent_size.c.i
@@ -1865,7 +1865,7 @@ libft/ft_lstcirc_findcontent_size.i: libft/ft_lstcirc_findcontent_size.c.i
 
 # target to preprocess a source file
 libft/ft_lstcirc_findcontent_size.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_lstcirc_findcontent_size.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_lstcirc_findcontent_size.c.i
 .PHONY : libft/ft_lstcirc_findcontent_size.c.i
 
 libft/ft_lstcirc_findcontent_size.s: libft/ft_lstcirc_findcontent_size.c.s
@@ -1874,7 +1874,7 @@ libft/ft_lstcirc_findcontent_size.s: libft/ft_lstcirc_findcontent_size.c.s
 
 # target to generate assembly for a file
 libft/ft_lstcirc_findcontent_size.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_lstcirc_findcontent_size.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_lstcirc_findcontent_size.c.s
 .PHONY : libft/ft_lstcirc_findcontent_size.c.s
 
 libft/ft_lstcirc_strnew.obj: libft/ft_lstcirc_strnew.c.obj
@@ -1883,7 +1883,7 @@ libft/ft_lstcirc_strnew.obj: libft/ft_lstcirc_strnew.c.obj
 
 # target to build an object file
 libft/ft_lstcirc_strnew.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_lstcirc_strnew.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_lstcirc_strnew.c.obj
 .PHONY : libft/ft_lstcirc_strnew.c.obj
 
 libft/ft_lstcirc_strnew.i: libft/ft_lstcirc_strnew.c.i
@@ -1892,7 +1892,7 @@ libft/ft_lstcirc_strnew.i: libft/ft_lstcirc_strnew.c.i
 
 # target to preprocess a source file
 libft/ft_lstcirc_strnew.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_lstcirc_strnew.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_lstcirc_strnew.c.i
 .PHONY : libft/ft_lstcirc_strnew.c.i
 
 libft/ft_lstcirc_strnew.s: libft/ft_lstcirc_strnew.c.s
@@ -1901,7 +1901,7 @@ libft/ft_lstcirc_strnew.s: libft/ft_lstcirc_strnew.c.s
 
 # target to generate assembly for a file
 libft/ft_lstcirc_strnew.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_lstcirc_strnew.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_lstcirc_strnew.c.s
 .PHONY : libft/ft_lstcirc_strnew.c.s
 
 libft/ft_lstdel.obj: libft/ft_lstdel.c.obj
@@ -1910,7 +1910,7 @@ libft/ft_lstdel.obj: libft/ft_lstdel.c.obj
 
 # target to build an object file
 libft/ft_lstdel.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_lstdel.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_lstdel.c.obj
 .PHONY : libft/ft_lstdel.c.obj
 
 libft/ft_lstdel.i: libft/ft_lstdel.c.i
@@ -1919,7 +1919,7 @@ libft/ft_lstdel.i: libft/ft_lstdel.c.i
 
 # target to preprocess a source file
 libft/ft_lstdel.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_lstdel.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_lstdel.c.i
 .PHONY : libft/ft_lstdel.c.i
 
 libft/ft_lstdel.s: libft/ft_lstdel.c.s
@@ -1928,7 +1928,7 @@ libft/ft_lstdel.s: libft/ft_lstdel.c.s
 
 # target to generate assembly for a file
 libft/ft_lstdel.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_lstdel.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_lstdel.c.s
 .PHONY : libft/ft_lstdel.c.s
 
 libft/ft_lstdelone.obj: libft/ft_lstdelone.c.obj
@@ -1937,7 +1937,7 @@ libft/ft_lstdelone.obj: libft/ft_lstdelone.c.obj
 
 # target to build an object file
 libft/ft_lstdelone.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_lstdelone.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_lstdelone.c.obj
 .PHONY : libft/ft_lstdelone.c.obj
 
 libft/ft_lstdelone.i: libft/ft_lstdelone.c.i
@@ -1946,7 +1946,7 @@ libft/ft_lstdelone.i: libft/ft_lstdelone.c.i
 
 # target to preprocess a source file
 libft/ft_lstdelone.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_lstdelone.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_lstdelone.c.i
 .PHONY : libft/ft_lstdelone.c.i
 
 libft/ft_lstdelone.s: libft/ft_lstdelone.c.s
@@ -1955,7 +1955,7 @@ libft/ft_lstdelone.s: libft/ft_lstdelone.c.s
 
 # target to generate assembly for a file
 libft/ft_lstdelone.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_lstdelone.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_lstdelone.c.s
 .PHONY : libft/ft_lstdelone.c.s
 
 libft/ft_lstiter.obj: libft/ft_lstiter.c.obj
@@ -1964,7 +1964,7 @@ libft/ft_lstiter.obj: libft/ft_lstiter.c.obj
 
 # target to build an object file
 libft/ft_lstiter.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_lstiter.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_lstiter.c.obj
 .PHONY : libft/ft_lstiter.c.obj
 
 libft/ft_lstiter.i: libft/ft_lstiter.c.i
@@ -1973,7 +1973,7 @@ libft/ft_lstiter.i: libft/ft_lstiter.c.i
 
 # target to preprocess a source file
 libft/ft_lstiter.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_lstiter.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_lstiter.c.i
 .PHONY : libft/ft_lstiter.c.i
 
 libft/ft_lstiter.s: libft/ft_lstiter.c.s
@@ -1982,7 +1982,7 @@ libft/ft_lstiter.s: libft/ft_lstiter.c.s
 
 # target to generate assembly for a file
 libft/ft_lstiter.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_lstiter.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_lstiter.c.s
 .PHONY : libft/ft_lstiter.c.s
 
 libft/ft_lstmap.obj: libft/ft_lstmap.c.obj
@@ -1991,7 +1991,7 @@ libft/ft_lstmap.obj: libft/ft_lstmap.c.obj
 
 # target to build an object file
 libft/ft_lstmap.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_lstmap.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_lstmap.c.obj
 .PHONY : libft/ft_lstmap.c.obj
 
 libft/ft_lstmap.i: libft/ft_lstmap.c.i
@@ -2000,7 +2000,7 @@ libft/ft_lstmap.i: libft/ft_lstmap.c.i
 
 # target to preprocess a source file
 libft/ft_lstmap.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_lstmap.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_lstmap.c.i
 .PHONY : libft/ft_lstmap.c.i
 
 libft/ft_lstmap.s: libft/ft_lstmap.c.s
@@ -2009,7 +2009,7 @@ libft/ft_lstmap.s: libft/ft_lstmap.c.s
 
 # target to generate assembly for a file
 libft/ft_lstmap.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_lstmap.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_lstmap.c.s
 .PHONY : libft/ft_lstmap.c.s
 
 libft/ft_lstnew.obj: libft/ft_lstnew.c.obj
@@ -2018,7 +2018,7 @@ libft/ft_lstnew.obj: libft/ft_lstnew.c.obj
 
 # target to build an object file
 libft/ft_lstnew.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_lstnew.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_lstnew.c.obj
 .PHONY : libft/ft_lstnew.c.obj
 
 libft/ft_lstnew.i: libft/ft_lstnew.c.i
@@ -2027,7 +2027,7 @@ libft/ft_lstnew.i: libft/ft_lstnew.c.i
 
 # target to preprocess a source file
 libft/ft_lstnew.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_lstnew.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_lstnew.c.i
 .PHONY : libft/ft_lstnew.c.i
 
 libft/ft_lstnew.s: libft/ft_lstnew.c.s
@@ -2036,7 +2036,7 @@ libft/ft_lstnew.s: libft/ft_lstnew.c.s
 
 # target to generate assembly for a file
 libft/ft_lstnew.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_lstnew.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_lstnew.c.s
 .PHONY : libft/ft_lstnew.c.s
 
 libft/ft_lstpush.obj: libft/ft_lstpush.c.obj
@@ -2045,7 +2045,7 @@ libft/ft_lstpush.obj: libft/ft_lstpush.c.obj
 
 # target to build an object file
 libft/ft_lstpush.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_lstpush.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_lstpush.c.obj
 .PHONY : libft/ft_lstpush.c.obj
 
 libft/ft_lstpush.i: libft/ft_lstpush.c.i
@@ -2054,7 +2054,7 @@ libft/ft_lstpush.i: libft/ft_lstpush.c.i
 
 # target to preprocess a source file
 libft/ft_lstpush.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_lstpush.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_lstpush.c.i
 .PHONY : libft/ft_lstpush.c.i
 
 libft/ft_lstpush.s: libft/ft_lstpush.c.s
@@ -2063,7 +2063,7 @@ libft/ft_lstpush.s: libft/ft_lstpush.c.s
 
 # target to generate assembly for a file
 libft/ft_lstpush.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_lstpush.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_lstpush.c.s
 .PHONY : libft/ft_lstpush.c.s
 
 libft/ft_memalloc.obj: libft/ft_memalloc.c.obj
@@ -2072,7 +2072,7 @@ libft/ft_memalloc.obj: libft/ft_memalloc.c.obj
 
 # target to build an object file
 libft/ft_memalloc.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_memalloc.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_memalloc.c.obj
 .PHONY : libft/ft_memalloc.c.obj
 
 libft/ft_memalloc.i: libft/ft_memalloc.c.i
@@ -2081,7 +2081,7 @@ libft/ft_memalloc.i: libft/ft_memalloc.c.i
 
 # target to preprocess a source file
 libft/ft_memalloc.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_memalloc.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_memalloc.c.i
 .PHONY : libft/ft_memalloc.c.i
 
 libft/ft_memalloc.s: libft/ft_memalloc.c.s
@@ -2090,7 +2090,7 @@ libft/ft_memalloc.s: libft/ft_memalloc.c.s
 
 # target to generate assembly for a file
 libft/ft_memalloc.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_memalloc.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_memalloc.c.s
 .PHONY : libft/ft_memalloc.c.s
 
 libft/ft_memccpy.obj: libft/ft_memccpy.c.obj
@@ -2099,7 +2099,7 @@ libft/ft_memccpy.obj: libft/ft_memccpy.c.obj
 
 # target to build an object file
 libft/ft_memccpy.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_memccpy.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_memccpy.c.obj
 .PHONY : libft/ft_memccpy.c.obj
 
 libft/ft_memccpy.i: libft/ft_memccpy.c.i
@@ -2108,7 +2108,7 @@ libft/ft_memccpy.i: libft/ft_memccpy.c.i
 
 # target to preprocess a source file
 libft/ft_memccpy.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_memccpy.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_memccpy.c.i
 .PHONY : libft/ft_memccpy.c.i
 
 libft/ft_memccpy.s: libft/ft_memccpy.c.s
@@ -2117,7 +2117,7 @@ libft/ft_memccpy.s: libft/ft_memccpy.c.s
 
 # target to generate assembly for a file
 libft/ft_memccpy.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_memccpy.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_memccpy.c.s
 .PHONY : libft/ft_memccpy.c.s
 
 libft/ft_memchr.obj: libft/ft_memchr.c.obj
@@ -2126,7 +2126,7 @@ libft/ft_memchr.obj: libft/ft_memchr.c.obj
 
 # target to build an object file
 libft/ft_memchr.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_memchr.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_memchr.c.obj
 .PHONY : libft/ft_memchr.c.obj
 
 libft/ft_memchr.i: libft/ft_memchr.c.i
@@ -2135,7 +2135,7 @@ libft/ft_memchr.i: libft/ft_memchr.c.i
 
 # target to preprocess a source file
 libft/ft_memchr.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_memchr.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_memchr.c.i
 .PHONY : libft/ft_memchr.c.i
 
 libft/ft_memchr.s: libft/ft_memchr.c.s
@@ -2144,7 +2144,7 @@ libft/ft_memchr.s: libft/ft_memchr.c.s
 
 # target to generate assembly for a file
 libft/ft_memchr.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_memchr.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_memchr.c.s
 .PHONY : libft/ft_memchr.c.s
 
 libft/ft_memcmp.obj: libft/ft_memcmp.c.obj
@@ -2153,7 +2153,7 @@ libft/ft_memcmp.obj: libft/ft_memcmp.c.obj
 
 # target to build an object file
 libft/ft_memcmp.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_memcmp.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_memcmp.c.obj
 .PHONY : libft/ft_memcmp.c.obj
 
 libft/ft_memcmp.i: libft/ft_memcmp.c.i
@@ -2162,7 +2162,7 @@ libft/ft_memcmp.i: libft/ft_memcmp.c.i
 
 # target to preprocess a source file
 libft/ft_memcmp.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_memcmp.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_memcmp.c.i
 .PHONY : libft/ft_memcmp.c.i
 
 libft/ft_memcmp.s: libft/ft_memcmp.c.s
@@ -2171,7 +2171,7 @@ libft/ft_memcmp.s: libft/ft_memcmp.c.s
 
 # target to generate assembly for a file
 libft/ft_memcmp.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_memcmp.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_memcmp.c.s
 .PHONY : libft/ft_memcmp.c.s
 
 libft/ft_memcpy.obj: libft/ft_memcpy.c.obj
@@ -2180,7 +2180,7 @@ libft/ft_memcpy.obj: libft/ft_memcpy.c.obj
 
 # target to build an object file
 libft/ft_memcpy.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_memcpy.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_memcpy.c.obj
 .PHONY : libft/ft_memcpy.c.obj
 
 libft/ft_memcpy.i: libft/ft_memcpy.c.i
@@ -2189,7 +2189,7 @@ libft/ft_memcpy.i: libft/ft_memcpy.c.i
 
 # target to preprocess a source file
 libft/ft_memcpy.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_memcpy.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_memcpy.c.i
 .PHONY : libft/ft_memcpy.c.i
 
 libft/ft_memcpy.s: libft/ft_memcpy.c.s
@@ -2198,7 +2198,7 @@ libft/ft_memcpy.s: libft/ft_memcpy.c.s
 
 # target to generate assembly for a file
 libft/ft_memcpy.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_memcpy.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_memcpy.c.s
 .PHONY : libft/ft_memcpy.c.s
 
 libft/ft_memdel.obj: libft/ft_memdel.c.obj
@@ -2207,7 +2207,7 @@ libft/ft_memdel.obj: libft/ft_memdel.c.obj
 
 # target to build an object file
 libft/ft_memdel.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_memdel.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_memdel.c.obj
 .PHONY : libft/ft_memdel.c.obj
 
 libft/ft_memdel.i: libft/ft_memdel.c.i
@@ -2216,7 +2216,7 @@ libft/ft_memdel.i: libft/ft_memdel.c.i
 
 # target to preprocess a source file
 libft/ft_memdel.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_memdel.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_memdel.c.i
 .PHONY : libft/ft_memdel.c.i
 
 libft/ft_memdel.s: libft/ft_memdel.c.s
@@ -2225,7 +2225,7 @@ libft/ft_memdel.s: libft/ft_memdel.c.s
 
 # target to generate assembly for a file
 libft/ft_memdel.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_memdel.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_memdel.c.s
 .PHONY : libft/ft_memdel.c.s
 
 libft/ft_memmove.obj: libft/ft_memmove.c.obj
@@ -2234,7 +2234,7 @@ libft/ft_memmove.obj: libft/ft_memmove.c.obj
 
 # target to build an object file
 libft/ft_memmove.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_memmove.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_memmove.c.obj
 .PHONY : libft/ft_memmove.c.obj
 
 libft/ft_memmove.i: libft/ft_memmove.c.i
@@ -2243,7 +2243,7 @@ libft/ft_memmove.i: libft/ft_memmove.c.i
 
 # target to preprocess a source file
 libft/ft_memmove.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_memmove.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_memmove.c.i
 .PHONY : libft/ft_memmove.c.i
 
 libft/ft_memmove.s: libft/ft_memmove.c.s
@@ -2252,7 +2252,7 @@ libft/ft_memmove.s: libft/ft_memmove.c.s
 
 # target to generate assembly for a file
 libft/ft_memmove.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_memmove.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_memmove.c.s
 .PHONY : libft/ft_memmove.c.s
 
 libft/ft_memset.obj: libft/ft_memset.c.obj
@@ -2261,7 +2261,7 @@ libft/ft_memset.obj: libft/ft_memset.c.obj
 
 # target to build an object file
 libft/ft_memset.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_memset.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_memset.c.obj
 .PHONY : libft/ft_memset.c.obj
 
 libft/ft_memset.i: libft/ft_memset.c.i
@@ -2270,7 +2270,7 @@ libft/ft_memset.i: libft/ft_memset.c.i
 
 # target to preprocess a source file
 libft/ft_memset.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_memset.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_memset.c.i
 .PHONY : libft/ft_memset.c.i
 
 libft/ft_memset.s: libft/ft_memset.c.s
@@ -2279,7 +2279,7 @@ libft/ft_memset.s: libft/ft_memset.c.s
 
 # target to generate assembly for a file
 libft/ft_memset.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_memset.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_memset.c.s
 .PHONY : libft/ft_memset.c.s
 
 libft/ft_pow.obj: libft/ft_pow.c.obj
@@ -2288,7 +2288,7 @@ libft/ft_pow.obj: libft/ft_pow.c.obj
 
 # target to build an object file
 libft/ft_pow.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_pow.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_pow.c.obj
 .PHONY : libft/ft_pow.c.obj
 
 libft/ft_pow.i: libft/ft_pow.c.i
@@ -2297,7 +2297,7 @@ libft/ft_pow.i: libft/ft_pow.c.i
 
 # target to preprocess a source file
 libft/ft_pow.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_pow.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_pow.c.i
 .PHONY : libft/ft_pow.c.i
 
 libft/ft_pow.s: libft/ft_pow.c.s
@@ -2306,7 +2306,7 @@ libft/ft_pow.s: libft/ft_pow.c.s
 
 # target to generate assembly for a file
 libft/ft_pow.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_pow.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_pow.c.s
 .PHONY : libft/ft_pow.c.s
 
 libft/ft_putchar.obj: libft/ft_putchar.c.obj
@@ -2315,7 +2315,7 @@ libft/ft_putchar.obj: libft/ft_putchar.c.obj
 
 # target to build an object file
 libft/ft_putchar.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_putchar.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_putchar.c.obj
 .PHONY : libft/ft_putchar.c.obj
 
 libft/ft_putchar.i: libft/ft_putchar.c.i
@@ -2324,7 +2324,7 @@ libft/ft_putchar.i: libft/ft_putchar.c.i
 
 # target to preprocess a source file
 libft/ft_putchar.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_putchar.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_putchar.c.i
 .PHONY : libft/ft_putchar.c.i
 
 libft/ft_putchar.s: libft/ft_putchar.c.s
@@ -2333,7 +2333,7 @@ libft/ft_putchar.s: libft/ft_putchar.c.s
 
 # target to generate assembly for a file
 libft/ft_putchar.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_putchar.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_putchar.c.s
 .PHONY : libft/ft_putchar.c.s
 
 libft/ft_putchar_fd.obj: libft/ft_putchar_fd.c.obj
@@ -2342,7 +2342,7 @@ libft/ft_putchar_fd.obj: libft/ft_putchar_fd.c.obj
 
 # target to build an object file
 libft/ft_putchar_fd.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_putchar_fd.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_putchar_fd.c.obj
 .PHONY : libft/ft_putchar_fd.c.obj
 
 libft/ft_putchar_fd.i: libft/ft_putchar_fd.c.i
@@ -2351,7 +2351,7 @@ libft/ft_putchar_fd.i: libft/ft_putchar_fd.c.i
 
 # target to preprocess a source file
 libft/ft_putchar_fd.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_putchar_fd.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_putchar_fd.c.i
 .PHONY : libft/ft_putchar_fd.c.i
 
 libft/ft_putchar_fd.s: libft/ft_putchar_fd.c.s
@@ -2360,7 +2360,7 @@ libft/ft_putchar_fd.s: libft/ft_putchar_fd.c.s
 
 # target to generate assembly for a file
 libft/ft_putchar_fd.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_putchar_fd.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_putchar_fd.c.s
 .PHONY : libft/ft_putchar_fd.c.s
 
 libft/ft_putendl.obj: libft/ft_putendl.c.obj
@@ -2369,7 +2369,7 @@ libft/ft_putendl.obj: libft/ft_putendl.c.obj
 
 # target to build an object file
 libft/ft_putendl.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_putendl.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_putendl.c.obj
 .PHONY : libft/ft_putendl.c.obj
 
 libft/ft_putendl.i: libft/ft_putendl.c.i
@@ -2378,7 +2378,7 @@ libft/ft_putendl.i: libft/ft_putendl.c.i
 
 # target to preprocess a source file
 libft/ft_putendl.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_putendl.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_putendl.c.i
 .PHONY : libft/ft_putendl.c.i
 
 libft/ft_putendl.s: libft/ft_putendl.c.s
@@ -2387,7 +2387,7 @@ libft/ft_putendl.s: libft/ft_putendl.c.s
 
 # target to generate assembly for a file
 libft/ft_putendl.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_putendl.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_putendl.c.s
 .PHONY : libft/ft_putendl.c.s
 
 libft/ft_putendl_fd.obj: libft/ft_putendl_fd.c.obj
@@ -2396,7 +2396,7 @@ libft/ft_putendl_fd.obj: libft/ft_putendl_fd.c.obj
 
 # target to build an object file
 libft/ft_putendl_fd.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_putendl_fd.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_putendl_fd.c.obj
 .PHONY : libft/ft_putendl_fd.c.obj
 
 libft/ft_putendl_fd.i: libft/ft_putendl_fd.c.i
@@ -2405,7 +2405,7 @@ libft/ft_putendl_fd.i: libft/ft_putendl_fd.c.i
 
 # target to preprocess a source file
 libft/ft_putendl_fd.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_putendl_fd.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_putendl_fd.c.i
 .PHONY : libft/ft_putendl_fd.c.i
 
 libft/ft_putendl_fd.s: libft/ft_putendl_fd.c.s
@@ -2414,7 +2414,7 @@ libft/ft_putendl_fd.s: libft/ft_putendl_fd.c.s
 
 # target to generate assembly for a file
 libft/ft_putendl_fd.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_putendl_fd.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_putendl_fd.c.s
 .PHONY : libft/ft_putendl_fd.c.s
 
 libft/ft_putnbr.obj: libft/ft_putnbr.c.obj
@@ -2423,7 +2423,7 @@ libft/ft_putnbr.obj: libft/ft_putnbr.c.obj
 
 # target to build an object file
 libft/ft_putnbr.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_putnbr.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_putnbr.c.obj
 .PHONY : libft/ft_putnbr.c.obj
 
 libft/ft_putnbr.i: libft/ft_putnbr.c.i
@@ -2432,7 +2432,7 @@ libft/ft_putnbr.i: libft/ft_putnbr.c.i
 
 # target to preprocess a source file
 libft/ft_putnbr.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_putnbr.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_putnbr.c.i
 .PHONY : libft/ft_putnbr.c.i
 
 libft/ft_putnbr.s: libft/ft_putnbr.c.s
@@ -2441,7 +2441,7 @@ libft/ft_putnbr.s: libft/ft_putnbr.c.s
 
 # target to generate assembly for a file
 libft/ft_putnbr.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_putnbr.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_putnbr.c.s
 .PHONY : libft/ft_putnbr.c.s
 
 libft/ft_putnbr_fd.obj: libft/ft_putnbr_fd.c.obj
@@ -2450,7 +2450,7 @@ libft/ft_putnbr_fd.obj: libft/ft_putnbr_fd.c.obj
 
 # target to build an object file
 libft/ft_putnbr_fd.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_putnbr_fd.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_putnbr_fd.c.obj
 .PHONY : libft/ft_putnbr_fd.c.obj
 
 libft/ft_putnbr_fd.i: libft/ft_putnbr_fd.c.i
@@ -2459,7 +2459,7 @@ libft/ft_putnbr_fd.i: libft/ft_putnbr_fd.c.i
 
 # target to preprocess a source file
 libft/ft_putnbr_fd.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_putnbr_fd.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_putnbr_fd.c.i
 .PHONY : libft/ft_putnbr_fd.c.i
 
 libft/ft_putnbr_fd.s: libft/ft_putnbr_fd.c.s
@@ -2468,7 +2468,7 @@ libft/ft_putnbr_fd.s: libft/ft_putnbr_fd.c.s
 
 # target to generate assembly for a file
 libft/ft_putnbr_fd.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_putnbr_fd.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_putnbr_fd.c.s
 .PHONY : libft/ft_putnbr_fd.c.s
 
 libft/ft_putstr.obj: libft/ft_putstr.c.obj
@@ -2477,7 +2477,7 @@ libft/ft_putstr.obj: libft/ft_putstr.c.obj
 
 # target to build an object file
 libft/ft_putstr.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_putstr.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_putstr.c.obj
 .PHONY : libft/ft_putstr.c.obj
 
 libft/ft_putstr.i: libft/ft_putstr.c.i
@@ -2486,7 +2486,7 @@ libft/ft_putstr.i: libft/ft_putstr.c.i
 
 # target to preprocess a source file
 libft/ft_putstr.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_putstr.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_putstr.c.i
 .PHONY : libft/ft_putstr.c.i
 
 libft/ft_putstr.s: libft/ft_putstr.c.s
@@ -2495,7 +2495,7 @@ libft/ft_putstr.s: libft/ft_putstr.c.s
 
 # target to generate assembly for a file
 libft/ft_putstr.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_putstr.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_putstr.c.s
 .PHONY : libft/ft_putstr.c.s
 
 libft/ft_putstr_fd.obj: libft/ft_putstr_fd.c.obj
@@ -2504,7 +2504,7 @@ libft/ft_putstr_fd.obj: libft/ft_putstr_fd.c.obj
 
 # target to build an object file
 libft/ft_putstr_fd.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_putstr_fd.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_putstr_fd.c.obj
 .PHONY : libft/ft_putstr_fd.c.obj
 
 libft/ft_putstr_fd.i: libft/ft_putstr_fd.c.i
@@ -2513,7 +2513,7 @@ libft/ft_putstr_fd.i: libft/ft_putstr_fd.c.i
 
 # target to preprocess a source file
 libft/ft_putstr_fd.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_putstr_fd.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_putstr_fd.c.i
 .PHONY : libft/ft_putstr_fd.c.i
 
 libft/ft_putstr_fd.s: libft/ft_putstr_fd.c.s
@@ -2522,7 +2522,7 @@ libft/ft_putstr_fd.s: libft/ft_putstr_fd.c.s
 
 # target to generate assembly for a file
 libft/ft_putstr_fd.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_putstr_fd.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_putstr_fd.c.s
 .PHONY : libft/ft_putstr_fd.c.s
 
 libft/ft_reverse.obj: libft/ft_reverse.c.obj
@@ -2531,7 +2531,7 @@ libft/ft_reverse.obj: libft/ft_reverse.c.obj
 
 # target to build an object file
 libft/ft_reverse.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_reverse.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_reverse.c.obj
 .PHONY : libft/ft_reverse.c.obj
 
 libft/ft_reverse.i: libft/ft_reverse.c.i
@@ -2540,7 +2540,7 @@ libft/ft_reverse.i: libft/ft_reverse.c.i
 
 # target to preprocess a source file
 libft/ft_reverse.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_reverse.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_reverse.c.i
 .PHONY : libft/ft_reverse.c.i
 
 libft/ft_reverse.s: libft/ft_reverse.c.s
@@ -2549,7 +2549,7 @@ libft/ft_reverse.s: libft/ft_reverse.c.s
 
 # target to generate assembly for a file
 libft/ft_reverse.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_reverse.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_reverse.c.s
 .PHONY : libft/ft_reverse.c.s
 
 libft/ft_sqrt.obj: libft/ft_sqrt.c.obj
@@ -2558,7 +2558,7 @@ libft/ft_sqrt.obj: libft/ft_sqrt.c.obj
 
 # target to build an object file
 libft/ft_sqrt.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_sqrt.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_sqrt.c.obj
 .PHONY : libft/ft_sqrt.c.obj
 
 libft/ft_sqrt.i: libft/ft_sqrt.c.i
@@ -2567,7 +2567,7 @@ libft/ft_sqrt.i: libft/ft_sqrt.c.i
 
 # target to preprocess a source file
 libft/ft_sqrt.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_sqrt.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_sqrt.c.i
 .PHONY : libft/ft_sqrt.c.i
 
 libft/ft_sqrt.s: libft/ft_sqrt.c.s
@@ -2576,7 +2576,7 @@ libft/ft_sqrt.s: libft/ft_sqrt.c.s
 
 # target to generate assembly for a file
 libft/ft_sqrt.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_sqrt.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_sqrt.c.s
 .PHONY : libft/ft_sqrt.c.s
 
 libft/ft_sstrchr.obj: libft/ft_sstrchr.c.obj
@@ -2585,7 +2585,7 @@ libft/ft_sstrchr.obj: libft/ft_sstrchr.c.obj
 
 # target to build an object file
 libft/ft_sstrchr.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_sstrchr.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_sstrchr.c.obj
 .PHONY : libft/ft_sstrchr.c.obj
 
 libft/ft_sstrchr.i: libft/ft_sstrchr.c.i
@@ -2594,7 +2594,7 @@ libft/ft_sstrchr.i: libft/ft_sstrchr.c.i
 
 # target to preprocess a source file
 libft/ft_sstrchr.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_sstrchr.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_sstrchr.c.i
 .PHONY : libft/ft_sstrchr.c.i
 
 libft/ft_sstrchr.s: libft/ft_sstrchr.c.s
@@ -2603,7 +2603,7 @@ libft/ft_sstrchr.s: libft/ft_sstrchr.c.s
 
 # target to generate assembly for a file
 libft/ft_sstrchr.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_sstrchr.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_sstrchr.c.s
 .PHONY : libft/ft_sstrchr.c.s
 
 libft/ft_strcat.obj: libft/ft_strcat.c.obj
@@ -2612,7 +2612,7 @@ libft/ft_strcat.obj: libft/ft_strcat.c.obj
 
 # target to build an object file
 libft/ft_strcat.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_strcat.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_strcat.c.obj
 .PHONY : libft/ft_strcat.c.obj
 
 libft/ft_strcat.i: libft/ft_strcat.c.i
@@ -2621,7 +2621,7 @@ libft/ft_strcat.i: libft/ft_strcat.c.i
 
 # target to preprocess a source file
 libft/ft_strcat.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_strcat.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_strcat.c.i
 .PHONY : libft/ft_strcat.c.i
 
 libft/ft_strcat.s: libft/ft_strcat.c.s
@@ -2630,7 +2630,7 @@ libft/ft_strcat.s: libft/ft_strcat.c.s
 
 # target to generate assembly for a file
 libft/ft_strcat.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_strcat.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_strcat.c.s
 .PHONY : libft/ft_strcat.c.s
 
 libft/ft_strchr.obj: libft/ft_strchr.c.obj
@@ -2639,7 +2639,7 @@ libft/ft_strchr.obj: libft/ft_strchr.c.obj
 
 # target to build an object file
 libft/ft_strchr.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_strchr.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_strchr.c.obj
 .PHONY : libft/ft_strchr.c.obj
 
 libft/ft_strchr.i: libft/ft_strchr.c.i
@@ -2648,7 +2648,7 @@ libft/ft_strchr.i: libft/ft_strchr.c.i
 
 # target to preprocess a source file
 libft/ft_strchr.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_strchr.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_strchr.c.i
 .PHONY : libft/ft_strchr.c.i
 
 libft/ft_strchr.s: libft/ft_strchr.c.s
@@ -2657,7 +2657,7 @@ libft/ft_strchr.s: libft/ft_strchr.c.s
 
 # target to generate assembly for a file
 libft/ft_strchr.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_strchr.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_strchr.c.s
 .PHONY : libft/ft_strchr.c.s
 
 libft/ft_strclr.obj: libft/ft_strclr.c.obj
@@ -2666,7 +2666,7 @@ libft/ft_strclr.obj: libft/ft_strclr.c.obj
 
 # target to build an object file
 libft/ft_strclr.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_strclr.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_strclr.c.obj
 .PHONY : libft/ft_strclr.c.obj
 
 libft/ft_strclr.i: libft/ft_strclr.c.i
@@ -2675,7 +2675,7 @@ libft/ft_strclr.i: libft/ft_strclr.c.i
 
 # target to preprocess a source file
 libft/ft_strclr.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_strclr.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_strclr.c.i
 .PHONY : libft/ft_strclr.c.i
 
 libft/ft_strclr.s: libft/ft_strclr.c.s
@@ -2684,7 +2684,7 @@ libft/ft_strclr.s: libft/ft_strclr.c.s
 
 # target to generate assembly for a file
 libft/ft_strclr.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_strclr.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_strclr.c.s
 .PHONY : libft/ft_strclr.c.s
 
 libft/ft_strcmp.obj: libft/ft_strcmp.c.obj
@@ -2693,7 +2693,7 @@ libft/ft_strcmp.obj: libft/ft_strcmp.c.obj
 
 # target to build an object file
 libft/ft_strcmp.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_strcmp.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_strcmp.c.obj
 .PHONY : libft/ft_strcmp.c.obj
 
 libft/ft_strcmp.i: libft/ft_strcmp.c.i
@@ -2702,7 +2702,7 @@ libft/ft_strcmp.i: libft/ft_strcmp.c.i
 
 # target to preprocess a source file
 libft/ft_strcmp.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_strcmp.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_strcmp.c.i
 .PHONY : libft/ft_strcmp.c.i
 
 libft/ft_strcmp.s: libft/ft_strcmp.c.s
@@ -2711,7 +2711,7 @@ libft/ft_strcmp.s: libft/ft_strcmp.c.s
 
 # target to generate assembly for a file
 libft/ft_strcmp.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_strcmp.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_strcmp.c.s
 .PHONY : libft/ft_strcmp.c.s
 
 libft/ft_strcpy.obj: libft/ft_strcpy.c.obj
@@ -2720,7 +2720,7 @@ libft/ft_strcpy.obj: libft/ft_strcpy.c.obj
 
 # target to build an object file
 libft/ft_strcpy.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_strcpy.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_strcpy.c.obj
 .PHONY : libft/ft_strcpy.c.obj
 
 libft/ft_strcpy.i: libft/ft_strcpy.c.i
@@ -2729,7 +2729,7 @@ libft/ft_strcpy.i: libft/ft_strcpy.c.i
 
 # target to preprocess a source file
 libft/ft_strcpy.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_strcpy.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_strcpy.c.i
 .PHONY : libft/ft_strcpy.c.i
 
 libft/ft_strcpy.s: libft/ft_strcpy.c.s
@@ -2738,7 +2738,7 @@ libft/ft_strcpy.s: libft/ft_strcpy.c.s
 
 # target to generate assembly for a file
 libft/ft_strcpy.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_strcpy.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_strcpy.c.s
 .PHONY : libft/ft_strcpy.c.s
 
 libft/ft_strdel.obj: libft/ft_strdel.c.obj
@@ -2747,7 +2747,7 @@ libft/ft_strdel.obj: libft/ft_strdel.c.obj
 
 # target to build an object file
 libft/ft_strdel.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_strdel.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_strdel.c.obj
 .PHONY : libft/ft_strdel.c.obj
 
 libft/ft_strdel.i: libft/ft_strdel.c.i
@@ -2756,7 +2756,7 @@ libft/ft_strdel.i: libft/ft_strdel.c.i
 
 # target to preprocess a source file
 libft/ft_strdel.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_strdel.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_strdel.c.i
 .PHONY : libft/ft_strdel.c.i
 
 libft/ft_strdel.s: libft/ft_strdel.c.s
@@ -2765,7 +2765,7 @@ libft/ft_strdel.s: libft/ft_strdel.c.s
 
 # target to generate assembly for a file
 libft/ft_strdel.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_strdel.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_strdel.c.s
 .PHONY : libft/ft_strdel.c.s
 
 libft/ft_strdup.obj: libft/ft_strdup.c.obj
@@ -2774,7 +2774,7 @@ libft/ft_strdup.obj: libft/ft_strdup.c.obj
 
 # target to build an object file
 libft/ft_strdup.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_strdup.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_strdup.c.obj
 .PHONY : libft/ft_strdup.c.obj
 
 libft/ft_strdup.i: libft/ft_strdup.c.i
@@ -2783,7 +2783,7 @@ libft/ft_strdup.i: libft/ft_strdup.c.i
 
 # target to preprocess a source file
 libft/ft_strdup.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_strdup.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_strdup.c.i
 .PHONY : libft/ft_strdup.c.i
 
 libft/ft_strdup.s: libft/ft_strdup.c.s
@@ -2792,7 +2792,7 @@ libft/ft_strdup.s: libft/ft_strdup.c.s
 
 # target to generate assembly for a file
 libft/ft_strdup.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_strdup.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_strdup.c.s
 .PHONY : libft/ft_strdup.c.s
 
 libft/ft_strequ.obj: libft/ft_strequ.c.obj
@@ -2801,7 +2801,7 @@ libft/ft_strequ.obj: libft/ft_strequ.c.obj
 
 # target to build an object file
 libft/ft_strequ.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_strequ.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_strequ.c.obj
 .PHONY : libft/ft_strequ.c.obj
 
 libft/ft_strequ.i: libft/ft_strequ.c.i
@@ -2810,7 +2810,7 @@ libft/ft_strequ.i: libft/ft_strequ.c.i
 
 # target to preprocess a source file
 libft/ft_strequ.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_strequ.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_strequ.c.i
 .PHONY : libft/ft_strequ.c.i
 
 libft/ft_strequ.s: libft/ft_strequ.c.s
@@ -2819,7 +2819,7 @@ libft/ft_strequ.s: libft/ft_strequ.c.s
 
 # target to generate assembly for a file
 libft/ft_strequ.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_strequ.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_strequ.c.s
 .PHONY : libft/ft_strequ.c.s
 
 libft/ft_striter.obj: libft/ft_striter.c.obj
@@ -2828,7 +2828,7 @@ libft/ft_striter.obj: libft/ft_striter.c.obj
 
 # target to build an object file
 libft/ft_striter.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_striter.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_striter.c.obj
 .PHONY : libft/ft_striter.c.obj
 
 libft/ft_striter.i: libft/ft_striter.c.i
@@ -2837,7 +2837,7 @@ libft/ft_striter.i: libft/ft_striter.c.i
 
 # target to preprocess a source file
 libft/ft_striter.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_striter.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_striter.c.i
 .PHONY : libft/ft_striter.c.i
 
 libft/ft_striter.s: libft/ft_striter.c.s
@@ -2846,7 +2846,7 @@ libft/ft_striter.s: libft/ft_striter.c.s
 
 # target to generate assembly for a file
 libft/ft_striter.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_striter.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_striter.c.s
 .PHONY : libft/ft_striter.c.s
 
 libft/ft_striteri.obj: libft/ft_striteri.c.obj
@@ -2855,7 +2855,7 @@ libft/ft_striteri.obj: libft/ft_striteri.c.obj
 
 # target to build an object file
 libft/ft_striteri.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_striteri.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_striteri.c.obj
 .PHONY : libft/ft_striteri.c.obj
 
 libft/ft_striteri.i: libft/ft_striteri.c.i
@@ -2864,7 +2864,7 @@ libft/ft_striteri.i: libft/ft_striteri.c.i
 
 # target to preprocess a source file
 libft/ft_striteri.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_striteri.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_striteri.c.i
 .PHONY : libft/ft_striteri.c.i
 
 libft/ft_striteri.s: libft/ft_striteri.c.s
@@ -2873,7 +2873,7 @@ libft/ft_striteri.s: libft/ft_striteri.c.s
 
 # target to generate assembly for a file
 libft/ft_striteri.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_striteri.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_striteri.c.s
 .PHONY : libft/ft_striteri.c.s
 
 libft/ft_strjoin.obj: libft/ft_strjoin.c.obj
@@ -2882,7 +2882,7 @@ libft/ft_strjoin.obj: libft/ft_strjoin.c.obj
 
 # target to build an object file
 libft/ft_strjoin.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_strjoin.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_strjoin.c.obj
 .PHONY : libft/ft_strjoin.c.obj
 
 libft/ft_strjoin.i: libft/ft_strjoin.c.i
@@ -2891,7 +2891,7 @@ libft/ft_strjoin.i: libft/ft_strjoin.c.i
 
 # target to preprocess a source file
 libft/ft_strjoin.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_strjoin.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_strjoin.c.i
 .PHONY : libft/ft_strjoin.c.i
 
 libft/ft_strjoin.s: libft/ft_strjoin.c.s
@@ -2900,7 +2900,7 @@ libft/ft_strjoin.s: libft/ft_strjoin.c.s
 
 # target to generate assembly for a file
 libft/ft_strjoin.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_strjoin.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_strjoin.c.s
 .PHONY : libft/ft_strjoin.c.s
 
 libft/ft_strjoinre.obj: libft/ft_strjoinre.c.obj
@@ -2909,7 +2909,7 @@ libft/ft_strjoinre.obj: libft/ft_strjoinre.c.obj
 
 # target to build an object file
 libft/ft_strjoinre.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_strjoinre.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_strjoinre.c.obj
 .PHONY : libft/ft_strjoinre.c.obj
 
 libft/ft_strjoinre.i: libft/ft_strjoinre.c.i
@@ -2918,7 +2918,7 @@ libft/ft_strjoinre.i: libft/ft_strjoinre.c.i
 
 # target to preprocess a source file
 libft/ft_strjoinre.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_strjoinre.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_strjoinre.c.i
 .PHONY : libft/ft_strjoinre.c.i
 
 libft/ft_strjoinre.s: libft/ft_strjoinre.c.s
@@ -2927,7 +2927,7 @@ libft/ft_strjoinre.s: libft/ft_strjoinre.c.s
 
 # target to generate assembly for a file
 libft/ft_strjoinre.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_strjoinre.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_strjoinre.c.s
 .PHONY : libft/ft_strjoinre.c.s
 
 libft/ft_strlcat.obj: libft/ft_strlcat.c.obj
@@ -2936,7 +2936,7 @@ libft/ft_strlcat.obj: libft/ft_strlcat.c.obj
 
 # target to build an object file
 libft/ft_strlcat.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_strlcat.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_strlcat.c.obj
 .PHONY : libft/ft_strlcat.c.obj
 
 libft/ft_strlcat.i: libft/ft_strlcat.c.i
@@ -2945,7 +2945,7 @@ libft/ft_strlcat.i: libft/ft_strlcat.c.i
 
 # target to preprocess a source file
 libft/ft_strlcat.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_strlcat.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_strlcat.c.i
 .PHONY : libft/ft_strlcat.c.i
 
 libft/ft_strlcat.s: libft/ft_strlcat.c.s
@@ -2954,7 +2954,7 @@ libft/ft_strlcat.s: libft/ft_strlcat.c.s
 
 # target to generate assembly for a file
 libft/ft_strlcat.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_strlcat.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_strlcat.c.s
 .PHONY : libft/ft_strlcat.c.s
 
 libft/ft_strlcpy.obj: libft/ft_strlcpy.c.obj
@@ -2963,7 +2963,7 @@ libft/ft_strlcpy.obj: libft/ft_strlcpy.c.obj
 
 # target to build an object file
 libft/ft_strlcpy.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_strlcpy.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_strlcpy.c.obj
 .PHONY : libft/ft_strlcpy.c.obj
 
 libft/ft_strlcpy.i: libft/ft_strlcpy.c.i
@@ -2972,7 +2972,7 @@ libft/ft_strlcpy.i: libft/ft_strlcpy.c.i
 
 # target to preprocess a source file
 libft/ft_strlcpy.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_strlcpy.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_strlcpy.c.i
 .PHONY : libft/ft_strlcpy.c.i
 
 libft/ft_strlcpy.s: libft/ft_strlcpy.c.s
@@ -2981,7 +2981,7 @@ libft/ft_strlcpy.s: libft/ft_strlcpy.c.s
 
 # target to generate assembly for a file
 libft/ft_strlcpy.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_strlcpy.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_strlcpy.c.s
 .PHONY : libft/ft_strlcpy.c.s
 
 libft/ft_strlen.obj: libft/ft_strlen.c.obj
@@ -2990,7 +2990,7 @@ libft/ft_strlen.obj: libft/ft_strlen.c.obj
 
 # target to build an object file
 libft/ft_strlen.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_strlen.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_strlen.c.obj
 .PHONY : libft/ft_strlen.c.obj
 
 libft/ft_strlen.i: libft/ft_strlen.c.i
@@ -2999,7 +2999,7 @@ libft/ft_strlen.i: libft/ft_strlen.c.i
 
 # target to preprocess a source file
 libft/ft_strlen.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_strlen.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_strlen.c.i
 .PHONY : libft/ft_strlen.c.i
 
 libft/ft_strlen.s: libft/ft_strlen.c.s
@@ -3008,7 +3008,7 @@ libft/ft_strlen.s: libft/ft_strlen.c.s
 
 # target to generate assembly for a file
 libft/ft_strlen.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_strlen.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_strlen.c.s
 .PHONY : libft/ft_strlen.c.s
 
 libft/ft_strmap.obj: libft/ft_strmap.c.obj
@@ -3017,7 +3017,7 @@ libft/ft_strmap.obj: libft/ft_strmap.c.obj
 
 # target to build an object file
 libft/ft_strmap.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_strmap.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_strmap.c.obj
 .PHONY : libft/ft_strmap.c.obj
 
 libft/ft_strmap.i: libft/ft_strmap.c.i
@@ -3026,7 +3026,7 @@ libft/ft_strmap.i: libft/ft_strmap.c.i
 
 # target to preprocess a source file
 libft/ft_strmap.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_strmap.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_strmap.c.i
 .PHONY : libft/ft_strmap.c.i
 
 libft/ft_strmap.s: libft/ft_strmap.c.s
@@ -3035,7 +3035,7 @@ libft/ft_strmap.s: libft/ft_strmap.c.s
 
 # target to generate assembly for a file
 libft/ft_strmap.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_strmap.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_strmap.c.s
 .PHONY : libft/ft_strmap.c.s
 
 libft/ft_strmapi.obj: libft/ft_strmapi.c.obj
@@ -3044,7 +3044,7 @@ libft/ft_strmapi.obj: libft/ft_strmapi.c.obj
 
 # target to build an object file
 libft/ft_strmapi.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_strmapi.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_strmapi.c.obj
 .PHONY : libft/ft_strmapi.c.obj
 
 libft/ft_strmapi.i: libft/ft_strmapi.c.i
@@ -3053,7 +3053,7 @@ libft/ft_strmapi.i: libft/ft_strmapi.c.i
 
 # target to preprocess a source file
 libft/ft_strmapi.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_strmapi.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_strmapi.c.i
 .PHONY : libft/ft_strmapi.c.i
 
 libft/ft_strmapi.s: libft/ft_strmapi.c.s
@@ -3062,7 +3062,7 @@ libft/ft_strmapi.s: libft/ft_strmapi.c.s
 
 # target to generate assembly for a file
 libft/ft_strmapi.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_strmapi.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_strmapi.c.s
 .PHONY : libft/ft_strmapi.c.s
 
 libft/ft_strncat.obj: libft/ft_strncat.c.obj
@@ -3071,7 +3071,7 @@ libft/ft_strncat.obj: libft/ft_strncat.c.obj
 
 # target to build an object file
 libft/ft_strncat.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_strncat.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_strncat.c.obj
 .PHONY : libft/ft_strncat.c.obj
 
 libft/ft_strncat.i: libft/ft_strncat.c.i
@@ -3080,7 +3080,7 @@ libft/ft_strncat.i: libft/ft_strncat.c.i
 
 # target to preprocess a source file
 libft/ft_strncat.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_strncat.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_strncat.c.i
 .PHONY : libft/ft_strncat.c.i
 
 libft/ft_strncat.s: libft/ft_strncat.c.s
@@ -3089,7 +3089,7 @@ libft/ft_strncat.s: libft/ft_strncat.c.s
 
 # target to generate assembly for a file
 libft/ft_strncat.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_strncat.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_strncat.c.s
 .PHONY : libft/ft_strncat.c.s
 
 libft/ft_strncmp.obj: libft/ft_strncmp.c.obj
@@ -3098,7 +3098,7 @@ libft/ft_strncmp.obj: libft/ft_strncmp.c.obj
 
 # target to build an object file
 libft/ft_strncmp.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_strncmp.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_strncmp.c.obj
 .PHONY : libft/ft_strncmp.c.obj
 
 libft/ft_strncmp.i: libft/ft_strncmp.c.i
@@ -3107,7 +3107,7 @@ libft/ft_strncmp.i: libft/ft_strncmp.c.i
 
 # target to preprocess a source file
 libft/ft_strncmp.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_strncmp.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_strncmp.c.i
 .PHONY : libft/ft_strncmp.c.i
 
 libft/ft_strncmp.s: libft/ft_strncmp.c.s
@@ -3116,7 +3116,7 @@ libft/ft_strncmp.s: libft/ft_strncmp.c.s
 
 # target to generate assembly for a file
 libft/ft_strncmp.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_strncmp.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_strncmp.c.s
 .PHONY : libft/ft_strncmp.c.s
 
 libft/ft_strncpy.obj: libft/ft_strncpy.c.obj
@@ -3125,7 +3125,7 @@ libft/ft_strncpy.obj: libft/ft_strncpy.c.obj
 
 # target to build an object file
 libft/ft_strncpy.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_strncpy.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_strncpy.c.obj
 .PHONY : libft/ft_strncpy.c.obj
 
 libft/ft_strncpy.i: libft/ft_strncpy.c.i
@@ -3134,7 +3134,7 @@ libft/ft_strncpy.i: libft/ft_strncpy.c.i
 
 # target to preprocess a source file
 libft/ft_strncpy.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_strncpy.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_strncpy.c.i
 .PHONY : libft/ft_strncpy.c.i
 
 libft/ft_strncpy.s: libft/ft_strncpy.c.s
@@ -3143,7 +3143,7 @@ libft/ft_strncpy.s: libft/ft_strncpy.c.s
 
 # target to generate assembly for a file
 libft/ft_strncpy.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_strncpy.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_strncpy.c.s
 .PHONY : libft/ft_strncpy.c.s
 
 libft/ft_strndup.obj: libft/ft_strndup.c.obj
@@ -3152,7 +3152,7 @@ libft/ft_strndup.obj: libft/ft_strndup.c.obj
 
 # target to build an object file
 libft/ft_strndup.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_strndup.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_strndup.c.obj
 .PHONY : libft/ft_strndup.c.obj
 
 libft/ft_strndup.i: libft/ft_strndup.c.i
@@ -3161,7 +3161,7 @@ libft/ft_strndup.i: libft/ft_strndup.c.i
 
 # target to preprocess a source file
 libft/ft_strndup.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_strndup.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_strndup.c.i
 .PHONY : libft/ft_strndup.c.i
 
 libft/ft_strndup.s: libft/ft_strndup.c.s
@@ -3170,7 +3170,7 @@ libft/ft_strndup.s: libft/ft_strndup.c.s
 
 # target to generate assembly for a file
 libft/ft_strndup.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_strndup.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_strndup.c.s
 .PHONY : libft/ft_strndup.c.s
 
 libft/ft_strnequ.obj: libft/ft_strnequ.c.obj
@@ -3179,7 +3179,7 @@ libft/ft_strnequ.obj: libft/ft_strnequ.c.obj
 
 # target to build an object file
 libft/ft_strnequ.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_strnequ.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_strnequ.c.obj
 .PHONY : libft/ft_strnequ.c.obj
 
 libft/ft_strnequ.i: libft/ft_strnequ.c.i
@@ -3188,7 +3188,7 @@ libft/ft_strnequ.i: libft/ft_strnequ.c.i
 
 # target to preprocess a source file
 libft/ft_strnequ.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_strnequ.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_strnequ.c.i
 .PHONY : libft/ft_strnequ.c.i
 
 libft/ft_strnequ.s: libft/ft_strnequ.c.s
@@ -3197,7 +3197,7 @@ libft/ft_strnequ.s: libft/ft_strnequ.c.s
 
 # target to generate assembly for a file
 libft/ft_strnequ.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_strnequ.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_strnequ.c.s
 .PHONY : libft/ft_strnequ.c.s
 
 libft/ft_strnew.obj: libft/ft_strnew.c.obj
@@ -3206,7 +3206,7 @@ libft/ft_strnew.obj: libft/ft_strnew.c.obj
 
 # target to build an object file
 libft/ft_strnew.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_strnew.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_strnew.c.obj
 .PHONY : libft/ft_strnew.c.obj
 
 libft/ft_strnew.i: libft/ft_strnew.c.i
@@ -3215,7 +3215,7 @@ libft/ft_strnew.i: libft/ft_strnew.c.i
 
 # target to preprocess a source file
 libft/ft_strnew.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_strnew.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_strnew.c.i
 .PHONY : libft/ft_strnew.c.i
 
 libft/ft_strnew.s: libft/ft_strnew.c.s
@@ -3224,7 +3224,7 @@ libft/ft_strnew.s: libft/ft_strnew.c.s
 
 # target to generate assembly for a file
 libft/ft_strnew.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_strnew.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_strnew.c.s
 .PHONY : libft/ft_strnew.c.s
 
 libft/ft_strnstr.obj: libft/ft_strnstr.c.obj
@@ -3233,7 +3233,7 @@ libft/ft_strnstr.obj: libft/ft_strnstr.c.obj
 
 # target to build an object file
 libft/ft_strnstr.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_strnstr.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_strnstr.c.obj
 .PHONY : libft/ft_strnstr.c.obj
 
 libft/ft_strnstr.i: libft/ft_strnstr.c.i
@@ -3242,7 +3242,7 @@ libft/ft_strnstr.i: libft/ft_strnstr.c.i
 
 # target to preprocess a source file
 libft/ft_strnstr.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_strnstr.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_strnstr.c.i
 .PHONY : libft/ft_strnstr.c.i
 
 libft/ft_strnstr.s: libft/ft_strnstr.c.s
@@ -3251,7 +3251,7 @@ libft/ft_strnstr.s: libft/ft_strnstr.c.s
 
 # target to generate assembly for a file
 libft/ft_strnstr.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_strnstr.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_strnstr.c.s
 .PHONY : libft/ft_strnstr.c.s
 
 libft/ft_strrchr.obj: libft/ft_strrchr.c.obj
@@ -3260,7 +3260,7 @@ libft/ft_strrchr.obj: libft/ft_strrchr.c.obj
 
 # target to build an object file
 libft/ft_strrchr.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_strrchr.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_strrchr.c.obj
 .PHONY : libft/ft_strrchr.c.obj
 
 libft/ft_strrchr.i: libft/ft_strrchr.c.i
@@ -3269,7 +3269,7 @@ libft/ft_strrchr.i: libft/ft_strrchr.c.i
 
 # target to preprocess a source file
 libft/ft_strrchr.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_strrchr.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_strrchr.c.i
 .PHONY : libft/ft_strrchr.c.i
 
 libft/ft_strrchr.s: libft/ft_strrchr.c.s
@@ -3278,7 +3278,7 @@ libft/ft_strrchr.s: libft/ft_strrchr.c.s
 
 # target to generate assembly for a file
 libft/ft_strrchr.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_strrchr.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_strrchr.c.s
 .PHONY : libft/ft_strrchr.c.s
 
 libft/ft_strsplit.obj: libft/ft_strsplit.c.obj
@@ -3287,7 +3287,7 @@ libft/ft_strsplit.obj: libft/ft_strsplit.c.obj
 
 # target to build an object file
 libft/ft_strsplit.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_strsplit.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_strsplit.c.obj
 .PHONY : libft/ft_strsplit.c.obj
 
 libft/ft_strsplit.i: libft/ft_strsplit.c.i
@@ -3296,7 +3296,7 @@ libft/ft_strsplit.i: libft/ft_strsplit.c.i
 
 # target to preprocess a source file
 libft/ft_strsplit.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_strsplit.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_strsplit.c.i
 .PHONY : libft/ft_strsplit.c.i
 
 libft/ft_strsplit.s: libft/ft_strsplit.c.s
@@ -3305,7 +3305,7 @@ libft/ft_strsplit.s: libft/ft_strsplit.c.s
 
 # target to generate assembly for a file
 libft/ft_strsplit.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_strsplit.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_strsplit.c.s
 .PHONY : libft/ft_strsplit.c.s
 
 libft/ft_strstr.obj: libft/ft_strstr.c.obj
@@ -3314,7 +3314,7 @@ libft/ft_strstr.obj: libft/ft_strstr.c.obj
 
 # target to build an object file
 libft/ft_strstr.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_strstr.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_strstr.c.obj
 .PHONY : libft/ft_strstr.c.obj
 
 libft/ft_strstr.i: libft/ft_strstr.c.i
@@ -3323,7 +3323,7 @@ libft/ft_strstr.i: libft/ft_strstr.c.i
 
 # target to preprocess a source file
 libft/ft_strstr.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_strstr.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_strstr.c.i
 .PHONY : libft/ft_strstr.c.i
 
 libft/ft_strstr.s: libft/ft_strstr.c.s
@@ -3332,7 +3332,7 @@ libft/ft_strstr.s: libft/ft_strstr.c.s
 
 # target to generate assembly for a file
 libft/ft_strstr.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_strstr.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_strstr.c.s
 .PHONY : libft/ft_strstr.c.s
 
 libft/ft_strsub.obj: libft/ft_strsub.c.obj
@@ -3341,7 +3341,7 @@ libft/ft_strsub.obj: libft/ft_strsub.c.obj
 
 # target to build an object file
 libft/ft_strsub.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_strsub.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_strsub.c.obj
 .PHONY : libft/ft_strsub.c.obj
 
 libft/ft_strsub.i: libft/ft_strsub.c.i
@@ -3350,7 +3350,7 @@ libft/ft_strsub.i: libft/ft_strsub.c.i
 
 # target to preprocess a source file
 libft/ft_strsub.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_strsub.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_strsub.c.i
 .PHONY : libft/ft_strsub.c.i
 
 libft/ft_strsub.s: libft/ft_strsub.c.s
@@ -3359,7 +3359,7 @@ libft/ft_strsub.s: libft/ft_strsub.c.s
 
 # target to generate assembly for a file
 libft/ft_strsub.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_strsub.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_strsub.c.s
 .PHONY : libft/ft_strsub.c.s
 
 libft/ft_strtrim.obj: libft/ft_strtrim.c.obj
@@ -3368,7 +3368,7 @@ libft/ft_strtrim.obj: libft/ft_strtrim.c.obj
 
 # target to build an object file
 libft/ft_strtrim.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_strtrim.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_strtrim.c.obj
 .PHONY : libft/ft_strtrim.c.obj
 
 libft/ft_strtrim.i: libft/ft_strtrim.c.i
@@ -3377,7 +3377,7 @@ libft/ft_strtrim.i: libft/ft_strtrim.c.i
 
 # target to preprocess a source file
 libft/ft_strtrim.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_strtrim.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_strtrim.c.i
 .PHONY : libft/ft_strtrim.c.i
 
 libft/ft_strtrim.s: libft/ft_strtrim.c.s
@@ -3386,7 +3386,7 @@ libft/ft_strtrim.s: libft/ft_strtrim.c.s
 
 # target to generate assembly for a file
 libft/ft_strtrim.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_strtrim.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_strtrim.c.s
 .PHONY : libft/ft_strtrim.c.s
 
 libft/ft_tolower.obj: libft/ft_tolower.c.obj
@@ -3395,7 +3395,7 @@ libft/ft_tolower.obj: libft/ft_tolower.c.obj
 
 # target to build an object file
 libft/ft_tolower.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_tolower.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_tolower.c.obj
 .PHONY : libft/ft_tolower.c.obj
 
 libft/ft_tolower.i: libft/ft_tolower.c.i
@@ -3404,7 +3404,7 @@ libft/ft_tolower.i: libft/ft_tolower.c.i
 
 # target to preprocess a source file
 libft/ft_tolower.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_tolower.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_tolower.c.i
 .PHONY : libft/ft_tolower.c.i
 
 libft/ft_tolower.s: libft/ft_tolower.c.s
@@ -3413,7 +3413,7 @@ libft/ft_tolower.s: libft/ft_tolower.c.s
 
 # target to generate assembly for a file
 libft/ft_tolower.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_tolower.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_tolower.c.s
 .PHONY : libft/ft_tolower.c.s
 
 libft/ft_toupper.obj: libft/ft_toupper.c.obj
@@ -3422,7 +3422,7 @@ libft/ft_toupper.obj: libft/ft_toupper.c.obj
 
 # target to build an object file
 libft/ft_toupper.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_toupper.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_toupper.c.obj
 .PHONY : libft/ft_toupper.c.obj
 
 libft/ft_toupper.i: libft/ft_toupper.c.i
@@ -3431,7 +3431,7 @@ libft/ft_toupper.i: libft/ft_toupper.c.i
 
 # target to preprocess a source file
 libft/ft_toupper.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_toupper.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_toupper.c.i
 .PHONY : libft/ft_toupper.c.i
 
 libft/ft_toupper.s: libft/ft_toupper.c.s
@@ -3440,7 +3440,7 @@ libft/ft_toupper.s: libft/ft_toupper.c.s
 
 # target to generate assembly for a file
 libft/ft_toupper.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ft_toupper.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ft_toupper.c.s
 .PHONY : libft/ft_toupper.c.s
 
 libft/get_next_line.obj: libft/get_next_line.c.obj
@@ -3449,7 +3449,7 @@ libft/get_next_line.obj: libft/get_next_line.c.obj
 
 # target to build an object file
 libft/get_next_line.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/get_next_line.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/get_next_line.c.obj
 .PHONY : libft/get_next_line.c.obj
 
 libft/get_next_line.i: libft/get_next_line.c.i
@@ -3458,7 +3458,7 @@ libft/get_next_line.i: libft/get_next_line.c.i
 
 # target to preprocess a source file
 libft/get_next_line.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/get_next_line.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/get_next_line.c.i
 .PHONY : libft/get_next_line.c.i
 
 libft/get_next_line.s: libft/get_next_line.c.s
@@ -3467,7 +3467,7 @@ libft/get_next_line.s: libft/get_next_line.c.s
 
 # target to generate assembly for a file
 libft/get_next_line.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/get_next_line.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/get_next_line.c.s
 .PHONY : libft/get_next_line.c.s
 
 libft/go_exit.obj: libft/go_exit.c.obj
@@ -3476,7 +3476,7 @@ libft/go_exit.obj: libft/go_exit.c.obj
 
 # target to build an object file
 libft/go_exit.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/go_exit.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/go_exit.c.obj
 .PHONY : libft/go_exit.c.obj
 
 libft/go_exit.i: libft/go_exit.c.i
@@ -3485,7 +3485,7 @@ libft/go_exit.i: libft/go_exit.c.i
 
 # target to preprocess a source file
 libft/go_exit.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/go_exit.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/go_exit.c.i
 .PHONY : libft/go_exit.c.i
 
 libft/go_exit.s: libft/go_exit.c.s
@@ -3494,7 +3494,7 @@ libft/go_exit.s: libft/go_exit.c.s
 
 # target to generate assembly for a file
 libft/go_exit.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/go_exit.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/go_exit.c.s
 .PHONY : libft/go_exit.c.s
 
 libft/memlist/memlist_bottleneck.obj: libft/memlist/memlist_bottleneck.c.obj
@@ -3503,7 +3503,7 @@ libft/memlist/memlist_bottleneck.obj: libft/memlist/memlist_bottleneck.c.obj
 
 # target to build an object file
 libft/memlist/memlist_bottleneck.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/memlist/memlist_bottleneck.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/memlist/memlist_bottleneck.c.obj
 .PHONY : libft/memlist/memlist_bottleneck.c.obj
 
 libft/memlist/memlist_bottleneck.i: libft/memlist/memlist_bottleneck.c.i
@@ -3512,7 +3512,7 @@ libft/memlist/memlist_bottleneck.i: libft/memlist/memlist_bottleneck.c.i
 
 # target to preprocess a source file
 libft/memlist/memlist_bottleneck.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/memlist/memlist_bottleneck.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/memlist/memlist_bottleneck.c.i
 .PHONY : libft/memlist/memlist_bottleneck.c.i
 
 libft/memlist/memlist_bottleneck.s: libft/memlist/memlist_bottleneck.c.s
@@ -3521,7 +3521,7 @@ libft/memlist/memlist_bottleneck.s: libft/memlist/memlist_bottleneck.c.s
 
 # target to generate assembly for a file
 libft/memlist/memlist_bottleneck.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/memlist/memlist_bottleneck.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/memlist/memlist_bottleneck.c.s
 .PHONY : libft/memlist/memlist_bottleneck.c.s
 
 libft/memlist/ml_create.obj: libft/memlist/ml_create.c.obj
@@ -3530,7 +3530,7 @@ libft/memlist/ml_create.obj: libft/memlist/ml_create.c.obj
 
 # target to build an object file
 libft/memlist/ml_create.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/memlist/ml_create.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/memlist/ml_create.c.obj
 .PHONY : libft/memlist/ml_create.c.obj
 
 libft/memlist/ml_create.i: libft/memlist/ml_create.c.i
@@ -3539,7 +3539,7 @@ libft/memlist/ml_create.i: libft/memlist/ml_create.c.i
 
 # target to preprocess a source file
 libft/memlist/ml_create.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/memlist/ml_create.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/memlist/ml_create.c.i
 .PHONY : libft/memlist/ml_create.c.i
 
 libft/memlist/ml_create.s: libft/memlist/ml_create.c.s
@@ -3548,7 +3548,7 @@ libft/memlist/ml_create.s: libft/memlist/ml_create.c.s
 
 # target to generate assembly for a file
 libft/memlist/ml_create.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/memlist/ml_create.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/memlist/ml_create.c.s
 .PHONY : libft/memlist/ml_create.c.s
 
 libft/memlist/ml_del.obj: libft/memlist/ml_del.c.obj
@@ -3557,7 +3557,7 @@ libft/memlist/ml_del.obj: libft/memlist/ml_del.c.obj
 
 # target to build an object file
 libft/memlist/ml_del.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/memlist/ml_del.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/memlist/ml_del.c.obj
 .PHONY : libft/memlist/ml_del.c.obj
 
 libft/memlist/ml_del.i: libft/memlist/ml_del.c.i
@@ -3566,7 +3566,7 @@ libft/memlist/ml_del.i: libft/memlist/ml_del.c.i
 
 # target to preprocess a source file
 libft/memlist/ml_del.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/memlist/ml_del.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/memlist/ml_del.c.i
 .PHONY : libft/memlist/ml_del.c.i
 
 libft/memlist/ml_del.s: libft/memlist/ml_del.c.s
@@ -3575,7 +3575,7 @@ libft/memlist/ml_del.s: libft/memlist/ml_del.c.s
 
 # target to generate assembly for a file
 libft/memlist/ml_del.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/memlist/ml_del.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/memlist/ml_del.c.s
 .PHONY : libft/memlist/ml_del.c.s
 
 libft/memlist/ml_general.obj: libft/memlist/ml_general.c.obj
@@ -3584,7 +3584,7 @@ libft/memlist/ml_general.obj: libft/memlist/ml_general.c.obj
 
 # target to build an object file
 libft/memlist/ml_general.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/memlist/ml_general.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/memlist/ml_general.c.obj
 .PHONY : libft/memlist/ml_general.c.obj
 
 libft/memlist/ml_general.i: libft/memlist/ml_general.c.i
@@ -3593,7 +3593,7 @@ libft/memlist/ml_general.i: libft/memlist/ml_general.c.i
 
 # target to preprocess a source file
 libft/memlist/ml_general.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/memlist/ml_general.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/memlist/ml_general.c.i
 .PHONY : libft/memlist/ml_general.c.i
 
 libft/memlist/ml_general.s: libft/memlist/ml_general.c.s
@@ -3602,7 +3602,7 @@ libft/memlist/ml_general.s: libft/memlist/ml_general.c.s
 
 # target to generate assembly for a file
 libft/memlist/ml_general.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/memlist/ml_general.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/memlist/ml_general.c.s
 .PHONY : libft/memlist/ml_general.c.s
 
 libft/ml_get_next_line.obj: libft/ml_get_next_line.c.obj
@@ -3611,7 +3611,7 @@ libft/ml_get_next_line.obj: libft/ml_get_next_line.c.obj
 
 # target to build an object file
 libft/ml_get_next_line.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ml_get_next_line.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ml_get_next_line.c.obj
 .PHONY : libft/ml_get_next_line.c.obj
 
 libft/ml_get_next_line.i: libft/ml_get_next_line.c.i
@@ -3620,7 +3620,7 @@ libft/ml_get_next_line.i: libft/ml_get_next_line.c.i
 
 # target to preprocess a source file
 libft/ml_get_next_line.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ml_get_next_line.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ml_get_next_line.c.i
 .PHONY : libft/ml_get_next_line.c.i
 
 libft/ml_get_next_line.s: libft/ml_get_next_line.c.s
@@ -3629,7 +3629,7 @@ libft/ml_get_next_line.s: libft/ml_get_next_line.c.s
 
 # target to generate assembly for a file
 libft/ml_get_next_line.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ml_get_next_line.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ml_get_next_line.c.s
 .PHONY : libft/ml_get_next_line.c.s
 
 libft/ml_itoa.obj: libft/ml_itoa.c.obj
@@ -3638,7 +3638,7 @@ libft/ml_itoa.obj: libft/ml_itoa.c.obj
 
 # target to build an object file
 libft/ml_itoa.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ml_itoa.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ml_itoa.c.obj
 .PHONY : libft/ml_itoa.c.obj
 
 libft/ml_itoa.i: libft/ml_itoa.c.i
@@ -3647,7 +3647,7 @@ libft/ml_itoa.i: libft/ml_itoa.c.i
 
 # target to preprocess a source file
 libft/ml_itoa.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ml_itoa.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ml_itoa.c.i
 .PHONY : libft/ml_itoa.c.i
 
 libft/ml_itoa.s: libft/ml_itoa.c.s
@@ -3656,7 +3656,7 @@ libft/ml_itoa.s: libft/ml_itoa.c.s
 
 # target to generate assembly for a file
 libft/ml_itoa.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ml_itoa.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ml_itoa.c.s
 .PHONY : libft/ml_itoa.c.s
 
 libft/ml_memalloc.obj: libft/ml_memalloc.c.obj
@@ -3665,7 +3665,7 @@ libft/ml_memalloc.obj: libft/ml_memalloc.c.obj
 
 # target to build an object file
 libft/ml_memalloc.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ml_memalloc.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ml_memalloc.c.obj
 .PHONY : libft/ml_memalloc.c.obj
 
 libft/ml_memalloc.i: libft/ml_memalloc.c.i
@@ -3674,7 +3674,7 @@ libft/ml_memalloc.i: libft/ml_memalloc.c.i
 
 # target to preprocess a source file
 libft/ml_memalloc.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ml_memalloc.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ml_memalloc.c.i
 .PHONY : libft/ml_memalloc.c.i
 
 libft/ml_memalloc.s: libft/ml_memalloc.c.s
@@ -3683,7 +3683,7 @@ libft/ml_memalloc.s: libft/ml_memalloc.c.s
 
 # target to generate assembly for a file
 libft/ml_memalloc.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ml_memalloc.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ml_memalloc.c.s
 .PHONY : libft/ml_memalloc.c.s
 
 libft/ml_strdup.obj: libft/ml_strdup.c.obj
@@ -3692,7 +3692,7 @@ libft/ml_strdup.obj: libft/ml_strdup.c.obj
 
 # target to build an object file
 libft/ml_strdup.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ml_strdup.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ml_strdup.c.obj
 .PHONY : libft/ml_strdup.c.obj
 
 libft/ml_strdup.i: libft/ml_strdup.c.i
@@ -3701,7 +3701,7 @@ libft/ml_strdup.i: libft/ml_strdup.c.i
 
 # target to preprocess a source file
 libft/ml_strdup.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ml_strdup.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ml_strdup.c.i
 .PHONY : libft/ml_strdup.c.i
 
 libft/ml_strdup.s: libft/ml_strdup.c.s
@@ -3710,7 +3710,7 @@ libft/ml_strdup.s: libft/ml_strdup.c.s
 
 # target to generate assembly for a file
 libft/ml_strdup.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ml_strdup.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ml_strdup.c.s
 .PHONY : libft/ml_strdup.c.s
 
 libft/ml_strjoin.obj: libft/ml_strjoin.c.obj
@@ -3719,7 +3719,7 @@ libft/ml_strjoin.obj: libft/ml_strjoin.c.obj
 
 # target to build an object file
 libft/ml_strjoin.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ml_strjoin.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ml_strjoin.c.obj
 .PHONY : libft/ml_strjoin.c.obj
 
 libft/ml_strjoin.i: libft/ml_strjoin.c.i
@@ -3728,7 +3728,7 @@ libft/ml_strjoin.i: libft/ml_strjoin.c.i
 
 # target to preprocess a source file
 libft/ml_strjoin.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ml_strjoin.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ml_strjoin.c.i
 .PHONY : libft/ml_strjoin.c.i
 
 libft/ml_strjoin.s: libft/ml_strjoin.c.s
@@ -3737,7 +3737,7 @@ libft/ml_strjoin.s: libft/ml_strjoin.c.s
 
 # target to generate assembly for a file
 libft/ml_strjoin.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ml_strjoin.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ml_strjoin.c.s
 .PHONY : libft/ml_strjoin.c.s
 
 libft/ml_strjoinre.obj: libft/ml_strjoinre.c.obj
@@ -3746,7 +3746,7 @@ libft/ml_strjoinre.obj: libft/ml_strjoinre.c.obj
 
 # target to build an object file
 libft/ml_strjoinre.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ml_strjoinre.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ml_strjoinre.c.obj
 .PHONY : libft/ml_strjoinre.c.obj
 
 libft/ml_strjoinre.i: libft/ml_strjoinre.c.i
@@ -3755,7 +3755,7 @@ libft/ml_strjoinre.i: libft/ml_strjoinre.c.i
 
 # target to preprocess a source file
 libft/ml_strjoinre.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ml_strjoinre.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ml_strjoinre.c.i
 .PHONY : libft/ml_strjoinre.c.i
 
 libft/ml_strjoinre.s: libft/ml_strjoinre.c.s
@@ -3764,7 +3764,7 @@ libft/ml_strjoinre.s: libft/ml_strjoinre.c.s
 
 # target to generate assembly for a file
 libft/ml_strjoinre.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ml_strjoinre.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ml_strjoinre.c.s
 .PHONY : libft/ml_strjoinre.c.s
 
 libft/ml_strmap.obj: libft/ml_strmap.c.obj
@@ -3773,7 +3773,7 @@ libft/ml_strmap.obj: libft/ml_strmap.c.obj
 
 # target to build an object file
 libft/ml_strmap.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ml_strmap.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ml_strmap.c.obj
 .PHONY : libft/ml_strmap.c.obj
 
 libft/ml_strmap.i: libft/ml_strmap.c.i
@@ -3782,7 +3782,7 @@ libft/ml_strmap.i: libft/ml_strmap.c.i
 
 # target to preprocess a source file
 libft/ml_strmap.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ml_strmap.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ml_strmap.c.i
 .PHONY : libft/ml_strmap.c.i
 
 libft/ml_strmap.s: libft/ml_strmap.c.s
@@ -3791,7 +3791,7 @@ libft/ml_strmap.s: libft/ml_strmap.c.s
 
 # target to generate assembly for a file
 libft/ml_strmap.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ml_strmap.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ml_strmap.c.s
 .PHONY : libft/ml_strmap.c.s
 
 libft/ml_strmapi.obj: libft/ml_strmapi.c.obj
@@ -3800,7 +3800,7 @@ libft/ml_strmapi.obj: libft/ml_strmapi.c.obj
 
 # target to build an object file
 libft/ml_strmapi.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ml_strmapi.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ml_strmapi.c.obj
 .PHONY : libft/ml_strmapi.c.obj
 
 libft/ml_strmapi.i: libft/ml_strmapi.c.i
@@ -3809,7 +3809,7 @@ libft/ml_strmapi.i: libft/ml_strmapi.c.i
 
 # target to preprocess a source file
 libft/ml_strmapi.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ml_strmapi.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ml_strmapi.c.i
 .PHONY : libft/ml_strmapi.c.i
 
 libft/ml_strmapi.s: libft/ml_strmapi.c.s
@@ -3818,7 +3818,7 @@ libft/ml_strmapi.s: libft/ml_strmapi.c.s
 
 # target to generate assembly for a file
 libft/ml_strmapi.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ml_strmapi.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ml_strmapi.c.s
 .PHONY : libft/ml_strmapi.c.s
 
 libft/ml_strndup.obj: libft/ml_strndup.c.obj
@@ -3827,7 +3827,7 @@ libft/ml_strndup.obj: libft/ml_strndup.c.obj
 
 # target to build an object file
 libft/ml_strndup.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ml_strndup.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ml_strndup.c.obj
 .PHONY : libft/ml_strndup.c.obj
 
 libft/ml_strndup.i: libft/ml_strndup.c.i
@@ -3836,7 +3836,7 @@ libft/ml_strndup.i: libft/ml_strndup.c.i
 
 # target to preprocess a source file
 libft/ml_strndup.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ml_strndup.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ml_strndup.c.i
 .PHONY : libft/ml_strndup.c.i
 
 libft/ml_strndup.s: libft/ml_strndup.c.s
@@ -3845,7 +3845,7 @@ libft/ml_strndup.s: libft/ml_strndup.c.s
 
 # target to generate assembly for a file
 libft/ml_strndup.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ml_strndup.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ml_strndup.c.s
 .PHONY : libft/ml_strndup.c.s
 
 libft/ml_strnew.obj: libft/ml_strnew.c.obj
@@ -3854,7 +3854,7 @@ libft/ml_strnew.obj: libft/ml_strnew.c.obj
 
 # target to build an object file
 libft/ml_strnew.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ml_strnew.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ml_strnew.c.obj
 .PHONY : libft/ml_strnew.c.obj
 
 libft/ml_strnew.i: libft/ml_strnew.c.i
@@ -3863,7 +3863,7 @@ libft/ml_strnew.i: libft/ml_strnew.c.i
 
 # target to preprocess a source file
 libft/ml_strnew.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ml_strnew.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ml_strnew.c.i
 .PHONY : libft/ml_strnew.c.i
 
 libft/ml_strnew.s: libft/ml_strnew.c.s
@@ -3872,7 +3872,7 @@ libft/ml_strnew.s: libft/ml_strnew.c.s
 
 # target to generate assembly for a file
 libft/ml_strnew.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ml_strnew.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ml_strnew.c.s
 .PHONY : libft/ml_strnew.c.s
 
 libft/ml_strsplit.obj: libft/ml_strsplit.c.obj
@@ -3881,7 +3881,7 @@ libft/ml_strsplit.obj: libft/ml_strsplit.c.obj
 
 # target to build an object file
 libft/ml_strsplit.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ml_strsplit.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ml_strsplit.c.obj
 .PHONY : libft/ml_strsplit.c.obj
 
 libft/ml_strsplit.i: libft/ml_strsplit.c.i
@@ -3890,7 +3890,7 @@ libft/ml_strsplit.i: libft/ml_strsplit.c.i
 
 # target to preprocess a source file
 libft/ml_strsplit.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ml_strsplit.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ml_strsplit.c.i
 .PHONY : libft/ml_strsplit.c.i
 
 libft/ml_strsplit.s: libft/ml_strsplit.c.s
@@ -3899,7 +3899,7 @@ libft/ml_strsplit.s: libft/ml_strsplit.c.s
 
 # target to generate assembly for a file
 libft/ml_strsplit.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ml_strsplit.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ml_strsplit.c.s
 .PHONY : libft/ml_strsplit.c.s
 
 libft/ml_strsub.obj: libft/ml_strsub.c.obj
@@ -3908,7 +3908,7 @@ libft/ml_strsub.obj: libft/ml_strsub.c.obj
 
 # target to build an object file
 libft/ml_strsub.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ml_strsub.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ml_strsub.c.obj
 .PHONY : libft/ml_strsub.c.obj
 
 libft/ml_strsub.i: libft/ml_strsub.c.i
@@ -3917,7 +3917,7 @@ libft/ml_strsub.i: libft/ml_strsub.c.i
 
 # target to preprocess a source file
 libft/ml_strsub.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ml_strsub.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ml_strsub.c.i
 .PHONY : libft/ml_strsub.c.i
 
 libft/ml_strsub.s: libft/ml_strsub.c.s
@@ -3926,7 +3926,7 @@ libft/ml_strsub.s: libft/ml_strsub.c.s
 
 # target to generate assembly for a file
 libft/ml_strsub.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ml_strsub.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ml_strsub.c.s
 .PHONY : libft/ml_strsub.c.s
 
 libft/ml_strtrim.obj: libft/ml_strtrim.c.obj
@@ -3935,7 +3935,7 @@ libft/ml_strtrim.obj: libft/ml_strtrim.c.obj
 
 # target to build an object file
 libft/ml_strtrim.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ml_strtrim.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ml_strtrim.c.obj
 .PHONY : libft/ml_strtrim.c.obj
 
 libft/ml_strtrim.i: libft/ml_strtrim.c.i
@@ -3944,7 +3944,7 @@ libft/ml_strtrim.i: libft/ml_strtrim.c.i
 
 # target to preprocess a source file
 libft/ml_strtrim.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ml_strtrim.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ml_strtrim.c.i
 .PHONY : libft/ml_strtrim.c.i
 
 libft/ml_strtrim.s: libft/ml_strtrim.c.s
@@ -3953,8 +3953,35 @@ libft/ml_strtrim.s: libft/ml_strtrim.c.s
 
 # target to generate assembly for a file
 libft/ml_strtrim.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/libft/ml_strtrim.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/libft/ml_strtrim.c.s
 .PHONY : libft/ml_strtrim.c.s
+
+vm/srcs/game/add_cell.obj: vm/srcs/game/add_cell.c.obj
+
+.PHONY : vm/srcs/game/add_cell.obj
+
+# target to build an object file
+vm/srcs/game/add_cell.c.obj:
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/vm/srcs/game/add_cell.c.obj
+.PHONY : vm/srcs/game/add_cell.c.obj
+
+vm/srcs/game/add_cell.i: vm/srcs/game/add_cell.c.i
+
+.PHONY : vm/srcs/game/add_cell.i
+
+# target to preprocess a source file
+vm/srcs/game/add_cell.c.i:
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/vm/srcs/game/add_cell.c.i
+.PHONY : vm/srcs/game/add_cell.c.i
+
+vm/srcs/game/add_cell.s: vm/srcs/game/add_cell.c.s
+
+.PHONY : vm/srcs/game/add_cell.s
+
+# target to generate assembly for a file
+vm/srcs/game/add_cell.c.s:
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/vm/srcs/game/add_cell.c.s
+.PHONY : vm/srcs/game/add_cell.c.s
 
 vm/srcs/game/args_intf.obj: vm/srcs/game/args_intf.c.obj
 
@@ -3962,7 +3989,7 @@ vm/srcs/game/args_intf.obj: vm/srcs/game/args_intf.c.obj
 
 # target to build an object file
 vm/srcs/game/args_intf.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/vm/srcs/game/args_intf.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/vm/srcs/game/args_intf.c.obj
 .PHONY : vm/srcs/game/args_intf.c.obj
 
 vm/srcs/game/args_intf.i: vm/srcs/game/args_intf.c.i
@@ -3971,7 +3998,7 @@ vm/srcs/game/args_intf.i: vm/srcs/game/args_intf.c.i
 
 # target to preprocess a source file
 vm/srcs/game/args_intf.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/vm/srcs/game/args_intf.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/vm/srcs/game/args_intf.c.i
 .PHONY : vm/srcs/game/args_intf.c.i
 
 vm/srcs/game/args_intf.s: vm/srcs/game/args_intf.c.s
@@ -3980,8 +4007,35 @@ vm/srcs/game/args_intf.s: vm/srcs/game/args_intf.c.s
 
 # target to generate assembly for a file
 vm/srcs/game/args_intf.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/vm/srcs/game/args_intf.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/vm/srcs/game/args_intf.c.s
 .PHONY : vm/srcs/game/args_intf.c.s
+
+vm/srcs/game/create_vs.obj: vm/srcs/game/create_vs.c.obj
+
+.PHONY : vm/srcs/game/create_vs.obj
+
+# target to build an object file
+vm/srcs/game/create_vs.c.obj:
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/vm/srcs/game/create_vs.c.obj
+.PHONY : vm/srcs/game/create_vs.c.obj
+
+vm/srcs/game/create_vs.i: vm/srcs/game/create_vs.c.i
+
+.PHONY : vm/srcs/game/create_vs.i
+
+# target to preprocess a source file
+vm/srcs/game/create_vs.c.i:
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/vm/srcs/game/create_vs.c.i
+.PHONY : vm/srcs/game/create_vs.c.i
+
+vm/srcs/game/create_vs.s: vm/srcs/game/create_vs.c.s
+
+.PHONY : vm/srcs/game/create_vs.s
+
+# target to generate assembly for a file
+vm/srcs/game/create_vs.c.s:
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/vm/srcs/game/create_vs.c.s
+.PHONY : vm/srcs/game/create_vs.c.s
 
 vm/srcs/game/game.obj: vm/srcs/game/game.c.obj
 
@@ -3989,7 +4043,7 @@ vm/srcs/game/game.obj: vm/srcs/game/game.c.obj
 
 # target to build an object file
 vm/srcs/game/game.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/vm/srcs/game/game.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/vm/srcs/game/game.c.obj
 .PHONY : vm/srcs/game/game.c.obj
 
 vm/srcs/game/game.i: vm/srcs/game/game.c.i
@@ -3998,7 +4052,7 @@ vm/srcs/game/game.i: vm/srcs/game/game.c.i
 
 # target to preprocess a source file
 vm/srcs/game/game.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/vm/srcs/game/game.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/vm/srcs/game/game.c.i
 .PHONY : vm/srcs/game/game.c.i
 
 vm/srcs/game/game.s: vm/srcs/game/game.c.s
@@ -4007,7 +4061,7 @@ vm/srcs/game/game.s: vm/srcs/game/game.c.s
 
 # target to generate assembly for a file
 vm/srcs/game/game.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/vm/srcs/game/game.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/vm/srcs/game/game.c.s
 .PHONY : vm/srcs/game/game.c.s
 
 vm/srcs/game/game_intf.obj: vm/srcs/game/game_intf.c.obj
@@ -4016,7 +4070,7 @@ vm/srcs/game/game_intf.obj: vm/srcs/game/game_intf.c.obj
 
 # target to build an object file
 vm/srcs/game/game_intf.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/vm/srcs/game/game_intf.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/vm/srcs/game/game_intf.c.obj
 .PHONY : vm/srcs/game/game_intf.c.obj
 
 vm/srcs/game/game_intf.i: vm/srcs/game/game_intf.c.i
@@ -4025,7 +4079,7 @@ vm/srcs/game/game_intf.i: vm/srcs/game/game_intf.c.i
 
 # target to preprocess a source file
 vm/srcs/game/game_intf.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/vm/srcs/game/game_intf.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/vm/srcs/game/game_intf.c.i
 .PHONY : vm/srcs/game/game_intf.c.i
 
 vm/srcs/game/game_intf.s: vm/srcs/game/game_intf.c.s
@@ -4034,7 +4088,7 @@ vm/srcs/game/game_intf.s: vm/srcs/game/game_intf.c.s
 
 # target to generate assembly for a file
 vm/srcs/game/game_intf.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/vm/srcs/game/game_intf.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/vm/srcs/game/game_intf.c.s
 .PHONY : vm/srcs/game/game_intf.c.s
 
 vm/srcs/game/helper_func.obj: vm/srcs/game/helper_func.c.obj
@@ -4043,7 +4097,7 @@ vm/srcs/game/helper_func.obj: vm/srcs/game/helper_func.c.obj
 
 # target to build an object file
 vm/srcs/game/helper_func.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/vm/srcs/game/helper_func.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/vm/srcs/game/helper_func.c.obj
 .PHONY : vm/srcs/game/helper_func.c.obj
 
 vm/srcs/game/helper_func.i: vm/srcs/game/helper_func.c.i
@@ -4052,7 +4106,7 @@ vm/srcs/game/helper_func.i: vm/srcs/game/helper_func.c.i
 
 # target to preprocess a source file
 vm/srcs/game/helper_func.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/vm/srcs/game/helper_func.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/vm/srcs/game/helper_func.c.i
 .PHONY : vm/srcs/game/helper_func.c.i
 
 vm/srcs/game/helper_func.s: vm/srcs/game/helper_func.c.s
@@ -4061,8 +4115,35 @@ vm/srcs/game/helper_func.s: vm/srcs/game/helper_func.c.s
 
 # target to generate assembly for a file
 vm/srcs/game/helper_func.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/vm/srcs/game/helper_func.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/vm/srcs/game/helper_func.c.s
 .PHONY : vm/srcs/game/helper_func.c.s
+
+vm/srcs/game/init_sdl.obj: vm/srcs/game/init_sdl.c.obj
+
+.PHONY : vm/srcs/game/init_sdl.obj
+
+# target to build an object file
+vm/srcs/game/init_sdl.c.obj:
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/vm/srcs/game/init_sdl.c.obj
+.PHONY : vm/srcs/game/init_sdl.c.obj
+
+vm/srcs/game/init_sdl.i: vm/srcs/game/init_sdl.c.i
+
+.PHONY : vm/srcs/game/init_sdl.i
+
+# target to preprocess a source file
+vm/srcs/game/init_sdl.c.i:
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/vm/srcs/game/init_sdl.c.i
+.PHONY : vm/srcs/game/init_sdl.c.i
+
+vm/srcs/game/init_sdl.s: vm/srcs/game/init_sdl.c.s
+
+.PHONY : vm/srcs/game/init_sdl.s
+
+# target to generate assembly for a file
+vm/srcs/game/init_sdl.c.s:
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/vm/srcs/game/init_sdl.c.s
+.PHONY : vm/srcs/game/init_sdl.c.s
 
 vm/srcs/game/instuctions.obj: vm/srcs/game/instuctions.c.obj
 
@@ -4070,7 +4151,7 @@ vm/srcs/game/instuctions.obj: vm/srcs/game/instuctions.c.obj
 
 # target to build an object file
 vm/srcs/game/instuctions.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/vm/srcs/game/instuctions.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/vm/srcs/game/instuctions.c.obj
 .PHONY : vm/srcs/game/instuctions.c.obj
 
 vm/srcs/game/instuctions.i: vm/srcs/game/instuctions.c.i
@@ -4079,7 +4160,7 @@ vm/srcs/game/instuctions.i: vm/srcs/game/instuctions.c.i
 
 # target to preprocess a source file
 vm/srcs/game/instuctions.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/vm/srcs/game/instuctions.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/vm/srcs/game/instuctions.c.i
 .PHONY : vm/srcs/game/instuctions.c.i
 
 vm/srcs/game/instuctions.s: vm/srcs/game/instuctions.c.s
@@ -4088,8 +4169,89 @@ vm/srcs/game/instuctions.s: vm/srcs/game/instuctions.c.s
 
 # target to generate assembly for a file
 vm/srcs/game/instuctions.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/vm/srcs/game/instuctions.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/vm/srcs/game/instuctions.c.s
 .PHONY : vm/srcs/game/instuctions.c.s
+
+vm/srcs/game/print_arena.obj: vm/srcs/game/print_arena.c.obj
+
+.PHONY : vm/srcs/game/print_arena.obj
+
+# target to build an object file
+vm/srcs/game/print_arena.c.obj:
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/vm/srcs/game/print_arena.c.obj
+.PHONY : vm/srcs/game/print_arena.c.obj
+
+vm/srcs/game/print_arena.i: vm/srcs/game/print_arena.c.i
+
+.PHONY : vm/srcs/game/print_arena.i
+
+# target to preprocess a source file
+vm/srcs/game/print_arena.c.i:
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/vm/srcs/game/print_arena.c.i
+.PHONY : vm/srcs/game/print_arena.c.i
+
+vm/srcs/game/print_arena.s: vm/srcs/game/print_arena.c.s
+
+.PHONY : vm/srcs/game/print_arena.s
+
+# target to generate assembly for a file
+vm/srcs/game/print_arena.c.s:
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/vm/srcs/game/print_arena.c.s
+.PHONY : vm/srcs/game/print_arena.c.s
+
+vm/srcs/game/support_func.obj: vm/srcs/game/support_func.c.obj
+
+.PHONY : vm/srcs/game/support_func.obj
+
+# target to build an object file
+vm/srcs/game/support_func.c.obj:
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/vm/srcs/game/support_func.c.obj
+.PHONY : vm/srcs/game/support_func.c.obj
+
+vm/srcs/game/support_func.i: vm/srcs/game/support_func.c.i
+
+.PHONY : vm/srcs/game/support_func.i
+
+# target to preprocess a source file
+vm/srcs/game/support_func.c.i:
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/vm/srcs/game/support_func.c.i
+.PHONY : vm/srcs/game/support_func.c.i
+
+vm/srcs/game/support_func.s: vm/srcs/game/support_func.c.s
+
+.PHONY : vm/srcs/game/support_func.s
+
+# target to generate assembly for a file
+vm/srcs/game/support_func.c.s:
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/vm/srcs/game/support_func.c.s
+.PHONY : vm/srcs/game/support_func.c.s
+
+vm/srcs/game/visualise_arena.obj: vm/srcs/game/visualise_arena.c.obj
+
+.PHONY : vm/srcs/game/visualise_arena.obj
+
+# target to build an object file
+vm/srcs/game/visualise_arena.c.obj:
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/vm/srcs/game/visualise_arena.c.obj
+.PHONY : vm/srcs/game/visualise_arena.c.obj
+
+vm/srcs/game/visualise_arena.i: vm/srcs/game/visualise_arena.c.i
+
+.PHONY : vm/srcs/game/visualise_arena.i
+
+# target to preprocess a source file
+vm/srcs/game/visualise_arena.c.i:
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/vm/srcs/game/visualise_arena.c.i
+.PHONY : vm/srcs/game/visualise_arena.c.i
+
+vm/srcs/game/visualise_arena.s: vm/srcs/game/visualise_arena.c.s
+
+.PHONY : vm/srcs/game/visualise_arena.s
+
+# target to generate assembly for a file
+vm/srcs/game/visualise_arena.c.s:
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/vm/srcs/game/visualise_arena.c.s
+.PHONY : vm/srcs/game/visualise_arena.c.s
 
 vm/srcs/main.obj: vm/srcs/main.c.obj
 
@@ -4097,7 +4259,7 @@ vm/srcs/main.obj: vm/srcs/main.c.obj
 
 # target to build an object file
 vm/srcs/main.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/vm/srcs/main.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/vm/srcs/main.c.obj
 .PHONY : vm/srcs/main.c.obj
 
 vm/srcs/main.i: vm/srcs/main.c.i
@@ -4106,7 +4268,7 @@ vm/srcs/main.i: vm/srcs/main.c.i
 
 # target to preprocess a source file
 vm/srcs/main.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/vm/srcs/main.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/vm/srcs/main.c.i
 .PHONY : vm/srcs/main.c.i
 
 vm/srcs/main.s: vm/srcs/main.c.s
@@ -4115,7 +4277,7 @@ vm/srcs/main.s: vm/srcs/main.c.s
 
 # target to generate assembly for a file
 vm/srcs/main.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/vm/srcs/main.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/vm/srcs/main.c.s
 .PHONY : vm/srcs/main.c.s
 
 vm/srcs/struct_intf/carriage_intf.obj: vm/srcs/struct_intf/carriage_intf.c.obj
@@ -4124,7 +4286,7 @@ vm/srcs/struct_intf/carriage_intf.obj: vm/srcs/struct_intf/carriage_intf.c.obj
 
 # target to build an object file
 vm/srcs/struct_intf/carriage_intf.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/vm/srcs/struct_intf/carriage_intf.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/vm/srcs/struct_intf/carriage_intf.c.obj
 .PHONY : vm/srcs/struct_intf/carriage_intf.c.obj
 
 vm/srcs/struct_intf/carriage_intf.i: vm/srcs/struct_intf/carriage_intf.c.i
@@ -4133,7 +4295,7 @@ vm/srcs/struct_intf/carriage_intf.i: vm/srcs/struct_intf/carriage_intf.c.i
 
 # target to preprocess a source file
 vm/srcs/struct_intf/carriage_intf.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/vm/srcs/struct_intf/carriage_intf.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/vm/srcs/struct_intf/carriage_intf.c.i
 .PHONY : vm/srcs/struct_intf/carriage_intf.c.i
 
 vm/srcs/struct_intf/carriage_intf.s: vm/srcs/struct_intf/carriage_intf.c.s
@@ -4142,7 +4304,7 @@ vm/srcs/struct_intf/carriage_intf.s: vm/srcs/struct_intf/carriage_intf.c.s
 
 # target to generate assembly for a file
 vm/srcs/struct_intf/carriage_intf.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/vm/srcs/struct_intf/carriage_intf.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/vm/srcs/struct_intf/carriage_intf.c.s
 .PHONY : vm/srcs/struct_intf/carriage_intf.c.s
 
 vm/srcs/struct_intf/corewar_intf.obj: vm/srcs/struct_intf/corewar_intf.c.obj
@@ -4151,7 +4313,7 @@ vm/srcs/struct_intf/corewar_intf.obj: vm/srcs/struct_intf/corewar_intf.c.obj
 
 # target to build an object file
 vm/srcs/struct_intf/corewar_intf.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/vm/srcs/struct_intf/corewar_intf.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/vm/srcs/struct_intf/corewar_intf.c.obj
 .PHONY : vm/srcs/struct_intf/corewar_intf.c.obj
 
 vm/srcs/struct_intf/corewar_intf.i: vm/srcs/struct_intf/corewar_intf.c.i
@@ -4160,7 +4322,7 @@ vm/srcs/struct_intf/corewar_intf.i: vm/srcs/struct_intf/corewar_intf.c.i
 
 # target to preprocess a source file
 vm/srcs/struct_intf/corewar_intf.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/vm/srcs/struct_intf/corewar_intf.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/vm/srcs/struct_intf/corewar_intf.c.i
 .PHONY : vm/srcs/struct_intf/corewar_intf.c.i
 
 vm/srcs/struct_intf/corewar_intf.s: vm/srcs/struct_intf/corewar_intf.c.s
@@ -4169,7 +4331,7 @@ vm/srcs/struct_intf/corewar_intf.s: vm/srcs/struct_intf/corewar_intf.c.s
 
 # target to generate assembly for a file
 vm/srcs/struct_intf/corewar_intf.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/vm/srcs/struct_intf/corewar_intf.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/vm/srcs/struct_intf/corewar_intf.c.s
 .PHONY : vm/srcs/struct_intf/corewar_intf.c.s
 
 vm/srcs/validation/parse_input_intf.obj: vm/srcs/validation/parse_input_intf.c.obj
@@ -4178,7 +4340,7 @@ vm/srcs/validation/parse_input_intf.obj: vm/srcs/validation/parse_input_intf.c.o
 
 # target to build an object file
 vm/srcs/validation/parse_input_intf.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/vm/srcs/validation/parse_input_intf.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/vm/srcs/validation/parse_input_intf.c.obj
 .PHONY : vm/srcs/validation/parse_input_intf.c.obj
 
 vm/srcs/validation/parse_input_intf.i: vm/srcs/validation/parse_input_intf.c.i
@@ -4187,7 +4349,7 @@ vm/srcs/validation/parse_input_intf.i: vm/srcs/validation/parse_input_intf.c.i
 
 # target to preprocess a source file
 vm/srcs/validation/parse_input_intf.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/vm/srcs/validation/parse_input_intf.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/vm/srcs/validation/parse_input_intf.c.i
 .PHONY : vm/srcs/validation/parse_input_intf.c.i
 
 vm/srcs/validation/parse_input_intf.s: vm/srcs/validation/parse_input_intf.c.s
@@ -4196,7 +4358,7 @@ vm/srcs/validation/parse_input_intf.s: vm/srcs/validation/parse_input_intf.c.s
 
 # target to generate assembly for a file
 vm/srcs/validation/parse_input_intf.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/vm/srcs/validation/parse_input_intf.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/vm/srcs/validation/parse_input_intf.c.s
 .PHONY : vm/srcs/validation/parse_input_intf.c.s
 
 vm/srcs/validation/parse_inputs.obj: vm/srcs/validation/parse_inputs.c.obj
@@ -4205,7 +4367,7 @@ vm/srcs/validation/parse_inputs.obj: vm/srcs/validation/parse_inputs.c.obj
 
 # target to build an object file
 vm/srcs/validation/parse_inputs.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/vm/srcs/validation/parse_inputs.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/vm/srcs/validation/parse_inputs.c.obj
 .PHONY : vm/srcs/validation/parse_inputs.c.obj
 
 vm/srcs/validation/parse_inputs.i: vm/srcs/validation/parse_inputs.c.i
@@ -4214,7 +4376,7 @@ vm/srcs/validation/parse_inputs.i: vm/srcs/validation/parse_inputs.c.i
 
 # target to preprocess a source file
 vm/srcs/validation/parse_inputs.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/vm/srcs/validation/parse_inputs.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/vm/srcs/validation/parse_inputs.c.i
 .PHONY : vm/srcs/validation/parse_inputs.c.i
 
 vm/srcs/validation/parse_inputs.s: vm/srcs/validation/parse_inputs.c.s
@@ -4223,7 +4385,7 @@ vm/srcs/validation/parse_inputs.s: vm/srcs/validation/parse_inputs.c.s
 
 # target to generate assembly for a file
 vm/srcs/validation/parse_inputs.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/vm/srcs/validation/parse_inputs.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/vm/srcs/validation/parse_inputs.c.s
 .PHONY : vm/srcs/validation/parse_inputs.c.s
 
 vm/srcs/validation/reports.obj: vm/srcs/validation/reports.c.obj
@@ -4232,7 +4394,7 @@ vm/srcs/validation/reports.obj: vm/srcs/validation/reports.c.obj
 
 # target to build an object file
 vm/srcs/validation/reports.c.obj:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/vm/srcs/validation/reports.c.obj
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/vm/srcs/validation/reports.c.obj
 .PHONY : vm/srcs/validation/reports.c.obj
 
 vm/srcs/validation/reports.i: vm/srcs/validation/reports.c.i
@@ -4241,7 +4403,7 @@ vm/srcs/validation/reports.i: vm/srcs/validation/reports.c.i
 
 # target to preprocess a source file
 vm/srcs/validation/reports.c.i:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/vm/srcs/validation/reports.c.i
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/vm/srcs/validation/reports.c.i
 .PHONY : vm/srcs/validation/reports.c.i
 
 vm/srcs/validation/reports.s: vm/srcs/validation/reports.c.s
@@ -4250,7 +4412,7 @@ vm/srcs/validation/reports.s: vm/srcs/validation/reports.c.s
 
 # target to generate assembly for a file
 vm/srcs/validation/reports.c.s:
-	$(MAKE) -f CMakeFiles\CoreWar_Hub.dir\build.make CMakeFiles/CoreWar_Hub.dir/vm/srcs/validation/reports.c.s
+	$(MAKE) -f CMakeFiles\dencorewar.dir\build.make CMakeFiles/dencorewar.dir/vm/srcs/validation/reports.c.s
 .PHONY : vm/srcs/validation/reports.c.s
 
 # Help Target
@@ -4259,8 +4421,8 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
+	@echo ... dencorewar
 	@echo ... edit_cache
-	@echo ... CoreWar_Hub
 	@echo ... rebuild_cache
 	@echo ... asm/arguments.obj
 	@echo ... asm/arguments.i
@@ -4688,9 +4850,15 @@ help:
 	@echo ... libft/ml_strtrim.obj
 	@echo ... libft/ml_strtrim.i
 	@echo ... libft/ml_strtrim.s
+	@echo ... vm/srcs/game/add_cell.obj
+	@echo ... vm/srcs/game/add_cell.i
+	@echo ... vm/srcs/game/add_cell.s
 	@echo ... vm/srcs/game/args_intf.obj
 	@echo ... vm/srcs/game/args_intf.i
 	@echo ... vm/srcs/game/args_intf.s
+	@echo ... vm/srcs/game/create_vs.obj
+	@echo ... vm/srcs/game/create_vs.i
+	@echo ... vm/srcs/game/create_vs.s
 	@echo ... vm/srcs/game/game.obj
 	@echo ... vm/srcs/game/game.i
 	@echo ... vm/srcs/game/game.s
@@ -4700,9 +4868,21 @@ help:
 	@echo ... vm/srcs/game/helper_func.obj
 	@echo ... vm/srcs/game/helper_func.i
 	@echo ... vm/srcs/game/helper_func.s
+	@echo ... vm/srcs/game/init_sdl.obj
+	@echo ... vm/srcs/game/init_sdl.i
+	@echo ... vm/srcs/game/init_sdl.s
 	@echo ... vm/srcs/game/instuctions.obj
 	@echo ... vm/srcs/game/instuctions.i
 	@echo ... vm/srcs/game/instuctions.s
+	@echo ... vm/srcs/game/print_arena.obj
+	@echo ... vm/srcs/game/print_arena.i
+	@echo ... vm/srcs/game/print_arena.s
+	@echo ... vm/srcs/game/support_func.obj
+	@echo ... vm/srcs/game/support_func.i
+	@echo ... vm/srcs/game/support_func.s
+	@echo ... vm/srcs/game/visualise_arena.obj
+	@echo ... vm/srcs/game/visualise_arena.i
+	@echo ... vm/srcs/game/visualise_arena.s
 	@echo ... vm/srcs/main.obj
 	@echo ... vm/srcs/main.i
 	@echo ... vm/srcs/main.s

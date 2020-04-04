@@ -6,7 +6,7 @@
 /*   By: mdeanne <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/28 16:22:33 by mdeanne           #+#    #+#             */
-/*   Updated: 2020/04/02 10:33:46 by yas              ###   ########.fr       */
+/*   Updated: 2020/04/04 16:38:55 by yas              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,9 +81,16 @@ void	tokenize(int fd, t_token **token, t_label **label)
 	char 		*tmp;
 	int 		ret;
 
+	int i = 0;
+
 	pc.row = 0;
 	while ((ret = ml_get_next_line(fd, &tmp, ML_GNL_LINE)) > 0)
+	{
+		i++;
+		if (i == 10)
+			i++;
 		tokenize_line(&pc, token, label, tmp);
+	}
 	if (!*token)
 		go_exit("ERROR: File is empty");
 	newline_endfile_check(fd, pc.line, ret);

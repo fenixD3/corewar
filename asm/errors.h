@@ -9,14 +9,13 @@
  */
 # define ASM_FILE_ERR			"ERROR: Champion's file contains error"
 
-# define ASM_C_N_MISSING		"ERROR: Champion's file contains error - no name or comment"
+# define ASM_NAME_MISSING		"ERROR: Champion's file does not contain name"
 
+# define ASM_CMNT_MISSING		"ERROR: Champion's file does not contain comment"
 
-# define ASM_NL_MISSING			"ERROR: Champion's file contains error - new line is missing"
+# define ASM_NL_MISSING			"ERROR: New line is missing"
 
-# define ASM_ERR_CMP_COMMENT	"ERROR: Champion should have comment before label"
-
-# define ASM_COMMAND_MISSING	"ERROR: Arguments should be preceded by command name"
+# define ASM_COMMAND_MISSING	"ERROR: Arguments should be preceded by command token"
 
 # define ASM_EXTRA_SEPARATOR	"ERROR: Arguments shouldn't be separated from command"
 
@@ -43,11 +42,16 @@
 
 ///// Egor's errors
 
-#define ASM_INVALID_STR_PLACE	"ERROR: Token string in invalid placement"
-#define ASM_INVALID_STR			"ERROR: invalid string token"
-#define ASM_NOCODE				"ERROR: program has no code after string"
-#define ASM_NO_LABEL			"ERROR: Label doesn't exist"
-#define ASM_INVALID_CMD			"ERROR: Command is invalid"
+# define ASM_INVALID_STR_PLACE	"ERROR: Token string in invalid placement"
+
+# define ASM_INVALID_STR			"ERROR: invalid string token"
+
+# define ASM_NOCODE				"ERROR: program has no code after string"
+
+# define ASM_NO_LABEL			"ERROR: Label doesn't exist"
+
+# define ASM_INVALID_CMD			"ERROR: Command is invalid"
+
 # define ASM_TREG_INVALID_NUM	"ERROR: argument T_REG has invalid number"
 
 ///// Stop Egor's errors

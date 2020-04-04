@@ -8,7 +8,9 @@ void	if_label(t_token *token, t_token_sec *check_list)
 		if (!(check_list)->new_line)
 			token_exit(ASM_NL_MISSING, token);
 		else if (!(check_list)->str_comment)
-			token_exit(ASM_ERR_CMP_COMMENT,	token);
+			go_exit(ASM_CMNT_MISSING);
+		else if (!check_list->str_name)
+			go_exit(ASM_NAME_MISSING);
 		if (!(check_list)->new_line)
 			token_exit(ASM_NL_MISSING, token);
 		else
@@ -81,12 +83,12 @@ void	if_name(t_token *token, t_token_sec *check_list)
 {
 	if (token->type == NAME)
 	{
-		if (((check_list)->comment_prog && !(check_list)->str_comment) ||
-			((check_list)->comment_prog && (check_list)->str_comment &&
-			 !(check_list)->new_line))
+		if ((check_list->comment_prog && !check_list->str_comment) ||
+			(check_list->comment_prog && check_list->str_comment &&
+			 !check_list->new_line) || check_list->name)
 			token_exit(ASM_DOUBLE_NAME, token);
 		else
-			(check_list)->name = true;
+			check_list->name = true;
 	}
 }
 

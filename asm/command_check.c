@@ -18,6 +18,8 @@ void	check_args(t_token *token, int *i, int com_code)
 				token_exit(ASM_ERR_ARGS, token_arg);
 			(*i)++;
 		}
+		else if (token_arg->type != SEPARATOR)
+			token_exit(ASM_ERR_ARGS, token_arg);
 		token_arg = token_arg->next;
 	}
 }
@@ -26,6 +28,7 @@ void	command_check(t_token *token)
 {
 	int		i;
 	u_int8_t		com_code;
+
 
 	i = 0;
 	if (!(token->type == COMMAND))

@@ -6,7 +6,7 @@
 /*   By: mcanhand <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/11 15:47:46 by mcanhand          #+#    #+#             */
-/*   Updated: 2020/03/11 15:47:52 by mcanhand         ###   ########.fr       */
+/*   Updated: 2020/04/04 16:55:15 by yas              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,8 +40,10 @@ void	if_command(t_token *token, t_token_sec *check_list)
 	i = 0;
 	if (token->type == COMMAND)
 	{
-		if (!check_list->str_comment || !check_list->name)
-			token_exit(ASM_C_N_MISSING, token);
+		if (!check_list->str_name)
+			go_exit(ASM_NAME_MISSING);
+		if (!check_list->str_comment)
+			go_exit(ASM_CMNT_MISSING);
 		if (!check_list->new_line)
 			token_exit(ASM_NL_MISSING, token);
 		else

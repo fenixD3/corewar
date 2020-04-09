@@ -60,25 +60,17 @@ fcntl.h
 options.h
 ../vm/includes/options.h
 
-/Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/vm/srcs/game/game.c
-vm.h
-/Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/vm/srcs/game/vm.h
+/Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/vm/srcs/game/vis/display_carriages.c
 vis.h
-/Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/vm/srcs/game/vis.h
+/Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/vm/srcs/game/vis/vis.h
 vis_errors.h
-/Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/vm/srcs/game/vis_errors.h
+/Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/vm/srcs/game/vis/vis_errors.h
 
-/Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/vm/srcs/game/game_intf.c
-vm.h
-/Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/vm/srcs/game/vm.h
-options.h
-/Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/vm/srcs/game/options.h
-
-/Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/vm/srcs/game/visualise_arena.c
+/Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/vm/srcs/game/vis/display_side_menu.c
 vis.h
-/Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/vm/srcs/game/vis.h
+/Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/vm/srcs/game/vis/vis.h
 vis_errors.h
-/Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/vm/srcs/game/vis_errors.h
+/Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/vm/srcs/game/vis/vis_errors.h
 
 /Users/romancheremin/Library/Frameworks/SDL2.framework/Headers/SDL.h
 SDL_main.h

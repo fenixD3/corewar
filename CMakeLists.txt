@@ -167,16 +167,17 @@ add_executable(dencorewar
         vm/includes/vis_errors.h
         vm/includes/vm.h
         vm/srcs/game/args_intf.c
-        vm/srcs/game/create_vs.c
+        vm/srcs/game/vis/create_vs.c
         vm/srcs/game/game.c
         vm/srcs/game/game_intf.c
         vm/srcs/game/helper_func.c
-        vm/srcs/game/init_sdl.c
+        vm/srcs/game/vis/init_sdl.c
         vm/srcs/game/instuctions.c
-        vm/srcs/game/visualise_arena.c
-        vm/srcs/game/add_cell.c
-        vm/srcs/game/print_arena.c
-        vm/srcs/game/support_func.c
+        vm/srcs/game/vis/visualise_arena.c
+        vm/srcs/game/vis/print_arena.c
+        vm/srcs/game/vis/support_func.c
+        vm/srcs/game/vis/display_carriages.c
+        vm/srcs/game/vis/display_side_menu.c
         vm/srcs/struct_intf/carriage_intf.c
         vm/srcs/struct_intf/corewar_intf.c
         vm/srcs/validation/parse_input_intf.c

@@ -3957,33 +3957,6 @@ libft/ml_strtrim.c.s:
 	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/libft/ml_strtrim.c.s
 .PHONY : libft/ml_strtrim.c.s
 
-vm/srcs/game/add_cell.o: vm/srcs/game/add_cell.c.o
-
-.PHONY : vm/srcs/game/add_cell.o
-
-# target to build an object file
-vm/srcs/game/add_cell.c.o:
-	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/add_cell.c.o
-.PHONY : vm/srcs/game/add_cell.c.o
-
-vm/srcs/game/add_cell.i: vm/srcs/game/add_cell.c.i
-
-.PHONY : vm/srcs/game/add_cell.i
-
-# target to preprocess a source file
-vm/srcs/game/add_cell.c.i:
-	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/add_cell.c.i
-.PHONY : vm/srcs/game/add_cell.c.i
-
-vm/srcs/game/add_cell.s: vm/srcs/game/add_cell.c.s
-
-.PHONY : vm/srcs/game/add_cell.s
-
-# target to generate assembly for a file
-vm/srcs/game/add_cell.c.s:
-	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/add_cell.c.s
-.PHONY : vm/srcs/game/add_cell.c.s
-
 vm/srcs/game/args_intf.o: vm/srcs/game/args_intf.c.o
 
 .PHONY : vm/srcs/game/args_intf.o
@@ -4010,33 +3983,6 @@ vm/srcs/game/args_intf.s: vm/srcs/game/args_intf.c.s
 vm/srcs/game/args_intf.c.s:
 	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/args_intf.c.s
 .PHONY : vm/srcs/game/args_intf.c.s
-
-vm/srcs/game/create_vs.o: vm/srcs/game/create_vs.c.o
-
-.PHONY : vm/srcs/game/create_vs.o
-
-# target to build an object file
-vm/srcs/game/create_vs.c.o:
-	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/create_vs.c.o
-.PHONY : vm/srcs/game/create_vs.c.o
-
-vm/srcs/game/create_vs.i: vm/srcs/game/create_vs.c.i
-
-.PHONY : vm/srcs/game/create_vs.i
-
-# target to preprocess a source file
-vm/srcs/game/create_vs.c.i:
-	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/create_vs.c.i
-.PHONY : vm/srcs/game/create_vs.c.i
-
-vm/srcs/game/create_vs.s: vm/srcs/game/create_vs.c.s
-
-.PHONY : vm/srcs/game/create_vs.s
-
-# target to generate assembly for a file
-vm/srcs/game/create_vs.c.s:
-	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/create_vs.c.s
-.PHONY : vm/srcs/game/create_vs.c.s
 
 vm/srcs/game/game.o: vm/srcs/game/game.c.o
 
@@ -4119,33 +4065,6 @@ vm/srcs/game/helper_func.c.s:
 	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/helper_func.c.s
 .PHONY : vm/srcs/game/helper_func.c.s
 
-vm/srcs/game/init_sdl.o: vm/srcs/game/init_sdl.c.o
-
-.PHONY : vm/srcs/game/init_sdl.o
-
-# target to build an object file
-vm/srcs/game/init_sdl.c.o:
-	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/init_sdl.c.o
-.PHONY : vm/srcs/game/init_sdl.c.o
-
-vm/srcs/game/init_sdl.i: vm/srcs/game/init_sdl.c.i
-
-.PHONY : vm/srcs/game/init_sdl.i
-
-# target to preprocess a source file
-vm/srcs/game/init_sdl.c.i:
-	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/init_sdl.c.i
-.PHONY : vm/srcs/game/init_sdl.c.i
-
-vm/srcs/game/init_sdl.s: vm/srcs/game/init_sdl.c.s
-
-.PHONY : vm/srcs/game/init_sdl.s
-
-# target to generate assembly for a file
-vm/srcs/game/init_sdl.c.s:
-	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/init_sdl.c.s
-.PHONY : vm/srcs/game/init_sdl.c.s
-
 vm/srcs/game/instuctions.o: vm/srcs/game/instuctions.c.o
 
 .PHONY : vm/srcs/game/instuctions.o
@@ -4173,86 +4092,194 @@ vm/srcs/game/instuctions.c.s:
 	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/instuctions.c.s
 .PHONY : vm/srcs/game/instuctions.c.s
 
-vm/srcs/game/print_arena.o: vm/srcs/game/print_arena.c.o
+vm/srcs/game/vis/create_vs.o: vm/srcs/game/vis/create_vs.c.o
 
-.PHONY : vm/srcs/game/print_arena.o
-
-# target to build an object file
-vm/srcs/game/print_arena.c.o:
-	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/print_arena.c.o
-.PHONY : vm/srcs/game/print_arena.c.o
-
-vm/srcs/game/print_arena.i: vm/srcs/game/print_arena.c.i
-
-.PHONY : vm/srcs/game/print_arena.i
-
-# target to preprocess a source file
-vm/srcs/game/print_arena.c.i:
-	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/print_arena.c.i
-.PHONY : vm/srcs/game/print_arena.c.i
-
-vm/srcs/game/print_arena.s: vm/srcs/game/print_arena.c.s
-
-.PHONY : vm/srcs/game/print_arena.s
-
-# target to generate assembly for a file
-vm/srcs/game/print_arena.c.s:
-	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/print_arena.c.s
-.PHONY : vm/srcs/game/print_arena.c.s
-
-vm/srcs/game/support_func.o: vm/srcs/game/support_func.c.o
-
-.PHONY : vm/srcs/game/support_func.o
+.PHONY : vm/srcs/game/vis/create_vs.o
 
 # target to build an object file
-vm/srcs/game/support_func.c.o:
-	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/support_func.c.o
-.PHONY : vm/srcs/game/support_func.c.o
+vm/srcs/game/vis/create_vs.c.o:
+	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/vis/create_vs.c.o
+.PHONY : vm/srcs/game/vis/create_vs.c.o
 
-vm/srcs/game/support_func.i: vm/srcs/game/support_func.c.i
+vm/srcs/game/vis/create_vs.i: vm/srcs/game/vis/create_vs.c.i
 
-.PHONY : vm/srcs/game/support_func.i
+.PHONY : vm/srcs/game/vis/create_vs.i
 
 # target to preprocess a source file
-vm/srcs/game/support_func.c.i:
-	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/support_func.c.i
-.PHONY : vm/srcs/game/support_func.c.i
+vm/srcs/game/vis/create_vs.c.i:
+	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/vis/create_vs.c.i
+.PHONY : vm/srcs/game/vis/create_vs.c.i
 
-vm/srcs/game/support_func.s: vm/srcs/game/support_func.c.s
+vm/srcs/game/vis/create_vs.s: vm/srcs/game/vis/create_vs.c.s
 
-.PHONY : vm/srcs/game/support_func.s
+.PHONY : vm/srcs/game/vis/create_vs.s
 
 # target to generate assembly for a file
-vm/srcs/game/support_func.c.s:
-	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/support_func.c.s
-.PHONY : vm/srcs/game/support_func.c.s
+vm/srcs/game/vis/create_vs.c.s:
+	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/vis/create_vs.c.s
+.PHONY : vm/srcs/game/vis/create_vs.c.s
 
-vm/srcs/game/visualise_arena.o: vm/srcs/game/visualise_arena.c.o
+vm/srcs/game/vis/display_carriages.o: vm/srcs/game/vis/display_carriages.c.o
 
-.PHONY : vm/srcs/game/visualise_arena.o
+.PHONY : vm/srcs/game/vis/display_carriages.o
 
 # target to build an object file
-vm/srcs/game/visualise_arena.c.o:
-	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/visualise_arena.c.o
-.PHONY : vm/srcs/game/visualise_arena.c.o
+vm/srcs/game/vis/display_carriages.c.o:
+	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/vis/display_carriages.c.o
+.PHONY : vm/srcs/game/vis/display_carriages.c.o
 
-vm/srcs/game/visualise_arena.i: vm/srcs/game/visualise_arena.c.i
+vm/srcs/game/vis/display_carriages.i: vm/srcs/game/vis/display_carriages.c.i
 
-.PHONY : vm/srcs/game/visualise_arena.i
+.PHONY : vm/srcs/game/vis/display_carriages.i
 
 # target to preprocess a source file
-vm/srcs/game/visualise_arena.c.i:
-	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/visualise_arena.c.i
-.PHONY : vm/srcs/game/visualise_arena.c.i
+vm/srcs/game/vis/display_carriages.c.i:
+	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/vis/display_carriages.c.i
+.PHONY : vm/srcs/game/vis/display_carriages.c.i
 
-vm/srcs/game/visualise_arena.s: vm/srcs/game/visualise_arena.c.s
+vm/srcs/game/vis/display_carriages.s: vm/srcs/game/vis/display_carriages.c.s
 
-.PHONY : vm/srcs/game/visualise_arena.s
+.PHONY : vm/srcs/game/vis/display_carriages.s
 
 # target to generate assembly for a file
-vm/srcs/game/visualise_arena.c.s:
-	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/visualise_arena.c.s
-.PHONY : vm/srcs/game/visualise_arena.c.s
+vm/srcs/game/vis/display_carriages.c.s:
+	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/vis/display_carriages.c.s
+.PHONY : vm/srcs/game/vis/display_carriages.c.s
+
+vm/srcs/game/vis/display_side_menu.o: vm/srcs/game/vis/display_side_menu.c.o
+
+.PHONY : vm/srcs/game/vis/display_side_menu.o
+
+# target to build an object file
+vm/srcs/game/vis/display_side_menu.c.o:
+	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/vis/display_side_menu.c.o
+.PHONY : vm/srcs/game/vis/display_side_menu.c.o
+
+vm/srcs/game/vis/display_side_menu.i: vm/srcs/game/vis/display_side_menu.c.i
+
+.PHONY : vm/srcs/game/vis/display_side_menu.i
+
+# target to preprocess a source file
+vm/srcs/game/vis/display_side_menu.c.i:
+	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/vis/display_side_menu.c.i
+.PHONY : vm/srcs/game/vis/display_side_menu.c.i
+
+vm/srcs/game/vis/display_side_menu.s: vm/srcs/game/vis/display_side_menu.c.s
+
+.PHONY : vm/srcs/game/vis/display_side_menu.s
+
+# target to generate assembly for a file
+vm/srcs/game/vis/display_side_menu.c.s:
+	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/vis/display_side_menu.c.s
+.PHONY : vm/srcs/game/vis/display_side_menu.c.s
+
+vm/srcs/game/vis/init_sdl.o: vm/srcs/game/vis/init_sdl.c.o
+
+.PHONY : vm/srcs/game/vis/init_sdl.o
+
+# target to build an object file
+vm/srcs/game/vis/init_sdl.c.o:
+	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/vis/init_sdl.c.o
+.PHONY : vm/srcs/game/vis/init_sdl.c.o
+
+vm/srcs/game/vis/init_sdl.i: vm/srcs/game/vis/init_sdl.c.i
+
+.PHONY : vm/srcs/game/vis/init_sdl.i
+
+# target to preprocess a source file
+vm/srcs/game/vis/init_sdl.c.i:
+	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/vis/init_sdl.c.i
+.PHONY : vm/srcs/game/vis/init_sdl.c.i
+
+vm/srcs/game/vis/init_sdl.s: vm/srcs/game/vis/init_sdl.c.s
+
+.PHONY : vm/srcs/game/vis/init_sdl.s
+
+# target to generate assembly for a file
+vm/srcs/game/vis/init_sdl.c.s:
+	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/vis/init_sdl.c.s
+.PHONY : vm/srcs/game/vis/init_sdl.c.s
+
+vm/srcs/game/vis/print_arena.o: vm/srcs/game/vis/print_arena.c.o
+
+.PHONY : vm/srcs/game/vis/print_arena.o
+
+# target to build an object file
+vm/srcs/game/vis/print_arena.c.o:
+	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/vis/print_arena.c.o
+.PHONY : vm/srcs/game/vis/print_arena.c.o
+
+vm/srcs/game/vis/print_arena.i: vm/srcs/game/vis/print_arena.c.i
+
+.PHONY : vm/srcs/game/vis/print_arena.i
+
+# target to preprocess a source file
+vm/srcs/game/vis/print_arena.c.i:
+	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/vis/print_arena.c.i
+.PHONY : vm/srcs/game/vis/print_arena.c.i
+
+vm/srcs/game/vis/print_arena.s: vm/srcs/game/vis/print_arena.c.s
+
+.PHONY : vm/srcs/game/vis/print_arena.s
+
+# target to generate assembly for a file
+vm/srcs/game/vis/print_arena.c.s:
+	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/vis/print_arena.c.s
+.PHONY : vm/srcs/game/vis/print_arena.c.s
+
+vm/srcs/game/vis/support_func.o: vm/srcs/game/vis/support_func.c.o
+
+.PHONY : vm/srcs/game/vis/support_func.o
+
+# target to build an object file
+vm/srcs/game/vis/support_func.c.o:
+	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/vis/support_func.c.o
+.PHONY : vm/srcs/game/vis/support_func.c.o
+
+vm/srcs/game/vis/support_func.i: vm/srcs/game/vis/support_func.c.i
+
+.PHONY : vm/srcs/game/vis/support_func.i
+
+# target to preprocess a source file
+vm/srcs/game/vis/support_func.c.i:
+	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/vis/support_func.c.i
+.PHONY : vm/srcs/game/vis/support_func.c.i
+
+vm/srcs/game/vis/support_func.s: vm/srcs/game/vis/support_func.c.s
+
+.PHONY : vm/srcs/game/vis/support_func.s
+
+# target to generate assembly for a file
+vm/srcs/game/vis/support_func.c.s:
+	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/vis/support_func.c.s
+.PHONY : vm/srcs/game/vis/support_func.c.s
+
+vm/srcs/game/vis/visualise_arena.o: vm/srcs/game/vis/visualise_arena.c.o
+
+.PHONY : vm/srcs/game/vis/visualise_arena.o
+
+# target to build an object file
+vm/srcs/game/vis/visualise_arena.c.o:
+	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/vis/visualise_arena.c.o
+.PHONY : vm/srcs/game/vis/visualise_arena.c.o
+
+vm/srcs/game/vis/visualise_arena.i: vm/srcs/game/vis/visualise_arena.c.i
+
+.PHONY : vm/srcs/game/vis/visualise_arena.i
+
+# target to preprocess a source file
+vm/srcs/game/vis/visualise_arena.c.i:
+	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/vis/visualise_arena.c.i
+.PHONY : vm/srcs/game/vis/visualise_arena.c.i
+
+vm/srcs/game/vis/visualise_arena.s: vm/srcs/game/vis/visualise_arena.c.s
+
+.PHONY : vm/srcs/game/vis/visualise_arena.s
+
+# target to generate assembly for a file
+vm/srcs/game/vis/visualise_arena.c.s:
+	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/vis/visualise_arena.c.s
+.PHONY : vm/srcs/game/vis/visualise_arena.c.s
 
 vm/srcs/main.o: vm/srcs/main.c.o
 
@@ -4851,15 +4878,9 @@ help:
 	@echo "... libft/ml_strtrim.o"
 	@echo "... libft/ml_strtrim.i"
 	@echo "... libft/ml_strtrim.s"
-	@echo "... vm/srcs/game/add_cell.o"
-	@echo "... vm/srcs/game/add_cell.i"
-	@echo "... vm/srcs/game/add_cell.s"
 	@echo "... vm/srcs/game/args_intf.o"
 	@echo "... vm/srcs/game/args_intf.i"
 	@echo "... vm/srcs/game/args_intf.s"
-	@echo "... vm/srcs/game/create_vs.o"
-	@echo "... vm/srcs/game/create_vs.i"
-	@echo "... vm/srcs/game/create_vs.s"
 	@echo "... vm/srcs/game/game.o"
 	@echo "... vm/srcs/game/game.i"
 	@echo "... vm/srcs/game/game.s"
@@ -4869,21 +4890,30 @@ help:
 	@echo "... vm/srcs/game/helper_func.o"
 	@echo "... vm/srcs/game/helper_func.i"
 	@echo "... vm/srcs/game/helper_func.s"
-	@echo "... vm/srcs/game/init_sdl.o"
-	@echo "... vm/srcs/game/init_sdl.i"
-	@echo "... vm/srcs/game/init_sdl.s"
 	@echo "... vm/srcs/game/instuctions.o"
 	@echo "... vm/srcs/game/instuctions.i"
 	@echo "... vm/srcs/game/instuctions.s"
-	@echo "... vm/srcs/game/print_arena.o"
-	@echo "... vm/srcs/game/print_arena.i"
-	@echo "... vm/srcs/game/print_arena.s"
-	@echo "... vm/srcs/game/support_func.o"
-	@echo "... vm/srcs/game/support_func.i"
-	@echo "... vm/srcs/game/support_func.s"
-	@echo "... vm/srcs/game/visualise_arena.o"
-	@echo "... vm/srcs/game/visualise_arena.i"
-	@echo "... vm/srcs/game/visualise_arena.s"
+	@echo "... vm/srcs/game/vis/create_vs.o"
+	@echo "... vm/srcs/game/vis/create_vs.i"
+	@echo "... vm/srcs/game/vis/create_vs.s"
+	@echo "... vm/srcs/game/vis/display_carriages.o"
+	@echo "... vm/srcs/game/vis/display_carriages.i"
+	@echo "... vm/srcs/game/vis/display_carriages.s"
+	@echo "... vm/srcs/game/vis/display_side_menu.o"
+	@echo "... vm/srcs/game/vis/display_side_menu.i"
+	@echo "... vm/srcs/game/vis/display_side_menu.s"
+	@echo "... vm/srcs/game/vis/init_sdl.o"
+	@echo "... vm/srcs/game/vis/init_sdl.i"
+	@echo "... vm/srcs/game/vis/init_sdl.s"
+	@echo "... vm/srcs/game/vis/print_arena.o"
+	@echo "... vm/srcs/game/vis/print_arena.i"
+	@echo "... vm/srcs/game/vis/print_arena.s"
+	@echo "... vm/srcs/game/vis/support_func.o"
+	@echo "... vm/srcs/game/vis/support_func.i"
+	@echo "... vm/srcs/game/vis/support_func.s"
+	@echo "... vm/srcs/game/vis/visualise_arena.o"
+	@echo "... vm/srcs/game/vis/visualise_arena.i"
+	@echo "... vm/srcs/game/vis/visualise_arena.s"
 	@echo "... vm/srcs/main.o"
 	@echo "... vm/srcs/main.i"
 	@echo "... vm/srcs/main.s"

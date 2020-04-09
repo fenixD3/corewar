@@ -568,13 +568,7 @@
 		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/vm/includes/vm.h">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/vm/srcs/game/add_cell.c">
-			<Option target="dencorewar"/>
-		</Unit>
 		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/vm/srcs/game/args_intf.c">
-			<Option target="dencorewar"/>
-		</Unit>
-		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/vm/srcs/game/create_vs.c">
 			<Option target="dencorewar"/>
 		</Unit>
 		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/vm/srcs/game/game.c">
@@ -586,19 +580,28 @@
 		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/vm/srcs/game/helper_func.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/vm/srcs/game/init_sdl.c">
-			<Option target="dencorewar"/>
-		</Unit>
 		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/vm/srcs/game/instuctions.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/vm/srcs/game/print_arena.c">
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/vm/srcs/game/vis/create_vs.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/vm/srcs/game/support_func.c">
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/vm/srcs/game/vis/display_carriages.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/vm/srcs/game/visualise_arena.c">
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/vm/srcs/game/vis/display_side_menu.c">
+			<Option target="dencorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/vm/srcs/game/vis/init_sdl.c">
+			<Option target="dencorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/vm/srcs/game/vis/print_arena.c">
+			<Option target="dencorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/vm/srcs/game/vis/support_func.c">
+			<Option target="dencorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/vm/srcs/game/vis/visualise_arena.c">
 			<Option target="dencorewar"/>
 		</Unit>
 		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/vm/srcs/main.c">

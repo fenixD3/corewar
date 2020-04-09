@@ -20,8 +20,7 @@ void			draw_backgroung(t_vis_tools *vs)
 	SDL_SetRenderDrawColor(vs->render, 0, 0, 0, SDL_ALPHA_OPAQUE);
 
 //	SDL_SetRenderDrawColor(vs->render, 40, 39, 36, SDL_ALPHA_OPAQUE);
-	stat_window = create_rect(15 + 64 * 24, 10,
-			vs->wight - 30 + 64 * 24, 5 + 64 * 15);
+	stat_window = create_rect(15 + 64 * 24, 10, vs->wight - 20 - 64 * 24, 5 + 64 * 15);
 	SDL_RenderFillRect(vs->render, &stat_window);
 }
 
@@ -39,51 +38,6 @@ void	ft_free_strsplit(char **str_array)
 		}
 		free(str_array);
 	}
-}
-
-void			draw_carriage(t_vis_tools *vs, int i, int priority, SDL_Color color)
-{
-	SDL_Rect	carrg;
-
-	if (priority > 3)
-		return ;
-	else
-	{
-		SDL_SetRenderDrawColor(vs->render, color.r, color.g, color.b, 0);
-		carrg = create_rect(10 + ((i - (i / 64) * 64) * 24) +
-				(priority ? (priority + 2) * 3 : 0),
-				13 + ((i / 64) * 15) + 13,
-				(16 / (priority + 1)) - 1, 2);
-		SDL_RenderFillRect(vs->render, &carrg);
-	}
-}
-
-void			display_carriages(t_vis_tools *vs, t_corewar *corewar)
-{
-	t_carriages	*carriage;
-	t_carriages	*tmp;
-	int			i;
-	int			priority;
-
-	i = 0;
-	priority = 0;
-	carriage = corewar->carriages;
-	tmp = corewar->carriages;
-	i = 0;
-	while (i < MEM_SIZE)
-	{
-		carriage = tmp;
-		while (carriage != NULL)
-		{
-			if (&(corewar->arena[i]) == carriage->op_pos)
-				draw_carriage(vs, i, priority++,
-						vs->text_color[-(carriage->reg[0]) - 1]);
-			carriage = carriage->next;
-		}
-		priority = 0;
-		i++;
-	}
-
 }
 
 char		**convert_arena(t_corewar *corewar)
@@ -115,18 +69,23 @@ void			display_objs(t_vis_tools *vs, t_corewar *corewar)
 	hex_arena = convert_arena(corewar);
 	print_arena(vs, hex_arena);
 	display_carriages(vs, corewar);
+	display_side_menu(vs, corewar);
 	ft_free_strsplit(hex_arena);
 }
 
 void			visualise_arena(t_corewar *corewar, t_vis_tools *vs, bool *quit)
 {
 	SDL_Event	e;
+	int			stop;
 
+	stop = 1;
 	g_change = 0;
 	display_objs(vs, corewar);
 	SDL_RenderPresent(vs->render);
 //	SDL_Delay(vs->speed);
-	track_events(vs, &e, quit);
+	while (stop)
+		track_events(vs, &e, quit, &stop);
+//	corewar->champs->
 }
 
 

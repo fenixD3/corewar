@@ -68,10 +68,14 @@ void				print_arena(t_vis_tools *vs, char **arena);
  */
 void				free_mem_font(t_vis_tools *vs);
 
-void				track_events(t_vis_tools *vs, SDL_Event *e, bool *quit);
+void				track_events(t_vis_tools *vs, SDL_Event *e, bool *quit, int *stop);
 
 SDL_Rect			create_rect(int x, int y, int text_w, int text_h);
 
 SDL_Color			init_color(int r, int g, int b, int a);
+
+void				display_side_menu(t_vis_tools *vs, t_corewar *corewar);
+
+void				display_carriages(t_vis_tools *vs, t_corewar *corewar);
 
 #endif

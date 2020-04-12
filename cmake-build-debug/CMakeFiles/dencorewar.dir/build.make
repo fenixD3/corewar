@@ -42,10 +42,10 @@ RM = "C:\Program Files\JetBrains\CLion 2019.2.2\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\da.filiptsev\Desktop\CoreWar_Hub
+CMAKE_SOURCE_DIR = C:\Users\da.filiptsev\Desktop\Corewar
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/dencorewar.dir/depend.make
@@ -59,2228 +59,2228 @@ include CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/asm/arguments.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/asm/arguments.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/asm/arguments.c.obj: ../asm/arguments.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/dencorewar.dir/asm/arguments.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\asm\arguments.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\asm\arguments.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/dencorewar.dir/asm/arguments.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\asm\arguments.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\asm\arguments.c
 
 CMakeFiles/dencorewar.dir/asm/arguments.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/asm/arguments.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\asm\arguments.c > CMakeFiles\dencorewar.dir\asm\arguments.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\asm\arguments.c > CMakeFiles\dencorewar.dir\asm\arguments.c.i
 
 CMakeFiles/dencorewar.dir/asm/arguments.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/asm/arguments.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\asm\arguments.c -o CMakeFiles\dencorewar.dir\asm\arguments.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\asm\arguments.c -o CMakeFiles\dencorewar.dir\asm\arguments.c.s
 
 CMakeFiles/dencorewar.dir/asm/asm.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/asm/asm.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/asm/asm.c.obj: ../asm/asm.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/dencorewar.dir/asm/asm.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\asm\asm.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\asm\asm.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/dencorewar.dir/asm/asm.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\asm\asm.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\asm\asm.c
 
 CMakeFiles/dencorewar.dir/asm/asm.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/asm/asm.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\asm\asm.c > CMakeFiles\dencorewar.dir\asm\asm.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\asm\asm.c > CMakeFiles\dencorewar.dir\asm\asm.c.i
 
 CMakeFiles/dencorewar.dir/asm/asm.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/asm/asm.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\asm\asm.c -o CMakeFiles\dencorewar.dir\asm\asm.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\asm\asm.c -o CMakeFiles\dencorewar.dir\asm\asm.c.s
 
 CMakeFiles/dencorewar.dir/asm/ft_isdigitalword.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/asm/ft_isdigitalword.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/asm/ft_isdigitalword.c.obj: ../asm/ft_isdigitalword.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/dencorewar.dir/asm/ft_isdigitalword.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\asm\ft_isdigitalword.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\asm\ft_isdigitalword.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/dencorewar.dir/asm/ft_isdigitalword.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\asm\ft_isdigitalword.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\asm\ft_isdigitalword.c
 
 CMakeFiles/dencorewar.dir/asm/ft_isdigitalword.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/asm/ft_isdigitalword.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\asm\ft_isdigitalword.c > CMakeFiles\dencorewar.dir\asm\ft_isdigitalword.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\asm\ft_isdigitalword.c > CMakeFiles\dencorewar.dir\asm\ft_isdigitalword.c.i
 
 CMakeFiles/dencorewar.dir/asm/ft_isdigitalword.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/asm/ft_isdigitalword.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\asm\ft_isdigitalword.c -o CMakeFiles\dencorewar.dir\asm\ft_isdigitalword.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\asm\ft_isdigitalword.c -o CMakeFiles\dencorewar.dir\asm\ft_isdigitalword.c.s
 
 CMakeFiles/dencorewar.dir/asm/ft_isspecial.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/asm/ft_isspecial.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/asm/ft_isspecial.c.obj: ../asm/ft_isspecial.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/dencorewar.dir/asm/ft_isspecial.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\asm\ft_isspecial.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\asm\ft_isspecial.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/dencorewar.dir/asm/ft_isspecial.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\asm\ft_isspecial.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\asm\ft_isspecial.c
 
 CMakeFiles/dencorewar.dir/asm/ft_isspecial.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/asm/ft_isspecial.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\asm\ft_isspecial.c > CMakeFiles\dencorewar.dir\asm\ft_isspecial.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\asm\ft_isspecial.c > CMakeFiles\dencorewar.dir\asm\ft_isspecial.c.i
 
 CMakeFiles/dencorewar.dir/asm/ft_isspecial.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/asm/ft_isspecial.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\asm\ft_isspecial.c -o CMakeFiles\dencorewar.dir\asm\ft_isspecial.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\asm\ft_isspecial.c -o CMakeFiles\dencorewar.dir\asm\ft_isspecial.c.s
 
 CMakeFiles/dencorewar.dir/asm/ft_skipword.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/asm/ft_skipword.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/asm/ft_skipword.c.obj: ../asm/ft_skipword.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/dencorewar.dir/asm/ft_skipword.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\asm\ft_skipword.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\asm\ft_skipword.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/dencorewar.dir/asm/ft_skipword.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\asm\ft_skipword.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\asm\ft_skipword.c
 
 CMakeFiles/dencorewar.dir/asm/ft_skipword.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/asm/ft_skipword.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\asm\ft_skipword.c > CMakeFiles\dencorewar.dir\asm\ft_skipword.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\asm\ft_skipword.c > CMakeFiles\dencorewar.dir\asm\ft_skipword.c.i
 
 CMakeFiles/dencorewar.dir/asm/ft_skipword.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/asm/ft_skipword.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\asm\ft_skipword.c -o CMakeFiles\dencorewar.dir\asm\ft_skipword.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\asm\ft_skipword.c -o CMakeFiles\dencorewar.dir\asm\ft_skipword.c.s
 
 CMakeFiles/dencorewar.dir/asm/get_header.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/asm/get_header.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/asm/get_header.c.obj: ../asm/get_header.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/dencorewar.dir/asm/get_header.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\asm\get_header.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\asm\get_header.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/dencorewar.dir/asm/get_header.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\asm\get_header.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\asm\get_header.c
 
 CMakeFiles/dencorewar.dir/asm/get_header.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/asm/get_header.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\asm\get_header.c > CMakeFiles\dencorewar.dir\asm\get_header.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\asm\get_header.c > CMakeFiles\dencorewar.dir\asm\get_header.c.i
 
 CMakeFiles/dencorewar.dir/asm/get_header.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/asm/get_header.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\asm\get_header.c -o CMakeFiles\dencorewar.dir\asm\get_header.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\asm\get_header.c -o CMakeFiles\dencorewar.dir\asm\get_header.c.s
 
 CMakeFiles/dencorewar.dir/asm/token_recognition.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/asm/token_recognition.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/asm/token_recognition.c.obj: ../asm/token_recognition.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/dencorewar.dir/asm/token_recognition.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\asm\token_recognition.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\asm\token_recognition.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/dencorewar.dir/asm/token_recognition.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\asm\token_recognition.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\asm\token_recognition.c
 
 CMakeFiles/dencorewar.dir/asm/token_recognition.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/asm/token_recognition.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\asm\token_recognition.c > CMakeFiles\dencorewar.dir\asm\token_recognition.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\asm\token_recognition.c > CMakeFiles\dencorewar.dir\asm\token_recognition.c.i
 
 CMakeFiles/dencorewar.dir/asm/token_recognition.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/asm/token_recognition.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\asm\token_recognition.c -o CMakeFiles\dencorewar.dir\asm\token_recognition.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\asm\token_recognition.c -o CMakeFiles\dencorewar.dir\asm\token_recognition.c.s
 
 CMakeFiles/dencorewar.dir/asm/tokenizer.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/asm/tokenizer.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/asm/tokenizer.c.obj: ../asm/tokenizer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/dencorewar.dir/asm/tokenizer.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\asm\tokenizer.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\asm\tokenizer.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/dencorewar.dir/asm/tokenizer.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\asm\tokenizer.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\asm\tokenizer.c
 
 CMakeFiles/dencorewar.dir/asm/tokenizer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/asm/tokenizer.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\asm\tokenizer.c > CMakeFiles\dencorewar.dir\asm\tokenizer.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\asm\tokenizer.c > CMakeFiles\dencorewar.dir\asm\tokenizer.c.i
 
 CMakeFiles/dencorewar.dir/asm/tokenizer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/asm/tokenizer.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\asm\tokenizer.c -o CMakeFiles\dencorewar.dir\asm\tokenizer.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\asm\tokenizer.c -o CMakeFiles\dencorewar.dir\asm\tokenizer.c.s
 
 CMakeFiles/dencorewar.dir/asm/tokens_lst.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/asm/tokens_lst.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/asm/tokens_lst.c.obj: ../asm/tokens_lst.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/dencorewar.dir/asm/tokens_lst.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\asm\tokens_lst.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\asm\tokens_lst.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/dencorewar.dir/asm/tokens_lst.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\asm\tokens_lst.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\asm\tokens_lst.c
 
 CMakeFiles/dencorewar.dir/asm/tokens_lst.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/asm/tokens_lst.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\asm\tokens_lst.c > CMakeFiles\dencorewar.dir\asm\tokens_lst.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\asm\tokens_lst.c > CMakeFiles\dencorewar.dir\asm\tokens_lst.c.i
 
 CMakeFiles/dencorewar.dir/asm/tokens_lst.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/asm/tokens_lst.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\asm\tokens_lst.c -o CMakeFiles\dencorewar.dir\asm\tokens_lst.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\asm\tokens_lst.c -o CMakeFiles\dencorewar.dir\asm\tokens_lst.c.s
 
 CMakeFiles/dencorewar.dir/ft_printf/srcs/field_len.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/ft_printf/srcs/field_len.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/ft_printf/srcs/field_len.c.obj: ../ft_printf/srcs/field_len.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/dencorewar.dir/ft_printf/srcs/field_len.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\ft_printf\srcs\field_len.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcs\field_len.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/dencorewar.dir/ft_printf/srcs/field_len.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\ft_printf\srcs\field_len.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcs\field_len.c
 
 CMakeFiles/dencorewar.dir/ft_printf/srcs/field_len.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/ft_printf/srcs/field_len.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcs\field_len.c > CMakeFiles\dencorewar.dir\ft_printf\srcs\field_len.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcs\field_len.c > CMakeFiles\dencorewar.dir\ft_printf\srcs\field_len.c.i
 
 CMakeFiles/dencorewar.dir/ft_printf/srcs/field_len.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/ft_printf/srcs/field_len.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcs\field_len.c -o CMakeFiles\dencorewar.dir\ft_printf\srcs\field_len.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcs\field_len.c -o CMakeFiles\dencorewar.dir\ft_printf\srcs\field_len.c.s
 
 CMakeFiles/dencorewar.dir/ft_printf/srcs/fill_union.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/ft_printf/srcs/fill_union.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/ft_printf/srcs/fill_union.c.obj: ../ft_printf/srcs/fill_union.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/dencorewar.dir/ft_printf/srcs/fill_union.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\ft_printf\srcs\fill_union.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcs\fill_union.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/dencorewar.dir/ft_printf/srcs/fill_union.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\ft_printf\srcs\fill_union.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcs\fill_union.c
 
 CMakeFiles/dencorewar.dir/ft_printf/srcs/fill_union.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/ft_printf/srcs/fill_union.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcs\fill_union.c > CMakeFiles\dencorewar.dir\ft_printf\srcs\fill_union.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcs\fill_union.c > CMakeFiles\dencorewar.dir\ft_printf\srcs\fill_union.c.i
 
 CMakeFiles/dencorewar.dir/ft_printf/srcs/fill_union.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/ft_printf/srcs/fill_union.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcs\fill_union.c -o CMakeFiles\dencorewar.dir\ft_printf\srcs\fill_union.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcs\fill_union.c -o CMakeFiles\dencorewar.dir\ft_printf\srcs\fill_union.c.s
 
 CMakeFiles/dencorewar.dir/ft_printf/srcs/ft_itoa_base_printf.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/ft_printf/srcs/ft_itoa_base_printf.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/ft_printf/srcs/ft_itoa_base_printf.c.obj: ../ft_printf/srcs/ft_itoa_base_printf.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/dencorewar.dir/ft_printf/srcs/ft_itoa_base_printf.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\ft_printf\srcs\ft_itoa_base_printf.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcs\ft_itoa_base_printf.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/dencorewar.dir/ft_printf/srcs/ft_itoa_base_printf.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\ft_printf\srcs\ft_itoa_base_printf.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcs\ft_itoa_base_printf.c
 
 CMakeFiles/dencorewar.dir/ft_printf/srcs/ft_itoa_base_printf.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/ft_printf/srcs/ft_itoa_base_printf.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcs\ft_itoa_base_printf.c > CMakeFiles\dencorewar.dir\ft_printf\srcs\ft_itoa_base_printf.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcs\ft_itoa_base_printf.c > CMakeFiles\dencorewar.dir\ft_printf\srcs\ft_itoa_base_printf.c.i
 
 CMakeFiles/dencorewar.dir/ft_printf/srcs/ft_itoa_base_printf.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/ft_printf/srcs/ft_itoa_base_printf.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcs\ft_itoa_base_printf.c -o CMakeFiles\dencorewar.dir\ft_printf\srcs\ft_itoa_base_printf.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcs\ft_itoa_base_printf.c -o CMakeFiles\dencorewar.dir\ft_printf\srcs\ft_itoa_base_printf.c.s
 
 CMakeFiles/dencorewar.dir/ft_printf/srcs/ft_printf.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/ft_printf/srcs/ft_printf.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/ft_printf/srcs/ft_printf.c.obj: ../ft_printf/srcs/ft_printf.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/dencorewar.dir/ft_printf/srcs/ft_printf.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\ft_printf\srcs\ft_printf.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcs\ft_printf.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/dencorewar.dir/ft_printf/srcs/ft_printf.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\ft_printf\srcs\ft_printf.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcs\ft_printf.c
 
 CMakeFiles/dencorewar.dir/ft_printf/srcs/ft_printf.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/ft_printf/srcs/ft_printf.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcs\ft_printf.c > CMakeFiles\dencorewar.dir\ft_printf\srcs\ft_printf.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcs\ft_printf.c > CMakeFiles\dencorewar.dir\ft_printf\srcs\ft_printf.c.i
 
 CMakeFiles/dencorewar.dir/ft_printf/srcs/ft_printf.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/ft_printf/srcs/ft_printf.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcs\ft_printf.c -o CMakeFiles\dencorewar.dir\ft_printf\srcs\ft_printf.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcs\ft_printf.c -o CMakeFiles\dencorewar.dir\ft_printf\srcs\ft_printf.c.s
 
 CMakeFiles/dencorewar.dir/ft_printf/srcs/get_binary.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/ft_printf/srcs/get_binary.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/ft_printf/srcs/get_binary.c.obj: ../ft_printf/srcs/get_binary.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/dencorewar.dir/ft_printf/srcs/get_binary.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\ft_printf\srcs\get_binary.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcs\get_binary.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/dencorewar.dir/ft_printf/srcs/get_binary.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\ft_printf\srcs\get_binary.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcs\get_binary.c
 
 CMakeFiles/dencorewar.dir/ft_printf/srcs/get_binary.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/ft_printf/srcs/get_binary.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcs\get_binary.c > CMakeFiles\dencorewar.dir\ft_printf\srcs\get_binary.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcs\get_binary.c > CMakeFiles\dencorewar.dir\ft_printf\srcs\get_binary.c.i
 
 CMakeFiles/dencorewar.dir/ft_printf/srcs/get_binary.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/ft_printf/srcs/get_binary.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcs\get_binary.c -o CMakeFiles\dencorewar.dir\ft_printf\srcs\get_binary.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcs\get_binary.c -o CMakeFiles\dencorewar.dir\ft_printf\srcs\get_binary.c.s
 
 CMakeFiles/dencorewar.dir/ft_printf/srcs/is_parser.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/ft_printf/srcs/is_parser.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/ft_printf/srcs/is_parser.c.obj: ../ft_printf/srcs/is_parser.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/dencorewar.dir/ft_printf/srcs/is_parser.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\ft_printf\srcs\is_parser.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcs\is_parser.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/dencorewar.dir/ft_printf/srcs/is_parser.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\ft_printf\srcs\is_parser.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcs\is_parser.c
 
 CMakeFiles/dencorewar.dir/ft_printf/srcs/is_parser.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/ft_printf/srcs/is_parser.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcs\is_parser.c > CMakeFiles\dencorewar.dir\ft_printf\srcs\is_parser.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcs\is_parser.c > CMakeFiles\dencorewar.dir\ft_printf\srcs\is_parser.c.i
 
 CMakeFiles/dencorewar.dir/ft_printf/srcs/is_parser.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/ft_printf/srcs/is_parser.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcs\is_parser.c -o CMakeFiles\dencorewar.dir\ft_printf\srcs\is_parser.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcs\is_parser.c -o CMakeFiles\dencorewar.dir\ft_printf\srcs\is_parser.c.s
 
 CMakeFiles/dencorewar.dir/ft_printf/srcs/is_typeflags.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/ft_printf/srcs/is_typeflags.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/ft_printf/srcs/is_typeflags.c.obj: ../ft_printf/srcs/is_typeflags.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/dencorewar.dir/ft_printf/srcs/is_typeflags.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\ft_printf\srcs\is_typeflags.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcs\is_typeflags.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/dencorewar.dir/ft_printf/srcs/is_typeflags.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\ft_printf\srcs\is_typeflags.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcs\is_typeflags.c
 
 CMakeFiles/dencorewar.dir/ft_printf/srcs/is_typeflags.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/ft_printf/srcs/is_typeflags.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcs\is_typeflags.c > CMakeFiles\dencorewar.dir\ft_printf\srcs\is_typeflags.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcs\is_typeflags.c > CMakeFiles\dencorewar.dir\ft_printf\srcs\is_typeflags.c.i
 
 CMakeFiles/dencorewar.dir/ft_printf/srcs/is_typeflags.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/ft_printf/srcs/is_typeflags.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcs\is_typeflags.c -o CMakeFiles\dencorewar.dir\ft_printf\srcs\is_typeflags.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcs\is_typeflags.c -o CMakeFiles\dencorewar.dir\ft_printf\srcs\is_typeflags.c.s
 
 CMakeFiles/dencorewar.dir/ft_printf/srcs/make_field.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/ft_printf/srcs/make_field.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/ft_printf/srcs/make_field.c.obj: ../ft_printf/srcs/make_field.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/dencorewar.dir/ft_printf/srcs/make_field.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\ft_printf\srcs\make_field.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcs\make_field.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/dencorewar.dir/ft_printf/srcs/make_field.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\ft_printf\srcs\make_field.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcs\make_field.c
 
 CMakeFiles/dencorewar.dir/ft_printf/srcs/make_field.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/ft_printf/srcs/make_field.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcs\make_field.c > CMakeFiles\dencorewar.dir\ft_printf\srcs\make_field.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcs\make_field.c > CMakeFiles\dencorewar.dir\ft_printf\srcs\make_field.c.i
 
 CMakeFiles/dencorewar.dir/ft_printf/srcs/make_field.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/ft_printf/srcs/make_field.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcs\make_field.c -o CMakeFiles\dencorewar.dir\ft_printf\srcs\make_field.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcs\make_field.c -o CMakeFiles\dencorewar.dir\ft_printf\srcs\make_field.c.s
 
 CMakeFiles/dencorewar.dir/ft_printf/srcs/parsing_funcs.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/ft_printf/srcs/parsing_funcs.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/ft_printf/srcs/parsing_funcs.c.obj: ../ft_printf/srcs/parsing_funcs.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/dencorewar.dir/ft_printf/srcs/parsing_funcs.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\ft_printf\srcs\parsing_funcs.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcs\parsing_funcs.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/dencorewar.dir/ft_printf/srcs/parsing_funcs.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\ft_printf\srcs\parsing_funcs.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcs\parsing_funcs.c
 
 CMakeFiles/dencorewar.dir/ft_printf/srcs/parsing_funcs.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/ft_printf/srcs/parsing_funcs.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcs\parsing_funcs.c > CMakeFiles\dencorewar.dir\ft_printf\srcs\parsing_funcs.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcs\parsing_funcs.c > CMakeFiles\dencorewar.dir\ft_printf\srcs\parsing_funcs.c.i
 
 CMakeFiles/dencorewar.dir/ft_printf/srcs/parsing_funcs.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/ft_printf/srcs/parsing_funcs.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcs\parsing_funcs.c -o CMakeFiles\dencorewar.dir\ft_printf\srcs\parsing_funcs.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcs\parsing_funcs.c -o CMakeFiles\dencorewar.dir\ft_printf\srcs\parsing_funcs.c.s
 
 CMakeFiles/dencorewar.dir/ft_printf/srcs/parsing_generaly.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/ft_printf/srcs/parsing_generaly.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/ft_printf/srcs/parsing_generaly.c.obj: ../ft_printf/srcs/parsing_generaly.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/dencorewar.dir/ft_printf/srcs/parsing_generaly.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\ft_printf\srcs\parsing_generaly.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcs\parsing_generaly.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/dencorewar.dir/ft_printf/srcs/parsing_generaly.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\ft_printf\srcs\parsing_generaly.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcs\parsing_generaly.c
 
 CMakeFiles/dencorewar.dir/ft_printf/srcs/parsing_generaly.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/ft_printf/srcs/parsing_generaly.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcs\parsing_generaly.c > CMakeFiles\dencorewar.dir\ft_printf\srcs\parsing_generaly.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcs\parsing_generaly.c > CMakeFiles\dencorewar.dir\ft_printf\srcs\parsing_generaly.c.i
 
 CMakeFiles/dencorewar.dir/ft_printf/srcs/parsing_generaly.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/ft_printf/srcs/parsing_generaly.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcs\parsing_generaly.c -o CMakeFiles\dencorewar.dir\ft_printf\srcs\parsing_generaly.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcs\parsing_generaly.c -o CMakeFiles\dencorewar.dir\ft_printf\srcs\parsing_generaly.c.s
 
 CMakeFiles/dencorewar.dir/ft_printf/srcs/prepare_lennum.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/ft_printf/srcs/prepare_lennum.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/ft_printf/srcs/prepare_lennum.c.obj: ../ft_printf/srcs/prepare_lennum.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/dencorewar.dir/ft_printf/srcs/prepare_lennum.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\ft_printf\srcs\prepare_lennum.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcs\prepare_lennum.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/dencorewar.dir/ft_printf/srcs/prepare_lennum.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\ft_printf\srcs\prepare_lennum.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcs\prepare_lennum.c
 
 CMakeFiles/dencorewar.dir/ft_printf/srcs/prepare_lennum.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/ft_printf/srcs/prepare_lennum.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcs\prepare_lennum.c > CMakeFiles\dencorewar.dir\ft_printf\srcs\prepare_lennum.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcs\prepare_lennum.c > CMakeFiles\dencorewar.dir\ft_printf\srcs\prepare_lennum.c.i
 
 CMakeFiles/dencorewar.dir/ft_printf/srcs/prepare_lennum.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/ft_printf/srcs/prepare_lennum.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcs\prepare_lennum.c -o CMakeFiles\dencorewar.dir\ft_printf\srcs\prepare_lennum.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcs\prepare_lennum.c -o CMakeFiles\dencorewar.dir\ft_printf\srcs\prepare_lennum.c.s
 
 CMakeFiles/dencorewar.dir/ft_printf/srcs/set_buff.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/ft_printf/srcs/set_buff.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/ft_printf/srcs/set_buff.c.obj: ../ft_printf/srcs/set_buff.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/dencorewar.dir/ft_printf/srcs/set_buff.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\ft_printf\srcs\set_buff.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcs\set_buff.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/dencorewar.dir/ft_printf/srcs/set_buff.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\ft_printf\srcs\set_buff.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcs\set_buff.c
 
 CMakeFiles/dencorewar.dir/ft_printf/srcs/set_buff.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/ft_printf/srcs/set_buff.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcs\set_buff.c > CMakeFiles\dencorewar.dir\ft_printf\srcs\set_buff.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcs\set_buff.c > CMakeFiles\dencorewar.dir\ft_printf\srcs\set_buff.c.i
 
 CMakeFiles/dencorewar.dir/ft_printf/srcs/set_buff.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/ft_printf/srcs/set_buff.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcs\set_buff.c -o CMakeFiles\dencorewar.dir\ft_printf\srcs\set_buff.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcs\set_buff.c -o CMakeFiles\dencorewar.dir\ft_printf\srcs\set_buff.c.s
 
 CMakeFiles/dencorewar.dir/ft_printf/srcs/set_flags.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/ft_printf/srcs/set_flags.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/ft_printf/srcs/set_flags.c.obj: ../ft_printf/srcs/set_flags.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/dencorewar.dir/ft_printf/srcs/set_flags.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\ft_printf\srcs\set_flags.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcs\set_flags.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/dencorewar.dir/ft_printf/srcs/set_flags.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\ft_printf\srcs\set_flags.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcs\set_flags.c
 
 CMakeFiles/dencorewar.dir/ft_printf/srcs/set_flags.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/ft_printf/srcs/set_flags.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcs\set_flags.c > CMakeFiles\dencorewar.dir\ft_printf\srcs\set_flags.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcs\set_flags.c > CMakeFiles\dencorewar.dir\ft_printf\srcs\set_flags.c.i
 
 CMakeFiles/dencorewar.dir/ft_printf/srcs/set_flags.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/ft_printf/srcs/set_flags.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcs\set_flags.c -o CMakeFiles\dencorewar.dir\ft_printf\srcs\set_flags.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcs\set_flags.c -o CMakeFiles\dencorewar.dir\ft_printf\srcs\set_flags.c.s
 
 CMakeFiles/dencorewar.dir/ft_printf/srcs/str_tolower.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/ft_printf/srcs/str_tolower.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/ft_printf/srcs/str_tolower.c.obj: ../ft_printf/srcs/str_tolower.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/dencorewar.dir/ft_printf/srcs/str_tolower.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\ft_printf\srcs\str_tolower.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcs\str_tolower.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/dencorewar.dir/ft_printf/srcs/str_tolower.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\ft_printf\srcs\str_tolower.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcs\str_tolower.c
 
 CMakeFiles/dencorewar.dir/ft_printf/srcs/str_tolower.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/ft_printf/srcs/str_tolower.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcs\str_tolower.c > CMakeFiles\dencorewar.dir\ft_printf\srcs\str_tolower.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcs\str_tolower.c > CMakeFiles\dencorewar.dir\ft_printf\srcs\str_tolower.c.i
 
 CMakeFiles/dencorewar.dir/ft_printf/srcs/str_tolower.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/ft_printf/srcs/str_tolower.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcs\str_tolower.c -o CMakeFiles\dencorewar.dir\ft_printf\srcs\str_tolower.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcs\str_tolower.c -o CMakeFiles\dencorewar.dir\ft_printf\srcs\str_tolower.c.s
 
 CMakeFiles/dencorewar.dir/ft_printf/srcs/to_buff.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/ft_printf/srcs/to_buff.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/ft_printf/srcs/to_buff.c.obj: ../ft_printf/srcs/to_buff.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/dencorewar.dir/ft_printf/srcs/to_buff.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\ft_printf\srcs\to_buff.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcs\to_buff.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/dencorewar.dir/ft_printf/srcs/to_buff.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\ft_printf\srcs\to_buff.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcs\to_buff.c
 
 CMakeFiles/dencorewar.dir/ft_printf/srcs/to_buff.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/ft_printf/srcs/to_buff.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcs\to_buff.c > CMakeFiles\dencorewar.dir\ft_printf\srcs\to_buff.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcs\to_buff.c > CMakeFiles\dencorewar.dir\ft_printf\srcs\to_buff.c.i
 
 CMakeFiles/dencorewar.dir/ft_printf/srcs/to_buff.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/ft_printf/srcs/to_buff.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcs\to_buff.c -o CMakeFiles\dencorewar.dir\ft_printf\srcs\to_buff.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcs\to_buff.c -o CMakeFiles\dencorewar.dir\ft_printf\srcs\to_buff.c.s
 
 CMakeFiles/dencorewar.dir/ft_printf/srcs/which_sign.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/ft_printf/srcs/which_sign.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/ft_printf/srcs/which_sign.c.obj: ../ft_printf/srcs/which_sign.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/dencorewar.dir/ft_printf/srcs/which_sign.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\ft_printf\srcs\which_sign.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcs\which_sign.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/dencorewar.dir/ft_printf/srcs/which_sign.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\ft_printf\srcs\which_sign.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcs\which_sign.c
 
 CMakeFiles/dencorewar.dir/ft_printf/srcs/which_sign.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/ft_printf/srcs/which_sign.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcs\which_sign.c > CMakeFiles\dencorewar.dir\ft_printf\srcs\which_sign.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcs\which_sign.c > CMakeFiles\dencorewar.dir\ft_printf\srcs\which_sign.c.i
 
 CMakeFiles/dencorewar.dir/ft_printf/srcs/which_sign.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/ft_printf/srcs/which_sign.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcs\which_sign.c -o CMakeFiles\dencorewar.dir\ft_printf\srcs\which_sign.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcs\which_sign.c -o CMakeFiles\dencorewar.dir\ft_printf\srcs\which_sign.c.s
 
 CMakeFiles/dencorewar.dir/ft_printf/srcs/zeroing.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/ft_printf/srcs/zeroing.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/ft_printf/srcs/zeroing.c.obj: ../ft_printf/srcs/zeroing.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/dencorewar.dir/ft_printf/srcs/zeroing.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\ft_printf\srcs\zeroing.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcs\zeroing.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/dencorewar.dir/ft_printf/srcs/zeroing.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\ft_printf\srcs\zeroing.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcs\zeroing.c
 
 CMakeFiles/dencorewar.dir/ft_printf/srcs/zeroing.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/ft_printf/srcs/zeroing.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcs\zeroing.c > CMakeFiles\dencorewar.dir\ft_printf\srcs\zeroing.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcs\zeroing.c > CMakeFiles\dencorewar.dir\ft_printf\srcs\zeroing.c.i
 
 CMakeFiles/dencorewar.dir/ft_printf/srcs/zeroing.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/ft_printf/srcs/zeroing.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcs\zeroing.c -o CMakeFiles\dencorewar.dir\ft_printf\srcs\zeroing.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcs\zeroing.c -o CMakeFiles\dencorewar.dir\ft_printf\srcs\zeroing.c.s
 
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/check_create_float_res.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/check_create_float_res.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/check_create_float_res.c.obj: ../ft_printf/srcsFloat/check_create_float_res.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/check_create_float_res.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\check_create_float_res.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcsFloat\check_create_float_res.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/check_create_float_res.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\check_create_float_res.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcsFloat\check_create_float_res.c
 
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/check_create_float_res.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/check_create_float_res.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcsFloat\check_create_float_res.c > CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\check_create_float_res.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcsFloat\check_create_float_res.c > CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\check_create_float_res.c.i
 
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/check_create_float_res.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/check_create_float_res.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcsFloat\check_create_float_res.c -o CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\check_create_float_res.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcsFloat\check_create_float_res.c -o CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\check_create_float_res.c.s
 
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/e_flag_intf.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/e_flag_intf.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/e_flag_intf.c.obj: ../ft_printf/srcsFloat/e_flag_intf.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/e_flag_intf.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\e_flag_intf.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcsFloat\e_flag_intf.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/e_flag_intf.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\e_flag_intf.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcsFloat\e_flag_intf.c
 
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/e_flag_intf.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/e_flag_intf.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcsFloat\e_flag_intf.c > CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\e_flag_intf.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcsFloat\e_flag_intf.c > CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\e_flag_intf.c.i
 
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/e_flag_intf.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/e_flag_intf.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcsFloat\e_flag_intf.c -o CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\e_flag_intf.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcsFloat\e_flag_intf.c -o CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\e_flag_intf.c.s
 
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/float_intf.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/float_intf.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/float_intf.c.obj: ../ft_printf/srcsFloat/float_intf.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/float_intf.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\float_intf.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcsFloat\float_intf.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/float_intf.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\float_intf.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcsFloat\float_intf.c
 
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/float_intf.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/float_intf.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcsFloat\float_intf.c > CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\float_intf.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcsFloat\float_intf.c > CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\float_intf.c.i
 
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/float_intf.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/float_intf.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcsFloat\float_intf.c -o CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\float_intf.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcsFloat\float_intf.c -o CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\float_intf.c.s
 
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/float_rounding.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/float_rounding.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/float_rounding.c.obj: ../ft_printf/srcsFloat/float_rounding.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/float_rounding.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\float_rounding.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcsFloat\float_rounding.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/float_rounding.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\float_rounding.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcsFloat\float_rounding.c
 
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/float_rounding.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/float_rounding.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcsFloat\float_rounding.c > CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\float_rounding.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcsFloat\float_rounding.c > CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\float_rounding.c.i
 
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/float_rounding.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/float_rounding.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcsFloat\float_rounding.c -o CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\float_rounding.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcsFloat\float_rounding.c -o CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\float_rounding.c.s
 
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/frees_for_float.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/frees_for_float.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/frees_for_float.c.obj: ../ft_printf/srcsFloat/frees_for_float.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/frees_for_float.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\frees_for_float.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcsFloat\frees_for_float.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/frees_for_float.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\frees_for_float.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcsFloat\frees_for_float.c
 
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/frees_for_float.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/frees_for_float.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcsFloat\frees_for_float.c > CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\frees_for_float.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcsFloat\frees_for_float.c > CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\frees_for_float.c.i
 
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/frees_for_float.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/frees_for_float.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcsFloat\frees_for_float.c -o CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\frees_for_float.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcsFloat\frees_for_float.c -o CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\frees_for_float.c.s
 
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/ft_log10.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/ft_log10.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/ft_log10.c.obj: ../ft_printf/srcsFloat/ft_log10.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/ft_log10.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\ft_log10.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcsFloat\ft_log10.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/ft_log10.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\ft_log10.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcsFloat\ft_log10.c
 
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/ft_log10.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/ft_log10.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcsFloat\ft_log10.c > CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\ft_log10.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcsFloat\ft_log10.c > CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\ft_log10.c.i
 
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/ft_log10.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/ft_log10.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcsFloat\ft_log10.c -o CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\ft_log10.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcsFloat\ft_log10.c -o CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\ft_log10.c.s
 
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/ft_log2.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/ft_log2.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/ft_log2.c.obj: ../ft_printf/srcsFloat/ft_log2.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/ft_log2.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\ft_log2.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcsFloat\ft_log2.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/ft_log2.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\ft_log2.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcsFloat\ft_log2.c
 
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/ft_log2.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/ft_log2.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcsFloat\ft_log2.c > CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\ft_log2.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcsFloat\ft_log2.c > CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\ft_log2.c.i
 
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/ft_log2.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/ft_log2.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcsFloat\ft_log2.c -o CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\ft_log2.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcsFloat\ft_log2.c -o CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\ft_log2.c.s
 
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/g_flag_intf.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/g_flag_intf.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/g_flag_intf.c.obj: ../ft_printf/srcsFloat/g_flag_intf.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/g_flag_intf.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\g_flag_intf.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcsFloat\g_flag_intf.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/g_flag_intf.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\g_flag_intf.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcsFloat\g_flag_intf.c
 
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/g_flag_intf.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/g_flag_intf.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcsFloat\g_flag_intf.c > CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\g_flag_intf.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcsFloat\g_flag_intf.c > CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\g_flag_intf.c.i
 
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/g_flag_intf.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/g_flag_intf.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcsFloat\g_flag_intf.c -o CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\g_flag_intf.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcsFloat\g_flag_intf.c -o CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\g_flag_intf.c.s
 
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/get_dbl_values.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/get_dbl_values.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/get_dbl_values.c.obj: ../ft_printf/srcsFloat/get_dbl_values.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/get_dbl_values.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\get_dbl_values.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcsFloat\get_dbl_values.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/get_dbl_values.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\get_dbl_values.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcsFloat\get_dbl_values.c
 
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/get_dbl_values.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/get_dbl_values.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcsFloat\get_dbl_values.c > CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\get_dbl_values.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcsFloat\get_dbl_values.c > CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\get_dbl_values.c.i
 
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/get_dbl_values.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/get_dbl_values.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcsFloat\get_dbl_values.c -o CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\get_dbl_values.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcsFloat\get_dbl_values.c -o CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\get_dbl_values.c.s
 
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/get_ldbl_values.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/get_ldbl_values.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/get_ldbl_values.c.obj: ../ft_printf/srcsFloat/get_ldbl_values.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/get_ldbl_values.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\get_ldbl_values.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcsFloat\get_ldbl_values.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/get_ldbl_values.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\get_ldbl_values.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcsFloat\get_ldbl_values.c
 
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/get_ldbl_values.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/get_ldbl_values.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcsFloat\get_ldbl_values.c > CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\get_ldbl_values.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcsFloat\get_ldbl_values.c > CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\get_ldbl_values.c.i
 
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/get_ldbl_values.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/get_ldbl_values.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcsFloat\get_ldbl_values.c -o CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\get_ldbl_values.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcsFloat\get_ldbl_values.c -o CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\get_ldbl_values.c.s
 
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/high_precision.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/high_precision.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/high_precision.c.obj: ../ft_printf/srcsFloat/high_precision.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/high_precision.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\high_precision.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcsFloat\high_precision.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/high_precision.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\high_precision.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcsFloat\high_precision.c
 
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/high_precision.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/high_precision.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcsFloat\high_precision.c > CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\high_precision.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcsFloat\high_precision.c > CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\high_precision.c.i
 
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/high_precision.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/high_precision.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcsFloat\high_precision.c -o CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\high_precision.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcsFloat\high_precision.c -o CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\high_precision.c.s
 
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/high_precision_intf.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/high_precision_intf.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/high_precision_intf.c.obj: ../ft_printf/srcsFloat/high_precision_intf.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/high_precision_intf.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\high_precision_intf.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcsFloat\high_precision_intf.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/high_precision_intf.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\high_precision_intf.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcsFloat\high_precision_intf.c
 
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/high_precision_intf.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/high_precision_intf.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcsFloat\high_precision_intf.c > CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\high_precision_intf.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcsFloat\high_precision_intf.c > CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\high_precision_intf.c.i
 
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/high_precision_intf.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/high_precision_intf.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcsFloat\high_precision_intf.c -o CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\high_precision_intf.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcsFloat\high_precision_intf.c -o CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\high_precision_intf.c.s
 
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/high_precision_intf_long.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/high_precision_intf_long.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/high_precision_intf_long.c.obj: ../ft_printf/srcsFloat/high_precision_intf_long.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/high_precision_intf_long.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\high_precision_intf_long.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcsFloat\high_precision_intf_long.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/high_precision_intf_long.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\high_precision_intf_long.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcsFloat\high_precision_intf_long.c
 
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/high_precision_intf_long.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/high_precision_intf_long.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcsFloat\high_precision_intf_long.c > CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\high_precision_intf_long.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcsFloat\high_precision_intf_long.c > CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\high_precision_intf_long.c.i
 
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/high_precision_intf_long.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/high_precision_intf_long.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcsFloat\high_precision_intf_long.c -o CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\high_precision_intf_long.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcsFloat\high_precision_intf_long.c -o CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\high_precision_intf_long.c.s
 
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/high_precision_long.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/high_precision_long.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/high_precision_long.c.obj: ../ft_printf/srcsFloat/high_precision_long.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/high_precision_long.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\high_precision_long.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcsFloat\high_precision_long.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/high_precision_long.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\high_precision_long.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcsFloat\high_precision_long.c
 
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/high_precision_long.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/high_precision_long.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcsFloat\high_precision_long.c > CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\high_precision_long.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcsFloat\high_precision_long.c > CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\high_precision_long.c.i
 
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/high_precision_long.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/high_precision_long.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcsFloat\high_precision_long.c -o CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\high_precision_long.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcsFloat\high_precision_long.c -o CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\high_precision_long.c.s
 
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/my_float.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/my_float.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/my_float.c.obj: ../ft_printf/srcsFloat/my_float.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/my_float.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\my_float.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcsFloat\my_float.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/my_float.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\my_float.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcsFloat\my_float.c
 
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/my_float.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/my_float.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcsFloat\my_float.c > CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\my_float.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcsFloat\my_float.c > CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\my_float.c.i
 
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/my_float.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/my_float.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcsFloat\my_float.c -o CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\my_float.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcsFloat\my_float.c -o CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\my_float.c.s
 
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/my_long_float.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/my_long_float.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/my_long_float.c.obj: ../ft_printf/srcsFloat/my_long_float.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/my_long_float.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\my_long_float.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcsFloat\my_long_float.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/my_long_float.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\my_long_float.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcsFloat\my_long_float.c
 
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/my_long_float.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/my_long_float.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcsFloat\my_long_float.c > CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\my_long_float.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcsFloat\my_long_float.c > CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\my_long_float.c.i
 
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/my_long_float.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/my_long_float.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcsFloat\my_long_float.c -o CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\my_long_float.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcsFloat\my_long_float.c -o CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\my_long_float.c.s
 
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/print_reserve_dbl.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/print_reserve_dbl.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/print_reserve_dbl.c.obj: ../ft_printf/srcsFloat/print_reserve_dbl.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/print_reserve_dbl.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\print_reserve_dbl.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcsFloat\print_reserve_dbl.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/print_reserve_dbl.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\print_reserve_dbl.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcsFloat\print_reserve_dbl.c
 
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/print_reserve_dbl.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/print_reserve_dbl.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcsFloat\print_reserve_dbl.c > CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\print_reserve_dbl.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcsFloat\print_reserve_dbl.c > CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\print_reserve_dbl.c.i
 
 CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/print_reserve_dbl.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/print_reserve_dbl.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_printf\srcsFloat\print_reserve_dbl.c -o CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\print_reserve_dbl.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\ft_printf\srcsFloat\print_reserve_dbl.c -o CMakeFiles\dencorewar.dir\ft_printf\srcsFloat\print_reserve_dbl.c.s
 
 CMakeFiles/dencorewar.dir/libft/memlist/memlist_bottleneck.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/memlist/memlist_bottleneck.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/memlist/memlist_bottleneck.c.obj: ../libft/memlist/memlist_bottleneck.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/dencorewar.dir/libft/memlist/memlist_bottleneck.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\memlist\memlist_bottleneck.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\memlist\memlist_bottleneck.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/dencorewar.dir/libft/memlist/memlist_bottleneck.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\memlist\memlist_bottleneck.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\memlist\memlist_bottleneck.c
 
 CMakeFiles/dencorewar.dir/libft/memlist/memlist_bottleneck.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/memlist/memlist_bottleneck.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\memlist\memlist_bottleneck.c > CMakeFiles\dencorewar.dir\libft\memlist\memlist_bottleneck.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\memlist\memlist_bottleneck.c > CMakeFiles\dencorewar.dir\libft\memlist\memlist_bottleneck.c.i
 
 CMakeFiles/dencorewar.dir/libft/memlist/memlist_bottleneck.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/memlist/memlist_bottleneck.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\memlist\memlist_bottleneck.c -o CMakeFiles\dencorewar.dir\libft\memlist\memlist_bottleneck.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\memlist\memlist_bottleneck.c -o CMakeFiles\dencorewar.dir\libft\memlist\memlist_bottleneck.c.s
 
 CMakeFiles/dencorewar.dir/libft/memlist/ml_create.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/memlist/ml_create.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/memlist/ml_create.c.obj: ../libft/memlist/ml_create.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/dencorewar.dir/libft/memlist/ml_create.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\memlist\ml_create.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\memlist\ml_create.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/dencorewar.dir/libft/memlist/ml_create.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\memlist\ml_create.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\memlist\ml_create.c
 
 CMakeFiles/dencorewar.dir/libft/memlist/ml_create.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/memlist/ml_create.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\memlist\ml_create.c > CMakeFiles\dencorewar.dir\libft\memlist\ml_create.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\memlist\ml_create.c > CMakeFiles\dencorewar.dir\libft\memlist\ml_create.c.i
 
 CMakeFiles/dencorewar.dir/libft/memlist/ml_create.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/memlist/ml_create.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\memlist\ml_create.c -o CMakeFiles\dencorewar.dir\libft\memlist\ml_create.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\memlist\ml_create.c -o CMakeFiles\dencorewar.dir\libft\memlist\ml_create.c.s
 
 CMakeFiles/dencorewar.dir/libft/memlist/ml_del.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/memlist/ml_del.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/memlist/ml_del.c.obj: ../libft/memlist/ml_del.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/dencorewar.dir/libft/memlist/ml_del.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\memlist\ml_del.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\memlist\ml_del.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/dencorewar.dir/libft/memlist/ml_del.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\memlist\ml_del.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\memlist\ml_del.c
 
 CMakeFiles/dencorewar.dir/libft/memlist/ml_del.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/memlist/ml_del.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\memlist\ml_del.c > CMakeFiles\dencorewar.dir\libft\memlist\ml_del.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\memlist\ml_del.c > CMakeFiles\dencorewar.dir\libft\memlist\ml_del.c.i
 
 CMakeFiles/dencorewar.dir/libft/memlist/ml_del.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/memlist/ml_del.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\memlist\ml_del.c -o CMakeFiles\dencorewar.dir\libft\memlist\ml_del.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\memlist\ml_del.c -o CMakeFiles\dencorewar.dir\libft\memlist\ml_del.c.s
 
 CMakeFiles/dencorewar.dir/libft/memlist/ml_general.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/memlist/ml_general.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/memlist/ml_general.c.obj: ../libft/memlist/ml_general.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/dencorewar.dir/libft/memlist/ml_general.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\memlist\ml_general.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\memlist\ml_general.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/dencorewar.dir/libft/memlist/ml_general.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\memlist\ml_general.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\memlist\ml_general.c
 
 CMakeFiles/dencorewar.dir/libft/memlist/ml_general.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/memlist/ml_general.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\memlist\ml_general.c > CMakeFiles\dencorewar.dir\libft\memlist\ml_general.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\memlist\ml_general.c > CMakeFiles\dencorewar.dir\libft\memlist\ml_general.c.i
 
 CMakeFiles/dencorewar.dir/libft/memlist/ml_general.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/memlist/ml_general.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\memlist\ml_general.c -o CMakeFiles\dencorewar.dir\libft\memlist\ml_general.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\memlist\ml_general.c -o CMakeFiles\dencorewar.dir\libft\memlist\ml_general.c.s
 
 CMakeFiles/dencorewar.dir/libft/ft_abs.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ft_abs.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ft_abs.c.obj: ../libft/ft_abs.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/dencorewar.dir/libft/ft_abs.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_abs.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_abs.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/dencorewar.dir/libft/ft_abs.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_abs.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_abs.c
 
 CMakeFiles/dencorewar.dir/libft/ft_abs.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ft_abs.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_abs.c > CMakeFiles\dencorewar.dir\libft\ft_abs.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_abs.c > CMakeFiles\dencorewar.dir\libft\ft_abs.c.i
 
 CMakeFiles/dencorewar.dir/libft/ft_abs.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ft_abs.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_abs.c -o CMakeFiles\dencorewar.dir\libft\ft_abs.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_abs.c -o CMakeFiles\dencorewar.dir\libft\ft_abs.c.s
 
 CMakeFiles/dencorewar.dir/libft/ft_atoi.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ft_atoi.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ft_atoi.c.obj: ../libft/ft_atoi.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/dencorewar.dir/libft/ft_atoi.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_atoi.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_atoi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/dencorewar.dir/libft/ft_atoi.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_atoi.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_atoi.c
 
 CMakeFiles/dencorewar.dir/libft/ft_atoi.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ft_atoi.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_atoi.c > CMakeFiles\dencorewar.dir\libft\ft_atoi.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_atoi.c > CMakeFiles\dencorewar.dir\libft\ft_atoi.c.i
 
 CMakeFiles/dencorewar.dir/libft/ft_atoi.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ft_atoi.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_atoi.c -o CMakeFiles\dencorewar.dir\libft\ft_atoi.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_atoi.c -o CMakeFiles\dencorewar.dir\libft\ft_atoi.c.s
 
 CMakeFiles/dencorewar.dir/libft/ft_bzero.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ft_bzero.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ft_bzero.c.obj: ../libft/ft_bzero.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/dencorewar.dir/libft/ft_bzero.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_bzero.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_bzero.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/dencorewar.dir/libft/ft_bzero.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_bzero.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_bzero.c
 
 CMakeFiles/dencorewar.dir/libft/ft_bzero.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ft_bzero.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_bzero.c > CMakeFiles\dencorewar.dir\libft\ft_bzero.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_bzero.c > CMakeFiles\dencorewar.dir\libft\ft_bzero.c.i
 
 CMakeFiles/dencorewar.dir/libft/ft_bzero.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ft_bzero.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_bzero.c -o CMakeFiles\dencorewar.dir\libft\ft_bzero.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_bzero.c -o CMakeFiles\dencorewar.dir\libft\ft_bzero.c.s
 
 CMakeFiles/dencorewar.dir/libft/ft_fib.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ft_fib.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ft_fib.c.obj: ../libft/ft_fib.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/dencorewar.dir/libft/ft_fib.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_fib.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_fib.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/dencorewar.dir/libft/ft_fib.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_fib.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_fib.c
 
 CMakeFiles/dencorewar.dir/libft/ft_fib.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ft_fib.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_fib.c > CMakeFiles\dencorewar.dir\libft\ft_fib.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_fib.c > CMakeFiles\dencorewar.dir\libft\ft_fib.c.i
 
 CMakeFiles/dencorewar.dir/libft/ft_fib.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ft_fib.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_fib.c -o CMakeFiles\dencorewar.dir\libft\ft_fib.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_fib.c -o CMakeFiles\dencorewar.dir\libft\ft_fib.c.s
 
 CMakeFiles/dencorewar.dir/libft/ft_floor.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ft_floor.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ft_floor.c.obj: ../libft/ft_floor.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/dencorewar.dir/libft/ft_floor.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_floor.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_floor.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/dencorewar.dir/libft/ft_floor.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_floor.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_floor.c
 
 CMakeFiles/dencorewar.dir/libft/ft_floor.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ft_floor.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_floor.c > CMakeFiles\dencorewar.dir\libft\ft_floor.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_floor.c > CMakeFiles\dencorewar.dir\libft\ft_floor.c.i
 
 CMakeFiles/dencorewar.dir/libft/ft_floor.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ft_floor.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_floor.c -o CMakeFiles\dencorewar.dir\libft\ft_floor.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_floor.c -o CMakeFiles\dencorewar.dir\libft\ft_floor.c.s
 
 CMakeFiles/dencorewar.dir/libft/ft_is_complex_string.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ft_is_complex_string.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ft_is_complex_string.c.obj: ../libft/ft_is_complex_string.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/dencorewar.dir/libft/ft_is_complex_string.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_is_complex_string.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_is_complex_string.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/dencorewar.dir/libft/ft_is_complex_string.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_is_complex_string.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_is_complex_string.c
 
 CMakeFiles/dencorewar.dir/libft/ft_is_complex_string.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ft_is_complex_string.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_is_complex_string.c > CMakeFiles\dencorewar.dir\libft\ft_is_complex_string.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_is_complex_string.c > CMakeFiles\dencorewar.dir\libft\ft_is_complex_string.c.i
 
 CMakeFiles/dencorewar.dir/libft/ft_is_complex_string.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ft_is_complex_string.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_is_complex_string.c -o CMakeFiles\dencorewar.dir\libft\ft_is_complex_string.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_is_complex_string.c -o CMakeFiles\dencorewar.dir\libft\ft_is_complex_string.c.s
 
 CMakeFiles/dencorewar.dir/libft/ft_isalnum.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ft_isalnum.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ft_isalnum.c.obj: ../libft/ft_isalnum.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/dencorewar.dir/libft/ft_isalnum.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_isalnum.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_isalnum.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/dencorewar.dir/libft/ft_isalnum.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_isalnum.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_isalnum.c
 
 CMakeFiles/dencorewar.dir/libft/ft_isalnum.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ft_isalnum.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_isalnum.c > CMakeFiles\dencorewar.dir\libft\ft_isalnum.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_isalnum.c > CMakeFiles\dencorewar.dir\libft\ft_isalnum.c.i
 
 CMakeFiles/dencorewar.dir/libft/ft_isalnum.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ft_isalnum.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_isalnum.c -o CMakeFiles\dencorewar.dir\libft\ft_isalnum.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_isalnum.c -o CMakeFiles\dencorewar.dir\libft\ft_isalnum.c.s
 
 CMakeFiles/dencorewar.dir/libft/ft_isalpha.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ft_isalpha.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ft_isalpha.c.obj: ../libft/ft_isalpha.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/dencorewar.dir/libft/ft_isalpha.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_isalpha.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_isalpha.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/dencorewar.dir/libft/ft_isalpha.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_isalpha.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_isalpha.c
 
 CMakeFiles/dencorewar.dir/libft/ft_isalpha.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ft_isalpha.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_isalpha.c > CMakeFiles\dencorewar.dir\libft\ft_isalpha.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_isalpha.c > CMakeFiles\dencorewar.dir\libft\ft_isalpha.c.i
 
 CMakeFiles/dencorewar.dir/libft/ft_isalpha.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ft_isalpha.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_isalpha.c -o CMakeFiles\dencorewar.dir\libft\ft_isalpha.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_isalpha.c -o CMakeFiles\dencorewar.dir\libft\ft_isalpha.c.s
 
 CMakeFiles/dencorewar.dir/libft/ft_isascii.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ft_isascii.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ft_isascii.c.obj: ../libft/ft_isascii.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/dencorewar.dir/libft/ft_isascii.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_isascii.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_isascii.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/dencorewar.dir/libft/ft_isascii.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_isascii.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_isascii.c
 
 CMakeFiles/dencorewar.dir/libft/ft_isascii.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ft_isascii.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_isascii.c > CMakeFiles\dencorewar.dir\libft\ft_isascii.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_isascii.c > CMakeFiles\dencorewar.dir\libft\ft_isascii.c.i
 
 CMakeFiles/dencorewar.dir/libft/ft_isascii.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ft_isascii.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_isascii.c -o CMakeFiles\dencorewar.dir\libft\ft_isascii.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_isascii.c -o CMakeFiles\dencorewar.dir\libft\ft_isascii.c.s
 
 CMakeFiles/dencorewar.dir/libft/ft_isdigit.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ft_isdigit.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ft_isdigit.c.obj: ../libft/ft_isdigit.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/dencorewar.dir/libft/ft_isdigit.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_isdigit.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_isdigit.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/dencorewar.dir/libft/ft_isdigit.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_isdigit.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_isdigit.c
 
 CMakeFiles/dencorewar.dir/libft/ft_isdigit.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ft_isdigit.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_isdigit.c > CMakeFiles\dencorewar.dir\libft\ft_isdigit.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_isdigit.c > CMakeFiles\dencorewar.dir\libft\ft_isdigit.c.i
 
 CMakeFiles/dencorewar.dir/libft/ft_isdigit.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ft_isdigit.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_isdigit.c -o CMakeFiles\dencorewar.dir\libft\ft_isdigit.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_isdigit.c -o CMakeFiles\dencorewar.dir\libft\ft_isdigit.c.s
 
 CMakeFiles/dencorewar.dir/libft/ft_islower.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ft_islower.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ft_islower.c.obj: ../libft/ft_islower.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/dencorewar.dir/libft/ft_islower.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_islower.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_islower.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/dencorewar.dir/libft/ft_islower.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_islower.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_islower.c
 
 CMakeFiles/dencorewar.dir/libft/ft_islower.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ft_islower.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_islower.c > CMakeFiles\dencorewar.dir\libft\ft_islower.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_islower.c > CMakeFiles\dencorewar.dir\libft\ft_islower.c.i
 
 CMakeFiles/dencorewar.dir/libft/ft_islower.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ft_islower.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_islower.c -o CMakeFiles\dencorewar.dir\libft\ft_islower.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_islower.c -o CMakeFiles\dencorewar.dir\libft\ft_islower.c.s
 
 CMakeFiles/dencorewar.dir/libft/ft_isprint.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ft_isprint.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ft_isprint.c.obj: ../libft/ft_isprint.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/dencorewar.dir/libft/ft_isprint.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_isprint.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_isprint.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/dencorewar.dir/libft/ft_isprint.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_isprint.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_isprint.c
 
 CMakeFiles/dencorewar.dir/libft/ft_isprint.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ft_isprint.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_isprint.c > CMakeFiles\dencorewar.dir\libft\ft_isprint.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_isprint.c > CMakeFiles\dencorewar.dir\libft\ft_isprint.c.i
 
 CMakeFiles/dencorewar.dir/libft/ft_isprint.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ft_isprint.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_isprint.c -o CMakeFiles\dencorewar.dir\libft\ft_isprint.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_isprint.c -o CMakeFiles\dencorewar.dir\libft\ft_isprint.c.s
 
 CMakeFiles/dencorewar.dir/libft/ft_isspace.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ft_isspace.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ft_isspace.c.obj: ../libft/ft_isspace.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/dencorewar.dir/libft/ft_isspace.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_isspace.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_isspace.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/dencorewar.dir/libft/ft_isspace.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_isspace.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_isspace.c
 
 CMakeFiles/dencorewar.dir/libft/ft_isspace.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ft_isspace.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_isspace.c > CMakeFiles\dencorewar.dir\libft\ft_isspace.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_isspace.c > CMakeFiles\dencorewar.dir\libft\ft_isspace.c.i
 
 CMakeFiles/dencorewar.dir/libft/ft_isspace.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ft_isspace.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_isspace.c -o CMakeFiles\dencorewar.dir\libft\ft_isspace.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_isspace.c -o CMakeFiles\dencorewar.dir\libft\ft_isspace.c.s
 
 CMakeFiles/dencorewar.dir/libft/ft_isupper.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ft_isupper.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ft_isupper.c.obj: ../libft/ft_isupper.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/dencorewar.dir/libft/ft_isupper.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_isupper.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_isupper.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/dencorewar.dir/libft/ft_isupper.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_isupper.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_isupper.c
 
 CMakeFiles/dencorewar.dir/libft/ft_isupper.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ft_isupper.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_isupper.c > CMakeFiles\dencorewar.dir\libft\ft_isupper.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_isupper.c > CMakeFiles\dencorewar.dir\libft\ft_isupper.c.i
 
 CMakeFiles/dencorewar.dir/libft/ft_isupper.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ft_isupper.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_isupper.c -o CMakeFiles\dencorewar.dir\libft\ft_isupper.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_isupper.c -o CMakeFiles\dencorewar.dir\libft\ft_isupper.c.s
 
 CMakeFiles/dencorewar.dir/libft/ft_itoa.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ft_itoa.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ft_itoa.c.obj: ../libft/ft_itoa.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/dencorewar.dir/libft/ft_itoa.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_itoa.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_itoa.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/dencorewar.dir/libft/ft_itoa.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_itoa.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_itoa.c
 
 CMakeFiles/dencorewar.dir/libft/ft_itoa.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ft_itoa.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_itoa.c > CMakeFiles\dencorewar.dir\libft\ft_itoa.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_itoa.c > CMakeFiles\dencorewar.dir\libft\ft_itoa.c.i
 
 CMakeFiles/dencorewar.dir/libft/ft_itoa.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ft_itoa.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_itoa.c -o CMakeFiles\dencorewar.dir\libft\ft_itoa.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_itoa.c -o CMakeFiles\dencorewar.dir\libft\ft_itoa.c.s
 
 CMakeFiles/dencorewar.dir/libft/ft_lstadd.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ft_lstadd.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ft_lstadd.c.obj: ../libft/ft_lstadd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/dencorewar.dir/libft/ft_lstadd.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_lstadd.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_lstadd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/dencorewar.dir/libft/ft_lstadd.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_lstadd.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_lstadd.c
 
 CMakeFiles/dencorewar.dir/libft/ft_lstadd.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ft_lstadd.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_lstadd.c > CMakeFiles\dencorewar.dir\libft\ft_lstadd.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_lstadd.c > CMakeFiles\dencorewar.dir\libft\ft_lstadd.c.i
 
 CMakeFiles/dencorewar.dir/libft/ft_lstadd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ft_lstadd.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_lstadd.c -o CMakeFiles\dencorewar.dir\libft\ft_lstadd.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_lstadd.c -o CMakeFiles\dencorewar.dir\libft\ft_lstadd.c.s
 
 CMakeFiles/dencorewar.dir/libft/ft_lstcirc_add.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ft_lstcirc_add.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ft_lstcirc_add.c.obj: ../libft/ft_lstcirc_add.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/dencorewar.dir/libft/ft_lstcirc_add.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_lstcirc_add.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_lstcirc_add.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/dencorewar.dir/libft/ft_lstcirc_add.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_lstcirc_add.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_lstcirc_add.c
 
 CMakeFiles/dencorewar.dir/libft/ft_lstcirc_add.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ft_lstcirc_add.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_lstcirc_add.c > CMakeFiles\dencorewar.dir\libft\ft_lstcirc_add.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_lstcirc_add.c > CMakeFiles\dencorewar.dir\libft\ft_lstcirc_add.c.i
 
 CMakeFiles/dencorewar.dir/libft/ft_lstcirc_add.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ft_lstcirc_add.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_lstcirc_add.c -o CMakeFiles\dencorewar.dir\libft\ft_lstcirc_add.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_lstcirc_add.c -o CMakeFiles\dencorewar.dir\libft\ft_lstcirc_add.c.s
 
 CMakeFiles/dencorewar.dir/libft/ft_lstcirc_delelem.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ft_lstcirc_delelem.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ft_lstcirc_delelem.c.obj: ../libft/ft_lstcirc_delelem.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/dencorewar.dir/libft/ft_lstcirc_delelem.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_lstcirc_delelem.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_lstcirc_delelem.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/dencorewar.dir/libft/ft_lstcirc_delelem.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_lstcirc_delelem.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_lstcirc_delelem.c
 
 CMakeFiles/dencorewar.dir/libft/ft_lstcirc_delelem.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ft_lstcirc_delelem.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_lstcirc_delelem.c > CMakeFiles\dencorewar.dir\libft\ft_lstcirc_delelem.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_lstcirc_delelem.c > CMakeFiles\dencorewar.dir\libft\ft_lstcirc_delelem.c.i
 
 CMakeFiles/dencorewar.dir/libft/ft_lstcirc_delelem.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ft_lstcirc_delelem.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_lstcirc_delelem.c -o CMakeFiles\dencorewar.dir\libft\ft_lstcirc_delelem.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_lstcirc_delelem.c -o CMakeFiles\dencorewar.dir\libft\ft_lstcirc_delelem.c.s
 
 CMakeFiles/dencorewar.dir/libft/ft_lstcirc_findcontent_size.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ft_lstcirc_findcontent_size.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ft_lstcirc_findcontent_size.c.obj: ../libft/ft_lstcirc_findcontent_size.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/dencorewar.dir/libft/ft_lstcirc_findcontent_size.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_lstcirc_findcontent_size.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_lstcirc_findcontent_size.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/dencorewar.dir/libft/ft_lstcirc_findcontent_size.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_lstcirc_findcontent_size.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_lstcirc_findcontent_size.c
 
 CMakeFiles/dencorewar.dir/libft/ft_lstcirc_findcontent_size.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ft_lstcirc_findcontent_size.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_lstcirc_findcontent_size.c > CMakeFiles\dencorewar.dir\libft\ft_lstcirc_findcontent_size.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_lstcirc_findcontent_size.c > CMakeFiles\dencorewar.dir\libft\ft_lstcirc_findcontent_size.c.i
 
 CMakeFiles/dencorewar.dir/libft/ft_lstcirc_findcontent_size.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ft_lstcirc_findcontent_size.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_lstcirc_findcontent_size.c -o CMakeFiles\dencorewar.dir\libft\ft_lstcirc_findcontent_size.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_lstcirc_findcontent_size.c -o CMakeFiles\dencorewar.dir\libft\ft_lstcirc_findcontent_size.c.s
 
 CMakeFiles/dencorewar.dir/libft/ft_lstcirc_strnew.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ft_lstcirc_strnew.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ft_lstcirc_strnew.c.obj: ../libft/ft_lstcirc_strnew.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/dencorewar.dir/libft/ft_lstcirc_strnew.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_lstcirc_strnew.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_lstcirc_strnew.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/dencorewar.dir/libft/ft_lstcirc_strnew.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_lstcirc_strnew.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_lstcirc_strnew.c
 
 CMakeFiles/dencorewar.dir/libft/ft_lstcirc_strnew.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ft_lstcirc_strnew.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_lstcirc_strnew.c > CMakeFiles\dencorewar.dir\libft\ft_lstcirc_strnew.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_lstcirc_strnew.c > CMakeFiles\dencorewar.dir\libft\ft_lstcirc_strnew.c.i
 
 CMakeFiles/dencorewar.dir/libft/ft_lstcirc_strnew.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ft_lstcirc_strnew.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_lstcirc_strnew.c -o CMakeFiles\dencorewar.dir\libft\ft_lstcirc_strnew.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_lstcirc_strnew.c -o CMakeFiles\dencorewar.dir\libft\ft_lstcirc_strnew.c.s
 
 CMakeFiles/dencorewar.dir/libft/ft_lstdel.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ft_lstdel.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ft_lstdel.c.obj: ../libft/ft_lstdel.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/dencorewar.dir/libft/ft_lstdel.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_lstdel.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_lstdel.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/dencorewar.dir/libft/ft_lstdel.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_lstdel.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_lstdel.c
 
 CMakeFiles/dencorewar.dir/libft/ft_lstdel.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ft_lstdel.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_lstdel.c > CMakeFiles\dencorewar.dir\libft\ft_lstdel.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_lstdel.c > CMakeFiles\dencorewar.dir\libft\ft_lstdel.c.i
 
 CMakeFiles/dencorewar.dir/libft/ft_lstdel.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ft_lstdel.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_lstdel.c -o CMakeFiles\dencorewar.dir\libft\ft_lstdel.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_lstdel.c -o CMakeFiles\dencorewar.dir\libft\ft_lstdel.c.s
 
 CMakeFiles/dencorewar.dir/libft/ft_lstdelone.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ft_lstdelone.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ft_lstdelone.c.obj: ../libft/ft_lstdelone.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/dencorewar.dir/libft/ft_lstdelone.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_lstdelone.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_lstdelone.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/dencorewar.dir/libft/ft_lstdelone.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_lstdelone.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_lstdelone.c
 
 CMakeFiles/dencorewar.dir/libft/ft_lstdelone.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ft_lstdelone.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_lstdelone.c > CMakeFiles\dencorewar.dir\libft\ft_lstdelone.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_lstdelone.c > CMakeFiles\dencorewar.dir\libft\ft_lstdelone.c.i
 
 CMakeFiles/dencorewar.dir/libft/ft_lstdelone.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ft_lstdelone.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_lstdelone.c -o CMakeFiles\dencorewar.dir\libft\ft_lstdelone.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_lstdelone.c -o CMakeFiles\dencorewar.dir\libft\ft_lstdelone.c.s
 
 CMakeFiles/dencorewar.dir/libft/ft_lstiter.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ft_lstiter.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ft_lstiter.c.obj: ../libft/ft_lstiter.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/dencorewar.dir/libft/ft_lstiter.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_lstiter.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_lstiter.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/dencorewar.dir/libft/ft_lstiter.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_lstiter.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_lstiter.c
 
 CMakeFiles/dencorewar.dir/libft/ft_lstiter.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ft_lstiter.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_lstiter.c > CMakeFiles\dencorewar.dir\libft\ft_lstiter.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_lstiter.c > CMakeFiles\dencorewar.dir\libft\ft_lstiter.c.i
 
 CMakeFiles/dencorewar.dir/libft/ft_lstiter.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ft_lstiter.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_lstiter.c -o CMakeFiles\dencorewar.dir\libft\ft_lstiter.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_lstiter.c -o CMakeFiles\dencorewar.dir\libft\ft_lstiter.c.s
 
 CMakeFiles/dencorewar.dir/libft/ft_lstmap.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ft_lstmap.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ft_lstmap.c.obj: ../libft/ft_lstmap.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/dencorewar.dir/libft/ft_lstmap.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_lstmap.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_lstmap.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/dencorewar.dir/libft/ft_lstmap.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_lstmap.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_lstmap.c
 
 CMakeFiles/dencorewar.dir/libft/ft_lstmap.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ft_lstmap.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_lstmap.c > CMakeFiles\dencorewar.dir\libft\ft_lstmap.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_lstmap.c > CMakeFiles\dencorewar.dir\libft\ft_lstmap.c.i
 
 CMakeFiles/dencorewar.dir/libft/ft_lstmap.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ft_lstmap.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_lstmap.c -o CMakeFiles\dencorewar.dir\libft\ft_lstmap.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_lstmap.c -o CMakeFiles\dencorewar.dir\libft\ft_lstmap.c.s
 
 CMakeFiles/dencorewar.dir/libft/ft_lstnew.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ft_lstnew.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ft_lstnew.c.obj: ../libft/ft_lstnew.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/dencorewar.dir/libft/ft_lstnew.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_lstnew.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_lstnew.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/dencorewar.dir/libft/ft_lstnew.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_lstnew.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_lstnew.c
 
 CMakeFiles/dencorewar.dir/libft/ft_lstnew.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ft_lstnew.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_lstnew.c > CMakeFiles\dencorewar.dir\libft\ft_lstnew.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_lstnew.c > CMakeFiles\dencorewar.dir\libft\ft_lstnew.c.i
 
 CMakeFiles/dencorewar.dir/libft/ft_lstnew.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ft_lstnew.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_lstnew.c -o CMakeFiles\dencorewar.dir\libft\ft_lstnew.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_lstnew.c -o CMakeFiles\dencorewar.dir\libft\ft_lstnew.c.s
 
 CMakeFiles/dencorewar.dir/libft/ft_lstpush.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ft_lstpush.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ft_lstpush.c.obj: ../libft/ft_lstpush.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/dencorewar.dir/libft/ft_lstpush.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_lstpush.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_lstpush.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/dencorewar.dir/libft/ft_lstpush.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_lstpush.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_lstpush.c
 
 CMakeFiles/dencorewar.dir/libft/ft_lstpush.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ft_lstpush.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_lstpush.c > CMakeFiles\dencorewar.dir\libft\ft_lstpush.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_lstpush.c > CMakeFiles\dencorewar.dir\libft\ft_lstpush.c.i
 
 CMakeFiles/dencorewar.dir/libft/ft_lstpush.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ft_lstpush.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_lstpush.c -o CMakeFiles\dencorewar.dir\libft\ft_lstpush.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_lstpush.c -o CMakeFiles\dencorewar.dir\libft\ft_lstpush.c.s
 
 CMakeFiles/dencorewar.dir/libft/ft_memalloc.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ft_memalloc.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ft_memalloc.c.obj: ../libft/ft_memalloc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/dencorewar.dir/libft/ft_memalloc.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_memalloc.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_memalloc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/dencorewar.dir/libft/ft_memalloc.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_memalloc.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_memalloc.c
 
 CMakeFiles/dencorewar.dir/libft/ft_memalloc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ft_memalloc.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_memalloc.c > CMakeFiles\dencorewar.dir\libft\ft_memalloc.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_memalloc.c > CMakeFiles\dencorewar.dir\libft\ft_memalloc.c.i
 
 CMakeFiles/dencorewar.dir/libft/ft_memalloc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ft_memalloc.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_memalloc.c -o CMakeFiles\dencorewar.dir\libft\ft_memalloc.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_memalloc.c -o CMakeFiles\dencorewar.dir\libft\ft_memalloc.c.s
 
 CMakeFiles/dencorewar.dir/libft/ft_memccpy.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ft_memccpy.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ft_memccpy.c.obj: ../libft/ft_memccpy.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/dencorewar.dir/libft/ft_memccpy.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_memccpy.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_memccpy.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/dencorewar.dir/libft/ft_memccpy.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_memccpy.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_memccpy.c
 
 CMakeFiles/dencorewar.dir/libft/ft_memccpy.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ft_memccpy.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_memccpy.c > CMakeFiles\dencorewar.dir\libft\ft_memccpy.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_memccpy.c > CMakeFiles\dencorewar.dir\libft\ft_memccpy.c.i
 
 CMakeFiles/dencorewar.dir/libft/ft_memccpy.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ft_memccpy.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_memccpy.c -o CMakeFiles\dencorewar.dir\libft\ft_memccpy.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_memccpy.c -o CMakeFiles\dencorewar.dir\libft\ft_memccpy.c.s
 
 CMakeFiles/dencorewar.dir/libft/ft_memchr.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ft_memchr.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ft_memchr.c.obj: ../libft/ft_memchr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/dencorewar.dir/libft/ft_memchr.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_memchr.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_memchr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/dencorewar.dir/libft/ft_memchr.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_memchr.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_memchr.c
 
 CMakeFiles/dencorewar.dir/libft/ft_memchr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ft_memchr.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_memchr.c > CMakeFiles\dencorewar.dir\libft\ft_memchr.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_memchr.c > CMakeFiles\dencorewar.dir\libft\ft_memchr.c.i
 
 CMakeFiles/dencorewar.dir/libft/ft_memchr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ft_memchr.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_memchr.c -o CMakeFiles\dencorewar.dir\libft\ft_memchr.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_memchr.c -o CMakeFiles\dencorewar.dir\libft\ft_memchr.c.s
 
 CMakeFiles/dencorewar.dir/libft/ft_memcmp.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ft_memcmp.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ft_memcmp.c.obj: ../libft/ft_memcmp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/dencorewar.dir/libft/ft_memcmp.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_memcmp.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_memcmp.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/dencorewar.dir/libft/ft_memcmp.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_memcmp.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_memcmp.c
 
 CMakeFiles/dencorewar.dir/libft/ft_memcmp.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ft_memcmp.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_memcmp.c > CMakeFiles\dencorewar.dir\libft\ft_memcmp.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_memcmp.c > CMakeFiles\dencorewar.dir\libft\ft_memcmp.c.i
 
 CMakeFiles/dencorewar.dir/libft/ft_memcmp.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ft_memcmp.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_memcmp.c -o CMakeFiles\dencorewar.dir\libft\ft_memcmp.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_memcmp.c -o CMakeFiles\dencorewar.dir\libft\ft_memcmp.c.s
 
 CMakeFiles/dencorewar.dir/libft/ft_memcpy.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ft_memcpy.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ft_memcpy.c.obj: ../libft/ft_memcpy.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/dencorewar.dir/libft/ft_memcpy.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_memcpy.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_memcpy.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/dencorewar.dir/libft/ft_memcpy.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_memcpy.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_memcpy.c
 
 CMakeFiles/dencorewar.dir/libft/ft_memcpy.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ft_memcpy.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_memcpy.c > CMakeFiles\dencorewar.dir\libft\ft_memcpy.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_memcpy.c > CMakeFiles\dencorewar.dir\libft\ft_memcpy.c.i
 
 CMakeFiles/dencorewar.dir/libft/ft_memcpy.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ft_memcpy.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_memcpy.c -o CMakeFiles\dencorewar.dir\libft\ft_memcpy.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_memcpy.c -o CMakeFiles\dencorewar.dir\libft\ft_memcpy.c.s
 
 CMakeFiles/dencorewar.dir/libft/ft_memdel.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ft_memdel.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ft_memdel.c.obj: ../libft/ft_memdel.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object CMakeFiles/dencorewar.dir/libft/ft_memdel.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_memdel.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_memdel.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object CMakeFiles/dencorewar.dir/libft/ft_memdel.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_memdel.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_memdel.c
 
 CMakeFiles/dencorewar.dir/libft/ft_memdel.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ft_memdel.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_memdel.c > CMakeFiles\dencorewar.dir\libft\ft_memdel.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_memdel.c > CMakeFiles\dencorewar.dir\libft\ft_memdel.c.i
 
 CMakeFiles/dencorewar.dir/libft/ft_memdel.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ft_memdel.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_memdel.c -o CMakeFiles\dencorewar.dir\libft\ft_memdel.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_memdel.c -o CMakeFiles\dencorewar.dir\libft\ft_memdel.c.s
 
 CMakeFiles/dencorewar.dir/libft/ft_memmove.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ft_memmove.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ft_memmove.c.obj: ../libft/ft_memmove.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object CMakeFiles/dencorewar.dir/libft/ft_memmove.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_memmove.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_memmove.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object CMakeFiles/dencorewar.dir/libft/ft_memmove.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_memmove.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_memmove.c
 
 CMakeFiles/dencorewar.dir/libft/ft_memmove.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ft_memmove.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_memmove.c > CMakeFiles\dencorewar.dir\libft\ft_memmove.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_memmove.c > CMakeFiles\dencorewar.dir\libft\ft_memmove.c.i
 
 CMakeFiles/dencorewar.dir/libft/ft_memmove.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ft_memmove.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_memmove.c -o CMakeFiles\dencorewar.dir\libft\ft_memmove.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_memmove.c -o CMakeFiles\dencorewar.dir\libft\ft_memmove.c.s
 
 CMakeFiles/dencorewar.dir/libft/ft_memset.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ft_memset.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ft_memset.c.obj: ../libft/ft_memset.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object CMakeFiles/dencorewar.dir/libft/ft_memset.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_memset.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_memset.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object CMakeFiles/dencorewar.dir/libft/ft_memset.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_memset.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_memset.c
 
 CMakeFiles/dencorewar.dir/libft/ft_memset.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ft_memset.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_memset.c > CMakeFiles\dencorewar.dir\libft\ft_memset.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_memset.c > CMakeFiles\dencorewar.dir\libft\ft_memset.c.i
 
 CMakeFiles/dencorewar.dir/libft/ft_memset.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ft_memset.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_memset.c -o CMakeFiles\dencorewar.dir\libft\ft_memset.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_memset.c -o CMakeFiles\dencorewar.dir\libft\ft_memset.c.s
 
 CMakeFiles/dencorewar.dir/libft/ft_pow.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ft_pow.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ft_pow.c.obj: ../libft/ft_pow.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/dencorewar.dir/libft/ft_pow.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_pow.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_pow.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/dencorewar.dir/libft/ft_pow.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_pow.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_pow.c
 
 CMakeFiles/dencorewar.dir/libft/ft_pow.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ft_pow.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_pow.c > CMakeFiles\dencorewar.dir\libft\ft_pow.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_pow.c > CMakeFiles\dencorewar.dir\libft\ft_pow.c.i
 
 CMakeFiles/dencorewar.dir/libft/ft_pow.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ft_pow.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_pow.c -o CMakeFiles\dencorewar.dir\libft\ft_pow.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_pow.c -o CMakeFiles\dencorewar.dir\libft\ft_pow.c.s
 
 CMakeFiles/dencorewar.dir/libft/ft_putchar.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ft_putchar.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ft_putchar.c.obj: ../libft/ft_putchar.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object CMakeFiles/dencorewar.dir/libft/ft_putchar.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_putchar.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_putchar.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object CMakeFiles/dencorewar.dir/libft/ft_putchar.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_putchar.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_putchar.c
 
 CMakeFiles/dencorewar.dir/libft/ft_putchar.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ft_putchar.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_putchar.c > CMakeFiles\dencorewar.dir\libft\ft_putchar.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_putchar.c > CMakeFiles\dencorewar.dir\libft\ft_putchar.c.i
 
 CMakeFiles/dencorewar.dir/libft/ft_putchar.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ft_putchar.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_putchar.c -o CMakeFiles\dencorewar.dir\libft\ft_putchar.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_putchar.c -o CMakeFiles\dencorewar.dir\libft\ft_putchar.c.s
 
 CMakeFiles/dencorewar.dir/libft/ft_putchar_fd.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ft_putchar_fd.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ft_putchar_fd.c.obj: ../libft/ft_putchar_fd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object CMakeFiles/dencorewar.dir/libft/ft_putchar_fd.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_putchar_fd.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_putchar_fd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object CMakeFiles/dencorewar.dir/libft/ft_putchar_fd.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_putchar_fd.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_putchar_fd.c
 
 CMakeFiles/dencorewar.dir/libft/ft_putchar_fd.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ft_putchar_fd.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_putchar_fd.c > CMakeFiles\dencorewar.dir\libft\ft_putchar_fd.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_putchar_fd.c > CMakeFiles\dencorewar.dir\libft\ft_putchar_fd.c.i
 
 CMakeFiles/dencorewar.dir/libft/ft_putchar_fd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ft_putchar_fd.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_putchar_fd.c -o CMakeFiles\dencorewar.dir\libft\ft_putchar_fd.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_putchar_fd.c -o CMakeFiles\dencorewar.dir\libft\ft_putchar_fd.c.s
 
 CMakeFiles/dencorewar.dir/libft/ft_putendl.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ft_putendl.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ft_putendl.c.obj: ../libft/ft_putendl.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/dencorewar.dir/libft/ft_putendl.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_putendl.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_putendl.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/dencorewar.dir/libft/ft_putendl.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_putendl.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_putendl.c
 
 CMakeFiles/dencorewar.dir/libft/ft_putendl.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ft_putendl.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_putendl.c > CMakeFiles\dencorewar.dir\libft\ft_putendl.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_putendl.c > CMakeFiles\dencorewar.dir\libft\ft_putendl.c.i
 
 CMakeFiles/dencorewar.dir/libft/ft_putendl.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ft_putendl.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_putendl.c -o CMakeFiles\dencorewar.dir\libft\ft_putendl.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_putendl.c -o CMakeFiles\dencorewar.dir\libft\ft_putendl.c.s
 
 CMakeFiles/dencorewar.dir/libft/ft_putendl_fd.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ft_putendl_fd.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ft_putendl_fd.c.obj: ../libft/ft_putendl_fd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/dencorewar.dir/libft/ft_putendl_fd.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_putendl_fd.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_putendl_fd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/dencorewar.dir/libft/ft_putendl_fd.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_putendl_fd.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_putendl_fd.c
 
 CMakeFiles/dencorewar.dir/libft/ft_putendl_fd.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ft_putendl_fd.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_putendl_fd.c > CMakeFiles\dencorewar.dir\libft\ft_putendl_fd.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_putendl_fd.c > CMakeFiles\dencorewar.dir\libft\ft_putendl_fd.c.i
 
 CMakeFiles/dencorewar.dir/libft/ft_putendl_fd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ft_putendl_fd.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_putendl_fd.c -o CMakeFiles\dencorewar.dir\libft\ft_putendl_fd.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_putendl_fd.c -o CMakeFiles\dencorewar.dir\libft\ft_putendl_fd.c.s
 
 CMakeFiles/dencorewar.dir/libft/ft_putnbr.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ft_putnbr.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ft_putnbr.c.obj: ../libft/ft_putnbr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object CMakeFiles/dencorewar.dir/libft/ft_putnbr.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_putnbr.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_putnbr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object CMakeFiles/dencorewar.dir/libft/ft_putnbr.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_putnbr.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_putnbr.c
 
 CMakeFiles/dencorewar.dir/libft/ft_putnbr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ft_putnbr.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_putnbr.c > CMakeFiles\dencorewar.dir\libft\ft_putnbr.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_putnbr.c > CMakeFiles\dencorewar.dir\libft\ft_putnbr.c.i
 
 CMakeFiles/dencorewar.dir/libft/ft_putnbr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ft_putnbr.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_putnbr.c -o CMakeFiles\dencorewar.dir\libft\ft_putnbr.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_putnbr.c -o CMakeFiles\dencorewar.dir\libft\ft_putnbr.c.s
 
 CMakeFiles/dencorewar.dir/libft/ft_putnbr_fd.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ft_putnbr_fd.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ft_putnbr_fd.c.obj: ../libft/ft_putnbr_fd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object CMakeFiles/dencorewar.dir/libft/ft_putnbr_fd.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_putnbr_fd.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_putnbr_fd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object CMakeFiles/dencorewar.dir/libft/ft_putnbr_fd.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_putnbr_fd.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_putnbr_fd.c
 
 CMakeFiles/dencorewar.dir/libft/ft_putnbr_fd.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ft_putnbr_fd.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_putnbr_fd.c > CMakeFiles\dencorewar.dir\libft\ft_putnbr_fd.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_putnbr_fd.c > CMakeFiles\dencorewar.dir\libft\ft_putnbr_fd.c.i
 
 CMakeFiles/dencorewar.dir/libft/ft_putnbr_fd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ft_putnbr_fd.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_putnbr_fd.c -o CMakeFiles\dencorewar.dir\libft\ft_putnbr_fd.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_putnbr_fd.c -o CMakeFiles\dencorewar.dir\libft\ft_putnbr_fd.c.s
 
 CMakeFiles/dencorewar.dir/libft/ft_putstr.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ft_putstr.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ft_putstr.c.obj: ../libft/ft_putstr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building C object CMakeFiles/dencorewar.dir/libft/ft_putstr.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_putstr.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_putstr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building C object CMakeFiles/dencorewar.dir/libft/ft_putstr.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_putstr.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_putstr.c
 
 CMakeFiles/dencorewar.dir/libft/ft_putstr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ft_putstr.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_putstr.c > CMakeFiles\dencorewar.dir\libft\ft_putstr.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_putstr.c > CMakeFiles\dencorewar.dir\libft\ft_putstr.c.i
 
 CMakeFiles/dencorewar.dir/libft/ft_putstr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ft_putstr.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_putstr.c -o CMakeFiles\dencorewar.dir\libft\ft_putstr.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_putstr.c -o CMakeFiles\dencorewar.dir\libft\ft_putstr.c.s
 
 CMakeFiles/dencorewar.dir/libft/ft_putstr_fd.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ft_putstr_fd.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ft_putstr_fd.c.obj: ../libft/ft_putstr_fd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building C object CMakeFiles/dencorewar.dir/libft/ft_putstr_fd.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_putstr_fd.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_putstr_fd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building C object CMakeFiles/dencorewar.dir/libft/ft_putstr_fd.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_putstr_fd.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_putstr_fd.c
 
 CMakeFiles/dencorewar.dir/libft/ft_putstr_fd.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ft_putstr_fd.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_putstr_fd.c > CMakeFiles\dencorewar.dir\libft\ft_putstr_fd.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_putstr_fd.c > CMakeFiles\dencorewar.dir\libft\ft_putstr_fd.c.i
 
 CMakeFiles/dencorewar.dir/libft/ft_putstr_fd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ft_putstr_fd.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_putstr_fd.c -o CMakeFiles\dencorewar.dir\libft\ft_putstr_fd.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_putstr_fd.c -o CMakeFiles\dencorewar.dir\libft\ft_putstr_fd.c.s
 
 CMakeFiles/dencorewar.dir/libft/ft_reverse.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ft_reverse.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ft_reverse.c.obj: ../libft/ft_reverse.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building C object CMakeFiles/dencorewar.dir/libft/ft_reverse.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_reverse.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_reverse.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building C object CMakeFiles/dencorewar.dir/libft/ft_reverse.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_reverse.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_reverse.c
 
 CMakeFiles/dencorewar.dir/libft/ft_reverse.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ft_reverse.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_reverse.c > CMakeFiles\dencorewar.dir\libft\ft_reverse.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_reverse.c > CMakeFiles\dencorewar.dir\libft\ft_reverse.c.i
 
 CMakeFiles/dencorewar.dir/libft/ft_reverse.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ft_reverse.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_reverse.c -o CMakeFiles\dencorewar.dir\libft\ft_reverse.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_reverse.c -o CMakeFiles\dencorewar.dir\libft\ft_reverse.c.s
 
 CMakeFiles/dencorewar.dir/libft/ft_sqrt.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ft_sqrt.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ft_sqrt.c.obj: ../libft/ft_sqrt.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building C object CMakeFiles/dencorewar.dir/libft/ft_sqrt.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_sqrt.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_sqrt.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building C object CMakeFiles/dencorewar.dir/libft/ft_sqrt.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_sqrt.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_sqrt.c
 
 CMakeFiles/dencorewar.dir/libft/ft_sqrt.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ft_sqrt.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_sqrt.c > CMakeFiles\dencorewar.dir\libft\ft_sqrt.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_sqrt.c > CMakeFiles\dencorewar.dir\libft\ft_sqrt.c.i
 
 CMakeFiles/dencorewar.dir/libft/ft_sqrt.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ft_sqrt.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_sqrt.c -o CMakeFiles\dencorewar.dir\libft\ft_sqrt.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_sqrt.c -o CMakeFiles\dencorewar.dir\libft\ft_sqrt.c.s
 
 CMakeFiles/dencorewar.dir/libft/ft_sstrchr.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ft_sstrchr.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ft_sstrchr.c.obj: ../libft/ft_sstrchr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building C object CMakeFiles/dencorewar.dir/libft/ft_sstrchr.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_sstrchr.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_sstrchr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building C object CMakeFiles/dencorewar.dir/libft/ft_sstrchr.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_sstrchr.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_sstrchr.c
 
 CMakeFiles/dencorewar.dir/libft/ft_sstrchr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ft_sstrchr.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_sstrchr.c > CMakeFiles\dencorewar.dir\libft\ft_sstrchr.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_sstrchr.c > CMakeFiles\dencorewar.dir\libft\ft_sstrchr.c.i
 
 CMakeFiles/dencorewar.dir/libft/ft_sstrchr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ft_sstrchr.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_sstrchr.c -o CMakeFiles\dencorewar.dir\libft\ft_sstrchr.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_sstrchr.c -o CMakeFiles\dencorewar.dir\libft\ft_sstrchr.c.s
 
 CMakeFiles/dencorewar.dir/libft/ft_strcat.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ft_strcat.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ft_strcat.c.obj: ../libft/ft_strcat.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building C object CMakeFiles/dencorewar.dir/libft/ft_strcat.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_strcat.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_strcat.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building C object CMakeFiles/dencorewar.dir/libft/ft_strcat.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_strcat.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_strcat.c
 
 CMakeFiles/dencorewar.dir/libft/ft_strcat.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ft_strcat.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_strcat.c > CMakeFiles\dencorewar.dir\libft\ft_strcat.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_strcat.c > CMakeFiles\dencorewar.dir\libft\ft_strcat.c.i
 
 CMakeFiles/dencorewar.dir/libft/ft_strcat.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ft_strcat.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_strcat.c -o CMakeFiles\dencorewar.dir\libft\ft_strcat.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_strcat.c -o CMakeFiles\dencorewar.dir\libft\ft_strcat.c.s
 
 CMakeFiles/dencorewar.dir/libft/ft_strchr.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ft_strchr.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ft_strchr.c.obj: ../libft/ft_strchr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Building C object CMakeFiles/dencorewar.dir/libft/ft_strchr.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_strchr.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_strchr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Building C object CMakeFiles/dencorewar.dir/libft/ft_strchr.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_strchr.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_strchr.c
 
 CMakeFiles/dencorewar.dir/libft/ft_strchr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ft_strchr.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_strchr.c > CMakeFiles\dencorewar.dir\libft\ft_strchr.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_strchr.c > CMakeFiles\dencorewar.dir\libft\ft_strchr.c.i
 
 CMakeFiles/dencorewar.dir/libft/ft_strchr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ft_strchr.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_strchr.c -o CMakeFiles\dencorewar.dir\libft\ft_strchr.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_strchr.c -o CMakeFiles\dencorewar.dir\libft\ft_strchr.c.s
 
 CMakeFiles/dencorewar.dir/libft/ft_strclr.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ft_strclr.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ft_strclr.c.obj: ../libft/ft_strclr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Building C object CMakeFiles/dencorewar.dir/libft/ft_strclr.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_strclr.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_strclr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Building C object CMakeFiles/dencorewar.dir/libft/ft_strclr.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_strclr.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_strclr.c
 
 CMakeFiles/dencorewar.dir/libft/ft_strclr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ft_strclr.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_strclr.c > CMakeFiles\dencorewar.dir\libft\ft_strclr.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_strclr.c > CMakeFiles\dencorewar.dir\libft\ft_strclr.c.i
 
 CMakeFiles/dencorewar.dir/libft/ft_strclr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ft_strclr.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_strclr.c -o CMakeFiles\dencorewar.dir\libft\ft_strclr.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_strclr.c -o CMakeFiles\dencorewar.dir\libft\ft_strclr.c.s
 
 CMakeFiles/dencorewar.dir/libft/ft_strcmp.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ft_strcmp.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ft_strcmp.c.obj: ../libft/ft_strcmp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Building C object CMakeFiles/dencorewar.dir/libft/ft_strcmp.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_strcmp.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_strcmp.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Building C object CMakeFiles/dencorewar.dir/libft/ft_strcmp.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_strcmp.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_strcmp.c
 
 CMakeFiles/dencorewar.dir/libft/ft_strcmp.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ft_strcmp.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_strcmp.c > CMakeFiles\dencorewar.dir\libft\ft_strcmp.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_strcmp.c > CMakeFiles\dencorewar.dir\libft\ft_strcmp.c.i
 
 CMakeFiles/dencorewar.dir/libft/ft_strcmp.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ft_strcmp.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_strcmp.c -o CMakeFiles\dencorewar.dir\libft\ft_strcmp.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_strcmp.c -o CMakeFiles\dencorewar.dir\libft\ft_strcmp.c.s
 
 CMakeFiles/dencorewar.dir/libft/ft_strcpy.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ft_strcpy.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ft_strcpy.c.obj: ../libft/ft_strcpy.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_98) "Building C object CMakeFiles/dencorewar.dir/libft/ft_strcpy.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_strcpy.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_strcpy.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_98) "Building C object CMakeFiles/dencorewar.dir/libft/ft_strcpy.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_strcpy.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_strcpy.c
 
 CMakeFiles/dencorewar.dir/libft/ft_strcpy.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ft_strcpy.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_strcpy.c > CMakeFiles\dencorewar.dir\libft\ft_strcpy.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_strcpy.c > CMakeFiles\dencorewar.dir\libft\ft_strcpy.c.i
 
 CMakeFiles/dencorewar.dir/libft/ft_strcpy.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ft_strcpy.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_strcpy.c -o CMakeFiles\dencorewar.dir\libft\ft_strcpy.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_strcpy.c -o CMakeFiles\dencorewar.dir\libft\ft_strcpy.c.s
 
 CMakeFiles/dencorewar.dir/libft/ft_strdel.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ft_strdel.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ft_strdel.c.obj: ../libft/ft_strdel.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_99) "Building C object CMakeFiles/dencorewar.dir/libft/ft_strdel.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_strdel.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_strdel.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_99) "Building C object CMakeFiles/dencorewar.dir/libft/ft_strdel.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_strdel.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_strdel.c
 
 CMakeFiles/dencorewar.dir/libft/ft_strdel.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ft_strdel.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_strdel.c > CMakeFiles\dencorewar.dir\libft\ft_strdel.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_strdel.c > CMakeFiles\dencorewar.dir\libft\ft_strdel.c.i
 
 CMakeFiles/dencorewar.dir/libft/ft_strdel.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ft_strdel.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_strdel.c -o CMakeFiles\dencorewar.dir\libft\ft_strdel.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_strdel.c -o CMakeFiles\dencorewar.dir\libft\ft_strdel.c.s
 
 CMakeFiles/dencorewar.dir/libft/ft_strdup.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ft_strdup.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ft_strdup.c.obj: ../libft/ft_strdup.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_100) "Building C object CMakeFiles/dencorewar.dir/libft/ft_strdup.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_strdup.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_strdup.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_100) "Building C object CMakeFiles/dencorewar.dir/libft/ft_strdup.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_strdup.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_strdup.c
 
 CMakeFiles/dencorewar.dir/libft/ft_strdup.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ft_strdup.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_strdup.c > CMakeFiles\dencorewar.dir\libft\ft_strdup.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_strdup.c > CMakeFiles\dencorewar.dir\libft\ft_strdup.c.i
 
 CMakeFiles/dencorewar.dir/libft/ft_strdup.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ft_strdup.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_strdup.c -o CMakeFiles\dencorewar.dir\libft\ft_strdup.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_strdup.c -o CMakeFiles\dencorewar.dir\libft\ft_strdup.c.s
 
 CMakeFiles/dencorewar.dir/libft/ft_strequ.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ft_strequ.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ft_strequ.c.obj: ../libft/ft_strequ.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_101) "Building C object CMakeFiles/dencorewar.dir/libft/ft_strequ.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_strequ.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_strequ.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_101) "Building C object CMakeFiles/dencorewar.dir/libft/ft_strequ.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_strequ.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_strequ.c
 
 CMakeFiles/dencorewar.dir/libft/ft_strequ.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ft_strequ.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_strequ.c > CMakeFiles\dencorewar.dir\libft\ft_strequ.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_strequ.c > CMakeFiles\dencorewar.dir\libft\ft_strequ.c.i
 
 CMakeFiles/dencorewar.dir/libft/ft_strequ.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ft_strequ.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_strequ.c -o CMakeFiles\dencorewar.dir\libft\ft_strequ.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_strequ.c -o CMakeFiles\dencorewar.dir\libft\ft_strequ.c.s
 
 CMakeFiles/dencorewar.dir/libft/ft_striter.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ft_striter.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ft_striter.c.obj: ../libft/ft_striter.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_102) "Building C object CMakeFiles/dencorewar.dir/libft/ft_striter.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_striter.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_striter.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_102) "Building C object CMakeFiles/dencorewar.dir/libft/ft_striter.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_striter.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_striter.c
 
 CMakeFiles/dencorewar.dir/libft/ft_striter.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ft_striter.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_striter.c > CMakeFiles\dencorewar.dir\libft\ft_striter.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_striter.c > CMakeFiles\dencorewar.dir\libft\ft_striter.c.i
 
 CMakeFiles/dencorewar.dir/libft/ft_striter.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ft_striter.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_striter.c -o CMakeFiles\dencorewar.dir\libft\ft_striter.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_striter.c -o CMakeFiles\dencorewar.dir\libft\ft_striter.c.s
 
 CMakeFiles/dencorewar.dir/libft/ft_striteri.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ft_striteri.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ft_striteri.c.obj: ../libft/ft_striteri.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_103) "Building C object CMakeFiles/dencorewar.dir/libft/ft_striteri.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_striteri.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_striteri.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_103) "Building C object CMakeFiles/dencorewar.dir/libft/ft_striteri.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_striteri.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_striteri.c
 
 CMakeFiles/dencorewar.dir/libft/ft_striteri.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ft_striteri.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_striteri.c > CMakeFiles\dencorewar.dir\libft\ft_striteri.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_striteri.c > CMakeFiles\dencorewar.dir\libft\ft_striteri.c.i
 
 CMakeFiles/dencorewar.dir/libft/ft_striteri.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ft_striteri.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_striteri.c -o CMakeFiles\dencorewar.dir\libft\ft_striteri.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_striteri.c -o CMakeFiles\dencorewar.dir\libft\ft_striteri.c.s
 
 CMakeFiles/dencorewar.dir/libft/ft_strjoin.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ft_strjoin.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ft_strjoin.c.obj: ../libft/ft_strjoin.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_104) "Building C object CMakeFiles/dencorewar.dir/libft/ft_strjoin.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_strjoin.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_strjoin.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_104) "Building C object CMakeFiles/dencorewar.dir/libft/ft_strjoin.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_strjoin.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_strjoin.c
 
 CMakeFiles/dencorewar.dir/libft/ft_strjoin.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ft_strjoin.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_strjoin.c > CMakeFiles\dencorewar.dir\libft\ft_strjoin.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_strjoin.c > CMakeFiles\dencorewar.dir\libft\ft_strjoin.c.i
 
 CMakeFiles/dencorewar.dir/libft/ft_strjoin.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ft_strjoin.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_strjoin.c -o CMakeFiles\dencorewar.dir\libft\ft_strjoin.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_strjoin.c -o CMakeFiles\dencorewar.dir\libft\ft_strjoin.c.s
 
 CMakeFiles/dencorewar.dir/libft/ft_strjoinre.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ft_strjoinre.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ft_strjoinre.c.obj: ../libft/ft_strjoinre.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_105) "Building C object CMakeFiles/dencorewar.dir/libft/ft_strjoinre.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_strjoinre.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_strjoinre.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_105) "Building C object CMakeFiles/dencorewar.dir/libft/ft_strjoinre.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_strjoinre.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_strjoinre.c
 
 CMakeFiles/dencorewar.dir/libft/ft_strjoinre.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ft_strjoinre.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_strjoinre.c > CMakeFiles\dencorewar.dir\libft\ft_strjoinre.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_strjoinre.c > CMakeFiles\dencorewar.dir\libft\ft_strjoinre.c.i
 
 CMakeFiles/dencorewar.dir/libft/ft_strjoinre.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ft_strjoinre.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_strjoinre.c -o CMakeFiles\dencorewar.dir\libft\ft_strjoinre.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_strjoinre.c -o CMakeFiles\dencorewar.dir\libft\ft_strjoinre.c.s
 
 CMakeFiles/dencorewar.dir/libft/ft_strlcat.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ft_strlcat.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ft_strlcat.c.obj: ../libft/ft_strlcat.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_106) "Building C object CMakeFiles/dencorewar.dir/libft/ft_strlcat.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_strlcat.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_strlcat.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_106) "Building C object CMakeFiles/dencorewar.dir/libft/ft_strlcat.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_strlcat.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_strlcat.c
 
 CMakeFiles/dencorewar.dir/libft/ft_strlcat.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ft_strlcat.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_strlcat.c > CMakeFiles\dencorewar.dir\libft\ft_strlcat.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_strlcat.c > CMakeFiles\dencorewar.dir\libft\ft_strlcat.c.i
 
 CMakeFiles/dencorewar.dir/libft/ft_strlcat.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ft_strlcat.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_strlcat.c -o CMakeFiles\dencorewar.dir\libft\ft_strlcat.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_strlcat.c -o CMakeFiles\dencorewar.dir\libft\ft_strlcat.c.s
 
 CMakeFiles/dencorewar.dir/libft/ft_strlcpy.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ft_strlcpy.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ft_strlcpy.c.obj: ../libft/ft_strlcpy.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_107) "Building C object CMakeFiles/dencorewar.dir/libft/ft_strlcpy.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_strlcpy.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_strlcpy.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_107) "Building C object CMakeFiles/dencorewar.dir/libft/ft_strlcpy.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_strlcpy.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_strlcpy.c
 
 CMakeFiles/dencorewar.dir/libft/ft_strlcpy.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ft_strlcpy.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_strlcpy.c > CMakeFiles\dencorewar.dir\libft\ft_strlcpy.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_strlcpy.c > CMakeFiles\dencorewar.dir\libft\ft_strlcpy.c.i
 
 CMakeFiles/dencorewar.dir/libft/ft_strlcpy.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ft_strlcpy.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_strlcpy.c -o CMakeFiles\dencorewar.dir\libft\ft_strlcpy.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_strlcpy.c -o CMakeFiles\dencorewar.dir\libft\ft_strlcpy.c.s
 
 CMakeFiles/dencorewar.dir/libft/ft_strlen.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ft_strlen.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ft_strlen.c.obj: ../libft/ft_strlen.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_108) "Building C object CMakeFiles/dencorewar.dir/libft/ft_strlen.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_strlen.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_strlen.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_108) "Building C object CMakeFiles/dencorewar.dir/libft/ft_strlen.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_strlen.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_strlen.c
 
 CMakeFiles/dencorewar.dir/libft/ft_strlen.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ft_strlen.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_strlen.c > CMakeFiles\dencorewar.dir\libft\ft_strlen.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_strlen.c > CMakeFiles\dencorewar.dir\libft\ft_strlen.c.i
 
 CMakeFiles/dencorewar.dir/libft/ft_strlen.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ft_strlen.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_strlen.c -o CMakeFiles\dencorewar.dir\libft\ft_strlen.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_strlen.c -o CMakeFiles\dencorewar.dir\libft\ft_strlen.c.s
 
 CMakeFiles/dencorewar.dir/libft/ft_strmap.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ft_strmap.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ft_strmap.c.obj: ../libft/ft_strmap.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_109) "Building C object CMakeFiles/dencorewar.dir/libft/ft_strmap.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_strmap.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_strmap.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_109) "Building C object CMakeFiles/dencorewar.dir/libft/ft_strmap.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_strmap.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_strmap.c
 
 CMakeFiles/dencorewar.dir/libft/ft_strmap.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ft_strmap.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_strmap.c > CMakeFiles\dencorewar.dir\libft\ft_strmap.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_strmap.c > CMakeFiles\dencorewar.dir\libft\ft_strmap.c.i
 
 CMakeFiles/dencorewar.dir/libft/ft_strmap.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ft_strmap.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_strmap.c -o CMakeFiles\dencorewar.dir\libft\ft_strmap.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_strmap.c -o CMakeFiles\dencorewar.dir\libft\ft_strmap.c.s
 
 CMakeFiles/dencorewar.dir/libft/ft_strmapi.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ft_strmapi.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ft_strmapi.c.obj: ../libft/ft_strmapi.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_110) "Building C object CMakeFiles/dencorewar.dir/libft/ft_strmapi.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_strmapi.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_strmapi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_110) "Building C object CMakeFiles/dencorewar.dir/libft/ft_strmapi.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_strmapi.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_strmapi.c
 
 CMakeFiles/dencorewar.dir/libft/ft_strmapi.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ft_strmapi.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_strmapi.c > CMakeFiles\dencorewar.dir\libft\ft_strmapi.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_strmapi.c > CMakeFiles\dencorewar.dir\libft\ft_strmapi.c.i
 
 CMakeFiles/dencorewar.dir/libft/ft_strmapi.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ft_strmapi.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_strmapi.c -o CMakeFiles\dencorewar.dir\libft\ft_strmapi.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_strmapi.c -o CMakeFiles\dencorewar.dir\libft\ft_strmapi.c.s
 
 CMakeFiles/dencorewar.dir/libft/ft_strncat.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ft_strncat.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ft_strncat.c.obj: ../libft/ft_strncat.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_111) "Building C object CMakeFiles/dencorewar.dir/libft/ft_strncat.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_strncat.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_strncat.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_111) "Building C object CMakeFiles/dencorewar.dir/libft/ft_strncat.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_strncat.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_strncat.c
 
 CMakeFiles/dencorewar.dir/libft/ft_strncat.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ft_strncat.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_strncat.c > CMakeFiles\dencorewar.dir\libft\ft_strncat.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_strncat.c > CMakeFiles\dencorewar.dir\libft\ft_strncat.c.i
 
 CMakeFiles/dencorewar.dir/libft/ft_strncat.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ft_strncat.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_strncat.c -o CMakeFiles\dencorewar.dir\libft\ft_strncat.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_strncat.c -o CMakeFiles\dencorewar.dir\libft\ft_strncat.c.s
 
 CMakeFiles/dencorewar.dir/libft/ft_strncmp.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ft_strncmp.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ft_strncmp.c.obj: ../libft/ft_strncmp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_112) "Building C object CMakeFiles/dencorewar.dir/libft/ft_strncmp.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_strncmp.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_strncmp.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_112) "Building C object CMakeFiles/dencorewar.dir/libft/ft_strncmp.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_strncmp.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_strncmp.c
 
 CMakeFiles/dencorewar.dir/libft/ft_strncmp.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ft_strncmp.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_strncmp.c > CMakeFiles\dencorewar.dir\libft\ft_strncmp.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_strncmp.c > CMakeFiles\dencorewar.dir\libft\ft_strncmp.c.i
 
 CMakeFiles/dencorewar.dir/libft/ft_strncmp.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ft_strncmp.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_strncmp.c -o CMakeFiles\dencorewar.dir\libft\ft_strncmp.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_strncmp.c -o CMakeFiles\dencorewar.dir\libft\ft_strncmp.c.s
 
 CMakeFiles/dencorewar.dir/libft/ft_strncpy.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ft_strncpy.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ft_strncpy.c.obj: ../libft/ft_strncpy.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_113) "Building C object CMakeFiles/dencorewar.dir/libft/ft_strncpy.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_strncpy.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_strncpy.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_113) "Building C object CMakeFiles/dencorewar.dir/libft/ft_strncpy.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_strncpy.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_strncpy.c
 
 CMakeFiles/dencorewar.dir/libft/ft_strncpy.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ft_strncpy.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_strncpy.c > CMakeFiles\dencorewar.dir\libft\ft_strncpy.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_strncpy.c > CMakeFiles\dencorewar.dir\libft\ft_strncpy.c.i
 
 CMakeFiles/dencorewar.dir/libft/ft_strncpy.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ft_strncpy.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_strncpy.c -o CMakeFiles\dencorewar.dir\libft\ft_strncpy.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_strncpy.c -o CMakeFiles\dencorewar.dir\libft\ft_strncpy.c.s
 
 CMakeFiles/dencorewar.dir/libft/ft_strndup.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ft_strndup.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ft_strndup.c.obj: ../libft/ft_strndup.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_114) "Building C object CMakeFiles/dencorewar.dir/libft/ft_strndup.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_strndup.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_strndup.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_114) "Building C object CMakeFiles/dencorewar.dir/libft/ft_strndup.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_strndup.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_strndup.c
 
 CMakeFiles/dencorewar.dir/libft/ft_strndup.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ft_strndup.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_strndup.c > CMakeFiles\dencorewar.dir\libft\ft_strndup.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_strndup.c > CMakeFiles\dencorewar.dir\libft\ft_strndup.c.i
 
 CMakeFiles/dencorewar.dir/libft/ft_strndup.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ft_strndup.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_strndup.c -o CMakeFiles\dencorewar.dir\libft\ft_strndup.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_strndup.c -o CMakeFiles\dencorewar.dir\libft\ft_strndup.c.s
 
 CMakeFiles/dencorewar.dir/libft/ft_strnequ.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ft_strnequ.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ft_strnequ.c.obj: ../libft/ft_strnequ.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_115) "Building C object CMakeFiles/dencorewar.dir/libft/ft_strnequ.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_strnequ.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_strnequ.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_115) "Building C object CMakeFiles/dencorewar.dir/libft/ft_strnequ.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_strnequ.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_strnequ.c
 
 CMakeFiles/dencorewar.dir/libft/ft_strnequ.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ft_strnequ.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_strnequ.c > CMakeFiles\dencorewar.dir\libft\ft_strnequ.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_strnequ.c > CMakeFiles\dencorewar.dir\libft\ft_strnequ.c.i
 
 CMakeFiles/dencorewar.dir/libft/ft_strnequ.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ft_strnequ.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_strnequ.c -o CMakeFiles\dencorewar.dir\libft\ft_strnequ.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_strnequ.c -o CMakeFiles\dencorewar.dir\libft\ft_strnequ.c.s
 
 CMakeFiles/dencorewar.dir/libft/ft_strnew.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ft_strnew.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ft_strnew.c.obj: ../libft/ft_strnew.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_116) "Building C object CMakeFiles/dencorewar.dir/libft/ft_strnew.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_strnew.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_strnew.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_116) "Building C object CMakeFiles/dencorewar.dir/libft/ft_strnew.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_strnew.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_strnew.c
 
 CMakeFiles/dencorewar.dir/libft/ft_strnew.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ft_strnew.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_strnew.c > CMakeFiles\dencorewar.dir\libft\ft_strnew.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_strnew.c > CMakeFiles\dencorewar.dir\libft\ft_strnew.c.i
 
 CMakeFiles/dencorewar.dir/libft/ft_strnew.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ft_strnew.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_strnew.c -o CMakeFiles\dencorewar.dir\libft\ft_strnew.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_strnew.c -o CMakeFiles\dencorewar.dir\libft\ft_strnew.c.s
 
 CMakeFiles/dencorewar.dir/libft/ft_strnstr.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ft_strnstr.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ft_strnstr.c.obj: ../libft/ft_strnstr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_117) "Building C object CMakeFiles/dencorewar.dir/libft/ft_strnstr.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_strnstr.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_strnstr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_117) "Building C object CMakeFiles/dencorewar.dir/libft/ft_strnstr.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_strnstr.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_strnstr.c
 
 CMakeFiles/dencorewar.dir/libft/ft_strnstr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ft_strnstr.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_strnstr.c > CMakeFiles\dencorewar.dir\libft\ft_strnstr.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_strnstr.c > CMakeFiles\dencorewar.dir\libft\ft_strnstr.c.i
 
 CMakeFiles/dencorewar.dir/libft/ft_strnstr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ft_strnstr.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_strnstr.c -o CMakeFiles\dencorewar.dir\libft\ft_strnstr.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_strnstr.c -o CMakeFiles\dencorewar.dir\libft\ft_strnstr.c.s
 
 CMakeFiles/dencorewar.dir/libft/ft_strrchr.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ft_strrchr.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ft_strrchr.c.obj: ../libft/ft_strrchr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_118) "Building C object CMakeFiles/dencorewar.dir/libft/ft_strrchr.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_strrchr.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_strrchr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_118) "Building C object CMakeFiles/dencorewar.dir/libft/ft_strrchr.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_strrchr.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_strrchr.c
 
 CMakeFiles/dencorewar.dir/libft/ft_strrchr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ft_strrchr.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_strrchr.c > CMakeFiles\dencorewar.dir\libft\ft_strrchr.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_strrchr.c > CMakeFiles\dencorewar.dir\libft\ft_strrchr.c.i
 
 CMakeFiles/dencorewar.dir/libft/ft_strrchr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ft_strrchr.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_strrchr.c -o CMakeFiles\dencorewar.dir\libft\ft_strrchr.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_strrchr.c -o CMakeFiles\dencorewar.dir\libft\ft_strrchr.c.s
 
 CMakeFiles/dencorewar.dir/libft/ft_strsplit.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ft_strsplit.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ft_strsplit.c.obj: ../libft/ft_strsplit.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_119) "Building C object CMakeFiles/dencorewar.dir/libft/ft_strsplit.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_strsplit.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_strsplit.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_119) "Building C object CMakeFiles/dencorewar.dir/libft/ft_strsplit.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_strsplit.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_strsplit.c
 
 CMakeFiles/dencorewar.dir/libft/ft_strsplit.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ft_strsplit.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_strsplit.c > CMakeFiles\dencorewar.dir\libft\ft_strsplit.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_strsplit.c > CMakeFiles\dencorewar.dir\libft\ft_strsplit.c.i
 
 CMakeFiles/dencorewar.dir/libft/ft_strsplit.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ft_strsplit.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_strsplit.c -o CMakeFiles\dencorewar.dir\libft\ft_strsplit.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_strsplit.c -o CMakeFiles\dencorewar.dir\libft\ft_strsplit.c.s
 
 CMakeFiles/dencorewar.dir/libft/ft_strstr.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ft_strstr.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ft_strstr.c.obj: ../libft/ft_strstr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_120) "Building C object CMakeFiles/dencorewar.dir/libft/ft_strstr.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_strstr.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_strstr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_120) "Building C object CMakeFiles/dencorewar.dir/libft/ft_strstr.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_strstr.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_strstr.c
 
 CMakeFiles/dencorewar.dir/libft/ft_strstr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ft_strstr.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_strstr.c > CMakeFiles\dencorewar.dir\libft\ft_strstr.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_strstr.c > CMakeFiles\dencorewar.dir\libft\ft_strstr.c.i
 
 CMakeFiles/dencorewar.dir/libft/ft_strstr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ft_strstr.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_strstr.c -o CMakeFiles\dencorewar.dir\libft\ft_strstr.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_strstr.c -o CMakeFiles\dencorewar.dir\libft\ft_strstr.c.s
 
 CMakeFiles/dencorewar.dir/libft/ft_strsub.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ft_strsub.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ft_strsub.c.obj: ../libft/ft_strsub.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_121) "Building C object CMakeFiles/dencorewar.dir/libft/ft_strsub.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_strsub.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_strsub.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_121) "Building C object CMakeFiles/dencorewar.dir/libft/ft_strsub.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_strsub.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_strsub.c
 
 CMakeFiles/dencorewar.dir/libft/ft_strsub.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ft_strsub.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_strsub.c > CMakeFiles\dencorewar.dir\libft\ft_strsub.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_strsub.c > CMakeFiles\dencorewar.dir\libft\ft_strsub.c.i
 
 CMakeFiles/dencorewar.dir/libft/ft_strsub.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ft_strsub.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_strsub.c -o CMakeFiles\dencorewar.dir\libft\ft_strsub.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_strsub.c -o CMakeFiles\dencorewar.dir\libft\ft_strsub.c.s
 
 CMakeFiles/dencorewar.dir/libft/ft_strtrim.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ft_strtrim.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ft_strtrim.c.obj: ../libft/ft_strtrim.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_122) "Building C object CMakeFiles/dencorewar.dir/libft/ft_strtrim.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_strtrim.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_strtrim.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_122) "Building C object CMakeFiles/dencorewar.dir/libft/ft_strtrim.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_strtrim.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_strtrim.c
 
 CMakeFiles/dencorewar.dir/libft/ft_strtrim.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ft_strtrim.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_strtrim.c > CMakeFiles\dencorewar.dir\libft\ft_strtrim.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_strtrim.c > CMakeFiles\dencorewar.dir\libft\ft_strtrim.c.i
 
 CMakeFiles/dencorewar.dir/libft/ft_strtrim.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ft_strtrim.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_strtrim.c -o CMakeFiles\dencorewar.dir\libft\ft_strtrim.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_strtrim.c -o CMakeFiles\dencorewar.dir\libft\ft_strtrim.c.s
 
 CMakeFiles/dencorewar.dir/libft/ft_tolower.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ft_tolower.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ft_tolower.c.obj: ../libft/ft_tolower.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_123) "Building C object CMakeFiles/dencorewar.dir/libft/ft_tolower.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_tolower.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_tolower.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_123) "Building C object CMakeFiles/dencorewar.dir/libft/ft_tolower.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_tolower.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_tolower.c
 
 CMakeFiles/dencorewar.dir/libft/ft_tolower.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ft_tolower.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_tolower.c > CMakeFiles\dencorewar.dir\libft\ft_tolower.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_tolower.c > CMakeFiles\dencorewar.dir\libft\ft_tolower.c.i
 
 CMakeFiles/dencorewar.dir/libft/ft_tolower.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ft_tolower.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_tolower.c -o CMakeFiles\dencorewar.dir\libft\ft_tolower.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_tolower.c -o CMakeFiles\dencorewar.dir\libft\ft_tolower.c.s
 
 CMakeFiles/dencorewar.dir/libft/ft_toupper.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ft_toupper.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ft_toupper.c.obj: ../libft/ft_toupper.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_124) "Building C object CMakeFiles/dencorewar.dir/libft/ft_toupper.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_toupper.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_toupper.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_124) "Building C object CMakeFiles/dencorewar.dir/libft/ft_toupper.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ft_toupper.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_toupper.c
 
 CMakeFiles/dencorewar.dir/libft/ft_toupper.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ft_toupper.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_toupper.c > CMakeFiles\dencorewar.dir\libft\ft_toupper.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_toupper.c > CMakeFiles\dencorewar.dir\libft\ft_toupper.c.i
 
 CMakeFiles/dencorewar.dir/libft/ft_toupper.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ft_toupper.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ft_toupper.c -o CMakeFiles\dencorewar.dir\libft\ft_toupper.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ft_toupper.c -o CMakeFiles\dencorewar.dir\libft\ft_toupper.c.s
 
 CMakeFiles/dencorewar.dir/libft/get_next_line.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/get_next_line.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/get_next_line.c.obj: ../libft/get_next_line.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_125) "Building C object CMakeFiles/dencorewar.dir/libft/get_next_line.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\get_next_line.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\get_next_line.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_125) "Building C object CMakeFiles/dencorewar.dir/libft/get_next_line.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\get_next_line.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\get_next_line.c
 
 CMakeFiles/dencorewar.dir/libft/get_next_line.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/get_next_line.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\get_next_line.c > CMakeFiles\dencorewar.dir\libft\get_next_line.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\get_next_line.c > CMakeFiles\dencorewar.dir\libft\get_next_line.c.i
 
 CMakeFiles/dencorewar.dir/libft/get_next_line.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/get_next_line.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\get_next_line.c -o CMakeFiles\dencorewar.dir\libft\get_next_line.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\get_next_line.c -o CMakeFiles\dencorewar.dir\libft\get_next_line.c.s
 
 CMakeFiles/dencorewar.dir/libft/go_exit.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/go_exit.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/go_exit.c.obj: ../libft/go_exit.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_126) "Building C object CMakeFiles/dencorewar.dir/libft/go_exit.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\go_exit.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\go_exit.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_126) "Building C object CMakeFiles/dencorewar.dir/libft/go_exit.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\go_exit.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\go_exit.c
 
 CMakeFiles/dencorewar.dir/libft/go_exit.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/go_exit.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\go_exit.c > CMakeFiles\dencorewar.dir\libft\go_exit.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\go_exit.c > CMakeFiles\dencorewar.dir\libft\go_exit.c.i
 
 CMakeFiles/dencorewar.dir/libft/go_exit.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/go_exit.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\go_exit.c -o CMakeFiles\dencorewar.dir\libft\go_exit.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\go_exit.c -o CMakeFiles\dencorewar.dir\libft\go_exit.c.s
 
 CMakeFiles/dencorewar.dir/libft/ml_get_next_line.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ml_get_next_line.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ml_get_next_line.c.obj: ../libft/ml_get_next_line.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_127) "Building C object CMakeFiles/dencorewar.dir/libft/ml_get_next_line.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ml_get_next_line.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ml_get_next_line.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_127) "Building C object CMakeFiles/dencorewar.dir/libft/ml_get_next_line.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ml_get_next_line.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ml_get_next_line.c
 
 CMakeFiles/dencorewar.dir/libft/ml_get_next_line.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ml_get_next_line.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ml_get_next_line.c > CMakeFiles\dencorewar.dir\libft\ml_get_next_line.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ml_get_next_line.c > CMakeFiles\dencorewar.dir\libft\ml_get_next_line.c.i
 
 CMakeFiles/dencorewar.dir/libft/ml_get_next_line.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ml_get_next_line.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ml_get_next_line.c -o CMakeFiles\dencorewar.dir\libft\ml_get_next_line.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ml_get_next_line.c -o CMakeFiles\dencorewar.dir\libft\ml_get_next_line.c.s
 
 CMakeFiles/dencorewar.dir/libft/ml_itoa.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ml_itoa.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ml_itoa.c.obj: ../libft/ml_itoa.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_128) "Building C object CMakeFiles/dencorewar.dir/libft/ml_itoa.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ml_itoa.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ml_itoa.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_128) "Building C object CMakeFiles/dencorewar.dir/libft/ml_itoa.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ml_itoa.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ml_itoa.c
 
 CMakeFiles/dencorewar.dir/libft/ml_itoa.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ml_itoa.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ml_itoa.c > CMakeFiles\dencorewar.dir\libft\ml_itoa.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ml_itoa.c > CMakeFiles\dencorewar.dir\libft\ml_itoa.c.i
 
 CMakeFiles/dencorewar.dir/libft/ml_itoa.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ml_itoa.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ml_itoa.c -o CMakeFiles\dencorewar.dir\libft\ml_itoa.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ml_itoa.c -o CMakeFiles\dencorewar.dir\libft\ml_itoa.c.s
 
 CMakeFiles/dencorewar.dir/libft/ml_memalloc.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ml_memalloc.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ml_memalloc.c.obj: ../libft/ml_memalloc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_129) "Building C object CMakeFiles/dencorewar.dir/libft/ml_memalloc.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ml_memalloc.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ml_memalloc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_129) "Building C object CMakeFiles/dencorewar.dir/libft/ml_memalloc.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ml_memalloc.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ml_memalloc.c
 
 CMakeFiles/dencorewar.dir/libft/ml_memalloc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ml_memalloc.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ml_memalloc.c > CMakeFiles\dencorewar.dir\libft\ml_memalloc.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ml_memalloc.c > CMakeFiles\dencorewar.dir\libft\ml_memalloc.c.i
 
 CMakeFiles/dencorewar.dir/libft/ml_memalloc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ml_memalloc.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ml_memalloc.c -o CMakeFiles\dencorewar.dir\libft\ml_memalloc.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ml_memalloc.c -o CMakeFiles\dencorewar.dir\libft\ml_memalloc.c.s
 
 CMakeFiles/dencorewar.dir/libft/ml_strdup.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ml_strdup.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ml_strdup.c.obj: ../libft/ml_strdup.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_130) "Building C object CMakeFiles/dencorewar.dir/libft/ml_strdup.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ml_strdup.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ml_strdup.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_130) "Building C object CMakeFiles/dencorewar.dir/libft/ml_strdup.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ml_strdup.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ml_strdup.c
 
 CMakeFiles/dencorewar.dir/libft/ml_strdup.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ml_strdup.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ml_strdup.c > CMakeFiles\dencorewar.dir\libft\ml_strdup.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ml_strdup.c > CMakeFiles\dencorewar.dir\libft\ml_strdup.c.i
 
 CMakeFiles/dencorewar.dir/libft/ml_strdup.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ml_strdup.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ml_strdup.c -o CMakeFiles\dencorewar.dir\libft\ml_strdup.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ml_strdup.c -o CMakeFiles\dencorewar.dir\libft\ml_strdup.c.s
 
 CMakeFiles/dencorewar.dir/libft/ml_strjoin.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ml_strjoin.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ml_strjoin.c.obj: ../libft/ml_strjoin.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_131) "Building C object CMakeFiles/dencorewar.dir/libft/ml_strjoin.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ml_strjoin.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ml_strjoin.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_131) "Building C object CMakeFiles/dencorewar.dir/libft/ml_strjoin.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ml_strjoin.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ml_strjoin.c
 
 CMakeFiles/dencorewar.dir/libft/ml_strjoin.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ml_strjoin.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ml_strjoin.c > CMakeFiles\dencorewar.dir\libft\ml_strjoin.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ml_strjoin.c > CMakeFiles\dencorewar.dir\libft\ml_strjoin.c.i
 
 CMakeFiles/dencorewar.dir/libft/ml_strjoin.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ml_strjoin.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ml_strjoin.c -o CMakeFiles\dencorewar.dir\libft\ml_strjoin.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ml_strjoin.c -o CMakeFiles\dencorewar.dir\libft\ml_strjoin.c.s
 
 CMakeFiles/dencorewar.dir/libft/ml_strjoinre.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ml_strjoinre.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ml_strjoinre.c.obj: ../libft/ml_strjoinre.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_132) "Building C object CMakeFiles/dencorewar.dir/libft/ml_strjoinre.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ml_strjoinre.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ml_strjoinre.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_132) "Building C object CMakeFiles/dencorewar.dir/libft/ml_strjoinre.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ml_strjoinre.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ml_strjoinre.c
 
 CMakeFiles/dencorewar.dir/libft/ml_strjoinre.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ml_strjoinre.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ml_strjoinre.c > CMakeFiles\dencorewar.dir\libft\ml_strjoinre.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ml_strjoinre.c > CMakeFiles\dencorewar.dir\libft\ml_strjoinre.c.i
 
 CMakeFiles/dencorewar.dir/libft/ml_strjoinre.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ml_strjoinre.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ml_strjoinre.c -o CMakeFiles\dencorewar.dir\libft\ml_strjoinre.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ml_strjoinre.c -o CMakeFiles\dencorewar.dir\libft\ml_strjoinre.c.s
 
 CMakeFiles/dencorewar.dir/libft/ml_strmap.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ml_strmap.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ml_strmap.c.obj: ../libft/ml_strmap.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_133) "Building C object CMakeFiles/dencorewar.dir/libft/ml_strmap.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ml_strmap.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ml_strmap.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_133) "Building C object CMakeFiles/dencorewar.dir/libft/ml_strmap.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ml_strmap.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ml_strmap.c
 
 CMakeFiles/dencorewar.dir/libft/ml_strmap.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ml_strmap.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ml_strmap.c > CMakeFiles\dencorewar.dir\libft\ml_strmap.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ml_strmap.c > CMakeFiles\dencorewar.dir\libft\ml_strmap.c.i
 
 CMakeFiles/dencorewar.dir/libft/ml_strmap.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ml_strmap.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ml_strmap.c -o CMakeFiles\dencorewar.dir\libft\ml_strmap.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ml_strmap.c -o CMakeFiles\dencorewar.dir\libft\ml_strmap.c.s
 
 CMakeFiles/dencorewar.dir/libft/ml_strmapi.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ml_strmapi.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ml_strmapi.c.obj: ../libft/ml_strmapi.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_134) "Building C object CMakeFiles/dencorewar.dir/libft/ml_strmapi.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ml_strmapi.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ml_strmapi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_134) "Building C object CMakeFiles/dencorewar.dir/libft/ml_strmapi.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ml_strmapi.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ml_strmapi.c
 
 CMakeFiles/dencorewar.dir/libft/ml_strmapi.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ml_strmapi.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ml_strmapi.c > CMakeFiles\dencorewar.dir\libft\ml_strmapi.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ml_strmapi.c > CMakeFiles\dencorewar.dir\libft\ml_strmapi.c.i
 
 CMakeFiles/dencorewar.dir/libft/ml_strmapi.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ml_strmapi.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ml_strmapi.c -o CMakeFiles\dencorewar.dir\libft\ml_strmapi.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ml_strmapi.c -o CMakeFiles\dencorewar.dir\libft\ml_strmapi.c.s
 
 CMakeFiles/dencorewar.dir/libft/ml_strndup.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ml_strndup.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ml_strndup.c.obj: ../libft/ml_strndup.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_135) "Building C object CMakeFiles/dencorewar.dir/libft/ml_strndup.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ml_strndup.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ml_strndup.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_135) "Building C object CMakeFiles/dencorewar.dir/libft/ml_strndup.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ml_strndup.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ml_strndup.c
 
 CMakeFiles/dencorewar.dir/libft/ml_strndup.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ml_strndup.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ml_strndup.c > CMakeFiles\dencorewar.dir\libft\ml_strndup.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ml_strndup.c > CMakeFiles\dencorewar.dir\libft\ml_strndup.c.i
 
 CMakeFiles/dencorewar.dir/libft/ml_strndup.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ml_strndup.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ml_strndup.c -o CMakeFiles\dencorewar.dir\libft\ml_strndup.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ml_strndup.c -o CMakeFiles\dencorewar.dir\libft\ml_strndup.c.s
 
 CMakeFiles/dencorewar.dir/libft/ml_strnew.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ml_strnew.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ml_strnew.c.obj: ../libft/ml_strnew.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_136) "Building C object CMakeFiles/dencorewar.dir/libft/ml_strnew.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ml_strnew.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ml_strnew.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_136) "Building C object CMakeFiles/dencorewar.dir/libft/ml_strnew.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ml_strnew.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ml_strnew.c
 
 CMakeFiles/dencorewar.dir/libft/ml_strnew.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ml_strnew.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ml_strnew.c > CMakeFiles\dencorewar.dir\libft\ml_strnew.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ml_strnew.c > CMakeFiles\dencorewar.dir\libft\ml_strnew.c.i
 
 CMakeFiles/dencorewar.dir/libft/ml_strnew.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ml_strnew.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ml_strnew.c -o CMakeFiles\dencorewar.dir\libft\ml_strnew.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ml_strnew.c -o CMakeFiles\dencorewar.dir\libft\ml_strnew.c.s
 
 CMakeFiles/dencorewar.dir/libft/ml_strsplit.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ml_strsplit.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ml_strsplit.c.obj: ../libft/ml_strsplit.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_137) "Building C object CMakeFiles/dencorewar.dir/libft/ml_strsplit.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ml_strsplit.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ml_strsplit.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_137) "Building C object CMakeFiles/dencorewar.dir/libft/ml_strsplit.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ml_strsplit.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ml_strsplit.c
 
 CMakeFiles/dencorewar.dir/libft/ml_strsplit.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ml_strsplit.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ml_strsplit.c > CMakeFiles\dencorewar.dir\libft\ml_strsplit.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ml_strsplit.c > CMakeFiles\dencorewar.dir\libft\ml_strsplit.c.i
 
 CMakeFiles/dencorewar.dir/libft/ml_strsplit.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ml_strsplit.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ml_strsplit.c -o CMakeFiles\dencorewar.dir\libft\ml_strsplit.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ml_strsplit.c -o CMakeFiles\dencorewar.dir\libft\ml_strsplit.c.s
 
 CMakeFiles/dencorewar.dir/libft/ml_strsub.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ml_strsub.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ml_strsub.c.obj: ../libft/ml_strsub.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_138) "Building C object CMakeFiles/dencorewar.dir/libft/ml_strsub.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ml_strsub.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ml_strsub.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_138) "Building C object CMakeFiles/dencorewar.dir/libft/ml_strsub.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ml_strsub.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ml_strsub.c
 
 CMakeFiles/dencorewar.dir/libft/ml_strsub.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ml_strsub.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ml_strsub.c > CMakeFiles\dencorewar.dir\libft\ml_strsub.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ml_strsub.c > CMakeFiles\dencorewar.dir\libft\ml_strsub.c.i
 
 CMakeFiles/dencorewar.dir/libft/ml_strsub.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ml_strsub.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ml_strsub.c -o CMakeFiles\dencorewar.dir\libft\ml_strsub.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ml_strsub.c -o CMakeFiles\dencorewar.dir\libft\ml_strsub.c.s
 
 CMakeFiles/dencorewar.dir/libft/ml_strtrim.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/libft/ml_strtrim.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/libft/ml_strtrim.c.obj: ../libft/ml_strtrim.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_139) "Building C object CMakeFiles/dencorewar.dir/libft/ml_strtrim.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ml_strtrim.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ml_strtrim.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_139) "Building C object CMakeFiles/dencorewar.dir/libft/ml_strtrim.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\libft\ml_strtrim.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\libft\ml_strtrim.c
 
 CMakeFiles/dencorewar.dir/libft/ml_strtrim.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/libft/ml_strtrim.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ml_strtrim.c > CMakeFiles\dencorewar.dir\libft\ml_strtrim.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\libft\ml_strtrim.c > CMakeFiles\dencorewar.dir\libft\ml_strtrim.c.i
 
 CMakeFiles/dencorewar.dir/libft/ml_strtrim.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/libft/ml_strtrim.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\libft\ml_strtrim.c -o CMakeFiles\dencorewar.dir\libft\ml_strtrim.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\libft\ml_strtrim.c -o CMakeFiles\dencorewar.dir\libft\ml_strtrim.c.s
 
 CMakeFiles/dencorewar.dir/vm/srcs/game/args_intf.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/vm/srcs/game/args_intf.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/vm/srcs/game/args_intf.c.obj: ../vm/srcs/game/args_intf.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_140) "Building C object CMakeFiles/dencorewar.dir/vm/srcs/game/args_intf.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\vm\srcs\game\args_intf.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\vm\srcs\game\args_intf.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_140) "Building C object CMakeFiles/dencorewar.dir/vm/srcs/game/args_intf.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\vm\srcs\game\args_intf.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\vm\srcs\game\args_intf.c
 
 CMakeFiles/dencorewar.dir/vm/srcs/game/args_intf.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/vm/srcs/game/args_intf.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\vm\srcs\game\args_intf.c > CMakeFiles\dencorewar.dir\vm\srcs\game\args_intf.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\vm\srcs\game\args_intf.c > CMakeFiles\dencorewar.dir\vm\srcs\game\args_intf.c.i
 
 CMakeFiles/dencorewar.dir/vm/srcs/game/args_intf.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/vm/srcs/game/args_intf.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\vm\srcs\game\args_intf.c -o CMakeFiles\dencorewar.dir\vm\srcs\game\args_intf.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\vm\srcs\game\args_intf.c -o CMakeFiles\dencorewar.dir\vm\srcs\game\args_intf.c.s
 
 CMakeFiles/dencorewar.dir/vm/srcs/game/create_vs.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/vm/srcs/game/create_vs.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/vm/srcs/game/create_vs.c.obj: ../vm/srcs/game/create_vs.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_141) "Building C object CMakeFiles/dencorewar.dir/vm/srcs/game/create_vs.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\vm\srcs\game\create_vs.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\vm\srcs\game\create_vs.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_141) "Building C object CMakeFiles/dencorewar.dir/vm/srcs/game/create_vs.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\vm\srcs\game\create_vs.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\vm\srcs\game\create_vs.c
 
 CMakeFiles/dencorewar.dir/vm/srcs/game/create_vs.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/vm/srcs/game/create_vs.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\vm\srcs\game\create_vs.c > CMakeFiles\dencorewar.dir\vm\srcs\game\create_vs.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\vm\srcs\game\create_vs.c > CMakeFiles\dencorewar.dir\vm\srcs\game\create_vs.c.i
 
 CMakeFiles/dencorewar.dir/vm/srcs/game/create_vs.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/vm/srcs/game/create_vs.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\vm\srcs\game\create_vs.c -o CMakeFiles\dencorewar.dir\vm\srcs\game\create_vs.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\vm\srcs\game\create_vs.c -o CMakeFiles\dencorewar.dir\vm\srcs\game\create_vs.c.s
 
 CMakeFiles/dencorewar.dir/vm/srcs/game/game.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/vm/srcs/game/game.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/vm/srcs/game/game.c.obj: ../vm/srcs/game/game.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_142) "Building C object CMakeFiles/dencorewar.dir/vm/srcs/game/game.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\vm\srcs\game\game.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\vm\srcs\game\game.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_142) "Building C object CMakeFiles/dencorewar.dir/vm/srcs/game/game.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\vm\srcs\game\game.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\vm\srcs\game\game.c
 
 CMakeFiles/dencorewar.dir/vm/srcs/game/game.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/vm/srcs/game/game.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\vm\srcs\game\game.c > CMakeFiles\dencorewar.dir\vm\srcs\game\game.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\vm\srcs\game\game.c > CMakeFiles\dencorewar.dir\vm\srcs\game\game.c.i
 
 CMakeFiles/dencorewar.dir/vm/srcs/game/game.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/vm/srcs/game/game.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\vm\srcs\game\game.c -o CMakeFiles\dencorewar.dir\vm\srcs\game\game.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\vm\srcs\game\game.c -o CMakeFiles\dencorewar.dir\vm\srcs\game\game.c.s
 
 CMakeFiles/dencorewar.dir/vm/srcs/game/game_intf.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/vm/srcs/game/game_intf.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/vm/srcs/game/game_intf.c.obj: ../vm/srcs/game/game_intf.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_143) "Building C object CMakeFiles/dencorewar.dir/vm/srcs/game/game_intf.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\vm\srcs\game\game_intf.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\vm\srcs\game\game_intf.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_143) "Building C object CMakeFiles/dencorewar.dir/vm/srcs/game/game_intf.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\vm\srcs\game\game_intf.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\vm\srcs\game\game_intf.c
 
 CMakeFiles/dencorewar.dir/vm/srcs/game/game_intf.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/vm/srcs/game/game_intf.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\vm\srcs\game\game_intf.c > CMakeFiles\dencorewar.dir\vm\srcs\game\game_intf.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\vm\srcs\game\game_intf.c > CMakeFiles\dencorewar.dir\vm\srcs\game\game_intf.c.i
 
 CMakeFiles/dencorewar.dir/vm/srcs/game/game_intf.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/vm/srcs/game/game_intf.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\vm\srcs\game\game_intf.c -o CMakeFiles\dencorewar.dir\vm\srcs\game\game_intf.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\vm\srcs\game\game_intf.c -o CMakeFiles\dencorewar.dir\vm\srcs\game\game_intf.c.s
 
 CMakeFiles/dencorewar.dir/vm/srcs/game/helper_func.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/vm/srcs/game/helper_func.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/vm/srcs/game/helper_func.c.obj: ../vm/srcs/game/helper_func.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_144) "Building C object CMakeFiles/dencorewar.dir/vm/srcs/game/helper_func.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\vm\srcs\game\helper_func.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\vm\srcs\game\helper_func.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_144) "Building C object CMakeFiles/dencorewar.dir/vm/srcs/game/helper_func.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\vm\srcs\game\helper_func.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\vm\srcs\game\helper_func.c
 
 CMakeFiles/dencorewar.dir/vm/srcs/game/helper_func.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/vm/srcs/game/helper_func.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\vm\srcs\game\helper_func.c > CMakeFiles\dencorewar.dir\vm\srcs\game\helper_func.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\vm\srcs\game\helper_func.c > CMakeFiles\dencorewar.dir\vm\srcs\game\helper_func.c.i
 
 CMakeFiles/dencorewar.dir/vm/srcs/game/helper_func.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/vm/srcs/game/helper_func.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\vm\srcs\game\helper_func.c -o CMakeFiles\dencorewar.dir\vm\srcs\game\helper_func.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\vm\srcs\game\helper_func.c -o CMakeFiles\dencorewar.dir\vm\srcs\game\helper_func.c.s
 
 CMakeFiles/dencorewar.dir/vm/srcs/game/init_sdl.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/vm/srcs/game/init_sdl.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/vm/srcs/game/init_sdl.c.obj: ../vm/srcs/game/init_sdl.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_145) "Building C object CMakeFiles/dencorewar.dir/vm/srcs/game/init_sdl.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\vm\srcs\game\init_sdl.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\vm\srcs\game\init_sdl.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_145) "Building C object CMakeFiles/dencorewar.dir/vm/srcs/game/init_sdl.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\vm\srcs\game\init_sdl.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\vm\srcs\game\init_sdl.c
 
 CMakeFiles/dencorewar.dir/vm/srcs/game/init_sdl.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/vm/srcs/game/init_sdl.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\vm\srcs\game\init_sdl.c > CMakeFiles\dencorewar.dir\vm\srcs\game\init_sdl.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\vm\srcs\game\init_sdl.c > CMakeFiles\dencorewar.dir\vm\srcs\game\init_sdl.c.i
 
 CMakeFiles/dencorewar.dir/vm/srcs/game/init_sdl.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/vm/srcs/game/init_sdl.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\vm\srcs\game\init_sdl.c -o CMakeFiles\dencorewar.dir\vm\srcs\game\init_sdl.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\vm\srcs\game\init_sdl.c -o CMakeFiles\dencorewar.dir\vm\srcs\game\init_sdl.c.s
 
 CMakeFiles/dencorewar.dir/vm/srcs/game/instuctions.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/vm/srcs/game/instuctions.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/vm/srcs/game/instuctions.c.obj: ../vm/srcs/game/instuctions.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_146) "Building C object CMakeFiles/dencorewar.dir/vm/srcs/game/instuctions.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\vm\srcs\game\instuctions.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\vm\srcs\game\instuctions.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_146) "Building C object CMakeFiles/dencorewar.dir/vm/srcs/game/instuctions.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\vm\srcs\game\instuctions.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\vm\srcs\game\instuctions.c
 
 CMakeFiles/dencorewar.dir/vm/srcs/game/instuctions.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/vm/srcs/game/instuctions.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\vm\srcs\game\instuctions.c > CMakeFiles\dencorewar.dir\vm\srcs\game\instuctions.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\vm\srcs\game\instuctions.c > CMakeFiles\dencorewar.dir\vm\srcs\game\instuctions.c.i
 
 CMakeFiles/dencorewar.dir/vm/srcs/game/instuctions.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/vm/srcs/game/instuctions.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\vm\srcs\game\instuctions.c -o CMakeFiles\dencorewar.dir\vm\srcs\game\instuctions.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\vm\srcs\game\instuctions.c -o CMakeFiles\dencorewar.dir\vm\srcs\game\instuctions.c.s
 
 CMakeFiles/dencorewar.dir/vm/srcs/game/visualise_arena.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/vm/srcs/game/visualise_arena.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/vm/srcs/game/visualise_arena.c.obj: ../vm/srcs/game/visualise_arena.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_147) "Building C object CMakeFiles/dencorewar.dir/vm/srcs/game/visualise_arena.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\vm\srcs\game\visualise_arena.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\vm\srcs\game\visualise_arena.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_147) "Building C object CMakeFiles/dencorewar.dir/vm/srcs/game/visualise_arena.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\vm\srcs\game\visualise_arena.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\vm\srcs\game\visualise_arena.c
 
 CMakeFiles/dencorewar.dir/vm/srcs/game/visualise_arena.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/vm/srcs/game/visualise_arena.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\vm\srcs\game\visualise_arena.c > CMakeFiles\dencorewar.dir\vm\srcs\game\visualise_arena.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\vm\srcs\game\visualise_arena.c > CMakeFiles\dencorewar.dir\vm\srcs\game\visualise_arena.c.i
 
 CMakeFiles/dencorewar.dir/vm/srcs/game/visualise_arena.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/vm/srcs/game/visualise_arena.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\vm\srcs\game\visualise_arena.c -o CMakeFiles\dencorewar.dir\vm\srcs\game\visualise_arena.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\vm\srcs\game\visualise_arena.c -o CMakeFiles\dencorewar.dir\vm\srcs\game\visualise_arena.c.s
 
 CMakeFiles/dencorewar.dir/vm/srcs/game/add_cell.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/vm/srcs/game/add_cell.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/vm/srcs/game/add_cell.c.obj: ../vm/srcs/game/add_cell.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_148) "Building C object CMakeFiles/dencorewar.dir/vm/srcs/game/add_cell.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\vm\srcs\game\add_cell.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\vm\srcs\game\add_cell.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_148) "Building C object CMakeFiles/dencorewar.dir/vm/srcs/game/add_cell.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\vm\srcs\game\add_cell.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\vm\srcs\game\add_cell.c
 
 CMakeFiles/dencorewar.dir/vm/srcs/game/add_cell.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/vm/srcs/game/add_cell.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\vm\srcs\game\add_cell.c > CMakeFiles\dencorewar.dir\vm\srcs\game\add_cell.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\vm\srcs\game\add_cell.c > CMakeFiles\dencorewar.dir\vm\srcs\game\add_cell.c.i
 
 CMakeFiles/dencorewar.dir/vm/srcs/game/add_cell.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/vm/srcs/game/add_cell.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\vm\srcs\game\add_cell.c -o CMakeFiles\dencorewar.dir\vm\srcs\game\add_cell.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\vm\srcs\game\add_cell.c -o CMakeFiles\dencorewar.dir\vm\srcs\game\add_cell.c.s
 
 CMakeFiles/dencorewar.dir/vm/srcs/game/print_arena.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/vm/srcs/game/print_arena.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/vm/srcs/game/print_arena.c.obj: ../vm/srcs/game/print_arena.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_149) "Building C object CMakeFiles/dencorewar.dir/vm/srcs/game/print_arena.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\vm\srcs\game\print_arena.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\vm\srcs\game\print_arena.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_149) "Building C object CMakeFiles/dencorewar.dir/vm/srcs/game/print_arena.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\vm\srcs\game\print_arena.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\vm\srcs\game\print_arena.c
 
 CMakeFiles/dencorewar.dir/vm/srcs/game/print_arena.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/vm/srcs/game/print_arena.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\vm\srcs\game\print_arena.c > CMakeFiles\dencorewar.dir\vm\srcs\game\print_arena.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\vm\srcs\game\print_arena.c > CMakeFiles\dencorewar.dir\vm\srcs\game\print_arena.c.i
 
 CMakeFiles/dencorewar.dir/vm/srcs/game/print_arena.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/vm/srcs/game/print_arena.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\vm\srcs\game\print_arena.c -o CMakeFiles\dencorewar.dir\vm\srcs\game\print_arena.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\vm\srcs\game\print_arena.c -o CMakeFiles\dencorewar.dir\vm\srcs\game\print_arena.c.s
 
 CMakeFiles/dencorewar.dir/vm/srcs/game/support_func.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/vm/srcs/game/support_func.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/vm/srcs/game/support_func.c.obj: ../vm/srcs/game/support_func.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_150) "Building C object CMakeFiles/dencorewar.dir/vm/srcs/game/support_func.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\vm\srcs\game\support_func.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\vm\srcs\game\support_func.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_150) "Building C object CMakeFiles/dencorewar.dir/vm/srcs/game/support_func.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\vm\srcs\game\support_func.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\vm\srcs\game\support_func.c
 
 CMakeFiles/dencorewar.dir/vm/srcs/game/support_func.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/vm/srcs/game/support_func.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\vm\srcs\game\support_func.c > CMakeFiles\dencorewar.dir\vm\srcs\game\support_func.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\vm\srcs\game\support_func.c > CMakeFiles\dencorewar.dir\vm\srcs\game\support_func.c.i
 
 CMakeFiles/dencorewar.dir/vm/srcs/game/support_func.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/vm/srcs/game/support_func.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\vm\srcs\game\support_func.c -o CMakeFiles\dencorewar.dir\vm\srcs\game\support_func.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\vm\srcs\game\support_func.c -o CMakeFiles\dencorewar.dir\vm\srcs\game\support_func.c.s
 
 CMakeFiles/dencorewar.dir/vm/srcs/struct_intf/carriage_intf.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/vm/srcs/struct_intf/carriage_intf.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/vm/srcs/struct_intf/carriage_intf.c.obj: ../vm/srcs/struct_intf/carriage_intf.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_151) "Building C object CMakeFiles/dencorewar.dir/vm/srcs/struct_intf/carriage_intf.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\vm\srcs\struct_intf\carriage_intf.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\vm\srcs\struct_intf\carriage_intf.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_151) "Building C object CMakeFiles/dencorewar.dir/vm/srcs/struct_intf/carriage_intf.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\vm\srcs\struct_intf\carriage_intf.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\vm\srcs\struct_intf\carriage_intf.c
 
 CMakeFiles/dencorewar.dir/vm/srcs/struct_intf/carriage_intf.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/vm/srcs/struct_intf/carriage_intf.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\vm\srcs\struct_intf\carriage_intf.c > CMakeFiles\dencorewar.dir\vm\srcs\struct_intf\carriage_intf.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\vm\srcs\struct_intf\carriage_intf.c > CMakeFiles\dencorewar.dir\vm\srcs\struct_intf\carriage_intf.c.i
 
 CMakeFiles/dencorewar.dir/vm/srcs/struct_intf/carriage_intf.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/vm/srcs/struct_intf/carriage_intf.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\vm\srcs\struct_intf\carriage_intf.c -o CMakeFiles\dencorewar.dir\vm\srcs\struct_intf\carriage_intf.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\vm\srcs\struct_intf\carriage_intf.c -o CMakeFiles\dencorewar.dir\vm\srcs\struct_intf\carriage_intf.c.s
 
 CMakeFiles/dencorewar.dir/vm/srcs/struct_intf/corewar_intf.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/vm/srcs/struct_intf/corewar_intf.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/vm/srcs/struct_intf/corewar_intf.c.obj: ../vm/srcs/struct_intf/corewar_intf.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_152) "Building C object CMakeFiles/dencorewar.dir/vm/srcs/struct_intf/corewar_intf.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\vm\srcs\struct_intf\corewar_intf.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\vm\srcs\struct_intf\corewar_intf.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_152) "Building C object CMakeFiles/dencorewar.dir/vm/srcs/struct_intf/corewar_intf.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\vm\srcs\struct_intf\corewar_intf.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\vm\srcs\struct_intf\corewar_intf.c
 
 CMakeFiles/dencorewar.dir/vm/srcs/struct_intf/corewar_intf.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/vm/srcs/struct_intf/corewar_intf.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\vm\srcs\struct_intf\corewar_intf.c > CMakeFiles\dencorewar.dir\vm\srcs\struct_intf\corewar_intf.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\vm\srcs\struct_intf\corewar_intf.c > CMakeFiles\dencorewar.dir\vm\srcs\struct_intf\corewar_intf.c.i
 
 CMakeFiles/dencorewar.dir/vm/srcs/struct_intf/corewar_intf.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/vm/srcs/struct_intf/corewar_intf.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\vm\srcs\struct_intf\corewar_intf.c -o CMakeFiles\dencorewar.dir\vm\srcs\struct_intf\corewar_intf.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\vm\srcs\struct_intf\corewar_intf.c -o CMakeFiles\dencorewar.dir\vm\srcs\struct_intf\corewar_intf.c.s
 
 CMakeFiles/dencorewar.dir/vm/srcs/validation/parse_input_intf.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/vm/srcs/validation/parse_input_intf.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/vm/srcs/validation/parse_input_intf.c.obj: ../vm/srcs/validation/parse_input_intf.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_153) "Building C object CMakeFiles/dencorewar.dir/vm/srcs/validation/parse_input_intf.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\vm\srcs\validation\parse_input_intf.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\vm\srcs\validation\parse_input_intf.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_153) "Building C object CMakeFiles/dencorewar.dir/vm/srcs/validation/parse_input_intf.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\vm\srcs\validation\parse_input_intf.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\vm\srcs\validation\parse_input_intf.c
 
 CMakeFiles/dencorewar.dir/vm/srcs/validation/parse_input_intf.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/vm/srcs/validation/parse_input_intf.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\vm\srcs\validation\parse_input_intf.c > CMakeFiles\dencorewar.dir\vm\srcs\validation\parse_input_intf.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\vm\srcs\validation\parse_input_intf.c > CMakeFiles\dencorewar.dir\vm\srcs\validation\parse_input_intf.c.i
 
 CMakeFiles/dencorewar.dir/vm/srcs/validation/parse_input_intf.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/vm/srcs/validation/parse_input_intf.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\vm\srcs\validation\parse_input_intf.c -o CMakeFiles\dencorewar.dir\vm\srcs\validation\parse_input_intf.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\vm\srcs\validation\parse_input_intf.c -o CMakeFiles\dencorewar.dir\vm\srcs\validation\parse_input_intf.c.s
 
 CMakeFiles/dencorewar.dir/vm/srcs/validation/parse_inputs.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/vm/srcs/validation/parse_inputs.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/vm/srcs/validation/parse_inputs.c.obj: ../vm/srcs/validation/parse_inputs.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_154) "Building C object CMakeFiles/dencorewar.dir/vm/srcs/validation/parse_inputs.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\vm\srcs\validation\parse_inputs.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\vm\srcs\validation\parse_inputs.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_154) "Building C object CMakeFiles/dencorewar.dir/vm/srcs/validation/parse_inputs.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\vm\srcs\validation\parse_inputs.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\vm\srcs\validation\parse_inputs.c
 
 CMakeFiles/dencorewar.dir/vm/srcs/validation/parse_inputs.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/vm/srcs/validation/parse_inputs.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\vm\srcs\validation\parse_inputs.c > CMakeFiles\dencorewar.dir\vm\srcs\validation\parse_inputs.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\vm\srcs\validation\parse_inputs.c > CMakeFiles\dencorewar.dir\vm\srcs\validation\parse_inputs.c.i
 
 CMakeFiles/dencorewar.dir/vm/srcs/validation/parse_inputs.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/vm/srcs/validation/parse_inputs.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\vm\srcs\validation\parse_inputs.c -o CMakeFiles\dencorewar.dir\vm\srcs\validation\parse_inputs.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\vm\srcs\validation\parse_inputs.c -o CMakeFiles\dencorewar.dir\vm\srcs\validation\parse_inputs.c.s
 
 CMakeFiles/dencorewar.dir/vm/srcs/validation/reports.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/vm/srcs/validation/reports.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/vm/srcs/validation/reports.c.obj: ../vm/srcs/validation/reports.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_155) "Building C object CMakeFiles/dencorewar.dir/vm/srcs/validation/reports.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\vm\srcs\validation\reports.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\vm\srcs\validation\reports.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_155) "Building C object CMakeFiles/dencorewar.dir/vm/srcs/validation/reports.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\vm\srcs\validation\reports.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\vm\srcs\validation\reports.c
 
 CMakeFiles/dencorewar.dir/vm/srcs/validation/reports.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/vm/srcs/validation/reports.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\vm\srcs\validation\reports.c > CMakeFiles\dencorewar.dir\vm\srcs\validation\reports.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\vm\srcs\validation\reports.c > CMakeFiles\dencorewar.dir\vm\srcs\validation\reports.c.i
 
 CMakeFiles/dencorewar.dir/vm/srcs/validation/reports.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/vm/srcs/validation/reports.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\vm\srcs\validation\reports.c -o CMakeFiles\dencorewar.dir\vm\srcs\validation\reports.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\vm\srcs\validation\reports.c -o CMakeFiles\dencorewar.dir\vm\srcs\validation\reports.c.s
 
 CMakeFiles/dencorewar.dir/vm/srcs/main.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/vm/srcs/main.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/vm/srcs/main.c.obj: ../vm/srcs/main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_156) "Building C object CMakeFiles/dencorewar.dir/vm/srcs/main.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\vm\srcs\main.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\vm\srcs\main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_156) "Building C object CMakeFiles/dencorewar.dir/vm/srcs/main.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\vm\srcs\main.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\vm\srcs\main.c
 
 CMakeFiles/dencorewar.dir/vm/srcs/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/vm/srcs/main.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\vm\srcs\main.c > CMakeFiles\dencorewar.dir\vm\srcs\main.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\vm\srcs\main.c > CMakeFiles\dencorewar.dir\vm\srcs\main.c.i
 
 CMakeFiles/dencorewar.dir/vm/srcs/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/vm/srcs/main.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\vm\srcs\main.c -o CMakeFiles\dencorewar.dir\vm\srcs\main.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\vm\srcs\main.c -o CMakeFiles\dencorewar.dir\vm\srcs\main.c.s
 
 CMakeFiles/dencorewar.dir/fast_strsplit.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/fast_strsplit.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/fast_strsplit.c.obj: ../fast_strsplit.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_157) "Building C object CMakeFiles/dencorewar.dir/fast_strsplit.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\fast_strsplit.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\fast_strsplit.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_157) "Building C object CMakeFiles/dencorewar.dir/fast_strsplit.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\fast_strsplit.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\fast_strsplit.c
 
 CMakeFiles/dencorewar.dir/fast_strsplit.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/fast_strsplit.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\fast_strsplit.c > CMakeFiles\dencorewar.dir\fast_strsplit.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\fast_strsplit.c > CMakeFiles\dencorewar.dir\fast_strsplit.c.i
 
 CMakeFiles/dencorewar.dir/fast_strsplit.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/fast_strsplit.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\fast_strsplit.c -o CMakeFiles\dencorewar.dir\fast_strsplit.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\fast_strsplit.c -o CMakeFiles\dencorewar.dir\fast_strsplit.c.s
 
 CMakeFiles/dencorewar.dir/file_to_list.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/file_to_list.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/file_to_list.c.obj: ../file_to_list.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_158) "Building C object CMakeFiles/dencorewar.dir/file_to_list.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\file_to_list.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\file_to_list.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_158) "Building C object CMakeFiles/dencorewar.dir/file_to_list.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\file_to_list.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\file_to_list.c
 
 CMakeFiles/dencorewar.dir/file_to_list.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/file_to_list.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\file_to_list.c > CMakeFiles\dencorewar.dir\file_to_list.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\file_to_list.c > CMakeFiles\dencorewar.dir\file_to_list.c.i
 
 CMakeFiles/dencorewar.dir/file_to_list.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/file_to_list.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\file_to_list.c -o CMakeFiles\dencorewar.dir\file_to_list.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\file_to_list.c -o CMakeFiles\dencorewar.dir\file_to_list.c.s
 
 CMakeFiles/dencorewar.dir/ft_wordequ.c.obj: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/ft_wordequ.c.obj: CMakeFiles/dencorewar.dir/includes_C.rsp
 CMakeFiles/dencorewar.dir/ft_wordequ.c.obj: ../ft_wordequ.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_159) "Building C object CMakeFiles/dencorewar.dir/ft_wordequ.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\ft_wordequ.c.obj   -c C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_wordequ.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_159) "Building C object CMakeFiles/dencorewar.dir/ft_wordequ.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\dencorewar.dir\ft_wordequ.c.obj   -c C:\Users\da.filiptsev\Desktop\Corewar\ft_wordequ.c
 
 CMakeFiles/dencorewar.dir/ft_wordequ.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/ft_wordequ.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_wordequ.c > CMakeFiles\dencorewar.dir\ft_wordequ.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\da.filiptsev\Desktop\Corewar\ft_wordequ.c > CMakeFiles\dencorewar.dir\ft_wordequ.c.i
 
 CMakeFiles/dencorewar.dir/ft_wordequ.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/ft_wordequ.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\CoreWar_Hub\ft_wordequ.c -o CMakeFiles\dencorewar.dir\ft_wordequ.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\da.filiptsev\Desktop\Corewar\ft_wordequ.c -o CMakeFiles\dencorewar.dir\ft_wordequ.c.s
 
 # Object files for target dencorewar
 dencorewar_OBJECTS = \
@@ -2607,10 +2607,11 @@ dencorewar.exe: CMakeFiles/dencorewar.dir/fast_strsplit.c.obj
 dencorewar.exe: CMakeFiles/dencorewar.dir/file_to_list.c.obj
 dencorewar.exe: CMakeFiles/dencorewar.dir/ft_wordequ.c.obj
 dencorewar.exe: CMakeFiles/dencorewar.dir/build.make
+dencorewar.exe: C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/libSDL2.dll.a
 dencorewar.exe: CMakeFiles/dencorewar.dir/linklibs.rsp
 dencorewar.exe: CMakeFiles/dencorewar.dir/objects1.rsp
 dencorewar.exe: CMakeFiles/dencorewar.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_160) "Linking C executable dencorewar.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_160) "Linking C executable dencorewar.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\dencorewar.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -2623,6 +2624,6 @@ CMakeFiles/dencorewar.dir/clean:
 .PHONY : CMakeFiles/dencorewar.dir/clean
 
 CMakeFiles/dencorewar.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\da.filiptsev\Desktop\CoreWar_Hub C:\Users\da.filiptsev\Desktop\CoreWar_Hub C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug C:\Users\da.filiptsev\Desktop\CoreWar_Hub\cmake-build-debug\CMakeFiles\dencorewar.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\da.filiptsev\Desktop\Corewar C:\Users\da.filiptsev\Desktop\Corewar C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug\CMakeFiles\dencorewar.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/dencorewar.dir/depend
 

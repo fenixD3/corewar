@@ -63,9 +63,9 @@ void				save_cell(t_cells **celllst, t_cells *new_cell);
 
 void				print_arena(t_vis_tools *vs, char **arena);
 
-/*
- * Support_func.c
- */
+// * Support_func.c
+
+
 void				free_mem_font(t_vis_tools *vs);
 
 void				track_events(t_vis_tools *vs, SDL_Event *e, bool *quit);

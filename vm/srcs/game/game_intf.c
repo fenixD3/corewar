@@ -77,8 +77,6 @@ void	make_operation_and_go_next(t_corewar *corewar,
 	if (is_args_valid(&args_val, start_op, &g_op[idx_op], corewar->arena) &&
 			!(*(start_op - 1) & 0x3u))
 		(*instrs_ptr[idx_op])(corewar, &args_val, carriage_head);
-	else
-		corewar->carriages->op_pos = skip_op(start_op, args_val.code_args,
+	corewar->carriages->op_pos = skip_op(start_op, args_val.code_args,
 				g_op[idx_op], corewar->arena);
 }
-

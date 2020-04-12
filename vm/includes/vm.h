@@ -116,7 +116,7 @@ void    print_map(t_corewar *corewar);
 void introducing_winner(t_corewar *corewar, _Bool who_lst_live);
 
 void carriages_actions(t_corewar *corewar);
-unsigned char	*do_steps(unsigned char *start, int step, const unsigned char *arena);
+unsigned char	*do_steps(unsigned char *start, int step, unsigned char *arena);
 void	lets_check(t_carriages *carriage, t_game_param *game_param);
 _Bool	valid_op_set_cycle(unsigned char *start_oper, int *cycle_to_op);
 void
@@ -124,11 +124,11 @@ make_operation_and_go_next(t_corewar *corewar, t_carriages **carriage_head);
 unsigned char *get_arguments_frm_code(unsigned char *arg_type_code, t_arg_type *args,
 					   t_op oper, unsigned char *arena);
 _Bool is_args_valid(t_parse_args *args_val, unsigned char *arg_start, const t_op *oper,
-					const unsigned char *arena);
+					unsigned char *arena);
 void get_arguments_values(t_parse_args *args_val, unsigned char *arg_start,
-						  const t_op *oper, const unsigned char *arena);
+						  const t_op *oper, unsigned char *arena);
 unsigned char *skip_op(unsigned char *start_op, t_arg_type *args, t_op oper,
-					   const unsigned char *arena);
+					   unsigned char *arena);
 
 int		get_value_frm_arg(t_parse_args *arg_val, int arg_idx,
 							 t_corewar *corewar, _Bool is_idx_mod);

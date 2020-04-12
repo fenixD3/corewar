@@ -1,11 +1,10 @@
 #include "vm.h"
 
 unsigned char	*do_steps(unsigned char *start, int step,
-							const unsigned char *arena)
+							unsigned char *arena)
 {
 
 	if (start + step > arena + MEM_SIZE - 1)
-		//start = arena + (MEM_SIZE - (start + step - arena));
 		start = arena + ((start + step - arena) % MEM_SIZE);
 	else
 		start += step;
@@ -53,7 +52,7 @@ int		get_value_frm_arg(t_parse_args *arg_val, int arg_idx,
 	unsigned int	*ind_pos;
 
 	if (arg_val->code_args[arg_idx] == REG_CODE)
-		val = corewar->carriages->reg[arg_val->val[arg_idx]];
+		val = corewar->carriages->reg[arg_val->val[arg_idx] - 1];
 	else if (arg_val->code_args[0] == DIR_CODE)
 		val = arg_val->val[arg_idx];
 	else if (arg_val->code_args[0] == IND_CODE)

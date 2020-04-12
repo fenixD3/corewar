@@ -16,7 +16,7 @@ unsigned char *get_arguments_frm_code(unsigned char *arg_type_code,
 }
 
 _Bool		is_args_valid(t_parse_args *args_val, unsigned char *arg_start,
-					   const t_op *oper, const unsigned char *arena)
+					   const t_op *oper, unsigned char *arena)
 {
 	_Bool	good;
 	int 	idx;
@@ -38,7 +38,7 @@ _Bool		is_args_valid(t_parse_args *args_val, unsigned char *arg_start,
 }
 
 void	get_arguments_values(t_parse_args *args_val, unsigned char *arg_start,
-						  const t_op *oper, const unsigned char *arena)
+						  const t_op *oper, unsigned char *arena)
 {
 	union u_get_arg	get_arg;
 	int 			idx;
@@ -68,7 +68,7 @@ void	get_arguments_values(t_parse_args *args_val, unsigned char *arg_start,
 }
 
 unsigned char	*skip_op(unsigned char *start_op, t_arg_type *args, t_op oper,
-						  const unsigned char *arena)
+						  unsigned char *arena)
 {
 	int		idx;
 

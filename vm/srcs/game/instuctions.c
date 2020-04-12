@@ -27,7 +27,7 @@ void    ld(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
     if (!*head)
         return ;
     val = get_value_frm_arg(arg_val, 0, corewar, 1);
-    corewar->carriages->reg[arg_val->val[1]] = val;
+    corewar->carriages->reg[arg_val->val[1] - 1] = val;
     if (!val)
         corewar->carriages->carry = 1;
     else
@@ -43,7 +43,7 @@ void    ldi(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 		return ;
 	val_addr_1 = get_value_frm_arg(arg_val, 0, corewar, 1);
 	val_addr_2 = get_value_frm_arg(arg_val, 1, corewar, 1);
-	corewar->carriages->reg[arg_val->val[2]] = reverse_vm_int_bytes(
+	corewar->carriages->reg[arg_val->val[2] - 1] = reverse_vm_int_bytes(
 			(unsigned int *)do_steps(corewar->carriages->op_pos,
 					(val_addr_1 + val_addr_2) % IDX_MOD, corewar->arena));
 }
@@ -55,7 +55,7 @@ void    lld(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 	if (!*head)
 		return ;
 	val = get_value_frm_arg(arg_val, 0, corewar, 0);
-	corewar->carriages->reg[arg_val->val[1]] = val;
+	corewar->carriages->reg[arg_val->val[1] - 1] = val;
 	if (!val)
 		corewar->carriages->carry = 1;
 	else
@@ -71,10 +71,10 @@ void    lldi(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 		return ;
 	val_addr_1 = get_value_frm_arg(arg_val, 0, corewar, 1);
 	val_addr_2 = get_value_frm_arg(arg_val, 1, corewar, 1);
-	corewar->carriages->reg[arg_val->val[2]] = reverse_vm_int_bytes(
+	corewar->carriages->reg[arg_val->val[2] - 1] = reverse_vm_int_bytes(
 			(unsigned int *)do_steps(corewar->carriages->op_pos,
 					(val_addr_1 + val_addr_2), corewar->arena));
-	if (!corewar->carriages->reg[arg_val->val[2]])
+	if (!corewar->carriages->reg[arg_val->val[2] - 1])
 		corewar->carriages->carry = 1;
 	else
 		corewar->carriages->carry = 0;
@@ -89,13 +89,13 @@ void	st(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 
 	if (!*head)
 		return ;
-	val = corewar->carriages->reg[arg_val->code_args[0]];
+	val = corewar->carriages->reg[arg_val->code_args[0] - 1];
 	if (arg_val->code_args[1] == REG_CODE)
-		corewar->carriages->reg[arg_val->code_args[1]] = val;
+		corewar->carriages->reg[arg_val->code_args[1] - 1] = val;
 	else if (arg_val->code_args[1] == IND_CODE)
 	{
 		ind_pos = do_steps(corewar->carriages->op_pos,
-				arg_val->code_args[1] % IDX_MOD, corewar->arena);
+				arg_val->val[1] % IDX_MOD, corewar->arena);
 		i = 4;
 		val_ptr = (unsigned char *)&val;
 		while (--i >= 0)
@@ -118,7 +118,7 @@ void	sti(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 	ind_pos = do_steps(corewar->carriages->op_pos,
 			(val_addr_1 + val_addr_2) % IDX_MOD, corewar->arena);
 	i = 4;
-	val_ptr = (unsigned char *)&corewar->carriages->reg[arg_val->val[0]];
+	val_ptr = (unsigned char *)&corewar->carriages->reg[arg_val->val[0] - 1];
 	while (--i >= 0)
 		*ind_pos++ = *(val_ptr + i);
 }
@@ -137,9 +137,9 @@ void	add(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 
 	if (!*head)
 		return ;
-	val = corewar->carriages->reg[arg_val->val[0]] +
-			corewar->carriages->reg[arg_val->val[1]];
-	corewar->carriages->reg[arg_val->val[2]] = val;
+	val = corewar->carriages->reg[arg_val->val[0] - 1] +
+			corewar->carriages->reg[arg_val->val[1] - 1];
+	corewar->carriages->reg[arg_val->val[2] - 1] = val;
 	if (!val)
 		corewar->carriages->carry = 1;
 	else
@@ -152,9 +152,9 @@ void	sub(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 
 	if (!*head)
 		return ;
-	val = corewar->carriages->reg[arg_val->val[0]] -
-		  corewar->carriages->reg[arg_val->val[1]];
-	corewar->carriages->reg[arg_val->val[2]] = val;
+	val = corewar->carriages->reg[arg_val->val[0] - 1] -
+		  corewar->carriages->reg[arg_val->val[1] - 1];
+	corewar->carriages->reg[arg_val->val[2] - 1] = val;
 	if (!val)
 		corewar->carriages->carry = 1;
 	else
@@ -170,8 +170,8 @@ void	and(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 		return ;
 	val_1 = get_value_frm_arg(arg_val, 0, corewar, 1);
 	val_2 = get_value_frm_arg(arg_val, 1, corewar, 1);
-	corewar->carriages->reg[arg_val->val[2]] = val_1 & val_2;
-	if (!corewar->carriages->reg[arg_val->val[2]])
+	corewar->carriages->reg[arg_val->val[2] - 1] = val_1 & val_2;
+	if (!corewar->carriages->reg[arg_val->val[2] - 1])
 		corewar->carriages->carry = 1;
 	else
 		corewar->carriages->carry = 0;
@@ -186,8 +186,8 @@ void	or(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 		return ;
 	val_1 = get_value_frm_arg(arg_val, 0, corewar, 1);
 	val_2 = get_value_frm_arg(arg_val, 1, corewar, 1);
-	corewar->carriages->reg[arg_val->val[2]] = val_1 | val_2;
-	if (!corewar->carriages->reg[arg_val->val[2]])
+	corewar->carriages->reg[arg_val->val[2] - 1] = val_1 | val_2;
+	if (!corewar->carriages->reg[arg_val->val[2] - 1])
 		corewar->carriages->carry = 1;
 	else
 		corewar->carriages->carry = 0;
@@ -202,8 +202,8 @@ void	xor(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 		return ;
 	val_1 = get_value_frm_arg(arg_val, 0, corewar, 1);
 	val_2 = get_value_frm_arg(arg_val, 1, corewar, 1);
-	corewar->carriages->reg[arg_val->val[2]] = val_1 ^ val_2;
-	if (!corewar->carriages->reg[arg_val->val[2]])
+	corewar->carriages->reg[arg_val->val[2] - 1] = val_1 ^ val_2;
+	if (!corewar->carriages->reg[arg_val->val[2] - 1])
 		corewar->carriages->carry = 1;
 	else
 		corewar->carriages->carry = 0;
@@ -213,7 +213,8 @@ void	aff(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 {
 	if (!*head || !(corewar->flgs.flgs & A_FLG))
 		return ;
-	ft_printf("%c\n", (char)corewar->carriages->reg[arg_val->val[0]]);
+	ft_printf("%c\n",
+			(char)corewar->carriages->reg[arg_val->val[0] - 1]);
 }
 
 void	nfork(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)

@@ -5,7 +5,7 @@
       <config projectName="dencorewar" targetName="dencorewar" />
     </generated>
   </component>
-  <component name="CMakeSettings">
+  <component name="CMakeSettings" AUTO_RELOAD="true">
     <configurations>
       <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
     </configurations>
@@ -33,10 +33,23 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="preferences.updates" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\da.filiptsev\Desktop\Corewar\cmake-build-debug" />
+      <recent name="C:\Users\da.filiptsev\Desktop\Corewar\cw_ex" />
+    </key>
+  </component>
   <component name="RunManager">
-    <configuration name="dencorewar" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="dencorewar" TARGET_NAME="dencorewar" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="dencorewar" RUN_TARGET_NAME="dencorewar">
+    <configuration name="dencorewar" type="CMakeRunConfiguration" factoryName="Application" editBeforeRun="true" PROGRAM_PARAMS="C:\Users\da.filiptsev\Desktop\Corewar\cw_ex\Gagnant.cor C:\Users\da.filiptsev\Desktop\Corewar\cw_ex\jumper.cor C:\Users\da.filiptsev\Desktop\Corewar\cw_ex\ex.cor C:\Users\da.filiptsev\Desktop\Corewar\cw_ex\slider2.cor" PASS_PARENT_ENVS_2="true" PROJECT_NAME="dencorewar" TARGET_NAME="dencorewar" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="dencorewar" RUN_TARGET_NAME="dencorewar">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -53,6 +66,10 @@
       <option name="presentableId" value="Default" />
       <updated>1585951986636</updated>
       <workItem from="1585951990446" duration="106000" />
+      <workItem from="1586022477223" duration="663000" />
+      <workItem from="1586524305901" duration="10295000" />
+      <workItem from="1586609159452" duration="400000" />
+      <workItem from="1586793534029" duration="323000" />
     </task>
     <servers />
   </component>
@@ -60,9 +77,69 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1585951990415">
+    <state x="-1641" y="85" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586528304338">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1641" y="85" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1586528304338" />
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1586525216206" />
+    <state x="-1241" y="253" key="#dencorewar" timestamp="1586535373383">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1241" y="253" key="#dencorewar/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1586535373383" />
+    <state width="1877" height="371" key="GridCell.Tab.0.bottom" timestamp="1586536311408">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="371" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1586536311408" />
+    <state width="1877" height="371" key="GridCell.Tab.0.center" timestamp="1586536311408">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="371" key="GridCell.Tab.0.center/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1586536311408" />
+    <state width="1877" height="371" key="GridCell.Tab.0.left" timestamp="1586536311408">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="371" key="GridCell.Tab.0.left/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1586536311408" />
+    <state width="1877" height="371" key="GridCell.Tab.0.right" timestamp="1586536311408">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="371" key="GridCell.Tab.0.right/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1586536311408" />
+    <state width="1877" height="371" key="GridCell.Tab.1.bottom" timestamp="1586536311408">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="371" key="GridCell.Tab.1.bottom/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1586536311408" />
+    <state width="1877" height="371" key="GridCell.Tab.1.center" timestamp="1586536311408">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="371" key="GridCell.Tab.1.center/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1586536311408" />
+    <state width="1877" height="371" key="GridCell.Tab.1.left" timestamp="1586536311408">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="371" key="GridCell.Tab.1.left/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1586536311408" />
+    <state width="1877" height="371" key="GridCell.Tab.1.right" timestamp="1586536311408">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="371" key="GridCell.Tab.1.right/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1586536311408" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1586793620432">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1585951990415" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1586793620432" />
+    <state x="463" y="144" width="609" height="536" key="find.popup" timestamp="1586022734411">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="463" y="144" width="609" height="536" key="find.popup/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1586022734411" />
+    <state x="510" y="56" key="refactoring.ChangeSignatureDialog" timestamp="1586023010117">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="510" y="56" key="refactoring.ChangeSignatureDialog/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1586023010117" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="CMakeRunConfiguration">
+        <watch expression="corewar-&gt;carriages" language="ObjectiveC" />
+        <watch expression="corewar-&gt;arena[0]" language="ObjectiveC" />
+        <watch expression="corewar-&gt;arena[1024]" language="ObjectiveC" />
+        <watch expression="corewar-&gt;arena[2048]" language="ObjectiveC" />
+        <watch expression="corewar-&gt;arena[3072]" language="ObjectiveC" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

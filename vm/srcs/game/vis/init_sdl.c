@@ -24,6 +24,11 @@ bool	init_font(t_vis_tools *vs)
 			go_exit(TTF_GetError());
 		else
 			success = true;
+		vs->text_font = TTF_OpenFont("../media/pixelmix.ttf", 10);
+		if (!vs->text_font)
+			go_exit(TTF_GetError());
+		else
+			success = true;
 	}
 	return (success);
 }
@@ -37,11 +42,12 @@ bool	init(t_vis_tools *vs)
 		success = false;
 	else
 	{
-		vs->window = SDL_CreateWindow("Corewar fight", SDL_WINDOWPOS_UNDEFINED,
-		                              SDL_WINDOWPOS_UNDEFINED, vs->wight, vs->height,
-		                              SDL_WINDOW_SHOWN);
+		vs->window = SDL_CreateWindow("Corewar fight",
+				SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED,
+				vs->wight, vs->height, SDL_WINDOW_SHOWN);
 		if (vs->window == NULL)
 			success = false;
+		SDL_SetWindowPosition(vs->window, 10, 10);
 		vs->render = SDL_CreateRenderer(vs->window, -1, 0);
 	}
 //	if (!init_sdl_images()) IF SOME PICTURES NEEDED

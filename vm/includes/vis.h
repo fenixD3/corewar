@@ -32,6 +32,7 @@ typedef struct		s_vis_tools
 	SDL_Texture		*text;
 	SDL_Texture		*backgrnd_txtr;
 	TTF_Font		*font;
+	TTF_Font		*text_font;
 }					t_vis_tools;
 
 typedef struct		s_cells
@@ -68,13 +69,13 @@ void				print_arena(t_vis_tools *vs, char **arena);
  */
 void				free_mem_font(t_vis_tools *vs);
 
-void				track_events(t_vis_tools *vs, SDL_Event *e, bool *quit, int *stop);
+void				track_events(int *indx, SDL_Event *e, bool *quit, int *stop);
 
 SDL_Rect			create_rect(int x, int y, int text_w, int text_h);
 
 SDL_Color			init_color(int r, int g, int b, int a);
 
-void				display_side_menu(t_vis_tools *vs, t_corewar *corewar);
+void				display_side_menu(t_corewar *crrw, int inxd, t_vis_tools *vs);
 
 void				display_carriages(t_vis_tools *vs, t_corewar *corewar);
 

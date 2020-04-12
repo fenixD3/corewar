@@ -6,22 +6,20 @@ void			draw_backgroung(t_vis_tools *vs)
 {
 	SDL_Rect rectangle;
 	SDL_Rect sm_rectangle;
-	SDL_Rect stat_window;
 
 	SDL_SetRenderDrawColor(vs->render, 244, 242, 238,
 												SDL_ALPHA_OPAQUE);
 	rectangle = create_rect(0, 0, vs->wight, vs->height);
 	SDL_RenderFillRect(vs->render, &rectangle);
-//	SDL_SetRenderDrawColor(vs->render, 40, 39, 36, SDL_ALPHA_OPAQUE);
 	SDL_SetRenderDrawColor(vs->render, 0, 0, 0, SDL_ALPHA_OPAQUE);
 	sm_rectangle = create_rect(5, 10, 64 * 24 + 5,
 												64 * 15 + 5);
 	SDL_RenderFillRect(vs->render, &sm_rectangle);
-	SDL_SetRenderDrawColor(vs->render, 0, 0, 0, SDL_ALPHA_OPAQUE);
 
-//	SDL_SetRenderDrawColor(vs->render, 40, 39, 36, SDL_ALPHA_OPAQUE);
-	stat_window = create_rect(15 + 64 * 24, 10, vs->wight - 20 - 64 * 24, 5 + 64 * 15);
-	SDL_RenderFillRect(vs->render, &stat_window);
+	SDL_SetRenderDrawColor(vs->render, 0, 0, 0, SDL_ALPHA_OPAQUE);
+	sm_rectangle = create_rect(5, 64 * 15 + 20,
+			64 * 24 + 5, vs->height - (64 * 15 + 20) - 10);
+	SDL_RenderFillRect(vs->render, &sm_rectangle);
 }
 
 void	ft_free_strsplit(char **str_array)
@@ -61,7 +59,48 @@ char		**convert_arena(t_corewar *corewar)
 	return (res);
 }
 
-void			display_objs(t_vis_tools *vs, t_corewar *corewar)
+void			display_game_data(t_vis_tools *vs, t_corewar *corewar)
+{
+	char		*text;
+	int			text_x;
+	int			text_height;
+	SDL_Rect	dstrect[4];
+
+	text = ft_strjoin("cycles to die : ", ft_itoa(corewar->game_param.cycles_to_die));
+	vs->txt_srfc = TTF_RenderText_Solid(vs->text_font, text, vs->text_color[4]);
+	vs->text = SDL_CreateTextureFromSurface(vs->render, vs->txt_srfc);
+	text_height = vs->txt_srfc->h;
+	dstrect[0] = create_rect(20, 64 * 15 + 25, vs->txt_srfc->w, text_height);
+	SDL_RenderCopy(vs->render, vs->text, NULL, &dstrect[0]);
+	text_x = vs->txt_srfc->w + 40;
+	free_mem_font(vs);
+	free(text);
+
+	text = ft_strjoin("cycles after start : ", ft_itoa(corewar->game_param.cycles_aft_start));
+	vs->txt_srfc = TTF_RenderText_Solid(vs->text_font, text, vs->text_color[4]);
+	vs->text = SDL_CreateTextureFromSurface(vs->render, vs->txt_srfc);
+	dstrect[1] = create_rect(text_x, 64 * 15 + 25,
+	                         vs->txt_srfc->w, vs->txt_srfc->h);
+	SDL_RenderCopy(vs->render, vs->text, NULL, &dstrect[1]);
+	text_x = text_x + vs->txt_srfc->w + 20;
+
+	free_mem_font(vs);
+	text = ft_strjoin("last live : ", ft_itoa(corewar->game_param.who_lst_live));
+	vs->txt_srfc = TTF_RenderText_Solid(vs->text_font, text, vs->text_color[4]);
+	vs->text = SDL_CreateTextureFromSurface(vs->render, vs->txt_srfc);
+	text_height = vs->txt_srfc->h;
+	dstrect[2] = create_rect(text_x, 64 * 15 + 25,
+	                         vs->txt_srfc->w, text_height);
+	SDL_RenderCopy(vs->render, vs->text, NULL, &dstrect[2]);
+	free_mem_font(vs);
+
+//	corewar->game_param.who_lst_live
+//	corewar->game_param.cycles_aft_start
+//	corewar->game_param.check_cnt
+
+}
+
+void			display_objs(t_vis_tools *vs, t_corewar *corewar, int update)
 {
 	char		**hex_arena;
 
@@ -69,7 +108,8 @@ void			display_objs(t_vis_tools *vs, t_corewar *corewar)
 	hex_arena = convert_arena(corewar);
 	print_arena(vs, hex_arena);
 	display_carriages(vs, corewar);
-	display_side_menu(vs, corewar);
+	display_side_menu(corewar, update, vs);
+	display_game_data(vs, corewar);
 	ft_free_strsplit(hex_arena);
 }
 
@@ -77,36 +117,22 @@ void			visualise_arena(t_corewar *corewar, t_vis_tools *vs, bool *quit)
 {
 	SDL_Event	e;
 	int			stop;
+	int			update;
 
+	update = -1;
 	stop = 1;
 	g_change = 0;
-	display_objs(vs, corewar);
+	display_objs(vs, corewar, update);
 	SDL_RenderPresent(vs->render);
-//	SDL_Delay(vs->speed);
+	SDL_Delay(vs->speed);
 	while (stop)
-		track_events(vs, &e, quit, &stop);
-//	corewar->champs->
+	{
+		track_events(&update, &e, quit, &stop);
+		if (update > 0)
+		{
+			display_objs(vs, corewar, update);
+			SDL_RenderPresent(vs->render);
+		}
+		update = -1;
+	}
 }
-
-
-//	champs = corewar->champs;
-//	if (!(arena = (t_arena*)ml_malloc(sizeof(t_arena), ML_ARENA)))
-//		go_exit(ERR_ML_CELL);
-//	arena->chmp_num = 0;
-//	while (champs != NULL)
-//	{
-//		arena->prog_size[arena->chmp_num] = champs->file.header.prog_size;
-//		champs = champs->next;
-//		arena->chmp_num++;
-//	}
-//	while (arena->chmp_num + i < 4)
-//		arena->prog_size[arena->chmp_num + i++] = 0;
-//	arena->step = MEM_SIZE / arena->chmp_num;
-
-
-//void			cell_fill(t_cells *cell, t_vis_tools *vs, t_arena *arena, int i)
-//{
-//	cell->color = (i - (i / arena->step) * arena->step
-//	               < arena->prog_size[i / arena->step])
-//	              ? vs->text_color[i / arena->step] : vs->text_color[4];
-//}

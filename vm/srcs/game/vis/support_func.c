@@ -18,7 +18,6 @@ int		prosess_press(int32_t x, int32_t y)
 	int			i;
 	int			j;
 
-	printf("%d\n%d\n", x, y);
 	i = 0;
 	while (i < MEM_SIZE)
 	{
@@ -36,7 +35,7 @@ int		prosess_press(int32_t x, int32_t y)
 	}
 }
 
-void	track_events(t_vis_tools *vs, SDL_Event *e, bool *quit, int *stop)
+void	track_events(int *indx, SDL_Event *e, bool *quit, int *stop)
 {
 	while (SDL_PollEvent(&(*e)) != 0)
 	{
@@ -46,7 +45,7 @@ void	track_events(t_vis_tools *vs, SDL_Event *e, bool *quit, int *stop)
 			*quit = true;
 		}
 		else if ((*e).type == SDL_MOUSEBUTTONDOWN)
-			prosess_press((*e).button.x, (*e).button.y);
+			*indx = prosess_press((*e).button.x, (*e).button.y); //side menu update
 		else if ((*e).type == SDL_KEYDOWN)
 		{
 			if ((*e).key.keysym.sym == SDLK_ESCAPE)

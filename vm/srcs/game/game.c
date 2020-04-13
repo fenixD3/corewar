@@ -13,6 +13,7 @@ void	start_game(t_corewar *corewar)
 	if (!init(vs))
 		go_exit(ERR_CREATE_VS);
 	quit = false;
+	g_change = 1;
 	while (!quit)
 	{
 		carriages_actions(corewar);

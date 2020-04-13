@@ -562,13 +562,7 @@
 		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/vm/includes/vm.h">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/add_cell.c">
-			<Option target="dencorewar"/>
-		</Unit>
 		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/args_intf.c">
-			<Option target="dencorewar"/>
-		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/create_vs.c">
 			<Option target="dencorewar"/>
 		</Unit>
 		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/game.c">
@@ -580,19 +574,28 @@
 		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/helper_func.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/init_sdl.c">
-			<Option target="dencorewar"/>
-		</Unit>
 		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/instuctions.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/print_arena.c">
+		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/vis/create_vs.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/support_func.c">
+		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/vis/display_carriages.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/visualise_arena.c">
+		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/vis/display_side_menu.c">
+			<Option target="dencorewar"/>
+		</Unit>
+		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/vis/init_sdl.c">
+			<Option target="dencorewar"/>
+		</Unit>
+		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/vis/print_arena.c">
+			<Option target="dencorewar"/>
+		</Unit>
+		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/vis/support_func.c">
+			<Option target="dencorewar"/>
+		</Unit>
+		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/vis/visualise_arena.c">
 			<Option target="dencorewar"/>
 		</Unit>
 		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/main.c">

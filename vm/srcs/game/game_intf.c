@@ -41,6 +41,7 @@ void	lets_check(t_carriages *carriage, t_game_param *game_param)
 	{
 		game_param->cycles_to_die -= CYCLE_DELTA;
 		game_param->check_cnt = 0;
+		g_change = 1;
 	}
 	else
 		++game_param->check_cnt;
@@ -48,6 +49,7 @@ void	lets_check(t_carriages *carriage, t_game_param *game_param)
 	{
 		game_param->cycles_to_die -= CYCLE_DELTA;
 		game_param->check_cnt = 0;
+		g_change = 1;
 	}
 	game_param->live_period_cnt = 0;
 }
@@ -66,7 +68,6 @@ void	make_operation_and_go_next(t_corewar *corewar,
 	unsigned char	idx_op;
 	unsigned char	*start_op;
 	t_parse_args	args_val;
-
 
 	//TODO add global variable to call visualisation!
 	g_change = 1;

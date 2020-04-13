@@ -48,8 +48,6 @@ vm.h
 stdbool.h
 -
 
-../vm/includes/vis_errors.h
-
 ../vm/includes/vm.h
 ft_ptintf.h
 ../vm/includes/ft_ptintf.h
@@ -684,43 +682,7 @@ C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL
 
 C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/close_code.h
 
-C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/add_cell.c
+C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/vis/support_func.c
 vis.h
-C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/vis.h
-vis_errors.h
-C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/vis_errors.h
-
-C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/create_vs.c
-vis.h
-C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/vis.h
-vis_errors.h
-C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/vis_errors.h
-
-C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/game.c
-vm.h
-C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/vm.h
-vis.h
-C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/vis.h
-vis_errors.h
-C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/vis_errors.h
-
-C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/init_sdl.c
-vis.h
-C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/vis.h
-
-C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/print_arena.c
-vis.h
-C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/vis.h
-op.h
-C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/op.h
-
-C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/support_func.c
-vis.h
-C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/vis.h
-
-C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/visualise_arena.c
-vis.h
-C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/vis.h
-vis_errors.h
-C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/vis_errors.h
+C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/vis/vis.h
 

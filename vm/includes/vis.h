@@ -2,10 +2,11 @@
 #ifndef VIS_H
 # define VIS_H
 
+
 # include <SDL.h>
 //# include <mach/machine.h>
 //# include <SDL2/SDL_image.h>
-# include <SDL_ttf.h>
+# include <SDL2_ttf.framework/Headers/SDL_ttf.h>
 # include "libft.h"
 # include "vm.h"
 # include <stdbool.h>

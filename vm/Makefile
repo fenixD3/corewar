@@ -8,9 +8,12 @@ LIB_PRINTF_INCL = ../ft_printf/includes/
 LIBFT_NAME = -lft
 LIB_PATH = ../libft/
 
-LIB_SDL_NAME = -F ../ -framework SDL2 SDL2_ttf
-LIB_SDL_PATH = ../SDL2.framework/ ../SDL2_ttf.framework
-LIB_SDL_INCL = ../SDL2.framework/Headers/ ../SDL2_ttf.framework/Headers/
+LIB_SDL_NAME = -F ../ -framework SDL2
+LIB_SDL_TTF_NAME = -F ../ -framework SDL2_ttf
+LIB_SDL_PATH = ../SDL2.framework/
+LIB_SDL_TTF_PATH = ../SDL2_ttf.framework
+LIB_SDL_INCL = ../SDL2.framework/Headers/
+LIB_SDL_TTF_INCL = ../SDL2_ttf.framework/Headers/
 
 SRCS = main.c args_intf.c game.c game_intf.c helper_func.c instuctions.c create_vs.c display_carriages.c \
 	display_side_menu.c init_sdl.c print_arena.c support_func.c visualise_arena.c carriage_intf.c corewar_intf.c \
@@ -30,13 +33,13 @@ all: $(NAME_FILE)
 
 $(NAME_FILE): $(LIB_PRINTF) $(OBJS)
 	@gcc -o $(NAME_FILE) $(OBJS) -L$(LIB_PATH) $(LIBFT_NAME) -L$(LIB_PRINTF_PATH) $(LIB_PRINTF_NAME) \
-	-L$(LIB_SDL_PATH) $(LIB_SDL_NAME)
+	-L$(LIB_SDL_PATH) $(LIB_SDL_NAME) -L$(LIB_SDL_TTF_PATH) $(LIB_SDL_TTF_NAME)
 
 $(LIB_PRINTF):
 	@make -C $(LIB_PRINTF_PATH)
 
 $(OBJS): %.o: %.c $(HEADERS)
-	@gcc -c $< -I$(HEADER_PATH) -I$(HEADER_PATH_OP) -I$(LIB_PATH) -I$(LIB_PRINTF_INCL) -I$(LIB_SDL_INCL) -O3 -o $@
+	@gcc -c $< -I$(HEADER_PATH) -I$(HEADER_PATH_OP) -I$(LIB_PATH) -I$(LIB_PRINTF_INCL) -I$(LIB_SDL_INCL) -I$(LIB_SDL_TTF_INCL) -O3 -o $@
 
 .PHONY: clean fclean re
 clean:

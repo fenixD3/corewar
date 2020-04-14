@@ -33,6 +33,7 @@ int		prosess_press(int32_t x, int32_t y)
 			i++;
 		}
 	}
+	return (-1);
 }
 
 void	track_events(int *indx, SDL_Event *e, bool *quit, int *stop)

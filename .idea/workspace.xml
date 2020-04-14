@@ -14,25 +14,12 @@
     <list default="true" id="7a52012a-ab21-4ea1-af27-9169491ed8e0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/C.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/add_cell.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/game.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/game.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/vis/create_vs.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/vis/create_vs.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/vis/display_carriages.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/vis/display_carriages.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/vis/display_side_menu.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/vis/display_side_menu.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/vis/init_sdl.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/vis/init_sdl.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/vis/print_arena.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/vis/print_arena.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/vis/support_func.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/vis/support_func.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/vis/visualise_arena.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/vis/visualise_arena.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/dencorewar" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/dencorewar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cw_ex/champs/my.cor" beforeDir="false" afterPath="$PROJECT_DIR$/cw_ex/champs/my.cor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cw_ex/champs/my.s" beforeDir="false" afterPath="$PROJECT_DIR$/cw_ex/champs/my.s" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vm/includes/vis.h" beforeDir="false" afterPath="$PROJECT_DIR$/vm/includes/vis.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm/srcs/game/game.c" beforeDir="false" afterPath="$PROJECT_DIR$/vm/srcs/game/game.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm/srcs/game/vis/create_vs.c" beforeDir="false" afterPath="$PROJECT_DIR$/vm/srcs/game/vis/create_vs.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vm/srcs/game/vis/display_side_menu.c" beforeDir="false" afterPath="$PROJECT_DIR$/vm/srcs/game/vis/display_side_menu.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm/srcs/game/vis/init_sdl.c" beforeDir="false" afterPath="$PROJECT_DIR$/vm/srcs/game/vis/init_sdl.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vm/srcs/game/vis/support_func.c" beforeDir="false" afterPath="$PROJECT_DIR$/vm/srcs/game/vis/support_func.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vm/srcs/game/vis/visualise_arena.c" beforeDir="false" afterPath="$PROJECT_DIR$/vm/srcs/game/vis/visualise_arena.c" afterDir="false" />
     </list>
@@ -149,7 +136,7 @@
       <workItem from="1585646211690" duration="500000" />
       <workItem from="1585647071658" duration="24979000" />
       <workItem from="1586004430379" duration="32998000" />
-      <workItem from="1586686919079" duration="19053000" />
+      <workItem from="1586686919079" duration="37955000" />
     </task>
     <servers />
   </component>
@@ -281,12 +268,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/vm/srcs/game/vis/visualise_arena.c</url>
-          <line>100</line>
+          <line>102</line>
           <option name="timeStamp" value="114" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/vm/srcs/game/vis/visualise_arena.c</url>
-          <line>105</line>
+          <line>107</line>
           <option name="timeStamp" value="115" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">

@@ -108,7 +108,7 @@ void			display_objs(t_vis_tools *vs, t_corewar *corewar, int update)
 	hex_arena = convert_arena(corewar);
 	print_arena(vs, hex_arena);
 	display_carriages(vs, corewar);
-	display_side_menu(corewar, update, vs);
+	display_side_menu(corewar, update, vs, corewar->carriages);
 	display_game_data(vs, corewar);
 	ft_free_strsplit(hex_arena);
 }
@@ -128,7 +128,7 @@ void			visualise_arena(t_corewar *corewar, t_vis_tools *vs, bool *quit)
 	while (stop)
 	{
 		track_events(&update, &e, quit, &stop);
-		if (update > 0)
+		if (update >= 0)
 		{
 			display_objs(vs, corewar, update);
 			SDL_RenderPresent(vs->render);

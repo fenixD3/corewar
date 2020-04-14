@@ -75,7 +75,7 @@ SDL_Rect			create_rect(int x, int y, int text_w, int text_h);
 
 SDL_Color			init_color(int r, int g, int b, int a);
 
-void				display_side_menu(t_corewar *crrw, int inxd, t_vis_tools *vs);
+void				display_side_menu(t_corewar *crrw, int inxd, t_vis_tools *vs, t_carriages *carriages);
 
 void				display_carriages(t_vis_tools *vs, t_corewar *corewar);
 

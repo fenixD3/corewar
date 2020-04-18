@@ -6,6 +6,14 @@
 
 #IncludeRegexTransform: 
 
+../SDL2_ttf.framework/Headers/SDL_ttf.h
+SDL.h
+-
+begin_code.h
+-
+close_code.h
+-
+
 ../ft_printf/includes/ft_ptintf.h
 stdarg.h
 -
@@ -39,7 +47,7 @@ op.h
 ../vm/includes/vis.h
 SDL.h
 -
-SDL_ttf.h
+SDL2_ttf.framework/Headers/SDL_ttf.h
 -
 libft.h
 ../vm/includes/libft.h
@@ -47,6 +55,8 @@ vm.h
 ../vm/includes/vm.h
 stdbool.h
 -
+
+../vm/includes/vis_errors.h
 
 ../vm/includes/vm.h
 ft_ptintf.h
@@ -57,6 +67,8 @@ fcntl.h
 -
 options.h
 ../vm/includes/options.h
+stdio.h
+-
 
 C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL.h
 SDL_main.h
@@ -648,14 +660,6 @@ C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL
 close_code.h
 C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/close_code.h
 
-C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_ttf.h
-SDL.h
-C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL.h
-begin_code.h
-C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/begin_code.h
-close_code.h
-C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/close_code.h
-
 C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_version.h
 SDL_stdinc.h
 C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_stdinc.h
@@ -682,7 +686,53 @@ C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL
 
 C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/close_code.h
 
+C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/game.c
+vm.h
+C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/vm.h
+vis.h
+C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/vis.h
+vis_errors.h
+C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/vis_errors.h
+
+C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/game_intf.c
+vm.h
+C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/vm.h
+options.h
+C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/options.h
+
+C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/vis/create_vs.c
+vis.h
+C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/vis/vis.h
+vis_errors.h
+C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/vis/vis_errors.h
+
+C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/vis/display_carriages.c
+vis.h
+C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/vis/vis.h
+vis_errors.h
+C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/vis/vis_errors.h
+
+C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/vis/display_side_menu.c
+vis.h
+C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/vis/vis.h
+
+C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/vis/init_sdl.c
+vis.h
+C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/vis/vis.h
+
+C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/vis/print_arena.c
+vis.h
+C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/vis/vis.h
+op.h
+C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/vis/op.h
+
 C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/vis/support_func.c
 vis.h
 C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/vis/vis.h
+
+C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/vis/visualise_arena.c
+vis.h
+C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/vis/vis.h
+vis_errors.h
+C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/vis/vis_errors.h
 

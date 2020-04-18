@@ -14,9 +14,14 @@ void	start_game(t_corewar *corewar)
 		go_exit(ERR_CREATE_VS);
 	quit = false;
 	g_change = 1;
-	while (!quit)
+	int fd = 1;
+	while (1)
 	{
+//		printf("%zu\n", corewar->game_param.cycles_aft_start);
+		/*if (corewar->game_param.cycles_aft_start == 1429)
+			fd++;*/
 		carriages_actions(corewar);
+		corewar->game_param.cycles_aft_start > 1429 ? printf("Aft actions\n") : 0;
 		if (!(++corewar->game_param.cycles_aft_start %
 corewar->game_param.cycles_to_die) || corewar->game_param.cycles_to_die <= 0)
 			lets_check(corewar->carriages, &corewar->game_param);
@@ -66,10 +71,11 @@ void	introducing_fighter(t_champion *champs)
 	}
 }
 
-void introducing_winner(t_corewar *corewar, _Bool who_lst_live)
+void	introducing_winner(t_corewar *corewar, _Bool who_lst_live)
 {
 	int		winner;
 
+//	printf("In introducing winner\n");
 	while (!who_lst_live && corewar->carriages)
 	{
 		if (corewar->carriages->is_live)
@@ -81,6 +87,7 @@ void introducing_winner(t_corewar *corewar, _Bool who_lst_live)
 	}
 	if (who_lst_live)
 		winner = corewar->game_param.who_lst_live;
+//	printf("Winner num is %d\n", winner);
 	while (corewar->champs && corewar->champs->num != winner)
 		corewar->champs = corewar->champs->next;
 	ft_printf("Contestant %d \"%s\" has won!\n", corewar->champs->num,

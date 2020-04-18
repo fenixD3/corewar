@@ -589,6 +589,7 @@ CMakeFiles/dencorewar.dir/vm/srcs/game/args_intf.c.obj: ../options.h
 CMakeFiles/dencorewar.dir/vm/srcs/game/args_intf.c.obj: ../vm/includes/vm.h
 CMakeFiles/dencorewar.dir/vm/srcs/game/args_intf.c.obj: ../vm/srcs/game/args_intf.c
 
+CMakeFiles/dencorewar.dir/vm/srcs/game/game.c.obj: ../SDL2_ttf.framework/Headers/SDL_ttf.h
 CMakeFiles/dencorewar.dir/vm/srcs/game/game.c.obj: ../ft_printf/includes/ft_ptintf.h
 CMakeFiles/dencorewar.dir/vm/srcs/game/game.c.obj: ../libft/libft.h
 CMakeFiles/dencorewar.dir/vm/srcs/game/game.c.obj: ../libft/memlist.h
@@ -639,7 +640,6 @@ CMakeFiles/dencorewar.dir/vm/srcs/game/game.c.obj: C:/Program\ Files/mingw-w64/x
 CMakeFiles/dencorewar.dir/vm/srcs/game/game.c.obj: C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_thread.h
 CMakeFiles/dencorewar.dir/vm/srcs/game/game.c.obj: C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_timer.h
 CMakeFiles/dencorewar.dir/vm/srcs/game/game.c.obj: C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_touch.h
-CMakeFiles/dencorewar.dir/vm/srcs/game/game.c.obj: C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_ttf.h
 CMakeFiles/dencorewar.dir/vm/srcs/game/game.c.obj: C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_version.h
 CMakeFiles/dencorewar.dir/vm/srcs/game/game.c.obj: C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_video.h
 CMakeFiles/dencorewar.dir/vm/srcs/game/game.c.obj: C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/begin_code.h
@@ -670,6 +670,7 @@ CMakeFiles/dencorewar.dir/vm/srcs/game/instuctions.c.obj: ../options.h
 CMakeFiles/dencorewar.dir/vm/srcs/game/instuctions.c.obj: ../vm/includes/vm.h
 CMakeFiles/dencorewar.dir/vm/srcs/game/instuctions.c.obj: ../vm/srcs/game/instuctions.c
 
+CMakeFiles/dencorewar.dir/vm/srcs/game/vis/create_vs.c.obj: ../SDL2_ttf.framework/Headers/SDL_ttf.h
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/create_vs.c.obj: ../ft_printf/includes/ft_ptintf.h
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/create_vs.c.obj: ../libft/libft.h
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/create_vs.c.obj: ../libft/memlist.h
@@ -720,13 +721,13 @@ CMakeFiles/dencorewar.dir/vm/srcs/game/vis/create_vs.c.obj: C:/Program\ Files/mi
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/create_vs.c.obj: C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_thread.h
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/create_vs.c.obj: C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_timer.h
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/create_vs.c.obj: C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_touch.h
-CMakeFiles/dencorewar.dir/vm/srcs/game/vis/create_vs.c.obj: C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_ttf.h
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/create_vs.c.obj: C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_version.h
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/create_vs.c.obj: C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_video.h
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/create_vs.c.obj: C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/begin_code.h
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/create_vs.c.obj: C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/close_code.h
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/create_vs.c.obj: ../vm/srcs/game/vis/create_vs.c
 
+CMakeFiles/dencorewar.dir/vm/srcs/game/vis/display_carriages.c.obj: ../SDL2_ttf.framework/Headers/SDL_ttf.h
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/display_carriages.c.obj: ../ft_printf/includes/ft_ptintf.h
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/display_carriages.c.obj: ../libft/libft.h
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/display_carriages.c.obj: ../libft/memlist.h
@@ -777,13 +778,13 @@ CMakeFiles/dencorewar.dir/vm/srcs/game/vis/display_carriages.c.obj: C:/Program\ 
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/display_carriages.c.obj: C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_thread.h
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/display_carriages.c.obj: C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_timer.h
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/display_carriages.c.obj: C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_touch.h
-CMakeFiles/dencorewar.dir/vm/srcs/game/vis/display_carriages.c.obj: C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_ttf.h
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/display_carriages.c.obj: C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_version.h
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/display_carriages.c.obj: C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_video.h
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/display_carriages.c.obj: C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/begin_code.h
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/display_carriages.c.obj: C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/close_code.h
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/display_carriages.c.obj: ../vm/srcs/game/vis/display_carriages.c
 
+CMakeFiles/dencorewar.dir/vm/srcs/game/vis/display_side_menu.c.obj: ../SDL2_ttf.framework/Headers/SDL_ttf.h
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/display_side_menu.c.obj: ../ft_printf/includes/ft_ptintf.h
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/display_side_menu.c.obj: ../libft/libft.h
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/display_side_menu.c.obj: ../libft/memlist.h
@@ -833,13 +834,13 @@ CMakeFiles/dencorewar.dir/vm/srcs/game/vis/display_side_menu.c.obj: C:/Program\ 
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/display_side_menu.c.obj: C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_thread.h
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/display_side_menu.c.obj: C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_timer.h
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/display_side_menu.c.obj: C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_touch.h
-CMakeFiles/dencorewar.dir/vm/srcs/game/vis/display_side_menu.c.obj: C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_ttf.h
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/display_side_menu.c.obj: C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_version.h
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/display_side_menu.c.obj: C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_video.h
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/display_side_menu.c.obj: C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/begin_code.h
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/display_side_menu.c.obj: C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/close_code.h
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/display_side_menu.c.obj: ../vm/srcs/game/vis/display_side_menu.c
 
+CMakeFiles/dencorewar.dir/vm/srcs/game/vis/init_sdl.c.obj: ../SDL2_ttf.framework/Headers/SDL_ttf.h
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/init_sdl.c.obj: ../ft_printf/includes/ft_ptintf.h
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/init_sdl.c.obj: ../libft/libft.h
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/init_sdl.c.obj: ../libft/memlist.h
@@ -889,13 +890,13 @@ CMakeFiles/dencorewar.dir/vm/srcs/game/vis/init_sdl.c.obj: C:/Program\ Files/min
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/init_sdl.c.obj: C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_thread.h
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/init_sdl.c.obj: C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_timer.h
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/init_sdl.c.obj: C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_touch.h
-CMakeFiles/dencorewar.dir/vm/srcs/game/vis/init_sdl.c.obj: C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_ttf.h
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/init_sdl.c.obj: C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_version.h
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/init_sdl.c.obj: C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_video.h
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/init_sdl.c.obj: C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/begin_code.h
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/init_sdl.c.obj: C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/close_code.h
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/init_sdl.c.obj: ../vm/srcs/game/vis/init_sdl.c
 
+CMakeFiles/dencorewar.dir/vm/srcs/game/vis/print_arena.c.obj: ../SDL2_ttf.framework/Headers/SDL_ttf.h
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/print_arena.c.obj: ../ft_printf/includes/ft_ptintf.h
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/print_arena.c.obj: ../libft/libft.h
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/print_arena.c.obj: ../libft/memlist.h
@@ -945,13 +946,13 @@ CMakeFiles/dencorewar.dir/vm/srcs/game/vis/print_arena.c.obj: C:/Program\ Files/
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/print_arena.c.obj: C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_thread.h
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/print_arena.c.obj: C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_timer.h
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/print_arena.c.obj: C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_touch.h
-CMakeFiles/dencorewar.dir/vm/srcs/game/vis/print_arena.c.obj: C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_ttf.h
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/print_arena.c.obj: C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_version.h
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/print_arena.c.obj: C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_video.h
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/print_arena.c.obj: C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/begin_code.h
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/print_arena.c.obj: C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/close_code.h
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/print_arena.c.obj: ../vm/srcs/game/vis/print_arena.c
 
+CMakeFiles/dencorewar.dir/vm/srcs/game/vis/support_func.c.obj: ../SDL2_ttf.framework/Headers/SDL_ttf.h
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/support_func.c.obj: ../ft_printf/includes/ft_ptintf.h
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/support_func.c.obj: ../libft/libft.h
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/support_func.c.obj: ../libft/memlist.h
@@ -1001,13 +1002,13 @@ CMakeFiles/dencorewar.dir/vm/srcs/game/vis/support_func.c.obj: C:/Program\ Files
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/support_func.c.obj: C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_thread.h
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/support_func.c.obj: C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_timer.h
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/support_func.c.obj: C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_touch.h
-CMakeFiles/dencorewar.dir/vm/srcs/game/vis/support_func.c.obj: C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_ttf.h
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/support_func.c.obj: C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_version.h
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/support_func.c.obj: C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_video.h
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/support_func.c.obj: C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/begin_code.h
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/support_func.c.obj: C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/close_code.h
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/support_func.c.obj: ../vm/srcs/game/vis/support_func.c
 
+CMakeFiles/dencorewar.dir/vm/srcs/game/vis/visualise_arena.c.obj: ../SDL2_ttf.framework/Headers/SDL_ttf.h
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/visualise_arena.c.obj: ../ft_printf/includes/ft_ptintf.h
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/visualise_arena.c.obj: ../libft/libft.h
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/visualise_arena.c.obj: ../libft/memlist.h
@@ -1058,7 +1059,6 @@ CMakeFiles/dencorewar.dir/vm/srcs/game/vis/visualise_arena.c.obj: C:/Program\ Fi
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/visualise_arena.c.obj: C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_thread.h
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/visualise_arena.c.obj: C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_timer.h
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/visualise_arena.c.obj: C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_touch.h
-CMakeFiles/dencorewar.dir/vm/srcs/game/vis/visualise_arena.c.obj: C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_ttf.h
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/visualise_arena.c.obj: C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_version.h
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/visualise_arena.c.obj: C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_video.h
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/visualise_arena.c.obj: C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/begin_code.h

@@ -24,7 +24,9 @@ _Bool		is_args_valid(t_parse_args *args_val, unsigned char *arg_start,
 	good = 1;
 	idx = -1;
 	get_arguments_values(args_val, arg_start, oper, arena);
-	while (++idx != oper->num_args)
+/*printf("Fst arg type = %d", args_val->code_args[0]);
+printf(", its val = %d\n", args_val->val[0]);*/
+	while (++idx != oper->num_args && good)
 	{
 		if (args_val->code_args[idx] == REG_CODE)
 			good = (good && oper->args_type[idx] & T_REG &&
@@ -33,6 +35,8 @@ _Bool		is_args_valid(t_parse_args *args_val, unsigned char *arg_start,
 			good = (good && oper->args_type[idx] & T_DIR) ? 1 : 0;
 		else if (args_val->code_args[idx] == IND_CODE)
 			good = (good && oper->args_type[idx] & T_IND) ? 1 : 0;
+		else
+			good = 0;
 	}
 	return (good);
 }

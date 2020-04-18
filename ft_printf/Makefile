@@ -50,6 +50,7 @@ $(LIB_NAME):
 
 $(OBJS): %.o: %.c $(HEADERS_PRTF)
 	@gcc -c $< -I$(HEAD_PATH) -I$(LIB_PATH) $(FLAGS) -O3 -o $@
+#	@gcc -c $< -I$(HEAD_PATH) -I$(LIB_PATH) -O3 -o $@
 
 .PHONY: clean fclean re
 clean:

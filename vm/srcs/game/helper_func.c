@@ -53,9 +53,9 @@ int		get_value_frm_arg(t_parse_args *arg_val, int arg_idx,
 
 	if (arg_val->code_args[arg_idx] == REG_CODE)
 		val = corewar->carriages->reg[arg_val->val[arg_idx] - 1];
-	else if (arg_val->code_args[0] == DIR_CODE)
+	else if (arg_val->code_args[arg_idx] == DIR_CODE)
 		val = arg_val->val[arg_idx];
-	else if (arg_val->code_args[0] == IND_CODE)
+	else if (arg_val->code_args[arg_idx] == IND_CODE)
 	{
 		if (is_idx_mod)
 			ind_pos = (unsigned int *)do_steps(corewar->carriages->op_pos,

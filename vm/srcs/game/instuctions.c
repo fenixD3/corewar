@@ -6,7 +6,8 @@ void    live(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 
 	if (!*head)
 	    return ;
-	carrig = corewar->carriages;
+	carrig = *head;
+	corewar->carriages->is_live = 1;
 	while (carrig)
 	{
 		if (carrig->is_live && -carrig->reg[0] == arg_val->val[0])
@@ -70,7 +71,7 @@ void    lldi(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 	if (!*head)
 		return ;
 	val_addr_1 = get_value_frm_arg(arg_val, 0, corewar, 1);
-	val_addr_2 = get_value_frm_arg(arg_val, 1, corewar, 1);
+	val_addr_2 = get_value_frm_arg(arg_val, 1, corewar, 0);
 	corewar->carriages->reg[arg_val->val[2] - 1] = reverse_vm_int_bytes(
 			(unsigned int *)do_steps(corewar->carriages->op_pos,
 					(val_addr_1 + val_addr_2), corewar->arena));
@@ -113,8 +114,8 @@ void	sti(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 
 	if (!*head)
 		return ;
-	val_addr_1 = get_value_frm_arg(arg_val, 0, corewar, 1);
-	val_addr_2 = get_value_frm_arg(arg_val, 1, corewar, 1);
+	val_addr_1 = get_value_frm_arg(arg_val, 1, corewar, 1);
+	val_addr_2 = get_value_frm_arg(arg_val, 2, corewar, 1);
 	ind_pos = do_steps(corewar->carriages->op_pos,
 			(val_addr_1 + val_addr_2) % IDX_MOD, corewar->arena);
 	i = 4;
@@ -137,9 +138,17 @@ void	add(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 
 	if (!*head)
 		return ;
+/*corewar->game_param.cycles_aft_start > 1429 ? printf("Add instr 1\n") : 0;
+corewar->game_param.cycles_aft_start > 1429 ? printf("\tValue first arg = %d", arg_val->val[0]) : 0;
+corewar->game_param.cycles_aft_start > 1429 ? printf(", from reg = %d\n", corewar->carriages->reg[arg_val->val[0] - 1]) : 0;
+corewar->game_param.cycles_aft_start > 1429 ? printf("\tValue second arg = %d", arg_val->val[1]) : 0;
+corewar->game_param.cycles_aft_start > 1429 ? printf(", from reg = %d\n", corewar->carriages->reg[arg_val->val[1] - 1]) : 0;
+corewar->game_param.cycles_aft_start > 1429 ? printf("\tValie after adding = %d\n", corewar->carriages->reg[arg_val->val[0] - 1] + corewar->carriages->reg[arg_val->val[1] - 1]) : 0;*/
 	val = corewar->carriages->reg[arg_val->val[0] - 1] +
 			corewar->carriages->reg[arg_val->val[1] - 1];
+//corewar->game_param.cycles_aft_start > 1429 ? printf("Add instr 2\n") : 0;
 	corewar->carriages->reg[arg_val->val[2] - 1] = val;
+//corewar->game_param.cycles_aft_start > 1429 ? printf("Add instr 3\n") : 0;
 	if (!val)
 		corewar->carriages->carry = 1;
 	else

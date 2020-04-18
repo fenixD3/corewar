@@ -6,6 +6,8 @@
 # include <fcntl.h>
 # include "options.h"
 
+#include <stdio.h>
+
 # define N_FLG 1u
 # define DUMP_FLG 2u
 # define A_FLG 3u

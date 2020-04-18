@@ -590,6 +590,7 @@ CMakeFiles/dencorewar.dir/vm/srcs/game/args_intf.c.obj
  ../vm/includes/vm.h
  C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/args_intf.c
 CMakeFiles/dencorewar.dir/vm/srcs/game/game.c.obj
+ ../SDL2_ttf.framework/Headers/SDL_ttf.h
  ../ft_printf/includes/ft_ptintf.h
  ../libft/libft.h
  ../libft/memlist.h
@@ -640,7 +641,6 @@ CMakeFiles/dencorewar.dir/vm/srcs/game/game.c.obj
  C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_thread.h
  C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_timer.h
  C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_touch.h
- C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_ttf.h
  C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_version.h
  C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_video.h
  C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/begin_code.h
@@ -671,6 +671,7 @@ CMakeFiles/dencorewar.dir/vm/srcs/game/instuctions.c.obj
  ../vm/includes/vm.h
  C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/instuctions.c
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/create_vs.c.obj
+ ../SDL2_ttf.framework/Headers/SDL_ttf.h
  ../ft_printf/includes/ft_ptintf.h
  ../libft/libft.h
  ../libft/memlist.h
@@ -721,13 +722,13 @@ CMakeFiles/dencorewar.dir/vm/srcs/game/vis/create_vs.c.obj
  C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_thread.h
  C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_timer.h
  C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_touch.h
- C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_ttf.h
  C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_version.h
  C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_video.h
  C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/begin_code.h
  C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/close_code.h
  C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/vis/create_vs.c
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/display_carriages.c.obj
+ ../SDL2_ttf.framework/Headers/SDL_ttf.h
  ../ft_printf/includes/ft_ptintf.h
  ../libft/libft.h
  ../libft/memlist.h
@@ -778,13 +779,13 @@ CMakeFiles/dencorewar.dir/vm/srcs/game/vis/display_carriages.c.obj
  C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_thread.h
  C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_timer.h
  C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_touch.h
- C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_ttf.h
  C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_version.h
  C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_video.h
  C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/begin_code.h
  C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/close_code.h
  C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/vis/display_carriages.c
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/display_side_menu.c.obj
+ ../SDL2_ttf.framework/Headers/SDL_ttf.h
  ../ft_printf/includes/ft_ptintf.h
  ../libft/libft.h
  ../libft/memlist.h
@@ -834,13 +835,13 @@ CMakeFiles/dencorewar.dir/vm/srcs/game/vis/display_side_menu.c.obj
  C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_thread.h
  C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_timer.h
  C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_touch.h
- C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_ttf.h
  C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_version.h
  C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_video.h
  C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/begin_code.h
  C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/close_code.h
  C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/vis/display_side_menu.c
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/init_sdl.c.obj
+ ../SDL2_ttf.framework/Headers/SDL_ttf.h
  ../ft_printf/includes/ft_ptintf.h
  ../libft/libft.h
  ../libft/memlist.h
@@ -890,13 +891,13 @@ CMakeFiles/dencorewar.dir/vm/srcs/game/vis/init_sdl.c.obj
  C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_thread.h
  C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_timer.h
  C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_touch.h
- C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_ttf.h
  C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_version.h
  C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_video.h
  C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/begin_code.h
  C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/close_code.h
  C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/vis/init_sdl.c
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/print_arena.c.obj
+ ../SDL2_ttf.framework/Headers/SDL_ttf.h
  ../ft_printf/includes/ft_ptintf.h
  ../libft/libft.h
  ../libft/memlist.h
@@ -946,13 +947,13 @@ CMakeFiles/dencorewar.dir/vm/srcs/game/vis/print_arena.c.obj
  C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_thread.h
  C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_timer.h
  C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_touch.h
- C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_ttf.h
  C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_version.h
  C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_video.h
  C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/begin_code.h
  C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/close_code.h
  C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/vis/print_arena.c
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/support_func.c.obj
+ ../SDL2_ttf.framework/Headers/SDL_ttf.h
  ../ft_printf/includes/ft_ptintf.h
  ../libft/libft.h
  ../libft/memlist.h
@@ -1002,13 +1003,13 @@ CMakeFiles/dencorewar.dir/vm/srcs/game/vis/support_func.c.obj
  C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_thread.h
  C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_timer.h
  C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_touch.h
- C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_ttf.h
  C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_version.h
  C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_video.h
  C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/begin_code.h
  C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/close_code.h
  C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/vis/support_func.c
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/visualise_arena.c.obj
+ ../SDL2_ttf.framework/Headers/SDL_ttf.h
  ../ft_printf/includes/ft_ptintf.h
  ../libft/libft.h
  ../libft/memlist.h
@@ -1059,7 +1060,6 @@ CMakeFiles/dencorewar.dir/vm/srcs/game/vis/visualise_arena.c.obj
  C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_thread.h
  C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_timer.h
  C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_touch.h
- C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_ttf.h
  C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_version.h
  C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/SDL_video.h
  C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2/begin_code.h

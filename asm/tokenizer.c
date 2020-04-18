@@ -15,15 +15,6 @@
 #include "asm.h"
 #include "libword.h"
 
-/*	char		c;
-
-	c = 0;
-	if (ret < 0 || lseek(fd, -1, SEEK_CUR) == -1 || read(fd, &c, 1) != 1)
-		go_exit("ERROR: cant't read file");
-	if (c != '\n')
-		go_exit("ERROR: No new line before end of file");*/
-
-
 void newline_endfile_check(int fd, char *line, int ret)
 {
 	char *tmp;
@@ -87,7 +78,7 @@ void	tokenize(int fd, t_token **token, t_label **label)
 	while ((ret = ml_get_next_line(fd, &tmp, ML_GNL_LINE)) > 0)
 	{
 		i++;
-		if (i == 10)
+		if (i == 4)
 			i++;
 		tokenize_line(&pc, token, label, tmp);
 	}

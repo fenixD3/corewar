@@ -1,6 +1,6 @@
 #include "asm_dasha.h"
 
-unsigned int		calc_progsize(t_token *token)
+unsigned int	calc_progsize(t_token *token)
 {
 	t_token			*cp_tok;
 	unsigned int	weight;
@@ -17,11 +17,8 @@ unsigned int		calc_progsize(t_token *token)
 	return (weight);
 }
 
-void				init_headers(header_t *header, t_token *token, t_token_sec *info)
+void			init_headers(header_t *header, t_token *token, t_token_sec *info)
 {
-	//int	com_len;
-
-	//com_len = ft_strlen(info->chmp_comment);
 	ft_bzero(header->comment, COMMENT_LENGTH);
 	ft_bzero(header->prog_name, PROG_NAME_LENGTH);
 	(header)->magic = COREWAR_EXEC_MAGIC;
@@ -29,8 +26,5 @@ void				init_headers(header_t *header, t_token *token, t_token_sec *info)
 			PROG_NAME_LENGTH);
 	tkn_str_cat(header->comment, find_token(token, COMMENT_PROG)->next,
 				COMMENT_LENGTH);
-	//printf("___\n%s\n___\n%s\n___\n", header->prog_name, header->comment);
-	//ft_strncpy((header)->comment, info->chmp_comment, com_len);
-	//ft_strncpy((header)->prog_name, info->chmp_name, ft_strlen(info->chmp_name));
 	(header)->prog_size = calc_progsize(token);
 }

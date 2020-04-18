@@ -31,8 +31,8 @@ _Bool	find_label(t_label **head, t_label *label_arg)
 		*head = (*head)->next;
 	}
 	if (!*head)
-		//token_exit(ASM_NO_LABEL, label_arg->token);
-		token_exit(ASM_NO_LABEL, label_arg->token);
+		//token_exception(ASM_NO_LABEL, label_arg->token);
+		token_exception(ASM_NO_LABEL, label_arg->token, 0);
 	return (l_before_al);
 }
 

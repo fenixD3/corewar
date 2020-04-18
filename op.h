@@ -60,7 +60,7 @@
 ** and can't translate char macros into string macros
 */
 
-#define SPECIALS				",:%"
+#define SPECIALS				",:%-"
 #define SPACES					" \t"
 #define COMMENTS				"#;"
 #define DELIMITERS				SPACES SPECIALS COMMENTS

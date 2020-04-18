@@ -52,7 +52,11 @@
 
 # define ASM_INVALID_CMD			"ERROR: Command is invalid"
 
-# define ASM_TREG_INVALID_NUM	"ERROR: argument T_REG has invalid number"
+/*
+ * WARNINGS
+ */
+
+# define WRNNG_ASM_TREG_INVALID_NUM	"WARNING: argument T_REG has invalid number"
 
 ///// Stop Egor's errors
 

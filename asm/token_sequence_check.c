@@ -24,7 +24,7 @@ void	if_str_check(t_token *token, t_token_sec *check_list)
 			token = token->prev;
 		if (!token || (token->type != STRING && token->type != NAME &&
 												token->type != COMMENT_PROG))
-			token_exit(ASM_INVALID_STR_PLACE, token);
+			token_exception(ASM_INVALID_STR_PLACE, token, 0);
 		if (token->type == NAME)
 			check_list->str_name = true;
 		else if (token->type == COMMENT_PROG)
@@ -45,7 +45,7 @@ void	if_command(t_token *token, t_token_sec *check_list)
 		if (!check_list->str_comment)
 			go_exit(ASM_CMNT_MISSING);
 		if (!check_list->new_line)
-			token_exit(ASM_NL_MISSING, token);
+			token_exception(ASM_NL_MISSING, token, 0);
 		else
 		{
 			check_list->new_line = false;
@@ -54,7 +54,7 @@ void	if_command(t_token *token, t_token_sec *check_list)
 			while (g_op[i].name && !ft_strequ(com_name, g_op[i].name))
 				i++;
 			if (!g_op[i].code || !(token->content = (void*)&g_op[i].code))
-				token_exit(ASM_INVALID_CMD, token);
+				token_exception(ASM_INVALID_CMD, token, 0);
 			if (g_op[i].code > MAX_COMMANDS)
 				go_exit("ERROR: Please don't touch options.h file");
 			command_check(token);
@@ -71,7 +71,7 @@ void token_sequence(t_token *token, t_token_sec	*check_list)
 		if (token->type == SEPARATOR)
 		{
 			if (check_list->separator)
-				token_exit(ASM_WRONG_SEPARATOR, token);
+				token_exception(ASM_WRONG_SEPARATOR, token, 0);
 			check_list->separator = true;
 		}
 		if_nl_or_comment(token, check_list);

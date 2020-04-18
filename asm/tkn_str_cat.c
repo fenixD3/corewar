@@ -27,33 +27,46 @@ t_token		*find_token(t_token *head, t_token_type type)
 	return (head);
 }
 
-u_int16_t	tkn_str_len(t_token *token, u_int16_t *tkn_num)
+u_int8_t	count_double_quotes(char *str)
 {
-	int	len;
+	u_int8_t dq;
 
-	if (token->type != STRING)
-		token_exit(ASM_INVALID_STR_PLACE, token);
-	len = -2;
-	*tkn_num = 0;
-	while (token && (token->type == STRING || token->type == NEW_LINE))
+	dq = 0;
+	while ((str = ft_strchr(str, '"')))
 	{
-		if (token->type == STRING)
+		str++;
+		dq++;
+	}
+	return (dq);
+}
+
+u_int16_t	tkn_str_len(t_token *tkn, u_int16_t *tkn_num)
+{
+	int			len;
+	u_int8_t	dq;
+
+	if (tkn->type != STRING)
+		token_exception(ASM_INVALID_STR_PLACE, tkn, 0);
+	len = -2;
+	dq = 0;
+	*tkn_num = 0;
+	while (tkn && (tkn->type == STRING || tkn->type == NEW_LINE) && dq < 2)
+	{
+		if (tkn->type == STRING)
 		{
-			len += ft_strlen((char*)token->content);
+			len += ft_strlen((char*)tkn->content);
+			dq += count_double_quotes((char*)tkn->content);
 			(*tkn_num)++;
 		}
-		else
-			len++;
-		token = token->next;
+		tkn = tkn->next;
 	}
 	/////// If without code program must works
-	if (!token)
+	if (!tkn)
 		go_exit(ASM_NOCODE);
 	///////
-	len--;
 	if (len < 0 )
 		go_exit(ASM_INVALID_STR);
-	return ((u_int16_t)len);
+	return (len);
 }
 
 t_token		*jump_next_string(t_token *token)
@@ -70,7 +83,7 @@ char *tkn_str_cat(char *dst, t_token *token, u_int32_t max_len)
 	u_int16_t	tkn_num;
 
 	if (token->type != STRING)
-		token_exit(ASM_INVALID_STR_PLACE, token);
+		token_exception(ASM_INVALID_STR_PLACE, token, 0);
 	if ((len = tkn_str_len(token, &tkn_num)) > max_len)
 		go_exit((max_len == PROG_NAME_LENGTH) ? ASM_LONG_NAME : ASM_LONG_CMNT);
 	if (tkn_num == 1)

@@ -45,6 +45,8 @@ void		argument_rewind(t_pc *pc, t_token *token)
 		rewind_n(pc, 1);
 	if (token->type == ARGUMENT_LABEL)
 		rewind_n(pc, 1);
+	if (*pc->line == '-')
+		rewind_n(pc, 1);
 	tmp = ft_skipword(pc->line, DELIMITERS);
 	rewind_n(pc, tmp - pc->line);
 }
@@ -53,7 +55,7 @@ void		command_rewind(t_pc *pc, t_token *token)
 {
 	if (!token->content || !*(char*)token->content ||
 							ft_isspecial(*(char*)token->content, DELIMITERS))
-		token_exit(ASM_INVALID_CMD, token);
+		token_exception(ASM_INVALID_CMD, token, 0);
 	rewind_n(pc, ft_skipword(pc->line, DELIMITERS) - pc->line);
 }
 

@@ -10,109 +10,86 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include <libft/libft.h>
 #include <fcntl.h>
-#include <libft/get_next_line.h>
-//#include "file_to_list.h"
-#include "asm.h"
-#include "op.h"
+#include "asm_dasha.h"
+#include <stdlib.h>
+#include <stdio.h>
+#include <errno.h>
+#include <stdbool.h>
+#include "ft_ptintf.h" ///
 
-
-/*
-#include "options.h"
-void	command_nametonum(t_token *token)
+void			print_in_file(char *file_name, t_token *token, header_t *header)
 {
-	char	*com_name;
-	int 	i;
+	int			fd;
+	int			nulle;
+	char		*name;
 
-	i = 0;
-	while (token)
+	nulle = 0;
+	errno = 0;
+
+	if ((name = ft_strrchr(file_name, '.')))
+		*name = '\0';
+	name = ml_strjoin(file_name, ".cor", ML_CHECK);
+	if ((fd = open(name, O_CREAT | O_WRONLY | O_TRUNC,
+				   S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH | S_IWOTH)) < 0)
 	{
-		if (token->type == COMMAND)
-		{
-			com_name = (char *)(token->content);
-			while (!ft_strequ(com_name, g_op[i].name))
-				i++;
-			token->content = (void*)ml_malloc(sizeof(u_int8_t), ML_CMD_NUM);
-			token->content = (void*)&g_op[i].code;
-		}
-		token = token->next;
+		perror("ERROR: Cant't write in file because");
+		exit (1);
 	}
-
+	ft_printf("Writing output program to %s\n", name);
+	print_header(fd, header);
+	write(fd, &nulle, 4);
+	print_commands(fd, token);
+	close(fd);
 }
 
-//int main(int ac, char **av)
-//{
-//	int fd;
-//	t_fline *flst;
-//
-//	if (ac < 2)
-//		go_exit("Give me file, bitch!");
-//
-//	if (!(fd = open(av[1], O_RDONLY)))
-//		go_exit("Open file error");
-//
-//	flst = file_to_list(fd);
-//
-//	char *line = flst->next->line;
-//	printf("%s\n\n", line);
-//	char **arrptr;
-//	if (!(arrptr = fast_strsplit(line, DELIMITERS, COMMENTS, malloc)))
-//		return (2);
-//	while (*arrptr)
-//	{
-//		printf("%s\n", *arrptr);
-//		arrptr++;
-//	}
-//	return (0);
-//}
-
-#include<stdlib.h>
-#include<stdio.h>
-#include "ft_ptintf.h"
-/// print memory
-*/
-/*int main(void)
+void open_and_tokenize_file(char *file_name, t_token_sec *check_list,
+							t_token **token)
 {
-	int fd = open("/Users/mdeanne/corewar/vm_champs/test.cor", O_RDONLY);
-	uint8_t buf[3000];
-	uint8_t *ptr;
-	lseek(fd, PROG_NAME_LENGTH + COMMENT_LENGTH + 16, SEEK_CUR);
-	int ret = read(fd, buf, 3000);
-	ptr = buf;
-	int i = 0;
-	while (ret--)
+	int	fd;
+	char		*name;
+	t_label		*label;
+
+	label = NULL;
+	errno = 0;
+	if ((fd = open(file_name, O_DIRECTORY)) >= 0)
 	{
-		printf("%02x", *ptr);
-		if (i && (i + 1) % 2 == 0)
-			printf(" ");
-		if (i && (i + 1) % 16 == 0)
-			printf("\n");
-		i++;
-		ptr++;
+		ft_printf("ERROR: file %s is a directory\n", file_name);
+		exit (1);
+	}
+	else if ((fd = open(file_name, O_RDONLY)) < 0)
+	{
+		strerror(errno);
+		exit (1);
+	}
+	tokenize(fd, token, &label);
+	close(fd);
+
+	//print_tokens(*token, 1);
+
+	token_sequence(*token, check_list);
+	label_substitution(label);
+}
+
+int main(int ac, char **av)
+{
+	t_token		*token;
+	header_t	header;
+	t_token_sec	check_list;
+	int			i;
+
+	i = 0;
+	while (++i < ac)
+	{
+		ft_printf("Reading %s\n", av[i]);
+		token = NULL;
+		open_and_tokenize_file(av[i], &check_list, &token);
+		init_headers(&header, token, &check_list);
+		print_in_file(av[i], token, &header);
+		ml_free_all();
 	}
 
-	return (0);
-}*//*
-
-
-int main(void)
-{
-	t_token *token;
-	t_label *label;
-
-	int fd;
-
-	token = NULL;
-	label = NULL;
-
-	fd = open("/Users/mdeanne/corewar/vm_champs/test.s", O_RDONLY);
-	tokenize(fd, &token, &label);
-	//print_tokens(token, 1);
-	command_nametonum(token); // будет в проверке => удалить
-	label_substitution(label); // очищает все t_label - больше незья обращаться
-	print_tokens(token, 2);
 
 	return (0);
-}*/
+}

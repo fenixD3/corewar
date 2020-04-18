@@ -15,13 +15,16 @@
 #include "asm.h"
 #include "libword.h"
 
-void newline_endfile_check(int fd, char *line, int ret)
+void newline_endfile_check(int fd, char *line, int ret, t_token *token)
 {
 	char *tmp;
 	char c;
 
-	if (ret < 0)
+	if (ret < 0 || !token || !token->prev)
 		go_exit("ERROR: with file");
+	if (token->prev->type == COMMENT && token->prev->prev &&
+	token->prev->prev->type == NEW_LINE)
+		return ;
 	tmp = line + ft_strlen(line) - 1;
 	while (tmp + 1 != line)
 	{
@@ -84,7 +87,7 @@ void	tokenize(int fd, t_token **token, t_label **label)
 	}
 	if (!*token)
 		go_exit("ERROR: File is empty");
-	newline_endfile_check(fd, pc.line, ret);
+	newline_endfile_check(fd, pc.line, ret, (*token));
 	add_token(&pc, token, label, ENDFILE);
 	set_lists_at_start(token, label);
 	//ml_free_list(ML_GNL_LINE);

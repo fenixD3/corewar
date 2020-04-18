@@ -178,6 +178,9 @@ add_executable(dencorewar
         vm/srcs/game/vis/support_func.c
         vm/srcs/game/vis/display_carriages.c
         vm/srcs/game/vis/display_side_menu.c
+        vm/srcs/game/vis/vc_list.c
+        vm/srcs/game/vis/vc_sort.c
+        vm/includes/vc_list.h
         vm/srcs/struct_intf/carriage_intf.c
         vm/srcs/struct_intf/corewar_intf.c
         vm/srcs/validation/parse_input_intf.c

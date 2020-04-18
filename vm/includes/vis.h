@@ -2,22 +2,30 @@
 #ifndef VIS_H
 # define VIS_H
 
+# include "vm.h"
 # include <SDL.h>
 //# include <mach/machine.h>
 //# include <SDL2/SDL_image.h>
 # include <SDL_ttf.h>
 # include "libft.h"
-# include "vm.h"
 # include <stdbool.h>
+
+
+#define CARRIAGE_VISUAL 100
 
 #define ML_ARENA 6
 #define ML_VS 8
 #define ML_CELL 10
 #define ML_SUPPORT 9
 
-# define DESTROY_TXTR(X)	if (X) SDL_DestroyTexture(X);
+# define DESTROY_TXTR(X) if (X) SDL_DestroyTexture(X);
 
-
+typedef struct  s_visual_carriages
+{
+	t_carriages                 *carriage;
+	_Bool                       is_open;
+	struct s_visual_carriages   *next;
+}               t_vc;
 
 typedef struct		s_vis_tools
 {
@@ -33,7 +41,46 @@ typedef struct		s_vis_tools
 	SDL_Texture		*backgrnd_txtr;
 	TTF_Font		*font;
 	TTF_Font		*text_font;
+	t_vc			*vc_list;
 }					t_vis_tools;
+
+SDL_Color			init_color(int r, int g, int b, int a);
+
+//static		t_vis_tools *vs;
+
+//static	t_vis_tools	vs = {
+//		.wight = 1769,
+//		.height = 1035,
+//		.window = NULL,
+//		.render = NULL,
+//		.font = NULL,
+//		.text_color[0].r = 215,
+//		.text_color[0].g = 0,
+//		.text_color[0].b = 0,
+//		.text_color[0].a = 0,
+//
+//		.text_color[1].r = 0,
+//		.text_color[1].g = 127,
+//		.text_color[1].b = 225,
+//		.text_color[1].a = 0,
+//
+//		.text_color[2].r = 0,
+//		.text_color[2].g = 128,
+//		.text_color[2].b = 0,
+//		.text_color[2].a = 0,
+//
+//		.text_color[3].r = 225,
+//		.text_color[3].g = 225,
+//		.text_color[3].b = 0,
+//		.text_color[3].a = 0,
+//
+//		.text_color[4].r = 128,
+//		.text_color[4].g = 128,
+//		.text_color[4].b = 128,
+//		.text_color[4].a = 0,
+//		.vc_list = NULL,
+//		.speed = 0
+//};
 
 typedef struct		s_cells
 {
@@ -52,31 +99,41 @@ typedef struct		s_arena
 	int				step;//aaa in corewar?!
 }					t_arena;
 
-bool				init(t_vis_tools *vs);
+bool init();
 
-void				visualise_arena(t_corewar *corewar, t_vis_tools *vs, bool *quit);
+void visualise_arena(t_corewar *corewar, bool *quit);
 
-t_vis_tools			*create_vs(void);
+void				create_vs(void);
 
 t_cells				*add_cell(int i, t_corewar *corewar);
 
 void				save_cell(t_cells **celllst, t_cells *new_cell);
 
-void				print_arena(t_vis_tools *vs, char **arena);
+void				print_arena(char **arena);
 
 /*
  * Support_func.c
  */
-void				free_mem_font(t_vis_tools *vs);
+void				free_mem_font(void);
 
 void				track_events(int *indx, SDL_Event *e, bool *quit, int *stop);
 
 SDL_Rect			create_rect(int x, int y, int text_w, int text_h);
 
-SDL_Color			init_color(int r, int g, int b, int a);
 
-void				display_side_menu(t_corewar *crrw, int inxd, t_vis_tools *vs, t_carriages *carriages);
+void display_side_menu(t_corewar *crrw, int inxd);
 
-void				display_carriages(t_vis_tools *vs, t_corewar *corewar);
+void				display_carriages(t_corewar *corewar);
+
+void				push_front_carriage(t_carriages **carriages);
+void
+init_arena(unsigned char arena[], t_champion *champs, t_carriages **carriages);
+
+void	add_new_vc(t_vc **head, t_carriages *new);
+void    insert_vc(t_vc **head, t_vc *prev, t_vc *insert);
+t_vc    *cut_vc(t_vc **prev);
+t_vc	*find_prev_to_insert(t_vc *head, t_vc *insert);
+t_vc 	*find_and_cut_elem(t_vc **head);
+void	sort_vc(t_vc **head);
 
 #endif

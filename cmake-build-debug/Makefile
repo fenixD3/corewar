@@ -4254,6 +4254,60 @@ vm/srcs/game/vis/support_func.c.s:
 	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/vis/support_func.c.s
 .PHONY : vm/srcs/game/vis/support_func.c.s
 
+vm/srcs/game/vis/vc_list.o: vm/srcs/game/vis/vc_list.c.o
+
+.PHONY : vm/srcs/game/vis/vc_list.o
+
+# target to build an object file
+vm/srcs/game/vis/vc_list.c.o:
+	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/vis/vc_list.c.o
+.PHONY : vm/srcs/game/vis/vc_list.c.o
+
+vm/srcs/game/vis/vc_list.i: vm/srcs/game/vis/vc_list.c.i
+
+.PHONY : vm/srcs/game/vis/vc_list.i
+
+# target to preprocess a source file
+vm/srcs/game/vis/vc_list.c.i:
+	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/vis/vc_list.c.i
+.PHONY : vm/srcs/game/vis/vc_list.c.i
+
+vm/srcs/game/vis/vc_list.s: vm/srcs/game/vis/vc_list.c.s
+
+.PHONY : vm/srcs/game/vis/vc_list.s
+
+# target to generate assembly for a file
+vm/srcs/game/vis/vc_list.c.s:
+	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/vis/vc_list.c.s
+.PHONY : vm/srcs/game/vis/vc_list.c.s
+
+vm/srcs/game/vis/vc_sort.o: vm/srcs/game/vis/vc_sort.c.o
+
+.PHONY : vm/srcs/game/vis/vc_sort.o
+
+# target to build an object file
+vm/srcs/game/vis/vc_sort.c.o:
+	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/vis/vc_sort.c.o
+.PHONY : vm/srcs/game/vis/vc_sort.c.o
+
+vm/srcs/game/vis/vc_sort.i: vm/srcs/game/vis/vc_sort.c.i
+
+.PHONY : vm/srcs/game/vis/vc_sort.i
+
+# target to preprocess a source file
+vm/srcs/game/vis/vc_sort.c.i:
+	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/vis/vc_sort.c.i
+.PHONY : vm/srcs/game/vis/vc_sort.c.i
+
+vm/srcs/game/vis/vc_sort.s: vm/srcs/game/vis/vc_sort.c.s
+
+.PHONY : vm/srcs/game/vis/vc_sort.s
+
+# target to generate assembly for a file
+vm/srcs/game/vis/vc_sort.c.s:
+	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/vis/vc_sort.c.s
+.PHONY : vm/srcs/game/vis/vc_sort.c.s
+
 vm/srcs/game/vis/visualise_arena.o: vm/srcs/game/vis/visualise_arena.c.o
 
 .PHONY : vm/srcs/game/vis/visualise_arena.o
@@ -4911,6 +4965,12 @@ help:
 	@echo "... vm/srcs/game/vis/support_func.o"
 	@echo "... vm/srcs/game/vis/support_func.i"
 	@echo "... vm/srcs/game/vis/support_func.s"
+	@echo "... vm/srcs/game/vis/vc_list.o"
+	@echo "... vm/srcs/game/vis/vc_list.i"
+	@echo "... vm/srcs/game/vis/vc_list.s"
+	@echo "... vm/srcs/game/vis/vc_sort.o"
+	@echo "... vm/srcs/game/vis/vc_sort.i"
+	@echo "... vm/srcs/game/vis/vc_sort.s"
 	@echo "... vm/srcs/game/vis/visualise_arena.o"
 	@echo "... vm/srcs/game/vis/visualise_arena.i"
 	@echo "... vm/srcs/game/vis/visualise_arena.s"

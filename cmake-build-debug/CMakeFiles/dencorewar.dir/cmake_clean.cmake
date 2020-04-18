@@ -150,6 +150,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/dencorewar.dir/vm/srcs/game/vis/support_func.c.o"
   "CMakeFiles/dencorewar.dir/vm/srcs/game/vis/display_carriages.c.o"
   "CMakeFiles/dencorewar.dir/vm/srcs/game/vis/display_side_menu.c.o"
+  "CMakeFiles/dencorewar.dir/vm/srcs/game/vis/vc_list.c.o"
+  "CMakeFiles/dencorewar.dir/vm/srcs/game/vis/vc_sort.c.o"
   "CMakeFiles/dencorewar.dir/vm/srcs/struct_intf/carriage_intf.c.o"
   "CMakeFiles/dencorewar.dir/vm/srcs/struct_intf/corewar_intf.c.o"
   "CMakeFiles/dencorewar.dir/vm/srcs/validation/parse_input_intf.c.o"

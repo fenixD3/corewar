@@ -2,20 +2,23 @@
 #include "vis.h"
 #include "vis_errors.h"
 
+t_vis_tools *vs;
+
 void	start_game(t_corewar *corewar)
 {
-	t_vis_tools *vs;
 	bool		quit;
 
-	vs = create_vs();
+	create_vs();
 	init_arena(corewar->arena, corewar->champs, &corewar->carriages);
 	introducing_fighter(corewar->champs);
-	if (!init(vs))
+	if (!init())
 		go_exit(ERR_CREATE_VS);
 	quit = false;
 	g_change = 1;
 	while (!quit)
 	{
+//		if (corewar->game_param.cycles_aft_start == 795)
+//			(quit = quit);
 		carriages_actions(corewar);
 		if (!(++corewar->game_param.cycles_aft_start %
 		      corewar->game_param.cycles_to_die) ||
@@ -26,7 +29,7 @@ void	start_game(t_corewar *corewar)
 		    corewar->flgs.nbr_cycles_dump)
 			print_map(corewar);
 		if (g_change)
-			visualise_arena(corewar, vs, &quit);
+			visualise_arena(corewar, &quit);
 		if (carriage_amount_live(corewar->carriages) == 1)
 			introducing_winner(corewar, 0);
 		else if (!carriage_amount_live(corewar->carriages))
@@ -34,8 +37,8 @@ void	start_game(t_corewar *corewar)
 	}
 }
 
-void	init_arena(unsigned char arena[], t_champion *champs,
-					t_carriages **carriages)
+void
+init_arena(unsigned char arena[], t_champion *champs, t_carriages **carriages)
 {
 	unsigned int		code_shift;
 	int					i;

@@ -559,6 +559,9 @@
 		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/vm/includes/error_defs.h">
 			<Option target="dencorewar"/>
 		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/vm/includes/vc_list.h">
+			<Option target="dencorewar"/>
+		</Unit>
 		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/vm/includes/vis.h">
 			<Option target="dencorewar"/>
 		</Unit>
@@ -599,6 +602,12 @@
 			<Option target="dencorewar"/>
 		</Unit>
 		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/vm/srcs/game/vis/support_func.c">
+			<Option target="dencorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/vm/srcs/game/vis/vc_list.c">
+			<Option target="dencorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/vm/srcs/game/vis/vc_sort.c">
 			<Option target="dencorewar"/>
 		</Unit>
 		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/vm/srcs/game/vis/visualise_arena.c">

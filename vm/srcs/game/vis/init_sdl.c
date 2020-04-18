@@ -1,4 +1,5 @@
 #include "vis.h"
+t_vis_tools *vs;
 
 //bool	init_sdl_images(void)
 //{
@@ -10,7 +11,7 @@
 //	return (success);
 //}
 
-bool	init_font(t_vis_tools *vs)
+bool		init_font(void)
 {
 	bool	success;
 
@@ -19,7 +20,8 @@ bool	init_font(t_vis_tools *vs)
 		go_exit(TTF_GetError());
 	else
 	{
-		vs->font = TTF_OpenFont("../media/RCdot3.ttf", 10);
+		vs->font = TTF_OpenFont("../media/Anonymous.ttf", 9);
+//		vs->font = TTF_OpenFont("../media/Light.ttf", 10);
 		if (!vs->font)
 			go_exit(TTF_GetError());
 		else
@@ -33,7 +35,7 @@ bool	init_font(t_vis_tools *vs)
 	return (success);
 }
 
-bool	init(t_vis_tools *vs)
+bool		init(void)
 {
 	bool	success;
 
@@ -52,8 +54,8 @@ bool	init(t_vis_tools *vs)
 	}
 //	if (!init_sdl_images()) IF SOME PICTURES NEEDED
 //		success = false;
-	if (!init_font(vs))
+	if (!init_font())
 		success = false;
 //	if (!init_surface(vs)) IF SOME PICTURES NEEDED
-		return (success);
+	return (success);
 }

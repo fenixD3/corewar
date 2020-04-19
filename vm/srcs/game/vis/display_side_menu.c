@@ -66,7 +66,7 @@ void			fill_frame(int i, t_carriages *carriages, int extndd)
 	int			text_height;
 
 	SDL_SetRenderDrawColor(vs->render, 0, 0, 0, SDL_ALPHA_OPAQUE);
-	rectangle = create_rect(26 + 64 * 24, 21 + (extndd ? 158 : 63) * i,
+	rectangle = create_rect(26 + 64 * 24, 21 + (extndd ? 162 : 63) * i,
 	       vs->wight - 42 - 64 * 24, (extndd ? 146: 51));
 	SDL_RenderFillRect(vs->render, &rectangle);
 	text = ft_strjoin("cycles before execution : ",

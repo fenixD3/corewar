@@ -8,7 +8,10 @@ include_directories(asm)
 include_directories(ft_printf/includes)
 include_directories(libft)
 include_directories(libft/memlist)
+
 include_directories(vm/includes)
+
+
 include_directories(~/Library/Frameworks/SDL2.framework/Headers)
 #include_directories(~/Library/Frameworks/SDL2_image.framework/Headers)
 include_directories(~/Library/Frameworks/SDL2_ttf.framework/Headers)
@@ -163,24 +166,24 @@ add_executable(dencorewar
         libft/ml_strsub.c
         libft/ml_strtrim.c
         vm/includes/error_defs.h
+        vm/includes/vc_list.h
         vm/includes/vis.h
         vm/includes/vis_errors.h
         vm/includes/vm.h
-        vm/srcs/game/args_intf.c
         vm/srcs/game/vis/create_vs.c
+        vm/srcs/game/vis/display_carriages.c
+        vm/srcs/game/vis/display_side_menu.c
+        vm/srcs/game/vis/init_sdl.c
+        vm/srcs/game/vis/print_arena.c
+        vm/srcs/game/vis/support_func.c
+        vm/srcs/game/vis/vc_list.c
+        vm/srcs/game/vis/vc_sort.c
+        vm/srcs/game/vis/visualise_arena.c
+        vm/srcs/game/args_intf.c
         vm/srcs/game/game.c
         vm/srcs/game/game_intf.c
         vm/srcs/game/helper_func.c
-        vm/srcs/game/vis/init_sdl.c
         vm/srcs/game/instuctions.c
-        vm/srcs/game/vis/visualise_arena.c
-        vm/srcs/game/vis/print_arena.c
-        vm/srcs/game/vis/support_func.c
-        vm/srcs/game/vis/display_carriages.c
-        vm/srcs/game/vis/display_side_menu.c
-        vm/srcs/game/vis/vc_list.c
-        vm/srcs/game/vis/vc_sort.c
-        vm/includes/vc_list.h
         vm/srcs/struct_intf/carriage_intf.c
         vm/srcs/struct_intf/corewar_intf.c
         vm/srcs/validation/parse_input_intf.c
@@ -194,7 +197,10 @@ add_executable(dencorewar
         op.h
         options.h)
 
+
 target_link_libraries(dencorewar "-framework SDL2")
 #target_link_libraries(dencorewar "-framework SDL2_image")
 target_link_libraries(dencorewar "-framework SDL2_ttf")
 set_target_properties(dencorewar PROPERTIES LINK_FLAGS "-F /Users/$ENV{USER}/Library/Frameworks")
+
+#target_link_libraries(dencorewar ${SDL2_LIBRARY} -lmingw32 -lSDL2main -lSDL2 -lSDL2_TTF)

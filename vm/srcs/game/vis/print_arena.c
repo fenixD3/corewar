@@ -2,7 +2,7 @@
 #include "vis.h"
 #include "op.h"
 
-t_vis_tools *vs;
+t_vis_tools *g_vs;
 
 
 void print_arena(char **arena)
@@ -15,15 +15,15 @@ void print_arena(char **arena)
 	i = 0;
 	while (i < 64)
 	{
-		vs->txt_srfc = TTF_RenderText_Solid(vs->font,
-											arena[i], vs->text_color[4]);
-		vs->text = SDL_CreateTextureFromSurface(vs->render,
-												vs->txt_srfc);
-		text_width = vs->txt_srfc->w;
-		text_height = vs->txt_srfc->h;
+		g_vs->txt_srfc = TTF_RenderText_Solid(g_vs->font,
+											  arena[i], g_vs->text_color[4]);
+		g_vs->text = SDL_CreateTextureFromSurface(g_vs->render,
+												  g_vs->txt_srfc);
+		text_width = g_vs->txt_srfc->w;
+		text_height = g_vs->txt_srfc->h;
 		dstrect = create_rect(10,
 			15 + i * (text_height + 6), text_width, text_height);
-		SDL_RenderCopy(vs->render, vs->text, NULL, &dstrect);
+		SDL_RenderCopy(g_vs->render, g_vs->text, NULL, &dstrect);
 		free_mem_font();
 		i++;
 	}
@@ -43,15 +43,15 @@ void print_arena(char **arena)
 //		j = 0;
 //		while (j < 64)
 //		{
-//			vs->txt_srfc = TTF_RenderText_Solid(vs->font,
-//										arena[i], vs->text_color[4]);
-//			vs->text = SDL_CreateTextureFromSurface(vs->render,
-//					vs->txt_srfc);
-//			text_width = vs->txt_srfc->w;
-//			text_height = vs->txt_srfc->h;
+//			g_vs->txt_srfc = TTF_RenderText_Solid(g_vs->font,
+//										arena[i], g_vs->text_color[4]);
+//			g_vs->text = SDL_CreateTextureFromSurface(g_vs->render,
+//					g_vs->txt_srfc);
+//			text_width = g_vs->txt_srfc->w;
+//			text_height = g_vs->txt_srfc->h;
 //			dstrect = create_rect(10 + j++ * 24,
 //				15 + (i++ / 64) * (text_height + 5), text_width, text_height);
-//			SDL_RenderCopy(vs->render, vs->text, NULL, &dstrect);
+//			SDL_RenderCopy(g_vs->render, g_vs->text, NULL, &dstrect);
 //			free_mem_font();
 //		}
 //	}

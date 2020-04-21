@@ -1,6 +1,6 @@
 #include "vis.h"
 
-t_vis_tools *vs;
+t_vis_tools *g_vs;
 
 
 t_carriages	*create_new_carriage(void)
@@ -37,7 +37,7 @@ void push_front_carriage(t_carriages **carriages)
 		*carriages = new_carriage;
 	}
 // при условии если программа запущена с -vis
-		add_new_vc(&(vs->vc_list), *carriages);
+		add_new_vc(&(g_vs->vc_list), *carriages);
 }
 
 int			carriage_amount_live(t_carriages *carriage)

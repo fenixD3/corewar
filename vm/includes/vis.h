@@ -46,42 +46,6 @@ typedef struct		s_vis_tools
 
 SDL_Color			init_color(int r, int g, int b, int a);
 
-//static		t_vis_tools *vs;
-
-//static	t_vis_tools	vs = {
-//		.wight = 1769,
-//		.height = 1035,
-//		.window = NULL,
-//		.render = NULL,
-//		.font = NULL,
-//		.text_color[0].r = 215,
-//		.text_color[0].g = 0,
-//		.text_color[0].b = 0,
-//		.text_color[0].a = 0,
-//
-//		.text_color[1].r = 0,
-//		.text_color[1].g = 127,
-//		.text_color[1].b = 225,
-//		.text_color[1].a = 0,
-//
-//		.text_color[2].r = 0,
-//		.text_color[2].g = 128,
-//		.text_color[2].b = 0,
-//		.text_color[2].a = 0,
-//
-//		.text_color[3].r = 225,
-//		.text_color[3].g = 225,
-//		.text_color[3].b = 0,
-//		.text_color[3].a = 0,
-//
-//		.text_color[4].r = 128,
-//		.text_color[4].g = 128,
-//		.text_color[4].b = 128,
-//		.text_color[4].a = 0,
-//		.vc_list = NULL,
-//		.speed = 0
-//};
-
 typedef struct		s_cells
 {
 	char			*code;

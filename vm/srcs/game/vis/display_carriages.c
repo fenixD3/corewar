@@ -2,7 +2,7 @@
 #include "vis.h"
 #include "vis_errors.h"
 
-t_vis_tools *vs;
+t_vis_tools *g_vs;
 
 
 void			draw_carriage(int i, int priority, SDL_Color color)
@@ -13,12 +13,12 @@ void			draw_carriage(int i, int priority, SDL_Color color)
 		return ;
 	else
 	{
-		SDL_SetRenderDrawColor(vs->render, color.r, color.g, color.b, 0);
+		SDL_SetRenderDrawColor(g_vs->render, color.r, color.g, color.b, 0);
 		carrg = create_rect(10 + ((i - (i / 64) * 64) * 24) +
 		                    (priority ? (priority + 2) * 3 : 0),
 		                    13 + ((i / 64) * 15) + 13,
 		                    (16 / (priority + 1)) - 1, 2);
-		SDL_RenderFillRect(vs->render, &carrg);
+		SDL_RenderFillRect(g_vs->render, &carrg);
 	}
 }
 
@@ -41,7 +41,7 @@ void display_carriages(t_corewar *corewar)
 		while (carriage != NULL)
 		{
 			color = (carriage->reg[0] < 0 && carriage->reg[0] > -5) ?
-			        vs->text_color[-(carriage->reg[0]) - 1] : vs->text_color[4];
+					g_vs->text_color[-(carriage->reg[0]) - 1] : g_vs->text_color[4];
 			if (&(corewar->arena[i]) == carriage->op_pos)
 				draw_carriage(i, priority++, color);
 			carriage = carriage->next;

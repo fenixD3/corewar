@@ -12,7 +12,7 @@
 
 #include "vis.h"
 
-t_vis_tools *vs;
+t_vis_tools *g_vs;
 
 void	add_new_vc(t_vc **head, t_carriages *new)
 {

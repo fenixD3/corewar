@@ -59,18 +59,16 @@ fcntl.h
 -
 options.h
 ../vm/includes/options.h
+stdio.h
+-
 vis.h
 ../vm/includes/vis.h
 
-/Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/vm/srcs/game/vis/create_vs.c
+/Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/vm/srcs/game/vis/visualise_arena.c
 vis.h
 /Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/vm/srcs/game/vis/vis.h
 vis_errors.h
 /Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/vm/srcs/game/vis/vis_errors.h
-
-/Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/vm/srcs/game/vis/display_side_menu.c
-vis.h
-/Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/vm/srcs/game/vis/vis.h
 
 /Users/romancheremin/Library/Frameworks/SDL2.framework/Headers/SDL.h
 SDL_main.h

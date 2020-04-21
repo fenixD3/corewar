@@ -1,7 +1,7 @@
 
 #include "vis.h"
 
-t_vis_tools *vs;
+t_vis_tools *g_vs;
 
 SDL_Color			init_color(int r, int g, int b, int a)
 {
@@ -72,7 +72,7 @@ SDL_Rect		create_rect(int x, int y, int text_w, int text_h)
 
 void free_mem_font(void)
 {
-	SDL_FreeSurface(vs->txt_srfc);
-	vs->txt_srfc = NULL;
-	DESTROY_TXTR(vs->text);
+	SDL_FreeSurface(g_vs->txt_srfc);
+	g_vs->txt_srfc = NULL;
+	DESTROY_TXTR(g_vs->text);
 }

@@ -6,6 +6,8 @@
 # include <fcntl.h>
 # include "options.h"
 
+#include <stdio.h>
+
 # define N_FLG 1u
 # define DUMP_FLG 2u
 # define A_FLG 3u
@@ -96,7 +98,7 @@ _Bool		is_there_same_champ_num(t_champion *champs,
 t_carriages	*create_new_carriage(void);
 # include "vis.h"
 
-//void push_front_carriage(t_carriages **carriages, t_vis_tools *vs);
+//void push_front_carriage(t_carriages **carriages, t_vis_tools *g_vs);
 int			carriage_amount_live(t_carriages *carriage);
 
 void	get_usage(void);
@@ -115,7 +117,7 @@ _Bool	is_champion(const char *arg, t_corewar *corewar);
 void	start_game(t_corewar *corewar);
 //void
 //init_arena(unsigned char arena[], t_champion *champs, t_carriages **carriages,
-//           t_vis_tools *vs);
+//           t_vis_tools *g_vs);
 void	introducing_fighter(t_champion *champs);
 void    print_map(t_corewar *corewar);
 void introducing_winner(t_corewar *corewar, _Bool who_lst_live);
@@ -128,14 +130,12 @@ void
 make_operation_and_go_next(t_corewar *corewar, t_carriages **carriage_head);
 unsigned char *get_arguments_frm_code(unsigned char *arg_type_code, t_arg_type *args,
 					   t_op oper, unsigned char *arena);
-_Bool is_args_valid(t_parse_args *args_val, unsigned char *arg_start, t_op oper,
+_Bool is_args_valid(t_parse_args *args_val, unsigned char *arg_start, const t_op *oper,
 					unsigned char *arena);
-void get_arguments_value(t_parse_args *args_val, int idx,
-						 unsigned char *arg_start, t_op oper);
+void get_arguments_values(t_parse_args *args_val, unsigned char *arg_start,
+						  const t_op *oper, unsigned char *arena);
 unsigned char *skip_op(unsigned char *start_op, t_arg_type *args, t_op oper,
 					   unsigned char *arena);
-void	execute_operation(t_corewar *corewar, const int idx,
-						  const t_parse_args *args_val, t_carriages **head);
 
 int		get_value_frm_arg(t_parse_args *arg_val, int arg_idx,
 							 t_corewar *corewar, _Bool is_idx_mod);

@@ -1,5 +1,5 @@
 #include "vis.h"
-t_vis_tools *vs;
+t_vis_tools *g_vs;
 
 //bool	init_sdl_images(void)
 //{
@@ -20,14 +20,14 @@ bool		init_font(void)
 		go_exit(TTF_GetError());
 	else
 	{
-		vs->font = TTF_OpenFont("../media/Anonymous.ttf", 9);
-//		vs->font = TTF_OpenFont("../media/Light.ttf", 10);
-		if (!vs->font)
+		g_vs->font = TTF_OpenFont("../media/Anonymous.ttf", 9);
+//		g_vs->font = TTF_OpenFont("../media/Light.ttf", 10);
+		if (!g_vs->font)
 			go_exit(TTF_GetError());
 		else
 			success = true;
-		vs->text_font = TTF_OpenFont("../media/pixelmix.ttf", 10);
-		if (!vs->text_font)
+		g_vs->text_font = TTF_OpenFont("../media/pixelmix.ttf", 10);
+		if (!g_vs->text_font)
 			go_exit(TTF_GetError());
 		else
 			success = true;
@@ -44,18 +44,18 @@ bool		init(void)
 		success = false;
 	else
 	{
-		vs->window = SDL_CreateWindow("Corewar fight",
-				SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED,
-				vs->wight, vs->height, SDL_WINDOW_SHOWN);
-		if (vs->window == NULL)
+		g_vs->window = SDL_CreateWindow("Corewar fight",
+										SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED,
+										g_vs->wight, g_vs->height, SDL_WINDOW_SHOWN);
+		if (g_vs->window == NULL)
 			success = false;
-		SDL_SetWindowPosition(vs->window, 10, 10);
-		vs->render = SDL_CreateRenderer(vs->window, -1, 0);
+		SDL_SetWindowPosition(g_vs->window, 10, 10);
+		g_vs->render = SDL_CreateRenderer(g_vs->window, -1, 0);
 	}
 //	if (!init_sdl_images()) IF SOME PICTURES NEEDED
 //		success = false;
 	if (!init_font())
 		success = false;
-//	if (!init_surface(vs)) IF SOME PICTURES NEEDED
+//	if (!init_surface(g_vs)) IF SOME PICTURES NEEDED
 	return (success);
 }

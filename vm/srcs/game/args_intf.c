@@ -7,12 +7,13 @@ unsigned char *get_arguments_frm_code(unsigned char *arg_type_code,
 	int 			idx;
 
 	arg_type_code = do_steps(arg_type_code, 1, arena);
-	idx = -1;
-	while (++idx != oper.num_args)
-		args[idx] = *arg_type_code >> (8 - (idx + 1) * 2) & 0x3u;
-	if (!oper.num_args)
+	idx = 0;
+	if (!oper.argument_type_code)
 		args[idx] = DIR_CODE;
-	return (oper.num_args ? do_steps(arg_type_code, 1, arena) : arg_type_code);
+	else
+		while (idx != oper.num_args)
+			args[idx++] = *arg_type_code >> (8 - (idx + 1) * 2) & 0x3u;
+	return (oper.argument_type_code ? do_steps(arg_type_code, 1, arena) : arg_type_code);
 }
 
 _Bool		is_args_valid(t_parse_args *args_val, unsigned char *arg_start,
@@ -24,8 +25,6 @@ _Bool		is_args_valid(t_parse_args *args_val, unsigned char *arg_start,
 	good = 1;
 	idx = -1;
 	get_arguments_values(args_val, arg_start, oper, arena);
-/*printf("Fst arg type = %d", args_val->code_args[0]);
-printf(", its val = %d\n", args_val->val[0]);*/
 	while (++idx != oper->num_args && good)
 	{
 		if (args_val->code_args[idx] == REG_CODE)
@@ -58,14 +57,12 @@ void	get_arguments_values(t_parse_args *args_val, unsigned char *arg_start,
 		}
 		else if (args_val->code_args[idx] == DIR_CODE)
 		{
-			args_val->val[idx] = (oper->size_t_dir == 2) ?
-				reverse_vm_short_bytes(get_arg.srt_ptr) :
-				reverse_vm_int_bytes(get_arg.int_ptr);
+			args_val->val[idx] = reverse_vm_bytes(get_arg.chr_ptr, (oper->size_t_dir == 2) ? 2 : 4, arena);
 			arg_start = do_steps(arg_start, (char)oper->size_t_dir, arena);
 		}
 		else if (args_val->code_args[idx] == IND_CODE)
 		{
-			args_val->val[idx] = reverse_vm_short_bytes(get_arg.srt_ptr);
+			args_val->val[idx] = reverse_vm_bytes(get_arg.chr_ptr, 2, arena);
 			arg_start = do_steps(arg_start, 2, arena);
 		}
 	}

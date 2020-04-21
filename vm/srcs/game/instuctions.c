@@ -2,23 +2,23 @@
 
 void    live(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 {
-	t_carriages	*carrig;
+	t_champion	*champ;
 
 	if (!*head)
 	    return ;
-	carrig = *head;
 	corewar->carriages->is_live = 1;
-	while (carrig)
-	{
-		if (carrig->is_live && -carrig->reg[0] == arg_val->val[0])
-		{
-			corewar->game_param.who_lst_live = arg_val->val[0];
-			break ;
-		}
-		carrig = carrig->next;
-	}
 	++corewar->game_param.live_period_cnt;
 	corewar->carriages->cycle_when_live = corewar->game_param.cycles_aft_start;
+	champ = corewar->champs;
+	while (champ)
+	{
+		if (champ->num == -arg_val->val[0])
+		{
+			corewar->game_param.who_lst_live = -arg_val->val[0];
+			break ;
+		}
+		champ = champ->next;
+	}
 }
 
 void    ld(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
@@ -44,9 +44,8 @@ void    ldi(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 		return ;
 	val_addr_1 = get_value_frm_arg(arg_val, 0, corewar, 1);
 	val_addr_2 = get_value_frm_arg(arg_val, 1, corewar, 1);
-	corewar->carriages->reg[arg_val->val[2] - 1] = reverse_vm_int_bytes(
-			(unsigned int *)do_steps(corewar->carriages->op_pos,
-					(val_addr_1 + val_addr_2) % IDX_MOD, corewar->arena));
+	corewar->carriages->reg[arg_val->val[2] - 1] = reverse_vm_bytes(do_steps(corewar->carriages->op_pos,
+		(val_addr_1 + val_addr_2) % IDX_MOD, corewar->arena), 4, corewar->arena);
 }
 
 void    lld(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
@@ -72,9 +71,8 @@ void    lldi(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 		return ;
 	val_addr_1 = get_value_frm_arg(arg_val, 0, corewar, 1);
 	val_addr_2 = get_value_frm_arg(arg_val, 1, corewar, 0);
-	corewar->carriages->reg[arg_val->val[2] - 1] = reverse_vm_int_bytes(
-			(unsigned int *)do_steps(corewar->carriages->op_pos,
-					(val_addr_1 + val_addr_2), corewar->arena));
+	corewar->carriages->reg[arg_val->val[2] - 1] = reverse_vm_bytes(do_steps(corewar->carriages->op_pos,
+		(val_addr_1 + val_addr_2), corewar->arena), 4, corewar->arena);
 	if (!corewar->carriages->reg[arg_val->val[2] - 1])
 		corewar->carriages->carry = 1;
 	else
@@ -100,7 +98,10 @@ void	st(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 		i = 4;
 		val_ptr = (unsigned char *)&val;
 		while (--i >= 0)
-			*ind_pos++ = *(val_ptr + i);
+		{
+			*ind_pos = *(val_ptr + i);
+			ind_pos = do_steps(ind_pos, 1, corewar->arena);
+		}
 	}
 }
 
@@ -121,7 +122,10 @@ void	sti(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 	i = 4;
 	val_ptr = (unsigned char *)&corewar->carriages->reg[arg_val->val[0] - 1];
 	while (--i >= 0)
-		*ind_pos++ = *(val_ptr + i);
+	{
+		*ind_pos = *(val_ptr + i);
+		ind_pos = do_steps(ind_pos, 1, corewar->arena);
+	}
 }
 
 void	zjump(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
@@ -138,17 +142,9 @@ void	add(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 
 	if (!*head)
 		return ;
-/*corewar->game_param.cycles_aft_start > 1429 ? printf("Add instr 1\n") : 0;
-corewar->game_param.cycles_aft_start > 1429 ? printf("\tValue first arg = %d", arg_val->val[0]) : 0;
-corewar->game_param.cycles_aft_start > 1429 ? printf(", from reg = %d\n", corewar->carriages->reg[arg_val->val[0] - 1]) : 0;
-corewar->game_param.cycles_aft_start > 1429 ? printf("\tValue second arg = %d", arg_val->val[1]) : 0;
-corewar->game_param.cycles_aft_start > 1429 ? printf(", from reg = %d\n", corewar->carriages->reg[arg_val->val[1] - 1]) : 0;
-corewar->game_param.cycles_aft_start > 1429 ? printf("\tValie after adding = %d\n", corewar->carriages->reg[arg_val->val[0] - 1] + corewar->carriages->reg[arg_val->val[1] - 1]) : 0;*/
 	val = corewar->carriages->reg[arg_val->val[0] - 1] +
 			corewar->carriages->reg[arg_val->val[1] - 1];
-//corewar->game_param.cycles_aft_start > 1429 ? printf("Add instr 2\n") : 0;
 	corewar->carriages->reg[arg_val->val[2] - 1] = val;
-//corewar->game_param.cycles_aft_start > 1429 ? printf("Add instr 3\n") : 0;
 	if (!val)
 		corewar->carriages->carry = 1;
 	else

@@ -1,3 +1,4 @@
+/*
 
 #include "vis.h"
 #include "op.h"
@@ -29,3 +30,4 @@ void			print_arena(t_vis_tools *vs, char **arena)
 		}
 	}
 }
+*/

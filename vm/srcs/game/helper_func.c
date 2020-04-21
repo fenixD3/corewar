@@ -45,6 +45,20 @@ int		reverse_vm_int_bytes(unsigned int *num_to_rev)
 	return ((int)rev);
 }
 
+int		reverse_vm_bytes(unsigned char *num_to_rev, int bytes,
+				unsigned char *arena)
+{
+	int				res;
+
+	res = 0;
+	while (bytes--)
+	{
+		res |= *num_to_rev << (bytes * 8);
+		num_to_rev = do_steps(num_to_rev, 1, arena);
+	}
+	return (res);
+}
+
 int		get_value_frm_arg(t_parse_args *arg_val, int arg_idx,
 						t_corewar *corewar, _Bool is_idx_mod)
 {

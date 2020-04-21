@@ -1,3 +1,4 @@
+/*
 #include "vis.h"
 
 //bool	init_sdl_images(void)
@@ -57,3 +58,4 @@ bool	init(t_vis_tools *vs)
 //	if (!init_surface(vs)) IF SOME PICTURES NEEDED
 		return (success);
 }
+*/

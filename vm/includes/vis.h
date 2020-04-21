@@ -1,3 +1,4 @@
+/*
 
 #ifndef VIS_H
 # define VIS_H
@@ -81,3 +82,4 @@ void				display_side_menu(t_corewar *crrw, int inxd, t_vis_tools *vs);
 void				display_carriages(t_vis_tools *vs, t_corewar *corewar);
 
 #endif
+*/

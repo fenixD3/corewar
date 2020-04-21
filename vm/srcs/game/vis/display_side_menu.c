@@ -1,3 +1,4 @@
+/*
 #include "vis.h"
 
 void			draw_frame(t_vis_tools *vs, SDL_Color color, int i, int extndd)
@@ -80,3 +81,4 @@ void			display_side_menu(t_corewar *crrw, int inxd, t_vis_tools *vs)
 		i++;
 	}
 }
+*/

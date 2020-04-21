@@ -107,6 +107,9 @@ void reverse_int_bytes(unsigned int *num_to_rev);
 short reverse_vm_short_bytes(unsigned short *num_to_rev);
 int		reverse_vm_int_bytes(unsigned int *num_to_rev);
 
+int		reverse_vm_bytes(unsigned char *num_to_rev, int bytes,
+				unsigned char *arena);
+
 _Bool	is_flg(const char *arg, t_flgs *flgs);
 _Bool	is_champion(const char *arg, t_corewar *corewar);
 

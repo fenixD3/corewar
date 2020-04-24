@@ -1,4 +1,5 @@
 #include "vm.h"
+#include "error_defs.h"
 
 _Bool	is_flg(const char *arg, t_flgs *flgs)
 {
@@ -6,18 +7,21 @@ _Bool	is_flg(const char *arg, t_flgs *flgs)
 
 	good = 1;
 	if (!ft_strcmp(arg, "-n"))
-		flgs->flgs |= N_FLG;
+		flgs->set_flg |= N_FLG;
 	else if (!ft_strcmp(arg, "-dump"))
 	{
-		if (flgs->flgs & DUMP_FLG)
-			get_error("The dump flag is already existent");
-		flgs->flgs |= DUMP_FLG;
+		flgs->set_flg & DUMP_FLG ? get_error(ERR_DUMP_FLG) : 0;
+		flgs->set_flg |= DUMP_FLG;
 	}
 	else if (!ft_strcmp(arg, "-a"))
 	{
-		if (flgs->flgs & A_FLG)
-			get_error("The a flag is already existent");
-		flgs->flgs |= A_FLG;
+		flgs->set_flg & A_FLG ? get_error(ERR_A_FLG) : 0;
+		flgs->set_flg |= A_FLG;
+	}
+	else if (!ft_strcmp(arg, "-v"))
+	{
+		flgs->set_flg & V_FLG ? get_error(ERR_V_FLG) : 0;
+		flgs->set_flg |= V_FLG;
 	}
 	else
 		good = 0;
@@ -32,7 +36,7 @@ _Bool	is_champion(const char *arg, t_corewar *corewar)
 	if (!lst_dot || ft_strcmp(lst_dot + 1, "cor"))
 		return (0);
 	push_back_champ(&corewar->champs, arg);
-	if (corewar->flgs.flgs & N_FLG)
+	if (corewar->flgs.set_flg & N_FLG)
 	{
 		if (is_there_same_champ_num(corewar->champs,
 				corewar->flgs.nxt_player_num))

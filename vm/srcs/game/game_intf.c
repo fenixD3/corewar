@@ -6,10 +6,15 @@ void	carriages_actions(t_corewar *corewar)
 	t_carriages *carriage_head;
 
 	carriage_head = corewar->carriages;
-	int fd = 0;
+	if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num == 2) {
+		printf("If is now cycle %lld\n",
+			   corewar->game_param.cycles_aft_start);
+		fprintf(file, "If is now cycle %lld\n",
+			   corewar->game_param.cycles_aft_start);
+	}
 	while (corewar->carriages)
 	{
-		if (corewar->carriages->is_live && !corewar->carriages->cycle_op)
+		if (!corewar->carriages->cycle_op)
 		{
 			corewar->carriages->op_code = *corewar->carriages->op_pos;
 			while (!valid_op_set_cycle(corewar->carriages->op_pos,
@@ -20,7 +25,7 @@ void	carriages_actions(t_corewar *corewar)
 				corewar->carriages->op_code = *corewar->carriages->op_pos;
 			}
 		}
-		if (corewar->carriages->is_live && corewar->carriages->cycle_op == 1)
+		if (corewar->carriages->cycle_op == 1)
 			make_operation_and_go_next(corewar, &carriage_head);
 		--corewar->carriages->cycle_op;
 		corewar->carriages = corewar->carriages->next;
@@ -28,31 +33,44 @@ void	carriages_actions(t_corewar *corewar)
 	corewar->carriages = carriage_head;
 }
 
-void	lets_check(t_carriages *carriage, t_game_param *game_param)
+void	lets_check(t_corewar *corewar)
 {
+	t_carriages	*carriage;
+
+	carriage = corewar->carriages;
+	int fd = 0;
 	while (carriage)
 	{
-		if (carriage->is_live &&
-				game_param->cycles_aft_start - carriage->cycle_when_live
-				>= game_param->cycles_to_die)
-			carriage->is_live = 0;
-		carriage = carriage->next;
+		if (corewar->game_param.cycles_aft_start == 17440)
+			++fd;
+		if (corewar->game_param.cycles_aft_start - carriage->cycle_when_live
+				>= corewar->game_param.cycles_to_die)
+			carriage = delete_carriage(corewar, carriage->id);
+		carriage = (carriage) ? carriage->next : NULL;
 	}
-	if (game_param->live_period_cnt >= NBR_LIVE)
+	if (corewar->game_param.live_period_cnt >= NBR_LIVE)
 	{
-		game_param->cycles_to_die -= CYCLE_DELTA;
-		game_param->check_cnt = 0;
+		corewar->game_param.cycles_to_die -= CYCLE_DELTA;
+		if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num == 2) {
+			printf("Cycle to die is now %lld\n", corewar->game_param.cycles_to_die);
+			fprintf(file, "Cycle to die is now %lld\n", corewar->game_param.cycles_to_die);
+		}
+		corewar->game_param.check_cnt = 0;
 		g_change = 1;
 	}
 	else
-		++game_param->check_cnt;
-	if (game_param->check_cnt == MAX_CHECKS)
+		++corewar->game_param.check_cnt;
+	if (corewar->game_param.check_cnt == MAX_CHECKS)
 	{
-		game_param->cycles_to_die -= CYCLE_DELTA;
-		game_param->check_cnt = 0;
+		corewar->game_param.cycles_to_die -= CYCLE_DELTA;
+		if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num == 2) {
+			printf("Cycle to die is now %lld\n", corewar->game_param.cycles_to_die);
+			fprintf(file, "Cycle to die is now %lld\n", corewar->game_param.cycles_to_die);
+		}
+		corewar->game_param.check_cnt = 0;
 		g_change = 1;
 	}
-	game_param->live_period_cnt = 0;
+	corewar->game_param.live_period_cnt = 0;
 }
 
 _Bool	valid_op_set_cycle(unsigned char *start_oper, int *cycle_to_op)
@@ -64,7 +82,7 @@ _Bool	valid_op_set_cycle(unsigned char *start_oper, int *cycle_to_op)
 }
 
 void	make_operation_and_go_next(t_corewar *corewar,
-					t_carriages **carriage_head)
+				t_carriages **carriage_head)
 {
 	unsigned char	idx_op;
 	unsigned char	*start_op;
@@ -77,6 +95,16 @@ void	make_operation_and_go_next(t_corewar *corewar,
 			g_op[idx_op], corewar->arena);
 	if (is_args_valid(&args_val, start_op, &g_op[idx_op], corewar->arena))
 		(*instrs_ptr[idx_op])(corewar, &args_val, carriage_head);
-	corewar->carriages->op_pos = skip_op(start_op, args_val.code_args,
+	start_op = skip_op(start_op, args_val.code_args,
 				g_op[idx_op], corewar->arena);
+	corewar->carriages->cnt_bytes_to_op = cnt_bytes_for_op(&g_op[idx_op], args_val.code_args);
+	if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num == 16)
+	{
+		printf("ADV %d (%#06x -> %#06x) ",
+			   corewar->carriages->cnt_bytes_to_op, (int)(corewar->carriages->op_pos - corewar->arena), (int)(start_op - corewar->arena));
+		fprintf(file, "ADV %d (%#06x -> %#06x) ",
+			   corewar->carriages->cnt_bytes_to_op, (int)(corewar->carriages->op_pos - corewar->arena), (int)(start_op - corewar->arena));
+		print_command_bytes(corewar->carriages->op_pos, corewar->carriages->cnt_bytes_to_op, corewar->arena);
+	}
+	corewar->carriages->op_pos = start_op;
 }

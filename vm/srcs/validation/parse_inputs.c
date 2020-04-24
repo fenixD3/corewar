@@ -10,7 +10,7 @@ void	parse_arguments(int ac, char **av, t_corewar *corewar)
 	{
 		if (is_flg(av[i], &corewar->flgs))
 		{
-			if (corewar->flgs.flgs & N_FLG)
+			if (corewar->flgs.set_flg & N_FLG)
 			{
 				if (is_champion(av[++i], corewar))
 					get_error("After -n flag must be a number");
@@ -19,18 +19,20 @@ void	parse_arguments(int ac, char **av, t_corewar *corewar)
 					get_error(ERR_NUM_AFT_N_FLG);
 				if (!is_champion(av[++i], corewar))
 					get_error("After -n <num> must be a champion");
-				corewar->flgs.flgs ^= N_FLG;
+				corewar->flgs.set_flg ^= N_FLG;
 			}
-			else if (corewar->flgs.flgs & DUMP_FLG)
+			else if (corewar->flgs.set_flg & DUMP_FLG)
 				corewar->flgs.nbr_cycles_dump = ft_atoi(av[++i]);
+			else if (corewar->flgs.set_flg & V_FLG) /// not need in final!
+				corewar->flgs.verb_num = ft_atoi(av[++i]);
 		}
 		else if (!is_champion(av[i], corewar))
 			get_error("Champion file should contain .cor completion");
 	}
-	validation_champions(corewar->champs);
+	validation_champions(corewar->champs, &corewar->game_param);
 }
 
-void	validation_champions(t_champion *champs)
+void	validation_champions(t_champion *champs, t_game_param *game_params)
 {
 	int		fd;
 	int		cur_champ_num;
@@ -50,6 +52,8 @@ champions in this battle");
 			++cur_champ_num;
 		if (!champs->num)
 			champs->num = cur_champ_num++;
+		if (!champs->next)
+			game_params->who_lst_live = champs->num;
 		champs = champs->next;
 	}
 }

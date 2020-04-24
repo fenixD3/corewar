@@ -12,7 +12,10 @@ unsigned char *get_arguments_frm_code(unsigned char *arg_type_code,
 		args[idx] = DIR_CODE;
 	else
 		while (idx != oper.num_args)
-			args[idx++] = *arg_type_code >> (8 - (idx + 1) * 2) & 0x3u;
+		{
+			args[idx] = *arg_type_code >> (8 - (idx + 1) * 2) & 0x3u;
+			++idx;
+		}
 	return (oper.argument_type_code ? do_steps(arg_type_code, 1, arena) : arg_type_code);
 }
 

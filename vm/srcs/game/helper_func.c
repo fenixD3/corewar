@@ -11,40 +11,6 @@ unsigned char	*do_steps(unsigned char *start, int step,
 	return (start);
 }
 
-short	reverse_vm_short_bytes(unsigned short *num_to_rev)
-{
-	unsigned short	rev;
-	unsigned short	byte;
-	unsigned short	i;
-
-	rev = 0;
-	i = 0;
-	while (i < 16)
-	{
-		byte = *num_to_rev >> i & 0xFFu;
-		rev |= byte << (16u - 8u - i);
-		i += 8;
-	}
-	return ((short)rev);
-}
-
-int		reverse_vm_int_bytes(unsigned int *num_to_rev)
-{
-	unsigned int	rev;
-	unsigned int	byte;
-	unsigned int	i;
-
-	rev = 0;
-	i = 0;
-	while (i < 32)
-	{
-		byte = *num_to_rev >> i & 0xFFu;
-		rev |= byte << (32u - 8u - i);
-		i += 8;
-	}
-	return ((int)rev);
-}
-
 int		reverse_vm_bytes(unsigned char *num_to_rev, int bytes,
 				unsigned char *arena)
 {
@@ -71,13 +37,55 @@ int		get_value_frm_arg(t_parse_args *arg_val, int arg_idx,
 		val = arg_val->val[arg_idx];
 	else if (arg_val->code_args[arg_idx] == IND_CODE)
 	{
-		if (is_idx_mod)
+		/*if (is_idx_mod)
 			ind_pos = (unsigned int *)do_steps(corewar->carriages->op_pos,
 				arg_val->val[arg_idx] % IDX_MOD, corewar->arena);
 		else
 			ind_pos = (unsigned int *)do_steps(corewar->carriages->op_pos,
 					arg_val->val[arg_idx], corewar->arena);
-		val = reverse_vm_int_bytes(ind_pos);
+		val = reverse_vm_int_bytes(ind_pos);*/
+		if (is_idx_mod)
+			val = reverse_vm_bytes(do_steps(corewar->carriages->op_pos,
+				arg_val->val[arg_idx] % IDX_MOD, corewar->arena), 4, corewar->arena);
+		else
+			val = reverse_vm_bytes(do_steps(corewar->carriages->op_pos,
+				arg_val->val[arg_idx], corewar->arena), 4, corewar->arena);
 	}
 	return (val);
+}
+
+/// For -v
+int		cnt_bytes_for_op(const t_op *op, const t_arg_type *code_args)
+{
+	int		cnt_bytes;
+	int		idx;
+
+	cnt_bytes = 1;
+	idx = -1;
+	if (op->argument_type_code)
+		++cnt_bytes;
+	while (++idx != op->num_args)
+	{
+		if (code_args[idx] == REG_CODE)
+			++cnt_bytes;
+		else if (code_args[idx] == DIR_CODE)
+			cnt_bytes += op->size_t_dir;
+		else if (code_args[idx] == IND_CODE)
+			cnt_bytes += 2;
+	}
+	return (cnt_bytes);
+}
+
+void print_command_bytes(unsigned char *start_op,
+						 int bytes_to_nxt,
+						 unsigned char *arena)
+{
+	while (bytes_to_nxt--)
+	{
+		printf("%02x ", *start_op);
+		fprintf(file, "%02x ", *start_op);
+		start_op = do_steps(start_op, 1, arena);
+	}
+	printf("\n");
+	fprintf(file, "\n");
 }

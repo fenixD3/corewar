@@ -1095,6 +1095,7 @@ CMakeFiles/dencorewar.dir/vm/srcs/validation/parse_input_intf.c.obj
  ../libft/memlist.h
  ../op.h
  ../options.h
+ ../vm/includes/error_defs.h
  ../vm/includes/vm.h
  C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/validation/parse_input_intf.c
 CMakeFiles/dencorewar.dir/vm/srcs/validation/parse_inputs.c.obj

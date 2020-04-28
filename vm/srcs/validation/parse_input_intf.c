@@ -34,7 +34,7 @@ _Bool	is_champion(const char *arg, t_corewar *corewar)
 
 	lst_dot = ft_strrchr(arg, '.');
 	if (!lst_dot || ft_strcmp(lst_dot + 1, "cor"))
-		return (0);
+		return (0); /// do comment here from 35 to 37 lines included
 	push_back_champ(&corewar->champs, arg);
 	if (corewar->flgs.set_flg & N_FLG)
 	{

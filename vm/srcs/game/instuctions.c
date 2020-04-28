@@ -60,6 +60,8 @@ void    ldi(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 
 	if (!*head)
 		return ;
+	val_addr_1 = get_value_frm_arg(arg_val, 0, corewar, 1);
+	val_addr_2 = get_value_frm_arg(arg_val, 1, corewar, 1);
 	if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num == 4) {
 		printf(
 			"p%5d | %s %d %d r%d\n       | -> load from %d + %d = %d (with pc and mod %d)\n",
@@ -68,24 +70,22 @@ void    ldi(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 			arg_val->val[0],
 			arg_val->val[1],
 			arg_val->val[2],
-			arg_val->val[1],
-			arg_val->val[2],
-			arg_val->val[1] + arg_val->val[2],
-			(arg_val->val[1] + arg_val->val[2]) % IDX_MOD);
-		fprintf(file,
-			"p%5d | %s %d %d r%d\n       | -> load from %d + %d = %d (with pc and mod %d)\n",
-			corewar->carriages->id,
-			"ldi",
 			arg_val->val[0],
 			arg_val->val[1],
-			arg_val->val[2],
-			arg_val->val[1],
-			arg_val->val[2],
-			arg_val->val[1] + arg_val->val[2],
-			(arg_val->val[1] + arg_val->val[2]) % IDX_MOD);
+			arg_val->val[0] + arg_val->val[1],
+			(val_addr_1 + val_addr_2) % IDX_MOD);
+		fprintf(file,
+				"p%5d | %s %d %d r%d\n       | -> load from %d + %d = %d (with pc and mod %d)\n",
+				corewar->carriages->id,
+				"ldi",
+				arg_val->val[0],
+				arg_val->val[1],
+				arg_val->val[2],
+				arg_val->val[0],
+				arg_val->val[1],
+				arg_val->val[0] + arg_val->val[1],
+				(val_addr_1 + val_addr_2) % IDX_MOD);
 	}
-	val_addr_1 = get_value_frm_arg(arg_val, 0, corewar, 1);
-	val_addr_2 = get_value_frm_arg(arg_val, 1, corewar, 1);
 	corewar->carriages->reg[arg_val->val[2] - 1] = reverse_vm_bytes(do_steps(corewar->carriages->op_pos,
 		(val_addr_1 + val_addr_2) % IDX_MOD, corewar->arena), 4, corewar->arena);
 }
@@ -117,22 +117,30 @@ void    lldi(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 
 	if (!*head)
 		return ;
-	if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num == 4) {
-		printf("p%5d | %s %d %d r%d\n",
-			   corewar->carriages->id,
-			   "lldi",
-			   arg_val->val[0],
-			   arg_val->val[1],
-			   arg_val->val[2]);
-		fprintf(file, "p%5d | %s %d %d r%d\n",
-			   corewar->carriages->id,
-			   "lldi",
-			   arg_val->val[0],
-			   arg_val->val[1],
-			   arg_val->val[2]);
-	}
 	val_addr_1 = get_value_frm_arg(arg_val, 0, corewar, 1);
 	val_addr_2 = get_value_frm_arg(arg_val, 1, corewar, 0);
+	if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num == 4) {
+		printf("p%5d | %s %d %d r%d\n       | -> load from %d + %d = %d (with pc %d)\n",
+			   corewar->carriages->id,
+			   "lldi",
+			   arg_val->val[0],
+			   arg_val->val[1],
+			   arg_val->val[2],
+			   arg_val->val[0],
+			   arg_val->val[1],
+			   arg_val->val[0] + arg_val->val[1],
+			   (val_addr_1 + val_addr_2));
+		fprintf(file, "p%5d | %s %d %d r%d\n       | -> load from %d + %d = %d (with pc %d)\n",
+				corewar->carriages->id,
+				"lldi",
+				arg_val->val[0],
+				arg_val->val[1],
+				arg_val->val[2],
+				arg_val->val[0],
+				arg_val->val[1],
+				arg_val->val[0] + arg_val->val[1],
+				(val_addr_1 + val_addr_2));
+	}
 	corewar->carriages->reg[arg_val->val[2] - 1] = reverse_vm_bytes(do_steps(corewar->carriages->op_pos,
 		(val_addr_1 + val_addr_2), corewar->arena), 4, corewar->arena);
 	if (!corewar->carriages->reg[arg_val->val[2] - 1])
@@ -183,6 +191,8 @@ void	sti(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 
 	if (!*head)
 		return ;
+	val_addr_1 = get_value_frm_arg(arg_val, 1, corewar, 1);
+	val_addr_2 = get_value_frm_arg(arg_val, 2, corewar, 1);
 	if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num == 4) {
 		printf(
 			"p%5d | %s r%d %d %d\n       | -> store to %d + %d = %d (with pc and mod %d)\n",
@@ -194,21 +204,19 @@ void	sti(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 			arg_val->val[1],
 			arg_val->val[2],
 			arg_val->val[1] + arg_val->val[2],
-			(arg_val->val[1] + arg_val->val[2]) % IDX_MOD);
+			(val_addr_1 + val_addr_2) % IDX_MOD);
 		fprintf(file,
-			"p%5d | %s r%d %d %d\n       | -> store to %d + %d = %d (with pc and mod %d)\n",
-			corewar->carriages->id,
-			"sti",
-			arg_val->val[0],
-			arg_val->val[1],
-			arg_val->val[2],
-			arg_val->val[1],
-			arg_val->val[2],
-			arg_val->val[1] + arg_val->val[2],
-			(arg_val->val[1] + arg_val->val[2]) % IDX_MOD);
+				"p%5d | %s r%d %d %d\n       | -> store to %d + %d = %d (with pc and mod %d)\n",
+				corewar->carriages->id,
+				"sti",
+				arg_val->val[0],
+				arg_val->val[1],
+				arg_val->val[2],
+				arg_val->val[1],
+				arg_val->val[2],
+				arg_val->val[1] + arg_val->val[2],
+				(val_addr_1 + val_addr_2) % IDX_MOD);
 	}
-	val_addr_1 = get_value_frm_arg(arg_val, 1, corewar, 1);
-	val_addr_2 = get_value_frm_arg(arg_val, 2, corewar, 1);
 	ind_pos = do_steps(corewar->carriages->op_pos,
 			(val_addr_1 + val_addr_2) % IDX_MOD, corewar->arena);
 	i = 4;

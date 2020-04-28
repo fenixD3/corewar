@@ -27,7 +27,14 @@ int		prosess_press(int32_t x, int32_t y)
 		{
 			if (10 + j * 24 < x && x < 24 + j * 24 && 15 +
 				(i / 64) * 15 < y && y < 25 + (i / 64) * 15)
-				return (i);
+				return (g_mode = i);
+			if (x > 26 + 64 * 24 && x < 26 + 64 * 24 +
+				g_vs->wight - 42 - 64 * 24 && y > 21 +
+						63 * i && y < 21 + 51 + 63 * i)
+			{
+				printf("carrage %d\n", i);
+				return (y + 4100);
+			}
 			j++;
 			i++;
 		}
@@ -37,6 +44,8 @@ int		prosess_press(int32_t x, int32_t y)
 
 void	track_events(int *indx, SDL_Event *e, bool *quit, int *stop)
 {
+	t_vc		*vc;
+
 	while (SDL_PollEvent(&(*e)) != 0)
 	{
 		if ((*e).type == SDL_QUIT)
@@ -54,7 +63,16 @@ void	track_events(int *indx, SDL_Event *e, bool *quit, int *stop)
 				*quit = true;
 			}
 			if ((*e).key.keysym.sym == SDLK_RIGHT)
+			{
 				*stop = 0;
+				g_mode = -1;
+				vc = g_vs->vc_list;
+				while (vc != NULL)
+				{
+					vc->is_open = false;
+					vc = vc->next;
+				}
+			}
 		}
 	}
 }

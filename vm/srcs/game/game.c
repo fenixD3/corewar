@@ -15,15 +15,14 @@ void	start_game(t_corewar *corewar)
 		go_exit(ERR_CREATE_VS);
 	quit = false;
 	g_change = 1;
+	g_mode = -1;
 	while (!quit)
 	{
-//		printf("%zu\n", corewar->game_param.cycles_aft_start);
-		/*if (corewar->game_param.cycles_aft_start == 1429)
-			fd++;*/
 		carriages_actions(corewar);
 		corewar->game_param.cycles_aft_start > 1429 ? printf("Aft actions\n") : 0;
 		if (!(++corewar->game_param.cycles_aft_start %
-corewar->game_param.cycles_to_die) || corewar->game_param.cycles_to_die <= 0)
+		corewar->game_param.cycles_to_die) ||
+		corewar->game_param.cycles_to_die <= 0)
 			lets_check(corewar->carriages, &corewar->game_param);
 		if (corewar->flgs.flgs & DUMP_FLG &&
 		corewar->game_param.cycles_aft_start == corewar->flgs.nbr_cycles_dump)

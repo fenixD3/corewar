@@ -20,6 +20,9 @@
 
 # define DESTROY_TXTR(X) if (X) SDL_DestroyTexture(X);
 
+
+int g_mode;
+
 typedef struct  s_visual_carriages
 {
 	t_carriages                 *carriage;

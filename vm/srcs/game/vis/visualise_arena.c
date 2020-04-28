@@ -40,7 +40,6 @@ void	ft_free_strsplit(char **str_array)
 	}
 }
 
-
 char	**convert_arena(t_corewar *corewar)
 {
 	int		i;

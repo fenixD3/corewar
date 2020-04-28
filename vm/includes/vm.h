@@ -17,8 +17,6 @@
 
 int g_change;
 
-
-
 typedef struct	s_file
 {
 	t_header		header;

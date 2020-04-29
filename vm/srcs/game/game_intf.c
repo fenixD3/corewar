@@ -6,10 +6,10 @@ void	carriages_actions(t_corewar *corewar)
 	t_carriages *carriage_head;
 
 	carriage_head = corewar->carriages;
-	if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num == 2) {
-		printf("If is now cycle %lld\n",
+	if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num & 2) {
+		printf("It is now cycle %lld\n",
 			   corewar->game_param.cycles_aft_start);
-		fprintf(file, "If is now cycle %lld\n",
+		fprintf(file, "It is now cycle %lld\n",
 			   corewar->game_param.cycles_aft_start);
 	}
 	while (corewar->carriages)
@@ -51,7 +51,7 @@ void	lets_check(t_corewar *corewar)
 	if (corewar->game_param.live_period_cnt >= NBR_LIVE)
 	{
 		corewar->game_param.cycles_to_die -= CYCLE_DELTA;
-		if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num == 2) {
+		if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num & 2) {
 			printf("Cycle to die is now %lld\n", corewar->game_param.cycles_to_die);
 			fprintf(file, "Cycle to die is now %lld\n", corewar->game_param.cycles_to_die);
 		}
@@ -63,7 +63,7 @@ void	lets_check(t_corewar *corewar)
 	if (corewar->game_param.check_cnt == MAX_CHECKS)
 	{
 		corewar->game_param.cycles_to_die -= CYCLE_DELTA;
-		if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num == 2) {
+		if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num & 2) {
 			printf("Cycle to die is now %lld\n", corewar->game_param.cycles_to_die);
 			fprintf(file, "Cycle to die is now %lld\n", corewar->game_param.cycles_to_die);
 		}
@@ -98,7 +98,7 @@ void	make_operation_and_go_next(t_corewar *corewar,
 	start_op = skip_op(start_op, args_val.code_args,
 				g_op[idx_op], corewar->arena);
 	corewar->carriages->cnt_bytes_to_op = cnt_bytes_for_op(&g_op[idx_op], args_val.code_args);
-	if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num == 16)
+	if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num & 16)
 	{
 		printf("ADV %d (%#06x -> %#06x) ",
 			   corewar->carriages->cnt_bytes_to_op, (int)(corewar->carriages->op_pos - corewar->arena), (int)(start_op - corewar->arena));

@@ -36,6 +36,8 @@ stdlib.h
 op.h
 ../op.h
 
+../vm/includes/error_defs.h
+
 ../vm/includes/vm.h
 ft_ptintf.h
 ../vm/includes/ft_ptintf.h
@@ -53,4 +55,18 @@ vm.h
 C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/vm.h
 options.h
 C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/options.h
+
+C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/instuctions.c
+vm.h
+C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/vm.h
+
+C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/struct_intf/carriage_intf.c
+vm.h
+C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/struct_intf/vm.h
+
+C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/validation/parse_input_intf.c
+vm.h
+C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/validation/vm.h
+error_defs.h
+C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/validation/error_defs.h
 

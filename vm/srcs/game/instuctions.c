@@ -6,7 +6,7 @@ void    live(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 
 	if (!*head)
 	    return ;
-	if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num == 4) {
+	if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num & 4) {
 		printf("p%5d | %s %d\n",
 			   corewar->carriages->id, "live", arg_val->val[0]);
 		fprintf(file, "p%5d | %s %d\n",
@@ -21,7 +21,7 @@ void    live(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 		if (champ->num == -arg_val->val[0])
 		{
 			corewar->game_param.who_lst_live = -arg_val->val[0];
-			if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num == 1) {
+			if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num & 1) {
 				printf("Player %d (%s) is said to be alive\n",
 					   -arg_val->val[0], champ->file.header.prog_name);
 				fprintf(file, "Player %d (%s) is said to be alive\n",
@@ -39,7 +39,7 @@ void    ld(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 
     if (!*head)
         return ;
-	if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num == 4) {
+	if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num & 4) {
 		printf("p%5d | %s %d r%d\n",
 			   corewar->carriages->id, "ld", arg_val->val[0], arg_val->val[1]);
 		fprintf(file, "p%5d | %s %d r%d\n",
@@ -62,7 +62,7 @@ void    ldi(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 		return ;
 	val_addr_1 = get_value_frm_arg(arg_val, 0, corewar, 1);
 	val_addr_2 = get_value_frm_arg(arg_val, 1, corewar, 1);
-	if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num == 4) {
+	if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num & 4) {
 		printf(
 			"p%5d | %s %d %d r%d\n       | -> load from %d + %d = %d (with pc and mod %d)\n",
 			corewar->carriages->id,
@@ -96,7 +96,7 @@ void    lld(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 
 	if (!*head)
 		return ;
-	if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num == 4) {
+	if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num & 4) {
 		printf("p%5d | %s %d r%d\n",
 			   corewar->carriages->id, "lld", arg_val->val[0], arg_val->val[1]);
 		fprintf(file, "p%5d | %s %d r%d\n",
@@ -119,7 +119,7 @@ void    lldi(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 		return ;
 	val_addr_1 = get_value_frm_arg(arg_val, 0, corewar, 1);
 	val_addr_2 = get_value_frm_arg(arg_val, 1, corewar, 0);
-	if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num == 4) {
+	if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num & 4) {
 		printf("p%5d | %s %d %d r%d\n       | -> load from %d + %d = %d (with pc %d)\n",
 			   corewar->carriages->id,
 			   "lldi",
@@ -158,7 +158,7 @@ void	st(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 
 	if (!*head)
 		return ;
-	if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num == 4) {
+	if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num & 4) {
 		printf("p%5d | %s r%d %d\n",
 			   corewar->carriages->id, "st", arg_val->val[0], arg_val->val[1]);
 		fprintf(file, "p%5d | %s r%d %d\n",
@@ -193,7 +193,7 @@ void	sti(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 		return ;
 	val_addr_1 = get_value_frm_arg(arg_val, 1, corewar, 1);
 	val_addr_2 = get_value_frm_arg(arg_val, 2, corewar, 1);
-	if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num == 4) {
+	if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num & 4) {
 		printf(
 			"p%5d | %s r%d %d %d\n       | -> store to %d + %d = %d (with pc and mod %d)\n",
 			corewar->carriages->id,
@@ -230,7 +230,7 @@ void	sti(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 
 void	zjump(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 {
-	if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num == 4) {
+	if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num & 4) {
 		printf("p%5d | %s %d ",
 			   corewar->carriages->id, "zjmp", arg_val->val[0]);
 		fprintf(file, "p%5d | %s %d ",
@@ -238,7 +238,7 @@ void	zjump(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 	}
 	if (!corewar->carriages->carry || !*head)
 	{
-		if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num == 4) {
+		if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num & 4) {
 			printf("FAILED\n");
 			fprintf(file, "FAILED\n");
 		}
@@ -246,7 +246,7 @@ void	zjump(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 	}
 	corewar->carriages->op_pos = do_steps(corewar->carriages->op_pos,
 			arg_val->val[0] % IDX_MOD, corewar->arena);
-	if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num == 4) {
+	if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num & 4) {
 		printf("OK\n");
 		fprintf(file, "OK\n");
 	}
@@ -258,7 +258,7 @@ void	add(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 
 	if (!*head)
 		return ;
-	if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num == 4) {
+	if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num & 4) {
 		printf("p%5d | %s r%d r%d r%d\n",
 			   corewar->carriages->id,
 			   "add",
@@ -287,7 +287,7 @@ void	sub(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 
 	if (!*head)
 		return ;
-	if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num == 4) {
+	if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num & 4) {
 		printf("p%5d | %s r%d r%d r%d\n",
 			   corewar->carriages->id,
 			   "sub",
@@ -317,7 +317,7 @@ void	and(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 
 	if (!*head)
 		return ;
-	if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num == 4) {
+	if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num & 4) {
 		printf("p%5d | %s %d %d r%d\n",
 			   corewar->carriages->id,
 			   "and",
@@ -347,7 +347,7 @@ void	or(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 
 	if (!*head)
 		return ;
-	if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num == 4) {
+	if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num & 4) {
 		printf("p%5d | %s %d %d r%d\n",
 			   corewar->carriages->id,
 			   "or",
@@ -377,7 +377,7 @@ void	xor(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 
 	if (!*head)
 		return ;
-	if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num == 4) {
+	if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num & 4) {
 		printf("p%5d | %s %d %d r%d\n",
 			   corewar->carriages->id,
 			   "xor",
@@ -402,7 +402,7 @@ void	xor(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 
 void	aff(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 {
-	if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num == 4) {
+	if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num & 4) {
 		printf("%s %c\n",
 			   "Aff:", (char)corewar->carriages->reg[arg_val->val[0] - 1]);
 		fprintf(file, "%s %c\n",
@@ -416,7 +416,7 @@ void	aff(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 
 void	nfork(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 {
-	if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num == 4) {
+	if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num & 4) {
 		printf("p%5d | %s %d (%d)\n",
 			   corewar->carriages->id,
 			   "fork",
@@ -439,7 +439,7 @@ void	nfork(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 
 void	lfork(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 {
-	if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num == 4) {
+	if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num & 4) {
 		printf("p%5d | %s %d (%d)\n",
 			   corewar->carriages->id,
 			   "lfork",

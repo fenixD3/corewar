@@ -179,6 +179,7 @@ add_executable(dencorewar
         vm/srcs/game/vis/vc_list.c
         vm/srcs/game/vis/vc_sort.c
         vm/srcs/game/vis/visualise_arena.c
+        vm/srcs/game/vis/disasm.c
         vm/srcs/game/args_intf.c
         vm/srcs/game/game.c
         vm/srcs/game/game_intf.c

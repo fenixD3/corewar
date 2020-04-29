@@ -1981,9 +1981,22 @@ CMakeFiles/dencorewar.dir/vm/srcs/game/vis/visualise_arena.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/vm/srcs/game/vis/visualise_arena.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/vm/srcs/game/vis/visualise_arena.c -o CMakeFiles/dencorewar.dir/vm/srcs/game/vis/visualise_arena.c.s
 
+CMakeFiles/dencorewar.dir/vm/srcs/game/vis/disasm.c.o: CMakeFiles/dencorewar.dir/flags.make
+CMakeFiles/dencorewar.dir/vm/srcs/game/vis/disasm.c.o: ../vm/srcs/game/vis/disasm.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_149) "Building C object CMakeFiles/dencorewar.dir/vm/srcs/game/vis/disasm.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/dencorewar.dir/vm/srcs/game/vis/disasm.c.o   -c /Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/vm/srcs/game/vis/disasm.c
+
+CMakeFiles/dencorewar.dir/vm/srcs/game/vis/disasm.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/vm/srcs/game/vis/disasm.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/vm/srcs/game/vis/disasm.c > CMakeFiles/dencorewar.dir/vm/srcs/game/vis/disasm.c.i
+
+CMakeFiles/dencorewar.dir/vm/srcs/game/vis/disasm.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/vm/srcs/game/vis/disasm.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/vm/srcs/game/vis/disasm.c -o CMakeFiles/dencorewar.dir/vm/srcs/game/vis/disasm.c.s
+
 CMakeFiles/dencorewar.dir/vm/srcs/game/args_intf.c.o: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/vm/srcs/game/args_intf.c.o: ../vm/srcs/game/args_intf.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_149) "Building C object CMakeFiles/dencorewar.dir/vm/srcs/game/args_intf.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_150) "Building C object CMakeFiles/dencorewar.dir/vm/srcs/game/args_intf.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/dencorewar.dir/vm/srcs/game/args_intf.c.o   -c /Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/vm/srcs/game/args_intf.c
 
 CMakeFiles/dencorewar.dir/vm/srcs/game/args_intf.c.i: cmake_force
@@ -1996,7 +2009,7 @@ CMakeFiles/dencorewar.dir/vm/srcs/game/args_intf.c.s: cmake_force
 
 CMakeFiles/dencorewar.dir/vm/srcs/game/game.c.o: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/vm/srcs/game/game.c.o: ../vm/srcs/game/game.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_150) "Building C object CMakeFiles/dencorewar.dir/vm/srcs/game/game.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_151) "Building C object CMakeFiles/dencorewar.dir/vm/srcs/game/game.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/dencorewar.dir/vm/srcs/game/game.c.o   -c /Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/vm/srcs/game/game.c
 
 CMakeFiles/dencorewar.dir/vm/srcs/game/game.c.i: cmake_force
@@ -2009,7 +2022,7 @@ CMakeFiles/dencorewar.dir/vm/srcs/game/game.c.s: cmake_force
 
 CMakeFiles/dencorewar.dir/vm/srcs/game/game_intf.c.o: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/vm/srcs/game/game_intf.c.o: ../vm/srcs/game/game_intf.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_151) "Building C object CMakeFiles/dencorewar.dir/vm/srcs/game/game_intf.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_152) "Building C object CMakeFiles/dencorewar.dir/vm/srcs/game/game_intf.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/dencorewar.dir/vm/srcs/game/game_intf.c.o   -c /Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/vm/srcs/game/game_intf.c
 
 CMakeFiles/dencorewar.dir/vm/srcs/game/game_intf.c.i: cmake_force
@@ -2022,7 +2035,7 @@ CMakeFiles/dencorewar.dir/vm/srcs/game/game_intf.c.s: cmake_force
 
 CMakeFiles/dencorewar.dir/vm/srcs/game/helper_func.c.o: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/vm/srcs/game/helper_func.c.o: ../vm/srcs/game/helper_func.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_152) "Building C object CMakeFiles/dencorewar.dir/vm/srcs/game/helper_func.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_153) "Building C object CMakeFiles/dencorewar.dir/vm/srcs/game/helper_func.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/dencorewar.dir/vm/srcs/game/helper_func.c.o   -c /Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/vm/srcs/game/helper_func.c
 
 CMakeFiles/dencorewar.dir/vm/srcs/game/helper_func.c.i: cmake_force
@@ -2035,7 +2048,7 @@ CMakeFiles/dencorewar.dir/vm/srcs/game/helper_func.c.s: cmake_force
 
 CMakeFiles/dencorewar.dir/vm/srcs/game/instuctions.c.o: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/vm/srcs/game/instuctions.c.o: ../vm/srcs/game/instuctions.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_153) "Building C object CMakeFiles/dencorewar.dir/vm/srcs/game/instuctions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_154) "Building C object CMakeFiles/dencorewar.dir/vm/srcs/game/instuctions.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/dencorewar.dir/vm/srcs/game/instuctions.c.o   -c /Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/vm/srcs/game/instuctions.c
 
 CMakeFiles/dencorewar.dir/vm/srcs/game/instuctions.c.i: cmake_force
@@ -2048,7 +2061,7 @@ CMakeFiles/dencorewar.dir/vm/srcs/game/instuctions.c.s: cmake_force
 
 CMakeFiles/dencorewar.dir/vm/srcs/struct_intf/carriage_intf.c.o: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/vm/srcs/struct_intf/carriage_intf.c.o: ../vm/srcs/struct_intf/carriage_intf.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_154) "Building C object CMakeFiles/dencorewar.dir/vm/srcs/struct_intf/carriage_intf.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_155) "Building C object CMakeFiles/dencorewar.dir/vm/srcs/struct_intf/carriage_intf.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/dencorewar.dir/vm/srcs/struct_intf/carriage_intf.c.o   -c /Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/vm/srcs/struct_intf/carriage_intf.c
 
 CMakeFiles/dencorewar.dir/vm/srcs/struct_intf/carriage_intf.c.i: cmake_force
@@ -2061,7 +2074,7 @@ CMakeFiles/dencorewar.dir/vm/srcs/struct_intf/carriage_intf.c.s: cmake_force
 
 CMakeFiles/dencorewar.dir/vm/srcs/struct_intf/corewar_intf.c.o: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/vm/srcs/struct_intf/corewar_intf.c.o: ../vm/srcs/struct_intf/corewar_intf.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_155) "Building C object CMakeFiles/dencorewar.dir/vm/srcs/struct_intf/corewar_intf.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_156) "Building C object CMakeFiles/dencorewar.dir/vm/srcs/struct_intf/corewar_intf.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/dencorewar.dir/vm/srcs/struct_intf/corewar_intf.c.o   -c /Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/vm/srcs/struct_intf/corewar_intf.c
 
 CMakeFiles/dencorewar.dir/vm/srcs/struct_intf/corewar_intf.c.i: cmake_force
@@ -2074,7 +2087,7 @@ CMakeFiles/dencorewar.dir/vm/srcs/struct_intf/corewar_intf.c.s: cmake_force
 
 CMakeFiles/dencorewar.dir/vm/srcs/validation/parse_input_intf.c.o: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/vm/srcs/validation/parse_input_intf.c.o: ../vm/srcs/validation/parse_input_intf.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_156) "Building C object CMakeFiles/dencorewar.dir/vm/srcs/validation/parse_input_intf.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_157) "Building C object CMakeFiles/dencorewar.dir/vm/srcs/validation/parse_input_intf.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/dencorewar.dir/vm/srcs/validation/parse_input_intf.c.o   -c /Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/vm/srcs/validation/parse_input_intf.c
 
 CMakeFiles/dencorewar.dir/vm/srcs/validation/parse_input_intf.c.i: cmake_force
@@ -2087,7 +2100,7 @@ CMakeFiles/dencorewar.dir/vm/srcs/validation/parse_input_intf.c.s: cmake_force
 
 CMakeFiles/dencorewar.dir/vm/srcs/validation/parse_inputs.c.o: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/vm/srcs/validation/parse_inputs.c.o: ../vm/srcs/validation/parse_inputs.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_157) "Building C object CMakeFiles/dencorewar.dir/vm/srcs/validation/parse_inputs.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_158) "Building C object CMakeFiles/dencorewar.dir/vm/srcs/validation/parse_inputs.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/dencorewar.dir/vm/srcs/validation/parse_inputs.c.o   -c /Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/vm/srcs/validation/parse_inputs.c
 
 CMakeFiles/dencorewar.dir/vm/srcs/validation/parse_inputs.c.i: cmake_force
@@ -2100,7 +2113,7 @@ CMakeFiles/dencorewar.dir/vm/srcs/validation/parse_inputs.c.s: cmake_force
 
 CMakeFiles/dencorewar.dir/vm/srcs/validation/reports.c.o: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/vm/srcs/validation/reports.c.o: ../vm/srcs/validation/reports.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_158) "Building C object CMakeFiles/dencorewar.dir/vm/srcs/validation/reports.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_159) "Building C object CMakeFiles/dencorewar.dir/vm/srcs/validation/reports.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/dencorewar.dir/vm/srcs/validation/reports.c.o   -c /Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/vm/srcs/validation/reports.c
 
 CMakeFiles/dencorewar.dir/vm/srcs/validation/reports.c.i: cmake_force
@@ -2113,7 +2126,7 @@ CMakeFiles/dencorewar.dir/vm/srcs/validation/reports.c.s: cmake_force
 
 CMakeFiles/dencorewar.dir/vm/srcs/main.c.o: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/vm/srcs/main.c.o: ../vm/srcs/main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_159) "Building C object CMakeFiles/dencorewar.dir/vm/srcs/main.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_160) "Building C object CMakeFiles/dencorewar.dir/vm/srcs/main.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/dencorewar.dir/vm/srcs/main.c.o   -c /Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/vm/srcs/main.c
 
 CMakeFiles/dencorewar.dir/vm/srcs/main.c.i: cmake_force
@@ -2126,7 +2139,7 @@ CMakeFiles/dencorewar.dir/vm/srcs/main.c.s: cmake_force
 
 CMakeFiles/dencorewar.dir/fast_strsplit.c.o: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/fast_strsplit.c.o: ../fast_strsplit.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_160) "Building C object CMakeFiles/dencorewar.dir/fast_strsplit.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_161) "Building C object CMakeFiles/dencorewar.dir/fast_strsplit.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/dencorewar.dir/fast_strsplit.c.o   -c /Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/fast_strsplit.c
 
 CMakeFiles/dencorewar.dir/fast_strsplit.c.i: cmake_force
@@ -2139,7 +2152,7 @@ CMakeFiles/dencorewar.dir/fast_strsplit.c.s: cmake_force
 
 CMakeFiles/dencorewar.dir/file_to_list.c.o: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/file_to_list.c.o: ../file_to_list.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_161) "Building C object CMakeFiles/dencorewar.dir/file_to_list.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_162) "Building C object CMakeFiles/dencorewar.dir/file_to_list.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/dencorewar.dir/file_to_list.c.o   -c /Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/file_to_list.c
 
 CMakeFiles/dencorewar.dir/file_to_list.c.i: cmake_force
@@ -2152,7 +2165,7 @@ CMakeFiles/dencorewar.dir/file_to_list.c.s: cmake_force
 
 CMakeFiles/dencorewar.dir/ft_wordequ.c.o: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/ft_wordequ.c.o: ../ft_wordequ.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_162) "Building C object CMakeFiles/dencorewar.dir/ft_wordequ.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_163) "Building C object CMakeFiles/dencorewar.dir/ft_wordequ.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/dencorewar.dir/ft_wordequ.c.o   -c /Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/ft_wordequ.c
 
 CMakeFiles/dencorewar.dir/ft_wordequ.c.i: cmake_force
@@ -2313,6 +2326,7 @@ dencorewar_OBJECTS = \
 "CMakeFiles/dencorewar.dir/vm/srcs/game/vis/vc_list.c.o" \
 "CMakeFiles/dencorewar.dir/vm/srcs/game/vis/vc_sort.c.o" \
 "CMakeFiles/dencorewar.dir/vm/srcs/game/vis/visualise_arena.c.o" \
+"CMakeFiles/dencorewar.dir/vm/srcs/game/vis/disasm.c.o" \
 "CMakeFiles/dencorewar.dir/vm/srcs/game/args_intf.c.o" \
 "CMakeFiles/dencorewar.dir/vm/srcs/game/game.c.o" \
 "CMakeFiles/dencorewar.dir/vm/srcs/game/game_intf.c.o" \
@@ -2479,6 +2493,7 @@ dencorewar: CMakeFiles/dencorewar.dir/vm/srcs/game/vis/support_func.c.o
 dencorewar: CMakeFiles/dencorewar.dir/vm/srcs/game/vis/vc_list.c.o
 dencorewar: CMakeFiles/dencorewar.dir/vm/srcs/game/vis/vc_sort.c.o
 dencorewar: CMakeFiles/dencorewar.dir/vm/srcs/game/vis/visualise_arena.c.o
+dencorewar: CMakeFiles/dencorewar.dir/vm/srcs/game/vis/disasm.c.o
 dencorewar: CMakeFiles/dencorewar.dir/vm/srcs/game/args_intf.c.o
 dencorewar: CMakeFiles/dencorewar.dir/vm/srcs/game/game.c.o
 dencorewar: CMakeFiles/dencorewar.dir/vm/srcs/game/game_intf.c.o
@@ -2495,7 +2510,7 @@ dencorewar: CMakeFiles/dencorewar.dir/file_to_list.c.o
 dencorewar: CMakeFiles/dencorewar.dir/ft_wordequ.c.o
 dencorewar: CMakeFiles/dencorewar.dir/build.make
 dencorewar: CMakeFiles/dencorewar.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_163) "Linking C executable dencorewar"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_164) "Linking C executable dencorewar"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/dencorewar.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

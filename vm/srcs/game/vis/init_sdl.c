@@ -1,3 +1,4 @@
+
 #include "vis.h"
 t_vis_tools *g_vs;
 
@@ -26,7 +27,7 @@ bool		init_font(void)
 			go_exit(TTF_GetError());
 		else
 			success = true;
-		g_vs->text_font = TTF_OpenFont("../media/pixelmix.ttf", 10);
+		g_vs->text_font = TTF_OpenFont("../media/Anonymous.ttf", 9);
 		if (!g_vs->text_font)
 			go_exit(TTF_GetError());
 		else
@@ -59,3 +60,4 @@ bool		init(void)
 //	if (!init_surface(g_vs)) IF SOME PICTURES NEEDED
 	return (success);
 }
+

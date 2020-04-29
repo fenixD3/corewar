@@ -925,6 +925,12 @@ CMakeFiles/dencorewar.dir/vm/srcs/game/vis/create_vs.c.o: /Users/romancheremin/L
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/create_vs.c.o: /Users/romancheremin/Library/Frameworks/SDL2.framework/Headers/close_code.h
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/create_vs.c.o: /Users/romancheremin/Library/Frameworks/SDL2_ttf.framework/Headers/SDL_ttf.h
 
+CMakeFiles/dencorewar.dir/vm/srcs/game/vis/disasm.c.o: .././op.h
+CMakeFiles/dencorewar.dir/vm/srcs/game/vis/disasm.c.o: .././options.h
+CMakeFiles/dencorewar.dir/vm/srcs/game/vis/disasm.c.o: ../libft/libft.h
+CMakeFiles/dencorewar.dir/vm/srcs/game/vis/disasm.c.o: ../libft/memlist.h
+CMakeFiles/dencorewar.dir/vm/srcs/game/vis/disasm.c.o: ../vm/srcs/game/vis/disasm.c
+
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/display_carriages.c.o: .././op.h
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/display_carriages.c.o: .././options.h
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/display_carriages.c.o: ../ft_printf/includes/ft_ptintf.h
@@ -1559,6 +1565,7 @@ CMakeFiles/dencorewar.dir/vm/srcs/validation/parse_input_intf.c.o: .././options.
 CMakeFiles/dencorewar.dir/vm/srcs/validation/parse_input_intf.c.o: ../ft_printf/includes/ft_ptintf.h
 CMakeFiles/dencorewar.dir/vm/srcs/validation/parse_input_intf.c.o: ../libft/libft.h
 CMakeFiles/dencorewar.dir/vm/srcs/validation/parse_input_intf.c.o: ../libft/memlist.h
+CMakeFiles/dencorewar.dir/vm/srcs/validation/parse_input_intf.c.o: ../vm/includes/error_defs.h
 CMakeFiles/dencorewar.dir/vm/srcs/validation/parse_input_intf.c.o: ../vm/includes/vis.h
 CMakeFiles/dencorewar.dir/vm/srcs/validation/parse_input_intf.c.o: ../vm/includes/vm.h
 CMakeFiles/dencorewar.dir/vm/srcs/validation/parse_input_intf.c.o: ../vm/srcs/validation/parse_input_intf.c

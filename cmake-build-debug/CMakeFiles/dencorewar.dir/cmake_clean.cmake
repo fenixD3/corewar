@@ -147,6 +147,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/dencorewar.dir/vm/srcs/game/vis/vc_list.c.o"
   "CMakeFiles/dencorewar.dir/vm/srcs/game/vis/vc_sort.c.o"
   "CMakeFiles/dencorewar.dir/vm/srcs/game/vis/visualise_arena.c.o"
+  "CMakeFiles/dencorewar.dir/vm/srcs/game/vis/disasm.c.o"
   "CMakeFiles/dencorewar.dir/vm/srcs/game/args_intf.c.o"
   "CMakeFiles/dencorewar.dir/vm/srcs/game/game.c.o"
   "CMakeFiles/dencorewar.dir/vm/srcs/game/game_intf.c.o"

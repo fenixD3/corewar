@@ -1,4 +1,5 @@
 
+
 #include "vis.h"
 #include "vis_errors.h"
 
@@ -76,9 +77,10 @@ void			display_game_data(t_corewar *corewar)
 	char		*text;
 	int			text_x;
 	int			text_height;
+	char 		string[100];
 	SDL_Rect	dstrect[4];
 
-	text = ft_strjoin("cycles to die : ", ft_itoa(corewar->game_param.cycles_to_die));
+	text = ft_strjoin("cycles to die : ", ft_itoa(corewar->game_param.cycles_to_die)); //создать отдельную функцию Без non_malloc_itoa
 	g_vs->txt_srfc = TTF_RenderText_Solid(g_vs->text_font, text, g_vs->text_color[4]);
 	g_vs->text = SDL_CreateTextureFromSurface(g_vs->render, g_vs->txt_srfc);
 	text_height = g_vs->txt_srfc->h;

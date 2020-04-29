@@ -18,21 +18,18 @@ void	start_game(t_corewar *corewar)
 	g_mode = -1;
 	while (!quit)
 	{
-		carriages_actions(corewar);
-		corewar->game_param.cycles_aft_start > 1429 ? printf("Aft actions\n") : 0;
-		if (!(++corewar->game_param.cycles_aft_start %
-		corewar->game_param.cycles_to_die) ||
-		corewar->game_param.cycles_to_die <= 0)
-			lets_check(corewar->carriages, &corewar->game_param);
-		if (corewar->flgs.flgs & DUMP_FLG &&
+		if (corewar->flgs.set_flg & DUMP_FLG &&
 		corewar->game_param.cycles_aft_start == corewar->flgs.nbr_cycles_dump)
 			print_map(corewar);
+		++corewar->game_param.cycles_aft_start;
+		carriages_actions(corewar);
+		if (!(corewar->game_param.cycles_aft_start %
+corewar->game_param.cycles_to_die) || corewar->game_param.cycles_to_die <= 0)
+			lets_check(corewar);
 		if (g_change)
 			visualise_arena(corewar, &quit);
-		if (carriage_amount_live(corewar->carriages) == 1)
-			introducing_winner(corewar, 0);
-		else if (!carriage_amount_live(corewar->carriages))
-			introducing_winner(corewar, 1);
+		if (!corewar->carriages)
+			introducing_winner(corewar);
 	}
 }
 
@@ -60,38 +57,32 @@ void	introducing_fighter(t_champion *champs)
 	int		player;
 
 	ft_printf("Introducing contestants...\n");
+//	fprintf(file, "Introducing contestants...\n");
 	player = 0;
 	while (champs)
 	{
 		ft_printf("* Player %d, weighing %d bytes, \"%s\" (\"%s\") !\n",
 			++player, champs->file.header.prog_size,
 			champs->file.header.prog_name, champs->file.header.comment);
+//		fprintf(file, "* Player %d, weighing %d bytes, \"%s\" (\"%s\") !\n",
+//				  player, champs->file.header.prog_size,
+//				  champs->file.header.prog_name, champs->file.header.comment);
 		champs = champs->next;
 	}
 }
 
-void	introducing_winner(t_corewar *corewar, _Bool who_lst_live)
+void	introducing_winner(t_corewar *corewar)
 {
 	int		winner;
 
-//	printf("In introducing winner\n");
-	while (!who_lst_live && corewar->carriages)
-	{
-		if (corewar->carriages->is_live)
-		{
-			winner = -corewar->carriages->reg[0];
-			break ;
-		}
-		corewar->carriages = corewar->carriages->next;
-	}
-	if (who_lst_live)
-		winner = corewar->game_param.who_lst_live;
-	printf("Winner num is %d\n", winner);
+	winner = corewar->game_param.who_lst_live;
 	while (corewar->champs && corewar->champs->num != winner)
 		corewar->champs = corewar->champs->next;
-	if (corewar->champs)
-		ft_printf("Contestant %d \"%s\" has won!\n", corewar->champs->num,
+	ft_printf("Contestant %d \"%s\" has won!\n", corewar->champs->num,
 			corewar->champs->file.header.prog_name);
+	fprintf(file, "Contestant %d \"%s\" has won!\n", corewar->champs->num,
+			  corewar->champs->file.header.prog_name);
+	fclose(file);
 	exit(0);
 }
 

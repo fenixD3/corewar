@@ -1,3 +1,4 @@
+
 #include "vis.h"
 
 t_vis_tools *g_vs;
@@ -43,7 +44,7 @@ void			display_registers(int i, int text_height, t_carriages *carriages, int ext
 	{
 		while (j < 8)
 		{
-			text = ft_strjoin("1: ", ft_itoa(carriages->reg[j]));
+			text = ft_strjoin(ft_strjoin(ft_itoa(j), ": ") , ft_itoa(carriages->reg[j])); //Утечки
 			display_text(text, 0,
 					20 + 3 * (j + 1) + text_height * (j + 3) + i);
 			j++;
@@ -51,7 +52,7 @@ void			display_registers(int i, int text_height, t_carriages *carriages, int ext
 		j = 0;
 		while (j < 8)
 		{
-			text = ft_strjoin("1: ", ft_itoa(carriages->reg[8 + j]));
+			text = ft_strjoin(ft_strjoin(ft_itoa(j + 8), j < 2 ? " : " : ": ") , ft_itoa(carriages->reg[8 + j]));//Утечки
 			display_text(text, 130 + 64 * 24,
 						 20 + 3 * (j + 1) + text_height * (j + 3) + i);
 			j++;
@@ -67,19 +68,19 @@ void			fill_frame(int *i, t_carriages *carriages, int extndd)
 
 	SDL_SetRenderDrawColor(g_vs->render, 0, 0, 0, SDL_ALPHA_OPAQUE);
 	rectangle = create_rect(26 + 64 * 24, *i + 6,
-							g_vs->wight - 42 - 64 * 24, (extndd ? 150 : 51));
+			g_vs->wight - 42 - 64 * 24, (extndd ? 150 : 51));
 	SDL_RenderFillRect(g_vs->render, &rectangle);
 	text = ft_strjoin("cycles before execution : ",
-					  ft_itoa(carriages->cycle_op));
+			ft_itoa(carriages->cycle_op));
 	text_height = display_text(text, 0, *i + 9);
 	text = ft_strjoin("operation code : ",
-					  g_op[carriages->op_code - 1].name);
+			disasm(carriages->op_pos));
 	display_text(text, 0, *i + 9 + text_height + 3);
 	text = ft_strjoin("previous live execution : ",
 					  ft_itoa(carriages->cycle_when_live));
 	display_text(text, 0, *i + 15 + text_height * 2);
 	display_registers(*i, text_height, carriages, extndd);
-	*i += extndd ? 158 : 63;
+	*i += extndd ? 162 : 63;
 }
 
 void			display_side_menu(t_corewar *crrw, int ind)

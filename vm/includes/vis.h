@@ -1,4 +1,5 @@
 
+
 #ifndef VIS_H
 # define VIS_H
 
@@ -86,6 +87,10 @@ void				free_mem_font(void);
 void				track_events(int *indx, SDL_Event *e, bool *quit, int *stop);
 
 SDL_Rect			create_rect(int x, int y, int text_w, int text_h);
+
+
+
+char    *disasm(unsigned char *champ);
 
 
 void display_side_menu(t_corewar *crrw, int inxd);

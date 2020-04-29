@@ -925,6 +925,12 @@ CMakeFiles/dencorewar.dir/vm/srcs/game/vis/create_vs.c.o
  /Users/romancheremin/Library/Frameworks/SDL2.framework/Headers/begin_code.h
  /Users/romancheremin/Library/Frameworks/SDL2.framework/Headers/close_code.h
  /Users/romancheremin/Library/Frameworks/SDL2_ttf.framework/Headers/SDL_ttf.h
+CMakeFiles/dencorewar.dir/vm/srcs/game/vis/disasm.c.o
+ .././op.h
+ .././options.h
+ ../libft/libft.h
+ ../libft/memlist.h
+ /Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/vm/srcs/game/vis/disasm.c
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/display_carriages.c.o
  .././op.h
  .././options.h
@@ -1560,6 +1566,7 @@ CMakeFiles/dencorewar.dir/vm/srcs/validation/parse_input_intf.c.o
  ../ft_printf/includes/ft_ptintf.h
  ../libft/libft.h
  ../libft/memlist.h
+ ../vm/includes/error_defs.h
  ../vm/includes/vis.h
  ../vm/includes/vm.h
  /Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/vm/srcs/validation/parse_input_intf.c

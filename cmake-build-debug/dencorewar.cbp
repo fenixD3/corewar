@@ -589,6 +589,9 @@
 		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/vm/srcs/game/vis/create_vs.c">
 			<Option target="dencorewar"/>
 		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/vm/srcs/game/vis/disasm.c">
+			<Option target="dencorewar"/>
+		</Unit>
 		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/dencorewar/vm/srcs/game/vis/display_carriages.c">
 			<Option target="dencorewar"/>
 		</Unit>

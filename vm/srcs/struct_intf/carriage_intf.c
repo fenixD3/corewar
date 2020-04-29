@@ -40,16 +40,30 @@ void push_front_carriage(t_carriages **carriages)
 		add_new_vc(&(g_vs->vc_list), *carriages);
 }
 
-int			carriage_amount_live(t_carriages *carriage)
+t_carriages	*delete_carriage(t_corewar *corewar, int search_id)
 {
-	int		cnt;
+	t_carriages	*carriage;
+	t_carriages	*prev;
 
-	cnt = 0;
+	carriage = corewar->carriages;
+	prev = NULL;
 	while (carriage)
 	{
-		if (carriage->is_live)
-			++cnt;
+		if (carriage->id == search_id)
+			break ;
+		prev = carriage;
 		carriage = carriage->next;
 	}
-	return (cnt);
+	if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num == 8) {
+		printf("Process %d hasn't lived for %lld cycles (CTD %lld)\n",
+			search_id, corewar->game_param.cycles_aft_start - carriage->cycle_when_live, corewar->game_param.cycles_to_die);
+		fprintf(file, "Process %d hasn't lived for %lld cycles (CTD %lld)\n",
+			search_id, corewar->game_param.cycles_aft_start - carriage->cycle_when_live, corewar->game_param.cycles_to_die);
+	}
+	if (!prev)
+		corewar->carriages = carriage->next;
+	else
+		prev->next = carriage->next;
+	ml_free(carriage, CARRIAGE_NODE);
+	return (prev ? prev : corewar->carriages);
 }

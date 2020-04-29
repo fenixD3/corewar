@@ -4119,6 +4119,33 @@ vm/srcs/game/vis/create_vs.c.s:
 	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/vis/create_vs.c.s
 .PHONY : vm/srcs/game/vis/create_vs.c.s
 
+vm/srcs/game/vis/disasm.o: vm/srcs/game/vis/disasm.c.o
+
+.PHONY : vm/srcs/game/vis/disasm.o
+
+# target to build an object file
+vm/srcs/game/vis/disasm.c.o:
+	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/vis/disasm.c.o
+.PHONY : vm/srcs/game/vis/disasm.c.o
+
+vm/srcs/game/vis/disasm.i: vm/srcs/game/vis/disasm.c.i
+
+.PHONY : vm/srcs/game/vis/disasm.i
+
+# target to preprocess a source file
+vm/srcs/game/vis/disasm.c.i:
+	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/vis/disasm.c.i
+.PHONY : vm/srcs/game/vis/disasm.c.i
+
+vm/srcs/game/vis/disasm.s: vm/srcs/game/vis/disasm.c.s
+
+.PHONY : vm/srcs/game/vis/disasm.s
+
+# target to generate assembly for a file
+vm/srcs/game/vis/disasm.c.s:
+	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/vis/disasm.c.s
+.PHONY : vm/srcs/game/vis/disasm.c.s
+
 vm/srcs/game/vis/display_carriages.o: vm/srcs/game/vis/display_carriages.c.o
 
 .PHONY : vm/srcs/game/vis/display_carriages.o
@@ -4950,6 +4977,9 @@ help:
 	@echo "... vm/srcs/game/vis/create_vs.o"
 	@echo "... vm/srcs/game/vis/create_vs.i"
 	@echo "... vm/srcs/game/vis/create_vs.s"
+	@echo "... vm/srcs/game/vis/disasm.o"
+	@echo "... vm/srcs/game/vis/disasm.i"
+	@echo "... vm/srcs/game/vis/disasm.s"
 	@echo "... vm/srcs/game/vis/display_carriages.o"
 	@echo "... vm/srcs/game/vis/display_carriages.i"
 	@echo "... vm/srcs/game/vis/display_carriages.s"

@@ -1,40 +1,209 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
       <config projectName="dencorewar" targetName="dencorewar" />
     </generated>
   </component>
-  <component name="CMakeSettings" AUTO_RELOAD="true">
+  <component name="CMakeSettings">
     <configurations>
       <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7a52012a-ab21-4ea1-af27-9169491ed8e0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/log.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cw_ex/Gagnant2.cor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cw_ex/MarineKing.cor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cw_ex/corelol.cor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cw_ex/littlepuppy.cor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Corewar.iml" beforeDir="false" />
+    <list default="true" id="b66a34c4-50f9-404a-a1ca-8f01c77750b0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vis.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dencorewar.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.14.5/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.14.5/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.14.5/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.14.5/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.14.5/CompilerIdC/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/C.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/asm/arguments.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/asm/arguments.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/asm/asm.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/asm/asm.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/asm/ft_isdigitalword.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/asm/ft_isdigitalword.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/asm/ft_isspecial.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/asm/ft_isspecial.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/asm/ft_skipword.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/asm/ft_skipword.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/asm/get_header.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/asm/get_header.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/asm/token_recognition.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/asm/token_recognition.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/asm/tokenizer.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/asm/tokenizer.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/asm/tokens_lst.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/asm/tokens_lst.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/build.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/cmake_clean.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/depend.internal" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/fast_strsplit.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/fast_strsplit.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/file_to_list.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/file_to_list.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/ft_printf/srcs/field_len.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/ft_printf/srcs/field_len.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/ft_printf/srcs/fill_union.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/ft_printf/srcs/fill_union.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/ft_printf/srcs/ft_itoa_base_printf.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/ft_printf/srcs/ft_itoa_base_printf.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/ft_printf/srcs/ft_printf.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/ft_printf/srcs/ft_printf.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/ft_printf/srcs/get_binary.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/ft_printf/srcs/get_binary.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/ft_printf/srcs/is_parser.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/ft_printf/srcs/is_parser.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/ft_printf/srcs/is_typeflags.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/ft_printf/srcs/is_typeflags.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/ft_printf/srcs/make_field.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/ft_printf/srcs/make_field.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/ft_printf/srcs/parsing_funcs.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/ft_printf/srcs/parsing_funcs.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/ft_printf/srcs/parsing_generaly.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/ft_printf/srcs/parsing_generaly.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/ft_printf/srcs/prepare_lennum.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/ft_printf/srcs/prepare_lennum.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/ft_printf/srcs/set_buff.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/ft_printf/srcs/set_buff.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/ft_printf/srcs/set_flags.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/ft_printf/srcs/set_flags.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/ft_printf/srcs/str_tolower.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/ft_printf/srcs/str_tolower.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/ft_printf/srcs/to_buff.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/ft_printf/srcs/to_buff.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/ft_printf/srcs/which_sign.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/ft_printf/srcs/which_sign.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/ft_printf/srcs/zeroing.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/ft_printf/srcs/zeroing.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/check_create_float_res.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/check_create_float_res.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/e_flag_intf.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/e_flag_intf.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/float_intf.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/float_intf.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/float_rounding.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/float_rounding.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/frees_for_float.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/frees_for_float.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/ft_log10.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/ft_log10.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/ft_log2.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/ft_log2.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/g_flag_intf.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/g_flag_intf.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/get_dbl_values.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/get_dbl_values.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/get_ldbl_values.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/get_ldbl_values.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/high_precision.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/high_precision.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/high_precision_intf.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/high_precision_intf.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/high_precision_intf_long.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/high_precision_intf_long.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/high_precision_long.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/high_precision_long.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/my_float.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/my_float.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/my_long_float.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/my_long_float.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/print_reserve_dbl.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/ft_printf/srcsFloat/print_reserve_dbl.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/ft_wordequ.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/ft_wordequ.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_abs.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_abs.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_atoi.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_atoi.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_bzero.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_bzero.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_fib.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_fib.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_floor.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_floor.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_is_complex_string.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_is_complex_string.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_isalnum.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_isalnum.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_isalpha.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_isalpha.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_isascii.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_isascii.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_isdigit.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_isdigit.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_islower.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_islower.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_isprint.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_isprint.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_isspace.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_isspace.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_isupper.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_isupper.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_itoa.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_itoa.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_lstadd.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_lstadd.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_lstcirc_add.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_lstcirc_add.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_lstcirc_delelem.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_lstcirc_delelem.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_lstcirc_findcontent_size.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_lstcirc_findcontent_size.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_lstcirc_strnew.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_lstcirc_strnew.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_lstdel.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_lstdel.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_lstdelone.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_lstdelone.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_lstiter.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_lstiter.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_lstmap.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_lstmap.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_lstnew.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_lstnew.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_lstpush.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_lstpush.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_memalloc.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_memalloc.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_memccpy.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_memccpy.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_memchr.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_memchr.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_memcmp.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_memcmp.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_memcpy.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_memcpy.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_memdel.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_memdel.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_memmove.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_memmove.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_memset.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_memset.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_pow.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_pow.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_putchar.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_putchar.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_putchar_fd.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_putchar_fd.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_putendl.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_putendl.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_putendl_fd.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_putendl_fd.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_putnbr.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_putnbr.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_putnbr_fd.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_putnbr_fd.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_putstr.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_putstr.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_putstr_fd.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_putstr_fd.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_reverse.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_reverse.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_sqrt.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_sqrt.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_sstrchr.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_sstrchr.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_strcat.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_strcat.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_strchr.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_strchr.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_strclr.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_strclr.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_strcmp.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_strcmp.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_strcpy.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_strcpy.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_strdel.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_strdel.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_strdup.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_strdup.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_strequ.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_strequ.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_striter.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_striter.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_striteri.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_striteri.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_strjoin.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_strjoin.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_strjoinre.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_strjoinre.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_strlcat.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_strlcat.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_strlcpy.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_strlcpy.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_strlen.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_strlen.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_strmap.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_strmap.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_strmapi.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_strmapi.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_strncat.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_strncat.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_strncmp.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_strncmp.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_strncpy.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_strncpy.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_strndup.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_strndup.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_strnequ.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_strnequ.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_strnew.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_strnew.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_strnstr.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_strnstr.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_strrchr.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_strrchr.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_strsplit.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_strsplit.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_strstr.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_strstr.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_strsub.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_strsub.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_strtrim.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_strtrim.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_tolower.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_tolower.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_toupper.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ft_toupper.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/get_next_line.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/get_next_line.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/go_exit.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/go_exit.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/memlist/memlist_bottleneck.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/memlist/memlist_bottleneck.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/memlist/ml_create.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/memlist/ml_create.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/memlist/ml_del.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/memlist/ml_del.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/memlist/ml_general.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/memlist/ml_general.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ml_get_next_line.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ml_get_next_line.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ml_itoa.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ml_itoa.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ml_memalloc.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ml_memalloc.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ml_strdup.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ml_strdup.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ml_strjoin.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ml_strjoin.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ml_strjoinre.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ml_strjoinre.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ml_strmap.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ml_strmap.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ml_strmapi.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ml_strmapi.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ml_strndup.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ml_strndup.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ml_strnew.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ml_strnew.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ml_strsplit.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ml_strsplit.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ml_strsub.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ml_strsub.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ml_strtrim.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/libft/ml_strtrim.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/progress.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/args_intf.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/args_intf.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/game.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/game.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/game_intf.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/game_intf.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/helper_func.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/helper_func.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/instuctions.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/instuctions.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/vis/create_vs.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/vis/create_vs.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/vis/disasm.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/vis/disasm.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/vis/display_carriages.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/vis/display_carriages.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/vis/display_side_menu.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/vis/display_side_menu.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/vis/init_sdl.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/vis/init_sdl.c.o" afterDir="false" />
@@ -49,31 +218,22 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/validation/parse_input_intf.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/validation/parse_input_intf.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/validation/parse_inputs.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/validation/parse_inputs.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/validation/reports.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/validation/reports.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Corewar.cbp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/FindSDL2.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/FindSDL2_ttf.cmake" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/dencorewar" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/dencorewar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/dencorewar.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/dencorewar.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/dencorewar.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/dencorewar.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm/includes/error_defs.h" beforeDir="false" afterPath="$PROJECT_DIR$/vm/includes/error_defs.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm/includes/vis.h" beforeDir="false" afterPath="$PROJECT_DIR$/vm/includes/vis.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm/includes/vm.h" beforeDir="false" afterPath="$PROJECT_DIR$/vm/includes/vm.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm/srcs/game/args_intf.c" beforeDir="false" afterPath="$PROJECT_DIR$/vm/srcs/game/args_intf.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm/srcs/game/game.c" beforeDir="false" afterPath="$PROJECT_DIR$/vm/srcs/game/game.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm/srcs/game/game_intf.c" beforeDir="false" afterPath="$PROJECT_DIR$/vm/srcs/game/game_intf.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm/srcs/game/helper_func.c" beforeDir="false" afterPath="$PROJECT_DIR$/vm/srcs/game/helper_func.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm/srcs/game/instuctions.c" beforeDir="false" afterPath="$PROJECT_DIR$/vm/srcs/game/instuctions.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm/srcs/game/vis/create_vs.c" beforeDir="false" afterPath="$PROJECT_DIR$/vm/srcs/game/vis/create_vs.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm/srcs/game/vis/display_carriages.c" beforeDir="false" afterPath="$PROJECT_DIR$/vm/srcs/game/vis/display_carriages.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm/srcs/game/vis/display_side_menu.c" beforeDir="false" afterPath="$PROJECT_DIR$/vm/srcs/game/vis/display_side_menu.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm/srcs/game/vis/init_sdl.c" beforeDir="false" afterPath="$PROJECT_DIR$/vm/srcs/game/vis/init_sdl.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm/srcs/game/vis/print_arena.c" beforeDir="false" afterPath="$PROJECT_DIR$/vm/srcs/game/vis/print_arena.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm/srcs/game/vis/support_func.c" beforeDir="false" afterPath="$PROJECT_DIR$/vm/srcs/game/vis/support_func.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm/srcs/game/vis/visualise_arena.c" beforeDir="false" afterPath="$PROJECT_DIR$/vm/srcs/game/vis/visualise_arena.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm/srcs/struct_intf/carriage_intf.c" beforeDir="false" afterPath="$PROJECT_DIR$/vm/srcs/struct_intf/carriage_intf.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm/srcs/struct_intf/corewar_intf.c" beforeDir="false" afterPath="$PROJECT_DIR$/vm/srcs/struct_intf/corewar_intf.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm/srcs/validation/parse_input_intf.c" beforeDir="false" afterPath="$PROJECT_DIR$/vm/srcs/validation/parse_input_intf.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm/srcs/validation/parse_inputs.c" beforeDir="false" afterPath="$PROJECT_DIR$/vm/srcs/validation/parse_inputs.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/dencorewar.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_printf/includes/ft_ptintf.h" beforeDir="false" afterPath="$PROJECT_DIR$/ft_printf/includes/ft_ptintf.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_printf/srcs/ft_printf.c" beforeDir="false" afterPath="$PROJECT_DIR$/ft_printf/srcs/ft_printf.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_printf/srcs/to_buff.c" beforeDir="false" afterPath="$PROJECT_DIR$/ft_printf/srcs/to_buff.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_printf/srcs/zeroing.c" beforeDir="false" afterPath="$PROJECT_DIR$/ft_printf/srcs/zeroing.c" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -83,281 +243,97 @@
     <option name="formatViaClangd" value="false" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
-  <component name="FavoritesManager">
-    <favorites_list name="CoreWar_Hub" />
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
-  <component name="ProjectId" id="1YdARwKdQV2R0wBPimt1OsnpH0n" />
+  <component name="ProjectId" id="1bGtc7OxCoMyXqFA1KvZlIGyQbx" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="OCFindUsagesOptions.isSearchForTextOccurrences" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.path.for.package.tslint" value="project" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C/C++" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="restartRequiresConfirmation" value="false" />
   </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/vm/srcs/game/vis" />
-      <recent name="$PROJECT_DIR$/media" />
-      <recent name="$PROJECT_DIR$/vm/includes" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/vm/srcs" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/vm/srcs/game/vis" />
-    </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="CMake Application.dencorewar">
-    <configuration name="CoreWar_Hub" type="CMakeRunConfiguration" factoryName="Application" editBeforeRun="true" PROGRAM_PARAMS="-dump 2 $PROJECT_DIR$/cw_ex/test.cor -n 1 $PROJECT_DIR$/cw_ex/Gagnant2.cor $PROJECT_DIR$/cw_ex/Car.cor" PASS_PARENT_ENVS_2="true" PROJECT_NAME="dencorewar" TARGET_NAME="CoreWar_Hub" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="dencorewar" RUN_TARGET_NAME="CoreWar_Hub">
+  <component name="RunManager">
+    <configuration name="dencorewar" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="dencorewar" TARGET_NAME="dencorewar" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="dencorewar" RUN_TARGET_NAME="dencorewar">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="dencorewar" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="$PROJECT_DIR$/cw_ex/champs/Car.cor $PROJECT_DIR$/cw_ex/champs/ex.cor $PROJECT_DIR$/cw_ex/champs/Gagnant.cor $USER_HOME$/Downloads/forka.cor" PASS_PARENT_ENVS_2="true" PROJECT_NAME="dencorewar" TARGET_NAME="dencorewar" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="dencorewar" RUN_TARGET_NAME="dencorewar">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="CMake Application.CoreWar_Hub" />
-      <item itemvalue="CMake Application.dencorewar" />
-    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="7a52012a-ab21-4ea1-af27-9169491ed8e0" name="Default Changelist" comment="" />
-      <created>1583262092358</created>
+      <changelist id="b66a34c4-50f9-404a-a1ca-8f01c77750b0" name="Default Changelist" comment="" />
+      <created>1588270334940</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1583262092358</updated>
-      <workItem from="1583262094707" duration="4248000" />
-      <workItem from="1583317207575" duration="16837000" />
-      <workItem from="1583709306903" duration="4524000" />
-      <workItem from="1583760195501" duration="1817000" />
-      <workItem from="1583766712147" duration="3212000" />
-      <workItem from="1583777586637" duration="3669000" />
-      <workItem from="1583782720218" duration="548000" />
-      <workItem from="1583833492140" duration="11679000" />
-      <workItem from="1583945056420" duration="2644000" />
-      <workItem from="1583951581931" duration="419000" />
-      <workItem from="1584028851198" duration="8833000" />
-      <workItem from="1584121093375" duration="9466000" />
-      <workItem from="1584195253057" duration="3826000" />
-      <workItem from="1584211330115" duration="2183000" />
-      <workItem from="1584213932693" duration="2739000" />
-      <workItem from="1584298509008" duration="2973000" />
-      <workItem from="1584358098163" duration="5943000" />
-      <workItem from="1584388188717" duration="817000" />
-      <workItem from="1584444646160" duration="5442000" />
-      <workItem from="1584570371126" duration="5308000" />
-      <workItem from="1584738604304" duration="63000" />
-      <workItem from="1584780996933" duration="2090000" />
-      <workItem from="1584797020307" duration="3999000" />
-      <workItem from="1584871429349" duration="162000" />
-      <workItem from="1584871619551" duration="22144000" />
-      <workItem from="1585054785728" duration="24649000" />
-      <workItem from="1585138514054" duration="65014000" />
-      <workItem from="1585646211690" duration="500000" />
-      <workItem from="1585647071658" duration="24979000" />
-      <workItem from="1586004430379" duration="32998000" />
-      <workItem from="1586686919079" duration="40167000" />
-      <workItem from="1586932477775" duration="507000" />
-      <workItem from="1586933188663" duration="37584000" />
-      <workItem from="1587304926365" duration="62000" />
-      <workItem from="1587304999177" duration="10000" />
-      <workItem from="1587305130186" duration="1000" />
-      <workItem from="1587305149818" duration="6018000" />
-      <workItem from="1587470202064" duration="5059000" />
-      <workItem from="1587896935470" duration="16123000" />
-      <workItem from="1588076691711" duration="98000" />
-      <workItem from="1588076951836" duration="4827000" />
-      <workItem from="1588145343401" duration="135000" />
-      <workItem from="1588186445501" duration="1778000" />
+      <updated>1588270334940</updated>
+      <workItem from="1588270337255" duration="675000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="827" y="264" key="#CoreWar_Hub" timestamp="1584201658622">
-      <screen x="0" y="23" width="2560" height="1360" />
+    <state width="1878" height="376" key="GridCell.Tab.0.bottom" timestamp="1588270586475">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="496" y="146" key="#CoreWar_Hub/0.0.1536.824@0.0.1536.824" timestamp="1583713798568" />
-    <state x="827" y="264" key="#CoreWar_Hub/0.23.2560.1360@0.23.2560.1360" timestamp="1584201658622" />
-    <state x="827" y="264" key="#CoreWar_Hub/0.23.2560.1361@0.23.2560.1361" timestamp="1584039328575" />
-    <state x="884" y="192" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584196216270">
-      <screen x="0" y="23" width="2560" height="1360" />
+    <state width="1878" height="376" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1588270586475" />
+    <state width="1878" height="376" key="GridCell.Tab.0.center" timestamp="1588270586474">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1583347640766" />
-    <state x="884" y="192" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.2560.1360@0.23.2560.1360" timestamp="1584196216270" />
-    <state x="884" y="192" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.2560.1361@0.23.2560.1361" timestamp="1584030077291" />
-    <state width="439" height="466" key="DebuggerActiveHint" timestamp="1584122478626">
-      <screen x="0" y="23" width="2560" height="1360" />
+    <state width="1878" height="376" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1588270586474" />
+    <state width="1878" height="376" key="GridCell.Tab.0.left" timestamp="1588270586473">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="439" height="466" key="DebuggerActiveHint/0.23.2560.1360@0.23.2560.1360" timestamp="1584122478626" />
-    <state width="1800" height="448" key="GridCell.Tab.0.bottom" timestamp="1584202230795">
-      <screen x="0" y="23" width="2560" height="1360" />
+    <state width="1878" height="376" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1588270586473" />
+    <state width="1878" height="376" key="GridCell.Tab.0.right" timestamp="1588270586474">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1493" height="197" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583713864069" />
-    <state width="1800" height="448" key="GridCell.Tab.0.bottom/0.23.2560.1360@0.23.2560.1360" timestamp="1584202230795" />
-    <state width="1721" height="345" key="GridCell.Tab.0.bottom/0.23.2560.1361@0.23.2560.1361" timestamp="1584040571824" />
-    <state width="1800" height="448" key="GridCell.Tab.0.center" timestamp="1584202230795">
-      <screen x="0" y="23" width="2560" height="1360" />
+    <state width="1878" height="376" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1588270586474" />
+    <state width="1878" height="376" key="GridCell.Tab.1.bottom" timestamp="1588270589193">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1493" height="197" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1583713864069" />
-    <state width="1800" height="448" key="GridCell.Tab.0.center/0.23.2560.1360@0.23.2560.1360" timestamp="1584202230795" />
-    <state width="1721" height="345" key="GridCell.Tab.0.center/0.23.2560.1361@0.23.2560.1361" timestamp="1584040571824" />
-    <state width="1800" height="448" key="GridCell.Tab.0.left" timestamp="1584202230795">
-      <screen x="0" y="23" width="2560" height="1360" />
+    <state width="1878" height="376" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1588270589193" />
+    <state width="1878" height="376" key="GridCell.Tab.1.center" timestamp="1588270589182">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1493" height="197" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1583713864069" />
-    <state width="1800" height="448" key="GridCell.Tab.0.left/0.23.2560.1360@0.23.2560.1360" timestamp="1584202230795" />
-    <state width="1721" height="345" key="GridCell.Tab.0.left/0.23.2560.1361@0.23.2560.1361" timestamp="1584040571824" />
-    <state width="1800" height="448" key="GridCell.Tab.0.right" timestamp="1584202230795">
-      <screen x="0" y="23" width="2560" height="1360" />
+    <state width="1878" height="376" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1588270589182" />
+    <state width="1878" height="376" key="GridCell.Tab.1.left" timestamp="1588270589181">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1493" height="197" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1583713864069" />
-    <state width="1800" height="448" key="GridCell.Tab.0.right/0.23.2560.1360@0.23.2560.1360" timestamp="1584202230795" />
-    <state width="1721" height="345" key="GridCell.Tab.0.right/0.23.2560.1361@0.23.2560.1361" timestamp="1584040571824" />
-    <state width="1800" height="448" key="GridCell.Tab.1.bottom" timestamp="1584202230796">
-      <screen x="0" y="23" width="2560" height="1360" />
+    <state width="1878" height="376" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1588270589181" />
+    <state width="1878" height="376" key="GridCell.Tab.1.right" timestamp="1588270589192">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1493" height="197" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583713864070" />
-    <state width="1800" height="448" key="GridCell.Tab.1.bottom/0.23.2560.1360@0.23.2560.1360" timestamp="1584202230796" />
-    <state width="1721" height="345" key="GridCell.Tab.1.bottom/0.23.2560.1361@0.23.2560.1361" timestamp="1584040571825" />
-    <state width="1800" height="448" key="GridCell.Tab.1.center" timestamp="1584202230796">
-      <screen x="0" y="23" width="2560" height="1360" />
+    <state width="1878" height="376" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1588270589192" />
+    <state x="788" y="249" key="RollbackChangesDialog" timestamp="1588270964643">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1493" height="197" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1583713864070" />
-    <state width="1800" height="448" key="GridCell.Tab.1.center/0.23.2560.1360@0.23.2560.1360" timestamp="1584202230796" />
-    <state width="1721" height="345" key="GridCell.Tab.1.center/0.23.2560.1361@0.23.2560.1361" timestamp="1584040571825" />
-    <state width="1800" height="448" key="GridCell.Tab.1.left" timestamp="1584202230796">
-      <screen x="0" y="23" width="2560" height="1360" />
+    <state x="788" y="249" key="RollbackChangesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1588270964643" />
+    <state x="100" y="100" width="1720" height="880" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1588271013407">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1493" height="197" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1583713864070" />
-    <state width="1800" height="448" key="GridCell.Tab.1.left/0.23.2560.1360@0.23.2560.1360" timestamp="1584202230796" />
-    <state width="1721" height="345" key="GridCell.Tab.1.left/0.23.2560.1361@0.23.2560.1361" timestamp="1584040571825" />
-    <state width="1800" height="448" key="GridCell.Tab.1.right" timestamp="1584202230796">
-      <screen x="0" y="23" width="2560" height="1360" />
-    </state>
-    <state width="1493" height="197" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1583713864070" />
-    <state width="1800" height="448" key="GridCell.Tab.1.right/0.23.2560.1360@0.23.2560.1360" timestamp="1584202230796" />
-    <state width="1721" height="345" key="GridCell.Tab.1.right/0.23.2560.1361@0.23.2560.1361" timestamp="1584040571825" />
-    <state x="871" y="317" key="SettingsEditor" timestamp="1584213906208">
-      <screen x="0" y="23" width="2560" height="1362" />
-    </state>
-    <state x="871" y="317" key="SettingsEditor/0.23.2560.1362@0.23.2560.1362" timestamp="1584213906208" />
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1584738603646">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1584738603646" />
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1584444645245" />
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1584388188503" />
-    <state x="775" y="413" key="com.intellij.ide.util.TipDialog/0.23.2560.1360@0.23.2560.1360" timestamp="1584195260635" />
-    <state x="775" y="413" key="com.intellij.ide.util.TipDialog/0.23.2560.1361@0.23.2560.1361" timestamp="1584028852236" />
-    <state x="775" y="414" key="com.intellij.ide.util.TipDialog/0.23.2560.1362@0.23.2560.1362" timestamp="1584213932308" />
-    <state x="908" y="330" width="667" height="731" key="find.popup" timestamp="1584217637534">
-      <screen x="0" y="23" width="2560" height="1362" />
-    </state>
-    <state x="908" y="330" width="667" height="729" key="find.popup/0.23.2560.1360@0.23.2560.1360" timestamp="1584199063645" />
-    <state x="908" y="330" width="667" height="731" key="find.popup/0.23.2560.1362@0.23.2560.1362" timestamp="1584217637534" />
-    <state x="731" y="72" key="refactoring.ChangeSignatureDialog" timestamp="1584576376596">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="731" y="72" key="refactoring.ChangeSignatureDialog/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1584576376596" />
-    <state x="731" y="112" key="refactoring.ChangeSignatureDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1584450026853" />
-    <state x="510" y="56" key="refactoring.ChangeSignatureDialog/0.0.1536.824@0.0.1536.824" timestamp="1583848815675" />
-    <state x="850" y="115" key="refactoring.ChangeSignatureDialog/0.23.2560.1360@0.23.2560.1360" timestamp="1584202000147" />
-    <state x="1129" y="132" key="refactoring.ChangeSignatureDialog/0.23.2560.1361@0.23.2560.1361" timestamp="1584039377872" />
-    <state x="1218" y="316" key="refactoring.ChangeSignatureDialog/0.23.2560.1362@0.23.2560.1362" timestamp="1584217615413" />
-    <state x="425" y="187" key="run.anything.popup" timestamp="1584388941749">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1584388941749" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/vm/srcs/game/game.c</url>
-          <option name="timeStamp" value="135" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/vm/srcs/game/vis/visualise_arena.c</url>
-          <line>72</line>
-          <option name="timeStamp" value="136" />
-        </line-breakpoint>
-        <breakpoint enabled="true" log-message="true" log-stack="true" type="OCSymbolicBreakpointType">
-          <condition expression="malloc_error_break" language="ObjectiveC" mode="CODE_FRAGMENT" />
-          <dependency master-id="0" />
-          <log-expression expression="malloc_error_break" language="ObjectiveC" mode="CODE_FRAGMENT" />
-          <properties>
-            <option name="symbolPattern" value="" />
-          </properties>
-          <option name="timeStamp" value="87" />
-        </breakpoint>
-      </breakpoints>
-      <default-breakpoints>
-        <breakpoint enabled="true" type="python-exception">
-          <dependency id="0" />
-          <properties notifyOnTerminate="true" exception="BaseException">
-            <option name="notifyOnTerminate" value="true" />
-          </properties>
-        </breakpoint>
-      </default-breakpoints>
-    </breakpoint-manager>
-    <watches-manager>
-      <configuration name="CMakeRunConfiguration">
-        <watch expression="vs" language="ObjectiveC" />
-        <watch expression="vs-&gt;wight" />
-        <watch expression="i%64" language="ObjectiveC" />
-        <watch expression="res[4]" language="ObjectiveC" />
-        <watch expression="corewar-&gt;arena[i]" language="ObjectiveC" />
-      </configuration>
-    </watches-manager>
+    <state x="100" y="100" width="1720" height="880" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1588271013407" />
   </component>
 </project>

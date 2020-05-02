@@ -70,17 +70,6 @@ char	**convert_arena(t_corewar *corewar)
 	return (res);
 }
 
-//void			create_string(char str[100], int input, char *str_inp)
-//{
-//	int		i;
-//
-//	i = 0;
-//	ft_sprintf(str, str_inp, input);
-//	while (str[i] != '\n')
-//		i++;
-//	str[i] = '\0';
-//}
-
 void			display_item(int *text_x, char string[100])
 {
 	SDL_Rect	dstrect;

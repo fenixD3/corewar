@@ -57,12 +57,6 @@ void	track_events(int *indx, SDL_Event *e, bool *quit, int *stop)
 			{
 				*stop = 0;
 				g_mode = -1;
-				vc = g_vs->vc_list;
-				while (vc != NULL)
-				{
-					vc->is_open = false;
-					vc = vc->next;
-				}
 			}
 		}
 	}

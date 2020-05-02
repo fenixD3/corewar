@@ -71,25 +71,15 @@ void			fill_frame(int *i, t_carriages *carriages, int extndd)
 	rectangle = create_rect(26 + 64 * 24, *i + 6,
 			g_vs->wight - 42 - 64 * 24, (extndd ? 150 : 51));
 	SDL_RenderFillRect(g_vs->render, &rectangle);
-	ft_sprintf(todisplay, "CBE : %d\n", carriages->cycle_op);
-	while (todisplay[c] != '\n')
-		c++;
-	todisplay[c] = '\0';
+	create_string(todisplay, carriages->cycle_op, "CBE : %d\n");
 	text_height = display_text(todisplay, 0, *i + 9);
 	ft_sprintf(todisplay, "OP_CODE : %s\n", disasm(carriages->op_pos));
 	c = 0;
 	while (todisplay[c] != '\n')
 		c++;
 	todisplay[c] = '\0';
-
 	display_text(todisplay, 0, *i + 9 + text_height + 3);
-
-	ft_sprintf(todisplay, "PR_LIVE_EX : %d\n", carriages->cycle_when_live);
-	c = 0;
-	while (todisplay[c] != '\n')
-		c++;
-	todisplay[c] = '\0';
-
+	create_string(todisplay, carriages->cycle_when_live, "PR_LIVE_EX : %d\n");
 	display_text(todisplay, 0, *i + 15 + text_height * 2);
 	display_registers(*i, text_height, carriages, extndd);
 	*i += extndd ? 162 : 63;
@@ -101,8 +91,10 @@ void			display_side_menu(t_corewar *crrw, int ind)
 	int			i;
 	SDL_Rect	stat_window;
 	t_vc		*vc;
+	int 		done;
 
 	i = 15;
+	done = 0;
 	SDL_SetRenderDrawColor(g_vs->render, 0, 0, 0, SDL_ALPHA_OPAQUE);
 	stat_window = create_rect(15 + 64 * 24, 10,
 				g_vs->wight - 20 - 64 * 24, 5 + 64 * 15);
@@ -116,8 +108,12 @@ void			display_side_menu(t_corewar *crrw, int ind)
 		&& g_mode >= 0 && vc->carriage->op_pos == &(crrw->arena[g_mode]))
 		|| (ind >= 0 && vc->carriage->op_pos == &(crrw->arena[ind])))
 		{
-			if ((ind - 4100 > i && ind - 4100 < i + 54))
+			if (!done && (ind - 4100 > i && ((vc->is_open == true) ?
+					ind - 4100 < i + 162 : ind - 4100 < i + 54)))
+			{
+				done = 1;
 				vc->is_open = (vc->is_open == true) ? false : true;
+			}
 			draw_frame(color, i, vc->is_open ? 1 : 0);
 			fill_frame(&i, vc->carriage, vc->is_open ? 1 : 0);
 		}

@@ -4,16 +4,6 @@
 
 t_vis_tools *g_vs;
 
-SDL_Color			init_color(int r, int g, int b, int a)
-{
-	SDL_Color color;
-
-	color.r = r;
-	color.g = g;
-	color.b = b;
-	color.a = 0;
-	return (color);
-}
 
 int		prosess_press(int32_t x, int32_t y)
 {
@@ -76,6 +66,17 @@ void	track_events(int *indx, SDL_Event *e, bool *quit, int *stop)
 			}
 		}
 	}
+}
+
+void			create_string(char str[100], int input, char *str_inp)
+{
+	int		i;
+
+	i = 0;
+	ft_sprintf(str, str_inp, input);
+	while (str[i] != '\n')
+		i++;
+	str[i] = '\0';
 }
 
 SDL_Rect		create_rect(int x, int y, int text_w, int text_h)

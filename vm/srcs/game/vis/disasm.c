@@ -155,9 +155,9 @@ int     add_reg(t_disasm *s, char **str, int i, int j, unsigned char *champ)
     return (add_dir_ind(s, str, i, j, champ));
 }
 
-char    *command_output(t_disasm *s, unsigned char *champ, int i, int j)
+char			*command_output(t_disasm *s, unsigned char *champ, int i, int j)
 {
-    char    *str;
+    char		*str;
 
     str = ft_strnew(100);
     while (g_op[s->code - 1].name[i])
@@ -182,9 +182,9 @@ char    *command_output(t_disasm *s, unsigned char *champ, int i, int j)
     return (str);
 }
 
-char *disasm_error(char *string)
+char			*disasm_error(char *string)
 {
-    char *str;
+    char		*str;
 
     if (!(str = (char *)malloc(sizeof(char) * (ft_strlen(string) + 1))))
         return (NULL);
@@ -192,12 +192,12 @@ char *disasm_error(char *string)
     return (str);
 }
 
-char    *disasm(unsigned char *champ)
+char			*disasm(unsigned char *champ)
 {
-    int     i;
-    int     j;
-    int     *k;
-    t_disasm s;
+    int			i;
+    int			j;
+    int			*k;
+    t_disasm	s;
 
     i = 0;
     j = 0;

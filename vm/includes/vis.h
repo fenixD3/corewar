@@ -48,8 +48,6 @@ typedef struct		s_vis_tools
 	t_vc			*vc_list;
 }					t_vis_tools;
 
-SDL_Color			init_color(int r, int g, int b, int a);
-
 typedef struct		s_cells
 {
 	char			*code;
@@ -88,6 +86,8 @@ void				track_events(int *indx, SDL_Event *e, bool *quit, int *stop);
 
 SDL_Rect			create_rect(int x, int y, int text_w, int text_h);
 
+void				create_string(char str[100], int input, char *str_inp);
+
 
 
 char    *disasm(unsigned char *champ);
@@ -101,11 +101,11 @@ void				push_front_carriage(t_carriages **carriages);
 void
 init_arena(unsigned char arena[], t_champion *champs, t_carriages **carriages);
 
-void	add_new_vc(t_vc **head, t_carriages *new);
-void    insert_vc(t_vc **head, t_vc *prev, t_vc *insert);
-t_vc    *cut_vc(t_vc **prev);
-t_vc	*find_prev_to_insert(t_vc *head, t_vc *insert);
-t_vc 	*find_and_cut_elem(t_vc **head);
-void	sort_vc(t_vc **head);
+void			add_new_vc(t_vc **head, t_carriages *new);
+void    		insert_vc(t_vc **head, t_vc *prev, t_vc *insert);
+t_vc    		*cut_vc(t_vc **prev);
+t_vc			*find_prev_to_insert(t_vc *head, t_vc *insert);
+t_vc 			*find_and_cut_elem(t_vc **head);
+void			sort_vc(t_vc **head);
 
 #endif

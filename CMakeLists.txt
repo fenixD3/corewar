@@ -16,6 +16,7 @@ include_directories(vm/includes)
 #include_directories(~/Library/Frameworks/SDL2.framework/Headers)
 #include_directories(~/Library/Frameworks/SDL2_image.framework/Headers)
 #include_directories(~/Library/Frameworks/SDL2_ttf.framework/Headers)
+
 include_directories(${SDL2_INCLUDE_DIR})
 include_directories(${SDL2_TTF_INCLUDE_DIR})
 
@@ -178,7 +179,7 @@ add_executable(dencorewar
         vm/srcs/game/game_intf.c
         vm/srcs/game/helper_func.c
         vm/srcs/game/vis/init_sdl.c
-        vm/srcs/game/instuctions.c
+        vm/srcs/game/instr_fork_zjmp_live.c
         vm/srcs/game/vis/visualise_arena.c
         vm/srcs/game/vis/print_arena.c
         vm/srcs/game/vis/support_func.c
@@ -195,11 +196,12 @@ add_executable(dencorewar
         file_to_list.h
         ft_wordequ.c
         op.h
-        options.h)
+        options.h vm/srcs/game/instr_ld.c vm/srcs/game/instr_st.c vm/srcs/game/instr_operations.c)
 
 #target_link_libraries(dencorewar "-framework SDL2")
 #target_link_libraries(dencorewar "-framework SDL2_image")
 #target_link_libraries(dencorewar "-framework SDL2_ttf")
 #set_target_properties(dencorewar PROPERTIES LINK_FLAGS "-F /Users/$ENV{USER}/Library/Frameworks")
 
-target_link_libraries(dencorewar ${SDL2_LIBRARY} -lmingw32 -lSDL2main -lSDL2 -lSDL2_TTF)
+#target_link_libraries(dencorewar ${SDL2_LIBRARY} -lmingw32 -lSDL2main -lSDL2 -lSDL2_TTF)
+target_link_libraries(dencorewar ${SDL2_LIBRARY} ${SDL2_TTF_LIBRARY})

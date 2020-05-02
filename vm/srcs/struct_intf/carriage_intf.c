@@ -50,15 +50,19 @@ t_carriages	*delete_carriage(t_corewar *corewar, int search_id)
 		carriage = carriage->next;
 	}
 	if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num & 8) {
-		printf("Process %d hasn't lived for %lld cycles (CTD %lld)\n",
-			search_id, corewar->game_param.cycles_aft_start - carriage->cycle_when_live, corewar->game_param.cycles_to_die);
-		fprintf(file, "Process %d hasn't lived for %lld cycles (CTD %lld)\n",
-			search_id, corewar->game_param.cycles_aft_start - carriage->cycle_when_live, corewar->game_param.cycles_to_die);
+		printf("Process %d hasn't lived for %ld cycles (CTD %ld)\n",
+			search_id,
+			corewar->game_param.cycles_aft_start - carriage->cycle_when_live,
+			corewar->game_param.cycles_to_die);
+		fprintf(file, "Process %d hasn't lived for %ld cycles (CTD %ld)\n",
+			search_id,
+			corewar->game_param.cycles_aft_start - carriage->cycle_when_live,
+			corewar->game_param.cycles_to_die);
 	}
 	if (!prev)
 		corewar->carriages = carriage->next;
 	else
 		prev->next = carriage->next;
 	ml_free(carriage, CARRIAGE_NODE);
-	return (prev ? prev : corewar->carriages);
+	return (prev);
 }

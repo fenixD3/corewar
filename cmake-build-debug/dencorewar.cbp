@@ -8,621 +8,634 @@
 		<Option virtualFolders="CMake Files\;CMake Files\cmake-build-debug\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/Users/da.filiptsev/Desktop/Corewar/cmake-build-debug"/>
+				<Option working_dir="/Users/Student/Corewar/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/da.filiptsev/Desktop/Corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/da.filiptsev/Desktop/Corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/da.filiptsev/Desktop/Corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/da.filiptsev/Desktop/Corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="dencorewar">
-				<Option output="C:/Users/da.filiptsev/Desktop/Corewar/cmake-build-debug/dencorewar.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/da.filiptsev/Desktop/Corewar/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="C:/Users/da.filiptsev/Desktop/Corewar/."/>
-					<Add directory="C:/Users/da.filiptsev/Desktop/Corewar/asm"/>
-					<Add directory="C:/Users/da.filiptsev/Desktop/Corewar/ft_printf/includes"/>
-					<Add directory="C:/Users/da.filiptsev/Desktop/Corewar/libft"/>
-					<Add directory="C:/Users/da.filiptsev/Desktop/Corewar/libft/memlist"/>
-					<Add directory="C:/Users/da.filiptsev/Desktop/Corewar/vm/includes"/>
-					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2"/>
-					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
-					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
-					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/da.filiptsev/Desktop/Corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 dencorewar"/>
-					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/da.filiptsev/Desktop/Corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/da.filiptsev/Desktop/Corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/da.filiptsev/Desktop/Corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="dencorewar/fast">
-				<Option output="C:/Users/da.filiptsev/Desktop/Corewar/cmake-build-debug/dencorewar.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/da.filiptsev/Desktop/Corewar/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="C:/Users/da.filiptsev/Desktop/Corewar/."/>
-					<Add directory="C:/Users/da.filiptsev/Desktop/Corewar/asm"/>
-					<Add directory="C:/Users/da.filiptsev/Desktop/Corewar/ft_printf/includes"/>
-					<Add directory="C:/Users/da.filiptsev/Desktop/Corewar/libft"/>
-					<Add directory="C:/Users/da.filiptsev/Desktop/Corewar/libft/memlist"/>
-					<Add directory="C:/Users/da.filiptsev/Desktop/Corewar/vm/includes"/>
-					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/include/SDL2"/>
-					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
-					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
-					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/da.filiptsev/Desktop/Corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 dencorewar/fast"/>
-					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/da.filiptsev/Desktop/Corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/da.filiptsev/Desktop/Corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/da.filiptsev/Desktop/Corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="C:/Users/da.filiptsev/Desktop/Corewar/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/da.filiptsev/Desktop/Corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/da.filiptsev/Desktop/Corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/da.filiptsev/Desktop/Corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/da.filiptsev/Desktop/Corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/Student/Corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/Student/Corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/Student/Corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/Student/Corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="C:/Users/da.filiptsev/Desktop/Corewar/cmake-build-debug"/>
+				<Option working_dir="/Users/Student/Corewar/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/da.filiptsev/Desktop/Corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/da.filiptsev/Desktop/Corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/da.filiptsev/Desktop/Corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/da.filiptsev/Desktop/Corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/Student/Corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/Student/Corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/Student/Corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/Student/Corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/Student/Corewar/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/Student/Corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/Student/Corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/Student/Corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/Student/Corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="dencorewar">
+				<Option output="/Users/Student/Corewar/cmake-build-debug/dencorewar" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/Student/Corewar/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/Student/Corewar/."/>
+					<Add directory="/Users/Student/Corewar/asm"/>
+					<Add directory="/Users/Student/Corewar/ft_printf/includes"/>
+					<Add directory="/Users/Student/Corewar/libft"/>
+					<Add directory="/Users/Student/Corewar/libft/memlist"/>
+					<Add directory="/Users/Student/Corewar/vm/includes"/>
+					<Add directory="/usr/local/include/SDL2"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/Student/Corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 dencorewar"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/Student/Corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/Student/Corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/Student/Corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="dencorewar/fast">
+				<Option output="/Users/Student/Corewar/cmake-build-debug/dencorewar" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/Student/Corewar/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/Student/Corewar/."/>
+					<Add directory="/Users/Student/Corewar/asm"/>
+					<Add directory="/Users/Student/Corewar/ft_printf/includes"/>
+					<Add directory="/Users/Student/Corewar/libft"/>
+					<Add directory="/Users/Student/Corewar/libft/memlist"/>
+					<Add directory="/Users/Student/Corewar/vm/includes"/>
+					<Add directory="/usr/local/include/SDL2"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/Student/Corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 dencorewar/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/Student/Corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/Student/Corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/Student/Corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/asm/arguments.c">
+		<Unit filename="/Users/Student/Corewar/asm/arguments.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/asm/asm.c">
+		<Unit filename="/Users/Student/Corewar/asm/asm.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/asm/asm.h">
+		<Unit filename="/Users/Student/Corewar/asm/asm.h">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/asm/ft_isdigitalword.c">
+		<Unit filename="/Users/Student/Corewar/asm/ft_isdigitalword.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/asm/ft_isspecial.c">
+		<Unit filename="/Users/Student/Corewar/asm/ft_isspecial.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/asm/ft_skipword.c">
+		<Unit filename="/Users/Student/Corewar/asm/ft_skipword.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/asm/get_header.c">
+		<Unit filename="/Users/Student/Corewar/asm/get_header.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/asm/libword.h">
+		<Unit filename="/Users/Student/Corewar/asm/libword.h">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/asm/token_recognition.c">
+		<Unit filename="/Users/Student/Corewar/asm/token_recognition.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/asm/tokenizer.c">
+		<Unit filename="/Users/Student/Corewar/asm/tokenizer.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/asm/tokens_lst.c">
+		<Unit filename="/Users/Student/Corewar/asm/tokens_lst.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/fast_strsplit.c">
+		<Unit filename="/Users/Student/Corewar/fast_strsplit.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/file_to_list.c">
+		<Unit filename="/Users/Student/Corewar/file_to_list.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/file_to_list.h">
+		<Unit filename="/Users/Student/Corewar/file_to_list.h">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/ft_printf/includes/ft_ptintf.h">
+		<Unit filename="/Users/Student/Corewar/ft_printf/includes/ft_ptintf.h">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/ft_printf/includes/high_precision.h">
+		<Unit filename="/Users/Student/Corewar/ft_printf/includes/high_precision.h">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/ft_printf/includes/my_float.h">
+		<Unit filename="/Users/Student/Corewar/ft_printf/includes/my_float.h">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/ft_printf/srcs/field_len.c">
+		<Unit filename="/Users/Student/Corewar/ft_printf/srcs/field_len.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/ft_printf/srcs/fill_union.c">
+		<Unit filename="/Users/Student/Corewar/ft_printf/srcs/fill_union.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/ft_printf/srcs/ft_itoa_base_printf.c">
+		<Unit filename="/Users/Student/Corewar/ft_printf/srcs/ft_itoa_base_printf.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/ft_printf/srcs/ft_printf.c">
+		<Unit filename="/Users/Student/Corewar/ft_printf/srcs/ft_printf.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/ft_printf/srcs/get_binary.c">
+		<Unit filename="/Users/Student/Corewar/ft_printf/srcs/get_binary.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/ft_printf/srcs/is_parser.c">
+		<Unit filename="/Users/Student/Corewar/ft_printf/srcs/is_parser.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/ft_printf/srcs/is_typeflags.c">
+		<Unit filename="/Users/Student/Corewar/ft_printf/srcs/is_typeflags.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/ft_printf/srcs/make_field.c">
+		<Unit filename="/Users/Student/Corewar/ft_printf/srcs/make_field.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/ft_printf/srcs/parsing_funcs.c">
+		<Unit filename="/Users/Student/Corewar/ft_printf/srcs/parsing_funcs.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/ft_printf/srcs/parsing_generaly.c">
+		<Unit filename="/Users/Student/Corewar/ft_printf/srcs/parsing_generaly.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/ft_printf/srcs/prepare_lennum.c">
+		<Unit filename="/Users/Student/Corewar/ft_printf/srcs/prepare_lennum.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/ft_printf/srcs/set_buff.c">
+		<Unit filename="/Users/Student/Corewar/ft_printf/srcs/set_buff.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/ft_printf/srcs/set_flags.c">
+		<Unit filename="/Users/Student/Corewar/ft_printf/srcs/set_flags.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/ft_printf/srcs/str_tolower.c">
+		<Unit filename="/Users/Student/Corewar/ft_printf/srcs/str_tolower.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/ft_printf/srcs/to_buff.c">
+		<Unit filename="/Users/Student/Corewar/ft_printf/srcs/to_buff.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/ft_printf/srcs/which_sign.c">
+		<Unit filename="/Users/Student/Corewar/ft_printf/srcs/which_sign.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/ft_printf/srcs/zeroing.c">
+		<Unit filename="/Users/Student/Corewar/ft_printf/srcs/zeroing.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/ft_printf/srcsFloat/check_create_float_res.c">
+		<Unit filename="/Users/Student/Corewar/ft_printf/srcsFloat/check_create_float_res.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/ft_printf/srcsFloat/e_flag_intf.c">
+		<Unit filename="/Users/Student/Corewar/ft_printf/srcsFloat/e_flag_intf.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/ft_printf/srcsFloat/float_intf.c">
+		<Unit filename="/Users/Student/Corewar/ft_printf/srcsFloat/float_intf.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/ft_printf/srcsFloat/float_rounding.c">
+		<Unit filename="/Users/Student/Corewar/ft_printf/srcsFloat/float_rounding.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/ft_printf/srcsFloat/frees_for_float.c">
+		<Unit filename="/Users/Student/Corewar/ft_printf/srcsFloat/frees_for_float.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/ft_printf/srcsFloat/ft_log10.c">
+		<Unit filename="/Users/Student/Corewar/ft_printf/srcsFloat/ft_log10.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/ft_printf/srcsFloat/ft_log2.c">
+		<Unit filename="/Users/Student/Corewar/ft_printf/srcsFloat/ft_log2.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/ft_printf/srcsFloat/g_flag_intf.c">
+		<Unit filename="/Users/Student/Corewar/ft_printf/srcsFloat/g_flag_intf.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/ft_printf/srcsFloat/get_dbl_values.c">
+		<Unit filename="/Users/Student/Corewar/ft_printf/srcsFloat/get_dbl_values.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/ft_printf/srcsFloat/get_ldbl_values.c">
+		<Unit filename="/Users/Student/Corewar/ft_printf/srcsFloat/get_ldbl_values.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/ft_printf/srcsFloat/high_precision.c">
+		<Unit filename="/Users/Student/Corewar/ft_printf/srcsFloat/high_precision.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/ft_printf/srcsFloat/high_precision_intf.c">
+		<Unit filename="/Users/Student/Corewar/ft_printf/srcsFloat/high_precision_intf.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/ft_printf/srcsFloat/high_precision_intf_long.c">
+		<Unit filename="/Users/Student/Corewar/ft_printf/srcsFloat/high_precision_intf_long.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/ft_printf/srcsFloat/high_precision_long.c">
+		<Unit filename="/Users/Student/Corewar/ft_printf/srcsFloat/high_precision_long.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/ft_printf/srcsFloat/my_float.c">
+		<Unit filename="/Users/Student/Corewar/ft_printf/srcsFloat/my_float.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/ft_printf/srcsFloat/my_long_float.c">
+		<Unit filename="/Users/Student/Corewar/ft_printf/srcsFloat/my_long_float.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/ft_printf/srcsFloat/print_reserve_dbl.c">
+		<Unit filename="/Users/Student/Corewar/ft_printf/srcsFloat/print_reserve_dbl.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/ft_wordequ.c">
+		<Unit filename="/Users/Student/Corewar/ft_wordequ.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ft_abs.c">
+		<Unit filename="/Users/Student/Corewar/libft/ft_abs.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ft_atoi.c">
+		<Unit filename="/Users/Student/Corewar/libft/ft_atoi.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ft_bzero.c">
+		<Unit filename="/Users/Student/Corewar/libft/ft_bzero.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ft_fib.c">
+		<Unit filename="/Users/Student/Corewar/libft/ft_fib.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ft_floor.c">
+		<Unit filename="/Users/Student/Corewar/libft/ft_floor.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ft_is_complex_string.c">
+		<Unit filename="/Users/Student/Corewar/libft/ft_is_complex_string.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ft_isalnum.c">
+		<Unit filename="/Users/Student/Corewar/libft/ft_isalnum.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ft_isalpha.c">
+		<Unit filename="/Users/Student/Corewar/libft/ft_isalpha.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ft_isascii.c">
+		<Unit filename="/Users/Student/Corewar/libft/ft_isascii.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ft_isdigit.c">
+		<Unit filename="/Users/Student/Corewar/libft/ft_isdigit.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ft_islower.c">
+		<Unit filename="/Users/Student/Corewar/libft/ft_islower.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ft_isprint.c">
+		<Unit filename="/Users/Student/Corewar/libft/ft_isprint.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ft_isspace.c">
+		<Unit filename="/Users/Student/Corewar/libft/ft_isspace.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ft_isupper.c">
+		<Unit filename="/Users/Student/Corewar/libft/ft_isupper.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ft_itoa.c">
+		<Unit filename="/Users/Student/Corewar/libft/ft_itoa.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ft_lstadd.c">
+		<Unit filename="/Users/Student/Corewar/libft/ft_lstadd.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ft_lstcirc_add.c">
+		<Unit filename="/Users/Student/Corewar/libft/ft_lstcirc_add.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ft_lstcirc_delelem.c">
+		<Unit filename="/Users/Student/Corewar/libft/ft_lstcirc_delelem.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ft_lstcirc_findcontent_size.c">
+		<Unit filename="/Users/Student/Corewar/libft/ft_lstcirc_findcontent_size.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ft_lstcirc_strnew.c">
+		<Unit filename="/Users/Student/Corewar/libft/ft_lstcirc_strnew.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ft_lstdel.c">
+		<Unit filename="/Users/Student/Corewar/libft/ft_lstdel.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ft_lstdelone.c">
+		<Unit filename="/Users/Student/Corewar/libft/ft_lstdelone.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ft_lstiter.c">
+		<Unit filename="/Users/Student/Corewar/libft/ft_lstiter.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ft_lstmap.c">
+		<Unit filename="/Users/Student/Corewar/libft/ft_lstmap.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ft_lstnew.c">
+		<Unit filename="/Users/Student/Corewar/libft/ft_lstnew.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ft_lstpush.c">
+		<Unit filename="/Users/Student/Corewar/libft/ft_lstpush.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ft_memalloc.c">
+		<Unit filename="/Users/Student/Corewar/libft/ft_memalloc.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ft_memccpy.c">
+		<Unit filename="/Users/Student/Corewar/libft/ft_memccpy.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ft_memchr.c">
+		<Unit filename="/Users/Student/Corewar/libft/ft_memchr.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ft_memcmp.c">
+		<Unit filename="/Users/Student/Corewar/libft/ft_memcmp.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ft_memcpy.c">
+		<Unit filename="/Users/Student/Corewar/libft/ft_memcpy.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ft_memdel.c">
+		<Unit filename="/Users/Student/Corewar/libft/ft_memdel.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ft_memmove.c">
+		<Unit filename="/Users/Student/Corewar/libft/ft_memmove.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ft_memset.c">
+		<Unit filename="/Users/Student/Corewar/libft/ft_memset.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ft_pow.c">
+		<Unit filename="/Users/Student/Corewar/libft/ft_pow.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ft_putchar.c">
+		<Unit filename="/Users/Student/Corewar/libft/ft_putchar.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ft_putchar_fd.c">
+		<Unit filename="/Users/Student/Corewar/libft/ft_putchar_fd.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ft_putendl.c">
+		<Unit filename="/Users/Student/Corewar/libft/ft_putendl.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ft_putendl_fd.c">
+		<Unit filename="/Users/Student/Corewar/libft/ft_putendl_fd.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ft_putnbr.c">
+		<Unit filename="/Users/Student/Corewar/libft/ft_putnbr.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ft_putnbr_fd.c">
+		<Unit filename="/Users/Student/Corewar/libft/ft_putnbr_fd.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ft_putstr.c">
+		<Unit filename="/Users/Student/Corewar/libft/ft_putstr.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ft_putstr_fd.c">
+		<Unit filename="/Users/Student/Corewar/libft/ft_putstr_fd.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ft_reverse.c">
+		<Unit filename="/Users/Student/Corewar/libft/ft_reverse.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ft_sqrt.c">
+		<Unit filename="/Users/Student/Corewar/libft/ft_sqrt.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ft_sstrchr.c">
+		<Unit filename="/Users/Student/Corewar/libft/ft_sstrchr.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ft_strcat.c">
+		<Unit filename="/Users/Student/Corewar/libft/ft_strcat.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ft_strchr.c">
+		<Unit filename="/Users/Student/Corewar/libft/ft_strchr.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ft_strclr.c">
+		<Unit filename="/Users/Student/Corewar/libft/ft_strclr.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ft_strcmp.c">
+		<Unit filename="/Users/Student/Corewar/libft/ft_strcmp.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ft_strcpy.c">
+		<Unit filename="/Users/Student/Corewar/libft/ft_strcpy.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ft_strdel.c">
+		<Unit filename="/Users/Student/Corewar/libft/ft_strdel.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ft_strdup.c">
+		<Unit filename="/Users/Student/Corewar/libft/ft_strdup.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ft_strequ.c">
+		<Unit filename="/Users/Student/Corewar/libft/ft_strequ.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ft_striter.c">
+		<Unit filename="/Users/Student/Corewar/libft/ft_striter.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ft_striteri.c">
+		<Unit filename="/Users/Student/Corewar/libft/ft_striteri.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ft_strjoin.c">
+		<Unit filename="/Users/Student/Corewar/libft/ft_strjoin.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ft_strjoinre.c">
+		<Unit filename="/Users/Student/Corewar/libft/ft_strjoinre.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ft_strlcat.c">
+		<Unit filename="/Users/Student/Corewar/libft/ft_strlcat.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ft_strlcpy.c">
+		<Unit filename="/Users/Student/Corewar/libft/ft_strlcpy.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ft_strlen.c">
+		<Unit filename="/Users/Student/Corewar/libft/ft_strlen.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ft_strmap.c">
+		<Unit filename="/Users/Student/Corewar/libft/ft_strmap.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ft_strmapi.c">
+		<Unit filename="/Users/Student/Corewar/libft/ft_strmapi.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ft_strncat.c">
+		<Unit filename="/Users/Student/Corewar/libft/ft_strncat.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ft_strncmp.c">
+		<Unit filename="/Users/Student/Corewar/libft/ft_strncmp.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ft_strncpy.c">
+		<Unit filename="/Users/Student/Corewar/libft/ft_strncpy.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ft_strndup.c">
+		<Unit filename="/Users/Student/Corewar/libft/ft_strndup.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ft_strnequ.c">
+		<Unit filename="/Users/Student/Corewar/libft/ft_strnequ.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ft_strnew.c">
+		<Unit filename="/Users/Student/Corewar/libft/ft_strnew.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ft_strnstr.c">
+		<Unit filename="/Users/Student/Corewar/libft/ft_strnstr.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ft_strrchr.c">
+		<Unit filename="/Users/Student/Corewar/libft/ft_strrchr.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ft_strsplit.c">
+		<Unit filename="/Users/Student/Corewar/libft/ft_strsplit.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ft_strstr.c">
+		<Unit filename="/Users/Student/Corewar/libft/ft_strstr.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ft_strsub.c">
+		<Unit filename="/Users/Student/Corewar/libft/ft_strsub.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ft_strtrim.c">
+		<Unit filename="/Users/Student/Corewar/libft/ft_strtrim.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ft_tolower.c">
+		<Unit filename="/Users/Student/Corewar/libft/ft_tolower.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ft_toupper.c">
+		<Unit filename="/Users/Student/Corewar/libft/ft_toupper.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/get_next_line.c">
+		<Unit filename="/Users/Student/Corewar/libft/get_next_line.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/get_next_line.h">
+		<Unit filename="/Users/Student/Corewar/libft/get_next_line.h">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/go_exit.c">
+		<Unit filename="/Users/Student/Corewar/libft/go_exit.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/libft.h">
+		<Unit filename="/Users/Student/Corewar/libft/libft.h">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/memlist.h">
+		<Unit filename="/Users/Student/Corewar/libft/memlist.h">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/memlist/blackbox_memlist.h">
+		<Unit filename="/Users/Student/Corewar/libft/memlist/blackbox_memlist.h">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/memlist/memlist_bottleneck.c">
+		<Unit filename="/Users/Student/Corewar/libft/memlist/memlist_bottleneck.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/memlist/ml_create.c">
+		<Unit filename="/Users/Student/Corewar/libft/memlist/ml_create.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/memlist/ml_del.c">
+		<Unit filename="/Users/Student/Corewar/libft/memlist/ml_del.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/memlist/ml_general.c">
+		<Unit filename="/Users/Student/Corewar/libft/memlist/ml_general.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ml_get_next_line.c">
+		<Unit filename="/Users/Student/Corewar/libft/ml_get_next_line.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ml_itoa.c">
+		<Unit filename="/Users/Student/Corewar/libft/ml_itoa.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ml_memalloc.c">
+		<Unit filename="/Users/Student/Corewar/libft/ml_memalloc.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ml_strdup.c">
+		<Unit filename="/Users/Student/Corewar/libft/ml_strdup.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ml_strjoin.c">
+		<Unit filename="/Users/Student/Corewar/libft/ml_strjoin.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ml_strjoinre.c">
+		<Unit filename="/Users/Student/Corewar/libft/ml_strjoinre.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ml_strmap.c">
+		<Unit filename="/Users/Student/Corewar/libft/ml_strmap.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ml_strmapi.c">
+		<Unit filename="/Users/Student/Corewar/libft/ml_strmapi.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ml_strndup.c">
+		<Unit filename="/Users/Student/Corewar/libft/ml_strndup.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ml_strnew.c">
+		<Unit filename="/Users/Student/Corewar/libft/ml_strnew.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ml_strsplit.c">
+		<Unit filename="/Users/Student/Corewar/libft/ml_strsplit.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ml_strsub.c">
+		<Unit filename="/Users/Student/Corewar/libft/ml_strsub.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/libft/ml_strtrim.c">
+		<Unit filename="/Users/Student/Corewar/libft/ml_strtrim.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/op.h">
+		<Unit filename="/Users/Student/Corewar/op.h">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/options.h">
+		<Unit filename="/Users/Student/Corewar/options.h">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/vm/includes/error_defs.h">
+		<Unit filename="/Users/Student/Corewar/vm/includes/error_defs.h">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/vm/includes/vis.h">
+		<Unit filename="/Users/Student/Corewar/vm/includes/vis.h">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/vm/includes/vis_errors.h">
+		<Unit filename="/Users/Student/Corewar/vm/includes/vis_errors.h">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/vm/includes/vm.h">
+		<Unit filename="/Users/Student/Corewar/vm/includes/vm.h">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/args_intf.c">
+		<Unit filename="/Users/Student/Corewar/vm/srcs/game/args_intf.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/game.c">
+		<Unit filename="/Users/Student/Corewar/vm/srcs/game/game.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/game_intf.c">
+		<Unit filename="/Users/Student/Corewar/vm/srcs/game/game_intf.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/helper_func.c">
+		<Unit filename="/Users/Student/Corewar/vm/srcs/game/helper_func.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/instuctions.c">
+		<Unit filename="/Users/Student/Corewar/vm/srcs/game/instr_fork_zjmp_live.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/vis/create_vs.c">
+		<Unit filename="/Users/Student/Corewar/vm/srcs/game/instr_ld.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/vis/display_carriages.c">
+		<Unit filename="/Users/Student/Corewar/vm/srcs/game/instr_operations.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/vis/display_side_menu.c">
+		<Unit filename="/Users/Student/Corewar/vm/srcs/game/instr_st.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/vis/init_sdl.c">
+		<Unit filename="/Users/Student/Corewar/vm/srcs/game/vis/create_vs.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/vis/print_arena.c">
+		<Unit filename="/Users/Student/Corewar/vm/srcs/game/vis/display_carriages.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/vis/support_func.c">
+		<Unit filename="/Users/Student/Corewar/vm/srcs/game/vis/display_side_menu.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/game/vis/visualise_arena.c">
+		<Unit filename="/Users/Student/Corewar/vm/srcs/game/vis/init_sdl.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/main.c">
+		<Unit filename="/Users/Student/Corewar/vm/srcs/game/vis/print_arena.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/struct_intf/carriage_intf.c">
+		<Unit filename="/Users/Student/Corewar/vm/srcs/game/vis/support_func.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/struct_intf/corewar_intf.c">
+		<Unit filename="/Users/Student/Corewar/vm/srcs/game/vis/visualise_arena.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/validation/parse_input_intf.c">
+		<Unit filename="/Users/Student/Corewar/vm/srcs/main.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/validation/parse_inputs.c">
+		<Unit filename="/Users/Student/Corewar/vm/srcs/struct_intf/carriage_intf.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/vm/srcs/validation/reports.c">
+		<Unit filename="/Users/Student/Corewar/vm/srcs/struct_intf/corewar_intf.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/CMakeLists.txt">
+		<Unit filename="/Users/Student/Corewar/vm/srcs/validation/parse_input_intf.c">
+			<Option target="dencorewar"/>
+		</Unit>
+		<Unit filename="/Users/Student/Corewar/vm/srcs/validation/parse_inputs.c">
+			<Option target="dencorewar"/>
+		</Unit>
+		<Unit filename="/Users/Student/Corewar/vm/srcs/validation/reports.c">
+			<Option target="dencorewar"/>
+		</Unit>
+		<Unit filename="/Users/Student/Corewar/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/cmake-build-debug/FindSDL2.cmake">
+		<Unit filename="/Users/Student/Corewar/cmake-build-debug/FindSDL2.cmake">
 			<Option virtualFolder="CMake Files\cmake-build-debug\"/>
 		</Unit>
-		<Unit filename="C:/Users/da.filiptsev/Desktop/Corewar/cmake-build-debug/FindSDL2_ttf.cmake">
+		<Unit filename="/Users/Student/Corewar/cmake-build-debug/FindSDL2_TTF.cmake">
 			<Option virtualFolder="CMake Files\cmake-build-debug\"/>
 		</Unit>
 	</Project>

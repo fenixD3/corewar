@@ -29,7 +29,6 @@ int		get_value_frm_arg(t_parse_args *arg_val, int arg_idx,
 						t_corewar *corewar, _Bool is_idx_mod)
 {
 	int				val;
-	unsigned int	*ind_pos;
 
 	if (arg_val->code_args[arg_idx] == REG_CODE)
 		val = corewar->carriages->reg[arg_val->val[arg_idx] - 1];
@@ -37,13 +36,6 @@ int		get_value_frm_arg(t_parse_args *arg_val, int arg_idx,
 		val = arg_val->val[arg_idx];
 	else if (arg_val->code_args[arg_idx] == IND_CODE)
 	{
-		/*if (is_idx_mod)
-			ind_pos = (unsigned int *)do_steps(corewar->carriages->op_pos,
-				arg_val->val[arg_idx] % IDX_MOD, corewar->arena);
-		else
-			ind_pos = (unsigned int *)do_steps(corewar->carriages->op_pos,
-					arg_val->val[arg_idx], corewar->arena);
-		val = reverse_vm_int_bytes(ind_pos);*/
 		if (is_idx_mod)
 			val = reverse_vm_bytes(do_steps(corewar->carriages->op_pos,
 				arg_val->val[arg_idx] % IDX_MOD, corewar->arena), 4, corewar->arena);

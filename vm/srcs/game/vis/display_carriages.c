@@ -1,4 +1,3 @@
-/*
 
 #include "vis.h"
 #include "vis_errors.h"
@@ -48,4 +47,3 @@ void			display_carriages(t_vis_tools *vs, t_corewar *corewar)
 		i++;
 	}
 }
-*/

@@ -70,17 +70,18 @@ void	byte_code_validation(const int fd, t_champion *champ)
 	champ->file.header.prog_name[rd_cnt] = '\0';
 	rd_cnt = read(fd, &champ->file.zero, 4);
 	if (champ->file.zero)
-		get_error("There isn't 4 NULL bytes after champion's name or \
-champion's name is too big");
+		get_error(ERR_NOT_NULL);
 	rd_cnt = read(fd, &champ->file.header.prog_size, 4);
 	reverse_int_bytes(&champ->file.header.prog_size);
-	if (champ->file.header.prog_size > CHAMP_MAX_SIZE)
-		get_error("Champion's code size is too big");
+	if (champ->file.header.prog_size > CHAMP_MAX_SIZE
+			|| !champ->file.header.prog_size)
+		get_error("Champion's code size is too big or equal 0");
 	rd_cnt = read(fd, champ->file.header.comment, COMMENT_LENGTH);
 	champ->file.header.comment[rd_cnt] = '\0';
 	rd_cnt = read(fd, &champ->file.zero, 4);
 	if (champ->file.zero)
-		get_error("There isn't 4 NULL bytes after champion's comment or \
-champion's comment is too big");
+		get_error(ERR_NOT_NULL);
 	rd_cnt = read(fd, champ->file.exec_code, CHAMP_MAX_SIZE);
+	if (rd_cnt != champ->file.header.prog_size)
+		get_error(ERR_DIFF_CODE_SIZE);
 }

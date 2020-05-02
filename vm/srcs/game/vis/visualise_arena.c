@@ -1,4 +1,3 @@
-/*
 
 #include "vis.h"
 #include "vis_errors.h"
@@ -137,4 +136,3 @@ void			visualise_arena(t_corewar *corewar, t_vis_tools *vs, bool *quit)
 		update = -1;
 	}
 }
-*/

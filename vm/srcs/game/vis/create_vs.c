@@ -1,4 +1,3 @@
-/*
 
 #include "vis.h"
 #include "vis_errors.h"
@@ -38,4 +37,3 @@ t_vis_tools		*create_vs(void)
 	vs->speed = 1;
 	return (vs);
 }
-*/

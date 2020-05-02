@@ -10,8 +10,9 @@
 
 # define N_FLG 1u
 # define DUMP_FLG 2u
-# define A_FLG 3u
-# define V_FLG 4u
+# define A_FLG 4u
+# define V_FLG 8u
+# define B_FLG 16u
 
 # define CHAMP_NODE 1u
 # define CARRIAGE_NODE 2u

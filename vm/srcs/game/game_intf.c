@@ -14,16 +14,13 @@ void	carriages_actions(t_corewar *corewar)
 	}
 	while (corewar->carriages)
 	{
-		if (!corewar->carriages->cycle_op)
+		if (corewar->carriages->cycle_op <= 0)
 		{
 			corewar->carriages->op_code = *corewar->carriages->op_pos;
-			while (!valid_op_set_cycle(corewar->carriages->op_pos,
+			if (!valid_op_set_cycle(corewar->carriages->op_pos,
 					&corewar->carriages->cycle_op))
-			{
 				corewar->carriages->op_pos = do_steps
 						(corewar->carriages->op_pos, 1, corewar->arena);
-				corewar->carriages->op_code = *corewar->carriages->op_pos;
-			}
 		}
 		if (corewar->carriages->cycle_op == 1)
 			make_operation_and_go_next(corewar, &carriage_head);
@@ -38,15 +35,12 @@ void	lets_check(t_corewar *corewar)
 	t_carriages	*carriage;
 
 	carriage = corewar->carriages;
-	int fd = 0;
 	while (carriage)
 	{
-		if (corewar->game_param.cycles_aft_start == 17440)
-			++fd;
 		if (corewar->game_param.cycles_aft_start - carriage->cycle_when_live
 				>= corewar->game_param.cycles_to_die)
 			carriage = delete_carriage(corewar, carriage->id);
-		carriage = (carriage) ? carriage->next : NULL;
+		carriage = (carriage) ? carriage->next : corewar->carriages;
 	}
 	if (corewar->game_param.live_period_cnt >= NBR_LIVE)
 	{
@@ -98,12 +92,19 @@ void	make_operation_and_go_next(t_corewar *corewar,
 	start_op = skip_op(start_op, args_val.code_args,
 				g_op[idx_op], corewar->arena);
 	corewar->carriages->cnt_bytes_to_op = cnt_bytes_for_op(&g_op[idx_op], args_val.code_args);
-	if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num & 16)
+	if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num & 16 && corewar->carriages->op_code != 9)
 	{
-		printf("ADV %d (%#06x -> %#06x) ",
-			   corewar->carriages->cnt_bytes_to_op, (int)(corewar->carriages->op_pos - corewar->arena), (int)(start_op - corewar->arena));
-		fprintf(file, "ADV %d (%#06x -> %#06x) ",
-			   corewar->carriages->cnt_bytes_to_op, (int)(corewar->carriages->op_pos - corewar->arena), (int)(start_op - corewar->arena));
+		printf("ADV %d (%s%04x -> %#06x) ",
+			corewar->carriages->cnt_bytes_to_op,
+			"0x",
+			(int)(corewar->carriages->op_pos - corewar->arena),
+			(int)(start_op - corewar->arena));
+		fprintf(file,
+			"ADV %d (%s%04x -> %#06x) ",
+			corewar->carriages->cnt_bytes_to_op,
+			"0x",
+			(int)(corewar->carriages->op_pos - corewar->arena),
+			(int)(start_op - corewar->arena));
 		print_command_bytes(corewar->carriages->op_pos, corewar->carriages->cnt_bytes_to_op, corewar->arena);
 	}
 	corewar->carriages->op_pos = start_op;

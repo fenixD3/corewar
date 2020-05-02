@@ -1,4 +1,3 @@
-/*
 
 #include "vis.h"
 
@@ -77,4 +76,3 @@ void			free_mem_font(t_vis_tools *vs)
 	vs->txt_srfc = NULL;
 	DESTROY_TXTR(vs->text);
 }
-*/

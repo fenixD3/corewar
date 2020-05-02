@@ -23,6 +23,8 @@ _Bool	is_flg(const char *arg, t_flgs *flgs)
 		flgs->set_flg & V_FLG ? get_error(ERR_V_FLG) : 0;
 		flgs->set_flg |= V_FLG;
 	}
+	else if (!ft_strcmp(arg, "-b"))
+		flgs->set_flg |= B_FLG;
 	else
 		good = 0;
 	return (good);

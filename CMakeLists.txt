@@ -13,7 +13,8 @@ include_directories(ft_printf/includes)
 include_directories(libft)
 include_directories(libft/memlist)
 include_directories(vm/includes)
-#include_directories(~/Library/Frameworks/SDL2.framework/Headers)
+
+include_directories(~/Library/Frameworks/SDL2.framework/Headers)
 #include_directories(~/Library/Frameworks/SDL2_image.framework/Headers)
 #include_directories(~/Library/Frameworks/SDL2_ttf.framework/Headers)
 
@@ -170,11 +171,24 @@ add_executable(dencorewar
         libft/ml_strsub.c
         libft/ml_strtrim.c
         vm/includes/error_defs.h
+        vm/includes/vc_list.h
         vm/includes/vis.h
         vm/includes/vis_errors.h
         vm/includes/vm.h
         vm/srcs/game/args_intf.c
         vm/srcs/game/vis/create_vs.c
+        vm/srcs/game/vis/disasm.c
+        vm/srcs/game/vis/display_carriages.c
+        vm/srcs/game/vis/display_side_menu.c
+        vm/srcs/game/vis/init_sdl.c
+        vm/srcs/game/instr_fork_zjmp_live.c
+        vm/srcs/game/vis/visualise_arena.c
+        vm/srcs/game/vis/print_arena.c
+        vm/srcs/game/vis/support_func.c
+        vm/srcs/game/vis/vc_list.c
+        vm/srcs/game/vis/vc_sort.c
+        vm/srcs/game/vis/visualise_arena.c
+        vm/srcs/game/args_intf.c
         vm/srcs/game/game.c
         vm/srcs/game/game_intf.c
         vm/srcs/game/helper_func.c

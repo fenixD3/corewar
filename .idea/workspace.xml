@@ -23,7 +23,7 @@
       <config projectName="dencorewar" targetName="dencorewar" />
     </generated>
   </component>
-  <component name="CMakeSettings" AUTO_RELOAD="true">
+  <component name="CMakeSettings">
     <configurations>
       <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
     </configurations>
@@ -199,6 +199,7 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vm/srcs/game/helper_func.c" beforeDir="false" afterPath="$PROJECT_DIR$/vm/srcs/game/helper_func.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vm/srcs/game/instr_st.c" beforeDir="false" afterPath="$PROJECT_DIR$/vm/srcs/game/instr_st.c" afterDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -212,7 +213,8 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1a36ZZZRqVoH2PeDbeoCdAZ4efZ" />
+  <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
+  <component name="ProjectId" id="1bGtc7OxCoMyXqFA1KvZlIGyQbx" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -263,8 +265,8 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="79a239b6-4ac5-4d07-8ce2-cff35afe5c75" name="Default Changelist" comment="" />
-      <created>1585951986636</created>
+      <changelist id="b66a34c4-50f9-404a-a1ca-8f01c77750b0" name="Default Changelist" comment="" />
+      <created>1588270334940</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1585951986636</updated>
@@ -437,7 +439,6 @@
     <state x="-1381" y="183" width="840" height="856" key="search.everywhere.popup" timestamp="1587587200987">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1381" y="183" width="840" height="856" key="search.everywhere.popup/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1587587200987" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1587576578202" />
+    <state x="667" y="281" width="586" height="518" key="find.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1588500652666" />
   </component>
 </project>

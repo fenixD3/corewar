@@ -1,4 +1,7 @@
-#include "vm.h"
+#include "vis.h"
+
+t_vis_tools *g_vs;
+
 
 t_carriages	*create_new_carriage(void)
 {
@@ -20,7 +23,7 @@ t_carriages	*create_new_carriage(void)
 	return (new);
 }
 
-void		push_front_carriage(t_carriages **carriages)
+void push_front_carriage(t_carriages **carriages)
 {
 	t_carriages	*new_carriage;
 
@@ -33,6 +36,8 @@ void		push_front_carriage(t_carriages **carriages)
 		new_carriage->next = *carriages;
 		*carriages = new_carriage;
 	}
+// при условии если программа запущена с -vis
+		add_new_vc(&(g_vs->vc_list), *carriages);
 }
 
 t_carriages	*delete_carriage(t_corewar *corewar, int search_id)
@@ -63,6 +68,9 @@ t_carriages	*delete_carriage(t_corewar *corewar, int search_id)
 		corewar->carriages = carriage->next;
 	else
 		prev->next = carriage->next;
+	///// egors
+	delete_vc_by_deletion_carriage(carriage);
+	/////
 	ml_free(carriage, CARRIAGE_NODE);
 	return (prev);
 }

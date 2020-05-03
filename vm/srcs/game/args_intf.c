@@ -1,4 +1,4 @@
-#include "vm.h"
+#include "vis.h"
 #include "options.h"
 
 unsigned char *get_arguments_frm_code(unsigned char *arg_type_code,

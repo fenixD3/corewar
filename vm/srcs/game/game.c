@@ -2,12 +2,13 @@
 #include "vis.h"
 #include "vis_errors.h"
 
+t_vis_tools *g_vs;
+
 void	start_game(t_corewar *corewar)
 {
-	t_vis_tools *vs;
 	bool		quit;
 
-	vs = create_vs();
+	create_vs();
 	file = fopen("log.txt", "w");
 	init_arena(corewar->arena, corewar->champs, &corewar->carriages);
 	introducing_fighter(corewar->champs);

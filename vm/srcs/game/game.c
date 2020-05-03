@@ -12,7 +12,7 @@ void	start_game(t_corewar *corewar)
 	file = fopen("log.txt", "w");
 	init_arena(corewar->arena, corewar->champs, &corewar->carriages);
 	introducing_fighter(corewar->champs);
-	if (!init(vs))
+	if (!init())
 		go_exit(ERR_CREATE_VS);
 	quit = false;
 	g_change = 1;
@@ -27,7 +27,7 @@ void	start_game(t_corewar *corewar)
 corewar->game_param.cycles_to_die) || corewar->game_param.cycles_to_die <= 0)
 			lets_check(corewar);
 		if ((corewar->flgs.set_flg & B_FLG) && g_change)
-			visualise_arena(corewar, vs, &quit);
+			visualise_arena(corewar, &quit);
 		if (!corewar->carriages)
 			introducing_winner(corewar);
 	}

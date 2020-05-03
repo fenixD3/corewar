@@ -6,5 +6,5 @@ C_FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk 
 
 C_DEFINES = 
 
-C_INCLUDES = -I/Users/Student/Corewar/. -I/Users/Student/Corewar/asm -I/Users/Student/Corewar/ft_printf/includes -I/Users/Student/Corewar/libft -I/Users/Student/Corewar/libft/memlist -I/Users/Student/Corewar/vm/includes -I/usr/local/include/SDL2 
+C_INCLUDES = -I/Users/Student/Corewar/. -I/Users/Student/Corewar/asm -I/Users/Student/Corewar/ft_printf/includes -I/Users/Student/Corewar/libft -I/Users/Student/Corewar/libft/memlist -I/Users/Student/Corewar/vm/includes -I/Users/Student/Library/Frameworks/SDL2.framework/Headers -I/usr/local/include/SDL2 
 

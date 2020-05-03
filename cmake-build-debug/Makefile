@@ -48,17 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-<<<<<<< HEAD
 CMAKE_SOURCE_DIR = /Users/Student/Corewar
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /Users/Student/Corewar/cmake-build-debug
-=======
-CMAKE_SOURCE_DIR = /Users/mdeanne/corewar/vis
-
-# The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/mdeanne/corewar/vis/cmake-build-debug
->>>>>>> vis
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,15 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-<<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Student/Corewar/cmake-build-debug/CMakeFiles /Users/Student/Corewar/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Student/Corewar/cmake-build-debug/CMakeFiles 0
-=======
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mdeanne/corewar/vis/cmake-build-debug/CMakeFiles /Users/mdeanne/corewar/vis/cmake-build-debug/CMakeFiles/progress.marks
-	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mdeanne/corewar/vis/cmake-build-debug/CMakeFiles 0
->>>>>>> vis
 .PHONY : all
 
 # The main clean target
@@ -4078,7 +4065,6 @@ vm/srcs/game/helper_func.c.s:
 	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/helper_func.c.s
 .PHONY : vm/srcs/game/helper_func.c.s
 
-<<<<<<< HEAD
 vm/srcs/game/instr_fork_zjmp_live.o: vm/srcs/game/instr_fork_zjmp_live.c.o
 
 .PHONY : vm/srcs/game/instr_fork_zjmp_live.o
@@ -4186,34 +4172,6 @@ vm/srcs/game/instr_st.s: vm/srcs/game/instr_st.c.s
 vm/srcs/game/instr_st.c.s:
 	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/instr_st.c.s
 .PHONY : vm/srcs/game/instr_st.c.s
-=======
-vm/srcs/game/instuctions.o: vm/srcs/game/instuctions.c.o
-
-.PHONY : vm/srcs/game/instuctions.o
-
-# target to build an object file
-vm/srcs/game/instuctions.c.o:
-	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/instuctions.c.o
-.PHONY : vm/srcs/game/instuctions.c.o
-
-vm/srcs/game/instuctions.i: vm/srcs/game/instuctions.c.i
-
-.PHONY : vm/srcs/game/instuctions.i
-
-# target to preprocess a source file
-vm/srcs/game/instuctions.c.i:
-	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/instuctions.c.i
-.PHONY : vm/srcs/game/instuctions.c.i
-
-vm/srcs/game/instuctions.s: vm/srcs/game/instuctions.c.s
-
-.PHONY : vm/srcs/game/instuctions.s
-
-# target to generate assembly for a file
-vm/srcs/game/instuctions.c.s:
-	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/instuctions.c.s
-.PHONY : vm/srcs/game/instuctions.c.s
->>>>>>> vis
 
 vm/srcs/game/vis/create_vs.o: vm/srcs/game/vis/create_vs.c.o
 
@@ -4242,8 +4200,6 @@ vm/srcs/game/vis/create_vs.c.s:
 	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/vis/create_vs.c.s
 .PHONY : vm/srcs/game/vis/create_vs.c.s
 
-<<<<<<< HEAD
-=======
 vm/srcs/game/vis/disasm.o: vm/srcs/game/vis/disasm.c.o
 
 .PHONY : vm/srcs/game/vis/disasm.o
@@ -4271,7 +4227,6 @@ vm/srcs/game/vis/disasm.c.s:
 	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/vis/disasm.c.s
 .PHONY : vm/srcs/game/vis/disasm.c.s
 
->>>>>>> vis
 vm/srcs/game/vis/display_carriages.o: vm/srcs/game/vis/display_carriages.c.o
 
 .PHONY : vm/srcs/game/vis/display_carriages.o
@@ -4407,8 +4362,6 @@ vm/srcs/game/vis/support_func.c.s:
 	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/vis/support_func.c.s
 .PHONY : vm/srcs/game/vis/support_func.c.s
 
-<<<<<<< HEAD
-=======
 vm/srcs/game/vis/vc_list.o: vm/srcs/game/vis/vc_list.c.o
 
 .PHONY : vm/srcs/game/vis/vc_list.o
@@ -4463,7 +4416,6 @@ vm/srcs/game/vis/vc_sort.c.s:
 	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/vis/vc_sort.c.s
 .PHONY : vm/srcs/game/vis/vc_sort.c.s
 
->>>>>>> vis
 vm/srcs/game/vis/visualise_arena.o: vm/srcs/game/vis/visualise_arena.c.o
 
 .PHONY : vm/srcs/game/vis/visualise_arena.o
@@ -5100,7 +5052,6 @@ help:
 	@echo "... vm/srcs/game/helper_func.o"
 	@echo "... vm/srcs/game/helper_func.i"
 	@echo "... vm/srcs/game/helper_func.s"
-<<<<<<< HEAD
 	@echo "... vm/srcs/game/instr_fork_zjmp_live.o"
 	@echo "... vm/srcs/game/instr_fork_zjmp_live.i"
 	@echo "... vm/srcs/game/instr_fork_zjmp_live.s"
@@ -5116,17 +5067,9 @@ help:
 	@echo "... vm/srcs/game/vis/create_vs.o"
 	@echo "... vm/srcs/game/vis/create_vs.i"
 	@echo "... vm/srcs/game/vis/create_vs.s"
-=======
-	@echo "... vm/srcs/game/instuctions.o"
-	@echo "... vm/srcs/game/instuctions.i"
-	@echo "... vm/srcs/game/instuctions.s"
-	@echo "... vm/srcs/game/vis/create_vs.o"
-	@echo "... vm/srcs/game/vis/create_vs.i"
-	@echo "... vm/srcs/game/vis/create_vs.s"
 	@echo "... vm/srcs/game/vis/disasm.o"
 	@echo "... vm/srcs/game/vis/disasm.i"
 	@echo "... vm/srcs/game/vis/disasm.s"
->>>>>>> vis
 	@echo "... vm/srcs/game/vis/display_carriages.o"
 	@echo "... vm/srcs/game/vis/display_carriages.i"
 	@echo "... vm/srcs/game/vis/display_carriages.s"
@@ -5142,15 +5085,12 @@ help:
 	@echo "... vm/srcs/game/vis/support_func.o"
 	@echo "... vm/srcs/game/vis/support_func.i"
 	@echo "... vm/srcs/game/vis/support_func.s"
-<<<<<<< HEAD
-=======
 	@echo "... vm/srcs/game/vis/vc_list.o"
 	@echo "... vm/srcs/game/vis/vc_list.i"
 	@echo "... vm/srcs/game/vis/vc_list.s"
 	@echo "... vm/srcs/game/vis/vc_sort.o"
 	@echo "... vm/srcs/game/vis/vc_sort.i"
 	@echo "... vm/srcs/game/vis/vc_sort.s"
->>>>>>> vis
 	@echo "... vm/srcs/game/vis/visualise_arena.o"
 	@echo "... vm/srcs/game/vis/visualise_arena.i"
 	@echo "... vm/srcs/game/vis/visualise_arena.s"

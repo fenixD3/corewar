@@ -155,11 +155,14 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/Student/Corewar/vm/srcs/game/instr_operations.c" "/Users/Student/Corewar/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/instr_operations.c.o"
   "/Users/Student/Corewar/vm/srcs/game/instr_st.c" "/Users/Student/Corewar/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/instr_st.c.o"
   "/Users/Student/Corewar/vm/srcs/game/vis/create_vs.c" "/Users/Student/Corewar/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/vis/create_vs.c.o"
+  "/Users/Student/Corewar/vm/srcs/game/vis/disasm.c" "/Users/Student/Corewar/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/vis/disasm.c.o"
   "/Users/Student/Corewar/vm/srcs/game/vis/display_carriages.c" "/Users/Student/Corewar/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/vis/display_carriages.c.o"
   "/Users/Student/Corewar/vm/srcs/game/vis/display_side_menu.c" "/Users/Student/Corewar/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/vis/display_side_menu.c.o"
   "/Users/Student/Corewar/vm/srcs/game/vis/init_sdl.c" "/Users/Student/Corewar/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/vis/init_sdl.c.o"
   "/Users/Student/Corewar/vm/srcs/game/vis/print_arena.c" "/Users/Student/Corewar/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/vis/print_arena.c.o"
   "/Users/Student/Corewar/vm/srcs/game/vis/support_func.c" "/Users/Student/Corewar/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/vis/support_func.c.o"
+  "/Users/Student/Corewar/vm/srcs/game/vis/vc_list.c" "/Users/Student/Corewar/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/vis/vc_list.c.o"
+  "/Users/Student/Corewar/vm/srcs/game/vis/vc_sort.c" "/Users/Student/Corewar/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/vis/vc_sort.c.o"
   "/Users/Student/Corewar/vm/srcs/game/vis/visualise_arena.c" "/Users/Student/Corewar/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/vis/visualise_arena.c.o"
   "/Users/Student/Corewar/vm/srcs/main.c" "/Users/Student/Corewar/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/main.c.o"
   "/Users/Student/Corewar/vm/srcs/struct_intf/carriage_intf.c" "/Users/Student/Corewar/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/struct_intf/carriage_intf.c.o"
@@ -178,6 +181,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "../libft"
   "../libft/memlist"
   "../vm/includes"
+  "/Users/Student/Library/Frameworks/SDL2.framework/Headers"
   "/usr/local/include/SDL2"
   )
 

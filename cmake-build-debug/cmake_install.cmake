@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 # Install script for directory: /Users/Student/Corewar
-=======
-# Install script for directory: /Users/mdeanne/corewar/vis
->>>>>>> vis
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,9 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-<<<<<<< HEAD
 file(WRITE "/Users/Student/Corewar/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
-=======
-file(WRITE "/Users/mdeanne/corewar/vis/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
->>>>>>> vis
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

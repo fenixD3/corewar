@@ -6,6 +6,8 @@ unsigned char	*do_steps(unsigned char *start, int step,
 
 	if (start + step > arena + MEM_SIZE - 1)
 		start = arena + ((start + step - arena) % MEM_SIZE);
+	else if (start + step < arena)
+		start = arena + MEM_SIZE - 1 + step;
 	else
 		start += step;
 	return (start);

@@ -83,4 +83,3 @@ void	sti(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 		ind_pos = do_steps(ind_pos, 1, corewar->arena);
 	}
 }
-

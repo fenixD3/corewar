@@ -55,3 +55,38 @@ t_vc    *cut_vc(t_vc **prev)
 	(*prev)->next = (*prev)->next->next;
 	return (tmp);
 }
+
+void 	delete_vc_by_deletion_carriage(t_carriages *del)
+{
+	t_vc	*prev;
+	t_vc	*curr;
+
+	prev = g_vs->vc_list;
+	if (prev->carriage == del && !prev->next)
+	{
+/*		ml_free(prev, CARRIAGE_VISUAL);
+		g_vs->vc_list = NULL;*/
+		ml_free(cut_vc(&g_vs->vc_list), CARRIAGE_VISUAL);
+	}
+	else if (!prev->next)
+		go_exit("COMPILE ERROR: discrepancy t_vc and t_carriage lists"); ///may be deleted
+	else if (prev->carriage == del)
+	{
+		g_vs->vc_list = prev->next;
+		ml_free(prev, CARRIAGE_VISUAL);
+	}
+	else
+	{
+		curr = prev->next;
+		while (curr)
+		{
+			if (curr->carriage == del)
+				break ;
+			prev = curr;
+			curr = curr->next;
+		}
+		if (!curr)
+			go_exit("COMPILE ERROR: discrepancy t_vc and t_carriage lists"); ///may be deleted
+		ml_free(cut_vc(&prev), CARRIAGE_VISUAL);
+	}
+}

@@ -27,7 +27,7 @@
 //void    insert_vc(t_vc **head, t_vc *prev, t_vc *insert);
 //t_vc    *cut_vc(t_vc **prev);
 //t_vc	*find_prev_to_insert(t_vc *head, t_vc *insert);
-//t_vc 	*find_and_cut_elem(t_vc **head);
+//t_vc 	*find_and_cut_unsorted_elem(t_vc **head);
 //void	sort_vc(t_vc **head);
 //
 //#endif //COREWAR_VC_LIST_H

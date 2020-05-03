@@ -85,6 +85,28 @@ void			fill_frame(int *i, t_carriages *carriages, int extndd)
 	*i += extndd ? 162 : 63;
 }
 
+void        print_tvc(t_vc *vc)
+{
+    uint32_t i = 0;
+    while (vc)
+    {
+        i++;
+        printf("%d\t%t\n", i, vc->carriage->id);
+        vc = vc->next;
+    }
+}
+
+void        print_carr(t_carriages *carr)
+{
+    uint32_t i = 0;
+    while (carr)
+    {
+        i++;
+        printf("%d\t%t\n", i, carr->id);
+        carr =carr->next;
+    }
+}
+
 void			display_side_menu(t_corewar *crrw, int ind)
 {
 	SDL_Color	color;

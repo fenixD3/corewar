@@ -25,7 +25,7 @@ t_vc	*find_prev_to_insert(t_vc *head, t_vc *insert)
 	return (head);
 }
 
-t_vc 	*find_and_cut_elem(t_vc **head)
+t_vc 	*find_and_cut_unsorted_elem(t_vc **head)
 {
 	t_vc *prev;
 	t_vc *curr;
@@ -53,6 +53,6 @@ void sort_vc(t_vc **head)
 {
 	t_vc *cutted;
 
-	while ((cutted = find_and_cut_elem(head)))
+	while ((cutted = find_and_cut_unsorted_elem(head)))
 		insert_vc(head, find_prev_to_insert(*head, cutted), cutted);
 }

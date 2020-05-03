@@ -64,6 +64,9 @@ t_carriages	*delete_carriage(t_corewar *corewar, int search_id)
 		corewar->carriages = carriage->next;
 	else
 		prev->next = carriage->next;
+	///// egors
+	delete_vc_by_deletion_carriage(carriage);
+	/////
 	ml_free(carriage, CARRIAGE_NODE);
 	return (prev ? prev : corewar->carriages);
 }

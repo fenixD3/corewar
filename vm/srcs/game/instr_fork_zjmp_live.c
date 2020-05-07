@@ -12,7 +12,6 @@ void    live(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 		fprintf(file, "P%5d | %s %d\n",
 			   corewar->carriages->id, "live", arg_val->val[0]);
 	}
-	corewar->carriages->is_live = 1;
 	++corewar->game_param.live_period_cnt;
 	corewar->carriages->cycle_when_live = corewar->game_param.cycles_aft_start;
 	champ = corewar->champs;
@@ -39,11 +38,11 @@ void	zjump(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 		printf("P%5d | %s %d ",
 			   corewar->carriages->id,
 			   "zjmp",
-			   arg_val->val[0]);
+			   (int16_t)arg_val->val[0]);
 		fprintf(file, "P%5d | %s %d ",
 			   corewar->carriages->id,
 			   "zjmp",
-			   arg_val->val[0]);
+				(int16_t)arg_val->val[0]);
 	}
 	if (!corewar->carriages->carry || !*head)
 	{
@@ -54,7 +53,7 @@ void	zjump(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 		return;
 	}
 	corewar->carriages->op_pos = do_steps(corewar->carriages->op_pos,
-			arg_val->val[0] % IDX_MOD, corewar->arena);
+		(int16_t)arg_val->val[0] % IDX_MOD, corewar->arena);
 	if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num & 4) {
 		printf("OK\n");
 		fprintf(file, "OK\n");
@@ -67,15 +66,19 @@ void	nfork(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 		printf("P%5d | %s %d (%ld)\n",
 			   corewar->carriages->id,
 			   "fork",
-			   arg_val->val[0],
-			   do_steps(corewar->carriages->op_pos,
-						arg_val->val[0] % IDX_MOD, corewar->arena) - corewar->arena);
+			   (int16_t)arg_val->val[0],
+			   ((int16_t)arg_val->val[0] >= 0) ? do_steps(corewar->carriages->op_pos,
+			   	(int16_t)arg_val->val[0] % IDX_MOD, corewar->arena) - corewar->arena
+			   	: do_steps(corewar->carriages->op_pos,
+						   (int16_t)arg_val->val[0] % IDX_MOD, corewar->arena) - corewar->arena - MEM_SIZE);
 		fprintf(file, "P%5d | %s %d (%ld)\n",
 			   corewar->carriages->id,
 			   "fork",
-			   arg_val->val[0],
-			   do_steps(corewar->carriages->op_pos,
-						 arg_val->val[0] % IDX_MOD, corewar->arena) - corewar->arena);
+			   (int16_t)arg_val->val[0],
+			   ((int16_t)arg_val->val[0] >= 0) ? do_steps(corewar->carriages->op_pos,
+						  (int16_t)arg_val->val[0] % IDX_MOD, corewar->arena) - corewar->arena
+			   : do_steps(corewar->carriages->op_pos,
+						  (int16_t)arg_val->val[0] % IDX_MOD, corewar->arena) - corewar->arena - MEM_SIZE);
 	}
 	push_front_carriage(head);
 	(*head)->carry = corewar->carriages->carry;
@@ -83,7 +86,7 @@ void	nfork(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 	ft_memcpy((*head)->reg, corewar->carriages->reg,
 			sizeof(corewar->carriages->reg));
 	(*head)->op_pos = do_steps(corewar->carriages->op_pos,
-			arg_val->val[0] % IDX_MOD, corewar->arena);
+		(int16_t)arg_val->val[0] % IDX_MOD, corewar->arena);
 }
 
 void	lfork(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
@@ -92,15 +95,19 @@ void	lfork(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 		printf("P%5d | %s %d (%ld)\n",
 			   corewar->carriages->id,
 			   "lfork",
-			   arg_val->val[0],
-			   do_steps(corewar->carriages->op_pos,
-						arg_val->val[0], corewar->arena) - corewar->arena);
+			   (int16_t)arg_val->val[0],
+			   ((int16_t)arg_val->val[0] >= 0) ? do_steps(corewar->carriages->op_pos,
+			   	(int16_t)arg_val->val[0], corewar->arena) - corewar->arena
+			   	: do_steps(corewar->carriages->op_pos,
+			   		(int16_t)arg_val->val[0], corewar->arena) - corewar->arena - MEM_SIZE);
 		fprintf(file, "P%5d | %s %d (%ld)\n",
 			   corewar->carriages->id,
 			   "lfork",
-			   arg_val->val[0],
-			   do_steps(corewar->carriages->op_pos,
-						 arg_val->val[0], corewar->arena) - corewar->arena);
+				(int16_t)arg_val->val[0],
+				((int16_t)arg_val->val[0] >= 0) ? do_steps(corewar->carriages->op_pos,
+					(int16_t)arg_val->val[0], corewar->arena) - corewar->arena
+				: do_steps(corewar->carriages->op_pos,
+					(int16_t)arg_val->val[0], corewar->arena) - corewar->arena - MEM_SIZE);
 	}
 	push_front_carriage(head);
 	(*head)->carry = corewar->carriages->carry;
@@ -108,5 +115,5 @@ void	lfork(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 	ft_memcpy((*head)->reg, corewar->carriages->reg,
 			  sizeof(corewar->carriages->reg));
 	(*head)->op_pos = do_steps(corewar->carriages->op_pos,
-			arg_val->val[0], corewar->arena);
+		(int16_t)arg_val->val[0], corewar->arena);
 }

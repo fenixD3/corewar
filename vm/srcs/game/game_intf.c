@@ -89,10 +89,15 @@ void	make_operation_and_go_next(t_corewar *corewar,
 			g_op[idx_op], corewar->arena);
 	if (is_args_valid(&args_val, start_op, &g_op[idx_op], corewar->arena))
 		(*instrs_ptr[idx_op])(corewar, &args_val, carriage_head);
-	start_op = skip_op(start_op, args_val.code_args,
+	if (corewar->carriages->op_code != 9 ||
+	(corewar->carriages->op_code == 9 && !corewar->carriages->carry))
+		start_op = skip_op(start_op, args_val.code_args,
 				g_op[idx_op], corewar->arena);
+	else
+		start_op = corewar->carriages->op_pos;
 	corewar->carriages->cnt_bytes_to_op = cnt_bytes_for_op(&g_op[idx_op], args_val.code_args);
-	if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num & 16 && corewar->carriages->op_code != 9)
+	if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num & 16 &&
+	(corewar->carriages->op_code != 9 || (corewar->carriages->op_code == 9 && !corewar->carriages->carry)))
 	{
 		printf("ADV %d (%s%04x -> %#06x) ",
 			corewar->carriages->cnt_bytes_to_op,

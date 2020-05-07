@@ -46,26 +46,26 @@ _Bool		is_args_valid(t_parse_args *args_val, unsigned char *arg_start,
 void	get_arguments_values(t_parse_args *args_val, unsigned char *arg_start,
 						  const t_op *oper, unsigned char *arena)
 {
-	union u_get_arg	get_arg;
+	unsigned char	*get_arg;
 	int 			idx;
 
 	idx = -1;
 	while (++idx != oper->num_args)
 	{
-		get_arg.chr_ptr = arg_start;
+		get_arg = arg_start;
 		if (args_val->code_args[idx] == REG_CODE)
 		{
-			args_val->val[idx] = *get_arg.chr_ptr;
+			args_val->val[idx] = *get_arg;
 			arg_start = do_steps(arg_start, 1, arena);
 		}
 		else if (args_val->code_args[idx] == DIR_CODE)
 		{
-			args_val->val[idx] = reverse_vm_bytes(get_arg.chr_ptr, (oper->size_t_dir == 2) ? 2 : 4, arena);
+			args_val->val[idx] = reverse_vm_bytes(get_arg, (oper->size_t_dir == 2) ? 2 : 4, arena);
 			arg_start = do_steps(arg_start, (char)oper->size_t_dir, arena);
 		}
 		else if (args_val->code_args[idx] == IND_CODE)
 		{
-			args_val->val[idx] = reverse_vm_bytes(get_arg.chr_ptr, 2, arena);
+			args_val->val[idx] = reverse_vm_bytes(get_arg, 2, arena);
 			arg_start = do_steps(arg_start, 2, arena);
 		}
 	}

@@ -6,7 +6,7 @@
 # include <fcntl.h>
 # include "options.h"
 
-#include <stdio.h>
+# include <stdio.h>
 
 # define N_FLG 1u
 # define DUMP_FLG 2u
@@ -62,7 +62,6 @@ typedef struct	s_carriages
 	unsigned char		*op_pos;
 	unsigned char		cnt_bytes_to_op;
 	int 				reg[REG_NUMBER];
-	_Bool				is_live;
 	struct s_carriages	*next;
 }				t_carriages;
 
@@ -80,13 +79,6 @@ typedef struct	s_parse_args
 	t_arg_type		code_args[3];
 	int 			val[3];
 }				t_parse_args;
-
-union			u_get_arg
-{
-	unsigned char	*chr_ptr;
-	unsigned short	*srt_ptr;
-	unsigned int	*int_ptr;
-};
 
 void		init_struct(t_corewar *corewar);
 t_champion	*create_new_champ(const char *fname);

@@ -18,7 +18,6 @@ t_carriages	*create_new_carriage(void)
 	new->op_pos = NULL;
 	new->cnt_bytes_to_op = 0;
 	ft_bzero(new->reg, sizeof(new->reg));
-	new->is_live = 1;
 	new->next = NULL;
 	return (new);
 }

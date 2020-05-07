@@ -48,8 +48,6 @@ libft.h
 stdbool.h
 -
 
-../vm/includes/vis_errors.h
-
 ../vm/includes/vm.h
 ft_ptintf.h
 ../vm/includes/ft_ptintf.h
@@ -61,14 +59,16 @@ options.h
 ../vm/includes/options.h
 stdio.h
 -
+vis.h
+../vm/includes/vis.h
 
-/Users/Student/Corewar/vm/srcs/game/game.c
+/Users/Student/Corewar/vm/srcs/game/instr_ld.c
 vm.h
 /Users/Student/Corewar/vm/srcs/game/vm.h
-vis.h
-/Users/Student/Corewar/vm/srcs/game/vis.h
-vis_errors.h
-/Users/Student/Corewar/vm/srcs/game/vis_errors.h
+
+/Users/Student/Corewar/vm/srcs/game/instr_st.c
+vm.h
+/Users/Student/Corewar/vm/srcs/game/vm.h
 
 /usr/local/include/SDL2/SDL.h
 SDL_main.h

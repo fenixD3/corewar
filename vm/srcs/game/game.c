@@ -96,16 +96,17 @@ void    print_map(t_corewar *corewar)
 	while (i < MEM_SIZE)
 	{
 		if (!j)
-			ft_printf("0x%04x : ", i);
-		ft_printf("%.2x", corewar->arena[i]);
+			printf("0x%04x : ", i);
+		printf("%.2x", corewar->arena[i]);
 		if (j < 31)
-			ft_printf(" ");
+			printf(" ");
 		else
 		{
-			ft_printf("\n");
+			printf("\n");
 			j = -1;
 		}
 		i++;
 		j++;
 	}
+	exit(5);
 }

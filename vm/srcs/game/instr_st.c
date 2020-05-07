@@ -70,9 +70,9 @@ void	sti(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 			   val_addr_1,
 			   val_addr_2,
 			   val_addr_1 + val_addr_2,
-			   ((val_addr_1 + val_addr_2) % IDX_MOD >= 0) ?
-			   		ind_pos - corewar->arena
-			   		: ind_pos - corewar->arena - MEM_SIZE);
+			   ((val_addr_1 + val_addr_2) % IDX_MOD < 0 && corewar->carriages->op_pos + (val_addr_1 + val_addr_2) % IDX_MOD < corewar->arena)
+			   ? ind_pos - corewar->arena - MEM_SIZE
+			   : ind_pos - corewar->arena);
 		fprintf(file,
 				"P%5d | %s r%d %d %d\n       | -> store to %d + %d = %d (with pc and mod %ld)\n",
 				corewar->carriages->id,
@@ -83,9 +83,9 @@ void	sti(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 				val_addr_1,
 				val_addr_2,
 				val_addr_1 + val_addr_2,
-				((val_addr_1 + val_addr_2) % IDX_MOD >= 0) ?
-					ind_pos - corewar->arena
-					: ind_pos - corewar->arena - MEM_SIZE);
+				((val_addr_1 + val_addr_2) % IDX_MOD < 0 && corewar->carriages->op_pos + (val_addr_1 + val_addr_2) % IDX_MOD < corewar->arena)
+				? ind_pos - corewar->arena - MEM_SIZE
+				: ind_pos - corewar->arena);
 	}
 	i = 4;
 	val_ptr = (unsigned char *)&corewar->carriages->reg[arg_val->val[0] - 1];

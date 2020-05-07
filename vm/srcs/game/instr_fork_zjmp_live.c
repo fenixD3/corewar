@@ -62,24 +62,6 @@ void	zjump(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 
 void	nfork(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 {
-	if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num & 4) {
-		printf("P%5d | %s %d (%ld)\n",
-			   corewar->carriages->id,
-			   "fork",
-			   (int16_t)arg_val->val[0],
-			   ((int16_t)arg_val->val[0] >= 0) ? do_steps(corewar->carriages->op_pos,
-			   	(int16_t)arg_val->val[0] % IDX_MOD, corewar->arena) - corewar->arena
-			   	: do_steps(corewar->carriages->op_pos,
-						   (int16_t)arg_val->val[0] % IDX_MOD, corewar->arena) - corewar->arena - MEM_SIZE);
-		fprintf(file, "P%5d | %s %d (%ld)\n",
-			   corewar->carriages->id,
-			   "fork",
-			   (int16_t)arg_val->val[0],
-			   ((int16_t)arg_val->val[0] >= 0) ? do_steps(corewar->carriages->op_pos,
-						  (int16_t)arg_val->val[0] % IDX_MOD, corewar->arena) - corewar->arena
-			   : do_steps(corewar->carriages->op_pos,
-						  (int16_t)arg_val->val[0] % IDX_MOD, corewar->arena) - corewar->arena - MEM_SIZE);
-	}
 	push_front_carriage(head);
 	(*head)->carry = corewar->carriages->carry;
 	(*head)->cycle_when_live = corewar->carriages->cycle_when_live;
@@ -87,6 +69,22 @@ void	nfork(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 			sizeof(corewar->carriages->reg));
 	(*head)->op_pos = do_steps(corewar->carriages->op_pos,
 		(int16_t)arg_val->val[0] % IDX_MOD, corewar->arena);
+	if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num & 4) {
+		printf("P%5d | %s %d (%ld)\n",
+			   corewar->carriages->id,
+			   "fork",
+			   (int16_t)arg_val->val[0],
+			   ((int16_t)arg_val->val[0] < 0 && corewar->carriages->op_pos + (int16_t)arg_val->val[0] % IDX_MOD < corewar->arena)
+			   	? (*head)->op_pos - corewar->arena - MEM_SIZE
+			   	: (*head)->op_pos - corewar->arena);
+		fprintf(file, "P%5d | %s %d (%ld)\n",
+				corewar->carriages->id,
+				"fork",
+				(int16_t)arg_val->val[0],
+				((int16_t)arg_val->val[0] < 0 && corewar->carriages->op_pos + (int16_t)arg_val->val[0] % IDX_MOD < corewar->arena)
+				? (*head)->op_pos - corewar->arena - MEM_SIZE
+				: (*head)->op_pos - corewar->arena);
+	}
 }
 
 void	lfork(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
@@ -96,18 +94,16 @@ void	lfork(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 			   corewar->carriages->id,
 			   "lfork",
 			   (int16_t)arg_val->val[0],
-			   ((int16_t)arg_val->val[0] >= 0) ? do_steps(corewar->carriages->op_pos,
-			   	(int16_t)arg_val->val[0], corewar->arena) - corewar->arena
-			   	: do_steps(corewar->carriages->op_pos,
-			   		(int16_t)arg_val->val[0], corewar->arena) - corewar->arena - MEM_SIZE);
+			   ((int16_t)arg_val->val[0] < 0 && corewar->carriages->op_pos + (int16_t)arg_val->val[0] % IDX_MOD < corewar->arena)
+			   ? (*head)->op_pos - corewar->arena - MEM_SIZE
+			   : (*head)->op_pos - corewar->arena);
 		fprintf(file, "P%5d | %s %d (%ld)\n",
 			   corewar->carriages->id,
 			   "lfork",
 				(int16_t)arg_val->val[0],
-				((int16_t)arg_val->val[0] >= 0) ? do_steps(corewar->carriages->op_pos,
-					(int16_t)arg_val->val[0], corewar->arena) - corewar->arena
-				: do_steps(corewar->carriages->op_pos,
-					(int16_t)arg_val->val[0], corewar->arena) - corewar->arena - MEM_SIZE);
+				((int16_t)arg_val->val[0] < 0 && corewar->carriages->op_pos + (int16_t)arg_val->val[0] % IDX_MOD < corewar->arena)
+				? (*head)->op_pos - corewar->arena - MEM_SIZE
+				: (*head)->op_pos - corewar->arena);
 	}
 	push_front_carriage(head);
 	(*head)->carry = corewar->carriages->carry;

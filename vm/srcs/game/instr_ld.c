@@ -52,10 +52,11 @@ void    ldi(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 			   val_addr_1,
 			   val_addr_2,
 			   val_addr_1 + val_addr_2,
-			   ((val_addr_1 + val_addr_2) % IDX_MOD >= 0) ? do_steps(corewar->carriages->op_pos,
-			   		(val_addr_1 + val_addr_2) % IDX_MOD, corewar->arena) - corewar->arena
+			   ((val_addr_1 + val_addr_2) % IDX_MOD < 0 && corewar->carriages->op_pos + (val_addr_1 + val_addr_2) % IDX_MOD < corewar->arena)
+			   ? do_steps(corewar->carriages->op_pos,
+			   		(val_addr_1 + val_addr_2) % IDX_MOD, corewar->arena) - corewar->arena - MEM_SIZE
 			   	: do_steps(corewar->carriages->op_pos,
-			   		(val_addr_1 + val_addr_2) % IDX_MOD, corewar->arena) - corewar->arena - MEM_SIZE);
+			   		(val_addr_1 + val_addr_2) % IDX_MOD, corewar->arena) - corewar->arena);
 		fprintf(file,
 				"P%5d | %s %d %d r%d\n       | -> load from %d + %d = %d (with pc and mod %ld)\n",
 				corewar->carriages->id,
@@ -66,10 +67,11 @@ void    ldi(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 				val_addr_1,
 				val_addr_2,
 				val_addr_1 + val_addr_2,
-				((val_addr_1 + val_addr_2) % IDX_MOD >= 0) ? do_steps(corewar->carriages->op_pos,
-					(val_addr_1 + val_addr_2) % IDX_MOD, corewar->arena) - corewar->arena
+				((val_addr_1 + val_addr_2) % IDX_MOD < 0 && corewar->carriages->op_pos + (val_addr_1 + val_addr_2) % IDX_MOD < corewar->arena)
+				? do_steps(corewar->carriages->op_pos,
+						   (val_addr_1 + val_addr_2) % IDX_MOD, corewar->arena) - corewar->arena - MEM_SIZE
 				: do_steps(corewar->carriages->op_pos,
-					(val_addr_1 + val_addr_2) % IDX_MOD, corewar->arena) - corewar->arena - MEM_SIZE);
+						   (val_addr_1 + val_addr_2) % IDX_MOD, corewar->arena) - corewar->arena);
 	}
 	corewar->carriages->reg[arg_val->val[2] - 1] =
 		reverse_vm_bytes(do_steps(corewar->carriages->op_pos,
@@ -127,10 +129,11 @@ void    lldi(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 			   val_addr_1,
 			   val_addr_2,
 			   val_addr_1 + val_addr_2,
-			   (val_addr_1 + val_addr_2 >= 0) ? do_steps(corewar->carriages->op_pos,
-			   	(val_addr_1 + val_addr_2), corewar->arena) - corewar->arena
+			   (val_addr_1 + val_addr_2 < 0 && corewar->carriages->op_pos + (val_addr_1 + val_addr_2) < corewar->arena)
+			   ? do_steps(corewar->carriages->op_pos,
+			   	(val_addr_1 + val_addr_2), corewar->arena) - corewar->arena - MEM_SIZE
 			   : do_steps(corewar->carriages->op_pos,
-			   		(val_addr_1 + val_addr_2), corewar->arena) - corewar->arena - MEM_SIZE);
+			   		(val_addr_1 + val_addr_2), corewar->arena) - corewar->arena);
 		fprintf(file, "P%5d | %s %d %d r%d\n       | -> load from %d + %d = %d (with pc %ld)\n",
 				corewar->carriages->id,
 				"lldi",
@@ -140,10 +143,11 @@ void    lldi(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 				val_addr_1,
 				val_addr_2,
 				val_addr_1 + val_addr_2,
-				(val_addr_1 + val_addr_2 >= 0) ? do_steps(corewar->carriages->op_pos,
-					(val_addr_1 + val_addr_2), corewar->arena) - corewar->arena
+				(val_addr_1 + val_addr_2 < 0 && corewar->carriages->op_pos + (val_addr_1 + val_addr_2) < corewar->arena)
+				? do_steps(corewar->carriages->op_pos,
+						   (val_addr_1 + val_addr_2), corewar->arena) - corewar->arena - MEM_SIZE
 				: do_steps(corewar->carriages->op_pos,
-					(val_addr_1 + val_addr_2), corewar->arena) - corewar->arena - MEM_SIZE);
+						   (val_addr_1 + val_addr_2), corewar->arena) - corewar->arena);
 	}
 	corewar->carriages->reg[arg_val->val[2] - 1] =
 		reverse_vm_bytes(do_steps(corewar->carriages->op_pos,

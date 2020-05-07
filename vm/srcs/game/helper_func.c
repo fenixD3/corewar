@@ -69,7 +69,7 @@ int		cnt_bytes_for_op(const t_op *op, const t_arg_type *code_args)
 	return (cnt_bytes);
 }
 
-void print_command_bytes(unsigned char *start_op,
+void	print_command_bytes(unsigned char *start_op,
 						 int bytes_to_nxt,
 						 unsigned char *arena)
 {

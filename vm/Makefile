@@ -15,9 +15,10 @@ LIB_SDL_TTF_PATH = ../SDL2_ttf.framework
 LIB_SDL_INCL = ../SDL2.framework/Headers/
 LIB_SDL_TTF_INCL = ../SDL2_ttf.framework/Headers/
 
-SRCS = main.c args_intf.c game.c game_intf.c helper_func.c instuctions.c create_vs.c display_carriages.c \
-	display_side_menu.c init_sdl.c print_arena.c support_func.c visualise_arena.c carriage_intf.c corewar_intf.c \
-	parse_input_intf.c parse_inputs.c reports.c
+SRCS = main.c args_intf.c game.c game_intf.c helper_func.c instr_fork_zjmp_live.c instr_ld.c instr_operations.c \
+	instr_st.c carriage_intf.c corewar_intf.c parse_input_intf.c parse_inputs.c reports.c \
+	create_vs.c disasm.c display_carriages.c display_side_menu.c init_sdl.c print_arena.c support_func.c \
+	vc_list.c vc_sort.c visualise_arena.c
 
 OBJS = $(SRCS:.c=.o)
 

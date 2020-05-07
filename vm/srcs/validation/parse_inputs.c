@@ -22,7 +22,11 @@ void	parse_arguments(int ac, char **av, t_corewar *corewar)
 				corewar->flgs.set_flg ^= N_FLG;
 			}
 			else if (corewar->flgs.set_flg & DUMP_FLG)
-				corewar->flgs.nbr_cycles_dump = ft_atoi(av[++i]);
+			{
+				if (is_champion(av[++i], corewar))
+					get_error("After -dump flag must be a number");
+				corewar->flgs.nbr_cycles_dump = ft_atoi(av[i]);
+			}
 			else if (corewar->flgs.set_flg & V_FLG) /// not need in final!
 				corewar->flgs.verb_num = ft_atoi(av[++i]);
 		}

@@ -14,12 +14,14 @@ void	st(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 			   corewar->carriages->id,
 			   "st",
 			   arg_val->val[0],
-			   arg_val->val[1]);
+			   (arg_val->code_args[1] == IND_CODE) ?
+			   		(int16_t)arg_val->val[1] : arg_val->val[1]);
 		fprintf(file, "P%5d | %s r%d %d\n",
 				corewar->carriages->id,
 				"st",
 				arg_val->val[0],
-				arg_val->val[1]);
+				(arg_val->code_args[1] == IND_CODE) ?
+					(int16_t)arg_val->val[1] : arg_val->val[1]);
 	}
 	val = corewar->carriages->reg[arg_val->val[0] - 1];
 	if (arg_val->code_args[1] == REG_CODE)
@@ -51,7 +53,7 @@ void	sti(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 	if (arg_val->code_args[1] == DIR_CODE)
 		val_addr_1 = (int16_t)get_value_frm_arg(arg_val, 1, corewar, 1);
 	else
-		val_addr_1 =get_value_frm_arg(arg_val, 1, corewar, 1);
+		val_addr_1 = get_value_frm_arg(arg_val, 1, corewar, 1);
 	if (arg_val->code_args[2] == DIR_CODE)
 		val_addr_2 = (int16_t)get_value_frm_arg(arg_val, 2, corewar, 1);
 	else

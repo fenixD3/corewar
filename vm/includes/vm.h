@@ -47,6 +47,7 @@ typedef struct	s_game_param
 {
 	int		who_lst_live;
 	ssize_t	cycles_aft_start;
+	ssize_t	cycles_bfr_check;
 	int		live_period_cnt;
 	ssize_t	cycles_to_die;
 	int 	check_cnt;
@@ -118,8 +119,8 @@ void introducing_winner(t_corewar *corewar);
 
 void carriages_actions(t_corewar *corewar);
 unsigned char	*do_steps(unsigned char *start, int step, unsigned char *arena);
-void
-lets_check(t_corewar *corewar);
+void lets_check(t_corewar *corewar);
+void	decrease_cycles_to_die(t_corewar *corewar);
 _Bool	valid_op_set_cycle(unsigned char *start_oper, int *cycle_to_op);
 void
 make_operation_and_go_next(t_corewar *corewar, t_carriages **carriage_head);

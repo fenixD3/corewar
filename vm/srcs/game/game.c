@@ -18,12 +18,12 @@ void	start_game(t_corewar *corewar)
 	g_change = 1;
 	while (!quit)
 	{
-		if (corewar->flgs.set_flg & DUMP_FLG &&
-		corewar->game_param.cycles_aft_start == corewar->flgs.nbr_cycles_dump)
+		if (corewar->game_param.cycles_aft_start++ ==
+		corewar->flgs.nbr_cycles_dump && corewar->flgs.set_flg & DUMP_FLG)
 			print_map(corewar);
-		++corewar->game_param.cycles_aft_start;
+		++corewar->game_param.cycles_bfr_check;
   		carriages_actions(corewar);
-		if (!(corewar->game_param.cycles_aft_start %
+		if (!(corewar->game_param.cycles_bfr_check -
 corewar->game_param.cycles_to_die) || corewar->game_param.cycles_to_die <= 0)
 			lets_check(corewar);
 		if ((corewar->flgs.set_flg & B_FLG) && g_change)

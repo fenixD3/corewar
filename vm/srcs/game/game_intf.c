@@ -7,9 +7,9 @@ void	carriages_actions(t_corewar *corewar)
 
 	carriage_head = corewar->carriages;
 	if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num & 2) {
-		printf("It is now cycle %lld\n",
+		printf("It is now cycle %ld\n",
 			   corewar->game_param.cycles_aft_start);
-		fprintf(file, "It is now cycle %lld\n",
+		fprintf(file, "It is now cycle %ld\n",
 			   corewar->game_param.cycles_aft_start);
 	}
 	while (corewar->carriages)
@@ -42,6 +42,13 @@ void	lets_check(t_corewar *corewar)
 			carriage = delete_carriage(corewar, carriage->id);
 		carriage = (carriage) ? carriage->next : corewar->carriages;
 	}
+	decrease_cycles_to_die(corewar);
+	corewar->game_param.live_period_cnt = 0;
+	corewar->game_param.cycles_bfr_check = 0;
+}
+
+void	decrease_cycles_to_die(t_corewar *corewar)
+{
 	if (corewar->game_param.live_period_cnt >= NBR_LIVE)
 	{
 		corewar->game_param.cycles_to_die -= CYCLE_DELTA;
@@ -64,7 +71,6 @@ void	lets_check(t_corewar *corewar)
 		corewar->game_param.check_cnt = 0;
 		g_change = 1;
 	}
-	corewar->game_param.live_period_cnt = 0;
 }
 
 _Bool	valid_op_set_cycle(unsigned char *start_oper, int *cycle_to_op)

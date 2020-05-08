@@ -9,6 +9,8 @@ void	start_game(t_corewar *corewar)
 	bool		quit;
 
 	create_vs();
+	g_contnue = false;
+	g_mode = -1;
 	file = fopen("log.txt", "w");
 	init_arena(corewar->arena, corewar->champs, &corewar->carriages);
 	introducing_fighter(corewar->champs);
@@ -16,6 +18,7 @@ void	start_game(t_corewar *corewar)
 		go_exit(ERR_CREATE_VS);
 	quit = false;
 	g_change = 1;
+	visualise_arena(corewar, &quit);
 	while (!quit)
 	{
 		if (corewar->flgs.set_flg & DUMP_FLG &&

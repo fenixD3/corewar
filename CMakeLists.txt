@@ -1,11 +1,7 @@
 cmake_minimum_required(VERSION 3.14)
-project(dencorewar C)
+project(finalcorewar C)
 
 set(CMAKE_C_STANDARD 11)
-set(CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake-build-debug)
-
-find_package(SDL2 REQUIRED)
-find_package(SDL2_TTF REQUIRED)
 
 include_directories(.)
 include_directories(asm)
@@ -14,14 +10,12 @@ include_directories(libft)
 include_directories(libft/memlist)
 include_directories(vm/includes)
 
+
 include_directories(~/Library/Frameworks/SDL2.framework/Headers)
 #include_directories(~/Library/Frameworks/SDL2_image.framework/Headers)
-#include_directories(~/Library/Frameworks/SDL2_ttf.framework/Headers)
+include_directories(~/Library/Frameworks/SDL2_ttf.framework/Headers)
 
-include_directories(${SDL2_INCLUDE_DIR})
-include_directories(${SDL2_TTF_INCLUDE_DIR})
-
-add_executable(dencorewar
+add_executable(finalcorewar
         asm/arguments.c
         asm/asm.c
         asm/asm.h
@@ -175,30 +169,25 @@ add_executable(dencorewar
         vm/includes/vis.h
         vm/includes/vis_errors.h
         vm/includes/vm.h
-        vm/srcs/game/args_intf.c
         vm/srcs/game/vis/create_vs.c
         vm/srcs/game/vis/disasm.c
         vm/srcs/game/vis/display_carriages.c
         vm/srcs/game/vis/display_side_menu.c
         vm/srcs/game/vis/init_sdl.c
-        vm/srcs/game/instr_fork_zjmp_live.c
-        vm/srcs/game/vis/visualise_arena.c
         vm/srcs/game/vis/print_arena.c
         vm/srcs/game/vis/support_func.c
         vm/srcs/game/vis/vc_list.c
         vm/srcs/game/vis/vc_sort.c
         vm/srcs/game/vis/visualise_arena.c
+        vm/srcs/game/vis/display_game_data.c
         vm/srcs/game/args_intf.c
         vm/srcs/game/game.c
         vm/srcs/game/game_intf.c
         vm/srcs/game/helper_func.c
-        vm/srcs/game/vis/init_sdl.c
         vm/srcs/game/instr_fork_zjmp_live.c
-        vm/srcs/game/vis/visualise_arena.c
-        vm/srcs/game/vis/print_arena.c
-        vm/srcs/game/vis/support_func.c
-        vm/srcs/game/vis/display_carriages.c
-        vm/srcs/game/vis/display_side_menu.c
+        vm/srcs/game/instr_ld.c
+        vm/srcs/game/instr_operations.c
+        vm/srcs/game/instr_st.c
         vm/srcs/struct_intf/carriage_intf.c
         vm/srcs/struct_intf/corewar_intf.c
         vm/srcs/validation/parse_input_intf.c
@@ -210,12 +199,10 @@ add_executable(dencorewar
         file_to_list.h
         ft_wordequ.c
         op.h
-        options.h vm/srcs/game/instr_ld.c vm/srcs/game/instr_st.c vm/srcs/game/instr_operations.c)
+        options.h)
 
-#target_link_libraries(dencorewar "-framework SDL2")
+
+target_link_libraries(finalcorewar "-framework SDL2")
 #target_link_libraries(dencorewar "-framework SDL2_image")
-#target_link_libraries(dencorewar "-framework SDL2_ttf")
-#set_target_properties(dencorewar PROPERTIES LINK_FLAGS "-F /Users/$ENV{USER}/Library/Frameworks")
-
-#target_link_libraries(dencorewar ${SDL2_LIBRARY} -lmingw32 -lSDL2main -lSDL2 -lSDL2_TTF)
-target_link_libraries(dencorewar ${SDL2_LIBRARY} ${SDL2_TTF_LIBRARY})
+target_link_libraries(finalcorewar "-framework SDL2_ttf")
+set_target_properties(finalcorewar PROPERTIES LINK_FLAGS "-F /Users/$ENV{USER}/Library/Frameworks")

@@ -14,15 +14,14 @@
 
 #define CARRIAGE_VISUAL 100
 
-#define ML_ARENA 6
 #define ML_VS 8
-#define ML_CELL 10
-#define ML_SUPPORT 9
 
 # define DESTROY_TXTR(X) if (X) SDL_DestroyTexture(X);
 
 
-int g_mode;
+int		g_mode;
+bool	g_contnue;
+
 
 typedef struct  s_visual_carriages
 {
@@ -48,32 +47,11 @@ typedef struct		s_vis_tools
 	t_vc			*vc_list;
 }					t_vis_tools;
 
-typedef struct		s_cells
-{
-	char			*code;
-	t_carriages		*carriages;
-	SDL_Color		color;
-	int				font;//bold or not?
-	struct s_cells	*next;
-}					t_cells;
+bool 				init();
 
-typedef struct		s_arena
-{
-//	t_cells			*cell;
-	int				chmp_num;
-	unsigned int	prog_size[4];//aaa in corewar?!
-	int				step;//aaa in corewar?!
-}					t_arena;
-
-bool init();
-
-void visualise_arena(t_corewar *corewar, bool *quit);
+void 				visualise_arena(t_corewar *corewar, bool *quit);
 
 void				create_vs(void);
-
-t_cells				*add_cell(int i, t_corewar *corewar);
-
-void				save_cell(t_cells **celllst, t_cells *new_cell);
 
 void				print_arena(char **arena);
 
@@ -82,31 +60,36 @@ void				print_arena(char **arena);
  */
 void				free_mem_font(void);
 
-void				track_events(int *indx, SDL_Event *e, bool *quit, int *stop);
+int					track_events(int *indx, SDL_Event *e, bool *quit, t_corewar *corewar);
+
+//void				track_events(SDL_Event *e, bool *quit, int *stop);
+
+//void				track_mouseclick(int *indx, SDL_Event *e, t_corewar *corewar);
 
 SDL_Rect			create_rect(int x, int y, int text_w, int text_h);
 
-void				create_string(char str[100], int input, char *str_inp);
+void				create_string(char str[100], int input,
+													char *str_inp, char *f);
 
+char				*disasm(unsigned char *champ);
 
+void				display_game_data(t_corewar *corewar);
 
-char    *disasm(unsigned char *champ);
-
-
-void display_side_menu(t_corewar *crrw, int inxd);
+void				display_side_menu(t_corewar *crrw, int inxd);
 
 void				display_carriages(t_corewar *corewar);
 
 void				push_front_carriage(t_carriages **carriages);
-void
-init_arena(unsigned char arena[], t_champion *champs, t_carriages **carriages);
 
-void			add_new_vc(t_vc **head, t_carriages *new);
-void    		insert_vc(t_vc **head, t_vc *prev, t_vc *insert);
-t_vc    		*cut_vc(t_vc **prev);
-t_vc			*find_prev_to_insert(t_vc *head, t_vc *insert);
-t_vc 			*find_and_cut_unsorted_elem(t_vc **head);
-void			sort_vc(t_vc **head);
-void			delete_vc_by_deletion_carriage(t_carriages *del);
+void				init_arena(unsigned char arena[], t_champion *champs,
+												t_carriages **carriages);
+
+void				add_new_vc(t_vc **head, t_carriages *new);
+void    			insert_vc(t_vc **head, t_vc *prev, t_vc *insert);
+t_vc    			*cut_vc(t_vc **prev);
+t_vc				*find_prev_to_insert(t_vc *head, t_vc *insert);
+t_vc 				*find_and_cut_unsorted_elem(t_vc **head);
+void				sort_vc(t_vc **head);
+void				delete_vc_by_deletion_carriage(t_carriages *del);
 
 #endif

@@ -46,8 +46,8 @@ bool		init(void)
 	else
 	{
 		g_vs->window = SDL_CreateWindow("Corewar fight",
-										SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED,
-										g_vs->wight, g_vs->height, SDL_WINDOW_SHOWN);
+					SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED,
+					g_vs->wight, g_vs->height, SDL_WINDOW_SHOWN);
 		if (g_vs->window == NULL)
 			success = false;
 		SDL_SetWindowPosition(g_vs->window, 10, 10);

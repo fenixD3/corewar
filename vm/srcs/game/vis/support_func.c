@@ -4,11 +4,11 @@
 
 t_vis_tools *g_vs;
 
-int		sidemenu_pressed(int32_t y, t_corewar *crwr)
+int				sidemenu_pressed(int32_t y, t_corewar *crwr)
 {
-	int 		k;
+	int			k;
 	t_vc		*vc;
-	int 		done;
+	int			done;
 
 	done = 0;
 	k = 15;
@@ -32,13 +32,15 @@ int		sidemenu_pressed(int32_t y, t_corewar *crwr)
 	return (y + 4100);
 }
 
-
-int				prosess_press(int32_t x, int32_t y, t_corewar *crwr)
+int				catch(SDL_Event *e, t_corewar *crwr)
 {
 	int			i;
 	int			j;
-	int			res;
+	int32_t		x;
+	int32_t		y;
 
+	x = (*e).button.x;
+	y = (*e).button.y;
 	i = 0;
 	if (x > 26 + 64 * 24 && x < g_vs->wight - 16 && y > 21 && y < 1000)
 		return (sidemenu_pressed(y, crwr));
@@ -57,9 +59,10 @@ int				prosess_press(int32_t x, int32_t y, t_corewar *crwr)
 	return (g_mode = -1);
 }
 
-int			track_events(int *indx, SDL_Event *e, bool *quit, t_corewar *corewar)
+int				track_events(int *ind, SDL_Event *e, bool *quit,
+													t_corewar *corewar)
 {
-	int		stop;
+	int			stop;
 
 	stop = 1;
 	while (SDL_PollEvent(&(*e)) != 0)
@@ -70,9 +73,7 @@ int			track_events(int *indx, SDL_Event *e, bool *quit, t_corewar *corewar)
 			stop = 0;
 			*quit = true;
 		}
-		if ((*e).type == SDL_MOUSEBUTTONDOWN)
-			*indx = prosess_press((*e).button.x, (*e).button.y, corewar);
-		else if ((*e).type == SDL_KEYDOWN)
+		else if ((*e).type == SDL_KEYDOWN || (*e).type == SDL_MOUSEBUTTONDOWN)
 		{
 			if ((*e).key.keysym.sym == SDLK_RIGHT)
 			{
@@ -82,6 +83,7 @@ int			track_events(int *indx, SDL_Event *e, bool *quit, t_corewar *corewar)
 			}
 			if ((*e).key.keysym.sym == SDLK_RETURN)
 				g_contnue = true;
+			*ind = (*e).type == SDL_MOUSEBUTTONDOWN ? catch(e, corewar) : *ind;
 		}
 	}
 	return (stop);

@@ -75,7 +75,8 @@ char				*disasm(unsigned char *champ);
 
 void				display_game_data(t_corewar *corewar);
 
-void				display_side_menu(t_corewar *crrw, int inxd);
+void				display_side_menu(t_corewar *crwr, int ind, t_vc *vc);
+
 
 void				display_carriages(t_corewar *corewar);
 

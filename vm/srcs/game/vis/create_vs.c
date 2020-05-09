@@ -7,7 +7,7 @@ t_vis_tools *g_vs;
 
 SDL_Color			init_color(int r, int g, int b, int a)
 {
-	SDL_Color color;
+	SDL_Color		color;
 
 	color.r = r;
 	color.g = g;
@@ -16,7 +16,7 @@ SDL_Color			init_color(int r, int g, int b, int a)
 	return (color);
 }
 
-void		create_vs(void)
+void				create_vs(void)
 {
 	if (!(g_vs = (t_vis_tools*)ml_malloc(sizeof(t_vis_tools), ML_VS)))
 		go_exit(ERR_CREATE_VS);

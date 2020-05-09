@@ -2,4 +2,3 @@ Introducing contestants...
 * Player 1, weighing 281 bytes, "Tching tching(Intercepteur), Bouh!Bouh!(bruits d'anti-jeu)" ("") !
 * Player 2, weighing 23 bytes, "zork" ("just a basic living prog") !
 * Player 3, weighing 25 bytes, "forka" ("KO") !
-Contestant 3, "forka", has won !

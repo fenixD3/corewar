@@ -22,7 +22,6 @@ bool		init_font(void)
 	else
 	{
 		g_vs->font = TTF_OpenFont("../media/Anonymous.ttf", 9);
-//		g_vs->font = TTF_OpenFont("../media/Light.ttf", 10);
 		if (!g_vs->font)
 			go_exit(TTF_GetError());
 		else

@@ -7,7 +7,7 @@ t_vis_tools *g_vs;
 void			draw_carriage(int i, int priority, SDL_Color color)
 {
 	SDL_Rect	carrg;
-	int 		wight;
+	int			wight;
 
 //	wight = 16 - 4 * priority + 1;
 	wight = 4;
@@ -18,7 +18,7 @@ void			draw_carriage(int i, int priority, SDL_Color color)
 		priority = priority ? priority * 4 : 0;
 		SDL_SetRenderDrawColor(g_vs->render, color.r, color.g, color.b, 0);
 		carrg = create_rect(10 + ((i - (i / 64) * 64) * 24) + priority,
-		                    13 + ((i / 64) * 15) + 13, wight, 2);
+						13 + ((i / 64) * 15) + 13, wight, 2);
 		SDL_RenderFillRect(g_vs->render, &carrg);
 	}
 }

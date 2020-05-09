@@ -79,12 +79,14 @@ char	**convert_arena(t_corewar *corewar)
 void			display_objs(t_corewar *corewar, int update)
 {
 	char		**hex_arena;
+	t_vc		*vc;
 
+	vc = g_vs->vc_list;
 	draw_backgroung();
 	hex_arena = convert_arena(corewar);
 	print_arena(hex_arena);
 	display_carriages(corewar);
-	display_side_menu(corewar, update);
+	display_side_menu(corewar, update, vc);
 	display_game_data(corewar);
 	ft_free_strsplit(hex_arena);
 }

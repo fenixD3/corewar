@@ -90,7 +90,7 @@ void			token_fill(char *str, t_token *token, t_label **tail, u_int8_t flag);
 u_int8_t token_rewind(t_pc *pc, t_token *token);
 void			rewind_n(t_pc *pc, u_int16_t n);
 void			tokenize(int fd, t_token **token, t_label **label);
-
+u_int8_t		check_prev_str(t_token *token, u_int8_t flag);
 
 u_int32_t		command_length(t_token *token);
 

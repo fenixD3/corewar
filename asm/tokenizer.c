@@ -48,7 +48,8 @@ void	tokenize_line(t_pc *pc, t_token **token, t_label **label, char *str)
 	pc->line = str;
 	pc->row++;
 	pc->column = 1;
-	rewind_n(pc, ft_skipdelims(pc->line, SPACES) - str);
+	if (check_prev_str(*token, 0) != NOTENDSTR)
+		rewind_n(pc, ft_skipdelims(pc->line, SPACES) - str);
 	while (*pc->line || !flag)
 	{
 		add_token(pc, token, label, flag);
@@ -57,7 +58,6 @@ void	tokenize_line(t_pc *pc, t_token **token, t_label **label, char *str)
 	}
 	if ((*token)->type != NEW_LINE)
 		add_token(pc, token, label, ENDLINE);
-
 	pc->line = str;
 }
 

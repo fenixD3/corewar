@@ -60,7 +60,7 @@ void open_and_tokenize_file(char *file_name, t_token_sec *check_list,
 	}
 	else if ((fd = open(file_name, O_RDONLY)) < 0)
 	{
-		strerror(errno);
+		strerror(errno); // у меня не срабатывает, нужна проверка
 		exit (1);
 	}
 	tokenize(fd, token, &label);
@@ -82,7 +82,7 @@ int main(int ac, char **av)
 	i = 0;
 	while (++i < ac)
 	{
-		ft_printf("Reading %s\n", av[i]);
+		//ft_printf("Reading %s\n", av[i]);
 		token = NULL;
 		open_and_tokenize_file(av[i], &check_list, &token);
 		init_headers(&header, token, &check_list);

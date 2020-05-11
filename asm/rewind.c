@@ -6,15 +6,13 @@
 /*   By: mdeanne <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/04 20:11:09 by mdeanne           #+#    #+#             */
-/*   Updated: 2020/03/04 20:11:11 by mdeanne          ###   ########.fr       */
+/*   Updated: 2020/05/12 00:07:19 by mdeanne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_ptintf.h"
 #include "asm.h"
 #include "libword.h"
 #include "libft.h"
-#include "asm_dasha.h"
 
 void		rewind_n(t_pc *pc, u_int16_t n)
 {
@@ -22,7 +20,7 @@ void		rewind_n(t_pc *pc, u_int16_t n)
 	pc->column += n;
 }
 
-u_int8_t 	string_rewind(t_pc *pc)
+u_int8_t	string_rewind(t_pc *pc)
 {
 	char *str_end;
 
@@ -37,8 +35,8 @@ u_int8_t 	string_rewind(t_pc *pc)
 
 void		argument_rewind(t_pc *pc, t_token *token)
 {
-	t_arg *arg;
-	char *tmp;
+	t_arg	*arg;
+	char	*tmp;
 
 	arg = (t_arg*)token->content;
 	if (arg->type & T_REG || arg->type & T_DIR)
@@ -55,16 +53,16 @@ void		command_rewind(t_pc *pc, t_token *token)
 {
 	if (!token->content || !*(char*)token->content ||
 							ft_isspecial(*(char*)token->content, DELIMITERS))
-		token_exception(ASM_INVALID_CMD, token, 0);
+		token_exception(INVALID_CMD, token, 0);
 	rewind_n(pc, ft_skipword(pc->line, DELIMITERS) - pc->line);
 }
 
-u_int8_t token_rewind(t_pc *pc, t_token *token)
+u_int8_t	token_rewind(t_pc *pc, t_token *token)
 {
 	if (token->type == COMMENT)
 		return (TKNZE_BREAK);
 	else if (token->type == ARGUMENT || token->type == ARGUMENT_LABEL)
-		argument_rewind(pc , token);
+		argument_rewind(pc, token);
 	else if (token->type == COMMAND)
 		command_rewind(pc, token);
 	else if (token->type == SEPARATOR)

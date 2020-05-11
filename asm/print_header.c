@@ -10,13 +10,10 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-
 #include "libft.h"
-#include "asm_dasha.h"
 #include "options.h"
 
-
-void    print_reverse(int fd, u_int8_t byte, u_int32_t *num)
+void	print_reverse(int fd, u_int8_t byte, u_int32_t *num)
 {
 	while (byte--)
 		write(fd, &((u_int8_t*)num)[byte], 1);

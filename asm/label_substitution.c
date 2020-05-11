@@ -6,15 +6,13 @@
 /*   By: mdeanne <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/05 16:32:46 by mdeanne           #+#    #+#             */
-/*   Updated: 2020/03/09 14:20:00 by mdeanne          ###   ########.fr       */
+/*   Updated: 2020/05/12 00:10:08 by mdeanne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_ptintf.h"
 #include "libft.h"
 #include "asm.h"
 #include "errors.h"
-#include "asm_dasha.h"
 
 _Bool	find_label(t_label **head, t_label *label_arg)
 {
@@ -31,12 +29,11 @@ _Bool	find_label(t_label **head, t_label *label_arg)
 		*head = (*head)->next;
 	}
 	if (!*head)
-		//token_exception(ASM_NO_LABEL, label_arg->token);
-		token_exception(ASM_NO_LABEL, label_arg->token, 0);
+		token_exception(NO_LABEL, label_arg->token, 0);
 	return (l_before_al);
 }
 
-int 	count_length_to_label(t_label *label, t_label *label_arg)
+int		count_length_to_label(t_label *label, t_label *label_arg)
 {
 	int			length;
 	t_token		*token;
@@ -57,14 +54,13 @@ int 	count_length_to_label(t_label *label, t_label *label_arg)
 		token = (before) ? token->prev : token->next;
 	}
 	if (!token)
-		go_exit("ERROR: Can't find label"); ////мало ли
+		go_exit("ERROR: Can't find label");
 	if (before)
 		length = -length;
 	return (length);
 }
 
-
-void 	label_substitution(t_label *head)
+void	label_substitution(t_label *head)
 {
 	t_label *tmp;
 
@@ -77,11 +73,11 @@ void 	label_substitution(t_label *head)
 			tmp = tmp;
 		if (tmp->token->type == ARGUMENT_LABEL)
 		{
-			((t_arg*)tmp->token->content)->num = count_length_to_label(head, tmp);
+			((t_arg*)tmp->token->content)->num =
+											count_length_to_label(head, tmp);
 			((t_arg*)tmp->token->content)->content = NULL;
 			((t_arg*)tmp->token->content)->type &= ~T_LAB;
 			tmp->token->type = ARGUMENT;
-
 		}
 		tmp = tmp->next;
 	}

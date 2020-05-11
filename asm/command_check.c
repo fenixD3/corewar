@@ -1,7 +1,5 @@
 
-#include "asm_dasha.h"
 #include "asm.h"
-
 
 void	check_args(t_token *token, int *i, int com_code)
 {
@@ -15,23 +13,22 @@ void	check_args(t_token *token, int *i, int com_code)
 		{
 			arg = (t_arg*)token_arg->content;
 			if (!(arg->type & ((g_op[com_code]).args_type[*i])))
-				token_exception(ASM_ERR_ARGS, token_arg, 0);
+				token_exception(ERR_ARGS, token_arg, 0);
 			(*i)++;
 		}
 		else if (token_arg->type == COMMENT && token_arg->next &&
 				token_arg->next->type == NEW_LINE)
 			return ;
 		else if (token_arg->type != SEPARATOR)
-			token_exception(ASM_ERR_ARGS, token_arg, 0);
+			token_exception(ERR_ARGS, token_arg, 0);
 		token_arg = token_arg->next;
 	}
 }
 
 void	command_check(t_token *token)
 {
-	int		i;
-	u_int8_t		com_code;
-
+	int			i;
+	u_int8_t	com_code;
 
 	i = 0;
 	if (!(token->type == COMMAND))
@@ -40,5 +37,5 @@ void	command_check(t_token *token)
 	check_args(token, &i, com_code);
 	if ((i < 2 && ((g_op[com_code]).args_type[1] != 0))
 		|| (i < 3 && ((g_op[com_code]).args_type[2] != 0)))
-		token_exception(ASM_ERR_ARGS, token, 0);
+		token_exception(ERR_ARGS, token, 0);
 }

@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   token_fill.c                                :+:      :+:    :+:   */
+/*   token_fill.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mdeanne <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -23,11 +23,11 @@ _Bool	is_numarg(char *str)
 
 _Bool	arg_label_recognition(char *str, t_token *token, t_label **tail)
 {
-	if (*str == REGISTER_CHAR && is_numarg(str + 1)/*ft_isdigitalword(str + 1, DELIMITERS)*/)
+	if (*str == REGISTER_CHAR && is_numarg(str + 1))
 		token->content = (void*)add_arg(str, T_REG);
-	else if (*str == DIRECT_CHAR && is_numarg(str + 1)/*ft_isdigitalword(str + 1, DELIMITERS)*/)
+	else if (*str == DIRECT_CHAR && is_numarg(str + 1))
 		token->content = (void*)add_arg(str, T_DIR);
-	else if (is_numarg(str)/*ft_isdigitalword(str, DELIMITERS)*/)
+	else if (is_numarg(str))
 		token->content = (void*)add_arg(str, T_IND);
 	else if ((*str == DIRECT_CHAR && *(str + 1) == LABEL_CHAR) ||
 															*str == LABEL_CHAR)
@@ -41,7 +41,7 @@ _Bool	arg_label_recognition(char *str, t_token *token, t_label **tail)
 	}
 	else
 		return (0);
-    token->type = ARGUMENT;
+	token->type = ARGUMENT;
 	return (1);
 }
 

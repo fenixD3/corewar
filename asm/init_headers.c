@@ -1,4 +1,4 @@
-#include "asm_dasha.h"
+#include "asm.h"
 
 unsigned int	calc_progsize(t_token *token)
 {
@@ -17,7 +17,7 @@ unsigned int	calc_progsize(t_token *token)
 	return (weight);
 }
 
-void			init_headers(header_t *header, t_token *token, t_token_sec *info)
+void			init_headers(header_t *header, t_token *token)
 {
 	ft_bzero(header->comment, COMMENT_LENGTH);
 	ft_bzero(header->prog_name, PROG_NAME_LENGTH);

@@ -14,23 +14,23 @@
 #include "libft.h"
 #include "libword.h"
 
-t_arg	*add_arg(char *str, t_arg_type type)
+t_arg		*add_arg(char *str, t_arg_type type)
 {
-    t_arg *new;
+	t_arg *new;
 
-    new = (t_arg*)ml_malloc(sizeof(t_arg), ML_ARGUMENT);
-    new->type = type;
-    new->content = NULL;
+	new = (t_arg*)ml_malloc(sizeof(t_arg), ML_ARGUMENT);
+	new->type = type;
+	new->content = NULL;
 	if (type & T_LAB)
 		return (new);
-    if (type & T_REG || type & T_DIR)
-        new->num = ft_atoi(str + 1);
-    else if (type & T_IND)
-        new->num = ft_atoi(str);
-    return (new);
+	if (type & T_REG || type & T_DIR)
+		new->num = ft_atoi(str + 1);
+	else if (type & T_IND)
+		new->num = ft_atoi(str);
+	return (new);
 }
 
-void	add_label(char *str, t_token *token,
+void		add_label(char *str, t_token *token,
 											t_label **tail, t_arg_type arg_type)
 {
 	t_label	*new;
@@ -56,7 +56,7 @@ void	add_label(char *str, t_token *token,
 	*tail = new;
 }
 
-char	*add_string(char *str, t_token *token)
+char		*add_string(char *str, t_token *token)
 {
 	char *tmp;
 
@@ -95,12 +95,12 @@ u_int8_t	check_prev_str(t_token *token, u_int8_t flag)
 	return (NOTENDSTR);
 }
 
-t_token *add_token(t_pc *pc, t_token **token_tail,
+t_token		*add_token(t_pc *pc, t_token **token_tail,
 											t_label **label_tail, u_int8_t flag)
 {
 	t_token *new;
 
-   	new = (t_token*)ml_malloc(sizeof(t_token), ML_TOKEN);
+	new = (t_token*)ml_malloc(sizeof(t_token), ML_TOKEN);
 	token_fill(pc->line, new, label_tail, check_prev_str(*token_tail, flag));
 	new->row = pc->row;
 	new->column = pc->column;

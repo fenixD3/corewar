@@ -10,12 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-
 #include "libft.h"
 #include "asm.h"
 #include "libword.h"
 
-void newline_endfile_check(int fd, char *line, int ret, t_token *token)
+void	newline_endfile_check(int fd, char *line, int ret, t_token *token)
 {
 	char *tmp;
 	char c;
@@ -34,6 +33,7 @@ void newline_endfile_check(int fd, char *line, int ret, t_token *token)
 	}
 	if (tmp + 1 == line)
 		return ;
+	c = 0;
 	if (lseek(fd, -1, SEEK_CUR) == -1 || read(fd, &c, 1) != 1)
 		go_exit("ERROR: cant't read file");
 	if (c != '\n')
@@ -72,23 +72,15 @@ void	set_lists_at_start(t_token **token, t_label **label)
 void	tokenize(int fd, t_token **token, t_label **label)
 {
 	t_pc		pc;
-	char 		*tmp;
-	int 		ret;
-
-	int i = 0;
+	char		*tmp;
+	int			ret;
 
 	pc.row = 0;
 	while ((ret = ml_get_next_line(fd, &tmp, ML_GNL_LINE)) > 0)
-	{
-		i++;
-		if (i == 4)
-			i++;
 		tokenize_line(&pc, token, label, tmp);
-	}
 	if (!*token)
 		go_exit("ERROR: File is empty");
 	newline_endfile_check(fd, pc.line, ret, (*token));
 	add_token(&pc, token, label, ENDFILE);
 	set_lists_at_start(token, label);
-	//ml_free_list(ML_GNL_LINE);
 }

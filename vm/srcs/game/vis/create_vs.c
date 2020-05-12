@@ -30,6 +30,7 @@ void				create_vs(void)
 	g_vs->text_color[2] = init_color(0, 128, 0, 0);
 	g_vs->text_color[3] = init_color(225, 225, 0, 0);
 	g_vs->text_color[4] = init_color(128, 128, 128, 0);
+	g_vs->text_color[5] = init_color(0, 0, 0, 0);
 	g_vs->vc_list = NULL;
 	g_vs->speed = 1;
 }

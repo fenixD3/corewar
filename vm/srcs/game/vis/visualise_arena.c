@@ -5,6 +5,7 @@
 
 t_vis_tools *g_vs;
 
+
 void			draw_backgroung(void)
 {
 	SDL_Rect	rectangle;
@@ -14,12 +15,13 @@ void			draw_backgroung(void)
 	rectangle = create_rect(0, 0, g_vs->wight, g_vs->height);
 	SDL_RenderFillRect(g_vs->render, &rectangle);
 	SDL_SetRenderDrawColor(g_vs->render, 0, 0, 0, SDL_ALPHA_OPAQUE);
-	sm_rectangle = create_rect(5, 10, 64 * 24 + 5,
-												64 * 15 + 5);
+	sm_rectangle = create_rect(5, 10, 64 * 24 + 5, 64 * 15 + 5);
 	SDL_RenderFillRect(g_vs->render, &sm_rectangle);
 	SDL_SetRenderDrawColor(g_vs->render, 0, 0, 0, SDL_ALPHA_OPAQUE);
-	sm_rectangle = create_rect(5, 64 * 15 + 20,
-			64 * 24 + 5, g_vs->height - (64 * 15 + 20) - 10);
+	sm_rectangle = create_rect(5, 980, 641, g_vs->height - 990);
+	SDL_RenderFillRect(g_vs->render, &sm_rectangle);
+	SDL_SetRenderDrawColor(g_vs->render, 0, 0, 0, SDL_ALPHA_OPAQUE);
+	sm_rectangle = create_rect(651, 980, 894, g_vs->height - 990);
 	SDL_RenderFillRect(g_vs->render, &sm_rectangle);
 	SDL_SetRenderDrawColor(g_vs->render, 0, 0, 0, SDL_ALPHA_OPAQUE);
 	sm_rectangle = create_rect(15 + 64 * 24, 20 + 64 * 15,
@@ -91,12 +93,42 @@ void			display_objs(t_corewar *corewar, int update)
 	ft_free_strsplit(hex_arena);
 }
 
+void	show_winer(t_champion *champ)
+{
+	SDL_Rect	rectangle;
+	SDL_Rect	sm_rectangle;
+	char 		string[100];
+	SDL_Rect	dstrect;
+
+	create_string(string, champ->num, "Contestant %d, \n", NULL);
+	create_string(&string[14], 0, "\"%s\", has won !\n",
+			champ->file.header.prog_name);
+	SDL_SetRenderDrawColor(g_vs->render, 244, 242, 238, SDL_ALPHA_OPAQUE);
+	rectangle = create_rect(0, 0, g_vs->wight, g_vs->height);
+	SDL_RenderFillRect(g_vs->render, &rectangle);
+	SDL_SetRenderDrawColor(g_vs->render, 0, 0, 0, SDL_ALPHA_OPAQUE);
+	sm_rectangle = create_rect(5, 10, g_vs->wight - 10,g_vs->height - 20);
+	SDL_RenderFillRect(g_vs->render, &sm_rectangle);
+	g_vs->txt_srfc = TTF_RenderText_Solid(g_vs->font, string,
+										  g_vs->text_color[champ->num - 1]);
+	g_vs->text = SDL_CreateTextureFromSurface(g_vs->render, g_vs->txt_srfc);
+	dstrect = create_rect(g_vs->wight / 2 - g_vs->txt_srfc->w,
+			g_vs->height / 2, g_vs->txt_srfc->w, g_vs->txt_srfc->h);
+	SDL_RenderCopy(g_vs->render, g_vs->text, NULL, &dstrect);
+	free_mem_font();
+	SDL_RenderPresent(g_vs->render);
+	SDL_Delay(5000);
+	exit(0);
+}
+
 void			visualise_arena(t_corewar *corewar, bool *quit)
 {
 	SDL_Event	e;
 	int			stop;
 	int			update;
 
+	if (g_mode == -100)
+		show_winer(corewar->champs);
 	sort_vc(&g_vs->vc_list);
 	update = -1;
 	g_change = 0;

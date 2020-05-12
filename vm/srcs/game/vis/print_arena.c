@@ -14,7 +14,7 @@ void			print_arena(char **arena)
 	i = 0;
 	while (i < 64)
 	{
-		g_vs->txt_srfc = TTF_RenderText_Solid(g_vs->font,
+		g_vs->txt_srfc = TTF_RenderText_Solid(g_vs->text_font,
 								arena[i], g_vs->text_color[4]);
 		g_vs->text = SDL_CreateTextureFromSurface(g_vs->render,
 													g_vs->txt_srfc);

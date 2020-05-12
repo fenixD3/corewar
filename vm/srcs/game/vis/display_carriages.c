@@ -9,8 +9,7 @@ void			draw_carriage(int i, int priority, SDL_Color color)
 	SDL_Rect	carrg;
 	int			wight;
 
-//	wight = 16 - 4 * priority + 1;
-	wight = 4;
+	wight = 16 - 4 * priority + 1;
 	if (priority > 3)
 		return ;
 	else

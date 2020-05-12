@@ -21,18 +21,23 @@ void	start_game(t_corewar *corewar)
 	visualise_arena(corewar, &quit);
 	while (!quit)
 	{
-		if (corewar->flgs.set_flg & DUMP_FLG &&
-		corewar->game_param.cycles_aft_start == corewar->flgs.nbr_cycles_dump)
-			print_map(corewar);
-		++corewar->game_param.cycles_aft_start;
-  		carriages_actions(corewar);
-		if (!(corewar->game_param.cycles_aft_start %
-corewar->game_param.cycles_to_die) || corewar->game_param.cycles_to_die <= 0)
-			lets_check(corewar);
-		if ((corewar->flgs.set_flg & B_FLG) && g_change)
+		if (g_mode == -100)
 			visualise_arena(corewar, &quit);
-		if (!corewar->carriages)
-			introducing_winner(corewar);
+		else
+		{
+			if (corewar->flgs.set_flg & DUMP_FLG &&
+				corewar->game_param.cycles_aft_start == corewar->flgs.nbr_cycles_dump)
+				print_map(corewar);
+			++corewar->game_param.cycles_aft_start;
+			carriages_actions(corewar);
+			if (!(corewar->game_param.cycles_aft_start %
+				  corewar->game_param.cycles_to_die) || corewar->game_param.cycles_to_die <= 0)
+				lets_check(corewar);
+			if ((corewar->flgs.set_flg & B_FLG) && g_change)
+				visualise_arena(corewar, &quit);
+			if (!corewar->carriages)
+				introducing_winner(corewar);
+		}
 	}
 }
 
@@ -86,7 +91,9 @@ void	introducing_winner(t_corewar *corewar)
 	fprintf(file, "Contestant %d, \"%s\", has won !\n", corewar->champs->num,
 			  corewar->champs->file.header.prog_name);
 	fclose(file);
-	exit(0);
+	g_mode = -100;
+	g_change = 1;
+//	exit(0);
 }
 
 void    print_map(t_corewar *corewar)

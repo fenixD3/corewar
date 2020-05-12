@@ -35,7 +35,7 @@ typedef struct		s_vis_tools
 	int				wight;
 	int				height;
 	int				speed;
-	SDL_Color		text_color[5];
+	SDL_Color		text_color[6];
 	SDL_Window		*window;
 	SDL_Renderer	*render;
 	SDL_Surface		*backgrnd;
@@ -70,8 +70,10 @@ SDL_Rect			create_rect(int x, int y, int text_w, int text_h);
 
 void				create_string(char str[100], int input,
 													char *str_inp, char *f);
+void    disasm(char str[100], unsigned char *champ, unsigned char arena[MEM_SIZE]);
 
-char				*disasm(unsigned char *champ);
+//void				disasm(char *str, unsigned char champ[100], unsigned char arena[MEM_SIZE]);
+//char				*disasm(unsigned char *champ);
 
 void				display_game_data(t_corewar *corewar);
 

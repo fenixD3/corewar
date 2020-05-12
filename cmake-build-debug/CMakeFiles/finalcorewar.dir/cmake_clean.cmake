@@ -149,6 +149,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/vc_sort.c.o"
   "CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/visualise_arena.c.o"
   "CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/display_game_data.c.o"
+  "CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/draw_frame.c.o"
+  "CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/track_events.c.o"
   "CMakeFiles/finalcorewar.dir/vm/srcs/game/args_intf.c.o"
   "CMakeFiles/finalcorewar.dir/vm/srcs/game/game.c.o"
   "CMakeFiles/finalcorewar.dir/vm/srcs/game/game_intf.c.o"

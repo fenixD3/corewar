@@ -610,6 +610,9 @@
 		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/vm/srcs/game/vis/display_side_menu.c">
 			<Option target="finalcorewar"/>
 		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/vm/srcs/game/vis/draw_frame.c">
+			<Option target="finalcorewar"/>
+		</Unit>
 		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/vm/srcs/game/vis/init_sdl.c">
 			<Option target="finalcorewar"/>
 		</Unit>
@@ -617,6 +620,9 @@
 			<Option target="finalcorewar"/>
 		</Unit>
 		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/vm/srcs/game/vis/support_func.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/vm/srcs/game/vis/track_events.c">
 			<Option target="finalcorewar"/>
 		</Unit>
 		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/vm/srcs/game/vis/vc_list.c">

@@ -4308,6 +4308,33 @@ vm/srcs/game/vis/display_side_menu.c.s:
 	$(MAKE) -f CMakeFiles/finalcorewar.dir/build.make CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/display_side_menu.c.s
 .PHONY : vm/srcs/game/vis/display_side_menu.c.s
 
+vm/srcs/game/vis/draw_frame.o: vm/srcs/game/vis/draw_frame.c.o
+
+.PHONY : vm/srcs/game/vis/draw_frame.o
+
+# target to build an object file
+vm/srcs/game/vis/draw_frame.c.o:
+	$(MAKE) -f CMakeFiles/finalcorewar.dir/build.make CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/draw_frame.c.o
+.PHONY : vm/srcs/game/vis/draw_frame.c.o
+
+vm/srcs/game/vis/draw_frame.i: vm/srcs/game/vis/draw_frame.c.i
+
+.PHONY : vm/srcs/game/vis/draw_frame.i
+
+# target to preprocess a source file
+vm/srcs/game/vis/draw_frame.c.i:
+	$(MAKE) -f CMakeFiles/finalcorewar.dir/build.make CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/draw_frame.c.i
+.PHONY : vm/srcs/game/vis/draw_frame.c.i
+
+vm/srcs/game/vis/draw_frame.s: vm/srcs/game/vis/draw_frame.c.s
+
+.PHONY : vm/srcs/game/vis/draw_frame.s
+
+# target to generate assembly for a file
+vm/srcs/game/vis/draw_frame.c.s:
+	$(MAKE) -f CMakeFiles/finalcorewar.dir/build.make CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/draw_frame.c.s
+.PHONY : vm/srcs/game/vis/draw_frame.c.s
+
 vm/srcs/game/vis/init_sdl.o: vm/srcs/game/vis/init_sdl.c.o
 
 .PHONY : vm/srcs/game/vis/init_sdl.o
@@ -4388,6 +4415,33 @@ vm/srcs/game/vis/support_func.s: vm/srcs/game/vis/support_func.c.s
 vm/srcs/game/vis/support_func.c.s:
 	$(MAKE) -f CMakeFiles/finalcorewar.dir/build.make CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/support_func.c.s
 .PHONY : vm/srcs/game/vis/support_func.c.s
+
+vm/srcs/game/vis/track_events.o: vm/srcs/game/vis/track_events.c.o
+
+.PHONY : vm/srcs/game/vis/track_events.o
+
+# target to build an object file
+vm/srcs/game/vis/track_events.c.o:
+	$(MAKE) -f CMakeFiles/finalcorewar.dir/build.make CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/track_events.c.o
+.PHONY : vm/srcs/game/vis/track_events.c.o
+
+vm/srcs/game/vis/track_events.i: vm/srcs/game/vis/track_events.c.i
+
+.PHONY : vm/srcs/game/vis/track_events.i
+
+# target to preprocess a source file
+vm/srcs/game/vis/track_events.c.i:
+	$(MAKE) -f CMakeFiles/finalcorewar.dir/build.make CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/track_events.c.i
+.PHONY : vm/srcs/game/vis/track_events.c.i
+
+vm/srcs/game/vis/track_events.s: vm/srcs/game/vis/track_events.c.s
+
+.PHONY : vm/srcs/game/vis/track_events.s
+
+# target to generate assembly for a file
+vm/srcs/game/vis/track_events.c.s:
+	$(MAKE) -f CMakeFiles/finalcorewar.dir/build.make CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/track_events.c.s
+.PHONY : vm/srcs/game/vis/track_events.c.s
 
 vm/srcs/game/vis/vc_list.o: vm/srcs/game/vis/vc_list.c.o
 
@@ -5106,6 +5160,9 @@ help:
 	@echo "... vm/srcs/game/vis/display_side_menu.o"
 	@echo "... vm/srcs/game/vis/display_side_menu.i"
 	@echo "... vm/srcs/game/vis/display_side_menu.s"
+	@echo "... vm/srcs/game/vis/draw_frame.o"
+	@echo "... vm/srcs/game/vis/draw_frame.i"
+	@echo "... vm/srcs/game/vis/draw_frame.s"
 	@echo "... vm/srcs/game/vis/init_sdl.o"
 	@echo "... vm/srcs/game/vis/init_sdl.i"
 	@echo "... vm/srcs/game/vis/init_sdl.s"
@@ -5115,6 +5172,9 @@ help:
 	@echo "... vm/srcs/game/vis/support_func.o"
 	@echo "... vm/srcs/game/vis/support_func.i"
 	@echo "... vm/srcs/game/vis/support_func.s"
+	@echo "... vm/srcs/game/vis/track_events.o"
+	@echo "... vm/srcs/game/vis/track_events.i"
+	@echo "... vm/srcs/game/vis/track_events.s"
 	@echo "... vm/srcs/game/vis/vc_list.o"
 	@echo "... vm/srcs/game/vis/vc_list.i"
 	@echo "... vm/srcs/game/vis/vc_list.s"

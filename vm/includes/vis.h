@@ -55,10 +55,14 @@ void				create_vs(void);
 
 void				print_arena(char **arena);
 
+void				draw_frame(t_vc *vc, int *i, int extndd, t_corewar *crwr);
+
 /*
  * Support_func.c
  */
 void				free_mem_font(void);
+
+void				ft_free_strsplit(char **str_array);
 
 int					track_events(int *indx, SDL_Event *e, bool *quit, t_corewar *corewar);
 

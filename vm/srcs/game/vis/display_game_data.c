@@ -1,3 +1,14 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   display_game_data.c                                :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mcanhand <mcanhand@student.21-school.ru>   +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/05/12 21:30:47 by mcanhand          #+#    #+#             */
+/*   Updated: 2020/05/12 21:31:03 by mcanhand         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "vis.h"
 
@@ -44,15 +55,15 @@ void			show_usage(char string[100])
 
 	text_x = 1575;
 	create_string(string, 0,
-				  "= = = %s = = =\n", "USAGE. Press ...");
+				"= = = %s = = =\n", "USAGE. Press ...");
 	display_item(&text_x, string, 0);
 	text_x = 1560;
 	create_string(string, 0,
-				  "@ %s\n", "Enter - to speed up the game");
+				"@ %s\n", "Enter - to speed up the game");
 	display_item(&text_x, string, 12);
 	text_x = 1560;
 	create_string(string, 0,
-				  "@ %s\n", ">> - to manage game manually");
+				"@ %s\n", ">> - to manage game manually");
 	display_item(&text_x, string, 24);
 }
 

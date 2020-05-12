@@ -1,5 +1,17 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   init_sdl.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mcanhand <mcanhand@student.21-school.ru>   +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/05/12 21:29:11 by mcanhand          #+#    #+#             */
+/*   Updated: 2020/05/12 21:29:42 by mcanhand         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "vis.h"
+
 t_vis_tools *g_vs;
 
 //bool	init_sdl_images(void)
@@ -59,4 +71,3 @@ bool		init(void)
 //	if (!init_surface(g_vs)) IF SOME PICTURES NEEDED
 	return (success);
 }
-

@@ -2007,9 +2007,35 @@ CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/display_game_data.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/display_game_data.c.s"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/vm/srcs/game/vis/display_game_data.c -o CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/display_game_data.c.s
 
+CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/draw_frame.c.o: CMakeFiles/finalcorewar.dir/flags.make
+CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/draw_frame.c.o: ../vm/srcs/game/vis/draw_frame.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_151) "Building C object CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/draw_frame.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/draw_frame.c.o   -c /Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/vm/srcs/game/vis/draw_frame.c
+
+CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/draw_frame.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/draw_frame.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/vm/srcs/game/vis/draw_frame.c > CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/draw_frame.c.i
+
+CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/draw_frame.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/draw_frame.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/vm/srcs/game/vis/draw_frame.c -o CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/draw_frame.c.s
+
+CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/track_events.c.o: CMakeFiles/finalcorewar.dir/flags.make
+CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/track_events.c.o: ../vm/srcs/game/vis/track_events.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_152) "Building C object CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/track_events.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/track_events.c.o   -c /Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/vm/srcs/game/vis/track_events.c
+
+CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/track_events.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/track_events.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/vm/srcs/game/vis/track_events.c > CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/track_events.c.i
+
+CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/track_events.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/track_events.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/vm/srcs/game/vis/track_events.c -o CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/track_events.c.s
+
 CMakeFiles/finalcorewar.dir/vm/srcs/game/args_intf.c.o: CMakeFiles/finalcorewar.dir/flags.make
 CMakeFiles/finalcorewar.dir/vm/srcs/game/args_intf.c.o: ../vm/srcs/game/args_intf.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_151) "Building C object CMakeFiles/finalcorewar.dir/vm/srcs/game/args_intf.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_153) "Building C object CMakeFiles/finalcorewar.dir/vm/srcs/game/args_intf.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/finalcorewar.dir/vm/srcs/game/args_intf.c.o   -c /Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/vm/srcs/game/args_intf.c
 
 CMakeFiles/finalcorewar.dir/vm/srcs/game/args_intf.c.i: cmake_force
@@ -2022,7 +2048,7 @@ CMakeFiles/finalcorewar.dir/vm/srcs/game/args_intf.c.s: cmake_force
 
 CMakeFiles/finalcorewar.dir/vm/srcs/game/game.c.o: CMakeFiles/finalcorewar.dir/flags.make
 CMakeFiles/finalcorewar.dir/vm/srcs/game/game.c.o: ../vm/srcs/game/game.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_152) "Building C object CMakeFiles/finalcorewar.dir/vm/srcs/game/game.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_154) "Building C object CMakeFiles/finalcorewar.dir/vm/srcs/game/game.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/finalcorewar.dir/vm/srcs/game/game.c.o   -c /Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/vm/srcs/game/game.c
 
 CMakeFiles/finalcorewar.dir/vm/srcs/game/game.c.i: cmake_force
@@ -2035,7 +2061,7 @@ CMakeFiles/finalcorewar.dir/vm/srcs/game/game.c.s: cmake_force
 
 CMakeFiles/finalcorewar.dir/vm/srcs/game/game_intf.c.o: CMakeFiles/finalcorewar.dir/flags.make
 CMakeFiles/finalcorewar.dir/vm/srcs/game/game_intf.c.o: ../vm/srcs/game/game_intf.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_153) "Building C object CMakeFiles/finalcorewar.dir/vm/srcs/game/game_intf.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_155) "Building C object CMakeFiles/finalcorewar.dir/vm/srcs/game/game_intf.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/finalcorewar.dir/vm/srcs/game/game_intf.c.o   -c /Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/vm/srcs/game/game_intf.c
 
 CMakeFiles/finalcorewar.dir/vm/srcs/game/game_intf.c.i: cmake_force
@@ -2048,7 +2074,7 @@ CMakeFiles/finalcorewar.dir/vm/srcs/game/game_intf.c.s: cmake_force
 
 CMakeFiles/finalcorewar.dir/vm/srcs/game/helper_func.c.o: CMakeFiles/finalcorewar.dir/flags.make
 CMakeFiles/finalcorewar.dir/vm/srcs/game/helper_func.c.o: ../vm/srcs/game/helper_func.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_154) "Building C object CMakeFiles/finalcorewar.dir/vm/srcs/game/helper_func.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_156) "Building C object CMakeFiles/finalcorewar.dir/vm/srcs/game/helper_func.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/finalcorewar.dir/vm/srcs/game/helper_func.c.o   -c /Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/vm/srcs/game/helper_func.c
 
 CMakeFiles/finalcorewar.dir/vm/srcs/game/helper_func.c.i: cmake_force
@@ -2061,7 +2087,7 @@ CMakeFiles/finalcorewar.dir/vm/srcs/game/helper_func.c.s: cmake_force
 
 CMakeFiles/finalcorewar.dir/vm/srcs/game/instr_fork_zjmp_live.c.o: CMakeFiles/finalcorewar.dir/flags.make
 CMakeFiles/finalcorewar.dir/vm/srcs/game/instr_fork_zjmp_live.c.o: ../vm/srcs/game/instr_fork_zjmp_live.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_155) "Building C object CMakeFiles/finalcorewar.dir/vm/srcs/game/instr_fork_zjmp_live.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_157) "Building C object CMakeFiles/finalcorewar.dir/vm/srcs/game/instr_fork_zjmp_live.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/finalcorewar.dir/vm/srcs/game/instr_fork_zjmp_live.c.o   -c /Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/vm/srcs/game/instr_fork_zjmp_live.c
 
 CMakeFiles/finalcorewar.dir/vm/srcs/game/instr_fork_zjmp_live.c.i: cmake_force
@@ -2074,7 +2100,7 @@ CMakeFiles/finalcorewar.dir/vm/srcs/game/instr_fork_zjmp_live.c.s: cmake_force
 
 CMakeFiles/finalcorewar.dir/vm/srcs/game/instr_ld.c.o: CMakeFiles/finalcorewar.dir/flags.make
 CMakeFiles/finalcorewar.dir/vm/srcs/game/instr_ld.c.o: ../vm/srcs/game/instr_ld.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_156) "Building C object CMakeFiles/finalcorewar.dir/vm/srcs/game/instr_ld.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_158) "Building C object CMakeFiles/finalcorewar.dir/vm/srcs/game/instr_ld.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/finalcorewar.dir/vm/srcs/game/instr_ld.c.o   -c /Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/vm/srcs/game/instr_ld.c
 
 CMakeFiles/finalcorewar.dir/vm/srcs/game/instr_ld.c.i: cmake_force
@@ -2087,7 +2113,7 @@ CMakeFiles/finalcorewar.dir/vm/srcs/game/instr_ld.c.s: cmake_force
 
 CMakeFiles/finalcorewar.dir/vm/srcs/game/instr_operations.c.o: CMakeFiles/finalcorewar.dir/flags.make
 CMakeFiles/finalcorewar.dir/vm/srcs/game/instr_operations.c.o: ../vm/srcs/game/instr_operations.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_157) "Building C object CMakeFiles/finalcorewar.dir/vm/srcs/game/instr_operations.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_159) "Building C object CMakeFiles/finalcorewar.dir/vm/srcs/game/instr_operations.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/finalcorewar.dir/vm/srcs/game/instr_operations.c.o   -c /Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/vm/srcs/game/instr_operations.c
 
 CMakeFiles/finalcorewar.dir/vm/srcs/game/instr_operations.c.i: cmake_force
@@ -2100,7 +2126,7 @@ CMakeFiles/finalcorewar.dir/vm/srcs/game/instr_operations.c.s: cmake_force
 
 CMakeFiles/finalcorewar.dir/vm/srcs/game/instr_st.c.o: CMakeFiles/finalcorewar.dir/flags.make
 CMakeFiles/finalcorewar.dir/vm/srcs/game/instr_st.c.o: ../vm/srcs/game/instr_st.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_158) "Building C object CMakeFiles/finalcorewar.dir/vm/srcs/game/instr_st.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_160) "Building C object CMakeFiles/finalcorewar.dir/vm/srcs/game/instr_st.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/finalcorewar.dir/vm/srcs/game/instr_st.c.o   -c /Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/vm/srcs/game/instr_st.c
 
 CMakeFiles/finalcorewar.dir/vm/srcs/game/instr_st.c.i: cmake_force
@@ -2113,7 +2139,7 @@ CMakeFiles/finalcorewar.dir/vm/srcs/game/instr_st.c.s: cmake_force
 
 CMakeFiles/finalcorewar.dir/vm/srcs/struct_intf/carriage_intf.c.o: CMakeFiles/finalcorewar.dir/flags.make
 CMakeFiles/finalcorewar.dir/vm/srcs/struct_intf/carriage_intf.c.o: ../vm/srcs/struct_intf/carriage_intf.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_159) "Building C object CMakeFiles/finalcorewar.dir/vm/srcs/struct_intf/carriage_intf.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_161) "Building C object CMakeFiles/finalcorewar.dir/vm/srcs/struct_intf/carriage_intf.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/finalcorewar.dir/vm/srcs/struct_intf/carriage_intf.c.o   -c /Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/vm/srcs/struct_intf/carriage_intf.c
 
 CMakeFiles/finalcorewar.dir/vm/srcs/struct_intf/carriage_intf.c.i: cmake_force
@@ -2126,7 +2152,7 @@ CMakeFiles/finalcorewar.dir/vm/srcs/struct_intf/carriage_intf.c.s: cmake_force
 
 CMakeFiles/finalcorewar.dir/vm/srcs/struct_intf/corewar_intf.c.o: CMakeFiles/finalcorewar.dir/flags.make
 CMakeFiles/finalcorewar.dir/vm/srcs/struct_intf/corewar_intf.c.o: ../vm/srcs/struct_intf/corewar_intf.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_160) "Building C object CMakeFiles/finalcorewar.dir/vm/srcs/struct_intf/corewar_intf.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_162) "Building C object CMakeFiles/finalcorewar.dir/vm/srcs/struct_intf/corewar_intf.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/finalcorewar.dir/vm/srcs/struct_intf/corewar_intf.c.o   -c /Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/vm/srcs/struct_intf/corewar_intf.c
 
 CMakeFiles/finalcorewar.dir/vm/srcs/struct_intf/corewar_intf.c.i: cmake_force
@@ -2139,7 +2165,7 @@ CMakeFiles/finalcorewar.dir/vm/srcs/struct_intf/corewar_intf.c.s: cmake_force
 
 CMakeFiles/finalcorewar.dir/vm/srcs/validation/parse_input_intf.c.o: CMakeFiles/finalcorewar.dir/flags.make
 CMakeFiles/finalcorewar.dir/vm/srcs/validation/parse_input_intf.c.o: ../vm/srcs/validation/parse_input_intf.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_161) "Building C object CMakeFiles/finalcorewar.dir/vm/srcs/validation/parse_input_intf.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_163) "Building C object CMakeFiles/finalcorewar.dir/vm/srcs/validation/parse_input_intf.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/finalcorewar.dir/vm/srcs/validation/parse_input_intf.c.o   -c /Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/vm/srcs/validation/parse_input_intf.c
 
 CMakeFiles/finalcorewar.dir/vm/srcs/validation/parse_input_intf.c.i: cmake_force
@@ -2152,7 +2178,7 @@ CMakeFiles/finalcorewar.dir/vm/srcs/validation/parse_input_intf.c.s: cmake_force
 
 CMakeFiles/finalcorewar.dir/vm/srcs/validation/parse_inputs.c.o: CMakeFiles/finalcorewar.dir/flags.make
 CMakeFiles/finalcorewar.dir/vm/srcs/validation/parse_inputs.c.o: ../vm/srcs/validation/parse_inputs.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_162) "Building C object CMakeFiles/finalcorewar.dir/vm/srcs/validation/parse_inputs.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_164) "Building C object CMakeFiles/finalcorewar.dir/vm/srcs/validation/parse_inputs.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/finalcorewar.dir/vm/srcs/validation/parse_inputs.c.o   -c /Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/vm/srcs/validation/parse_inputs.c
 
 CMakeFiles/finalcorewar.dir/vm/srcs/validation/parse_inputs.c.i: cmake_force
@@ -2165,7 +2191,7 @@ CMakeFiles/finalcorewar.dir/vm/srcs/validation/parse_inputs.c.s: cmake_force
 
 CMakeFiles/finalcorewar.dir/vm/srcs/validation/reports.c.o: CMakeFiles/finalcorewar.dir/flags.make
 CMakeFiles/finalcorewar.dir/vm/srcs/validation/reports.c.o: ../vm/srcs/validation/reports.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_163) "Building C object CMakeFiles/finalcorewar.dir/vm/srcs/validation/reports.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_165) "Building C object CMakeFiles/finalcorewar.dir/vm/srcs/validation/reports.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/finalcorewar.dir/vm/srcs/validation/reports.c.o   -c /Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/vm/srcs/validation/reports.c
 
 CMakeFiles/finalcorewar.dir/vm/srcs/validation/reports.c.i: cmake_force
@@ -2178,7 +2204,7 @@ CMakeFiles/finalcorewar.dir/vm/srcs/validation/reports.c.s: cmake_force
 
 CMakeFiles/finalcorewar.dir/vm/srcs/main.c.o: CMakeFiles/finalcorewar.dir/flags.make
 CMakeFiles/finalcorewar.dir/vm/srcs/main.c.o: ../vm/srcs/main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_164) "Building C object CMakeFiles/finalcorewar.dir/vm/srcs/main.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_166) "Building C object CMakeFiles/finalcorewar.dir/vm/srcs/main.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/finalcorewar.dir/vm/srcs/main.c.o   -c /Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/vm/srcs/main.c
 
 CMakeFiles/finalcorewar.dir/vm/srcs/main.c.i: cmake_force
@@ -2191,7 +2217,7 @@ CMakeFiles/finalcorewar.dir/vm/srcs/main.c.s: cmake_force
 
 CMakeFiles/finalcorewar.dir/fast_strsplit.c.o: CMakeFiles/finalcorewar.dir/flags.make
 CMakeFiles/finalcorewar.dir/fast_strsplit.c.o: ../fast_strsplit.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_165) "Building C object CMakeFiles/finalcorewar.dir/fast_strsplit.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_167) "Building C object CMakeFiles/finalcorewar.dir/fast_strsplit.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/finalcorewar.dir/fast_strsplit.c.o   -c /Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/fast_strsplit.c
 
 CMakeFiles/finalcorewar.dir/fast_strsplit.c.i: cmake_force
@@ -2204,7 +2230,7 @@ CMakeFiles/finalcorewar.dir/fast_strsplit.c.s: cmake_force
 
 CMakeFiles/finalcorewar.dir/file_to_list.c.o: CMakeFiles/finalcorewar.dir/flags.make
 CMakeFiles/finalcorewar.dir/file_to_list.c.o: ../file_to_list.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_166) "Building C object CMakeFiles/finalcorewar.dir/file_to_list.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_168) "Building C object CMakeFiles/finalcorewar.dir/file_to_list.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/finalcorewar.dir/file_to_list.c.o   -c /Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/file_to_list.c
 
 CMakeFiles/finalcorewar.dir/file_to_list.c.i: cmake_force
@@ -2217,7 +2243,7 @@ CMakeFiles/finalcorewar.dir/file_to_list.c.s: cmake_force
 
 CMakeFiles/finalcorewar.dir/ft_wordequ.c.o: CMakeFiles/finalcorewar.dir/flags.make
 CMakeFiles/finalcorewar.dir/ft_wordequ.c.o: ../ft_wordequ.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_167) "Building C object CMakeFiles/finalcorewar.dir/ft_wordequ.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_169) "Building C object CMakeFiles/finalcorewar.dir/ft_wordequ.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/finalcorewar.dir/ft_wordequ.c.o   -c /Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/ft_wordequ.c
 
 CMakeFiles/finalcorewar.dir/ft_wordequ.c.i: cmake_force
@@ -2380,6 +2406,8 @@ finalcorewar_OBJECTS = \
 "CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/vc_sort.c.o" \
 "CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/visualise_arena.c.o" \
 "CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/display_game_data.c.o" \
+"CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/draw_frame.c.o" \
+"CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/track_events.c.o" \
 "CMakeFiles/finalcorewar.dir/vm/srcs/game/args_intf.c.o" \
 "CMakeFiles/finalcorewar.dir/vm/srcs/game/game.c.o" \
 "CMakeFiles/finalcorewar.dir/vm/srcs/game/game_intf.c.o" \
@@ -2551,6 +2579,8 @@ finalcorewar: CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/vc_list.c.o
 finalcorewar: CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/vc_sort.c.o
 finalcorewar: CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/visualise_arena.c.o
 finalcorewar: CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/display_game_data.c.o
+finalcorewar: CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/draw_frame.c.o
+finalcorewar: CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/track_events.c.o
 finalcorewar: CMakeFiles/finalcorewar.dir/vm/srcs/game/args_intf.c.o
 finalcorewar: CMakeFiles/finalcorewar.dir/vm/srcs/game/game.c.o
 finalcorewar: CMakeFiles/finalcorewar.dir/vm/srcs/game/game_intf.c.o
@@ -2570,7 +2600,7 @@ finalcorewar: CMakeFiles/finalcorewar.dir/file_to_list.c.o
 finalcorewar: CMakeFiles/finalcorewar.dir/ft_wordequ.c.o
 finalcorewar: CMakeFiles/finalcorewar.dir/build.make
 finalcorewar: CMakeFiles/finalcorewar.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_168) "Linking C executable finalcorewar"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_170) "Linking C executable finalcorewar"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/finalcorewar.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

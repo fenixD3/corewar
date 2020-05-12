@@ -180,6 +180,8 @@ add_executable(finalcorewar
         vm/srcs/game/vis/vc_sort.c
         vm/srcs/game/vis/visualise_arena.c
         vm/srcs/game/vis/display_game_data.c
+        vm/srcs/game/vis/draw_frame.c
+        vm/srcs/game/vis/track_events.c
         vm/srcs/game/args_intf.c
         vm/srcs/game/game.c
         vm/srcs/game/game_intf.c

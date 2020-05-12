@@ -1,10 +1,19 @@
-
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   visualise_arena.c                                  :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mcanhand <mcanhand@student.21-school.ru>   +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/05/12 21:32:59 by mcanhand          #+#    #+#             */
+/*   Updated: 2020/05/12 21:33:16 by mcanhand         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "vis.h"
 #include "vis_errors.h"
 
 t_vis_tools *g_vs;
-
 
 void			draw_backgroung(void)
 {
@@ -25,7 +34,7 @@ void			draw_backgroung(void)
 	SDL_RenderFillRect(g_vs->render, &sm_rectangle);
 	SDL_SetRenderDrawColor(g_vs->render, 0, 0, 0, SDL_ALPHA_OPAQUE);
 	sm_rectangle = create_rect(15 + 64 * 24, 20 + 64 * 15,
-							  g_vs->wight - 20 - 64 * 24, 45);
+							g_vs->wight - 20 - 64 * 24, 45);
 	SDL_RenderFillRect(g_vs->render, &sm_rectangle);
 	SDL_SetRenderDrawColor(g_vs->render, 0, 0, 0, SDL_ALPHA_OPAQUE);
 	sm_rectangle = create_rect(15 + 64 * 24, 10,
@@ -33,28 +42,12 @@ void			draw_backgroung(void)
 	SDL_RenderFillRect(g_vs->render, &sm_rectangle);
 }
 
-void	ft_free_strsplit(char **str_array)
+char			**convert_arena(t_corewar *corewar)
 {
-	int i;
-
-	if (str_array)
-	{
-		i = 0;
-		while (str_array[i] != NULL)
-		{
-			free(str_array[i]);
-			i++;
-		}
-		free(str_array);
-	}
-}
-
-char	**convert_arena(t_corewar *corewar)
-{
-	int		i;
-	int		j;
-	int		c;
-	char	**res;
+	int			i;
+	int			j;
+	int			c;
+	char		**res;
 
 	i = 0;
 	c = 0;
@@ -93,24 +86,24 @@ void			display_objs(t_corewar *corewar, int update)
 	ft_free_strsplit(hex_arena);
 }
 
-void	show_winer(t_champion *champ)
+void			show_winer(t_champion *champ)
 {
 	SDL_Rect	rectangle;
 	SDL_Rect	sm_rectangle;
-	char 		string[100];
+	char		string[100];
 	SDL_Rect	dstrect;
 
 	create_string(string, champ->num, "Contestant %d, \n", NULL);
 	create_string(&string[14], 0, "\"%s\", has won !\n",
-			champ->file.header.prog_name);
+											champ->file.header.prog_name);
 	SDL_SetRenderDrawColor(g_vs->render, 244, 242, 238, SDL_ALPHA_OPAQUE);
 	rectangle = create_rect(0, 0, g_vs->wight, g_vs->height);
 	SDL_RenderFillRect(g_vs->render, &rectangle);
 	SDL_SetRenderDrawColor(g_vs->render, 0, 0, 0, SDL_ALPHA_OPAQUE);
-	sm_rectangle = create_rect(5, 10, g_vs->wight - 10,g_vs->height - 20);
+	sm_rectangle = create_rect(5, 10, g_vs->wight - 10, g_vs->height - 20);
 	SDL_RenderFillRect(g_vs->render, &sm_rectangle);
 	g_vs->txt_srfc = TTF_RenderText_Solid(g_vs->font, string,
-										  g_vs->text_color[champ->num - 1]);
+									g_vs->text_color[champ->num - 1]);
 	g_vs->text = SDL_CreateTextureFromSurface(g_vs->render, g_vs->txt_srfc);
 	dstrect = create_rect(g_vs->wight / 2 - g_vs->txt_srfc->w,
 			g_vs->height / 2, g_vs->txt_srfc->w, g_vs->txt_srfc->h);

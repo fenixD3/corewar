@@ -182,6 +182,7 @@ add_executable(finalcorewar
         vm/srcs/game/vis/display_game_data.c
         vm/srcs/game/vis/draw_frame.c
         vm/srcs/game/vis/track_events.c
+        vm/srcs/game/vis/higlight_cells.c
         vm/srcs/game/args_intf.c
         vm/srcs/game/game.c
         vm/srcs/game/game_intf.c

@@ -62,9 +62,15 @@ stdio.h
 vis.h
 ../vm/includes/vis.h
 
-/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/vm/srcs/game/vis/display_side_menu.c
-vis.h
-/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/vm/srcs/game/vis/vis.h
+/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/vm/srcs/game/vis/disasm.c
+vm.h
+/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/vm/srcs/game/vis/vm.h
+libft.h
+/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/vm/srcs/game/vis/libft.h
+options.h
+/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/vm/srcs/game/vis/options.h
+stdint.h
+-
 
 /Users/romancheremin/Library/Frameworks/SDL2.framework/Headers/SDL.h
 SDL_main.h

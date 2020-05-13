@@ -26,7 +26,7 @@ void			display_item(int *text_x, char string[100], int y)
 	dstrect = create_rect(*text_x, 64 * 15 + 25 + y,
 								g_vs->txt_srfc->w, text_height);
 	SDL_RenderCopy(g_vs->render, g_vs->text, NULL, &dstrect);
-	*text_x += g_vs->txt_srfc->w + 40;
+	*text_x += g_vs->txt_srfc->w + 30;
 	free_mem_font();
 }
 
@@ -34,7 +34,7 @@ void			show_abreviations(char string[100])
 {
 	int			text_x;
 
-	text_x = 670;
+	text_x = 705;
 	create_string(string, 0,
 				"= = = %s - cycles before execution\n", "CBE");
 	display_item(&text_x, string, 25);
@@ -59,11 +59,11 @@ void			show_usage(char string[100])
 	display_item(&text_x, string, 0);
 	text_x = 1560;
 	create_string(string, 0,
-				"@ %s\n", "Enter - to speed up the game");
+				"%s\n", "Enter - to speed up the game");
 	display_item(&text_x, string, 12);
 	text_x = 1560;
 	create_string(string, 0,
-				"@ %s\n", ">> - to manage game manually");
+				"%s\n", "-> - to manage game manually");
 	display_item(&text_x, string, 24);
 }
 
@@ -72,7 +72,7 @@ void			display_game_data(t_corewar *corewar)
 	char		string[100];
 	int			text_x;
 
-	text_x = 20;
+	text_x = 15;
 	create_string(string, corewar->game_param.cycles_to_die,
 					"cycles to die : %d\n", NULL);
 	display_item(&text_x, string, 25);
@@ -85,11 +85,14 @@ void			display_game_data(t_corewar *corewar)
 	create_string(string, corewar->game_param.check_cnt,
 			"check count : %d\n", NULL);
 	display_item(&text_x, string, 25);
-	text_x = 200;
-	create_string(string, 0, "GAME  %s:\n", "STATISTICS");
+	create_string(string, corewar->game_param.live_period_cnt,
+				  "live period cnt : %d\n", NULL);
+	display_item(&text_x, string, 25);
+	text_x = 290;
+	create_string(string, 0, "GAME  %s\n", "STATISTICS");
 	display_item(&text_x, string, 3);
-	text_x = 1051;
-	create_string(string, 0, "%s:\n", "ABBREVIATIONS");
+	text_x = 1050;
+	create_string(string, 0, "%s\n", "ABBREVIATIONS");
 	display_item(&text_x, string, 3);
 	show_abreviations(string);
 	show_usage(string);

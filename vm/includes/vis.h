@@ -57,6 +57,8 @@ void				print_arena(char **arena);
 
 void				draw_frame(t_vc *vc, int *i, int extndd, t_corewar *crwr);
 
+void				higlight_cells(int cariages, t_vc *vc, t_corewar *crwr, int ind);
+
 /*
  * Support_func.c
  */
@@ -66,30 +68,24 @@ void				ft_free_strsplit(char **str_array);
 
 int					track_events(int *indx, SDL_Event *e, bool *quit, t_corewar *corewar);
 
-//void				track_events(SDL_Event *e, bool *quit, int *stop);
-
-//void				track_mouseclick(int *indx, SDL_Event *e, t_corewar *corewar);
 
 SDL_Rect			create_rect(int x, int y, int text_w, int text_h);
 
 void				create_string(char str[100], int input,
 													char *str_inp, char *f);
-void    disasm(char str[100], unsigned char *champ, unsigned char arena[MEM_SIZE]);
+
+void				disasm(t_carriages *champ, char str[100], unsigned char *arena);
+
+//void    			disasm(char str[100], unsigned char *champ, unsigned char arena[MEM_SIZE]);
 
 //void				disasm(char *str, unsigned char champ[100], unsigned char arena[MEM_SIZE]);
-//char				*disasm(unsigned char *champ);
 
 void				display_game_data(t_corewar *corewar);
 
-void				display_side_menu(t_corewar *crwr, int ind, t_vc *vc);
+int					display_side_menu(t_corewar *crwr, int ind, t_vc *vc);
 
 
 void				display_carriages(t_corewar *corewar);
-
-void				push_front_carriage(t_carriages **carriages);
-
-void				init_arena(unsigned char arena[], t_champion *champs,
-												t_carriages **carriages);
 
 void				add_new_vc(t_vc **head, t_carriages *new);
 void    			insert_vc(t_vc **head, t_vc *prev, t_vc *insert);

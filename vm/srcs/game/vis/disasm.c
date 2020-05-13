@@ -10,11 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "vm.h"
 #include "libft.h"
 #include "options.h"
 #include <stdint.h>
-#include "vm.h"
-#include <stdio.h> // убрать //////////////////////////////////////////
+
 
 typedef struct	s_disasm
 {
@@ -22,7 +22,9 @@ typedef struct	s_disasm
 	uint8_t    args[3];
 	int        value[3];
 	unsigned char *arena;
+	unsigned char *bogie;
 }				t_disasm;
+
 
 
 size_t	len_num(int num)
@@ -153,7 +155,10 @@ void    command_output(t_disasm *s, unsigned char *champ, int i, int j, char **s
 	}
 	tmp[i++] = ' ';
 	if (!(g_op[s->code - 1].argument_type_code))
-		add_dir_ind(s, str, i, j, champ);
+	{
+		i = add_dir_ind(s, str, i, j, champ);
+		tmp[i] = '\0';
+	}
 	while (j < g_op[s->code - 1].num_args && g_op[s->code - 1].argument_type_code)
 	{
 		i = add_reg(s, str, i, j, champ);
@@ -166,18 +171,18 @@ void    command_output(t_disasm *s, unsigned char *champ, int i, int j, char **s
 	}
 }
 
-void		disasm_error(char *str_error, char str[100])
+void    disasm_error(char *str_error, char **str)
 {
 	int		c;
 
 	c = 0;
-	ft_sprintf(str, "%s\n", str_error);
-	while (str[c] != '\n')
+	ft_sprintf(*str, "%s\n", str_error);
+	while ((*str)[c] != '\n')
 		c++;
-	str[c] = '\0';
+	(*str)[c] = '\0';
 }
 
-void    disasm(char str[100], unsigned char *champ, unsigned char arena[MEM_SIZE])
+void    disasm(t_carriages *champ, char str[100], unsigned char *arena)
 {
 	int     i;
 	int     j;
@@ -185,17 +190,18 @@ void    disasm(char str[100], unsigned char *champ, unsigned char arena[MEM_SIZE
 
 	i = 0;
 	j = 0;
-	if (!(*champ > 0 && *champ < 17))
-		return (disasm_error("Incorrect command", str));
-	s.code = *champ;
+	ft_bzero(str, ft_strlen(str));
+	if (champ->cycle_op <= 0 || champ->op_code <= 0 || champ->op_code > 16)
+		return (disasm_error("Incorrect command", &str));
+	s.code = champ->op_code;
 	s.args[0] = '0';
 	s.arena = arena;
-	champ = do_steps(champ, 1, arena);
+	s.bogie = do_steps(champ->op_pos, 1, arena);
 	if (!(g_op[s.code - 1].argument_type_code))
-		return(command_output(&s, champ, i, j, &str));
-	else if (!types_of_args(*champ, &s))
-		return (disasm_error("Incorrect command arguments", str));
-	if (!arguments_value(&s, do_steps(champ, 1, arena), i))
-		return (disasm_error("Incorrect value of T_REG", str));
-	return (command_output(&s, champ, i, j, &str));
+		return(command_output(&s, s.bogie, i, j, &str));
+	else if (!types_of_args(*(s.bogie), &s))
+		return (disasm_error("Incorrect command arguments", &str));
+	if (!arguments_value(&s, do_steps(s.bogie, 1, arena), i))
+		return (disasm_error("Incorrect value of T_REG", &str));
+	return (command_output(&s, s.bogie, i, j, &str));
 }

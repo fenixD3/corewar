@@ -613,6 +613,9 @@
 		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/vm/srcs/game/vis/draw_frame.c">
 			<Option target="finalcorewar"/>
 		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/vm/srcs/game/vis/higlight_cells.c">
+			<Option target="finalcorewar"/>
+		</Unit>
 		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/vm/srcs/game/vis/init_sdl.c">
 			<Option target="finalcorewar"/>
 		</Unit>

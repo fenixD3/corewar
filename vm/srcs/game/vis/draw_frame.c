@@ -44,7 +44,7 @@ void					display_registers(int i, t_carriages *carriages,
 	c = 0;
 	if (extndd)
 	{
-		disasm(str, carriages->op_pos, crwr->arena);
+		disasm(carriages, str, crwr->arena);
 		ft_sprintf(todisplay, "OPERATION : %s\n", str);
 		display_text(todisplay, 0, i + 15 + 9 * 2);
 		while (j < 17)
@@ -77,16 +77,16 @@ void					fill_frame(int *i, t_carriages *carriages,
 	display_text(todisplay, 0, *i + 12 + text_height);
 	if (!extndd)
 	{
-		create_string(todisplay, carriages->op_code, "OPERATTON : %d\n", NULL);
+		create_string(todisplay, carriages->op_code, "OPERATION : %d\n", NULL);
 		display_text(todisplay, 0, *i + 15 + text_height * 2);
 	}
 	arena_coord = carriages->op_pos - crwr->arena;
 	create_string(todisplay, arena_coord, "POS : %d\n", NULL);
 	display_text(todisplay, 0, *i + 18 + text_height * 3);
 	create_string(todisplay, arena_coord % 64, "X : %d\n", NULL);
-	display_text(todisplay, 85, *i + 18 + text_height * 3);
+	display_text(todisplay, 95, *i + 18 + text_height * 3);
 	create_string(todisplay, arena_coord / 64, "Y : %d\n", NULL);
-	display_text(todisplay, 140, *i + 18 + text_height * 3);
+	display_text(todisplay, 150, *i + 18 + text_height * 3);
 	display_registers(*i, carriages, extndd, crwr);
 	*i += extndd ? 162 : 63;
 }

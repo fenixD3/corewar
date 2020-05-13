@@ -99,7 +99,7 @@ _Bool		is_there_same_champ_num(t_champion *champs,
 t_carriages	*create_new_carriage(void);
 # include "vis.h"
 
-//void push_front_carriage(t_carriages **carriages, t_vis_tools *g_vs);
+void push_front_carriage(t_carriages **carriages);
 int			carriage_amount_live(t_carriages *carriage);
 t_carriages * delete_carriage(t_corewar *corewar, int search_id);
 
@@ -117,9 +117,8 @@ _Bool	is_flg(const char *arg, t_flgs *flgs);
 _Bool	is_champion(const char *arg, t_corewar *corewar);
 
 void	start_game(t_corewar *corewar);
-//void
-//init_arena(unsigned char arena[], t_champion *champs, t_carriages **carriages,
-//           t_vis_tools *g_vs);
+void
+init_arena(unsigned char arena[], t_champion *champs, t_carriages **carriages);
 void	introducing_fighter(t_champion *champs);
 void    print_map(t_corewar *corewar);
 void introducing_winner(t_corewar *corewar);

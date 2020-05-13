@@ -4335,6 +4335,33 @@ vm/srcs/game/vis/draw_frame.c.s:
 	$(MAKE) -f CMakeFiles/finalcorewar.dir/build.make CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/draw_frame.c.s
 .PHONY : vm/srcs/game/vis/draw_frame.c.s
 
+vm/srcs/game/vis/higlight_cells.o: vm/srcs/game/vis/higlight_cells.c.o
+
+.PHONY : vm/srcs/game/vis/higlight_cells.o
+
+# target to build an object file
+vm/srcs/game/vis/higlight_cells.c.o:
+	$(MAKE) -f CMakeFiles/finalcorewar.dir/build.make CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/higlight_cells.c.o
+.PHONY : vm/srcs/game/vis/higlight_cells.c.o
+
+vm/srcs/game/vis/higlight_cells.i: vm/srcs/game/vis/higlight_cells.c.i
+
+.PHONY : vm/srcs/game/vis/higlight_cells.i
+
+# target to preprocess a source file
+vm/srcs/game/vis/higlight_cells.c.i:
+	$(MAKE) -f CMakeFiles/finalcorewar.dir/build.make CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/higlight_cells.c.i
+.PHONY : vm/srcs/game/vis/higlight_cells.c.i
+
+vm/srcs/game/vis/higlight_cells.s: vm/srcs/game/vis/higlight_cells.c.s
+
+.PHONY : vm/srcs/game/vis/higlight_cells.s
+
+# target to generate assembly for a file
+vm/srcs/game/vis/higlight_cells.c.s:
+	$(MAKE) -f CMakeFiles/finalcorewar.dir/build.make CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/higlight_cells.c.s
+.PHONY : vm/srcs/game/vis/higlight_cells.c.s
+
 vm/srcs/game/vis/init_sdl.o: vm/srcs/game/vis/init_sdl.c.o
 
 .PHONY : vm/srcs/game/vis/init_sdl.o
@@ -5163,6 +5190,9 @@ help:
 	@echo "... vm/srcs/game/vis/draw_frame.o"
 	@echo "... vm/srcs/game/vis/draw_frame.i"
 	@echo "... vm/srcs/game/vis/draw_frame.s"
+	@echo "... vm/srcs/game/vis/higlight_cells.o"
+	@echo "... vm/srcs/game/vis/higlight_cells.i"
+	@echo "... vm/srcs/game/vis/higlight_cells.s"
 	@echo "... vm/srcs/game/vis/init_sdl.o"
 	@echo "... vm/srcs/game/vis/init_sdl.i"
 	@echo "... vm/srcs/game/vis/init_sdl.s"

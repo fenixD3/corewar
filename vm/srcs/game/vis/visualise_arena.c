@@ -27,10 +27,10 @@ void			draw_backgroung(void)
 	sm_rectangle = create_rect(5, 10, 64 * 24 + 5, 64 * 15 + 5);
 	SDL_RenderFillRect(g_vs->render, &sm_rectangle);
 	SDL_SetRenderDrawColor(g_vs->render, 0, 0, 0, SDL_ALPHA_OPAQUE);
-	sm_rectangle = create_rect(5, 980, 641, g_vs->height - 990);
+	sm_rectangle = create_rect(5, 980, 680, g_vs->height - 990);
 	SDL_RenderFillRect(g_vs->render, &sm_rectangle);
 	SDL_SetRenderDrawColor(g_vs->render, 0, 0, 0, SDL_ALPHA_OPAQUE);
-	sm_rectangle = create_rect(651, 980, 894, g_vs->height - 990);
+	sm_rectangle = create_rect(690, 980, 855, g_vs->height - 990);
 	SDL_RenderFillRect(g_vs->render, &sm_rectangle);
 	SDL_SetRenderDrawColor(g_vs->render, 0, 0, 0, SDL_ALPHA_OPAQUE);
 	sm_rectangle = create_rect(15 + 64 * 24, 20 + 64 * 15,
@@ -75,13 +75,15 @@ void			display_objs(t_corewar *corewar, int update)
 {
 	char		**hex_arena;
 	t_vc		*vc;
+	int 		num_on_menu;
 
 	vc = g_vs->vc_list;
 	draw_backgroung();
 	hex_arena = convert_arena(corewar);
 	print_arena(hex_arena);
 	display_carriages(corewar);
-	display_side_menu(corewar, update, vc);
+	num_on_menu = display_side_menu(corewar, update, vc);
+	higlight_cells(num_on_menu, vc, corewar, update);
 	display_game_data(corewar);
 	ft_free_strsplit(hex_arena);
 }

@@ -17,16 +17,11 @@ t_vis_tools *g_vs;
 void					more(void)
 {
 	SDL_Rect			dstrect;
-	SDL_Rect			sm_rectangle;
 
-	SDL_SetRenderDrawColor(g_vs->render, 200, 200, 0, SDL_ALPHA_OPAQUE);
-	sm_rectangle = create_rect(64 * 24 + 50, 64 * 15,
-			g_vs->wight - 95 - 64 * 24, 15);
-	SDL_RenderFillRect(g_vs->render, &sm_rectangle);
 	g_vs->txt_srfc = TTF_RenderText_Solid(g_vs->text_font, "And more...",
-			g_vs->text_color[5]);
+			g_vs->text_color[4]);
 	g_vs->text = SDL_CreateTextureFromSurface(g_vs->render, g_vs->txt_srfc);
-	dstrect = create_rect(60 + 64 * 24, 64 * 15 + 3,
+	dstrect = create_rect(89 + 64 * 24, 64 * 15 + 3,
 			g_vs->txt_srfc->w, g_vs->txt_srfc->h);
 	SDL_RenderCopy(g_vs->render, g_vs->text, NULL, &dstrect);
 	free_mem_font();
@@ -41,11 +36,13 @@ void					if_open(int i, int *done, int ind, t_vc *vc)
 	}
 }
 
-void					display_side_menu(t_corewar *crwr, int ind, t_vc *vc)
+int					display_side_menu(t_corewar *crwr, int ind, t_vc *vc)
 {
 	int					i;
 	int					done;
+	int 				displayed;
 
+	displayed = 0;
 	i = 15;
 	done = 0;
 	while (vc != NULL && i < 900)
@@ -62,8 +59,10 @@ void					display_side_menu(t_corewar *crwr, int ind, t_vc *vc)
 		{
 			if_open(i, &done, ind, vc);
 			draw_frame(vc, &i, vc->is_open, crwr);
+			displayed++;
 		}
 		vc = vc->next;
 	}
 	vc != NULL ? more() : 0;
+	return (displayed);
 }

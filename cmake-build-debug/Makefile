@@ -4065,32 +4065,32 @@ vm/srcs/game/helper_func.c.s:
 	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/helper_func.c.s
 .PHONY : vm/srcs/game/helper_func.c.s
 
-vm/srcs/game/instr_fork_zjmp_live.o: vm/srcs/game/instr_fork_zjmp_live.c.o
+vm/srcs/game/instr_fork_zjmp_live_aff.o: vm/srcs/game/instr_fork_zjmp_live_aff.c.o
 
-.PHONY : vm/srcs/game/instr_fork_zjmp_live.o
+.PHONY : vm/srcs/game/instr_fork_zjmp_live_aff.o
 
 # target to build an object file
-vm/srcs/game/instr_fork_zjmp_live.c.o:
-	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/instr_fork_zjmp_live.c.o
-.PHONY : vm/srcs/game/instr_fork_zjmp_live.c.o
+vm/srcs/game/instr_fork_zjmp_live_aff.c.o:
+	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/instr_fork_zjmp_live_aff.c.o
+.PHONY : vm/srcs/game/instr_fork_zjmp_live_aff.c.o
 
-vm/srcs/game/instr_fork_zjmp_live.i: vm/srcs/game/instr_fork_zjmp_live.c.i
+vm/srcs/game/instr_fork_zjmp_live_aff.i: vm/srcs/game/instr_fork_zjmp_live_aff.c.i
 
-.PHONY : vm/srcs/game/instr_fork_zjmp_live.i
+.PHONY : vm/srcs/game/instr_fork_zjmp_live_aff.i
 
 # target to preprocess a source file
-vm/srcs/game/instr_fork_zjmp_live.c.i:
-	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/instr_fork_zjmp_live.c.i
-.PHONY : vm/srcs/game/instr_fork_zjmp_live.c.i
+vm/srcs/game/instr_fork_zjmp_live_aff.c.i:
+	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/instr_fork_zjmp_live_aff.c.i
+.PHONY : vm/srcs/game/instr_fork_zjmp_live_aff.c.i
 
-vm/srcs/game/instr_fork_zjmp_live.s: vm/srcs/game/instr_fork_zjmp_live.c.s
+vm/srcs/game/instr_fork_zjmp_live_aff.s: vm/srcs/game/instr_fork_zjmp_live_aff.c.s
 
-.PHONY : vm/srcs/game/instr_fork_zjmp_live.s
+.PHONY : vm/srcs/game/instr_fork_zjmp_live_aff.s
 
 # target to generate assembly for a file
-vm/srcs/game/instr_fork_zjmp_live.c.s:
-	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/instr_fork_zjmp_live.c.s
-.PHONY : vm/srcs/game/instr_fork_zjmp_live.c.s
+vm/srcs/game/instr_fork_zjmp_live_aff.c.s:
+	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/instr_fork_zjmp_live_aff.c.s
+.PHONY : vm/srcs/game/instr_fork_zjmp_live_aff.c.s
 
 vm/srcs/game/instr_ld.o: vm/srcs/game/instr_ld.c.o
 
@@ -4172,6 +4172,141 @@ vm/srcs/game/instr_st.s: vm/srcs/game/instr_st.c.s
 vm/srcs/game/instr_st.c.s:
 	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/instr_st.c.s
 .PHONY : vm/srcs/game/instr_st.c.s
+
+vm/srcs/game/print_fork_zjmp_live_aff.o: vm/srcs/game/print_fork_zjmp_live_aff.c.o
+
+.PHONY : vm/srcs/game/print_fork_zjmp_live_aff.o
+
+# target to build an object file
+vm/srcs/game/print_fork_zjmp_live_aff.c.o:
+	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/print_fork_zjmp_live_aff.c.o
+.PHONY : vm/srcs/game/print_fork_zjmp_live_aff.c.o
+
+vm/srcs/game/print_fork_zjmp_live_aff.i: vm/srcs/game/print_fork_zjmp_live_aff.c.i
+
+.PHONY : vm/srcs/game/print_fork_zjmp_live_aff.i
+
+# target to preprocess a source file
+vm/srcs/game/print_fork_zjmp_live_aff.c.i:
+	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/print_fork_zjmp_live_aff.c.i
+.PHONY : vm/srcs/game/print_fork_zjmp_live_aff.c.i
+
+vm/srcs/game/print_fork_zjmp_live_aff.s: vm/srcs/game/print_fork_zjmp_live_aff.c.s
+
+.PHONY : vm/srcs/game/print_fork_zjmp_live_aff.s
+
+# target to generate assembly for a file
+vm/srcs/game/print_fork_zjmp_live_aff.c.s:
+	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/print_fork_zjmp_live_aff.c.s
+.PHONY : vm/srcs/game/print_fork_zjmp_live_aff.c.s
+
+vm/srcs/game/print_v_flg.o: vm/srcs/game/print_v_flg.c.o
+
+.PHONY : vm/srcs/game/print_v_flg.o
+
+# target to build an object file
+vm/srcs/game/print_v_flg.c.o:
+	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/print_v_flg.c.o
+.PHONY : vm/srcs/game/print_v_flg.c.o
+
+vm/srcs/game/print_v_flg.i: vm/srcs/game/print_v_flg.c.i
+
+.PHONY : vm/srcs/game/print_v_flg.i
+
+# target to preprocess a source file
+vm/srcs/game/print_v_flg.c.i:
+	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/print_v_flg.c.i
+.PHONY : vm/srcs/game/print_v_flg.c.i
+
+vm/srcs/game/print_v_flg.s: vm/srcs/game/print_v_flg.c.s
+
+.PHONY : vm/srcs/game/print_v_flg.s
+
+# target to generate assembly for a file
+vm/srcs/game/print_v_flg.c.s:
+	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/print_v_flg.c.s
+.PHONY : vm/srcs/game/print_v_flg.c.s
+
+vm/srcs/game/print_v_ld.o: vm/srcs/game/print_v_ld.c.o
+
+.PHONY : vm/srcs/game/print_v_ld.o
+
+# target to build an object file
+vm/srcs/game/print_v_ld.c.o:
+	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/print_v_ld.c.o
+.PHONY : vm/srcs/game/print_v_ld.c.o
+
+vm/srcs/game/print_v_ld.i: vm/srcs/game/print_v_ld.c.i
+
+.PHONY : vm/srcs/game/print_v_ld.i
+
+# target to preprocess a source file
+vm/srcs/game/print_v_ld.c.i:
+	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/print_v_ld.c.i
+.PHONY : vm/srcs/game/print_v_ld.c.i
+
+vm/srcs/game/print_v_ld.s: vm/srcs/game/print_v_ld.c.s
+
+.PHONY : vm/srcs/game/print_v_ld.s
+
+# target to generate assembly for a file
+vm/srcs/game/print_v_ld.c.s:
+	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/print_v_ld.c.s
+.PHONY : vm/srcs/game/print_v_ld.c.s
+
+vm/srcs/game/print_v_operations.o: vm/srcs/game/print_v_operations.c.o
+
+.PHONY : vm/srcs/game/print_v_operations.o
+
+# target to build an object file
+vm/srcs/game/print_v_operations.c.o:
+	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/print_v_operations.c.o
+.PHONY : vm/srcs/game/print_v_operations.c.o
+
+vm/srcs/game/print_v_operations.i: vm/srcs/game/print_v_operations.c.i
+
+.PHONY : vm/srcs/game/print_v_operations.i
+
+# target to preprocess a source file
+vm/srcs/game/print_v_operations.c.i:
+	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/print_v_operations.c.i
+.PHONY : vm/srcs/game/print_v_operations.c.i
+
+vm/srcs/game/print_v_operations.s: vm/srcs/game/print_v_operations.c.s
+
+.PHONY : vm/srcs/game/print_v_operations.s
+
+# target to generate assembly for a file
+vm/srcs/game/print_v_operations.c.s:
+	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/print_v_operations.c.s
+.PHONY : vm/srcs/game/print_v_operations.c.s
+
+vm/srcs/game/print_v_st.o: vm/srcs/game/print_v_st.c.o
+
+.PHONY : vm/srcs/game/print_v_st.o
+
+# target to build an object file
+vm/srcs/game/print_v_st.c.o:
+	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/print_v_st.c.o
+.PHONY : vm/srcs/game/print_v_st.c.o
+
+vm/srcs/game/print_v_st.i: vm/srcs/game/print_v_st.c.i
+
+.PHONY : vm/srcs/game/print_v_st.i
+
+# target to preprocess a source file
+vm/srcs/game/print_v_st.c.i:
+	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/print_v_st.c.i
+.PHONY : vm/srcs/game/print_v_st.c.i
+
+vm/srcs/game/print_v_st.s: vm/srcs/game/print_v_st.c.s
+
+.PHONY : vm/srcs/game/print_v_st.s
+
+# target to generate assembly for a file
+vm/srcs/game/print_v_st.c.s:
+	$(MAKE) -f CMakeFiles/dencorewar.dir/build.make CMakeFiles/dencorewar.dir/vm/srcs/game/print_v_st.c.s
+.PHONY : vm/srcs/game/print_v_st.c.s
 
 vm/srcs/game/vis/create_vs.o: vm/srcs/game/vis/create_vs.c.o
 
@@ -5052,9 +5187,9 @@ help:
 	@echo "... vm/srcs/game/helper_func.o"
 	@echo "... vm/srcs/game/helper_func.i"
 	@echo "... vm/srcs/game/helper_func.s"
-	@echo "... vm/srcs/game/instr_fork_zjmp_live.o"
-	@echo "... vm/srcs/game/instr_fork_zjmp_live.i"
-	@echo "... vm/srcs/game/instr_fork_zjmp_live.s"
+	@echo "... vm/srcs/game/instr_fork_zjmp_live_aff.o"
+	@echo "... vm/srcs/game/instr_fork_zjmp_live_aff.i"
+	@echo "... vm/srcs/game/instr_fork_zjmp_live_aff.s"
 	@echo "... vm/srcs/game/instr_ld.o"
 	@echo "... vm/srcs/game/instr_ld.i"
 	@echo "... vm/srcs/game/instr_ld.s"
@@ -5064,6 +5199,21 @@ help:
 	@echo "... vm/srcs/game/instr_st.o"
 	@echo "... vm/srcs/game/instr_st.i"
 	@echo "... vm/srcs/game/instr_st.s"
+	@echo "... vm/srcs/game/print_fork_zjmp_live_aff.o"
+	@echo "... vm/srcs/game/print_fork_zjmp_live_aff.i"
+	@echo "... vm/srcs/game/print_fork_zjmp_live_aff.s"
+	@echo "... vm/srcs/game/print_v_flg.o"
+	@echo "... vm/srcs/game/print_v_flg.i"
+	@echo "... vm/srcs/game/print_v_flg.s"
+	@echo "... vm/srcs/game/print_v_ld.o"
+	@echo "... vm/srcs/game/print_v_ld.i"
+	@echo "... vm/srcs/game/print_v_ld.s"
+	@echo "... vm/srcs/game/print_v_operations.o"
+	@echo "... vm/srcs/game/print_v_operations.i"
+	@echo "... vm/srcs/game/print_v_operations.s"
+	@echo "... vm/srcs/game/print_v_st.o"
+	@echo "... vm/srcs/game/print_v_st.i"
+	@echo "... vm/srcs/game/print_v_st.s"
 	@echo "... vm/srcs/game/vis/create_vs.o"
 	@echo "... vm/srcs/game/vis/create_vs.i"
 	@echo "... vm/srcs/game/vis/create_vs.s"

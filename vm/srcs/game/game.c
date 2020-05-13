@@ -10,7 +10,8 @@ void	start_game(t_corewar *corewar)
 
 	create_vs();
 	file = fopen("log.txt", "w");
-	init_arena(corewar->arena, corewar->champs, &corewar->carriages);
+	init_arena(corewar->arena, corewar->champs,
+		&corewar->carriages, &corewar->flgs);
 	introducing_fighter(corewar->champs);
 	if (!init())
 		go_exit(ERR_CREATE_VS);
@@ -26,7 +27,7 @@ void	start_game(t_corewar *corewar)
 		if (!(corewar->game_param.cycles_bfr_check -
 corewar->game_param.cycles_to_die) || corewar->game_param.cycles_to_die <= 0)
 			lets_check(corewar);
-		if ((corewar->flgs.set_flg & B_FLG) && g_change)
+		if ((corewar->flgs.set_flg & VIS_FLG) && g_change)
 			visualise_arena(corewar, &quit);
 		if (!corewar->carriages)
 			introducing_winner(corewar);
@@ -34,7 +35,7 @@ corewar->game_param.cycles_to_die) || corewar->game_param.cycles_to_die <= 0)
 }
 
 void	init_arena(unsigned char arena[], t_champion *champs,
-					t_carriages **carriages)
+				t_carriages **carriages, const t_flgs *flg)
 {
 	unsigned int		code_shift;
 	int					i;
@@ -45,7 +46,7 @@ void	init_arena(unsigned char arena[], t_champion *champs,
 	{
 		ft_memcpy(arena + i++ * code_shift, champs->file.exec_code,
 				sizeof(champs->file.exec_code));
-		push_front_carriage(carriages);
+		push_front_carriage(carriages, flg);
 		(*carriages)->reg[0] = -champs->num;
 		(*carriages)->op_pos = arena + (i - 1) * code_shift;
 		champs = champs->next;

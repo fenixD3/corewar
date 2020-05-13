@@ -6,7 +6,7 @@ void	get_usage(void)
 	ft_printf("\t\t[, -n <number of next player>\n");
 	ft_printf("\t\t, -dump <number of cycles to dump a game>\n");
 	ft_printf("\t\t, -a]\n");
-	exit(0);
+	exit(5);
 }
 
 void get_error(char *error)

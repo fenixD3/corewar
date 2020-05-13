@@ -30,25 +30,796 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="79a239b6-4ac5-4d07-8ce2-cff35afe5c75" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/cw_ex/fork_backflow.cor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cw_ex/lld_overflow.cor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cw_ex/process_next_pc_overflow.cor" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Headers/SDL.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Headers/SDL_assert.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Headers/SDL_atomic.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Headers/SDL_audio.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Headers/SDL_bits.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Headers/SDL_blendmode.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Headers/SDL_clipboard.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Headers/SDL_config.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Headers/SDL_config_macosx.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Headers/SDL_copying.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Headers/SDL_cpuinfo.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Headers/SDL_endian.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Headers/SDL_error.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Headers/SDL_events.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Headers/SDL_filesystem.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Headers/SDL_gamecontroller.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Headers/SDL_gesture.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Headers/SDL_haptic.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Headers/SDL_hints.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Headers/SDL_joystick.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Headers/SDL_keyboard.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Headers/SDL_keycode.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Headers/SDL_loadso.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Headers/SDL_log.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Headers/SDL_main.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Headers/SDL_messagebox.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Headers/SDL_metal.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Headers/SDL_mouse.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Headers/SDL_mutex.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Headers/SDL_name.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Headers/SDL_opengl.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Headers/SDL_opengl_glext.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Headers/SDL_opengles.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Headers/SDL_opengles2.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Headers/SDL_opengles2_gl2.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Headers/SDL_opengles2_gl2ext.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Headers/SDL_opengles2_gl2platform.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Headers/SDL_opengles2_khrplatform.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Headers/SDL_pixels.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Headers/SDL_platform.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Headers/SDL_power.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Headers/SDL_quit.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Headers/SDL_rect.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Headers/SDL_render.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Headers/SDL_revision.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Headers/SDL_rwops.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Headers/SDL_scancode.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Headers/SDL_sensor.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Headers/SDL_shape.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Headers/SDL_stdinc.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Headers/SDL_surface.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Headers/SDL_system.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Headers/SDL_syswm.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Headers/SDL_thread.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Headers/SDL_timer.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Headers/SDL_touch.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Headers/SDL_types.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Headers/SDL_version.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Headers/SDL_video.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Headers/SDL_vulkan.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Headers/begin_code.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Headers/close_code.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Resources/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Resources/License.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Resources/ReadMe.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Resources/default.metallib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/SDL2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Frameworks/hidapi.framework/Resources/AUTHORS.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Frameworks/hidapi.framework/Resources/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Frameworks/hidapi.framework/Resources/LICENSE-bsd.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Frameworks/hidapi.framework/Resources/LICENSE-gpl3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Frameworks/hidapi.framework/Resources/LICENSE-orig.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Frameworks/hidapi.framework/Resources/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Frameworks/hidapi.framework/Versions/A/Resources/AUTHORS.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Frameworks/hidapi.framework/Versions/A/Resources/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Frameworks/hidapi.framework/Versions/A/Resources/LICENSE-bsd.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Frameworks/hidapi.framework/Versions/A/Resources/LICENSE-gpl3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Frameworks/hidapi.framework/Versions/A/Resources/LICENSE-orig.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Frameworks/hidapi.framework/Versions/A/Resources/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Frameworks/hidapi.framework/Versions/A/_CodeSignature/CodeResources" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Frameworks/hidapi.framework/Versions/A/hidapi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Frameworks/hidapi.framework/Versions/Current/Resources/AUTHORS.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Frameworks/hidapi.framework/Versions/Current/Resources/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Frameworks/hidapi.framework/Versions/Current/Resources/LICENSE-bsd.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Frameworks/hidapi.framework/Versions/Current/Resources/LICENSE-gpl3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Frameworks/hidapi.framework/Versions/Current/Resources/LICENSE-orig.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Frameworks/hidapi.framework/Versions/Current/Resources/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Frameworks/hidapi.framework/Versions/Current/_CodeSignature/CodeResources" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Frameworks/hidapi.framework/Versions/Current/hidapi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Frameworks/hidapi.framework/hidapi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Headers/SDL.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Headers/SDL_assert.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Headers/SDL_atomic.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Headers/SDL_audio.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Headers/SDL_bits.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Headers/SDL_blendmode.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Headers/SDL_clipboard.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Headers/SDL_config.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Headers/SDL_config_macosx.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Headers/SDL_copying.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Headers/SDL_cpuinfo.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Headers/SDL_endian.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Headers/SDL_error.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Headers/SDL_events.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Headers/SDL_filesystem.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Headers/SDL_gamecontroller.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Headers/SDL_gesture.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Headers/SDL_haptic.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Headers/SDL_hints.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Headers/SDL_joystick.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Headers/SDL_keyboard.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Headers/SDL_keycode.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Headers/SDL_loadso.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Headers/SDL_log.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Headers/SDL_main.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Headers/SDL_messagebox.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Headers/SDL_metal.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Headers/SDL_mouse.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Headers/SDL_mutex.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Headers/SDL_name.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Headers/SDL_opengl.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Headers/SDL_opengl_glext.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Headers/SDL_opengles.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Headers/SDL_opengles2.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Headers/SDL_opengles2_gl2.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Headers/SDL_opengles2_gl2ext.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Headers/SDL_opengles2_gl2platform.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Headers/SDL_opengles2_khrplatform.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Headers/SDL_pixels.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Headers/SDL_platform.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Headers/SDL_power.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Headers/SDL_quit.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Headers/SDL_rect.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Headers/SDL_render.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Headers/SDL_revision.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Headers/SDL_rwops.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Headers/SDL_scancode.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Headers/SDL_sensor.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Headers/SDL_shape.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Headers/SDL_stdinc.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Headers/SDL_surface.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Headers/SDL_system.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Headers/SDL_syswm.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Headers/SDL_thread.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Headers/SDL_timer.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Headers/SDL_touch.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Headers/SDL_types.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Headers/SDL_version.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Headers/SDL_video.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Headers/SDL_vulkan.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Headers/begin_code.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Headers/close_code.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Resources/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Resources/License.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Resources/ReadMe.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/Resources/default.metallib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/SDL2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/A/_CodeSignature/CodeResources" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Frameworks/hidapi.framework/Resources/AUTHORS.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Frameworks/hidapi.framework/Resources/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Frameworks/hidapi.framework/Resources/LICENSE-bsd.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Frameworks/hidapi.framework/Resources/LICENSE-gpl3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Frameworks/hidapi.framework/Resources/LICENSE-orig.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Frameworks/hidapi.framework/Resources/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Frameworks/hidapi.framework/Versions/A/Resources/AUTHORS.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Frameworks/hidapi.framework/Versions/A/Resources/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Frameworks/hidapi.framework/Versions/A/Resources/LICENSE-bsd.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Frameworks/hidapi.framework/Versions/A/Resources/LICENSE-gpl3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Frameworks/hidapi.framework/Versions/A/Resources/LICENSE-orig.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Frameworks/hidapi.framework/Versions/A/Resources/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Frameworks/hidapi.framework/Versions/A/_CodeSignature/CodeResources" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Frameworks/hidapi.framework/Versions/A/hidapi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Frameworks/hidapi.framework/Versions/Current/Resources/AUTHORS.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Frameworks/hidapi.framework/Versions/Current/Resources/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Frameworks/hidapi.framework/Versions/Current/Resources/LICENSE-bsd.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Frameworks/hidapi.framework/Versions/Current/Resources/LICENSE-gpl3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Frameworks/hidapi.framework/Versions/Current/Resources/LICENSE-orig.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Frameworks/hidapi.framework/Versions/Current/Resources/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Frameworks/hidapi.framework/Versions/Current/_CodeSignature/CodeResources" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Frameworks/hidapi.framework/Versions/Current/hidapi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Frameworks/hidapi.framework/hidapi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Headers/SDL.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Headers/SDL_assert.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Headers/SDL_atomic.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Headers/SDL_audio.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Headers/SDL_bits.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Headers/SDL_blendmode.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Headers/SDL_clipboard.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Headers/SDL_config.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Headers/SDL_config_macosx.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Headers/SDL_copying.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Headers/SDL_cpuinfo.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Headers/SDL_endian.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Headers/SDL_error.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Headers/SDL_events.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Headers/SDL_filesystem.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Headers/SDL_gamecontroller.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Headers/SDL_gesture.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Headers/SDL_haptic.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Headers/SDL_hints.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Headers/SDL_joystick.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Headers/SDL_keyboard.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Headers/SDL_keycode.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Headers/SDL_loadso.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Headers/SDL_log.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Headers/SDL_main.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Headers/SDL_messagebox.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Headers/SDL_metal.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Headers/SDL_mouse.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Headers/SDL_mutex.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Headers/SDL_name.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Headers/SDL_opengl.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Headers/SDL_opengl_glext.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Headers/SDL_opengles.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Headers/SDL_opengles2.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Headers/SDL_opengles2_gl2.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Headers/SDL_opengles2_gl2ext.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Headers/SDL_opengles2_gl2platform.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Headers/SDL_opengles2_khrplatform.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Headers/SDL_pixels.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Headers/SDL_platform.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Headers/SDL_power.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Headers/SDL_quit.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Headers/SDL_rect.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Headers/SDL_render.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Headers/SDL_revision.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Headers/SDL_rwops.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Headers/SDL_scancode.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Headers/SDL_sensor.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Headers/SDL_shape.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Headers/SDL_stdinc.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Headers/SDL_surface.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Headers/SDL_system.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Headers/SDL_syswm.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Headers/SDL_thread.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Headers/SDL_timer.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Headers/SDL_touch.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Headers/SDL_types.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Headers/SDL_version.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Headers/SDL_video.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Headers/SDL_vulkan.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Headers/begin_code.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Headers/close_code.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Resources/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Resources/License.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Resources/ReadMe.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/Resources/default.metallib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/SDL2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2.framework/Versions/Current/_CodeSignature/CodeResources" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/FreeType" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Headers/freetype/config/ftconfig.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Headers/freetype/config/ftheader.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Headers/freetype/config/ftmodule.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Headers/freetype/config/ftoption.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Headers/freetype/config/ftstdlib.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Headers/freetype/freetype.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Headers/freetype/ftadvanc.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Headers/freetype/ftbbox.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Headers/freetype/ftbdf.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Headers/freetype/ftbitmap.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Headers/freetype/ftbzip2.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Headers/freetype/ftcache.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Headers/freetype/ftchapters.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Headers/freetype/ftcid.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Headers/freetype/ftdriver.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Headers/freetype/fterrdef.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Headers/freetype/fterrors.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Headers/freetype/ftfntfmt.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Headers/freetype/ftgasp.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Headers/freetype/ftglyph.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Headers/freetype/ftgxval.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Headers/freetype/ftgzip.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Headers/freetype/ftimage.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Headers/freetype/ftincrem.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Headers/freetype/ftlcdfil.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Headers/freetype/ftlist.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Headers/freetype/ftlzw.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Headers/freetype/ftmac.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Headers/freetype/ftmm.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Headers/freetype/ftmodapi.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Headers/freetype/ftmoderr.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Headers/freetype/ftotval.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Headers/freetype/ftoutln.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Headers/freetype/ftparams.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Headers/freetype/ftpfr.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Headers/freetype/ftrender.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Headers/freetype/ftsizes.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Headers/freetype/ftsnames.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Headers/freetype/ftstroke.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Headers/freetype/ftsynth.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Headers/freetype/ftsystem.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Headers/freetype/fttrigon.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Headers/freetype/fttypes.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Headers/freetype/ftwinfnt.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Headers/freetype/t1tables.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Headers/freetype/ttnameid.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Headers/freetype/tttables.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Headers/freetype/tttags.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Headers/ft2build.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Resources/English.lproj/InfoPlist.strings" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Resources/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Resources/LICENSE.freetype.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/A/FreeType" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/A/Headers/freetype/config/ftconfig.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/A/Headers/freetype/config/ftheader.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/A/Headers/freetype/config/ftmodule.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/A/Headers/freetype/config/ftoption.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/A/Headers/freetype/config/ftstdlib.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/A/Headers/freetype/freetype.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftadvanc.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftbbox.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftbdf.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftbitmap.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftbzip2.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftcache.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftchapters.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftcid.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftdriver.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/A/Headers/freetype/fterrdef.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/A/Headers/freetype/fterrors.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftfntfmt.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftgasp.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftglyph.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftgxval.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftgzip.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftimage.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftincrem.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftlcdfil.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftlist.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftlzw.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftmac.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftmm.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftmodapi.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftmoderr.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftotval.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftoutln.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftparams.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftpfr.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftrender.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftsizes.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftsnames.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftstroke.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftsynth.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftsystem.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/A/Headers/freetype/fttrigon.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/A/Headers/freetype/fttypes.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftwinfnt.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/A/Headers/freetype/t1tables.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ttnameid.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/A/Headers/freetype/tttables.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/A/Headers/freetype/tttags.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/A/Headers/ft2build.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/A/Resources/English.lproj/InfoPlist.strings" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/A/Resources/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/A/Resources/LICENSE.freetype.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/Current/FreeType" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/config/ftconfig.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/config/ftheader.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/config/ftmodule.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/config/ftoption.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/config/ftstdlib.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/freetype.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftadvanc.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftbbox.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftbdf.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftbitmap.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftbzip2.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftcache.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftchapters.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftcid.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftdriver.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/fterrdef.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/fterrors.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftfntfmt.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftgasp.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftglyph.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftgxval.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftgzip.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftimage.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftincrem.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftlcdfil.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftlist.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftlzw.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftmac.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftmm.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftmodapi.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftmoderr.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftotval.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftoutln.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftparams.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftpfr.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftrender.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftsizes.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftsnames.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftstroke.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftsynth.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftsystem.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/fttrigon.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/fttypes.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftwinfnt.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/t1tables.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ttnameid.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/tttables.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/tttags.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/Current/Headers/ft2build.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/Current/Resources/English.lproj/InfoPlist.strings" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/Current/Resources/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Frameworks/FreeType.framework/Versions/Current/Resources/LICENSE.freetype.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Headers/SDL_ttf.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Resources/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/SDL2_ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/FreeType" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Headers/freetype/config/ftconfig.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Headers/freetype/config/ftheader.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Headers/freetype/config/ftmodule.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Headers/freetype/config/ftoption.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Headers/freetype/config/ftstdlib.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Headers/freetype/freetype.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Headers/freetype/ftadvanc.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Headers/freetype/ftbbox.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Headers/freetype/ftbdf.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Headers/freetype/ftbitmap.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Headers/freetype/ftbzip2.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Headers/freetype/ftcache.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Headers/freetype/ftchapters.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Headers/freetype/ftcid.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Headers/freetype/ftdriver.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Headers/freetype/fterrdef.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Headers/freetype/fterrors.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Headers/freetype/ftfntfmt.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Headers/freetype/ftgasp.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Headers/freetype/ftglyph.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Headers/freetype/ftgxval.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Headers/freetype/ftgzip.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Headers/freetype/ftimage.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Headers/freetype/ftincrem.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Headers/freetype/ftlcdfil.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Headers/freetype/ftlist.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Headers/freetype/ftlzw.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Headers/freetype/ftmac.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Headers/freetype/ftmm.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Headers/freetype/ftmodapi.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Headers/freetype/ftmoderr.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Headers/freetype/ftotval.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Headers/freetype/ftoutln.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Headers/freetype/ftparams.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Headers/freetype/ftpfr.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Headers/freetype/ftrender.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Headers/freetype/ftsizes.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Headers/freetype/ftsnames.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Headers/freetype/ftstroke.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Headers/freetype/ftsynth.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Headers/freetype/ftsystem.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Headers/freetype/fttrigon.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Headers/freetype/fttypes.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Headers/freetype/ftwinfnt.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Headers/freetype/t1tables.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Headers/freetype/ttnameid.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Headers/freetype/tttables.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Headers/freetype/tttags.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Headers/ft2build.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Resources/English.lproj/InfoPlist.strings" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Resources/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Resources/LICENSE.freetype.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/A/FreeType" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/A/Headers/freetype/config/ftconfig.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/A/Headers/freetype/config/ftheader.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/A/Headers/freetype/config/ftmodule.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/A/Headers/freetype/config/ftoption.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/A/Headers/freetype/config/ftstdlib.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/A/Headers/freetype/freetype.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftadvanc.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftbbox.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftbdf.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftbitmap.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftbzip2.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftcache.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftchapters.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftcid.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftdriver.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/A/Headers/freetype/fterrdef.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/A/Headers/freetype/fterrors.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftfntfmt.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftgasp.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftglyph.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftgxval.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftgzip.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftimage.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftincrem.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftlcdfil.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftlist.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftlzw.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftmac.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftmm.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftmodapi.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftmoderr.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftotval.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftoutln.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftparams.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftpfr.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftrender.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftsizes.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftsnames.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftstroke.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftsynth.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftsystem.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/A/Headers/freetype/fttrigon.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/A/Headers/freetype/fttypes.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftwinfnt.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/A/Headers/freetype/t1tables.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ttnameid.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/A/Headers/freetype/tttables.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/A/Headers/freetype/tttags.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/A/Headers/ft2build.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/A/Resources/English.lproj/InfoPlist.strings" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/A/Resources/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/A/Resources/LICENSE.freetype.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/Current/FreeType" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/config/ftconfig.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/config/ftheader.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/config/ftmodule.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/config/ftoption.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/config/ftstdlib.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/freetype.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftadvanc.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftbbox.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftbdf.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftbitmap.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftbzip2.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftcache.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftchapters.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftcid.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftdriver.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/fterrdef.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/fterrors.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftfntfmt.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftgasp.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftglyph.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftgxval.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftgzip.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftimage.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftincrem.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftlcdfil.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftlist.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftlzw.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftmac.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftmm.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftmodapi.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftmoderr.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftotval.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftoutln.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftparams.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftpfr.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftrender.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftsizes.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftsnames.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftstroke.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftsynth.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftsystem.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/fttrigon.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/fttypes.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftwinfnt.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/t1tables.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ttnameid.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/tttables.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/tttags.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/Current/Headers/ft2build.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/Current/Resources/English.lproj/InfoPlist.strings" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/Current/Resources/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/Current/Resources/LICENSE.freetype.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Headers/SDL_ttf.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/Resources/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/A/SDL2_ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/FreeType" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Headers/freetype/config/ftconfig.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Headers/freetype/config/ftheader.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Headers/freetype/config/ftmodule.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Headers/freetype/config/ftoption.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Headers/freetype/config/ftstdlib.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Headers/freetype/freetype.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Headers/freetype/ftadvanc.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Headers/freetype/ftbbox.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Headers/freetype/ftbdf.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Headers/freetype/ftbitmap.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Headers/freetype/ftbzip2.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Headers/freetype/ftcache.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Headers/freetype/ftchapters.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Headers/freetype/ftcid.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Headers/freetype/ftdriver.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Headers/freetype/fterrdef.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Headers/freetype/fterrors.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Headers/freetype/ftfntfmt.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Headers/freetype/ftgasp.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Headers/freetype/ftglyph.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Headers/freetype/ftgxval.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Headers/freetype/ftgzip.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Headers/freetype/ftimage.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Headers/freetype/ftincrem.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Headers/freetype/ftlcdfil.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Headers/freetype/ftlist.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Headers/freetype/ftlzw.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Headers/freetype/ftmac.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Headers/freetype/ftmm.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Headers/freetype/ftmodapi.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Headers/freetype/ftmoderr.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Headers/freetype/ftotval.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Headers/freetype/ftoutln.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Headers/freetype/ftparams.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Headers/freetype/ftpfr.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Headers/freetype/ftrender.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Headers/freetype/ftsizes.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Headers/freetype/ftsnames.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Headers/freetype/ftstroke.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Headers/freetype/ftsynth.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Headers/freetype/ftsystem.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Headers/freetype/fttrigon.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Headers/freetype/fttypes.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Headers/freetype/ftwinfnt.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Headers/freetype/t1tables.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Headers/freetype/ttnameid.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Headers/freetype/tttables.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Headers/freetype/tttags.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Headers/ft2build.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Resources/English.lproj/InfoPlist.strings" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Resources/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Resources/LICENSE.freetype.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/A/FreeType" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/A/Headers/freetype/config/ftconfig.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/A/Headers/freetype/config/ftheader.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/A/Headers/freetype/config/ftmodule.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/A/Headers/freetype/config/ftoption.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/A/Headers/freetype/config/ftstdlib.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/A/Headers/freetype/freetype.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftadvanc.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftbbox.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftbdf.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftbitmap.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftbzip2.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftcache.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftchapters.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftcid.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftdriver.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/A/Headers/freetype/fterrdef.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/A/Headers/freetype/fterrors.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftfntfmt.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftgasp.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftglyph.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftgxval.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftgzip.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftimage.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftincrem.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftlcdfil.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftlist.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftlzw.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftmac.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftmm.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftmodapi.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftmoderr.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftotval.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftoutln.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftparams.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftpfr.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftrender.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftsizes.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftsnames.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftstroke.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftsynth.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftsystem.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/A/Headers/freetype/fttrigon.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/A/Headers/freetype/fttypes.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftwinfnt.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/A/Headers/freetype/t1tables.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ttnameid.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/A/Headers/freetype/tttables.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/A/Headers/freetype/tttags.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/A/Headers/ft2build.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/A/Resources/English.lproj/InfoPlist.strings" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/A/Resources/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/A/Resources/LICENSE.freetype.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/Current/FreeType" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/config/ftconfig.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/config/ftheader.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/config/ftmodule.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/config/ftoption.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/config/ftstdlib.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/freetype.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftadvanc.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftbbox.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftbdf.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftbitmap.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftbzip2.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftcache.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftchapters.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftcid.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftdriver.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/fterrdef.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/fterrors.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftfntfmt.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftgasp.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftglyph.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftgxval.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftgzip.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftimage.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftincrem.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftlcdfil.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftlist.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftlzw.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftmac.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftmm.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftmodapi.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftmoderr.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftotval.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftoutln.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftparams.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftpfr.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftrender.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftsizes.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftsnames.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftstroke.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftsynth.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftsystem.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/fttrigon.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/fttypes.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ftwinfnt.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/t1tables.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/ttnameid.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/tttables.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/Current/Headers/freetype/tttags.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/Current/Headers/ft2build.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/Current/Resources/English.lproj/InfoPlist.strings" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/Current/Resources/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Frameworks/FreeType.framework/Versions/Current/Resources/LICENSE.freetype.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Headers/SDL_ttf.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/Resources/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDL2_ttf.framework/Versions/Current/SDL2_ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cw_ex/fork_overflow.cor" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vm/srcs/game/print_fork_zjmp_live_aff.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vm/srcs/game/print_v_flg.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vm/srcs/game/print_v_ld.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vm/srcs/game/print_v_operations.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vm/srcs/game/print_v_st.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/C.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/args_intf.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/args_intf.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/game.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/game.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/game_intf.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/game_intf.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/instr_fork_zjmp_live.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/instr_fork_zjmp_live.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/helper_func.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/helper_func.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/instr_fork_zjmp_live.c.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/instr_ld.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/instr_ld.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/instr_operations.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/instr_operations.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/instr_st.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/instr_st.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/vis/create_vs.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/vis/create_vs.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/vis/display_carriages.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/vis/display_carriages.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/vis/display_side_menu.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/vis/display_side_menu.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/vis/init_sdl.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/vis/init_sdl.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/vis/print_arena.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/vis/print_arena.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/vis/support_func.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/vis/support_func.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/vis/vc_list.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/vis/vc_list.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/vis/vc_sort.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/vis/vc_sort.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/vis/visualise_arena.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/game/vis/visualise_arena.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/main.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/main.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/struct_intf/carriage_intf.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/struct_intf/carriage_intf.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/struct_intf/corewar_intf.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/struct_intf/corewar_intf.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/validation/parse_input_intf.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/validation/parse_input_intf.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/validation/parse_inputs.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/validation/parse_inputs.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/validation/reports.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dencorewar.dir/vm/srcs/validation/reports.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/dencorewar" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/dencorewar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/dencorewar.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/dencorewar.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/vm/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vm/includes/vis.h" beforeDir="false" afterPath="$PROJECT_DIR$/vm/includes/vis.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vm/includes/vm.h" beforeDir="false" afterPath="$PROJECT_DIR$/vm/includes/vm.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vm/srcs/game/game.c" beforeDir="false" afterPath="$PROJECT_DIR$/vm/srcs/game/game.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vm/srcs/game/game_intf.c" beforeDir="false" afterPath="$PROJECT_DIR$/vm/srcs/game/game_intf.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm/srcs/game/helper_func.c" beforeDir="false" afterPath="$PROJECT_DIR$/vm/srcs/game/helper_func.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm/srcs/game/instr_fork_zjmp_live.c" beforeDir="false" afterPath="$PROJECT_DIR$/vm/srcs/game/instr_fork_zjmp_live.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vm/srcs/game/instr_fork_zjmp_live.c" beforeDir="false" afterPath="$PROJECT_DIR$/vm/srcs/game/instr_fork_zjmp_live_aff.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vm/srcs/game/instr_ld.c" beforeDir="false" afterPath="$PROJECT_DIR$/vm/srcs/game/instr_ld.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vm/srcs/game/instr_operations.c" beforeDir="false" afterPath="$PROJECT_DIR$/vm/srcs/game/instr_operations.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vm/srcs/game/instr_st.c" beforeDir="false" afterPath="$PROJECT_DIR$/vm/srcs/game/instr_st.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vm/srcs/struct_intf/carriage_intf.c" beforeDir="false" afterPath="$PROJECT_DIR$/vm/srcs/struct_intf/carriage_intf.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vm/srcs/validation/parse_input_intf.c" beforeDir="false" afterPath="$PROJECT_DIR$/vm/srcs/validation/parse_input_intf.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vm/srcs/validation/parse_inputs.c" beforeDir="false" afterPath="$PROJECT_DIR$/vm/srcs/validation/parse_inputs.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vm/srcs/validation/reports.c" beforeDir="false" afterPath="$PROJECT_DIR$/vm/srcs/validation/reports.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +845,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/cw_ex" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -84,6 +855,12 @@
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C/C++" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/cw_ex" />
+      <recent name="$PROJECT_DIR$/asm" />
+      <recent name="$PROJECT_DIR$/cmake-build-debug" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/cw_ex" />
@@ -91,14 +868,9 @@
       <recent name="$PROJECT_DIR$/cw_ex/champs" />
       <recent name="C:\Users\da.filiptsev\Desktop\Corewar\cw_ex" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/cw_ex" />
-      <recent name="$PROJECT_DIR$/asm" />
-      <recent name="$PROJECT_DIR$/cmake-build-debug" />
-    </key>
   </component>
   <component name="RunManager" selected="CMake Application.dencorewar">
-    <configuration name="dencorewar" type="CMakeRunConfiguration" factoryName="Application" editBeforeRun="true" PROGRAM_PARAMS="-v 30 $PROJECT_DIR$/cw_ex/lld_overflow.cor $PROJECT_DIR$/cw_ex/lld_overflow.cor $PROJECT_DIR$/cw_ex/lld_overflow.cor $PROJECT_DIR$/cw_ex/lld_overflow.cor" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="dencorewar" TARGET_NAME="dencorewar" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="dencorewar" RUN_TARGET_NAME="dencorewar">
+    <configuration name="dencorewar" type="CMakeRunConfiguration" factoryName="Application" editBeforeRun="true" PROGRAM_PARAMS="$PROJECT_DIR$/cw_ex/corelol.cor $PROJECT_DIR$/cw_ex/Kittystrophic.cor $PROJECT_DIR$/cw_ex/MarineKing.cor" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="dencorewar" TARGET_NAME="dencorewar" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="dencorewar" RUN_TARGET_NAME="dencorewar">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -137,9 +909,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Makefile.fclean" />
+        <item itemvalue="Makefile.fclean" />
+        <item itemvalue="Makefile.fclean" />
         <item itemvalue="Makefile.clean" />
-        <item itemvalue="Makefile.re" />
-        <item itemvalue="Makefile.all" />
+        <item itemvalue="Makefile.fclean" />
       </list>
     </recent_temporary>
   </component>
@@ -186,6 +959,13 @@
       <workItem from="1588839844326" duration="564000" />
       <workItem from="1588843490212" duration="3180000" />
       <workItem from="1588853388843" duration="10322000" />
+      <workItem from="1588868527224" duration="2373000" />
+      <workItem from="1588883951039" duration="448000" />
+      <workItem from="1588950057599" duration="515000" />
+      <workItem from="1589035355437" duration="2630000" />
+      <workItem from="1589206191321" duration="188000" />
+      <workItem from="1589361699696" duration="6432000" />
+      <workItem from="1589384271707" duration="5638000" />
     </task>
     <servers />
   </component>
@@ -205,94 +985,94 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="372" y="134" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588858606331">
+    <state x="372" y="134" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589206277277">
       <screen x="0" y="23" width="2560" height="1360" />
     </state>
     <state x="-1641" y="85" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1587670132600" />
     <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1587583683724" />
     <state x="372" y="133" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.2560.1350@0.23.2560.1350" timestamp="1588366449856" />
-    <state x="372" y="134" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.2560.1360@0.23.2560.1360" timestamp="1588858606331" />
+    <state x="372" y="134" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.2560.1360@0.23.2560.1360" timestamp="1589206277277" />
     <state x="965" y="445" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1588523139934">
       <screen x="0" y="23" width="2560" height="1360" />
     </state>
     <state x="-1196" y="323" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1587486510634" />
     <state x="965" y="445" key="#com.intellij.fileTypes.FileTypeChooser/0.23.2560.1360@0.23.2560.1360" timestamp="1588523139934" />
-    <state x="905" y="353" width="1254" height="660" key="#dencorewar" timestamp="1588865570567">
+    <state x="905" y="353" width="1254" height="660" key="#dencorewar" timestamp="1589390520261">
       <screen x="0" y="23" width="2560" height="1360" />
     </state>
     <state x="-1241" y="253" key="#dencorewar/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588182258818" />
     <state x="543" y="200" key="#dencorewar/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1587594587461" />
     <state x="905" y="349" key="#dencorewar/0.0.2560.1440@0.0.2560.1440" timestamp="1588433817924" />
     <state x="905" y="351" width="1254" height="660" key="#dencorewar/0.23.2560.1350@0.23.2560.1350" timestamp="1588371983223" />
-    <state x="905" y="353" key="#dencorewar/0.23.2560.1360@0.23.2560.1360" timestamp="1588865570567" />
+    <state x="905" y="353" key="#dencorewar/0.23.2560.1360@0.23.2560.1360" timestamp="1589390520261" />
     <state width="418" height="438" key="DebuggerActiveHint" timestamp="1586963337546">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="418" height="438" key="DebuggerActiveHint/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1586963337546" />
-    <state width="1395" height="371" key="GridCell.Tab.0.bottom" timestamp="1588868038399">
+    <state width="1643" height="367" key="GridCell.Tab.0.bottom" timestamp="1589390592624">
       <screen x="0" y="23" width="2560" height="1360" />
     </state>
     <state width="1877" height="393" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588182299944" />
     <state width="1493" height="297" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1587624912911" />
     <state width="1416" height="418" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1588433818819" />
     <state width="1667" height="385" key="GridCell.Tab.0.bottom/0.23.2560.1350@0.23.2560.1350" timestamp="1588371983647" />
-    <state width="1395" height="371" key="GridCell.Tab.0.bottom/0.23.2560.1360@0.23.2560.1360" timestamp="1588868038399" />
-    <state width="1395" height="371" key="GridCell.Tab.0.center" timestamp="1588868038398">
+    <state width="1643" height="367" key="GridCell.Tab.0.bottom/0.23.2560.1360@0.23.2560.1360" timestamp="1589390592624" />
+    <state width="1643" height="367" key="GridCell.Tab.0.center" timestamp="1589390592623">
       <screen x="0" y="23" width="2560" height="1360" />
     </state>
     <state width="1877" height="393" key="GridCell.Tab.0.center/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588182299944" />
     <state width="1493" height="297" key="GridCell.Tab.0.center/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1587624912911" />
     <state width="1416" height="418" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1588433818818" />
     <state width="1667" height="385" key="GridCell.Tab.0.center/0.23.2560.1350@0.23.2560.1350" timestamp="1588371983647" />
-    <state width="1395" height="371" key="GridCell.Tab.0.center/0.23.2560.1360@0.23.2560.1360" timestamp="1588868038398" />
-    <state width="1395" height="371" key="GridCell.Tab.0.left" timestamp="1588868038398">
+    <state width="1643" height="367" key="GridCell.Tab.0.center/0.23.2560.1360@0.23.2560.1360" timestamp="1589390592623" />
+    <state width="1643" height="367" key="GridCell.Tab.0.left" timestamp="1589390592623">
       <screen x="0" y="23" width="2560" height="1360" />
     </state>
     <state width="1877" height="393" key="GridCell.Tab.0.left/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588182299943" />
     <state width="1493" height="297" key="GridCell.Tab.0.left/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1587624912909" />
     <state width="1416" height="418" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1588433818817" />
     <state width="1667" height="385" key="GridCell.Tab.0.left/0.23.2560.1350@0.23.2560.1350" timestamp="1588371983646" />
-    <state width="1395" height="371" key="GridCell.Tab.0.left/0.23.2560.1360@0.23.2560.1360" timestamp="1588868038398" />
-    <state width="1395" height="371" key="GridCell.Tab.0.right" timestamp="1588868038398">
+    <state width="1643" height="367" key="GridCell.Tab.0.left/0.23.2560.1360@0.23.2560.1360" timestamp="1589390592623" />
+    <state width="1643" height="367" key="GridCell.Tab.0.right" timestamp="1589390592624">
       <screen x="0" y="23" width="2560" height="1360" />
     </state>
     <state width="1877" height="393" key="GridCell.Tab.0.right/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588182299944" />
     <state width="1493" height="297" key="GridCell.Tab.0.right/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1587624912911" />
     <state width="1416" height="418" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1588433818819" />
     <state width="1667" height="385" key="GridCell.Tab.0.right/0.23.2560.1350@0.23.2560.1350" timestamp="1588371983647" />
-    <state width="1395" height="371" key="GridCell.Tab.0.right/0.23.2560.1360@0.23.2560.1360" timestamp="1588868038398" />
-    <state width="1395" height="371" key="GridCell.Tab.1.bottom" timestamp="1588868038400">
+    <state width="1643" height="367" key="GridCell.Tab.0.right/0.23.2560.1360@0.23.2560.1360" timestamp="1589390592624" />
+    <state width="1395" height="371" key="GridCell.Tab.1.bottom" timestamp="1589375665869">
       <screen x="0" y="23" width="2560" height="1360" />
     </state>
     <state width="1877" height="393" key="GridCell.Tab.1.bottom/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588182299944" />
     <state width="1493" height="297" key="GridCell.Tab.1.bottom/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1587624912912" />
     <state width="1416" height="457" key="GridCell.Tab.1.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1588433723855" />
     <state width="1667" height="341" key="GridCell.Tab.1.bottom/0.23.2560.1350@0.23.2560.1350" timestamp="1588370662703" />
-    <state width="1395" height="371" key="GridCell.Tab.1.bottom/0.23.2560.1360@0.23.2560.1360" timestamp="1588868038400" />
-    <state width="1395" height="371" key="GridCell.Tab.1.center" timestamp="1588868038399">
+    <state width="1395" height="371" key="GridCell.Tab.1.bottom/0.23.2560.1360@0.23.2560.1360" timestamp="1589375665869" />
+    <state width="1395" height="371" key="GridCell.Tab.1.center" timestamp="1589375665868">
       <screen x="0" y="23" width="2560" height="1360" />
     </state>
     <state width="1877" height="393" key="GridCell.Tab.1.center/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588182299944" />
     <state width="1493" height="297" key="GridCell.Tab.1.center/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1587624912911" />
     <state width="1416" height="457" key="GridCell.Tab.1.center/0.0.2560.1440@0.0.2560.1440" timestamp="1588433723854" />
     <state width="1667" height="341" key="GridCell.Tab.1.center/0.23.2560.1350@0.23.2560.1350" timestamp="1588370662703" />
-    <state width="1395" height="371" key="GridCell.Tab.1.center/0.23.2560.1360@0.23.2560.1360" timestamp="1588868038399" />
-    <state width="1395" height="371" key="GridCell.Tab.1.left" timestamp="1588868038399">
+    <state width="1395" height="371" key="GridCell.Tab.1.center/0.23.2560.1360@0.23.2560.1360" timestamp="1589375665868" />
+    <state width="1395" height="371" key="GridCell.Tab.1.left" timestamp="1589375665868">
       <screen x="0" y="23" width="2560" height="1360" />
     </state>
     <state width="1877" height="393" key="GridCell.Tab.1.left/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588182299944" />
     <state width="1493" height="297" key="GridCell.Tab.1.left/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1587624912911" />
     <state width="1416" height="457" key="GridCell.Tab.1.left/0.0.2560.1440@0.0.2560.1440" timestamp="1588433723854" />
     <state width="1667" height="341" key="GridCell.Tab.1.left/0.23.2560.1350@0.23.2560.1350" timestamp="1588370662703" />
-    <state width="1395" height="371" key="GridCell.Tab.1.left/0.23.2560.1360@0.23.2560.1360" timestamp="1588868038399" />
-    <state width="1395" height="371" key="GridCell.Tab.1.right" timestamp="1588868038400">
+    <state width="1395" height="371" key="GridCell.Tab.1.left/0.23.2560.1360@0.23.2560.1360" timestamp="1589375665868" />
+    <state width="1395" height="371" key="GridCell.Tab.1.right" timestamp="1589375665868">
       <screen x="0" y="23" width="2560" height="1360" />
     </state>
     <state width="1877" height="393" key="GridCell.Tab.1.right/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588182299944" />
     <state width="1493" height="297" key="GridCell.Tab.1.right/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1587624912911" />
     <state width="1416" height="457" key="GridCell.Tab.1.right/0.0.2560.1440@0.0.2560.1440" timestamp="1588433723855" />
     <state width="1667" height="341" key="GridCell.Tab.1.right/0.23.2560.1350@0.23.2560.1350" timestamp="1588370662703" />
-    <state width="1395" height="371" key="GridCell.Tab.1.right/0.23.2560.1360@0.23.2560.1360" timestamp="1588868038400" />
+    <state width="1395" height="371" key="GridCell.Tab.1.right/0.23.2560.1360@0.23.2560.1360" timestamp="1589375665868" />
     <state x="-1327" y="185" key="Registry" timestamp="1587587273198">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
@@ -308,20 +1088,20 @@
     </state>
     <state x="-1339" y="298" key="com.intellij.ide.util.TipDialog/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1587669527755" />
     <state x="465" y="236" width="606" height="346" key="com.intellij.ide.util.TipDialog/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1587641958722" />
-    <state x="1109" y="264" width="1016" height="886" key="find.popup" timestamp="1588517972066">
+    <state x="96" y="345" width="1016" height="886" key="find.popup" timestamp="1589388638125">
       <screen x="0" y="23" width="2560" height="1360" />
     </state>
     <state x="-1088" y="184" width="762" height="677" key="find.popup/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588181294541" />
     <state x="463" y="144" width="611" height="536" key="find.popup/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1587593470791" />
     <state x="667" y="281" width="586" height="518" key="find.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1588500652666" />
     <state x="1109" y="262" width="1016" height="879" key="find.popup/0.23.2560.1350@0.23.2560.1350" timestamp="1588364423165" />
-    <state x="1109" y="264" width="1016" height="886" key="find.popup/0.23.2560.1360@0.23.2560.1360" timestamp="1588517972066" />
-    <state x="851" y="116" key="refactoring.ChangeSignatureDialog" timestamp="1588847969305">
+    <state x="96" y="345" width="1016" height="886" key="find.popup/0.23.2560.1360@0.23.2560.1360" timestamp="1589388638125" />
+    <state x="1184" y="255" width="813" height="579" key="refactoring.ChangeSignatureDialog" timestamp="1589390562516">
       <screen x="0" y="23" width="2560" height="1360" />
     </state>
     <state x="-1282" y="71" key="refactoring.ChangeSignatureDialog/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1587671718198" />
     <state x="510" y="56" key="refactoring.ChangeSignatureDialog/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1587643460794" />
-    <state x="851" y="116" key="refactoring.ChangeSignatureDialog/0.23.2560.1360@0.23.2560.1360" timestamp="1588847969305" />
+    <state x="1184" y="255" width="813" height="579" key="refactoring.ChangeSignatureDialog/0.23.2560.1360@0.23.2560.1360" timestamp="1589390562516" />
     <state x="1518" y="345" key="run.anything.popup" timestamp="1588432916366">
       <screen x="0" y="23" width="2560" height="1360" />
     </state>
@@ -333,13 +1113,5 @@
     <state x="-1381" y="183" width="840" height="856" key="search.everywhere.popup" timestamp="1587587200987">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-  </component>
-  <component name="XDebuggerManager">
-    <watches-manager>
-      <configuration name="CMakeRunConfiguration">
-        <watch expression="&amp;corewar-&gt;arena[0]" language="ObjectiveC" />
-        <watch expression="&amp;corewar-&gt;arena[4095]" language="ObjectiveC" />
-      </configuration>
-    </watches-manager>
   </component>
 </project>

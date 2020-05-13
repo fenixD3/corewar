@@ -1942,18 +1942,18 @@ CMakeFiles/dencorewar.dir/vm/srcs/game/vis/init_sdl.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/vm/srcs/game/vis/init_sdl.c.s"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/Student/Corewar/vm/srcs/game/vis/init_sdl.c -o CMakeFiles/dencorewar.dir/vm/srcs/game/vis/init_sdl.c.s
 
-CMakeFiles/dencorewar.dir/vm/srcs/game/instr_fork_zjmp_live.c.o: CMakeFiles/dencorewar.dir/flags.make
-CMakeFiles/dencorewar.dir/vm/srcs/game/instr_fork_zjmp_live.c.o: ../vm/srcs/game/instr_fork_zjmp_live.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Student/Corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_146) "Building C object CMakeFiles/dencorewar.dir/vm/srcs/game/instr_fork_zjmp_live.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/dencorewar.dir/vm/srcs/game/instr_fork_zjmp_live.c.o   -c /Users/Student/Corewar/vm/srcs/game/instr_fork_zjmp_live.c
+CMakeFiles/dencorewar.dir/vm/srcs/game/instr_fork_zjmp_live_aff.c.o: CMakeFiles/dencorewar.dir/flags.make
+CMakeFiles/dencorewar.dir/vm/srcs/game/instr_fork_zjmp_live_aff.c.o: ../vm/srcs/game/instr_fork_zjmp_live_aff.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Student/Corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_146) "Building C object CMakeFiles/dencorewar.dir/vm/srcs/game/instr_fork_zjmp_live_aff.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/dencorewar.dir/vm/srcs/game/instr_fork_zjmp_live_aff.c.o   -c /Users/Student/Corewar/vm/srcs/game/instr_fork_zjmp_live_aff.c
 
-CMakeFiles/dencorewar.dir/vm/srcs/game/instr_fork_zjmp_live.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/vm/srcs/game/instr_fork_zjmp_live.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/Student/Corewar/vm/srcs/game/instr_fork_zjmp_live.c > CMakeFiles/dencorewar.dir/vm/srcs/game/instr_fork_zjmp_live.c.i
+CMakeFiles/dencorewar.dir/vm/srcs/game/instr_fork_zjmp_live_aff.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/vm/srcs/game/instr_fork_zjmp_live_aff.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/Student/Corewar/vm/srcs/game/instr_fork_zjmp_live_aff.c > CMakeFiles/dencorewar.dir/vm/srcs/game/instr_fork_zjmp_live_aff.c.i
 
-CMakeFiles/dencorewar.dir/vm/srcs/game/instr_fork_zjmp_live.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/vm/srcs/game/instr_fork_zjmp_live.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/Student/Corewar/vm/srcs/game/instr_fork_zjmp_live.c -o CMakeFiles/dencorewar.dir/vm/srcs/game/instr_fork_zjmp_live.c.s
+CMakeFiles/dencorewar.dir/vm/srcs/game/instr_fork_zjmp_live_aff.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/vm/srcs/game/instr_fork_zjmp_live_aff.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/Student/Corewar/vm/srcs/game/instr_fork_zjmp_live_aff.c -o CMakeFiles/dencorewar.dir/vm/srcs/game/instr_fork_zjmp_live_aff.c.s
 
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/visualise_arena.c.o: CMakeFiles/dencorewar.dir/flags.make
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/visualise_arena.c.o: ../vm/srcs/game/vis/visualise_arena.c
@@ -2215,6 +2215,71 @@ CMakeFiles/dencorewar.dir/vm/srcs/game/instr_operations.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/vm/srcs/game/instr_operations.c.s"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/Student/Corewar/vm/srcs/game/instr_operations.c -o CMakeFiles/dencorewar.dir/vm/srcs/game/instr_operations.c.s
 
+CMakeFiles/dencorewar.dir/vm/srcs/game/print_v_flg.c.o: CMakeFiles/dencorewar.dir/flags.make
+CMakeFiles/dencorewar.dir/vm/srcs/game/print_v_flg.c.o: ../vm/srcs/game/print_v_flg.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Student/Corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_167) "Building C object CMakeFiles/dencorewar.dir/vm/srcs/game/print_v_flg.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/dencorewar.dir/vm/srcs/game/print_v_flg.c.o   -c /Users/Student/Corewar/vm/srcs/game/print_v_flg.c
+
+CMakeFiles/dencorewar.dir/vm/srcs/game/print_v_flg.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/vm/srcs/game/print_v_flg.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/Student/Corewar/vm/srcs/game/print_v_flg.c > CMakeFiles/dencorewar.dir/vm/srcs/game/print_v_flg.c.i
+
+CMakeFiles/dencorewar.dir/vm/srcs/game/print_v_flg.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/vm/srcs/game/print_v_flg.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/Student/Corewar/vm/srcs/game/print_v_flg.c -o CMakeFiles/dencorewar.dir/vm/srcs/game/print_v_flg.c.s
+
+CMakeFiles/dencorewar.dir/vm/srcs/game/print_v_ld.c.o: CMakeFiles/dencorewar.dir/flags.make
+CMakeFiles/dencorewar.dir/vm/srcs/game/print_v_ld.c.o: ../vm/srcs/game/print_v_ld.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Student/Corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_168) "Building C object CMakeFiles/dencorewar.dir/vm/srcs/game/print_v_ld.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/dencorewar.dir/vm/srcs/game/print_v_ld.c.o   -c /Users/Student/Corewar/vm/srcs/game/print_v_ld.c
+
+CMakeFiles/dencorewar.dir/vm/srcs/game/print_v_ld.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/vm/srcs/game/print_v_ld.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/Student/Corewar/vm/srcs/game/print_v_ld.c > CMakeFiles/dencorewar.dir/vm/srcs/game/print_v_ld.c.i
+
+CMakeFiles/dencorewar.dir/vm/srcs/game/print_v_ld.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/vm/srcs/game/print_v_ld.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/Student/Corewar/vm/srcs/game/print_v_ld.c -o CMakeFiles/dencorewar.dir/vm/srcs/game/print_v_ld.c.s
+
+CMakeFiles/dencorewar.dir/vm/srcs/game/print_v_st.c.o: CMakeFiles/dencorewar.dir/flags.make
+CMakeFiles/dencorewar.dir/vm/srcs/game/print_v_st.c.o: ../vm/srcs/game/print_v_st.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Student/Corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_169) "Building C object CMakeFiles/dencorewar.dir/vm/srcs/game/print_v_st.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/dencorewar.dir/vm/srcs/game/print_v_st.c.o   -c /Users/Student/Corewar/vm/srcs/game/print_v_st.c
+
+CMakeFiles/dencorewar.dir/vm/srcs/game/print_v_st.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/vm/srcs/game/print_v_st.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/Student/Corewar/vm/srcs/game/print_v_st.c > CMakeFiles/dencorewar.dir/vm/srcs/game/print_v_st.c.i
+
+CMakeFiles/dencorewar.dir/vm/srcs/game/print_v_st.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/vm/srcs/game/print_v_st.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/Student/Corewar/vm/srcs/game/print_v_st.c -o CMakeFiles/dencorewar.dir/vm/srcs/game/print_v_st.c.s
+
+CMakeFiles/dencorewar.dir/vm/srcs/game/print_v_operations.c.o: CMakeFiles/dencorewar.dir/flags.make
+CMakeFiles/dencorewar.dir/vm/srcs/game/print_v_operations.c.o: ../vm/srcs/game/print_v_operations.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Student/Corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_170) "Building C object CMakeFiles/dencorewar.dir/vm/srcs/game/print_v_operations.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/dencorewar.dir/vm/srcs/game/print_v_operations.c.o   -c /Users/Student/Corewar/vm/srcs/game/print_v_operations.c
+
+CMakeFiles/dencorewar.dir/vm/srcs/game/print_v_operations.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/vm/srcs/game/print_v_operations.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/Student/Corewar/vm/srcs/game/print_v_operations.c > CMakeFiles/dencorewar.dir/vm/srcs/game/print_v_operations.c.i
+
+CMakeFiles/dencorewar.dir/vm/srcs/game/print_v_operations.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/vm/srcs/game/print_v_operations.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/Student/Corewar/vm/srcs/game/print_v_operations.c -o CMakeFiles/dencorewar.dir/vm/srcs/game/print_v_operations.c.s
+
+CMakeFiles/dencorewar.dir/vm/srcs/game/print_fork_zjmp_live_aff.c.o: CMakeFiles/dencorewar.dir/flags.make
+CMakeFiles/dencorewar.dir/vm/srcs/game/print_fork_zjmp_live_aff.c.o: ../vm/srcs/game/print_fork_zjmp_live_aff.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Student/Corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_171) "Building C object CMakeFiles/dencorewar.dir/vm/srcs/game/print_fork_zjmp_live_aff.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/dencorewar.dir/vm/srcs/game/print_fork_zjmp_live_aff.c.o   -c /Users/Student/Corewar/vm/srcs/game/print_fork_zjmp_live_aff.c
+
+CMakeFiles/dencorewar.dir/vm/srcs/game/print_fork_zjmp_live_aff.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dencorewar.dir/vm/srcs/game/print_fork_zjmp_live_aff.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/Student/Corewar/vm/srcs/game/print_fork_zjmp_live_aff.c > CMakeFiles/dencorewar.dir/vm/srcs/game/print_fork_zjmp_live_aff.c.i
+
+CMakeFiles/dencorewar.dir/vm/srcs/game/print_fork_zjmp_live_aff.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dencorewar.dir/vm/srcs/game/print_fork_zjmp_live_aff.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/Student/Corewar/vm/srcs/game/print_fork_zjmp_live_aff.c -o CMakeFiles/dencorewar.dir/vm/srcs/game/print_fork_zjmp_live_aff.c.s
+
 # Object files for target dencorewar
 dencorewar_OBJECTS = \
 "CMakeFiles/dencorewar.dir/asm/arguments.c.o" \
@@ -2362,7 +2427,7 @@ dencorewar_OBJECTS = \
 "CMakeFiles/dencorewar.dir/vm/srcs/game/vis/display_carriages.c.o" \
 "CMakeFiles/dencorewar.dir/vm/srcs/game/vis/display_side_menu.c.o" \
 "CMakeFiles/dencorewar.dir/vm/srcs/game/vis/init_sdl.c.o" \
-"CMakeFiles/dencorewar.dir/vm/srcs/game/instr_fork_zjmp_live.c.o" \
+"CMakeFiles/dencorewar.dir/vm/srcs/game/instr_fork_zjmp_live_aff.c.o" \
 "CMakeFiles/dencorewar.dir/vm/srcs/game/vis/visualise_arena.c.o" \
 "CMakeFiles/dencorewar.dir/vm/srcs/game/vis/print_arena.c.o" \
 "CMakeFiles/dencorewar.dir/vm/srcs/game/vis/support_func.c.o" \
@@ -2382,7 +2447,12 @@ dencorewar_OBJECTS = \
 "CMakeFiles/dencorewar.dir/ft_wordequ.c.o" \
 "CMakeFiles/dencorewar.dir/vm/srcs/game/instr_ld.c.o" \
 "CMakeFiles/dencorewar.dir/vm/srcs/game/instr_st.c.o" \
-"CMakeFiles/dencorewar.dir/vm/srcs/game/instr_operations.c.o"
+"CMakeFiles/dencorewar.dir/vm/srcs/game/instr_operations.c.o" \
+"CMakeFiles/dencorewar.dir/vm/srcs/game/print_v_flg.c.o" \
+"CMakeFiles/dencorewar.dir/vm/srcs/game/print_v_ld.c.o" \
+"CMakeFiles/dencorewar.dir/vm/srcs/game/print_v_st.c.o" \
+"CMakeFiles/dencorewar.dir/vm/srcs/game/print_v_operations.c.o" \
+"CMakeFiles/dencorewar.dir/vm/srcs/game/print_fork_zjmp_live_aff.c.o"
 
 # External object files for target dencorewar
 dencorewar_EXTERNAL_OBJECTS =
@@ -2532,7 +2602,7 @@ dencorewar: CMakeFiles/dencorewar.dir/vm/srcs/game/vis/disasm.c.o
 dencorewar: CMakeFiles/dencorewar.dir/vm/srcs/game/vis/display_carriages.c.o
 dencorewar: CMakeFiles/dencorewar.dir/vm/srcs/game/vis/display_side_menu.c.o
 dencorewar: CMakeFiles/dencorewar.dir/vm/srcs/game/vis/init_sdl.c.o
-dencorewar: CMakeFiles/dencorewar.dir/vm/srcs/game/instr_fork_zjmp_live.c.o
+dencorewar: CMakeFiles/dencorewar.dir/vm/srcs/game/instr_fork_zjmp_live_aff.c.o
 dencorewar: CMakeFiles/dencorewar.dir/vm/srcs/game/vis/visualise_arena.c.o
 dencorewar: CMakeFiles/dencorewar.dir/vm/srcs/game/vis/print_arena.c.o
 dencorewar: CMakeFiles/dencorewar.dir/vm/srcs/game/vis/support_func.c.o
@@ -2553,11 +2623,16 @@ dencorewar: CMakeFiles/dencorewar.dir/ft_wordequ.c.o
 dencorewar: CMakeFiles/dencorewar.dir/vm/srcs/game/instr_ld.c.o
 dencorewar: CMakeFiles/dencorewar.dir/vm/srcs/game/instr_st.c.o
 dencorewar: CMakeFiles/dencorewar.dir/vm/srcs/game/instr_operations.c.o
+dencorewar: CMakeFiles/dencorewar.dir/vm/srcs/game/print_v_flg.c.o
+dencorewar: CMakeFiles/dencorewar.dir/vm/srcs/game/print_v_ld.c.o
+dencorewar: CMakeFiles/dencorewar.dir/vm/srcs/game/print_v_st.c.o
+dencorewar: CMakeFiles/dencorewar.dir/vm/srcs/game/print_v_operations.c.o
+dencorewar: CMakeFiles/dencorewar.dir/vm/srcs/game/print_fork_zjmp_live_aff.c.o
 dencorewar: CMakeFiles/dencorewar.dir/build.make
 dencorewar: /usr/local/lib/libSDL2.dylib
 dencorewar: /usr/local/lib/libSDL2_ttf.dylib
 dencorewar: CMakeFiles/dencorewar.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/Student/Corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_167) "Linking C executable dencorewar"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/Student/Corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_172) "Linking C executable dencorewar"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/dencorewar.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

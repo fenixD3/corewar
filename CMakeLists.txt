@@ -181,7 +181,7 @@ add_executable(dencorewar
         vm/srcs/game/vis/display_carriages.c
         vm/srcs/game/vis/display_side_menu.c
         vm/srcs/game/vis/init_sdl.c
-        vm/srcs/game/instr_fork_zjmp_live.c
+        vm/srcs/game/instr_fork_zjmp_live_aff.c
         vm/srcs/game/vis/visualise_arena.c
         vm/srcs/game/vis/print_arena.c
         vm/srcs/game/vis/support_func.c
@@ -193,7 +193,7 @@ add_executable(dencorewar
         vm/srcs/game/game_intf.c
         vm/srcs/game/helper_func.c
         vm/srcs/game/vis/init_sdl.c
-        vm/srcs/game/instr_fork_zjmp_live.c
+        vm/srcs/game/instr_fork_zjmp_live_aff.c
         vm/srcs/game/vis/visualise_arena.c
         vm/srcs/game/vis/print_arena.c
         vm/srcs/game/vis/support_func.c
@@ -210,7 +210,7 @@ add_executable(dencorewar
         file_to_list.h
         ft_wordequ.c
         op.h
-        options.h vm/srcs/game/instr_ld.c vm/srcs/game/instr_st.c vm/srcs/game/instr_operations.c)
+        options.h vm/srcs/game/instr_ld.c vm/srcs/game/instr_st.c vm/srcs/game/instr_operations.c vm/srcs/game/print_v_flg.c vm/srcs/game/print_v_ld.c vm/srcs/game/print_v_st.c vm/srcs/game/print_v_operations.c vm/srcs/game/print_fork_zjmp_live_aff.c)
 
 #target_link_libraries(dencorewar "-framework SDL2")
 #target_link_libraries(dencorewar "-framework SDL2_image")

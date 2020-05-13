@@ -97,10 +97,6 @@ void display_side_menu(t_corewar *crrw, int inxd);
 
 void				display_carriages(t_corewar *corewar);
 
-void				push_front_carriage(t_carriages **carriages);
-void
-init_arena(unsigned char arena[], t_champion *champs, t_carriages **carriages);
-
 void			add_new_vc(t_vc **head, t_carriages *new);
 void    		insert_vc(t_vc **head, t_vc *prev, t_vc *insert);
 t_vc    		*cut_vc(t_vc **prev);

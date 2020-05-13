@@ -583,7 +583,7 @@
 		<Unit filename="/Users/Student/Corewar/vm/srcs/game/helper_func.c">
 			<Option target="dencorewar"/>
 		</Unit>
-		<Unit filename="/Users/Student/Corewar/vm/srcs/game/instr_fork_zjmp_live.c">
+		<Unit filename="/Users/Student/Corewar/vm/srcs/game/instr_fork_zjmp_live_aff.c">
 			<Option target="dencorewar"/>
 		</Unit>
 		<Unit filename="/Users/Student/Corewar/vm/srcs/game/instr_ld.c">
@@ -593,6 +593,21 @@
 			<Option target="dencorewar"/>
 		</Unit>
 		<Unit filename="/Users/Student/Corewar/vm/srcs/game/instr_st.c">
+			<Option target="dencorewar"/>
+		</Unit>
+		<Unit filename="/Users/Student/Corewar/vm/srcs/game/print_fork_zjmp_live_aff.c">
+			<Option target="dencorewar"/>
+		</Unit>
+		<Unit filename="/Users/Student/Corewar/vm/srcs/game/print_v_flg.c">
+			<Option target="dencorewar"/>
+		</Unit>
+		<Unit filename="/Users/Student/Corewar/vm/srcs/game/print_v_ld.c">
+			<Option target="dencorewar"/>
+		</Unit>
+		<Unit filename="/Users/Student/Corewar/vm/srcs/game/print_v_operations.c">
+			<Option target="dencorewar"/>
+		</Unit>
+		<Unit filename="/Users/Student/Corewar/vm/srcs/game/print_v_st.c">
 			<Option target="dencorewar"/>
 		</Unit>
 		<Unit filename="/Users/Student/Corewar/vm/srcs/game/vis/create_vs.c">

@@ -22,7 +22,7 @@ t_carriages	*create_new_carriage(void)
 	return (new);
 }
 
-void push_front_carriage(t_carriages **carriages)
+void	push_front_carriage(t_carriages **carriages, const t_flgs *flg)
 {
 	t_carriages	*new_carriage;
 
@@ -35,7 +35,7 @@ void push_front_carriage(t_carriages **carriages)
 		new_carriage->next = *carriages;
 		*carriages = new_carriage;
 	}
-// при условии если программа запущена с -vis
+	if (flg->set_flg & VIS_FLG)
 		add_new_vc(&(g_vs->vc_list), *carriages);
 }
 
@@ -53,23 +53,14 @@ t_carriages	*delete_carriage(t_corewar *corewar, int search_id)
 		prev = carriage;
 		carriage = carriage->next;
 	}
-	if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num & 8) {
-		printf("Process %d hasn't lived for %ld cycles (CTD %ld)\n",
-			search_id,
-			corewar->game_param.cycles_aft_start - carriage->cycle_when_live,
-			corewar->game_param.cycles_to_die);
-		fprintf(file, "Process %d hasn't lived for %ld cycles (CTD %ld)\n",
-			search_id,
-			corewar->game_param.cycles_aft_start - carriage->cycle_when_live,
-			corewar->game_param.cycles_to_die);
-	}
+	if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num & 8)
+		call_printf_v_1_8(corewar, NULL, carriage, search_id);
 	if (!prev)
 		corewar->carriages = carriage->next;
 	else
 		prev->next = carriage->next;
-	///// egors
-	delete_vc_by_deletion_carriage(carriage);
-	/////
+	if (corewar->flgs.set_flg & VIS_FLG)
+		delete_vc_by_deletion_carriage(carriage);
 	ml_free(carriage, CARRIAGE_NODE);
 	return (prev);
 }

@@ -23,8 +23,8 @@ _Bool	is_flg(const char *arg, t_flgs *flgs)
 		flgs->set_flg & V_FLG ? get_error(ERR_V_FLG) : 0;
 		flgs->set_flg |= V_FLG;
 	}
-	else if (!ft_strcmp(arg, "-b"))
-		flgs->set_flg |= B_FLG;
+	else if (!ft_strcmp(arg, "-vis"))
+		flgs->set_flg |= VIS_FLG;
 	else
 		good = 0;
 	return (good);
@@ -36,7 +36,7 @@ _Bool	is_champion(const char *arg, t_corewar *corewar)
 
 	lst_dot = ft_strrchr(arg, '.');
 	if (!lst_dot || ft_strcmp(lst_dot + 1, "cor"))
-		return (0); /// do comment here from 35 to 37 lines included
+		return (0);
 	push_back_champ(&corewar->champs, arg);
 	if (corewar->flgs.set_flg & N_FLG)
 	{

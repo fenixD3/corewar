@@ -12,7 +12,7 @@
 # define DUMP_FLG 2u
 # define A_FLG 4u
 # define V_FLG 8u
-# define B_FLG 16u
+# define VIS_FLG 16u
 
 # define CHAMP_NODE 1u
 # define CARRIAGE_NODE 2u
@@ -86,22 +86,20 @@ t_champion	*create_new_champ(const char *fname);
 void		push_back_champ(t_champion **champs, const char *fname);
 int			champions_cnt(t_champion *champs);
 int			max_champs_num(t_champion *champs);
-_Bool		is_there_same_champ_num(t_champion *champs,
-						int nxt_player_num);
+_Bool		is_there_same_champ_num(t_champion *champs, int nxt_player_num);
 
 t_carriages	*create_new_carriage(void);
-# include "vis.h"
-
-//void push_front_carriage(t_carriages **carriages, t_vis_tools *g_vs);
-int			carriage_amount_live(t_carriages *carriage);
+void push_front_carriage(t_carriages **carriages, const t_flgs *flg);
 t_carriages * delete_carriage(t_corewar *corewar, int search_id);
 
 void	get_usage(void);
 void	get_error(char *error);
 
 void	parse_arguments(int ac, char **av, t_corewar *corewar);
-void validation_champions(t_champion *champs, t_game_param *game_params);
+void	parse_flags(t_corewar *corewar, char **av, int *i);
+void	validation_champions(t_champion *champs, t_game_param *game_params);
 void	byte_code_validation(const int fd, t_champion *champ);
+void	validation_before_comment(const int fd, t_champion *champ);
 void	reverse_int_bytes(unsigned int *num_to_rev);
 int		reverse_vm_bytes(unsigned char *num_to_rev, int bytes,
 				unsigned char *arena);
@@ -110,14 +108,15 @@ _Bool	is_flg(const char *arg, t_flgs *flgs);
 _Bool	is_champion(const char *arg, t_corewar *corewar);
 
 void	start_game(t_corewar *corewar);
-//void
-//init_arena(unsigned char arena[], t_champion *champs, t_carriages **carriages,
-//           t_vis_tools *g_vs);
+void init_arena(unsigned char arena[],
+				t_champion *champs,
+				t_carriages **carriages,
+				const t_flgs *flg);
 void	introducing_fighter(t_champion *champs);
 void    print_map(t_corewar *corewar);
-void introducing_winner(t_corewar *corewar);
+void	introducing_winner(t_corewar *corewar);
 
-void carriages_actions(t_corewar *corewar);
+void	carriages_actions(t_corewar *corewar);
 unsigned char	*do_steps(unsigned char *start, int step, unsigned char *arena);
 void lets_check(t_corewar *corewar);
 void	decrease_cycles_to_die(t_corewar *corewar);
@@ -163,5 +162,44 @@ void print_command_bytes(unsigned char *start_op,
 						 unsigned char *arena);
 
 FILE *file;
+
+void	call_printf_v_2_16(t_corewar *corewar, _Bool printf_cycle_die);
+void	call_printf_v_1_8(const t_corewar *corewar, const t_champion *champ,
+						  const t_carriages *carriage, int search_id);
+void	call_printf_v_4(t_corewar *corewar, t_parse_args *arg_val,
+							const char *cmd);
+
+void	print_v_4_live(t_corewar *corewar, t_parse_args *arg_val,
+					   const char *cmd);
+void	print_v_4_nfork(t_corewar *corewar, t_parse_args *arg_val,
+						const char *cmd);
+void	print_v_4_lfork(t_corewar *corewar, t_parse_args *arg_val,
+						const char *cmd);
+void	print_v_4_zjmp(t_corewar *corewar, t_parse_args *arg_val,
+					   const char *cmd);
+void	print_v_4_aff(t_corewar *corewar, t_parse_args *arg_val,
+					  const char *cmd);
+void	print_v_4_ld(t_corewar *corewar, t_parse_args *arg_val,
+					 const char *cmd);
+void	print_v_4_ldi(t_corewar *corewar, t_parse_args *arg_val,
+					  const char *cmd);
+void	print_v_4_lld(t_corewar *corewar, t_parse_args *arg_val,
+					  const char *cmd);
+void	print_v_4_lldi(t_corewar *corewar, t_parse_args *arg_val,
+					   const char *cmd);
+void	print_v_4_st(t_corewar *corewar, t_parse_args *arg_val,
+					 const char *cmd);
+void	print_v_4_sti(t_corewar *corewar, t_parse_args *arg_val,
+					 const char *cmd);
+void	print_v_4_add(t_corewar *corewar, t_parse_args *arg_val,
+					  const char *cmd);
+void	print_v_4_sub(t_corewar *corewar, t_parse_args *arg_val,
+					  const char *cmd);
+void	print_v_4_and(t_corewar *corewar, t_parse_args *arg_val,
+					  const char *cmd);
+void	print_v_4_or(t_corewar *corewar, t_parse_args *arg_val,
+					 const char *cmd);
+void	print_v_4_xor(t_corewar *corewar, t_parse_args *arg_val,
+					  const char *cmd);
 
 #endif

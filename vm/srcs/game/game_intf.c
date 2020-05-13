@@ -6,12 +6,8 @@ void	carriages_actions(t_corewar *corewar)
 	t_carriages *carriage_head;
 
 	carriage_head = corewar->carriages;
-	if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num & 2) {
-		printf("It is now cycle %ld\n",
-			   corewar->game_param.cycles_aft_start);
-		fprintf(file, "It is now cycle %ld\n",
-			   corewar->game_param.cycles_aft_start);
-	}
+	if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num & 2)
+		call_printf_v_2_16(corewar, 0);
 	while (corewar->carriages)
 	{
 		if (corewar->carriages->cycle_op <= 0)
@@ -52,10 +48,8 @@ void	decrease_cycles_to_die(t_corewar *corewar)
 	if (corewar->game_param.live_period_cnt >= NBR_LIVE)
 	{
 		corewar->game_param.cycles_to_die -= CYCLE_DELTA;
-		if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num & 2) {
-			printf("Cycle to die is now %ld\n", corewar->game_param.cycles_to_die);
-			fprintf(file, "Cycle to die is now %ld\n", corewar->game_param.cycles_to_die);
-		}
+		if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num & 2)
+			call_printf_v_2_16(corewar, 1);
 		corewar->game_param.check_cnt = 0;
 		g_change = 1;
 	}
@@ -64,10 +58,8 @@ void	decrease_cycles_to_die(t_corewar *corewar)
 	if (corewar->game_param.check_cnt == MAX_CHECKS)
 	{
 		corewar->game_param.cycles_to_die -= CYCLE_DELTA;
-		if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num & 2) {
-			printf("Cycle to die is now %ld\n", corewar->game_param.cycles_to_die);
-			fprintf(file, "Cycle to die is now %ld\n", corewar->game_param.cycles_to_die);
-		}
+		if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num & 2)
+			call_printf_v_2_16(corewar, 1);
 		corewar->game_param.check_cnt = 0;
 		g_change = 1;
 	}
@@ -104,22 +96,6 @@ void	make_operation_and_go_next(t_corewar *corewar,
 	corewar->carriages->cnt_bytes_to_op = cnt_bytes_for_op(&g_op[idx_op], args_val.code_args);
 	if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num & 16 &&
 	(corewar->carriages->op_code != 9 || (corewar->carriages->op_code == 9 && !corewar->carriages->carry)))
-	{
-		printf("ADV %d (%s%04lx -> %s%04lx) ",
-			corewar->carriages->cnt_bytes_to_op,
-			"0x",
-			(corewar->carriages->op_pos - corewar->arena),
-			"0x",
-			(corewar->carriages->op_pos + corewar->carriages->cnt_bytes_to_op - corewar->arena));
-		fprintf(file,
-			"ADV %d (%s%04lx -> %s%04lx) ",
-			corewar->carriages->cnt_bytes_to_op,
-			"0x",
-			(corewar->carriages->op_pos - corewar->arena),
-			"0x",
-			(corewar->carriages->op_pos + corewar->carriages->cnt_bytes_to_op - corewar->arena));
-
-		print_command_bytes(corewar->carriages->op_pos, corewar->carriages->cnt_bytes_to_op, corewar->arena);
-	}
+		call_printf_v_2_16(corewar, 0);
 	corewar->carriages->op_pos = start_op;
 }

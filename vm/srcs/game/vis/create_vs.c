@@ -30,7 +30,7 @@ void				create_vs(void)
 {
 	if (!(g_vs = (t_vis_tools*)ml_malloc(sizeof(t_vis_tools), ML_VS)))
 		go_exit(ERR_CREATE_VS);
-	g_vs->wight = 1780;
+	g_vs->wight = 1800;
 	g_vs->height = 1035;
 	g_vs->window = NULL;
 	g_vs->render = NULL;

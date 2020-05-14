@@ -32,45 +32,11 @@
     <list default="true" id="79a239b6-4ac5-4d07-8ce2-cff35afe5c75" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/finalcorewar.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/finalcorewar.dir/C.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/finalcorewar.dir/vm/srcs/game/args_intf.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/finalcorewar.dir/vm/srcs/game/args_intf.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/finalcorewar.dir/vm/srcs/game/game.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/finalcorewar.dir/vm/srcs/game/game.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/finalcorewar.dir/vm/srcs/game/game_intf.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/finalcorewar.dir/vm/srcs/game/game_intf.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/finalcorewar.dir/vm/srcs/game/helper_func.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/finalcorewar.dir/vm/srcs/game/helper_func.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/finalcorewar.dir/vm/srcs/game/instr_fork_zjmp_live.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/finalcorewar.dir/vm/srcs/game/instr_fork_zjmp_live.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/finalcorewar.dir/vm/srcs/game/instr_ld.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/finalcorewar.dir/vm/srcs/game/instr_ld.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/finalcorewar.dir/vm/srcs/game/instr_operations.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/finalcorewar.dir/vm/srcs/game/instr_operations.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/finalcorewar.dir/vm/srcs/game/instr_st.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/finalcorewar.dir/vm/srcs/game/instr_st.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/create_vs.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/create_vs.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/disasm.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/disasm.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/display_carriages.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/display_carriages.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/display_game_data.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/display_game_data.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/display_side_menu.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/display_side_menu.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/draw_frame.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/draw_frame.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/higlight_cells.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/higlight_cells.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/init_sdl.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/init_sdl.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/print_arena.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/print_arena.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/support_func.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/support_func.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/track_events.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/track_events.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/vc_list.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/vc_list.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/vc_sort.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/vc_sort.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/visualise_arena.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/visualise_arena.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/finalcorewar.dir/vm/srcs/main.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/finalcorewar.dir/vm/srcs/main.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/finalcorewar.dir/vm/srcs/struct_intf/carriage_intf.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/finalcorewar.dir/vm/srcs/struct_intf/carriage_intf.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/finalcorewar.dir/vm/srcs/struct_intf/corewar_intf.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/finalcorewar.dir/vm/srcs/struct_intf/corewar_intf.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/finalcorewar.dir/vm/srcs/validation/parse_input_intf.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/finalcorewar.dir/vm/srcs/validation/parse_input_intf.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/finalcorewar.dir/vm/srcs/validation/parse_inputs.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/finalcorewar.dir/vm/srcs/validation/parse_inputs.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/finalcorewar.dir/vm/srcs/validation/reports.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/finalcorewar.dir/vm/srcs/validation/reports.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/finalcorewar" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/finalcorewar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm/includes/vis.h" beforeDir="false" afterPath="$PROJECT_DIR$/vm/includes/vis.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm/includes/vis.h.orig" beforeDir="false" afterPath="$PROJECT_DIR$/vm/includes/vis.h.orig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm/includes/vm.h" beforeDir="false" afterPath="$PROJECT_DIR$/vm/includes/vm.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm/srcs/game/game.c" beforeDir="false" afterPath="$PROJECT_DIR$/vm/srcs/game/game.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm/srcs/game/game_intf.c" beforeDir="false" afterPath="$PROJECT_DIR$/vm/srcs/game/game_intf.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm/srcs/game/vis/disasm.c" beforeDir="false" afterPath="$PROJECT_DIR$/vm/srcs/game/vis/disasm.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm/srcs/game/vis/display_carriages.c" beforeDir="false" afterPath="$PROJECT_DIR$/vm/srcs/game/vis/display_carriages.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm/srcs/game/vis/higlight_cells.c" beforeDir="false" afterPath="$PROJECT_DIR$/vm/srcs/game/vis/higlight_cells.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm/srcs/game/vis/visualise_arena.c" beforeDir="false" afterPath="$PROJECT_DIR$/vm/srcs/game/vis/visualise_arena.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vm/srcs/game/vis/create_vs.c" beforeDir="false" afterPath="$PROJECT_DIR$/vm/srcs/game/vis/create_vs.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vm/srcs/game/vis/draw_frame.c" beforeDir="false" afterPath="$PROJECT_DIR$/vm/srcs/game/vis/draw_frame.c" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -198,7 +164,7 @@
       <workItem from="1588866496811" duration="25825000" />
       <workItem from="1589191679772" duration="17330000" />
       <workItem from="1589288959076" duration="3057000" />
-      <workItem from="1589360572061" duration="20812000" />
+      <workItem from="1589360572061" duration="21379000" />
     </task>
     <servers />
   </component>
@@ -361,7 +327,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/vm/srcs/game/vis/display_carriages.c</url>
-          <line>35</line>
+          <line>36</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>

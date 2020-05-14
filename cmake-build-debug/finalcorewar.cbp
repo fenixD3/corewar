@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="finalcorewar"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="finalcorewar">
+				<Option output="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/cmake-build-debug/finalcorewar" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/."/>
+					<Add directory="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/asm"/>
+					<Add directory="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/ft_printf/includes"/>
+					<Add directory="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft"/>
+					<Add directory="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/memlist"/>
+					<Add directory="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/vm/includes"/>
+					<Add directory="/Users/romancheremin/Library/Frameworks/SDL2.framework/Headers"/>
+					<Add directory="/Users/romancheremin/Library/Frameworks/SDL2_ttf.framework/Headers"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 finalcorewar"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="finalcorewar/fast">
+				<Option output="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/cmake-build-debug/finalcorewar" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/."/>
+					<Add directory="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/asm"/>
+					<Add directory="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/ft_printf/includes"/>
+					<Add directory="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft"/>
+					<Add directory="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/memlist"/>
+					<Add directory="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/vm/includes"/>
+					<Add directory="/Users/romancheremin/Library/Frameworks/SDL2.framework/Headers"/>
+					<Add directory="/Users/romancheremin/Library/Frameworks/SDL2_ttf.framework/Headers"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 finalcorewar/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/asm/arguments.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/asm/asm.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/asm/asm.h">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/asm/ft_isdigitalword.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/asm/ft_isspecial.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/asm/ft_skipword.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/asm/get_header.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/asm/libword.h">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/asm/token_recognition.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/asm/tokenizer.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/asm/tokens_lst.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/fast_strsplit.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/file_to_list.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/file_to_list.h">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/ft_printf/includes/ft_ptintf.h">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/ft_printf/includes/high_precision.h">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/ft_printf/includes/my_float.h">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/ft_printf/srcs/field_len.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/ft_printf/srcs/fill_union.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/ft_printf/srcs/ft_itoa_base_printf.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/ft_printf/srcs/ft_printf.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/ft_printf/srcs/get_binary.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/ft_printf/srcs/is_parser.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/ft_printf/srcs/is_typeflags.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/ft_printf/srcs/make_field.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/ft_printf/srcs/parsing_funcs.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/ft_printf/srcs/parsing_generaly.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/ft_printf/srcs/prepare_lennum.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/ft_printf/srcs/set_buff.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/ft_printf/srcs/set_flags.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/ft_printf/srcs/str_tolower.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/ft_printf/srcs/to_buff.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/ft_printf/srcs/which_sign.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/ft_printf/srcs/zeroing.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/ft_printf/srcsFloat/check_create_float_res.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/ft_printf/srcsFloat/e_flag_intf.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/ft_printf/srcsFloat/float_intf.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/ft_printf/srcsFloat/float_rounding.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/ft_printf/srcsFloat/frees_for_float.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/ft_printf/srcsFloat/ft_log10.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/ft_printf/srcsFloat/ft_log2.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/ft_printf/srcsFloat/g_flag_intf.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/ft_printf/srcsFloat/get_dbl_values.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/ft_printf/srcsFloat/get_ldbl_values.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/ft_printf/srcsFloat/high_precision.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/ft_printf/srcsFloat/high_precision_intf.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/ft_printf/srcsFloat/high_precision_intf_long.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/ft_printf/srcsFloat/high_precision_long.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/ft_printf/srcsFloat/my_float.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/ft_printf/srcsFloat/my_long_float.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/ft_printf/srcsFloat/print_reserve_dbl.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/ft_wordequ.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ft_abs.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ft_atoi.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ft_bzero.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ft_fib.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ft_floor.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ft_is_complex_string.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ft_isalnum.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ft_isalpha.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ft_isascii.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ft_isdigit.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ft_islower.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ft_isprint.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ft_isspace.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ft_isupper.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ft_itoa.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ft_lstadd.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ft_lstcirc_add.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ft_lstcirc_delelem.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ft_lstcirc_findcontent_size.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ft_lstcirc_strnew.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ft_lstdel.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ft_lstdelone.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ft_lstiter.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ft_lstmap.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ft_lstnew.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ft_lstpush.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ft_memalloc.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ft_memccpy.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ft_memchr.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ft_memcmp.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ft_memcpy.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ft_memdel.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ft_memmove.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ft_memset.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ft_pow.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ft_putchar.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ft_putchar_fd.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ft_putendl.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ft_putendl_fd.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ft_putnbr.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ft_putnbr_fd.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ft_putstr.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ft_putstr_fd.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ft_reverse.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ft_sqrt.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ft_sstrchr.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ft_strcat.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ft_strchr.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ft_strclr.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ft_strcmp.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ft_strcpy.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ft_strdel.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ft_strdup.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ft_strequ.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ft_striter.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ft_striteri.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ft_strjoin.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ft_strjoinre.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ft_strlcat.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ft_strlcpy.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ft_strlen.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ft_strmap.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ft_strmapi.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ft_strncat.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ft_strncmp.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ft_strncpy.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ft_strndup.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ft_strnequ.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ft_strnew.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ft_strnstr.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ft_strrchr.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ft_strsplit.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ft_strstr.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ft_strsub.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ft_strtrim.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ft_tolower.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ft_toupper.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/get_next_line.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/get_next_line.h">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/go_exit.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/libft.h">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/memlist.h">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/memlist/blackbox_memlist.h">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/memlist/memlist_bottleneck.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/memlist/ml_create.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/memlist/ml_del.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/memlist/ml_general.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ml_get_next_line.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ml_itoa.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ml_memalloc.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ml_strdup.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ml_strjoin.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ml_strjoinre.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ml_strmap.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ml_strmapi.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ml_strndup.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ml_strnew.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ml_strsplit.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ml_strsub.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/libft/ml_strtrim.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/op.h">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/options.h">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/vm/includes/error_defs.h">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/vm/includes/vc_list.h">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/vm/includes/vis.h">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/vm/includes/vis_errors.h">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/vm/includes/vm.h">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/vm/srcs/game/args_intf.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/vm/srcs/game/game.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/vm/srcs/game/game_intf.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/vm/srcs/game/helper_func.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/vm/srcs/game/instr_fork_zjmp_live.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/vm/srcs/game/instr_ld.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/vm/srcs/game/instr_operations.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/vm/srcs/game/instr_st.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/vm/srcs/game/vis/create_vs.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/vm/srcs/game/vis/disasm.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/vm/srcs/game/vis/display_carriages.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/vm/srcs/game/vis/display_game_data.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/vm/srcs/game/vis/display_side_menu.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/vm/srcs/game/vis/draw_frame.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/vm/srcs/game/vis/higlight_cells.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/vm/srcs/game/vis/init_sdl.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/vm/srcs/game/vis/print_arena.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/vm/srcs/game/vis/support_func.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/vm/srcs/game/vis/track_events.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/vm/srcs/game/vis/vc_list.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/vm/srcs/game/vis/vc_sort.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/vm/srcs/game/vis/visualise_arena.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/vm/srcs/main.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/vm/srcs/struct_intf/carriage_intf.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/vm/srcs/struct_intf/corewar_intf.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/vm/srcs/validation/parse_input_intf.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/vm/srcs/validation/parse_inputs.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/vm/srcs/validation/reports.c">
+			<Option target="finalcorewar"/>
+		</Unit>
+		<Unit filename="/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

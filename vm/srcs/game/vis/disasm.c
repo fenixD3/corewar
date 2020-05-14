@@ -10,215 +10,198 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "vm.h"
 #include "libft.h"
 #include "options.h"
 #include <stdint.h>
-#include <stdio.h> // убрать //////////////////////////////////////////
+
 
 typedef struct	s_disasm
 {
-    uint8_t    code;
-    uint8_t    args[3];
-    int        value[3];
+	uint8_t    code;
+	uint8_t    args[3];
+	int        value[3];
+	unsigned char *arena;
+	unsigned char *bogie;
 }				t_disasm;
 
-int		reverse_disasm_bytes(int *num_to_rev)
-{
-    int	rev;
-    int	byte;
-    int	i;
 
-    rev = 0;
-    i = 0;
-    while (i < 32)
-    {
-        byte = *num_to_rev >> i & 0xFFu;
-        rev |= byte << (32u - 8u - i);
-        i += 8;
-    }
-    return (rev);
+
+size_t	len_num(int num)
+{
+	if (num >= 0 && num <= 9)
+		return (1);
+	return (len_num(num / 10) + 1);
 }
 
-int   arguments_value(t_disasm *s, unsigned char *champ, int i, int *j)
+int     from_int_to_char(int n, char **s, int i)
 {
-    while (i < g_op[s->code - 1].num_args)
-    {
-        if (s->args[i] == REG_CODE && (*champ > 0 && *champ <= REG_NUMBER))
-        {
-            s->value[i] = *((unsigned char *)champ);
-            champ++;
-        }
-        else if (s->args[i] == DIR_CODE && g_op[s->code - 1].size_t_dir == 4)
-        {
-            j = (int *)(champ);
-            s->value[i] = reverse_disasm_bytes(j);
-            champ += 4;
-        }
-        else if (s->args[i] == IND_CODE || s->args[i] == DIR_CODE)
-        {
-            s->value[i] = *((short *)(champ));
-            s->value[i] = (((s->value[i] >> 8) & 0xFF) | ((s->value[i] << 8) & 0xFF00));
-            champ += 2;
-        }
-        else
-            return (0);
-        i++;
-    }
-    return (1);
+	int             j;
+	char			*str;
+	size_t			len;
+	unsigned int	nbr;
+
+	j = len_num(n);
+	len = j;
+	str = *s;
+	nbr = (n < 0) ? (unsigned int)(-n) : (unsigned int)(n);
+	if (nbr == 0)
+		str[i] = '0';
+	while (len-- && nbr)
+	{
+		str[i + len] = (nbr % 10) + '0';
+		nbr /= 10;
+	}
+	if (n < 0)
+	{
+		str[i + len] = '-';
+		j++;
+	}
+	return (i + j);
+}
+
+int   arguments_value(t_disasm *s, unsigned char *champ, int i)
+{
+	while (i < g_op[s->code - 1].num_args)
+	{
+		if (s->args[i] == REG_CODE && (*champ > 0 && *champ <= REG_NUMBER))
+		{
+			s->value[i] = *((unsigned char *)champ);
+			champ = do_steps(champ, 1, s->arena);
+		}
+		else if (s->args[i] == DIR_CODE && g_op[s->code - 1].size_t_dir == 4)
+		{
+			s->value[i] = reverse_vm_bytes(champ, 4, s->arena);
+			champ = do_steps(champ, 4, s->arena);
+		}
+		else if (s->args[i] == IND_CODE || s->args[i] == DIR_CODE)
+		{
+			s->value[i] = *((short *)(champ));
+			s->value[i] = (((s->value[i] >> 8) & 0xFF) | ((s->value[i] << 8) & 0xFF00));
+			champ = do_steps(champ, 2, s->arena);
+		}
+		else
+			return (0);
+		i++;
+	}
+	return (1);
 }
 
 int    types_of_args(unsigned char type, t_disasm *s)
 {
-    int     i;
-    int     j;
-    char    tmp;
+	int     i;
+	int     j;
+	char    tmp;
 
-    i = 0;
-    j = 6;
-    while (i < g_op[s->code - 1].num_args)
-    {
-        tmp = (type >> j) & 3;
-        if (tmp == REG_CODE && !(T_REG & g_op[s->code - 1].args_type[i]))
-            return (0);
-        else if (tmp == IND_CODE && !(T_IND & g_op[s->code - 1].args_type[i]))
-            return (0);
-        else if (tmp == DIR_CODE && !(T_DIR & g_op[s->code - 1].args_type[i]))
-            return (0);
-        else if (!tmp)
-            return (0);
-        s->args[i] = tmp;
-        i++;
-        j -= 2;
-    }
-    return (1);
-}
-
-int     copy_string(char **str, char **string, int i)
-{
-    char *tmp_str;
-    char *tmp_string;
-
-    tmp_str = *str;
-    tmp_string = *string;
-    while (*tmp_string)
-    {
-        tmp_str[i++] = (*tmp_string);
-        tmp_string++;
-    }
-    free(*string);
-    *string = NULL;
-    return (i);
+	i = 0;
+	j = 6;
+	while (i < g_op[s->code - 1].num_args)
+	{
+		tmp = (type >> j) & 3;
+		if (tmp == REG_CODE && !(T_REG & g_op[s->code - 1].args_type[i]))
+			return (0);
+		else if (tmp == IND_CODE && !(T_IND & g_op[s->code - 1].args_type[i]))
+			return (0);
+		else if (tmp == DIR_CODE && !(T_DIR & g_op[s->code - 1].args_type[i]))
+			return (0);
+		else if (!tmp)
+			return (0);
+		s->args[i] = tmp;
+		i++;
+		j -= 2;
+	}
+	return (1);
 }
 
 int    add_dir_ind(t_disasm *s, char **str, int i, int j, unsigned char *champ)
 {
-    int *k;
-    char *string;
-    char *tmp;
+	char *tmp;
 
-    tmp = *str;
-    if (s->args[j] == DIR_CODE || !(g_op[s->code - 1].argument_type_code))
-        tmp[i++] = DIRECT_CHAR;
-    if ((s->args[j] == DIR_CODE || !(g_op[s->code - 1].argument_type_code)) &&
-    g_op[s->code - 1].size_t_dir == 4)
-    {
-        if (!(g_op[s->code - 1].argument_type_code))
-            k = (int *)(champ);
-        else
-            k = &(s->value[j]);
-        s->value[j] = reverse_disasm_bytes(k);
-    }
-    else
-    {
-        if (!(g_op[s->code - 1].argument_type_code))
-            s->value[j] = *(short *)(champ);
-        s->value[j] = (((s->value[j] >> 8) & 0xFF) | ((s->value[j] << 8) & 0xFF00));
-    }
-    if (!(string = ft_itoa(s->value[j])))
-        return (-1);
-    return (copy_string(str, &string, i));
+	tmp = *str;
+	if (s->args[j] == DIR_CODE || !(g_op[s->code - 1].argument_type_code))
+		tmp[i++] = DIRECT_CHAR;
+	if (!(g_op[s->code - 1].argument_type_code) && g_op[s->code - 1].size_t_dir == 4)
+		s->value[j] = reverse_vm_bytes(champ, 4, s->arena);
+	else if (!(g_op[s->code - 1].argument_type_code))
+	{
+		s->value[j] = *(short *)(champ);
+		s->value[j] = (((s->value[j] >> 8) & 0xFF) | ((s->value[j] << 8) & 0xFF00));
+	}
+	return (from_int_to_char(s->value[j], str, i));
 }
 
 int     add_reg(t_disasm *s, char **str, int i, int j, unsigned char *champ)
 {
-    char *string;
-    char *tmp;
+	char *tmp;
 
-    tmp = *str;
-    if (s->args[j] == REG_CODE)
-    {
-        tmp[i++] = REGISTER_CHAR;
-        if (!(string = ft_itoa(s->value[j])))
-            return (-1);
-        return (copy_string(str, &string, i));
-    }
-    return (add_dir_ind(s, str, i, j, champ));
+	tmp = *str;
+	if (s->args[j] == REG_CODE)
+	{
+		tmp[i++] = REGISTER_CHAR;
+		return (from_int_to_char(s->value[j], str, i));
+	}
+	return (add_dir_ind(s, str, i, j, champ));
 }
 
-char			*command_output(t_disasm *s, unsigned char *champ, int i, int j)
+void    command_output(t_disasm *s, unsigned char *champ, int i, int j, char **str)
 {
-    char		*str;
+	char    *tmp;
 
-    str = ft_strnew(100);
-    while (g_op[s->code - 1].name[i])
-    {
-        str[i] = g_op[s->code - 1].name[i];
-        i++;
-    }
-    str[i++] = ' ';
-    if (!(g_op[s->code - 1].argument_type_code))
-        add_dir_ind(s, &str, i, j, champ);
-    while (j < g_op[s->code - 1].num_args && g_op[s->code - 1].argument_type_code)
-    {
-        i = add_reg(s, &str, i, j, champ);
-        if (i < 0)
-            return (NULL);
-        if (++j < g_op[s->code - 1].num_args)
-        {
-            str[i++] = SEPARATOR_CHAR;
-            str[i++] = ' ';
-        }
-    }
-    return (str);
+	tmp = *str;
+	while (g_op[s->code - 1].name[i])
+	{
+		tmp[i] = g_op[s->code - 1].name[i];
+		i++;
+	}
+	tmp[i++] = ' ';
+	if (!(g_op[s->code - 1].argument_type_code))
+	{
+		i = add_dir_ind(s, str, i, j, champ);
+		tmp[i] = '\0';
+	}
+	while (j < g_op[s->code - 1].num_args && g_op[s->code - 1].argument_type_code)
+	{
+		i = add_reg(s, str, i, j, champ);
+		if (++j < g_op[s->code - 1].num_args)
+		{
+			tmp[i++] = SEPARATOR_CHAR;
+			tmp[i++] = ' ';
+		}
+		tmp[i] = '\0';
+	}
 }
 
-char			*disasm_error(char *string)
+void    disasm_error(char *str_error, char **str)
 {
-    char		*str;
+	int		c;
 
-    if (!(str = (char *)malloc(sizeof(char) * (ft_strlen(string) + 1))))
-        return (NULL);
-    ft_strcpy(str, string);
-    return (str);
+	c = 0;
+	ft_sprintf(*str, "%s\n", str_error);
+	while ((*str)[c] != '\n')
+		c++;
+	(*str)[c] = '\0';
 }
 
-char			*disasm(unsigned char *champ)
+void    disasm(t_carriages *champ, char str[100], unsigned char arena[MEM_SIZE])
 {
-    int			i;
-    int			j;
-    int			*k;
-    t_disasm	s;
+	int     i;
+	int     j;
+	t_disasm s;
 
-    i = 0;
-    j = 0;
-    k = NULL;
-    if (!(*champ > 0 && *champ < 17))
-        return (disasm_error("Incorrect command"));
-    s.code = *champ;
-    s.args[0] = '0';
-    champ++;
-    if (!(g_op[s.code - 1].argument_type_code))
-        return(command_output(&s, champ, i, j));
-    else if (!types_of_args(*champ, &s))
-        return (disasm_error("Incorrect command arguments"));
-    if (!arguments_value(&s, ++champ, i, k))
-        return (disasm_error("Incorrect value of T_REG"));
-    return (command_output(&s, champ, i, j));
+	i = 0;
+	j = 0;
+	ft_bzero(str, 100);
+	if (champ->cycle_op < 0 || champ->op_code == 0 || champ->op_code > 16)
+		return (disasm_error("Incorrect command", &str));
+	s.code = champ->op_code;
+	s.args[0] = '0';
+	s.arena = arena;
+	s.bogie = do_steps(champ->op_pos, 1, arena);
+	if (!(g_op[s.code - 1].argument_type_code))
+		return(command_output(&s, s.bogie, i, j, &str));
+	else if (!types_of_args(*(s.bogie), &s))
+		return (disasm_error("Incorrect command arguments", &str));
+	if (!arguments_value(&s, do_steps(s.bogie, 1, arena), i))
+		return (disasm_error("Incorrect value of T_REG", &str));
+	return (command_output(&s, s.bogie, i, j, &str));
 }
-
-//int main(void)
-//{
-//    unsigned char *s = "\at\a\t\r\aA\t";
-//    printf("%s", disasm(s));
-//    return (0);
-//}

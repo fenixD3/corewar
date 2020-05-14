@@ -9,6 +9,8 @@ void	start_game(t_corewar *corewar)
 	bool		quit;
 
 	create_vs();
+	g_contnue = false;
+	g_mode = -1;
 	file = fopen("log.txt", "w");
 	init_arena(corewar->arena, corewar->champs,
 		&corewar->carriages, &corewar->flgs);
@@ -17,20 +19,26 @@ void	start_game(t_corewar *corewar)
 		go_exit(ERR_CREATE_VS);
 	quit = false;
 	g_change = 1;
+//	visualise_arena(corewar, &quit);
 	while (!quit)
 	{
-		if (corewar->game_param.cycles_aft_start++ ==
+		if (g_mode == -100)
+			visualise_arena(corewar, &quit, NULL);
+		else
+		{
+			if (corewar->game_param.cycles_aft_start++ ==
 		corewar->flgs.nbr_cycles_dump && corewar->flgs.set_flg & DUMP_FLG)
-			print_map(corewar);
-		++corewar->game_param.cycles_bfr_check;
-  		carriages_actions(corewar);
-		if (!(corewar->game_param.cycles_bfr_check -
+				print_map(corewar);
+			++corewar->game_param.cycles_bfr_check;
+  			carriages_actions(corewar);
+			if (!(corewar->game_param.cycles_bfr_check -
 corewar->game_param.cycles_to_die) || corewar->game_param.cycles_to_die <= 0)
-			lets_check(corewar);
-		if ((corewar->flgs.set_flg & VIS_FLG) && g_change)
-			visualise_arena(corewar, &quit);
-		if (!corewar->carriages)
-			introducing_winner(corewar);
+				lets_check(corewar);
+			if ((corewar->flgs.set_flg & VIS_FLG) && g_change)
+				visualise_arena(corewar, &quit);
+			if (!corewar->carriages)
+				introducing_winner(corewar);
+		}
 	}
 }
 
@@ -84,6 +92,8 @@ void	introducing_winner(t_corewar *corewar)
 	fprintf(file, "Contestant %d, \"%s\", has won !\n", corewar->champs->num,
 			  corewar->champs->file.header.prog_name);
 	fclose(file);
+	g_mode = -100;
+	g_change = 1;
 	exit(0);
 }
 

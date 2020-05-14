@@ -1,4 +1,14 @@
-
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   visualise_arena.c                                  :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mcanhand <mcanhand@student.21-school.ru>   +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/05/12 21:32:59 by mcanhand          #+#    #+#             */
+/*   Updated: 2020/05/12 21:33:16 by mcanhand         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "vis.h"
 #include "vis_errors.h"
@@ -10,43 +20,34 @@ void			draw_backgroung(void)
 	SDL_Rect	rectangle;
 	SDL_Rect	sm_rectangle;
 
-	SDL_SetRenderDrawColor(g_vs->render, 244, 242, 238,
-						   SDL_ALPHA_OPAQUE);
+	SDL_SetRenderDrawColor(g_vs->render, 244, 242, 238, SDL_ALPHA_OPAQUE);
 	rectangle = create_rect(0, 0, g_vs->wight, g_vs->height);
 	SDL_RenderFillRect(g_vs->render, &rectangle);
 	SDL_SetRenderDrawColor(g_vs->render, 0, 0, 0, SDL_ALPHA_OPAQUE);
-	sm_rectangle = create_rect(5, 10, 64 * 24 + 5,
-												64 * 15 + 5);
+	sm_rectangle = create_rect(5, 10, 64 * 24 + 5, 64 * 15 + 5);
 	SDL_RenderFillRect(g_vs->render, &sm_rectangle);
-
 	SDL_SetRenderDrawColor(g_vs->render, 0, 0, 0, SDL_ALPHA_OPAQUE);
-	sm_rectangle = create_rect(5, 64 * 15 + 20,
-			64 * 24 + 5, g_vs->height - (64 * 15 + 20) - 10);
+	sm_rectangle = create_rect(5, 980, 680, g_vs->height - 990);
+	SDL_RenderFillRect(g_vs->render, &sm_rectangle);
+	SDL_SetRenderDrawColor(g_vs->render, 0, 0, 0, SDL_ALPHA_OPAQUE);
+	sm_rectangle = create_rect(690, 980, 855, g_vs->height - 990);
+	SDL_RenderFillRect(g_vs->render, &sm_rectangle);
+	SDL_SetRenderDrawColor(g_vs->render, 0, 0, 0, SDL_ALPHA_OPAQUE);
+	sm_rectangle = create_rect(15 + 64 * 24, 20 + 64 * 15,
+							g_vs->wight - 20 - 64 * 24, 45);
+	SDL_RenderFillRect(g_vs->render, &sm_rectangle);
+	SDL_SetRenderDrawColor(g_vs->render, 0, 0, 0, SDL_ALPHA_OPAQUE);
+	sm_rectangle = create_rect(15 + 64 * 24, 10,
+					g_vs->wight - 20 - 64 * 24, 5 + 64 * 15);
 	SDL_RenderFillRect(g_vs->render, &sm_rectangle);
 }
 
-void	ft_free_strsplit(char **str_array)
+char			**convert_arena(t_corewar *corewar)
 {
-	int i;
-
-	if (str_array)
-	{
-		i = 0;
-		while (str_array[i] != NULL)
-		{
-			free(str_array[i]);
-			i++;
-		}
-		free(str_array);
-	}
-}
-
-char	**convert_arena(t_corewar *corewar)
-{
-	int		i;
-	int		j;
-	int		c;
-	char	**res;
+	int			i;
+	int			j;
+	int			c;
+	char		**res;
 
 	i = 0;
 	c = 0;
@@ -70,72 +71,72 @@ char	**convert_arena(t_corewar *corewar)
 	return (res);
 }
 
-void			display_item(int *text_x, char string[100])
-{
-	SDL_Rect	dstrect;
-	int			text_height;
-
-	g_vs->txt_srfc = TTF_RenderText_Solid(g_vs->text_font, string, g_vs->text_color[4]);
-	g_vs->text = SDL_CreateTextureFromSurface(g_vs->render, g_vs->txt_srfc);
-	text_height = g_vs->txt_srfc->h;
-	dstrect = create_rect(*text_x, 64 * 15 + 25, g_vs->txt_srfc->w, text_height);
-	SDL_RenderCopy(g_vs->render, g_vs->text, NULL, &dstrect);
-	*text_x += g_vs->txt_srfc->w + 40;
-	free_mem_font();
-}
-
-void			display_game_data(t_corewar *corewar)
-{
-	char 		string[100];
-	int			text_x;
-
-	text_x = 20;
-	create_string(string, corewar->game_param.cycles_to_die,
-				  "cycles to die : %d\n");
-	display_item(&text_x, string);
-	create_string(string, corewar->game_param.cycles_aft_start,
-				  "cycles after start : %d\n");
-	display_item(&text_x, string);
-	create_string(string, corewar->game_param.who_lst_live,
-				  "last live : %d\n");
-	display_item(&text_x, string);
-	create_string(string, corewar->game_param.check_cnt,
-				  "check count : %d\n");
-	display_item(&text_x, string);
-}
-
-void			display_objs(t_corewar *corewar, int update)
+void display_objs(t_corewar *corewar, int update, t_carriages *carriag)
 {
 	char		**hex_arena;
+	t_vc		*vc;
+	int 		num_on_menu;
 
+	vc = g_vs->vc_list;
 	draw_backgroung();
 	hex_arena = convert_arena(corewar);
 	print_arena(hex_arena);
-	display_carriages(corewar);
-	display_side_menu(corewar, update);
+	display_carriages(corewar->arena, carriag ? carriag : corewar->carriages);
+	num_on_menu = display_side_menu(corewar, update, vc);
+	higlight_cells(num_on_menu, vc, corewar, update);
 	display_game_data(corewar);
 	ft_free_strsplit(hex_arena);
 }
 
-void			visualise_arena(t_corewar *corewar, bool *quit)
+void			show_winer(t_champion *champ)
+{
+	SDL_Rect	rectangle;
+	SDL_Rect	sm_rectangle;
+	char		string[100];
+	SDL_Rect	dstrect;
+
+	create_string(string, champ->num, "Contestant %d, \n", NULL);
+	create_string(&string[14], 0, "\"%s\", has won !\n",
+											champ->file.header.prog_name);
+	SDL_SetRenderDrawColor(g_vs->render, 244, 242, 238, SDL_ALPHA_OPAQUE);
+	rectangle = create_rect(0, 0, g_vs->wight, g_vs->height);
+	SDL_RenderFillRect(g_vs->render, &rectangle);
+	SDL_SetRenderDrawColor(g_vs->render, 0, 0, 0, SDL_ALPHA_OPAQUE);
+	sm_rectangle = create_rect(5, 10, g_vs->wight - 10, g_vs->height - 20);
+	SDL_RenderFillRect(g_vs->render, &sm_rectangle);
+	g_vs->txt_srfc = TTF_RenderText_Solid(g_vs->font, string,
+									g_vs->text_color[champ->num - 1]);
+	g_vs->text = SDL_CreateTextureFromSurface(g_vs->render, g_vs->txt_srfc);
+	dstrect = create_rect(g_vs->wight / 2 - g_vs->txt_srfc->w,
+			g_vs->height / 2, g_vs->txt_srfc->w, g_vs->txt_srfc->h);
+	SDL_RenderCopy(g_vs->render, g_vs->text, NULL, &dstrect);
+	free_mem_font();
+	SDL_RenderPresent(g_vs->render);
+	SDL_Delay(4000);
+	exit(0);
+}
+
+void visualise_arena(t_corewar *corewar, bool *quit, t_carriages *carriag)
 {
 	SDL_Event	e;
 	int			stop;
 	int			update;
 
+	if (g_mode == -100)
+		show_winer(corewar->champs);
 	sort_vc(&g_vs->vc_list);
 	update = -1;
-	stop = 1;
 	g_change = 0;
-	display_objs(corewar, update);
+	display_objs(corewar, update, carriag);
 	SDL_RenderPresent(g_vs->render);
 	SDL_Delay(g_vs->speed);
-	while (stop)
+	stop = track_events(&update, &e, quit, corewar);
+	while (stop && !g_contnue)
 	{
-		track_events(&update, &e, quit, &stop);
+		stop = track_events(&update, &e, quit, corewar);
 		if (update >= 0)
 		{
-			display_objs(corewar, update);
+			display_objs(corewar, update, carriag);
 			SDL_RenderPresent(g_vs->render);
 		}
 		update = -1;

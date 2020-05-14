@@ -6,7 +6,7 @@
 /*   By: mdeanne <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/28 16:22:26 by mdeanne           #+#    #+#             */
-/*   Updated: 2020/05/12 00:37:50 by mdeanne          ###   ########.fr       */
+/*   Updated: 2020/05/14 18:54:43 by mdeanne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 #include <fcntl.h>
 #include <stdlib.h>
 #include <errno.h>
+#include <stdio.h>
 #include "ft_ptintf.h"
 #include "asm.h"
 
@@ -51,12 +52,12 @@ void	open_and_tokenize_file(char *file_name, t_token_sec *check_list,
 	errno = 0;
 	if ((fd = open(file_name, O_DIRECTORY)) >= 0)
 	{
-		ft_printf("ERROR: file %s is a directory\n", file_name);
+		ft_printf("ERROR: %s is a directory\n", file_name);
 		exit(1);
 	}
 	else if ((fd = open(file_name, O_RDONLY)) < 0)
 	{
-		strerror(errno);
+		ft_printf("ERROR: file %s does not exist\n", file_name);
 		exit(1);
 	}
 	tokenize(fd, token, &label);

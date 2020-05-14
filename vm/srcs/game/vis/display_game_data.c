@@ -36,16 +36,16 @@ void			show_abreviations(char string[100])
 
 	text_x = 705;
 	create_string(string, 0,
-				"= = = %s - cycles before execution\n", "CBE");
+				"%s - cycles before execution\n", "CBE");
 	display_item(&text_x, string, 25);
 	create_string(string, 0,
 				"%s - previous LIVE execution\n", "PR LIVE EX");
 	display_item(&text_x, string, 25);
 	create_string(string, 0,
-				"%s - operation code\n", "OP CODE");
+				"%s - operation\n", "OP");
 	display_item(&text_x, string, 25);
 	create_string(string, 0,
-				"%s - carriage id = = =\n", "CAR ID");
+				"%s - position\n", "POS");
 	display_item(&text_x, string, 25);
 }
 
@@ -53,15 +53,15 @@ void			show_usage(char string[100])
 {
 	int			text_x;
 
-	text_x = 1575;
+	text_x = 1585;
 	create_string(string, 0,
 				"= = = %s = = =\n", "USAGE. Press ...");
 	display_item(&text_x, string, 0);
-	text_x = 1560;
+	text_x = 1565;
 	create_string(string, 0,
 				"%s\n", "Enter - to speed up the game");
 	display_item(&text_x, string, 12);
-	text_x = 1560;
+	text_x = 1565;
 	create_string(string, 0,
 				"%s\n", "-> - to manage game manually");
 	display_item(&text_x, string, 24);
@@ -86,7 +86,7 @@ void			display_game_data(t_corewar *corewar)
 			"check count : %d\n", NULL);
 	display_item(&text_x, string, 25);
 	create_string(string, corewar->game_param.live_period_cnt,
-				  "live period cnt : %d\n", NULL);
+				  "lives cnt : %d\n", NULL);
 	display_item(&text_x, string, 25);
 	text_x = 290;
 	create_string(string, 0, "GAME  %s\n", "STATISTICS");

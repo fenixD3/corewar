@@ -112,7 +112,7 @@ void			show_winer(t_champion *champ)
 	SDL_RenderCopy(g_vs->render, g_vs->text, NULL, &dstrect);
 	free_mem_font();
 	SDL_RenderPresent(g_vs->render);
-	SDL_Delay(5000);
+	SDL_Delay(4000);
 	exit(0);
 }
 

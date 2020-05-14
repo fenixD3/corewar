@@ -31,12 +31,12 @@
   <component name="ChangeListManager">
     <list default="true" id="79a239b6-4ac5-4d07-8ce2-cff35afe5c75" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/finalcorewar.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/finalcorewar.dir/C.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/create_vs.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/create_vs.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/draw_frame.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/draw_frame.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/visualise_arena.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/finalcorewar.dir/vm/srcs/game/vis/visualise_arena.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/finalcorewar" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/finalcorewar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm/srcs/game/vis/create_vs.c" beforeDir="false" afterPath="$PROJECT_DIR$/vm/srcs/game/vis/create_vs.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vm/srcs/game/vis/display_game_data.c" beforeDir="false" afterPath="$PROJECT_DIR$/vm/srcs/game/vis/display_game_data.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vm/srcs/game/vis/draw_frame.c" beforeDir="false" afterPath="$PROJECT_DIR$/vm/srcs/game/vis/draw_frame.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vm/srcs/game/vis/visualise_arena.c" beforeDir="false" afterPath="$PROJECT_DIR$/vm/srcs/game/vis/visualise_arena.c" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -164,7 +164,8 @@
       <workItem from="1588866496811" duration="25825000" />
       <workItem from="1589191679772" duration="17330000" />
       <workItem from="1589288959076" duration="3057000" />
-      <workItem from="1589360572061" duration="21379000" />
+      <workItem from="1589360572061" duration="22159000" />
+      <workItem from="1589473905801" duration="451000" />
     </task>
     <servers />
   </component>

@@ -80,7 +80,7 @@ void					fill_frame(int *i, t_carriages *carriages,
 	display_text(todisplay, 0, *i + 12 + text_height);
 	if (!extndd)
 	{
-		create_string(todisplay, carriages->op_code, "OP : %#x\n", NULL);
+		create_string(todisplay, carriages->op_code, "OP : %#04x\n", NULL);
 		display_text(todisplay, 0, *i + 15 + text_height * 2);
 	}
 	arena_coord = carriages->op_pos - crwr->arena;

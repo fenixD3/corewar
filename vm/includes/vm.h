@@ -7,6 +7,7 @@
 # include "options.h"
 
 #include <stdio.h>
+#include <stdbool.h>
 
 # define N_FLG 1u
 # define DUMP_FLG 2u
@@ -123,7 +124,7 @@ void	introducing_fighter(t_champion *champs);
 void    print_map(t_corewar *corewar);
 void introducing_winner(t_corewar *corewar);
 
-void carriages_actions(t_corewar *corewar);
+void carriages_actions(t_corewar *corewar, bool *quit);
 unsigned char	*do_steps(unsigned char *start, int step, unsigned char *arena);
 void
 lets_check(t_corewar *corewar);

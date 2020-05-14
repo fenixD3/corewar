@@ -70,7 +70,7 @@ typedef struct		s_arena
 
 bool init();
 
-void visualise_arena(t_corewar *corewar, bool *quit);
+void visualise_arena(t_corewar *corewar, bool *quit, t_carriages *carriag);
 
 void				create_vs(void);
 
@@ -98,7 +98,7 @@ char    *disasm(unsigned char *champ);
 
 void display_side_menu(t_corewar *crrw, int inxd);
 
-void				display_carriages(t_corewar *corewar);
+void display_carriages(unsigned char *arena, t_carriages *carriag);
 
 void				push_front_carriage(t_carriages **carriages);
 void

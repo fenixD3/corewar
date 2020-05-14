@@ -18,23 +18,23 @@ void	start_game(t_corewar *corewar)
 		go_exit(ERR_CREATE_VS);
 	quit = false;
 	g_change = 1;
-	visualise_arena(corewar, &quit);
+//	visualise_arena(corewar, &quit);
 	while (!quit)
 	{
 		if (g_mode == -100)
-			visualise_arena(corewar, &quit);
+			visualise_arena(corewar, &quit, NULL);
 		else
 		{
 			if (corewar->flgs.set_flg & DUMP_FLG &&
 				corewar->game_param.cycles_aft_start == corewar->flgs.nbr_cycles_dump)
 				print_map(corewar);
 			++corewar->game_param.cycles_aft_start;
-			carriages_actions(corewar);
+			carriages_actions(corewar, &quit);
 			if (!(corewar->game_param.cycles_aft_start %
 				  corewar->game_param.cycles_to_die) || corewar->game_param.cycles_to_die <= 0)
 				lets_check(corewar);
 			if ((corewar->flgs.set_flg & B_FLG) && g_change)
-				visualise_arena(corewar, &quit);
+				visualise_arena(corewar, &quit, NULL);
 			if (!corewar->carriages)
 				introducing_winner(corewar);
 		}

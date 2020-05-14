@@ -48,6 +48,8 @@ libft.h
 stdbool.h
 -
 
+../vm/includes/vis_errors.h
+
 ../vm/includes/vm.h
 ft_ptintf.h
 ../vm/includes/ft_ptintf.h
@@ -59,18 +61,16 @@ options.h
 ../vm/includes/options.h
 stdio.h
 -
+stdbool.h
+-
 vis.h
 ../vm/includes/vis.h
 
-/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/vm/srcs/game/vis/disasm.c
-vm.h
-/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/vm/srcs/game/vis/vm.h
-libft.h
-/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/vm/srcs/game/vis/libft.h
-options.h
-/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/vm/srcs/game/vis/options.h
-stdint.h
--
+/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/vm/srcs/game/vis/display_carriages.c
+vis.h
+/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/vm/srcs/game/vis/vis.h
+vis_errors.h
+/Users/romancheremin/Documents/dasha/my_projects/school21/code/finalcorewar/vm/srcs/game/vis/vis_errors.h
 
 /Users/romancheremin/Library/Frameworks/SDL2.framework/Headers/SDL.h
 SDL_main.h

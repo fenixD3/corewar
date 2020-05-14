@@ -71,7 +71,7 @@ char			**convert_arena(t_corewar *corewar)
 	return (res);
 }
 
-void			display_objs(t_corewar *corewar, int update)
+void display_objs(t_corewar *corewar, int update, t_carriages *carriag)
 {
 	char		**hex_arena;
 	t_vc		*vc;
@@ -81,7 +81,7 @@ void			display_objs(t_corewar *corewar, int update)
 	draw_backgroung();
 	hex_arena = convert_arena(corewar);
 	print_arena(hex_arena);
-	display_carriages(corewar);
+	display_carriages(corewar->arena, carriag ? carriag : corewar->carriages);
 	num_on_menu = display_side_menu(corewar, update, vc);
 	higlight_cells(num_on_menu, vc, corewar, update);
 	display_game_data(corewar);
@@ -116,7 +116,7 @@ void			show_winer(t_champion *champ)
 	exit(0);
 }
 
-void			visualise_arena(t_corewar *corewar, bool *quit)
+void visualise_arena(t_corewar *corewar, bool *quit, t_carriages *carriag)
 {
 	SDL_Event	e;
 	int			stop;
@@ -127,7 +127,7 @@ void			visualise_arena(t_corewar *corewar, bool *quit)
 	sort_vc(&g_vs->vc_list);
 	update = -1;
 	g_change = 0;
-	display_objs(corewar, update);
+	display_objs(corewar, update, carriag);
 	SDL_RenderPresent(g_vs->render);
 	SDL_Delay(g_vs->speed);
 	stop = track_events(&update, &e, quit, corewar);
@@ -136,7 +136,7 @@ void			visualise_arena(t_corewar *corewar, bool *quit)
 		stop = track_events(&update, &e, quit, corewar);
 		if (update >= 0)
 		{
-			display_objs(corewar, update);
+			display_objs(corewar, update, carriag);
 			SDL_RenderPresent(g_vs->render);
 		}
 		update = -1;

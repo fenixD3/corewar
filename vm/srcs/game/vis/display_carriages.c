@@ -33,26 +33,25 @@ void			draw_carriage(int i, int priority, SDL_Color color)
 	}
 }
 
-void			display_carriages(t_corewar *corewar)
+
+void display_carriages(unsigned char *arena, t_carriages *carriage)
 {
-	t_carriages	*carriage;
-	t_carriages	*tmp;
 	int			i;
 	int			priority;
 	SDL_Color	color;
+	t_carriages *dupl;
 
 	i = 0;
+	dupl = carriage;
 	priority = 0;
-	tmp = corewar->carriages;
-	i = 0;
 	while (i < MEM_SIZE)
 	{
-		carriage = tmp;
+		carriage = dupl;
 		while (carriage != NULL)
 		{
 			color = (carriage->reg[0] < 0 && carriage->reg[0] > -5) ?
 				g_vs->text_color[-(carriage->reg[0]) - 1] : g_vs->text_color[4];
-			if (&(corewar->arena[i]) == carriage->op_pos)
+			if (&(arena[i]) == carriage->op_pos)
 				draw_carriage(i, priority++, color);
 			carriage = carriage->next;
 		}

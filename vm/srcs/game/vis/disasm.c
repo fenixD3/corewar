@@ -182,7 +182,7 @@ void    disasm_error(char *str_error, char **str)
 	(*str)[c] = '\0';
 }
 
-void    disasm(t_carriages *champ, char str[100], unsigned char *arena)
+void    disasm(t_carriages *champ, char str[100], unsigned char arena[MEM_SIZE])
 {
 	int     i;
 	int     j;
@@ -190,8 +190,8 @@ void    disasm(t_carriages *champ, char str[100], unsigned char *arena)
 
 	i = 0;
 	j = 0;
-	ft_bzero(str, ft_strlen(str));
-	if (champ->cycle_op <= 0 || champ->op_code <= 0 || champ->op_code > 16)
+	ft_bzero(str, 100);
+	if (champ->cycle_op < 0 || champ->op_code == 0 || champ->op_code > 16)
 		return (disasm_error("Incorrect command", &str));
 	s.code = champ->op_code;
 	s.args[0] = '0';

@@ -6,7 +6,7 @@
 /*   By: mdeanne <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/05 22:57:32 by mdeanne           #+#    #+#             */
-/*   Updated: 2019/12/05 22:57:37 by mdeanne          ###   ########.fr       */
+/*   Updated: 2020/05/15 14:54:12 by mdeanne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,6 +68,6 @@ int     ft_sprintf(char *str, char *format, ...)
             add_str_to_buff(&format, &tools);
     }
     va_end(tools.ap);
-    //buffer_managment(&tools, NULL, 0, LAST);
+    str[tools.counter] = '\0';
     return (tools.counter);
 }

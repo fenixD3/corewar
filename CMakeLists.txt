@@ -16,7 +16,7 @@ include_directories(vm/includes)
 include_directories(${SDL2_INCLUDE_DIR})
 include_directories(${SDL2_TTF_INCLUDE_DIR})
 
-add_executable(Corewar
+add_executable(corewar
         asm/arguments.c
         asm/asm.c
         asm/asm.h
@@ -210,4 +210,4 @@ add_executable(Corewar
         op.h
         options.h)
 
-target_link_libraries(Corewar ${SDL2_LIBRARY} ${SDL2_TTF_LIBRARY})
+target_link_libraries(corewar ${SDL2_LIBRARY} ${SDL2_TTF_LIBRARY})

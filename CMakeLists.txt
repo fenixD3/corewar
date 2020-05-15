@@ -208,6 +208,6 @@ add_executable(corewar
         file_to_list.h
         ft_wordequ.c
         op.h
-        options.h)
+        options.h vm/includes/disasm.h vm/srcs/game/vis/disasm_funcs.c)
 
 target_link_libraries(corewar ${SDL2_LIBRARY} ${SDL2_TTF_LIBRARY})

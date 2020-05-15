@@ -26,14 +26,6 @@
 */
 
 typedef uint8_t u_int8_t;
-typedef uint32_t u_int32_t;
-
-typedef struct	s_ml
-{
-	void		*data;
-	struct s_ml	*next;
-	struct s_ml	*prev;
-}				t_ml;
 
 typedef struct	s_ml_lists
 {

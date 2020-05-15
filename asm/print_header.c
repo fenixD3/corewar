@@ -19,7 +19,7 @@ void	print_reverse(int fd, u_int8_t byte, u_int32_t *num)
 		write(fd, &((u_int8_t*)num)[byte], 1);
 }
 
-void	print_header(int fd, header_t *header)
+void	print_header(int fd, t_header *header)
 {
 	int nullo;
 

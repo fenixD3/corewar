@@ -18,7 +18,7 @@
 #include "ft_ptintf.h"
 #include "asm.h"
 
-void	print_in_file(char *file_name, t_token *token, header_t *header)
+void	print_in_file(char *file_name, t_token *token, t_header *header)
 {
 	int			fd;
 	int			nulle;
@@ -69,7 +69,7 @@ void	open_and_tokenize_file(char *file_name, t_token_sec *check_list,
 int		main(int ac, char **av)
 {
 	t_token		*token;
-	header_t	header;
+	t_header	header;
 	t_token_sec	check_list;
 	int			i;
 

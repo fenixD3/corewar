@@ -17,7 +17,7 @@ unsigned int	calc_progsize(t_token *token)
 	return (weight);
 }
 
-void			init_headers(header_t *header, t_token *token)
+void			init_headers(t_header *header, t_token *token)
 {
 	ft_bzero(header->comment, COMMENT_LENGTH);
 	ft_bzero(header->prog_name, PROG_NAME_LENGTH);

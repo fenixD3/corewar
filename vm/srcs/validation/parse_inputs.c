@@ -35,7 +35,7 @@ void	parse_flags(t_corewar *corewar, char **av, int *i)
 			get_error("After -dump flag must be a number");
 		corewar->flgs.nbr_cycles_dump = ft_atoi(av[*i]);
 	}
-	else if (corewar->flgs.set_flg & V_FLG) /// not need in final!
+	else if (corewar->flgs.set_flg & V_FLG)
 		corewar->flgs.verb_num = ft_atoi(av[++*i]);
 }
 

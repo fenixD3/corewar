@@ -97,6 +97,7 @@ t_carriages * delete_carriage(t_corewar *corewar, int search_id);
 
 void	get_usage(void);
 void	get_error(char *error);
+void	prepare_battle(t_corewar *corewar, bool *quit);
 
 void	parse_arguments(int ac, char **av, t_corewar *corewar);
 void	parse_flags(t_corewar *corewar, char **av, int *i);

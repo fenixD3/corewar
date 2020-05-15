@@ -1,5 +1,4 @@
 #include "vm.h"
-#include "vis_errors.h"
 
 t_vis_tools *g_vs;
 
@@ -7,17 +6,7 @@ void	start_game(t_corewar *corewar)
 {
 	bool		quit;
 
-	create_vs();
-	g_contnue = false;
-	g_mode = -1;
-	file = fopen("log.txt", "w");
-	init_arena(corewar->arena, corewar->champs,
-		&corewar->carriages, &corewar->flgs);
-	introducing_fighter(corewar->champs);
-	if (!init())
-		go_exit(ERR_CREATE_VS);
-	quit = false;
-	g_change = 1;
+	prepare_battle(corewar, &quit);
 	while (!quit)
 	{
 		if (g_mode == -100)

@@ -1,5 +1,6 @@
 #include "vis.h"
 #include "options.h"
+#include "vis_errors.h"
 
 unsigned char *get_arguments_frm_code(unsigned char *arg_type_code,
 							t_arg_type *args, t_op oper, unsigned char *arena)
@@ -87,4 +88,19 @@ unsigned char	*skip_op(unsigned char *start_op, t_arg_type *args, t_op oper,
 			start_op = do_steps(start_op, 2, arena);
 	}
 	return (start_op);
+}
+
+void			prepare_battle(t_corewar *corewar, bool *quit)
+{
+	create_vs();
+	g_contnue = false;
+	g_mode = -1;
+	file = fopen("log.txt", "w");
+	init_arena(corewar->arena, corewar->champs,
+			   &corewar->carriages, &corewar->flgs);
+	introducing_fighter(corewar->champs);
+	if (!init())
+		go_exit(ERR_CREATE_VS);
+	*quit = false;
+	g_change = 1;
 }

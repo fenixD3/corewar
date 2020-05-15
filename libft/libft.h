@@ -127,7 +127,7 @@ double			ft_log2(long double num);
 double			ft_log10(long double num);
 char			*ft_reverse(char *str);
 int32_t			ft_abs(int32_t num);
-int				go_exit(char *error);
+int				go_exit(const char *error);
 
 int				get_next_line(const int fd, char **line);
 

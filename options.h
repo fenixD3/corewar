@@ -27,7 +27,6 @@ typedef struct	s_op
 	int			cycle;
 	_Bool		argument_type_code;
 	u_int8_t 	size_t_dir;
-
 }				t_op;
 
 static t_op		g_op[17] = {

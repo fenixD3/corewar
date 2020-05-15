@@ -32,10 +32,10 @@ SRCS = ft_strlen.c ft_strcmp.c ft_strncmp.c ft_strcpy.c ft_strncpy.c \
 	ft_reverse.c get_next_line.c \
 	ml_strdup.c ml_memalloc.c ml_strnew.c ml_strmap.c ml_strmapi.c ml_strsub.c \
 	ml_strjoin.c ml_strtrim.c ml_strsplit.c ml_itoa.c ml_strjoinre.c \
-	ml_strndup.c ml_get_next_line.c
+	ml_strndup.c ml_get_next_line.c go_exit.c
 
 SRC_ML_DIR = ./memlist/
-SRC_ML = ml_create.c ml_del.c ml_general.c
+SRC_ML = ml_create.c ml_del.c ml_general.c memlist_bottleneck.c
 
 OBJECTS = $(SRCS:.c=.o)
 OBJECTS_ML = $(SRC_ML:.c=.o)
@@ -57,6 +57,7 @@ $(OBJECTS): %.o: %.c $(HEADERS)
 
 $(OBJECTS_ML): %.o: %.c $(HEADERS_ML) libft.h
 	@gcc -c $< -I$(SRC_ML_DIR) -I$(INCLUDE) $(FLAGS) -o $@
+#	@gcc -c $< -I$(SRC_ML_DIR) -I$(INCLUDE) -o $@
 
 .PHONY: clean fclean re
 clean:

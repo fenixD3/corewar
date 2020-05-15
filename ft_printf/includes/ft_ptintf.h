@@ -49,6 +49,7 @@ typedef struct		s_prsng
 	size_t			counter;
 	char			buff[BUFF_SIZE + 1];
 	va_list			ap;
+	char            *str_spf;
 }					t_prsng;
 
 typedef union		u_un
@@ -79,6 +80,7 @@ typedef struct		s_mkfld
 }					t_mkfld;
 
 int					ft_printf(const char *format, ...);
+int                 ft_sprintf(char *str, char *format, ...);
 
 int					parsing(char **format, t_prsng *tools);
 void				to_buff(char *str, t_prsng *tools, t_mkfld *field);

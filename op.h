@@ -40,7 +40,6 @@
 # define DIR_CODE				2
 # define IND_CODE				3
 
-
 #define MAX_ARGS_NUMBER			4
 #define MAX_PLAYERS				4
 #define MEM_SIZE				(4*1024)
@@ -74,7 +73,7 @@
 #define NAME_CMD_STRING			".name"
 #define COMMENT_CMD_STRING		".comment"
 
-#define REG_NUMBER				16 // Add check T_DIR
+#define REG_NUMBER				16
 
 #define CYCLE_TO_DIE			1536
 #define CYCLE_DELTA				50
@@ -100,12 +99,12 @@ typedef char	t_arg_type;
 # define COMMENT_LENGTH			(2048)
 # define COREWAR_EXEC_MAGIC		0xea83f3
 
-typedef struct		header_s
+typedef struct		s_header
 {
   unsigned int		magic;
   char				prog_name[PROG_NAME_LENGTH + 1];
   unsigned int		prog_size;
   char				comment[COMMENT_LENGTH + 1];
-}					header_t;
+}					t_header;
 
 #endif

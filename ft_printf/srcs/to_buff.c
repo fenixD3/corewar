@@ -39,6 +39,13 @@ void	buffer_managment(t_prsng *tools, char *str, int len, int type_output)
 {
 	static int lenbuf;
 
+	if (tools->str_spf)
+    {
+	    ft_strncpy(tools->str_spf, str, len);
+	    tools->str_spf += len;
+	    tools->counter += len;
+	    return ;
+    }
 	if (lenbuf && (len + lenbuf >= BUFF_SIZE || type_output == LAST))
 		write_str(tools, tools->buff, &lenbuf, type_output);
 	if (len >= BUFF_SIZE && type_output != LAST)

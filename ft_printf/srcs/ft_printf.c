@@ -6,7 +6,7 @@
 /*   By: mdeanne <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/05 22:57:32 by mdeanne           #+#    #+#             */
-/*   Updated: 2019/12/05 22:57:37 by mdeanne          ###   ########.fr       */
+/*   Updated: 2020/05/15 14:54:12 by mdeanne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,4 +47,27 @@ int		ft_printf(const char *format, ...)
 	va_end(tools.ap);
 	buffer_managment(&tools, NULL, 0, LAST);
 	return (tools.counter);
+}
+
+int     ft_sprintf(char *str, char *format, ...)
+{
+    t_prsng	tools;
+
+    zeroing_tools(&tools, 1);
+    tools.str_spf = str;
+    va_start(tools.ap, format);
+    while (*format)
+    {
+        if (*format == '%')
+        {
+            zeroing_tools(&tools, 0);
+            if (!param_processing(&format, &tools))
+                return (0);
+        }
+        else
+            add_str_to_buff(&format, &tools);
+    }
+    va_end(tools.ap);
+    str[tools.counter] = '\0';
+    return (tools.counter);
 }

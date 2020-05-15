@@ -13,6 +13,7 @@
 #ifndef MEMLIST_H
 # define MEMLIST_H
 # include <stdlib.h>
+typedef uint32_t u_int32_t;
 
 typedef struct	s_ml
 {

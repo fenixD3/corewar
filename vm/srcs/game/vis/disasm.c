@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   disasm.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: klaurine <hecvi@student.42.fr>             +#+  +:+       +#+        */
+/*   By: klaurine <klaurine@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/28 21:28:48 by klaurine          #+#    #+#             */
 /*   Updated: 2020/05/15 17:14:50 by mdeanne          ###   ########.fr       */

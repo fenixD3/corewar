@@ -3,7 +3,7 @@
 void	print_v_4_st(t_corewar *corewar, t_parse_args *arg_val,
 					 const char *cmd)
 {
-	printf("P%5d | %s r%d %d\n",
+	ft_printf("P%5d | %s r%d %d\n",
 		   corewar->carriages->id,
 		   cmd,
 		   arg_val->val[0],
@@ -34,7 +34,7 @@ void	print_v_4_sti(t_corewar *corewar, t_parse_args *arg_val,
 		val_addr_2 = get_value_frm_arg(arg_val, 2, corewar, 1);
 	ind_pos = do_steps(corewar->carriages->op_pos,
 					   (val_addr_1 + val_addr_2) % IDX_MOD, corewar->arena);
-	printf("P%5d | %s r%d %d %d\n"
+	ft_printf("P%5d | %s r%d %d %d\n"
 		"       | -> store to %d + %d = %d (with pc and mod %ld)\n",
 		corewar->carriages->id, cmd, arg_val->val[0], val_addr_1, val_addr_2,
 		val_addr_1, val_addr_2, val_addr_1 + val_addr_2,

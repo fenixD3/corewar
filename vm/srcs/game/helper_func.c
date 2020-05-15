@@ -47,7 +47,6 @@ int		get_value_frm_arg(t_parse_args *arg_val, int arg_idx,
 	return (val);
 }
 
-/// For -v
 int		cnt_bytes_for_op(const t_op *op, const t_arg_type *code_args)
 {
 	int		cnt_bytes;
@@ -75,10 +74,10 @@ void	print_command_bytes(unsigned char *start_op,
 {
 	while (bytes_to_nxt--)
 	{
-		printf("%02x ", *start_op);
+		ft_printf("%02x ", *start_op);
 		fprintf(file, "%02x ", *start_op);
 		start_op = do_steps(start_op, 1, arena);
 	}
-	printf("\n");
+	ft_printf("\n");
 	fprintf(file, "\n");
 }

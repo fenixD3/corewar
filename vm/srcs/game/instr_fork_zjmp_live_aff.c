@@ -32,7 +32,7 @@ void	zjump(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 	{
 		if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num & 4)
 		{
-			printf("FAILED\n");
+			ft_printf("FAILED\n");
 			fprintf(file, "FAILED\n");
 		}
 		return;
@@ -41,7 +41,7 @@ void	zjump(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 		(int16_t)arg_val->val[0] % IDX_MOD, corewar->arena);
 	if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num & 4)
 	{
-		printf("OK\n");
+		ft_printf("OK\n");
 		fprintf(file, "OK\n");
 	}
 }

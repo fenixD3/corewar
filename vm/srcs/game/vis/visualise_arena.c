@@ -116,7 +116,7 @@ void			show_winer(t_champion *champ)
 	exit(0);
 }
 
-void visualise_arena(t_corewar *corewar, bool *quit, t_carriages *carriag)
+void	visualise_arena(t_corewar *corewar, bool *quit, t_carriages *carriag)
 {
 	SDL_Event	e;
 	int			stop;

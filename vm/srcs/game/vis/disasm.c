@@ -15,7 +15,6 @@
 #include "options.h"
 #include <stdint.h>
 
-
 typedef struct	s_disasm
 {
 	uint8_t    code;
@@ -24,7 +23,6 @@ typedef struct	s_disasm
 	unsigned char *arena;
 	unsigned char *bogie;
 }				t_disasm;
-
 
 
 size_t	len_num(int num)
@@ -182,7 +180,7 @@ void    disasm_error(char *str_error, char **str)
 	(*str)[c] = '\0';
 }
 
-void    disasm(t_carriages *champ, char str[100], unsigned char arena[MEM_SIZE])
+void    disasm(t_carriages *champ, char *str, unsigned char *arena)
 {
 	int     i;
 	int     j;
@@ -190,7 +188,7 @@ void    disasm(t_carriages *champ, char str[100], unsigned char arena[MEM_SIZE])
 
 	i = 0;
 	j = 0;
-	ft_bzero(str, 100);
+	ft_bzero(str, 35);
 	if (champ->cycle_op < 0 || champ->op_code == 0 || champ->op_code > 16)
 		return (disasm_error("Incorrect command", &str));
 	s.code = champ->op_code;

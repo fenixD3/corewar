@@ -840,10 +840,12 @@ CMakeFiles/dencorewar.dir/vm/srcs/game/vis/create_vs.c.o
  /usr/local/include/SDL2/begin_code.h
  /usr/local/include/SDL2/close_code.h
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/disasm.c.o
+ ../ft_printf/includes/ft_ptintf.h
  ../libft/libft.h
  ../libft/memlist.h
  ../op.h
  ../options.h
+ ../vm/includes/vm.h
  /Users/Student/Corewar/vm/srcs/game/vis/disasm.c
 CMakeFiles/dencorewar.dir/vm/srcs/game/vis/display_carriages.c.o
  ../ft_printf/includes/ft_ptintf.h

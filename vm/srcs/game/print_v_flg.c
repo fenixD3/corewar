@@ -4,18 +4,18 @@ void	call_printf_v_2_16(t_corewar *corewar, _Bool printf_cycle_die)
 {
 	if (corewar->flgs.verb_num & 2)
 	{
-		printf("It is now cycle %ld\n", corewar->game_param.cycles_aft_start);
+		ft_printf("It is now cycle %ld\n", corewar->game_param.cycles_aft_start);
 		fprintf(file, "It is now cycle %ld\n", corewar->game_param.cycles_aft_start);
 		if (printf_cycle_die)
 		{
-			printf("Cycle to die is now %ld\n",
+			ft_printf("Cycle to die is now %ld\n",
 				corewar->game_param.cycles_to_die);
 			fprintf(file, "Cycle to die is now %ld\n", corewar->game_param.cycles_to_die);
 		}
 	}
 	else if (corewar->flgs.verb_num & 16)
 	{
-		printf("ADV %d (%s%04lx -> %s%04lx) ",
+		ft_printf("ADV %d (%s%04lx -> %s%04lx) ",
 			corewar->carriages->cnt_bytes_to_op,
 			"0x",
 			(corewar->carriages->op_pos - corewar->arena),
@@ -38,14 +38,14 @@ void	call_printf_v_1_8(const t_corewar *corewar, const t_champion *champ,
 {
 	if (corewar->flgs.verb_num & 1)
 	{
-		printf("Player %d (%s) is said to be alive\n",
+		ft_printf("Player %d (%s) is said to be alive\n",
 			   corewar->game_param.who_lst_live, champ->file.header.prog_name);
 		fprintf(file, "Player %d (%s) is said to be alive\n",
 				corewar->game_param.who_lst_live, champ->file.header.prog_name);
 	}
 	else if (corewar->flgs.verb_num & 8)
 	{
-		printf("Process %d hasn't lived for %ld cycles (CTD %ld)\n",
+		ft_printf("Process %d hasn't lived for %ld cycles (CTD %ld)\n",
 			search_id,
 			corewar->game_param.cycles_aft_start - carriage->cycle_when_live,
 			corewar->game_param.cycles_to_die);

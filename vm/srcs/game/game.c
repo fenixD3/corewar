@@ -1,5 +1,4 @@
 #include "vm.h"
-#include "vis.h"
 #include "vis_errors.h"
 
 t_vis_tools *g_vs;
@@ -19,7 +18,6 @@ void	start_game(t_corewar *corewar)
 		go_exit(ERR_CREATE_VS);
 	quit = false;
 	g_change = 1;
-//	visualise_arena(corewar, &quit);
 	while (!quit)
 	{
 		if (g_mode == -100)
@@ -30,12 +28,12 @@ void	start_game(t_corewar *corewar)
 		corewar->flgs.nbr_cycles_dump && corewar->flgs.set_flg & DUMP_FLG)
 				print_map(corewar);
 			++corewar->game_param.cycles_bfr_check;
-  			carriages_actions(corewar);
+  			carriages_actions(corewar, &quit);
 			if (!(corewar->game_param.cycles_bfr_check -
 corewar->game_param.cycles_to_die) || corewar->game_param.cycles_to_die <= 0)
 				lets_check(corewar);
 			if ((corewar->flgs.set_flg & VIS_FLG) && g_change)
-				visualise_arena(corewar, &quit);
+				visualise_arena(corewar, &quit, corewar->carriages);
 			if (!corewar->carriages)
 				introducing_winner(corewar);
 		}
@@ -65,14 +63,14 @@ void	introducing_fighter(t_champion *champs)
 {
 	int		player;
 
-	printf("Introducing contestants...\n"); /// change to ft_printf
+	ft_printf("Introducing contestants...\n");
 	fprintf(file, "Introducing contestants...\n");
 	player = 0;
 	while (champs)
 	{
-		printf("* Player %d, weighing %d bytes, \"%s\" (\"%s\") !\n",
+		ft_printf("* Player %d, weighing %d bytes, \"%s\" (\"%s\") !\n",
 			++player, champs->file.header.prog_size,
-			champs->file.header.prog_name, champs->file.header.comment); /// change to ft_printf
+			champs->file.header.prog_name, champs->file.header.comment);
 		fprintf(file, "* Player %d, weighing %d bytes, \"%s\" (\"%s\") !\n",
 				  player, champs->file.header.prog_size,
 				  champs->file.header.prog_name, champs->file.header.comment);
@@ -87,8 +85,8 @@ void	introducing_winner(t_corewar *corewar)
 	winner = corewar->game_param.who_lst_live;
 	while (corewar->champs && corewar->champs->num != winner)
 		corewar->champs = corewar->champs->next;
-	printf("Contestant %d, \"%s\", has won !\n", corewar->champs->num,
-			corewar->champs->file.header.prog_name); /// change to ft_printf
+	ft_printf("Contestant %d, \"%s\", has won !\n", corewar->champs->num,
+			corewar->champs->file.header.prog_name);
 	fprintf(file, "Contestant %d, \"%s\", has won !\n", corewar->champs->num,
 			  corewar->champs->file.header.prog_name);
 	fclose(file);
@@ -107,13 +105,13 @@ void    print_map(t_corewar *corewar)
 	while (i < MEM_SIZE)
 	{
 		if (!j)
-			printf("0x%04x : ", i);
-		printf("%.2x", corewar->arena[i]);
+			ft_printf("0x%04x : ", i);
+		ft_printf("%.2x", corewar->arena[i]);
 		if (j < 31)
-			printf(" ");
+			ft_printf(" ");
 		else
 		{
-			printf("\n");
+			ft_printf("\n");
 			j = -1;
 		}
 		i++;

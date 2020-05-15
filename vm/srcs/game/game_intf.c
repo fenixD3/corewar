@@ -1,7 +1,7 @@
 #include "vm.h"
 #include "options.h"
 
-void carriages_actions(t_corewar *corewar, bool *quit)
+void	carriages_actions(t_corewar *corewar, bool *quit)
 {
 	t_carriages *carriage_head;
 
@@ -17,7 +17,7 @@ void carriages_actions(t_corewar *corewar, bool *quit)
 					&corewar->carriages->cycle_op))
 				corewar->carriages->op_pos = do_steps
 						(corewar->carriages->op_pos, 1, corewar->arena);
-			else
+			else if (corewar->flgs.set_flg & VIS_FLG)
 				visualise_arena(corewar, quit, carriage_head);
 		}
 		if (corewar->carriages->cycle_op == 1)

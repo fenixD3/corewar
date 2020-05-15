@@ -19,7 +19,10 @@ void			create_string(char str[100], int input, char *str_inp, char *f)
 	int			i;
 
 	i = 0;
-	ft_sprintf(str, str_inp, f != NULL ? f : input);
+	if (f)
+		ft_sprintf(str, str_inp, f);
+	else
+		ft_sprintf(str, str_inp, input);
 	while (str[i] != '\n')
 		i++;
 	str[i] = '\0';

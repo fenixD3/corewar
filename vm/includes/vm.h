@@ -82,6 +82,8 @@ typedef struct	s_parse_args
 	int 			val[3];
 }				t_parse_args;
 
+# include "vis.h"
+
 void		init_struct(t_corewar *corewar);
 t_champion	*create_new_champ(const char *fname);
 void		push_back_champ(t_champion **champs, const char *fname);
@@ -117,7 +119,7 @@ void	introducing_fighter(t_champion *champs);
 void    print_map(t_corewar *corewar);
 void	introducing_winner(t_corewar *corewar);
 
-void	carriages_actions(t_corewar *corewar);
+void	carriages_actions(t_corewar *corewar, bool *quit);
 unsigned char	*do_steps(unsigned char *start, int step, unsigned char *arena);
 void lets_check(t_corewar *corewar);
 void	decrease_cycles_to_die(t_corewar *corewar);

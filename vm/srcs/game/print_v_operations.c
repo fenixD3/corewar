@@ -3,7 +3,7 @@
 void	print_v_4_add(t_corewar *corewar, t_parse_args *arg_val,
 					  const char *cmd)
 {
-	printf("P%5d | %s r%d r%d r%d\n",
+	ft_printf("P%5d | %s r%d r%d r%d\n",
 		   corewar->carriages->id,
 		   cmd,
 		   arg_val->val[0],
@@ -20,7 +20,7 @@ void	print_v_4_add(t_corewar *corewar, t_parse_args *arg_val,
 void	print_v_4_sub(t_corewar *corewar, t_parse_args *arg_val,
 					  const char *cmd)
 {
-	printf("P%5d | %s r%d r%d r%d\n",
+	ft_printf("P%5d | %s r%d r%d r%d\n",
 		   corewar->carriages->id,
 		   cmd,
 		   arg_val->val[0],
@@ -42,7 +42,7 @@ void	print_v_4_and(t_corewar *corewar, t_parse_args *arg_val,
 
 	val_1 = get_value_frm_arg(arg_val, 0, corewar, 1);
 	val_2 = get_value_frm_arg(arg_val, 1, corewar, 1);
-	printf("P%5d | %s %d %d r%d\n",
+	ft_printf("P%5d | %s %d %d r%d\n",
 		   corewar->carriages->id,
 		   cmd,
 		   val_1,
@@ -64,7 +64,7 @@ void	print_v_4_or(t_corewar *corewar, t_parse_args *arg_val,
 
 	val_1 = get_value_frm_arg(arg_val, 0, corewar, 1);
 	val_2 = get_value_frm_arg(arg_val, 1, corewar, 1);
-	printf("P%5d | %s %d %d r%d\n",
+	ft_printf("P%5d | %s %d %d r%d\n",
 		   corewar->carriages->id,
 		   cmd,
 		   val_1,
@@ -86,7 +86,7 @@ void	print_v_4_xor(t_corewar *corewar, t_parse_args *arg_val,
 
 	val_1 = get_value_frm_arg(arg_val, 0, corewar, 1);
 	val_2 = get_value_frm_arg(arg_val, 1, corewar, 1);
-	printf("P%5d | %s %d %d r%d\n",
+	ft_printf("P%5d | %s %d %d r%d\n",
 		   corewar->carriages->id,
 		   cmd,
 		   val_1,

@@ -38,7 +38,7 @@ void					display_registers(int i, t_carriages *carriages,
 	int					j;
 	int					c;
 	char				todisplay[100];
-	unsigned char		str[100];
+	char				str[36];
 
 	j = 1;
 	c = 0;

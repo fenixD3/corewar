@@ -26,6 +26,9 @@ void			carriages_actions(t_corewar *corewar, bool *quit)
 {
 	t_carriages	*carriage_head;
 
+	int fd = 0;
+	if (corewar->game_param.cycles_aft_start == 74)
+		++fd;
 	carriage_head = corewar->carriages;
 	if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num & 2)
 		call_printf_v_2(corewar, 0);

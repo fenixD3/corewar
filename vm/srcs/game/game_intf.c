@@ -1,9 +1,30 @@
 #include "vm.h"
 #include "options.h"
 
-void	carriages_actions(t_corewar *corewar, bool *quit)
+
+t_vis_tools *g_vs;
+
+bool			visible(t_carriages *carriage)
 {
-	t_carriages *carriage_head;
+	t_vc		*vc;
+	int 		i;
+
+	i = 0;
+	sort_vc(&g_vs->vc_list);
+	vc = g_vs->vc_list;
+	while (vc != NULL && i < 15)
+	{
+		if (carriage->id == vc->carriage->id)
+			return (true);
+		vc = vc->next;
+		i++;
+	}
+	return (false);
+}
+
+void			carriages_actions(t_corewar *corewar, bool *quit)
+{
+	t_carriages	*carriage_head;
 
 	carriage_head = corewar->carriages;
 	if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num & 2)
@@ -17,8 +38,9 @@ void	carriages_actions(t_corewar *corewar, bool *quit)
 					&corewar->carriages->cycle_op))
 				corewar->carriages->op_pos = do_steps(
 						corewar->carriages->op_pos, 1, corewar->arena);
-			else if (corewar->flgs.set_flg & VIS_FLG)
-				visualise_arena(corewar, quit, carriage_head);
+			else if (corewar->flgs.set_flg & VIS_FLG &&
+												visible(corewar->carriages))
+					visualise_arena(corewar, quit, carriage_head);
 		}
 		if (corewar->carriages->cycle_op == 1)
 			make_operation_and_go_next(corewar, &carriage_head);

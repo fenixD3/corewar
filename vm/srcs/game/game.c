@@ -82,7 +82,8 @@ void		introducing_winner(t_corewar *corewar)
 	fclose(file);
 	g_mode = -100;
 	g_change = 1;
-	exit(0);
+	if (!(corewar->flgs.set_flg & VIS_FLG))
+		exit(0);
 }
 
 void		print_map(t_corewar *corewar)

@@ -1,11 +1,9 @@
-cmake_minimum_required(VERSION 3.16)
+cmake_minimum_required(VERSION 3.14)
+
 project(Corewar C)
 
 set(CMAKE_C_STANDARD 11)
-set(CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake-build-debug)
 
-find_package(SDL2 REQUIRED)
-find_package(SDL2_TTF REQUIRED)
 
 include_directories(.)
 include_directories(asm)
@@ -13,8 +11,28 @@ include_directories(ft_printf/includes)
 include_directories(libft)
 include_directories(libft/memlist)
 include_directories(vm/includes)
-include_directories(${SDL2_INCLUDE_DIR})
-include_directories(${SDL2_TTF_INCLUDE_DIR})
+
+
+include_directories(~/Library/Frameworks/SDL2.framework/Headers)
+#include_directories(~/Library/Frameworks/SDL2_image.framework/Headers)
+include_directories(~/Library/Frameworks/SDL2_ttf.framework/Headers)
+
+#project(Corewar C)
+#
+#set(CMAKE_C_STANDARD 11)
+#set(CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake-build-debug)
+#
+#find_package(SDL2 REQUIRED)
+#find_package(SDL2_TTF REQUIRED)
+#
+#include_directories(.)
+#include_directories(asm)
+#include_directories(ft_printf/includes)
+#include_directories(libft)
+#include_directories(libft/memlist)
+#include_directories(vm/includes)
+#include_directories(${SDL2_INCLUDE_DIR})
+#include_directories(${SDL2_TTF_INCLUDE_DIR})
 
 add_executable(Asm
         asm/asm.c
@@ -220,7 +238,7 @@ add_executable(Asm
         options.h
         vm/includes/vm_structs.h)
 
-target_link_libraries(Asm ${SDL2_LIBRARY} ${SDL2_TTF_LIBRARY})
+#target_link_libraries(Asm ${SDL2_LIBRARY} ${SDL2_TTF_LIBRARY})
 
 add_executable(Corewar
         asm/asm.h
@@ -427,4 +445,8 @@ add_executable(Corewar
         options.h
         )
 
-target_link_libraries(Corewar ${SDL2_LIBRARY} ${SDL2_TTF_LIBRARY})
+#target_link_libraries(Corewar ${SDL2_LIBRARY} ${SDL2_TTF_LIBRARY})
+target_link_libraries(Corewar "-framework SDL2")
+#target_link_libraries(dencorewar "-framework SDL2_image")
+target_link_libraries(Corewar "-framework SDL2_ttf")
+set_target_properties(Corewar PROPERTIES LINK_FLAGS "-F /Users/$ENV{USER}/Library/Frameworks")

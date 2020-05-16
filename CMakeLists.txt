@@ -3,7 +3,10 @@ cmake_minimum_required(VERSION 3.14)
 project(Corewar C)
 
 set(CMAKE_C_STANDARD 11)
+set(CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake-build-debug)
 
+find_package(SDL2 REQUIRED)
+find_package(SDL2_TTF REQUIRED)
 
 include_directories(.)
 include_directories(asm)
@@ -11,11 +14,13 @@ include_directories(ft_printf/includes)
 include_directories(libft)
 include_directories(libft/memlist)
 include_directories(vm/includes)
+include_directories(${SDL2_INCLUDE_DIR})
+include_directories(${SDL2_TTF_INCLUDE_DIR})
 
 
-include_directories(~/Library/Frameworks/SDL2.framework/Headers)
-#include_directories(~/Library/Frameworks/SDL2_image.framework/Headers)
-include_directories(~/Library/Frameworks/SDL2_ttf.framework/Headers)
+#include_directories(~/Library/Frameworks/SDL2.framework/Headers)
+##include_directories(~/Library/Frameworks/SDL2_image.framework/Headers)
+#include_directories(~/Library/Frameworks/SDL2_ttf.framework/Headers)
 
 #project(Corewar C)
 #
@@ -194,51 +199,13 @@ add_executable(Asm
         libft/ml_strsplit.c
         libft/ml_strsub.c
         libft/ml_strtrim.c
-        vm/includes/disasm.h
-        vm/includes/error_defs.h
-        vm/includes/vis.h
-        vm/includes/vis_errors.h
-        vm/includes/vm.h
-        vm/srcs/game/vis/create_vs.c
-        vm/srcs/game/vis/disasm.c
-        vm/srcs/game/vis/disasm_funcs.c
-        vm/srcs/game/vis/display_carriages.c
-        vm/srcs/game/vis/display_game_data.c
-        vm/srcs/game/vis/display_side_menu.c
-        vm/srcs/game/vis/draw_frame.c
-        vm/srcs/game/vis/higlight_cells.c
-        vm/srcs/game/vis/init_sdl.c
-        vm/srcs/game/vis/print_arena.c
-        vm/srcs/game/vis/support_func.c
-        vm/srcs/game/vis/track_events.c
-        vm/srcs/game/vis/vc_list.c
-        vm/srcs/game/vis/vc_sort.c
-        vm/srcs/game/vis/visualise_arena.c
-        vm/srcs/game/args_intf.c
-        vm/srcs/game/game.c
-        vm/srcs/game/game_intf.c
-        vm/srcs/game/helper_func.c
-        vm/srcs/game/instr_fork_zjmp_live_aff.c
-        vm/srcs/game/instr_ld.c
-        vm/srcs/game/instr_operations.c
-        vm/srcs/game/instr_st.c
-        vm/srcs/game/print_fork_zjmp_live_aff.c
-        vm/srcs/game/print_v_flg.c
-        vm/srcs/game/print_v_ld.c
-        vm/srcs/game/print_v_operations.c
-        vm/srcs/game/print_v_st.c
-        vm/srcs/struct_intf/carriage_intf.c
-        vm/srcs/struct_intf/corewar_intf.c
-        vm/srcs/validation/parse_input_intf.c
-        vm/srcs/validation/parse_inputs.c
-        vm/srcs/validation/reports.c
         fast_strsplit.c
         ft_wordequ.c
         op.h
         options.h
         vm/includes/vm_structs.h)
 
-#target_link_libraries(Asm ${SDL2_LIBRARY} ${SDL2_TTF_LIBRARY})
+target_link_libraries(Asm ${SDL2_LIBRARY} ${SDL2_TTF_LIBRARY})
 
 add_executable(Corewar
         asm/asm.h
@@ -433,6 +400,7 @@ add_executable(Corewar
         vm/srcs/game/print_v_ld.c
         vm/srcs/game/print_v_operations.c
         vm/srcs/game/print_v_st.c
+        vm/srcs/game/print_v_4_flg.c
         vm/srcs/struct_intf/carriage_intf.c
         vm/srcs/struct_intf/corewar_intf.c
         vm/srcs/validation/parse_input_intf.c
@@ -445,8 +413,9 @@ add_executable(Corewar
         options.h
         )
 
-#target_link_libraries(Corewar ${SDL2_LIBRARY} ${SDL2_TTF_LIBRARY})
+target_link_libraries(Corewar ${SDL2_LIBRARY} ${SDL2_TTF_LIBRARY})
+#[[
 target_link_libraries(Corewar "-framework SDL2")
 #target_link_libraries(dencorewar "-framework SDL2_image")
 target_link_libraries(Corewar "-framework SDL2_ttf")
-set_target_properties(Corewar PROPERTIES LINK_FLAGS "-F /Users/$ENV{USER}/Library/Frameworks")
+set_target_properties(Corewar PROPERTIES LINK_FLAGS "-F /Users/$ENV{USER}/Library/Frameworks")]]

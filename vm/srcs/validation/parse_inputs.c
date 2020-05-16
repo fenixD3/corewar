@@ -9,34 +9,40 @@ void	parse_arguments(int ac, char **av, t_corewar *corewar)
 	while (++i < ac)
 	{
 		if (is_flg(av[i], &corewar->flgs))
-			parse_flags(corewar, av, &i);
+			parse_flags(corewar, ac, av, &i);
 		else if (!is_champion(av[i], corewar))
 			get_error("Champion file should contain .cor completion");
 	}
+	if (!corewar->champs)
+		get_error("You've not entered a champion");
 	validation_champions(corewar->champs, &corewar->game_param);
 }
 
-void	parse_flags(t_corewar *corewar, char **av, int *i)
+void	parse_flags(t_corewar *corewar, const int ac, char **av, int *i)
 {
 	if (corewar->flgs.set_flg & N_FLG)
 	{
-		if (is_champion(av[++*i], corewar))
+		if (++*i == ac || is_champion(av[*i], corewar))
 			get_error("After -n flag must be a number");
 		if ((corewar->flgs.nxt_player_num = ft_atoi(av[*i])) <= 0 ||
 			corewar->flgs.nxt_player_num > MAX_PLAYERS)
 			get_error(ERR_NUM_AFT_N_FLG);
-		if (!is_champion(av[++*i], corewar))
+		if (++*i == ac || !is_champion(av[*i], corewar))
 			get_error("After -n <num> must be a champion");
 		corewar->flgs.set_flg ^= N_FLG;
 	}
 	else if (corewar->flgs.set_flg & DUMP_FLG)
 	{
-		if (is_champion(av[++*i], corewar))
+		if (++*i == ac || is_champion(av[*i], corewar))
 			get_error("After -dump flag must be a number");
 		corewar->flgs.nbr_cycles_dump = ft_atoi(av[*i]);
 	}
 	else if (corewar->flgs.set_flg & V_FLG)
-		corewar->flgs.verb_num = ft_atoi(av[++*i]);
+	{
+		if (++*i == ac || is_champion(av[*i], corewar))
+			get_error("After -v flag must be a number");
+		corewar->flgs.verb_num = ft_atoi(av[*i]);
+	}
 }
 
 void	validation_champions(t_champion *champs, t_game_param *game_params)

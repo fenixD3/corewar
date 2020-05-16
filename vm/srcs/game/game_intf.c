@@ -28,7 +28,7 @@ void			carriages_actions(t_corewar *corewar, bool *quit)
 
 	carriage_head = corewar->carriages;
 	if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num & 2)
-		call_printf_v_2_16(corewar, 0);
+		call_printf_v_2(corewar, 0);
 	while (corewar->carriages)
 	{
 		if (corewar->carriages->cycle_op <= 0)
@@ -73,7 +73,7 @@ void	decrease_cycles_to_die(t_corewar *corewar)
 	{
 		corewar->game_param.cycles_to_die -= CYCLE_DELTA;
 		if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num & 2)
-			call_printf_v_2_16(corewar, 1);
+			call_printf_v_2(corewar, 1);
 		corewar->game_param.check_cnt = 0;
 		g_change = 1;
 	}
@@ -83,7 +83,7 @@ void	decrease_cycles_to_die(t_corewar *corewar)
 	{
 		corewar->game_param.cycles_to_die -= CYCLE_DELTA;
 		if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num & 2)
-			call_printf_v_2_16(corewar, 1);
+			call_printf_v_2(corewar, 1);
 		corewar->game_param.check_cnt = 0;
 		g_change = 1;
 	}
@@ -122,6 +122,6 @@ void	make_operation_and_go_next(t_corewar *corewar,
 	if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num & 16 &&
 	(corewar->carriages->op_code != 9 || (corewar->carriages->op_code == 9 &&
 												!corewar->carriages->carry)))
-		call_printf_v_2_16(corewar, 0);
+		call_printf_v_16(corewar);
 	corewar->carriages->op_pos = start_op;
 }

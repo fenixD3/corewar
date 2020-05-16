@@ -54,7 +54,7 @@ t_carriages	*delete_carriage(t_corewar *corewar, int search_id)
 		carriage = carriage->next;
 	}
 	if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num & 8)
-		call_printf_v_1_8(corewar, NULL, carriage, search_id);
+		call_printf_v_8(corewar, carriage, search_id);
 	if (!prev)
 		corewar->carriages = carriage->next;
 	else

@@ -95,15 +95,17 @@ unsigned char	*skip_op(unsigned char *start_op, t_arg_type *args, t_op oper,
 
 void			prepare_battle(t_corewar *corewar, bool *quit)
 {
-	create_vs();
+	if (corewar->flgs.set_flg & VIS_FLG)
+		create_vs();
 	g_contnue = false;
 	g_mode = -1;
 	file = fopen("log.txt", "w");
 	init_arena(corewar->arena, corewar->champs,
 				&corewar->carriages, &corewar->flgs);
 	introducing_fighter(corewar->champs);
-	if (!init())
-		go_exit(ERR_CREATE_VS);
+	if (corewar->flgs.set_flg & VIS_FLG)
+		if (!init())
+			go_exit(ERR_CREATE_VS);
 	*quit = false;
 	g_change = 1;
 }

@@ -17,7 +17,7 @@ void	live(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 		{
 			corewar->game_param.who_lst_live = -arg_val->val[0];
 			if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num & 1)
-				call_printf_v_1_8(corewar, champ, NULL, 0);
+				call_printf_v_1(corewar, champ);
 			break ;
 		}
 		champ = champ->next;

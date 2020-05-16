@@ -10,7 +10,7 @@ void		start_game(t_corewar *corewar)
 	prepare_battle(corewar, &quit);
 	while (!quit)
 	{
-		if (g_mode == -100)
+		if (g_mode == -100 && corewar->flgs.set_flg & VIS_FLG)
 			visualise_arena(corewar, &quit, NULL);
 		else
 		{

@@ -40,7 +40,7 @@ void			get_error(char *error);
 void			prepare_battle(t_corewar *corewar, bool *quit);
 
 void			parse_arguments(int ac, char **av, t_corewar *corewar);
-void			parse_flags(t_corewar *corewar, char **av, int *i);
+void parse_flags(t_corewar *corewar, const int ac, char **av, int *i);
 void			validation_champions(t_champion *champs,
 												t_game_param *game_params);
 void			byte_code_validation(const int fd, t_champion *champ);
@@ -121,11 +121,13 @@ void			print_command_bytes(unsigned char *start_op,
 
 FILE *file;
 
-void			call_printf_v_2_16(t_corewar *corewar, _Bool printf_cycle_die);
-void			call_printf_v_1_8(const t_corewar *corewar,
-						const t_champion *champ,
-						const t_carriages *carriage, int search_id);
-void			call_printf_v_4(t_corewar *corewar, t_parse_args *arg_val,
+void	call_printf_v_2(t_corewar *corewar, _Bool printf_cycle_die);
+void	call_printf_v_16(t_corewar *corewar);
+void	call_printf_v_1(const t_corewar *corewar, const t_champion *champ);
+void	call_printf_v_8(const t_corewar *corewar,
+					 const t_carriages *carriage,
+					 int search_id);
+void	call_printf_v_4(t_corewar *corewar, t_parse_args *arg_val,
 						const char *cmd);
 
 void			print_v_4_live(t_corewar *corewar, t_parse_args *arg_val,

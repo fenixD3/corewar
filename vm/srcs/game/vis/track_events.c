@@ -19,27 +19,28 @@ int				sidemenu_pressed(int32_t y, t_corewar *crwr)
 	int			k;
 	t_vc		*vc;
 	int			done;
+	int			res;
 
 	done = 0;
 	k = 15;
 	vc = g_vs->vc_list;
 	while (vc != NULL && k < 900 && g_mode >= 0)
 	{
-		if (vc->carriage->op_pos == &(crwr->arena[g_mode]))
+		if (vc->carriage->op_pos == &(crwr->arena[g_mode]) && !done &&
+		(y > k && ((vc->is_open == true) ? y < k + 162 : y < k + 54)))
 		{
-			if (!done && (y > k && ((vc->is_open == true) ?
-									y < k + 162 : y < k + 54)))
-			{
-				done = 1;
-				k += (vc->is_open == true) ? 63 : 162;
-			}
-			else
-				k += vc->is_open ? 162 : 63;
+			done = 1;
+			k += (vc->is_open == true) ? 63 : 162;
 		}
+		else if (vc->carriage->op_pos == &(crwr->arena[g_mode]))
+			k += vc->is_open ? 162 : 63;
 		vc = vc->next;
 	}
+	res = y + 4100;
+	if (!done && g_mode >= 0)
+		res += 10000;
 	g_mode = (!done) ? -1 : g_mode;
-	return (y + 4100);
+	return (res);
 }
 
 int				catch(SDL_Event *e, t_corewar *crwr)

@@ -34,7 +34,13 @@ void			show_abreviations(char string[100])
 {
 	int			text_x;
 
-	text_x = 705;
+	text_x = 350;
+	create_string(string, 0, "GAME  %s\n", "STATISTICS");
+	display_item(&text_x, string, 3);
+	text_x = 1150;
+	create_string(string, 0, "%s\n", "ABBREVIATIONS");
+	display_item(&text_x, string, 3);
+	text_x = 865;
 	create_string(string, 0,
 				"%s - cycles before execution\n", "CBE");
 	display_item(&text_x, string, 25);
@@ -53,15 +59,15 @@ void			show_usage(char string[100])
 {
 	int			text_x;
 
-	text_x = 1585;
+	text_x = 1595;
 	create_string(string, 0,
 				"= = = %s = = =\n", "USAGE. Press ...");
 	display_item(&text_x, string, 0);
-	text_x = 1565;
+	text_x = 1575;
 	create_string(string, 0,
 				"%s\n", "Enter - to speed up the game");
 	display_item(&text_x, string, 12);
-	text_x = 1565;
+	text_x = 1575;
 	create_string(string, 0,
 				"%s\n", "-> - to manage game manually");
 	display_item(&text_x, string, 24);
@@ -72,7 +78,7 @@ void			display_game_data(t_corewar *corewar)
 	char		string[100];
 	int			text_x;
 
-	text_x = 15;
+	text_x = 45;
 	create_string(string, corewar->game_param.cycles_to_die,
 					"cycles to die : %d\n", NULL);
 	display_item(&text_x, string, 25);
@@ -83,17 +89,11 @@ void			display_game_data(t_corewar *corewar)
 					"last live : %d\n", NULL);
 	display_item(&text_x, string, 25);
 	create_string(string, corewar->game_param.check_cnt,
-			"check count : %d\n", NULL);
+					"check count : %d\n", NULL);
 	display_item(&text_x, string, 25);
-	create_string(string, corewar->game_param.live_period_cnt,
-			"lives cnt : %d\n", NULL);
+	create_string(string, corewar->game_param.cycles_bfr_check,
+			"cycles before check : %d\n", NULL);
 	display_item(&text_x, string, 25);
-	text_x = 290;
-	create_string(string, 0, "GAME  %s\n", "STATISTICS");
-	display_item(&text_x, string, 3);
-	text_x = 1050;
-	create_string(string, 0, "%s\n", "ABBREVIATIONS");
-	display_item(&text_x, string, 3);
 	show_abreviations(string);
 	show_usage(string);
 }

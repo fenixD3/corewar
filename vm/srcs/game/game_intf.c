@@ -40,7 +40,7 @@ void			carriages_actions(t_corewar *corewar, bool *quit)
 						corewar->carriages->op_pos, 1, corewar->arena);
 			else if (corewar->flgs.set_flg & VIS_FLG &&
 												visible(corewar->carriages))
-					visualise_arena(corewar, quit, carriage_head);
+				visualise_arena(corewar, quit, carriage_head, 1);
 		}
 		if (corewar->carriages->cycle_op == 1)
 			make_operation_and_go_next(corewar, &carriage_head);

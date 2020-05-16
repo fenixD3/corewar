@@ -11,7 +11,7 @@ void		start_game(t_corewar *corewar)
 	while (!quit)
 	{
 		if (g_mode == -100 && corewar->flgs.set_flg & VIS_FLG)
-			visualise_arena(corewar, &quit, NULL);
+			visualise_arena(corewar, &quit, NULL, 0);
 		else
 		{
 			if (corewar->game_param.cycles_aft_start++ ==
@@ -23,7 +23,7 @@ void		start_game(t_corewar *corewar)
 corewar->game_param.cycles_to_die) || corewar->game_param.cycles_to_die <= 0)
 				lets_check(corewar);
 			if ((corewar->flgs.set_flg & VIS_FLG) && g_change)
-				visualise_arena(corewar, &quit, corewar->carriages);
+				visualise_arena(corewar, &quit, corewar->carriages, 0);
 			if (!corewar->carriages)
 				introducing_winner(corewar);
 		}

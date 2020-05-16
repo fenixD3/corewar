@@ -20,7 +20,7 @@ void	newline_endfile_check(int fd, char *line, int ret, t_token *token)
 	char c;
 
 	if (ret < 0 || !token || !token->prev)
-		go_exit("ERROR: with file");
+		go_exit("ERROR: empty file");
 	if (token->prev->type == COMMENT && token->prev->prev &&
 	token->prev->prev->type == NEW_LINE)
 		return ;

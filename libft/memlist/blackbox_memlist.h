@@ -21,11 +21,10 @@
 # define ML_CLEARALL	4
 # define ML_GIVEMEM		5
 # include <stdint.h>
+
 /*
 ** ml is acronym for words "memory list"
 */
-
-typedef uint8_t u_int8_t;
 
 typedef struct	s_ml_lists
 {
@@ -35,7 +34,7 @@ typedef struct	s_ml_lists
 	struct s_ml_lists	*prev;
 }				t_ml_lists;
 
-void * ml_static_lists(void *ptr, u_int8_t rule, u_int32_t list_num);
+void			*ml_static_lists(void *ptr, u_int8_t rule, u_int32_t list_num);
 
 t_ml_lists		*add_ml_list(u_int32_t list_num, t_ml_lists **cur,
 															t_ml_lists **head);
@@ -46,6 +45,6 @@ void			ml_clear_all_lists(t_ml_lists *lst, t_ml_lists *head);
 void			ml_delelem(t_ml **head, void *ptr);
 u_int8_t		ml_clear_lst(t_ml_lists **lst, t_ml_lists **head);
 
-t_ml *ml_bb_givemem(t_ml_lists *lst, u_int32_t list_num);
+t_ml			*ml_bb_givemem(t_ml_lists *lst, u_int32_t list_num);
 
 #endif

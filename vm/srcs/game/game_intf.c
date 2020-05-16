@@ -15,8 +15,8 @@ void	carriages_actions(t_corewar *corewar, bool *quit)
 			corewar->carriages->op_code = *corewar->carriages->op_pos;
 			if (!valid_op_set_cycle(corewar->carriages->op_pos,
 					&corewar->carriages->cycle_op))
-				corewar->carriages->op_pos = do_steps
-						(corewar->carriages->op_pos, 1, corewar->arena);
+				corewar->carriages->op_pos = do_steps(
+						corewar->carriages->op_pos, 1, corewar->arena);
 			else if (corewar->flgs.set_flg & VIS_FLG)
 				visualise_arena(corewar, quit, carriage_head);
 		}
@@ -88,16 +88,18 @@ void	make_operation_and_go_next(t_corewar *corewar,
 	start_op = get_arguments_frm_code(start_op, args_val.code_args,
 			g_op[idx_op], corewar->arena);
 	if (is_args_valid(&args_val, start_op, &g_op[idx_op], corewar->arena))
-		(*instrs_ptr[idx_op])(corewar, &args_val, carriage_head);
+		(*g_instrs_ptr[idx_op])(corewar, &args_val, carriage_head);
 	if (corewar->carriages->op_code != 9 ||
 	(corewar->carriages->op_code == 9 && !corewar->carriages->carry))
 		start_op = skip_op(start_op, args_val.code_args,
 				g_op[idx_op], corewar->arena);
 	else
 		start_op = corewar->carriages->op_pos;
-	corewar->carriages->cnt_bytes_to_op = cnt_bytes_for_op(&g_op[idx_op], args_val.code_args);
+	corewar->carriages->cnt_bytes_to_op = cnt_bytes_for_op(&g_op[idx_op],
+														args_val.code_args);
 	if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num & 16 &&
-	(corewar->carriages->op_code != 9 || (corewar->carriages->op_code == 9 && !corewar->carriages->carry)))
+	(corewar->carriages->op_code != 9 || (corewar->carriages->op_code == 9 &&
+												!corewar->carriages->carry)))
 		call_printf_v_2_16(corewar, 0);
 	corewar->carriages->op_pos = start_op;
 }

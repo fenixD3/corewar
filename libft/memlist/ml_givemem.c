@@ -13,7 +13,7 @@
 #include "blackbox_memlist.h"
 #include "libft.h"
 
-t_ml *ml_bb_givemem(t_ml_lists *lst, u_int32_t list_num)
+t_ml	*ml_bb_givemem(t_ml_lists *lst, u_int32_t list_num)
 {
 	while (lst && lst->list_num != list_num)
 		lst = lst->next;

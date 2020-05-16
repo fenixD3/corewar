@@ -1,11 +1,11 @@
 #include "vm.h"
 
-void    live(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
+void	live(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 {
 	t_champion	*champ;
 
 	if (!*head)
-	    return ;
+		return ;
 	if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num & 4)
 		call_printf_v_4(corewar, arg_val, "live");
 	++corewar->game_param.live_period_cnt;
@@ -35,7 +35,7 @@ void	zjump(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 			ft_printf("FAILED\n");
 			fprintf(file, "FAILED\n");
 		}
-		return;
+		return ;
 	}
 	corewar->carriages->op_pos = do_steps(corewar->carriages->op_pos,
 		(int16_t)arg_val->val[0] % IDX_MOD, corewar->arena);
@@ -65,7 +65,7 @@ void	lfork(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 	(*head)->carry = corewar->carriages->carry;
 	(*head)->cycle_when_live = corewar->carriages->cycle_when_live;
 	ft_memcpy((*head)->reg, corewar->carriages->reg,
-			  sizeof(corewar->carriages->reg));
+				sizeof(corewar->carriages->reg));
 	(*head)->op_pos = do_steps(corewar->carriages->op_pos,
 		(int16_t)arg_val->val[0], corewar->arena);
 	if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num & 4)
@@ -79,5 +79,5 @@ void	aff(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 	if (!*head || !(corewar->flgs.set_flg & A_FLG))
 		return ;
 	ft_printf("%c\n",
-			  (char)corewar->carriages->reg[arg_val->val[0] - 1]);
+				(char)corewar->carriages->reg[arg_val->val[0] - 1]);
 }

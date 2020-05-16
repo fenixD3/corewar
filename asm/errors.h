@@ -2,10 +2,6 @@
 #ifndef ERRORS_H
 # define ERRORS_H
 
-/*
-** Check for tokens sequence
-*/
-
 # define NAME_MISSING		"ERROR: Champion's file does not contain name"
 
 # define CMNT_MISSING		"ERROR: Champion's file does not contain comment"
@@ -20,15 +16,11 @@
 
 # define NAME_CMT	"ERROR: Champion's name and/or comment placed incorrectly"
 
-# define DOUBLE_COMMENT		"ERROR: Champion can have only one comment"
+# define DOUBLE_COMMENT		"ERROR: Champion can have double comment"
 
-# define DOUBLE_NAME		"ERROR: Champion can have only one name"
+# define DOUBLE_NAME		"ERROR: Champion can have double name"
 
 # define WRONG_SEPARATOR	"ERROR: Arguments separated incorrectly"
-
-/*
-** Check for commands' arguments correctness
-*/
 
 # define LONG_NAME			"ERROR: Champion's name is too long"
 
@@ -46,10 +38,12 @@
 
 # define INVALID_CMD		"ERROR: Command is invalid"
 
+# define TREG_INVALID_NUM	"ERROR: argument T_REG has invalid number"
+
 /*
 ** WARNINGS
 */
 
-# define WRNNG_TREG_INVALID_NUM	"WARNING: argument T_REG has invalid number"
+# define WRNNG_TREG_INVALID_NUM	"WARNING: argument T_REG has unsupported number"
 
 #endif

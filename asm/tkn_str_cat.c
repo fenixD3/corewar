@@ -59,11 +59,11 @@ u_int16_t	tkn_str_len(t_token *tkn, u_int16_t *tkn_num)
 		}
 		tkn = tkn->next;
 	}
-	if (!tkn)
+	if (!tkn || !tkn->next || tkn->next->type == END)
 		go_exit(NOCODE);
 	if (len < 0)
 		go_exit(INVALID_STR);
-	return (len);
+	return (len + *tkn_num - 1);
 }
 
 t_token		*jump_next_string(t_token *token)

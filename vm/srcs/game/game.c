@@ -1,8 +1,9 @@
+
 #include "vm.h"
 
 t_vis_tools *g_vs;
 
-void	start_game(t_corewar *corewar)
+void		start_game(t_corewar *corewar)
 {
 	bool		quit;
 
@@ -17,7 +18,7 @@ void	start_game(t_corewar *corewar)
 		corewar->flgs.nbr_cycles_dump && corewar->flgs.set_flg & DUMP_FLG)
 				print_map(corewar);
 			++corewar->game_param.cycles_bfr_check;
-  			carriages_actions(corewar, &quit);
+			carriages_actions(corewar, &quit);
 			if (!(corewar->game_param.cycles_bfr_check -
 corewar->game_param.cycles_to_die) || corewar->game_param.cycles_to_die <= 0)
 				lets_check(corewar);
@@ -29,8 +30,8 @@ corewar->game_param.cycles_to_die) || corewar->game_param.cycles_to_die <= 0)
 	}
 }
 
-void	init_arena(unsigned char arena[], t_champion *champs,
-				t_carriages **carriages, const t_flgs *flg)
+void		init_arena(unsigned char arena[], t_champion *champs,
+								t_carriages **carriages, const t_flgs *flg)
 {
 	unsigned int		code_shift;
 	int					i;
@@ -48,7 +49,7 @@ void	init_arena(unsigned char arena[], t_champion *champs,
 	}
 }
 
-void	introducing_fighter(t_champion *champs)
+void		introducing_fighter(t_champion *champs)
 {
 	int		player;
 
@@ -61,13 +62,13 @@ void	introducing_fighter(t_champion *champs)
 			++player, champs->file.header.prog_size,
 			champs->file.header.prog_name, champs->file.header.comment);
 		fprintf(file, "* Player %d, weighing %d bytes, \"%s\" (\"%s\") !\n",
-				  player, champs->file.header.prog_size,
-				  champs->file.header.prog_name, champs->file.header.comment);
+				player, champs->file.header.prog_size,
+				champs->file.header.prog_name, champs->file.header.comment);
 		champs = champs->next;
 	}
 }
 
-void	introducing_winner(t_corewar *corewar)
+void		introducing_winner(t_corewar *corewar)
 {
 	int		winner;
 
@@ -77,14 +78,14 @@ void	introducing_winner(t_corewar *corewar)
 	ft_printf("Contestant %d, \"%s\", has won !\n", corewar->champs->num,
 			corewar->champs->file.header.prog_name);
 	fprintf(file, "Contestant %d, \"%s\", has won !\n", corewar->champs->num,
-			  corewar->champs->file.header.prog_name);
+			corewar->champs->file.header.prog_name);
 	fclose(file);
 	g_mode = -100;
 	g_change = 1;
 	exit(0);
 }
 
-void    print_map(t_corewar *corewar)
+void		print_map(t_corewar *corewar)
 {
 	int i;
 	int j;

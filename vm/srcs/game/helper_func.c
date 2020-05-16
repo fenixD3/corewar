@@ -39,10 +39,12 @@ int		get_value_frm_arg(t_parse_args *arg_val, int arg_idx,
 	{
 		if (is_idx_mod)
 			val = reverse_vm_bytes(do_steps(corewar->carriages->op_pos,
-				(int16_t)arg_val->val[arg_idx] % IDX_MOD, corewar->arena), 4, corewar->arena);
+				(int16_t)arg_val->val[arg_idx] % IDX_MOD, corewar->arena),
+														4, corewar->arena);
 		else
 			val = reverse_vm_bytes(do_steps(corewar->carriages->op_pos,
-				(int16_t)arg_val->val[arg_idx], corewar->arena), 4, corewar->arena);
+				(int16_t)arg_val->val[arg_idx], corewar->arena),
+														4, corewar->arena);
 	}
 	return (val);
 }
@@ -69,8 +71,8 @@ int		cnt_bytes_for_op(const t_op *op, const t_arg_type *code_args)
 }
 
 void	print_command_bytes(unsigned char *start_op,
-						 int bytes_to_nxt,
-						 unsigned char *arena)
+							int bytes_to_nxt,
+							unsigned char *arena)
 {
 	while (bytes_to_nxt--)
 	{

@@ -14,16 +14,6 @@
 
 t_vis_tools *g_vs;
 
-//bool	init_sdl_images(void)
-//{
-//	bool success;
-//
-//	success = true;
-//	if (!(IMG_Init(IMG_INIT_PNG) & IMG_INIT_PNG))
-//		success = false;
-//	return (success);
-//}
-
 bool		init_font(void)
 {
 	bool	success;
@@ -64,10 +54,7 @@ bool		init(void)
 		SDL_SetWindowPosition(g_vs->window, 10, 10);
 		g_vs->render = SDL_CreateRenderer(g_vs->window, -1, 0);
 	}
-//	if (!init_sdl_images()) IF SOME PICTURES NEEDED
-//		success = false;
 	if (!init_font())
 		success = false;
-//	if (!init_surface(g_vs)) IF SOME PICTURES NEEDED
 	return (success);
 }

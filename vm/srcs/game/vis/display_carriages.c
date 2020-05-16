@@ -13,9 +13,9 @@
 #include "vis.h"
 #include "vis_errors.h"
 
-t_vis_tools *g_vs;
+t_vis_tools	*g_vs;
 
-void			draw_carriage(int i, int priority, SDL_Color color)
+void		draw_carriage(int i, int priority, SDL_Color color)
 {
 	SDL_Rect	carrg;
 	int			wight;
@@ -33,8 +33,7 @@ void			draw_carriage(int i, int priority, SDL_Color color)
 	}
 }
 
-
-void display_carriages(unsigned char *arena, t_carriages *carriage)
+void		display_carriages(unsigned char *arena, t_carriages *carriage)
 {
 	int			i;
 	int			priority;

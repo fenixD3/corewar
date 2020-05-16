@@ -32,7 +32,11 @@ void	if_arg(t_token *token, t_token_sec *check_list)
 		if ((check_list)->arg && !(check_list)->separator)
 			token_exception(SPRTR_MISS, token, 0);
 		if (((t_arg*)token->content)->type & T_REG &&
-					(((t_arg*)token->content)->num < 1 ||
+				(((t_arg*)token->content)->num < 0 ||
+				((t_arg*)token->content)->num > 99))
+			token_exception(TREG_INVALID_NUM, token, 0);
+		if (((t_arg*)token->content)->type & T_REG &&
+					(((t_arg*)token->content)->num == 0 ||
 					((t_arg*)token->content)->num > REG_NUMBER))
 			token_exception(WRNNG_TREG_INVALID_NUM, token, 1);
 		(check_list)->new_line = false;

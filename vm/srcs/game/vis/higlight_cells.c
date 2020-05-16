@@ -1,5 +1,4 @@
 
-
 #include "vis.h"
 
 t_vis_tools *g_vs;
@@ -25,7 +24,7 @@ void				higlighting(t_vc *vc, t_corewar *crwr)
 	SDL_Rect		carrg;
 	int				c;
 	SDL_Rect		dstrect;
-	char 			res[3];
+	char			res[3];
 
 	c = vc->carriage->op_pos - crwr->arena;
 	color = (vc->carriage->reg[0] < 0 && vc->carriage->reg[0] > -5) ?
@@ -38,7 +37,7 @@ void				higlighting(t_vc *vc, t_corewar *crwr)
 	res[1] = "0123456789abcdef"[crwr->arena[c] & 0x0F];
 	res[2] = '\0';
 	g_vs->txt_srfc = TTF_RenderText_Solid(g_vs->text_font,
-										  res, g_vs->text_color[5]);
+												res, g_vs->text_color[5]);
 	g_vs->text = SDL_CreateTextureFromSurface(g_vs->render, g_vs->txt_srfc);
 	dstrect = create_rect(12 + ((c - (c / 64) * 64) * 24),
 				14 + ((c / 64) * 15), g_vs->txt_srfc->w, g_vs->txt_srfc->h);
@@ -52,7 +51,7 @@ void				higlight_all(t_vc *vc, t_corewar *crwr)
 	SDL_Rect		carrg;
 	int				c;
 	SDL_Rect		dstrect;
-	char 			res[3];
+	char			res[3];
 
 	while (vc != NULL)
 	{
@@ -69,19 +68,19 @@ void				higlight_all(t_vc *vc, t_corewar *crwr)
 			res[1] = "0123456789abcdef"[crwr->arena[c] & 0x0F];
 			res[2] = '\0';
 			g_vs->txt_srfc = TTF_RenderText_Solid(g_vs->text_font,
-												  res, g_vs->text_color[5]);
+												res, g_vs->text_color[5]);
 			g_vs->text = SDL_CreateTextureFromSurface(g_vs->render, g_vs->txt_srfc);
 			dstrect = create_rect(12 + ((c - (c / 64) * 64) * 24),
-								  14 + ((c / 64) * 15), g_vs->txt_srfc->w, g_vs->txt_srfc->h);
+				14 + ((c / 64) * 15), g_vs->txt_srfc->w, g_vs->txt_srfc->h);
 			SDL_RenderCopy(g_vs->render, g_vs->text, NULL, &dstrect);
 			free_mem_font();
 		}
 		vc = vc->next;
 	}
-
 }
 
-void				higlight_cells(int cariages, t_vc *vc, t_corewar *crwr, int ind)
+void				higlight_cells(int cariages, t_vc *vc, t_corewar *crwr,
+																	int ind)
 {
 	unsigned char	*to_fill[cariages];
 	int				i;
@@ -97,7 +96,8 @@ void				higlight_cells(int cariages, t_vc *vc, t_corewar *crwr, int ind)
 			&& g_mode >= 0 && vc->carriage->op_pos == &(crwr->arena[g_mode]))
 			|| (ind >= 0 && vc->carriage->op_pos == &(crwr->arena[ind])))
 		{
-			if (!duplicate(to_fill, cariages, vc->carriage->op_pos) && vc->is_open)
+			if (!duplicate(to_fill, cariages, vc->carriage->op_pos) &&
+																vc->is_open)
 			{
 				higlighting(vc, crwr);
 				to_fill[i] = vc->carriage->op_pos;

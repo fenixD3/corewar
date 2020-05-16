@@ -23,7 +23,7 @@ void	zeroing_tools(t_prsng *tools, _Bool zeroing_counter)
 	tools->type = 0;
 	if (zeroing_counter)
 	{
-	    tools->str_spf = NULL;
+		tools->str_spf = NULL;
 		tools->counter = 0;
 		i = 0;
 		while (i++ < BUFF_SIZE)

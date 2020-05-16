@@ -71,11 +71,12 @@ char			**convert_arena(t_corewar *corewar)
 	return (res);
 }
 
-void display_objs(t_corewar *corewar, int update, t_carriages *carriag)
+void			display_objs(t_corewar *corewar, int update,
+													t_carriages *carriag)
 {
 	char		**hex_arena;
 	t_vc		*vc;
-	int 		num_on_menu;
+	int			num_on_menu;
 
 	vc = g_vs->vc_list;
 	draw_backgroung();
@@ -116,7 +117,8 @@ void			show_winer(t_champion *champ)
 	exit(0);
 }
 
-void	visualise_arena(t_corewar *corewar, bool *quit, t_carriages *carriag)
+void			visualise_arena(t_corewar *corewar, bool *quit,
+														t_carriages *carriag)
 {
 	SDL_Event	e;
 	int			stop;

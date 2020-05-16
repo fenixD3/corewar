@@ -86,7 +86,7 @@ void			display_game_data(t_corewar *corewar)
 			"check count : %d\n", NULL);
 	display_item(&text_x, string, 25);
 	create_string(string, corewar->game_param.live_period_cnt,
-				  "lives cnt : %d\n", NULL);
+			"lives cnt : %d\n", NULL);
 	display_item(&text_x, string, 25);
 	text_x = 290;
 	create_string(string, 0, "GAME  %s\n", "STATISTICS");

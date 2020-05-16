@@ -1,14 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   vc_sort.c                                          :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: null <null@student.42.fr>                  +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/04/14 21:23:02 by null              #+#    #+#             */
-/*   Updated: 2020/04/14 21:23:02 by null             ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
 
 #include "vis.h"
 
@@ -25,7 +14,7 @@ t_vc	*find_prev_to_insert(t_vc *head, t_vc *insert)
 	return (head);
 }
 
-t_vc 	*find_and_cut_unsorted_elem(t_vc **head)
+t_vc	*find_and_cut_unsorted_elem(t_vc **head)
 {
 	t_vc *prev;
 	t_vc *curr;
@@ -42,14 +31,14 @@ t_vc 	*find_and_cut_unsorted_elem(t_vc **head)
 	while (curr->next)
 	{
 		if (curr->carriage->cycle_op > curr->next->carriage->cycle_op)
-			return(cut_vc(&prev));
+			return (cut_vc(&prev));
 		prev = curr;
 		curr = curr->next;
 	}
 	return (NULL);
 }
 
-void sort_vc(t_vc **head)
+void	sort_vc(t_vc **head)
 {
 	t_vc *cutted;
 

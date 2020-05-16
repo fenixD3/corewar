@@ -25,7 +25,6 @@ add_executable(Asm
         asm/ft_isdigitalword.c
         asm/ft_isspecial.c
         asm/ft_skipword.c
-        asm/get_header.c
         asm/if_checks.c
         asm/init_headers.c
         asm/label_substitution.c
@@ -179,7 +178,6 @@ add_executable(Asm
         libft/ml_strtrim.c
         vm/includes/disasm.h
         vm/includes/error_defs.h
-        vm/includes/vc_list.h
         vm/includes/vis.h
         vm/includes/vis_errors.h
         vm/includes/vm.h
@@ -220,7 +218,7 @@ add_executable(Asm
         ft_wordequ.c
         op.h
         options.h
-        print_for_delition.c)
+        vm/includes/vm_structs.h)
 
 target_link_libraries(Asm ${SDL2_LIBRARY} ${SDL2_TTF_LIBRARY})
 
@@ -232,7 +230,6 @@ add_executable(Corewar
         asm/ft_isdigitalword.c
         asm/ft_isspecial.c
         asm/ft_skipword.c
-        asm/get_header.c
         asm/if_checks.c
         asm/init_headers.c
         asm/label_substitution.c
@@ -386,10 +383,10 @@ add_executable(Corewar
         libft/ml_strtrim.c
         vm/includes/disasm.h
         vm/includes/error_defs.h
-        vm/includes/vc_list.h
         vm/includes/vis.h
         vm/includes/vis_errors.h
         vm/includes/vm.h
+        vm/includes/vm_structs.h
         vm/srcs/game/vis/create_vs.c
         vm/srcs/game/vis/disasm.c
         vm/srcs/game/vis/disasm_funcs.c
@@ -428,6 +425,6 @@ add_executable(Corewar
         ft_wordequ.c
         op.h
         options.h
-        print_for_delition.c)
+        )
 
 target_link_libraries(Corewar ${SDL2_LIBRARY} ${SDL2_TTF_LIBRARY})

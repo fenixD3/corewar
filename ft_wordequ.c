@@ -1,6 +1,3 @@
-//
-// Created by Mort Deanne on 28/02/2020.
-//
 
 int		ft_wordequ(char *ethalon, char *str, char *delims)
 {

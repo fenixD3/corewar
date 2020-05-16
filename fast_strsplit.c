@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-_Bool	is_special_char(char c, char *specials)
+_Bool			is_special_char(char c, char *specials)
 {
 	while (*specials)
 	{
@@ -23,7 +23,7 @@ _Bool	is_special_char(char c, char *specials)
 	return (0);
 }
 
-_Bool skip_delims(char **line, char *delims, char *comments)
+_Bool			skip_delims(char **line, char *delims, char *comments)
 {
 	while (**line && is_special_char(**line, delims))
 		(*line)++;
@@ -62,9 +62,10 @@ static size_t	count_words(char *line, char *delims, char *comments)
 	return (words);
 }
 
-char			**fast_strsplit(char *line, char *delims, char *comments, void *alloc_func(size_t))
+char			**fast_strsplit(char *line, char *delims, char *comments,
+													void *alloc_func(size_t))
 {
-	char 	**arrptr;
+	char	**arrptr;
 	size_t	words;
 
 	if (!line || !*line || !delims || !*delims ||

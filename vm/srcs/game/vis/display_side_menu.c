@@ -38,9 +38,9 @@ void					if_open(int i, int *done, int ind, t_vc *vc)
 
 int					display_side_menu(t_corewar *crwr, int ind, t_vc *vc)
 {
-	int					i;
-	int					done;
-	int 				displayed;
+	int		i;
+	int		done;
+	int		displayed;
 
 	displayed = 0;
 	i = 15;

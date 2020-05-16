@@ -1,7 +1,7 @@
+
 #include "vis.h"
 
-t_vis_tools *g_vs;
-
+t_vis_tools	*g_vs;
 
 t_carriages	*create_new_carriage(void)
 {
@@ -22,7 +22,7 @@ t_carriages	*create_new_carriage(void)
 	return (new);
 }
 
-void	push_front_carriage(t_carriages **carriages, const t_flgs *flg)
+void		push_front_carriage(t_carriages **carriages, const t_flgs *flg)
 {
 	t_carriages	*new_carriage;
 

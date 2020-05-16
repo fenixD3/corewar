@@ -2,10 +2,10 @@
 #include "options.h"
 #include "vis_errors.h"
 
-unsigned char *get_arguments_frm_code(unsigned char *arg_type_code,
+unsigned char	*get_arguments_frm_code(unsigned char *arg_type_code,
 							t_arg_type *args, t_op oper, unsigned char *arena)
 {
-	int 			idx;
+	int	idx;
 
 	arg_type_code = do_steps(arg_type_code, 1, arena);
 	idx = 0;
@@ -17,14 +17,15 @@ unsigned char *get_arguments_frm_code(unsigned char *arg_type_code,
 			args[idx] = *arg_type_code >> (8 - (idx + 1) * 2) & 0x3u;
 			++idx;
 		}
-	return (oper.argument_type_code ? do_steps(arg_type_code, 1, arena) : arg_type_code);
+	return (oper.argument_type_code ?
+					do_steps(arg_type_code, 1, arena) : arg_type_code);
 }
 
-_Bool		is_args_valid(t_parse_args *args_val, unsigned char *arg_start,
-					   const t_op *oper, unsigned char *arena)
+_Bool			is_args_valid(t_parse_args *args_val, unsigned char *arg_start,
+										const t_op *oper, unsigned char *arena)
 {
 	_Bool	good;
-	int 	idx;
+	int		idx;
 
 	good = 1;
 	idx = -1;
@@ -44,11 +45,12 @@ _Bool		is_args_valid(t_parse_args *args_val, unsigned char *arg_start,
 	return (good);
 }
 
-void	get_arguments_values(t_parse_args *args_val, unsigned char *arg_start,
-						  const t_op *oper, unsigned char *arena)
+void			get_arguments_values(t_parse_args *args_val,
+									unsigned char *arg_start,
+									const t_op *oper, unsigned char *arena)
 {
 	unsigned char	*get_arg;
-	int 			idx;
+	int				idx;
 
 	idx = -1;
 	while (++idx != oper->num_args)
@@ -61,7 +63,8 @@ void	get_arguments_values(t_parse_args *args_val, unsigned char *arg_start,
 		}
 		else if (args_val->code_args[idx] == DIR_CODE)
 		{
-			args_val->val[idx] = reverse_vm_bytes(get_arg, (oper->size_t_dir == 2) ? 2 : 4, arena);
+			args_val->val[idx] = reverse_vm_bytes(get_arg,
+								(oper->size_t_dir == 2) ? 2 : 4, arena);
 			arg_start = do_steps(arg_start, (char)oper->size_t_dir, arena);
 		}
 		else if (args_val->code_args[idx] == IND_CODE)
@@ -73,7 +76,7 @@ void	get_arguments_values(t_parse_args *args_val, unsigned char *arg_start,
 }
 
 unsigned char	*skip_op(unsigned char *start_op, t_arg_type *args, t_op oper,
-						  unsigned char *arena)
+														unsigned char *arena)
 {
 	int		idx;
 
@@ -97,7 +100,7 @@ void			prepare_battle(t_corewar *corewar, bool *quit)
 	g_mode = -1;
 	file = fopen("log.txt", "w");
 	init_arena(corewar->arena, corewar->champs,
-			   &corewar->carriages, &corewar->flgs);
+				&corewar->carriages, &corewar->flgs);
 	introducing_fighter(corewar->champs);
 	if (!init())
 		go_exit(ERR_CREATE_VS);

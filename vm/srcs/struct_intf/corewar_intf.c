@@ -5,8 +5,9 @@ void		init_struct(t_corewar *corewar)
 	ft_memcpy(&corewar->flgs, &(t_flgs){0, 0, 0}, sizeof(corewar->flgs));
 	corewar->champs = NULL;
 	ft_bzero(corewar->arena, sizeof(corewar->arena));
-	ft_memcpy(&corewar->game_param, &(t_game_param){0, 0, 0, 0, CYCLE_TO_DIE, 0},
-			  sizeof(corewar->game_param));
+	ft_memcpy(&corewar->game_param,
+			&(t_game_param){0, 0, 0, 0, CYCLE_TO_DIE, 0},
+			sizeof(corewar->game_param));
 	corewar->carriages = NULL;
 }
 
@@ -19,8 +20,10 @@ t_champion	*create_new_champ(const char *fname)
 	new->filename = (char *)fname;
 	new->num = 0;
 	ft_memcpy(&new->file, &(t_file){
-		*(t_header *)ft_memcpy(&new->file.header, &(t_header){0, 0, 0, 0}, sizeof(new->file.header)),
-		0, *(unsigned char *)ft_memset(new->file.exec_code, 0, sizeof(new->file.exec_code))},
+		*(t_header *)ft_memcpy(&new->file.header,
+				&(t_header){0, 0, 0, 0}, sizeof(new->file.header)), 0,
+		*(unsigned char *)ft_memset(new->file.exec_code, 0,
+				sizeof(new->file.exec_code))},
 		sizeof(new->file));
 	new->lst = new;
 	new->next = NULL;

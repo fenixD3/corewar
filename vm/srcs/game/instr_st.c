@@ -1,6 +1,6 @@
 #include "vm.h"
 
-void	st(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
+void		st(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 {
 	int				val;
 	unsigned char	*ind_pos;
@@ -41,7 +41,7 @@ static void	help_sti(t_corewar *corewar, t_parse_args *arg_val, int *val_addr_1,
 		*val_addr_2 = get_value_frm_arg(arg_val, 2, corewar, 1);
 }
 
-void	sti(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
+void		sti(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 {
 	unsigned char	*ind_pos;
 	int				val_addr_1;

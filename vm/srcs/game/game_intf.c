@@ -1,13 +1,24 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   game_intf.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ylila <ylila@student.21-school.ru>         +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/05/16 18:48:20 by ylila             #+#    #+#             */
+/*   Updated: 2020/05/16 18:48:59 by ylila            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "vm.h"
 #include "options.h"
 
-
 t_vis_tools *g_vs;
 
-bool			visible(t_carriages *carriage)
+bool				visible(t_carriages *carriage)
 {
-	t_vc		*vc;
-	int 		i;
+	t_vc			*vc;
+	int				i;
 
 	i = 0;
 	sort_vc(&g_vs->vc_list);
@@ -22,9 +33,9 @@ bool			visible(t_carriages *carriage)
 	return (false);
 }
 
-void			carriages_actions(t_corewar *corewar, bool *quit)
+void				carriages_actions(t_corewar *corewar, bool *quit)
 {
-	t_carriages	*carriage_head;
+	t_carriages		*carriage_head;
 
 	carriage_head = corewar->carriages;
 	if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num & 2)
@@ -50,7 +61,7 @@ void			carriages_actions(t_corewar *corewar, bool *quit)
 	corewar->carriages = carriage_head;
 }
 
-void	lets_check(t_corewar *corewar)
+void				lets_check(t_corewar *corewar)
 {
 	t_carriages	*carriage;
 
@@ -67,7 +78,7 @@ void	lets_check(t_corewar *corewar)
 	corewar->game_param.cycles_bfr_check = 0;
 }
 
-void	decrease_cycles_to_die(t_corewar *corewar)
+void				decrease_cycles_to_die(t_corewar *corewar)
 {
 	if (corewar->game_param.live_period_cnt >= NBR_LIVE)
 	{
@@ -89,7 +100,8 @@ void	decrease_cycles_to_die(t_corewar *corewar)
 	}
 }
 
-_Bool	valid_op_set_cycle(unsigned char *start_oper, int *cycle_to_op)
+_Bool				valid_op_set_cycle(unsigned char *start_oper,
+													int *cycle_to_op)
 {
 	if (*start_oper - 1 < 0 || *start_oper - 1 > 16)
 		return (0);
@@ -97,7 +109,7 @@ _Bool	valid_op_set_cycle(unsigned char *start_oper, int *cycle_to_op)
 	return (1);
 }
 
-void	make_operation_and_go_next(t_corewar *corewar,
+void				make_operation_and_go_next(t_corewar *corewar,
 				t_carriages **carriage_head)
 {
 	unsigned char	idx_op;

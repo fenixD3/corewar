@@ -1,6 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   instr_operations.c                                 :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ylila <ylila@student.21-school.ru>         +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/05/16 18:48:20 by ylila             #+#    #+#             */
+/*   Updated: 2020/05/16 18:48:59 by ylila            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "vm.h"
 
-void	add(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
+void		add(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 {
 	int		val;
 
@@ -17,7 +29,7 @@ void	add(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 		call_printf_v_4(corewar, arg_val, "add");
 }
 
-void	sub(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
+void		sub(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 {
 	int		val;
 
@@ -34,10 +46,11 @@ void	sub(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 		call_printf_v_4(corewar, arg_val, "sub");
 }
 
-void	and(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
+void		and(t_corewar *corewar, t_parse_args *arg_val,
+													t_carriages **head)
 {
-	int				val_1;
-	int				val_2;
+	int		val_1;
+	int		val_2;
 
 	if (!*head)
 		return ;
@@ -52,10 +65,10 @@ void	and(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 		call_printf_v_4(corewar, arg_val, "and");
 }
 
-void	or(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
+void		or(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 {
-	int				val_1;
-	int				val_2;
+	int		val_1;
+	int		val_2;
 
 	if (!*head)
 		return ;
@@ -70,10 +83,10 @@ void	or(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 		call_printf_v_4(corewar, arg_val, "or");
 }
 
-void	xor(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
+void		xor(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 {
-	int				val_1;
-	int				val_2;
+	int		val_1;
+	int		val_2;
 
 	if (!*head)
 		return ;

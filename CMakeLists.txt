@@ -196,8 +196,8 @@ add_executable(tomerge
         vm/srcs/game/vis/list_vc.c
         vm/srcs/game/vis/vc_sort.c
         vm/srcs/game/vis/visualise_arena.c
-        vm/srcs/game/args_intf.c
         vm/srcs/game/game.c
+        vm/srcs/game/args_intf.c
         vm/srcs/game/game_intf.c
         vm/srcs/game/helper_func.c
         vm/srcs/game/instr_fork_zjmp_live_aff.c

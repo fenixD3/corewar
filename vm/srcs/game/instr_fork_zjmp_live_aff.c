@@ -1,6 +1,19 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   instr_fork_zjmp_live_aff.c                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ylila <ylila@student.21-school.ru>         +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/05/16 18:48:20 by ylila             #+#    #+#             */
+/*   Updated: 2020/05/16 18:48:59 by ylila            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "vm.h"
 
-void	live(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
+void			live(t_corewar *corewar, t_parse_args *arg_val,
+													t_carriages **head)
 {
 	t_champion	*champ;
 
@@ -24,7 +37,8 @@ void	live(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 	}
 }
 
-void	zjump(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
+void			zjump(t_corewar *corewar, t_parse_args *arg_val,
+														t_carriages **head)
 {
 	if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num & 4)
 		call_printf_v_4(corewar, arg_val, "zjmp");
@@ -46,7 +60,8 @@ void	zjump(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 	}
 }
 
-void	nfork(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
+void			nfork(t_corewar *corewar, t_parse_args *arg_val,
+													t_carriages **head)
 {
 	push_front_carriage(head, &corewar->flgs);
 	(*head)->carry = corewar->carriages->carry;
@@ -59,7 +74,8 @@ void	nfork(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 		call_printf_v_4(corewar, arg_val, "fork");
 }
 
-void	lfork(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
+void			lfork(t_corewar *corewar, t_parse_args *arg_val,
+													t_carriages **head)
 {
 	push_front_carriage(head, &corewar->flgs);
 	(*head)->carry = corewar->carriages->carry;
@@ -72,7 +88,8 @@ void	lfork(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 		call_printf_v_4(corewar, arg_val, "lfork");
 }
 
-void	aff(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
+void			aff(t_corewar *corewar, t_parse_args *arg_val,
+													t_carriages **head)
 {
 	if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num & 4)
 		call_printf_v_4(corewar, arg_val, "Aff:");

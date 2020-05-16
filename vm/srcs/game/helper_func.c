@@ -1,3 +1,4 @@
+c
 #include "vm.h"
 
 unsigned char	*do_steps(unsigned char *start, int step,
@@ -12,10 +13,10 @@ unsigned char	*do_steps(unsigned char *start, int step,
 	return (start);
 }
 
-int		reverse_vm_bytes(unsigned char *num_to_rev, int bytes,
+int				reverse_vm_bytes(unsigned char *num_to_rev, int bytes,
 				unsigned char *arena)
 {
-	int				res;
+	int			res;
 
 	res = 0;
 	while (bytes--)
@@ -26,10 +27,10 @@ int		reverse_vm_bytes(unsigned char *num_to_rev, int bytes,
 	return (res);
 }
 
-int		get_value_frm_arg(t_parse_args *arg_val, int arg_idx,
+int				get_value_frm_arg(t_parse_args *arg_val, int arg_idx,
 						t_corewar *corewar, _Bool is_idx_mod)
 {
-	int				val;
+	int			val;
 
 	if (arg_val->code_args[arg_idx] == REG_CODE)
 		val = corewar->carriages->reg[arg_val->val[arg_idx] - 1];
@@ -49,10 +50,10 @@ int		get_value_frm_arg(t_parse_args *arg_val, int arg_idx,
 	return (val);
 }
 
-int		cnt_bytes_for_op(const t_op *op, const t_arg_type *code_args)
+int				cnt_bytes_for_op(const t_op *op, const t_arg_type *code_args)
 {
-	int		cnt_bytes;
-	int		idx;
+	int			cnt_bytes;
+	int			idx;
 
 	cnt_bytes = 1;
 	idx = -1;
@@ -70,7 +71,7 @@ int		cnt_bytes_for_op(const t_op *op, const t_arg_type *code_args)
 	return (cnt_bytes);
 }
 
-void	print_command_bytes(unsigned char *start_op,
+void			print_command_bytes(unsigned char *start_op,
 							int bytes_to_nxt,
 							unsigned char *arena)
 {

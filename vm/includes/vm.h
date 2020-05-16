@@ -138,8 +138,6 @@ void			print_v_4_lfork(t_corewar *corewar, t_parse_args *arg_val,
 						const char *cmd);
 void			print_v_4_zjmp(t_corewar *corewar, t_parse_args *arg_val,
 						const char *cmd);
-void			print_v_4_aff(t_corewar *corewar, t_parse_args *arg_val,
-						const char *cmd);
 void			print_v_4_ld(t_corewar *corewar, t_parse_args *arg_val,
 						const char *cmd);
 void			print_v_4_ldi(t_corewar *corewar, t_parse_args *arg_val,

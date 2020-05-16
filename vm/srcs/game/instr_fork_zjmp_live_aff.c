@@ -76,6 +76,10 @@ void	aff(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 {
 	if (!*head || !(corewar->flgs.set_flg & A_FLG))
 		return ;
+	ft_printf("%s %c\n",
+			  "Aff: ", (char)corewar->carriages->reg[arg_val->val[0] - 1]);
+	fprintf(file, "%s %c\n",
+			"Aff: ", (char)corewar->carriages->reg[arg_val->val[0] - 1]);
 	ft_printf("%c\n",
 				(char)corewar->carriages->reg[arg_val->val[0] - 1]);
 	if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num & 4)

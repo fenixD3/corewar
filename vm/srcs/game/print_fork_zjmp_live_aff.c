@@ -51,12 +51,3 @@ void	print_v_4_zjmp(t_corewar *corewar, t_parse_args *arg_val,
 			cmd,
 			(int16_t)arg_val->val[0]);
 }
-
-void	print_v_4_aff(t_corewar *corewar, t_parse_args *arg_val,
-						const char *cmd)
-{
-	ft_printf("%s %c\n",
-		   cmd, (char)corewar->carriages->reg[arg_val->val[0] - 1]);
-	fprintf(file, "%s %c\n",
-			cmd, (char)corewar->carriages->reg[arg_val->val[0] - 1]);
-}

@@ -30,8 +30,6 @@ void		call_printf_v_4(t_corewar *corewar, t_parse_args *arg_val,
 		print_v_4_lfork(corewar, arg_val, cmd);
 	else if (ft_strequ(cmd, "zjmp"))
 		print_v_4_zjmp(corewar, arg_val, cmd);
-	else if (ft_strequ(cmd, "Aff:"))
-		print_v_4_aff(corewar, arg_val, cmd);
 	else if (ft_strequ(cmd, "ld"))
 		print_v_4_ld(corewar, arg_val, cmd);
 	else if (ft_strequ(cmd, "ldi"))

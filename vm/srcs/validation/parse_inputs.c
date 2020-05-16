@@ -31,13 +31,14 @@ void	parse_flags(t_corewar *corewar, const int ac, char **av, int *i)
 			get_error("After -n <num> must be a champion");
 		corewar->flgs.set_flg ^= N_FLG;
 	}
-	else if (corewar->flgs.set_flg & DUMP_FLG)
+	else if (corewar->flgs.set_flg & DUMP_FLG &&
+				corewar->flgs.nbr_cycles_dump == -1)
 	{
 		if (++*i == ac || is_champion(av[*i], corewar))
 			get_error("After -dump flag must be a number");
 		corewar->flgs.nbr_cycles_dump = ft_atoi(av[*i]);
 	}
-	else if (corewar->flgs.set_flg & V_FLG)
+	else if (corewar->flgs.set_flg & V_FLG && !corewar->flgs.verb_num)
 	{
 		if (++*i == ac || is_champion(av[*i], corewar))
 			get_error("After -v flag must be a number");

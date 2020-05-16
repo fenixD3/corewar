@@ -28,15 +28,15 @@ void	print_v_4_lfork(t_corewar *corewar, t_parse_args *arg_val,
 						const char *cmd)
 {
 	ft_printf("P%5d | %s %d (%ld)\n",
-		   corewar->carriages->id,
-		   cmd,
-		   (int16_t)arg_val->val[0],
-		   corewar->carriages->op_pos + (int16_t)arg_val->val[0] - corewar->arena);
+		corewar->carriages->id,
+		cmd,
+		(int16_t)arg_val->val[0],
+		corewar->carriages->op_pos + (int16_t)arg_val->val[0] - corewar->arena);
 	fprintf(file, "P%5d | %s %d (%ld)\n",
-			corewar->carriages->id,
-			cmd,
-			(int16_t)arg_val->val[0],
-			corewar->carriages->op_pos + (int16_t)arg_val->val[0] - corewar->arena);
+		corewar->carriages->id,
+		cmd,
+		(int16_t)arg_val->val[0],
+		corewar->carriages->op_pos + (int16_t)arg_val->val[0] - corewar->arena);
 }
 
 void	print_v_4_zjmp(t_corewar *corewar, t_parse_args *arg_val,

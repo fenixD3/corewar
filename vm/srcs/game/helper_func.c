@@ -43,6 +43,7 @@ int				get_value_frm_arg(t_parse_args *arg_val, int arg_idx,
 {
 	int			val;
 
+	val = 0;
 	if (arg_val->code_args[arg_idx] == REG_CODE)
 		val = corewar->carriages->reg[arg_val->val[arg_idx] - 1];
 	else if (arg_val->code_args[arg_idx] == DIR_CODE)

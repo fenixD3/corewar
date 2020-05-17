@@ -35,6 +35,8 @@ void	call_printf_v_16(t_corewar *corewar)
 			"0x",
 			(corewar->carriages->op_pos + corewar->carriages->cnt_bytes_to_op
 			- corewar->arena));
+	print_command_bytes(corewar->carriages->op_pos,
+						corewar->carriages->cnt_bytes_to_op, corewar->arena);
 }
 
 void	call_printf_v_1(const t_corewar *corewar, const t_champion *champ)

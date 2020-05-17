@@ -1,7 +1,19 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   print_v_4_flg.c                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ylila <ylila@student.21-school.ru>         +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/05/17 14:02:09 by ylila             #+#    #+#             */
+/*   Updated: 2020/05/17 14:02:50 by mcanhand         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "vm.h"
 
 static void	call_printf_v_4_another(t_corewar *corewar, t_parse_args *arg_val,
-									   const char *cmd)
+									const char *cmd)
 {
 	if (ft_strequ(cmd, "st"))
 		print_v_4_st(corewar, arg_val, cmd);

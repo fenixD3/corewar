@@ -99,7 +99,6 @@ void			prepare_battle(t_corewar *corewar, bool *quit)
 		create_vs();
 	g_contnue = false;
 	g_mode = -1;
-	file = fopen("log.txt", "w");
 	init_arena(corewar->arena, corewar->champs,
 				&corewar->carriages, &corewar->flgs);
 	introducing_fighter(corewar->champs);

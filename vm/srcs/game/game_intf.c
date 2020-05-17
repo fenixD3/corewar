@@ -15,31 +15,10 @@
 
 t_vis_tools *g_vs;
 
-bool				visible(t_carriages *carriage)
-{
-	t_vc			*vc;
-	int				i;
-
-	i = 0;
-	sort_vc(&g_vs->vc_list);
-	vc = g_vs->vc_list;
-	while (vc != NULL && i < 15)
-	{
-		if (carriage->id == vc->carriage->id)
-			return (true);
-		vc = vc->next;
-		i++;
-	}
-	return (false);
-}
-
 void				carriages_actions(t_corewar *corewar, bool *quit)
 {
 	t_carriages		*carriage_head;
 
-	int fd = 0;
-	if (corewar->game_param.cycles_aft_start == 9711)
-		++fd;
 	carriage_head = corewar->carriages;
 	if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num & 2)
 		call_printf_v_2(corewar, 0);

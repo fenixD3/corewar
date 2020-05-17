@@ -15,24 +15,16 @@
 void	print_v_4_live(t_corewar *corewar, t_parse_args *arg_val,
 					const char *cmd)
 {
-	ft_printf("P%5d | %s %d\n",
-		corewar->carriages->id, cmd, arg_val->val[0]);
-	fprintf(file, "P%5d | %s %d\n",
+	ft_printf("P %4d | %s %d\n",
 		corewar->carriages->id, cmd, arg_val->val[0]);
 }
 
 void	print_v_4_nfork(t_corewar *corewar, t_parse_args *arg_val,
 					const char *cmd)
 {
-	ft_printf("P%5d | %s %d (%ld)\n",
+	ft_printf("P %4d | %s %d (%ld)\n",
 		corewar->carriages->id,
 		cmd,
-		(int16_t)arg_val->val[0],
-		corewar->carriages->op_pos + (int16_t)arg_val->val[0] %
-		IDX_MOD - corewar->arena);
-	fprintf(file, "P%5d | %s %d (%ld)\n",
-		corewar->carriages->id,
-			cmd,
 		(int16_t)arg_val->val[0],
 		corewar->carriages->op_pos + (int16_t)arg_val->val[0] %
 		IDX_MOD - corewar->arena);
@@ -41,12 +33,7 @@ void	print_v_4_nfork(t_corewar *corewar, t_parse_args *arg_val,
 void	print_v_4_lfork(t_corewar *corewar, t_parse_args *arg_val,
 						const char *cmd)
 {
-	ft_printf("P%5d | %s %d (%ld)\n",
-		corewar->carriages->id,
-		cmd,
-		(int16_t)arg_val->val[0],
-		corewar->carriages->op_pos + (int16_t)arg_val->val[0] - corewar->arena);
-	fprintf(file, "P%5d | %s %d (%ld)\n",
+	ft_printf("P %4d | %s %d (%ld)\n",
 		corewar->carriages->id,
 		cmd,
 		(int16_t)arg_val->val[0],
@@ -56,11 +43,7 @@ void	print_v_4_lfork(t_corewar *corewar, t_parse_args *arg_val,
 void	print_v_4_zjmp(t_corewar *corewar, t_parse_args *arg_val,
 						const char *cmd)
 {
-	ft_printf("P%5d | %s %d ",
-		corewar->carriages->id,
-		cmd,
-		(int16_t)arg_val->val[0]);
-	fprintf(file, "P%5d | %s %d ",
+	ft_printf("P %4d | %s %d ",
 		corewar->carriages->id,
 		cmd,
 		(int16_t)arg_val->val[0]);

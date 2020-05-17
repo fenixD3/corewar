@@ -45,19 +45,13 @@ void			zjump(t_corewar *corewar, t_parse_args *arg_val,
 	if (!corewar->carriages->carry || !*head)
 	{
 		if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num & 4)
-		{
 			ft_printf("FAILED\n");
-			fprintf(file, "FAILED\n");
-		}
 		return ;
 	}
 	corewar->carriages->op_pos = do_steps(corewar->carriages->op_pos,
 		(int16_t)arg_val->val[0] % IDX_MOD, corewar->arena);
 	if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num & 4)
-	{
 		ft_printf("OK\n");
-		fprintf(file, "OK\n");
-	}
 }
 
 void			nfork(t_corewar *corewar, t_parse_args *arg_val,
@@ -89,16 +83,10 @@ void			lfork(t_corewar *corewar, t_parse_args *arg_val,
 }
 
 void			aff(t_corewar *corewar, t_parse_args *arg_val,
-													t_carriages **head)
+					t_carriages **head)
 {
 	if (!*head || !(corewar->flgs.set_flg & A_FLG))
 		return ;
 	ft_printf("%s %c\n",
-			  "Aff: ", (char)corewar->carriages->reg[arg_val->val[0] - 1]);
-	fprintf(file, "%s %c\n",
-			"Aff: ", (char)corewar->carriages->reg[arg_val->val[0] - 1]);
-	ft_printf("%c\n",
-				(char)corewar->carriages->reg[arg_val->val[0] - 1]);
-	if (corewar->flgs.set_flg & V_FLG && corewar->flgs.verb_num & 4)
-		call_printf_v_4(corewar, arg_val, "Aff:");
+			"Aff:", (char)corewar->carriages->reg[arg_val->val[0] - 1]);
 }

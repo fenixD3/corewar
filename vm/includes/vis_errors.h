@@ -1,3 +1,4 @@
+
 #ifndef VIS_ERRORS_H
 # define VIS_ERRORS_H
 
@@ -6,4 +7,3 @@
 # define ERR_ML_CELL "ERROR: while allocating memory for cell of arena"
 
 #endif
-

@@ -66,15 +66,11 @@ void				introducing_fighter(t_champion *champs)
 	int				player;
 
 	ft_printf("Introducing contestants...\n");
-	fprintf(file, "Introducing contestants...\n");
 	player = 0;
 	while (champs)
 	{
 		ft_printf("* Player %d, weighing %d bytes, \"%s\" (\"%s\") !\n",
 				++player, champs->file.header.prog_size,
-				champs->file.header.prog_name, champs->file.header.comment);
-		fprintf(file, "* Player %d, weighing %d bytes, \"%s\" (\"%s\") !\n",
-				player, champs->file.header.prog_size,
 				champs->file.header.prog_name, champs->file.header.comment);
 		champs = champs->next;
 	}
@@ -89,9 +85,6 @@ void				introducing_winner(t_corewar *corewar)
 		corewar->champs = corewar->champs->next;
 	ft_printf("Contestant %d, \"%s\", has won !\n", corewar->champs->num,
 			corewar->champs->file.header.prog_name);
-	fprintf(file, "Contestant %d, \"%s\", has won !\n", corewar->champs->num,
-			corewar->champs->file.header.prog_name);
-	fclose(file);
 	g_mode = -100;
 	g_change = 1;
 	if (!(corewar->flgs.set_flg & VIS_FLG))
@@ -110,11 +103,11 @@ void				print_map(t_corewar *corewar)
 		if (!j)
 			ft_printf("0x%04x : ", i);
 		ft_printf("%.2x", corewar->arena[i]);
-		if (j < 31)
+		if (j < 63)
 			ft_printf(" ");
 		else
 		{
-			ft_printf("\n");
+			ft_printf(" \n");
 			j = -1;
 		}
 		i++;

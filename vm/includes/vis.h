@@ -48,8 +48,8 @@ typedef struct		s_vis_tools
 
 bool				init();
 
-void visualise_arena(t_corewar *corewar, bool *quit, t_carriages *carriag,
-					 bool sorted);
+void				visualise_arena(t_corewar *corewar, bool *quit,
+							t_carriages *carriag, bool sorted);
 
 void				create_vs(void);
 
@@ -79,10 +79,13 @@ void				disasm(t_carriages *champ, char *str, unsigned char *arena);
 
 void				display_game_data(t_corewar *corewar);
 
-void display_side_menu(t_corewar *crwr, int ind, t_vc *vc, int *num_on_menu);
+void				display_side_menu(t_corewar *crwr, int ind, t_vc *vc,
+							int *num_on_menu);
 
 void				display_carriages(unsigned char *arena,
 													t_carriages *carriage);
+
+bool				visible(t_carriages *carriage);
 
 void				add_new_vc(t_vc **head, t_carriages *new);
 void				insert_vc(t_vc **head, t_vc *prev, t_vc *insert);

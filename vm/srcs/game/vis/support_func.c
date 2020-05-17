@@ -61,3 +61,21 @@ void			ft_free_strsplit(char **str_array)
 		free(str_array);
 	}
 }
+
+bool			visible(t_carriages *carriage)
+{
+	t_vc			*vc;
+	int				i;
+
+	i = 0;
+	sort_vc(&g_vs->vc_list);
+	vc = g_vs->vc_list;
+	while (vc != NULL && i < 15)
+	{
+		if (carriage->id == vc->carriage->id)
+			return (true);
+		vc = vc->next;
+		i++;
+	}
+	return (false);
+}

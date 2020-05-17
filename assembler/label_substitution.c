@@ -69,8 +69,6 @@ void	label_substitution(t_label *head)
 	tmp = head;
 	while (tmp)
 	{
-		if (!tmp->next || !tmp->name)
-			tmp = tmp;
 		if (tmp->token->type == ARGUMENT_LABEL)
 		{
 			((t_arg*)tmp->token->content)->num =

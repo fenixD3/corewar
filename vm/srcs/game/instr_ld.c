@@ -26,7 +26,6 @@ void		ld(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 		corewar->carriages->carry = 1;
 	else
 		corewar->carriages->carry = 0;
-
 }
 
 void		ldi(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)

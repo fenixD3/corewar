@@ -1,3 +1,14 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   higlight_cells.c                                   :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mcanhand <mcanhand@student.21-school.ru>   +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/05/16 17:08:56 by mcanhand          #+#    #+#             */
+/*   Updated: 2020/05/16 17:09:11 by mcanhand         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "vis.h"
 
@@ -47,34 +58,10 @@ void				higlighting(t_vc *vc, t_corewar *crwr)
 
 void				higlight_all(t_vc *vc, t_corewar *crwr)
 {
-	SDL_Color		color;
-	SDL_Rect		carrg;
-	int				c;
-	SDL_Rect		dstrect;
-	char			res[3];
-
 	while (vc != NULL)
 	{
 		if (vc->is_open)
-		{
-			c = vc->carriage->op_pos - crwr->arena;
-			color = (vc->carriage->reg[0] < 0 && vc->carriage->reg[0] > -5) ?
-					g_vs->text_color[-(vc->carriage->reg[0]) - 1] : g_vs->text_color[4];
-			SDL_SetRenderDrawColor(g_vs->render, color.r, color.g, color.b, 0);
-			carrg = create_rect(10 + ((c - (c / 64) * 64) * 24),
-								13 + ((c / 64) * 15), 16, 10);
-			SDL_RenderFillRect(g_vs->render, &carrg);
-			res[0] = "0123456789abcdef"[crwr->arena[c] >> 4];
-			res[1] = "0123456789abcdef"[crwr->arena[c] & 0x0F];
-			res[2] = '\0';
-			g_vs->txt_srfc = TTF_RenderText_Solid(g_vs->text_font,
-												res, g_vs->text_color[5]);
-			g_vs->text = SDL_CreateTextureFromSurface(g_vs->render, g_vs->txt_srfc);
-			dstrect = create_rect(12 + ((c - (c / 64) * 64) * 24),
-				14 + ((c / 64) * 15), g_vs->txt_srfc->w, g_vs->txt_srfc->h);
-			SDL_RenderCopy(g_vs->render, g_vs->text, NULL, &dstrect);
-			free_mem_font();
-		}
+			higlighting(vc, crwr);
 		vc = vc->next;
 	}
 }

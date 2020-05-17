@@ -33,7 +33,7 @@ int						display_text(char *text, int x, int y)
 }
 
 void					display_registers(int i, t_carriages *carriages,
-		int extndd, t_corewar *crwr)
+											int extndd, t_corewar *crwr)
 {
 	int					j;
 	int					c;
@@ -45,10 +45,7 @@ void					display_registers(int i, t_carriages *carriages,
 	if (extndd)
 	{
 		disasm(carriages, str, crwr->arena);
-		ft_sprintf(todisplay, "OP : %s\n", str);
-		while (todisplay[c] != '\n')
-			c++;
-		todisplay[c] = '\0';
+		create_string(todisplay, 0, "OP : %s\n", str);
 		display_text(todisplay, 0, i + 15 + 9 * 2);
 		while (j < 17)
 		{

@@ -66,21 +66,21 @@ void	open_and_tokenize_file(char *file_name, t_token_sec *check_list,
 	label_substitution(label);
 }
 
-int		main(int ac, char **av)
-{
-	t_token		*token;
-	t_header	header;
-	t_token_sec	check_list;
-	int			i;
-
-	i = 0;
-	while (++i < ac)
-	{
-		token = NULL;
-		open_and_tokenize_file(av[i], &check_list, &token);
-		init_headers(&header, token);
-		print_in_file(av[i], token, &header);
-		ml_free_all();
-	}
-	return (0);
-}
+//int		main(int ac, char **av)
+//{
+//	t_token		*token;
+//	t_header	header;
+//	t_token_sec	check_list;
+//	int			i;
+//
+//	i = 0;
+//	while (++i < ac)
+//	{
+//		token = NULL;
+//		open_and_tokenize_file(av[i], &check_list, &token);
+//		init_headers(&header, token);
+//		print_in_file(av[i], token, &header);
+//		ml_free_all();
+//	}
+//	return (0);
+//}

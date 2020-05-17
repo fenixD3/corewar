@@ -14,7 +14,7 @@
 
 t_vis_tools *g_vs;
 
-void					more(void)
+void		more(void)
 {
 	SDL_Rect			dstrect;
 
@@ -27,7 +27,7 @@ void					more(void)
 	free_mem_font();
 }
 
-void					if_open(int i, int *done, int ind, t_vc *vc)
+void		if_open(int i, int *done, int ind, t_vc *vc)
 {
 	if (!*done && ind - 4100 > i && ind - 4100 < i + (vc->is_open ? 162 : 54))
 	{
@@ -36,13 +36,13 @@ void					if_open(int i, int *done, int ind, t_vc *vc)
 	}
 }
 
-int					display_side_menu(t_corewar *crwr, int ind, t_vc *vc)
+void		display_side_menu(t_corewar *crwr, int ind, t_vc *vc,
+													int *num_on_menu)
 {
 	int		i;
 	int		done;
-	int		displayed;
 
-	displayed = 0;
+	*num_on_menu = 0;
 	i = 15;
 	done = 0;
 	while (vc != NULL && i < 900)
@@ -59,10 +59,9 @@ int					display_side_menu(t_corewar *crwr, int ind, t_vc *vc)
 		{
 			if_open(i, &done, ind, vc);
 			draw_frame(vc, &i, vc->is_open, crwr);
-			displayed++;
+			(*num_on_menu)++;
 		}
 		vc = vc->next;
 	}
 	vc != NULL ? more() : 0;
-	return (displayed);
 }

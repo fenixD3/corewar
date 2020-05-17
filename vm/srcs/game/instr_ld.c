@@ -1,6 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   instr_ld.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ylila <ylila@student.21-school.ru>         +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/05/16 18:48:20 by ylila             #+#    #+#             */
+/*   Updated: 2020/05/16 18:48:59 by ylila            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "vm.h"
 
-void	ld(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
+void		ld(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 {
 	int		val;
 
@@ -17,7 +29,7 @@ void	ld(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 
 }
 
-void	ldi(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
+void		ldi(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 {
 	int		val_addr_1;
 	int		val_addr_2;
@@ -39,7 +51,7 @@ void	ldi(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 (val_addr_1 + val_addr_2) % IDX_MOD, corewar->arena), 4, corewar->arena);
 }
 
-void	lld(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
+void		lld(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 {
 	int		val;
 
@@ -55,7 +67,7 @@ void	lld(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 		corewar->carriages->carry = 0;
 }
 
-void	lldi(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
+void		lldi(t_corewar *corewar, t_parse_args *arg_val, t_carriages **head)
 {
 	int		val_addr_1;
 	int		val_addr_2;

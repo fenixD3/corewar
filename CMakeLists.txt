@@ -1,213 +1,22 @@
 cmake_minimum_required(VERSION 3.14)
-
-project(Corewar C)
+project(tomerge C)
 
 set(CMAKE_C_STANDARD 11)
-set(CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake-build-debug)
-
-find_package(SDL2 REQUIRED)
-find_package(SDL2_TTF REQUIRED)
 
 include_directories(.)
 include_directories(asm)
 include_directories(ft_printf/includes)
 include_directories(libft)
 include_directories(libft/memlist)
+
+include_directories(~/Library/Frameworks/SDL2.framework/Headers)
+#include_directories(~/Library/Frameworks/SDL2_image.framework/Headers)
+include_directories(~/Library/Frameworks/SDL2_ttf.framework/Headers)
+
 include_directories(vm/includes)
-include_directories(${SDL2_INCLUDE_DIR})
-include_directories(${SDL2_TTF_INCLUDE_DIR})
 
-
-#include_directories(~/Library/Frameworks/SDL2.framework/Headers)
-##include_directories(~/Library/Frameworks/SDL2_image.framework/Headers)
-#include_directories(~/Library/Frameworks/SDL2_ttf.framework/Headers)
-
-#project(Corewar C)
-#
-#set(CMAKE_C_STANDARD 11)
-#set(CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake-build-debug)
-#
-#find_package(SDL2 REQUIRED)
-#find_package(SDL2_TTF REQUIRED)
-#
-#include_directories(.)
-#include_directories(asm)
-#include_directories(ft_printf/includes)
-#include_directories(libft)
-#include_directories(libft/memlist)
-#include_directories(vm/includes)
-#include_directories(${SDL2_INCLUDE_DIR})
-#include_directories(${SDL2_TTF_INCLUDE_DIR})
-
-add_executable(Asm
+add_executable(tomerge
         asm/asm.c
-        asm/asm.h
-        asm/command_check.c
-        asm/command_length.c
-        asm/errors.h
-        asm/ft_isdigitalword.c
-        asm/ft_isspecial.c
-        asm/ft_skipword.c
-        asm/if_checks.c
-        asm/init_headers.c
-        asm/label_substitution.c
-        asm/libword.h
-        asm/print_comands.c
-        asm/print_header.c
-        asm/rewind.c
-        asm/tkn_str_cat.c
-        asm/token_exception.c
-        asm/token_fill.c
-        asm/token_sequence_check.c
-        asm/tokenizer.c
-        asm/tokens_lst.c
-        ft_printf/includes/ft_ptintf.h
-        ft_printf/includes/high_precision.h
-        ft_printf/includes/my_float.h
-        ft_printf/srcs/field_len.c
-        ft_printf/srcs/fill_union.c
-        ft_printf/srcs/ft_itoa_base_printf.c
-        ft_printf/srcs/ft_printf.c
-        ft_printf/srcs/get_binary.c
-        ft_printf/srcs/is_parser.c
-        ft_printf/srcs/is_typeflags.c
-        ft_printf/srcs/make_field.c
-        ft_printf/srcs/parsing_funcs.c
-        ft_printf/srcs/parsing_generaly.c
-        ft_printf/srcs/prepare_lennum.c
-        ft_printf/srcs/set_buff.c
-        ft_printf/srcs/set_flags.c
-        ft_printf/srcs/str_tolower.c
-        ft_printf/srcs/to_buff.c
-        ft_printf/srcs/which_sign.c
-        ft_printf/srcs/zeroing.c
-        ft_printf/srcsFloat/check_create_float_res.c
-        ft_printf/srcsFloat/e_flag_intf.c
-        ft_printf/srcsFloat/float_intf.c
-        ft_printf/srcsFloat/float_rounding.c
-        ft_printf/srcsFloat/frees_for_float.c
-        ft_printf/srcsFloat/ft_log10.c
-        ft_printf/srcsFloat/ft_log2.c
-        ft_printf/srcsFloat/g_flag_intf.c
-        ft_printf/srcsFloat/get_dbl_values.c
-        ft_printf/srcsFloat/get_ldbl_values.c
-        ft_printf/srcsFloat/high_precision.c
-        ft_printf/srcsFloat/high_precision_intf.c
-        ft_printf/srcsFloat/high_precision_intf_long.c
-        ft_printf/srcsFloat/high_precision_long.c
-        ft_printf/srcsFloat/my_float.c
-        ft_printf/srcsFloat/my_long_float.c
-        ft_printf/srcsFloat/print_reserve_dbl.c
-        libft/memlist/blackbox_memlist.h
-        libft/memlist/memlist_bottleneck.c
-        libft/memlist/ml_create.c
-        libft/memlist/ml_del.c
-        libft/memlist/ml_general.c
-        libft/memlist/ml_givemem.c
-        libft/ft_abs.c
-        libft/ft_atoi.c
-        libft/ft_bzero.c
-        libft/ft_fib.c
-        libft/ft_floor.c
-        libft/ft_is_complex_string.c
-        libft/ft_isalnum.c
-        libft/ft_isalpha.c
-        libft/ft_isascii.c
-        libft/ft_isdigit.c
-        libft/ft_islower.c
-        libft/ft_isprint.c
-        libft/ft_isspace.c
-        libft/ft_isupper.c
-        libft/ft_itoa.c
-        libft/ft_lstadd.c
-        libft/ft_lstcirc_add.c
-        libft/ft_lstcirc_delelem.c
-        libft/ft_lstcirc_findcontent_size.c
-        libft/ft_lstcirc_strnew.c
-        libft/ft_lstdel.c
-        libft/ft_lstdelone.c
-        libft/ft_lstiter.c
-        libft/ft_lstmap.c
-        libft/ft_lstnew.c
-        libft/ft_lstpush.c
-        libft/ft_memalloc.c
-        libft/ft_memccpy.c
-        libft/ft_memchr.c
-        libft/ft_memcmp.c
-        libft/ft_memcpy.c
-        libft/ft_memdel.c
-        libft/ft_memmove.c
-        libft/ft_memset.c
-        libft/ft_pow.c
-        libft/ft_putchar.c
-        libft/ft_putchar_fd.c
-        libft/ft_putendl.c
-        libft/ft_putendl_fd.c
-        libft/ft_putnbr.c
-        libft/ft_putnbr_fd.c
-        libft/ft_putstr.c
-        libft/ft_putstr_fd.c
-        libft/ft_reverse.c
-        libft/ft_sqrt.c
-        libft/ft_sstrchr.c
-        libft/ft_strcat.c
-        libft/ft_strchr.c
-        libft/ft_strclr.c
-        libft/ft_strcmp.c
-        libft/ft_strcpy.c
-        libft/ft_strdel.c
-        libft/ft_strdup.c
-        libft/ft_strequ.c
-        libft/ft_striter.c
-        libft/ft_striteri.c
-        libft/ft_strjoin.c
-        libft/ft_strjoinre.c
-        libft/ft_strlcat.c
-        libft/ft_strlcpy.c
-        libft/ft_strlen.c
-        libft/ft_strmap.c
-        libft/ft_strmapi.c
-        libft/ft_strncat.c
-        libft/ft_strncmp.c
-        libft/ft_strncpy.c
-        libft/ft_strndup.c
-        libft/ft_strnequ.c
-        libft/ft_strnew.c
-        libft/ft_strnstr.c
-        libft/ft_strrchr.c
-        libft/ft_strsplit.c
-        libft/ft_strstr.c
-        libft/ft_strsub.c
-        libft/ft_strtrim.c
-        libft/ft_tolower.c
-        libft/ft_toupper.c
-        libft/get_next_line.c
-        libft/get_next_line.h
-        libft/go_exit.c
-        libft/libft.h
-        libft/memlist.h
-        libft/ml_get_next_line.c
-        libft/ml_itoa.c
-        libft/ml_memalloc.c
-        libft/ml_strdup.c
-        libft/ml_strjoin.c
-        libft/ml_strjoinre.c
-        libft/ml_strmap.c
-        libft/ml_strmapi.c
-        libft/ml_strndup.c
-        libft/ml_strnew.c
-        libft/ml_strsplit.c
-        libft/ml_strsub.c
-        libft/ml_strtrim.c
-        fast_strsplit.c
-        ft_wordequ.c
-        op.h
-        options.h
-        vm/includes/vm_structs.h)
-
-target_link_libraries(Asm ${SDL2_LIBRARY} ${SDL2_TTF_LIBRARY})
-
-add_executable(Corewar
         asm/asm.h
         asm/command_check.c
         asm/command_length.c
@@ -384,11 +193,11 @@ add_executable(Corewar
         vm/srcs/game/vis/print_arena.c
         vm/srcs/game/vis/support_func.c
         vm/srcs/game/vis/track_events.c
-        vm/srcs/game/vis/vc_list.c
+        vm/srcs/game/vis/list_vc.c
         vm/srcs/game/vis/vc_sort.c
         vm/srcs/game/vis/visualise_arena.c
-        vm/srcs/game/args_intf.c
         vm/srcs/game/game.c
+        vm/srcs/game/args_intf.c
         vm/srcs/game/game_intf.c
         vm/srcs/game/helper_func.c
         vm/srcs/game/instr_fork_zjmp_live_aff.c
@@ -396,11 +205,11 @@ add_executable(Corewar
         vm/srcs/game/instr_operations.c
         vm/srcs/game/instr_st.c
         vm/srcs/game/print_fork_zjmp_live_aff.c
+        vm/srcs/game/print_v_4_flg.c
         vm/srcs/game/print_v_flg.c
         vm/srcs/game/print_v_ld.c
         vm/srcs/game/print_v_operations.c
         vm/srcs/game/print_v_st.c
-        vm/srcs/game/print_v_4_flg.c
         vm/srcs/struct_intf/carriage_intf.c
         vm/srcs/struct_intf/corewar_intf.c
         vm/srcs/validation/parse_input_intf.c
@@ -410,12 +219,461 @@ add_executable(Corewar
         fast_strsplit.c
         ft_wordequ.c
         op.h
-        options.h
-        )
+        options.h)
 
-target_link_libraries(Corewar ${SDL2_LIBRARY} ${SDL2_TTF_LIBRARY})
-#[[
-target_link_libraries(Corewar "-framework SDL2")
+
+target_link_libraries(tomerge "-framework SDL2")
 #target_link_libraries(dencorewar "-framework SDL2_image")
-target_link_libraries(Corewar "-framework SDL2_ttf")
-set_target_properties(Corewar PROPERTIES LINK_FLAGS "-F /Users/$ENV{USER}/Library/Frameworks")]]
+target_link_libraries(tomerge "-framework SDL2_ttf")
+set_target_properties(tomerge PROPERTIES LINK_FLAGS "-F /Users/$ENV{USER}/Library/Frameworks")
+
+#cmake_minimum_required(VERSION 3.14)
+#
+#project(Corewar C)
+#
+#set(CMAKE_C_STANDARD 11)
+#
+#
+#include_directories(.)
+#include_directories(asm)
+#include_directories(ft_printf/includes)
+#include_directories(libft)
+#include_directories(libft/memlist)
+#include_directories(vm/includes)
+#
+#
+
+#
+##project(Corewar C)
+##
+##set(CMAKE_C_STANDARD 11)
+##set(CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake-build-debug)
+##
+##find_package(SDL2 REQUIRED)
+##find_package(SDL2_TTF REQUIRED)
+##
+##include_directories(.)
+##include_directories(asm)
+##include_directories(ft_printf/includes)
+##include_directories(libft)
+##include_directories(libft/memlist)
+##include_directories(vm/includes)
+##include_directories(${SDL2_INCLUDE_DIR})
+##include_directories(${SDL2_TTF_INCLUDE_DIR})
+#
+#add_executable(Asm
+#        asm/asm.c
+#        asm/asm.h
+#        asm/command_check.c
+#        asm/command_length.c
+#        asm/errors.h
+#        asm/ft_isdigitalword.c
+#        asm/ft_isspecial.c
+#        asm/ft_skipword.c
+#        asm/if_checks.c
+#        asm/init_headers.c
+#        asm/label_substitution.c
+#        asm/libword.h
+#        asm/print_comands.c
+#        asm/print_header.c
+#        asm/rewind.c
+#        asm/tkn_str_cat.c
+#        asm/token_exception.c
+#        asm/token_fill.c
+#        asm/token_sequence_check.c
+#        asm/tokenizer.c
+#        asm/tokens_lst.c
+#        ft_printf/includes/ft_ptintf.h
+#        ft_printf/includes/high_precision.h
+#        ft_printf/includes/my_float.h
+#        ft_printf/srcs/field_len.c
+#        ft_printf/srcs/fill_union.c
+#        ft_printf/srcs/ft_itoa_base_printf.c
+#        ft_printf/srcs/ft_printf.c
+#        ft_printf/srcs/get_binary.c
+#        ft_printf/srcs/is_parser.c
+#        ft_printf/srcs/is_typeflags.c
+#        ft_printf/srcs/make_field.c
+#        ft_printf/srcs/parsing_funcs.c
+#        ft_printf/srcs/parsing_generaly.c
+#        ft_printf/srcs/prepare_lennum.c
+#        ft_printf/srcs/set_buff.c
+#        ft_printf/srcs/set_flags.c
+#        ft_printf/srcs/str_tolower.c
+#        ft_printf/srcs/to_buff.c
+#        ft_printf/srcs/which_sign.c
+#        ft_printf/srcs/zeroing.c
+#        ft_printf/srcsFloat/check_create_float_res.c
+#        ft_printf/srcsFloat/e_flag_intf.c
+#        ft_printf/srcsFloat/float_intf.c
+#        ft_printf/srcsFloat/float_rounding.c
+#        ft_printf/srcsFloat/frees_for_float.c
+#        ft_printf/srcsFloat/ft_log10.c
+#        ft_printf/srcsFloat/ft_log2.c
+#        ft_printf/srcsFloat/g_flag_intf.c
+#        ft_printf/srcsFloat/get_dbl_values.c
+#        ft_printf/srcsFloat/get_ldbl_values.c
+#        ft_printf/srcsFloat/high_precision.c
+#        ft_printf/srcsFloat/high_precision_intf.c
+#        ft_printf/srcsFloat/high_precision_intf_long.c
+#        ft_printf/srcsFloat/high_precision_long.c
+#        ft_printf/srcsFloat/my_float.c
+#        ft_printf/srcsFloat/my_long_float.c
+#        ft_printf/srcsFloat/print_reserve_dbl.c
+#        libft/memlist/blackbox_memlist.h
+#        libft/memlist/memlist_bottleneck.c
+#        libft/memlist/ml_create.c
+#        libft/memlist/ml_del.c
+#        libft/memlist/ml_general.c
+#        libft/memlist/ml_givemem.c
+#        libft/ft_abs.c
+#        libft/ft_atoi.c
+#        libft/ft_bzero.c
+#        libft/ft_fib.c
+#        libft/ft_floor.c
+#        libft/ft_is_complex_string.c
+#        libft/ft_isalnum.c
+#        libft/ft_isalpha.c
+#        libft/ft_isascii.c
+#        libft/ft_isdigit.c
+#        libft/ft_islower.c
+#        libft/ft_isprint.c
+#        libft/ft_isspace.c
+#        libft/ft_isupper.c
+#        libft/ft_itoa.c
+#        libft/ft_lstadd.c
+#        libft/ft_lstcirc_add.c
+#        libft/ft_lstcirc_delelem.c
+#        libft/ft_lstcirc_findcontent_size.c
+#        libft/ft_lstcirc_strnew.c
+#        libft/ft_lstdel.c
+#        libft/ft_lstdelone.c
+#        libft/ft_lstiter.c
+#        libft/ft_lstmap.c
+#        libft/ft_lstnew.c
+#        libft/ft_lstpush.c
+#        libft/ft_memalloc.c
+#        libft/ft_memccpy.c
+#        libft/ft_memchr.c
+#        libft/ft_memcmp.c
+#        libft/ft_memcpy.c
+#        libft/ft_memdel.c
+#        libft/ft_memmove.c
+#        libft/ft_memset.c
+#        libft/ft_pow.c
+#        libft/ft_putchar.c
+#        libft/ft_putchar_fd.c
+#        libft/ft_putendl.c
+#        libft/ft_putendl_fd.c
+#        libft/ft_putnbr.c
+#        libft/ft_putnbr_fd.c
+#        libft/ft_putstr.c
+#        libft/ft_putstr_fd.c
+#        libft/ft_reverse.c
+#        libft/ft_sqrt.c
+#        libft/ft_sstrchr.c
+#        libft/ft_strcat.c
+#        libft/ft_strchr.c
+#        libft/ft_strclr.c
+#        libft/ft_strcmp.c
+#        libft/ft_strcpy.c
+#        libft/ft_strdel.c
+#        libft/ft_strdup.c
+#        libft/ft_strequ.c
+#        libft/ft_striter.c
+#        libft/ft_striteri.c
+#        libft/ft_strjoin.c
+#        libft/ft_strjoinre.c
+#        libft/ft_strlcat.c
+#        libft/ft_strlcpy.c
+#        libft/ft_strlen.c
+#        libft/ft_strmap.c
+#        libft/ft_strmapi.c
+#        libft/ft_strncat.c
+#        libft/ft_strncmp.c
+#        libft/ft_strncpy.c
+#        libft/ft_strndup.c
+#        libft/ft_strnequ.c
+#        libft/ft_strnew.c
+#        libft/ft_strnstr.c
+#        libft/ft_strrchr.c
+#        libft/ft_strsplit.c
+#        libft/ft_strstr.c
+#        libft/ft_strsub.c
+#        libft/ft_strtrim.c
+#        libft/ft_tolower.c
+#        libft/ft_toupper.c
+#        libft/get_next_line.c
+#        libft/get_next_line.h
+#        libft/go_exit.c
+#        libft/libft.h
+#        libft/memlist.h
+#        libft/ml_get_next_line.c
+#        libft/ml_itoa.c
+#        libft/ml_memalloc.c
+#        libft/ml_strdup.c
+#        libft/ml_strjoin.c
+#        libft/ml_strjoinre.c
+#        libft/ml_strmap.c
+#        libft/ml_strmapi.c
+#        libft/ml_strndup.c
+#        libft/ml_strnew.c
+#        libft/ml_strsplit.c
+#        libft/ml_strsub.c
+#        libft/ml_strtrim.c
+#        vm/includes/disasm.h
+#        vm/includes/error_defs.h
+#        vm/includes/vis.h
+#        vm/includes/vis_errors.h
+#        vm/includes/vm.h
+#        vm/srcs/game/vis/create_vs.c
+#        vm/srcs/game/vis/disasm.c
+#        vm/srcs/game/vis/disasm_funcs.c
+#        vm/srcs/game/vis/display_carriages.c
+#        vm/srcs/game/vis/display_game_data.c
+#        vm/srcs/game/vis/display_side_menu.c
+#        vm/srcs/game/vis/draw_frame.c
+#        vm/srcs/game/vis/higlight_cells.c
+#        vm/srcs/game/vis/init_sdl.c
+#        vm/srcs/game/vis/print_arena.c
+#        vm/srcs/game/vis/support_func.c
+#        vm/srcs/game/vis/track_events.c
+#        vm/srcs/game/vis/vc_list.c
+#        vm/srcs/game/vis/vc_sort.c
+#        vm/srcs/game/vis/visualise_arena.c
+#        vm/srcs/game/args_intf.c
+#        vm/srcs/game/game.c
+#        vm/srcs/game/game_intf.c
+#        vm/srcs/game/helper_func.c
+#        vm/srcs/game/instr_fork_zjmp_live_aff.c
+#        vm/srcs/game/instr_ld.c
+#        vm/srcs/game/instr_operations.c
+#        vm/srcs/game/instr_st.c
+#        vm/srcs/game/print_fork_zjmp_live_aff.c
+#        vm/srcs/game/print_v_flg.c
+#        vm/srcs/game/print_v_ld.c
+#        vm/srcs/game/print_v_operations.c
+#        vm/srcs/game/print_v_st.c
+#        vm/srcs/struct_intf/carriage_intf.c
+#        vm/srcs/struct_intf/corewar_intf.c
+#        vm/srcs/validation/parse_input_intf.c
+#        vm/srcs/validation/parse_inputs.c
+#        vm/srcs/validation/reports.c
+#        fast_strsplit.c
+#        ft_wordequ.c
+#        op.h
+#        options.h
+#        vm/includes/vm_structs.h)
+#
+##target_link_libraries(Asm ${SDL2_LIBRARY} ${SDL2_TTF_LIBRARY})
+#
+#add_executable(Corewar
+#        asm/asm.h
+#        asm/command_check.c
+#        asm/command_length.c
+#        asm/errors.h
+#        asm/ft_isdigitalword.c
+#        asm/ft_isspecial.c
+#        asm/ft_skipword.c
+#        asm/if_checks.c
+#        asm/init_headers.c
+#        asm/label_substitution.c
+#        asm/libword.h
+#        asm/print_comands.c
+#        asm/print_header.c
+#        asm/rewind.c
+#        asm/tkn_str_cat.c
+#        asm/token_exception.c
+#        asm/token_fill.c
+#        asm/token_sequence_check.c
+#        asm/tokenizer.c
+#        asm/tokens_lst.c
+#        ft_printf/includes/ft_ptintf.h
+#        ft_printf/includes/high_precision.h
+#        ft_printf/includes/my_float.h
+#        ft_printf/srcs/field_len.c
+#        ft_printf/srcs/fill_union.c
+#        ft_printf/srcs/ft_itoa_base_printf.c
+#        ft_printf/srcs/ft_printf.c
+#        ft_printf/srcs/get_binary.c
+#        ft_printf/srcs/is_parser.c
+#        ft_printf/srcs/is_typeflags.c
+#        ft_printf/srcs/make_field.c
+#        ft_printf/srcs/parsing_funcs.c
+#        ft_printf/srcs/parsing_generaly.c
+#        ft_printf/srcs/prepare_lennum.c
+#        ft_printf/srcs/set_buff.c
+#        ft_printf/srcs/set_flags.c
+#        ft_printf/srcs/str_tolower.c
+#        ft_printf/srcs/to_buff.c
+#        ft_printf/srcs/which_sign.c
+#        ft_printf/srcs/zeroing.c
+#        ft_printf/srcsFloat/check_create_float_res.c
+#        ft_printf/srcsFloat/e_flag_intf.c
+#        ft_printf/srcsFloat/float_intf.c
+#        ft_printf/srcsFloat/float_rounding.c
+#        ft_printf/srcsFloat/frees_for_float.c
+#        ft_printf/srcsFloat/ft_log10.c
+#        ft_printf/srcsFloat/ft_log2.c
+#        ft_printf/srcsFloat/g_flag_intf.c
+#        ft_printf/srcsFloat/get_dbl_values.c
+#        ft_printf/srcsFloat/get_ldbl_values.c
+#        ft_printf/srcsFloat/high_precision.c
+#        ft_printf/srcsFloat/high_precision_intf.c
+#        ft_printf/srcsFloat/high_precision_intf_long.c
+#        ft_printf/srcsFloat/high_precision_long.c
+#        ft_printf/srcsFloat/my_float.c
+#        ft_printf/srcsFloat/my_long_float.c
+#        ft_printf/srcsFloat/print_reserve_dbl.c
+#        libft/memlist/blackbox_memlist.h
+#        libft/memlist/memlist_bottleneck.c
+#        libft/memlist/ml_create.c
+#        libft/memlist/ml_del.c
+#        libft/memlist/ml_general.c
+#        libft/memlist/ml_givemem.c
+#        libft/ft_abs.c
+#        libft/ft_atoi.c
+#        libft/ft_bzero.c
+#        libft/ft_fib.c
+#        libft/ft_floor.c
+#        libft/ft_is_complex_string.c
+#        libft/ft_isalnum.c
+#        libft/ft_isalpha.c
+#        libft/ft_isascii.c
+#        libft/ft_isdigit.c
+#        libft/ft_islower.c
+#        libft/ft_isprint.c
+#        libft/ft_isspace.c
+#        libft/ft_isupper.c
+#        libft/ft_itoa.c
+#        libft/ft_lstadd.c
+#        libft/ft_lstcirc_add.c
+#        libft/ft_lstcirc_delelem.c
+#        libft/ft_lstcirc_findcontent_size.c
+#        libft/ft_lstcirc_strnew.c
+#        libft/ft_lstdel.c
+#        libft/ft_lstdelone.c
+#        libft/ft_lstiter.c
+#        libft/ft_lstmap.c
+#        libft/ft_lstnew.c
+#        libft/ft_lstpush.c
+#        libft/ft_memalloc.c
+#        libft/ft_memccpy.c
+#        libft/ft_memchr.c
+#        libft/ft_memcmp.c
+#        libft/ft_memcpy.c
+#        libft/ft_memdel.c
+#        libft/ft_memmove.c
+#        libft/ft_memset.c
+#        libft/ft_pow.c
+#        libft/ft_putchar.c
+#        libft/ft_putchar_fd.c
+#        libft/ft_putendl.c
+#        libft/ft_putendl_fd.c
+#        libft/ft_putnbr.c
+#        libft/ft_putnbr_fd.c
+#        libft/ft_putstr.c
+#        libft/ft_putstr_fd.c
+#        libft/ft_reverse.c
+#        libft/ft_sqrt.c
+#        libft/ft_sstrchr.c
+#        libft/ft_strcat.c
+#        libft/ft_strchr.c
+#        libft/ft_strclr.c
+#        libft/ft_strcmp.c
+#        libft/ft_strcpy.c
+#        libft/ft_strdel.c
+#        libft/ft_strdup.c
+#        libft/ft_strequ.c
+#        libft/ft_striter.c
+#        libft/ft_striteri.c
+#        libft/ft_strjoin.c
+#        libft/ft_strjoinre.c
+#        libft/ft_strlcat.c
+#        libft/ft_strlcpy.c
+#        libft/ft_strlen.c
+#        libft/ft_strmap.c
+#        libft/ft_strmapi.c
+#        libft/ft_strncat.c
+#        libft/ft_strncmp.c
+#        libft/ft_strncpy.c
+#        libft/ft_strndup.c
+#        libft/ft_strnequ.c
+#        libft/ft_strnew.c
+#        libft/ft_strnstr.c
+#        libft/ft_strrchr.c
+#        libft/ft_strsplit.c
+#        libft/ft_strstr.c
+#        libft/ft_strsub.c
+#        libft/ft_strtrim.c
+#        libft/ft_tolower.c
+#        libft/ft_toupper.c
+#        libft/get_next_line.c
+#        libft/get_next_line.h
+#        libft/go_exit.c
+#        libft/libft.h
+#        libft/memlist.h
+#        libft/ml_get_next_line.c
+#        libft/ml_itoa.c
+#        libft/ml_memalloc.c
+#        libft/ml_strdup.c
+#        libft/ml_strjoin.c
+#        libft/ml_strjoinre.c
+#        libft/ml_strmap.c
+#        libft/ml_strmapi.c
+#        libft/ml_strndup.c
+#        libft/ml_strnew.c
+#        libft/ml_strsplit.c
+#        libft/ml_strsub.c
+#        libft/ml_strtrim.c
+#        vm/includes/disasm.h
+#        vm/includes/error_defs.h
+#        vm/includes/vis.h
+#        vm/includes/vis_errors.h
+#        vm/includes/vm.h
+#        vm/includes/vm_structs.h
+#        vm/srcs/game/vis/create_vs.c
+#        vm/srcs/game/vis/disasm.c
+#        vm/srcs/game/vis/disasm_funcs.c
+#        vm/srcs/game/vis/display_carriages.c
+#        vm/srcs/game/vis/display_game_data.c
+#        vm/srcs/game/vis/display_side_menu.c
+#        vm/srcs/game/vis/draw_frame.c
+#        vm/srcs/game/vis/higlight_cells.c
+#        vm/srcs/game/vis/init_sdl.c
+#        vm/srcs/game/vis/print_arena.c
+#        vm/srcs/game/vis/support_func.c
+#        vm/srcs/game/vis/track_events.c
+#        vm/srcs/game/vis/vc_list.c
+#        vm/srcs/game/vis/vc_sort.c
+#        vm/srcs/game/vis/visualise_arena.c
+#        vm/srcs/game/args_intf.c
+#        vm/srcs/game/game.c
+#        vm/srcs/game/game_intf.c
+#        vm/srcs/game/helper_func.c
+#        vm/srcs/game/instr_fork_zjmp_live_aff.c
+#        vm/srcs/game/instr_ld.c
+#        vm/srcs/game/instr_operations.c
+#        vm/srcs/game/instr_st.c
+#        vm/srcs/game/print_fork_zjmp_live_aff.c
+#        vm/srcs/game/print_v_flg.c
+#        vm/srcs/game/print_v_ld.c
+#        vm/srcs/game/print_v_operations.c
+#        vm/srcs/game/print_v_st.c
+#        vm/srcs/struct_intf/carriage_intf.c
+#        vm/srcs/struct_intf/corewar_intf.c
+#        vm/srcs/validation/parse_input_intf.c
+#        vm/srcs/validation/parse_inputs.c
+#        vm/srcs/validation/reports.c
+#        vm/srcs/main.c
+#        fast_strsplit.c
+#        ft_wordequ.c
+#        op.h
+#        options.h
+#        )
+#
+##target_link_libraries(Corewar ${SDL2_LIBRARY} ${SDL2_TTF_LIBRARY})
+#target_link_libraries(Corewar "-framework SDL2")
+##target_link_libraries(dencorewar "-framework SDL2_image")
+#target_link_libraries(Corewar "-framework SDL2_ttf")
+#set_target_properties(Corewar PROPERTIES LINK_FLAGS "-F /Users/$ENV{USER}/Library/Frameworks")

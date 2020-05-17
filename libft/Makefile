@@ -35,7 +35,7 @@ SRCS = ft_strlen.c ft_strcmp.c ft_strncmp.c ft_strcpy.c ft_strncpy.c \
 	ml_strndup.c ml_get_next_line.c go_exit.c
 
 SRC_ML_DIR = ./memlist/
-SRC_ML = ml_create.c ml_del.c ml_general.c memlist_bottleneck.c
+SRC_ML = ml_create.c ml_del.c ml_general.c memlist_bottleneck.c ml_givemem.c
 
 OBJECTS = $(SRCS:.c=.o)
 OBJECTS_ML = $(SRC_ML:.c=.o)

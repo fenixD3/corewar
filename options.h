@@ -14,7 +14,7 @@
 # define OPTIONS_H
 
 # include "op.h"
-# include "asm.h"
+# include <stdint.h>
 
 # define MAX_COMMANDS 16
 

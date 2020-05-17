@@ -23,12 +23,12 @@ bool		init_font(void)
 		go_exit(TTF_GetError());
 	else
 	{
-		g_vs->font = TTF_OpenFont("../media/Anonymous.ttf", 29);
+		g_vs->font = TTF_OpenFont("media/Anonymous.ttf", 29);
 		if (!g_vs->font)
 			go_exit(TTF_GetError());
 		else
 			success = true;
-		g_vs->text_font = TTF_OpenFont("../media/Anonymous.ttf", 9);
+		g_vs->text_font = TTF_OpenFont("media/Anonymous.ttf", 9);
 		if (!g_vs->text_font)
 			go_exit(TTF_GetError());
 		else

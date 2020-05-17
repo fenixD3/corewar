@@ -103,11 +103,11 @@ void				print_map(t_corewar *corewar)
 		if (!j)
 			ft_printf("0x%04x : ", i);
 		ft_printf("%.2x", corewar->arena[i]);
-		if (j < 63)
+		if (j < 31)
 			ft_printf(" ");
 		else
 		{
-			ft_printf(" \n");
+			ft_printf("\n");
 			j = -1;
 		}
 		i++;

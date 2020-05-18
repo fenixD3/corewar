@@ -51,7 +51,7 @@ void					display_registers(int i, t_carriages *carriages,
 		{
 			c = 0;
 			ft_sprintf(todisplay, j < 10 ? "%d : %#10x\n" : "%d: %#10x\n",
-					j, carriages->reg[j]);
+					j, carriages->reg[j - 1]);
 			while (todisplay[c] != '\n')
 				c++;
 			todisplay[c] = '\0';

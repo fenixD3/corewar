@@ -53,10 +53,7 @@ void	command_output(t_disasm *s, int i, int j, char **str)
 	}
 	tmp[i++] = ' ';
 	if (!(g_op[s->code - 1].argument_type_code))
-	{
 		i = add_dir_ind(s, str, i, j);
-		tmp[i] = '\0';
-	}
 	while (j < g_op[s->code - 1].num_args &&
 										g_op[s->code - 1].argument_type_code)
 	{
@@ -66,8 +63,8 @@ void	command_output(t_disasm *s, int i, int j, char **str)
 			tmp[i++] = SEPARATOR_CHAR;
 			tmp[i++] = ' ';
 		}
-		tmp[i] = '\0';
 	}
+	tmp[i - 1] = '\0';
 }
 
 void	disasm(t_carriages *champ, char *str, unsigned char *arena)
@@ -78,6 +75,8 @@ void	disasm(t_carriages *champ, char *str, unsigned char *arena)
 
 	i = 0;
 	j = 0;
+	if (*champ->op_pos != champ->op_code)
+		return ((void)ft_strcpy(str, "Updating or invalid"));
 	if (champ->cycle_op < 0 || champ->op_code == 0 || champ->op_code > 16)
 		return ((void)ft_strcpy(str, "Incorrect command"));
 	s.code = champ->op_code;
@@ -87,8 +86,8 @@ void	disasm(t_carriages *champ, char *str, unsigned char *arena)
 	if (!(g_op[s.code - 1].argument_type_code))
 		return (command_output(&s, i, j, &str));
 	else if (!types_of_args(*(s.bogie), &s))
-		return ((void)ft_strcpy(str, "Incorrect command arguments"));
+		return ((void)ft_strcpy(str, "Incorrect arguments"));
 	if (!arguments_value(&s, do_steps(s.bogie, 1, arena), i))
-		return ((void)ft_strcpy(str, "Incorrect value of T_REG"));
+		return ((void)ft_strcpy(str, "Incorrect T_REG"));
 	return (command_output(&s, i, j, &str));
 }
